@@ -1,0 +1,1946 @@
+[
+  {
+    "letter": "A",
+    "term": "ADC",
+    "full": "Antibody-Drug Conjugate",
+    "definition": "A targeted cancer therapy that combines an antibody (which finds cancer cells) with a chemotherapy drug (which kills them). Think of it as a 'guided missile' for cancer treatment."
+  },
+  {
+    "letter": "A",
+    "term": "Adenocarcinoma",
+    "full": "",
+    "definition": "Cancer that starts in gland cells, most common type in lung, colon, prostate, and pancreatic cancers."
+  },
+  {
+    "letter": "A",
+    "term": "ADME",
+    "full": "Absorption, Distribution, Metabolism, Excretion",
+    "definition": "The four key processes that determine how a drug moves through your body."
+  },
+  {
+    "letter": "A",
+    "term": "Adjuvant",
+    "full": "",
+    "definition": "Treatment given after primary therapy (like surgery) to prevent cancer from coming back."
+  },
+  {
+    "letter": "A",
+    "term": "Adverse Event",
+    "full": "AE",
+    "definition": "Any unwanted or harmful effect that happens during a clinical trial, whether or not caused by the drug."
+  },
+  {
+    "letter": "A",
+    "term": "Agonist",
+    "full": "",
+    "definition": "A drug that activates a receptor in your body, like turning on a switch."
+  },
+  {
+    "letter": "A",
+    "term": "AKT",
+    "full": "Protein Kinase B",
+    "definition": "Key signaling protein often overactive in cancer, part of PI3K/AKT/mTOR pathway."
+  },
+  {
+    "letter": "A",
+    "term": "ALK",
+    "full": "Anaplastic Lymphoma Kinase",
+    "definition": "Gene fusion found in ~5% of lung cancers, targeted by drugs like crizotinib."
+  },
+  {
+    "letter": "A",
+    "term": "ALL",
+    "full": "Acute Lymphoblastic Leukemia",
+    "definition": "Fast-growing cancer of lymphoid cells, most common childhood cancer."
+  },
+  {
+    "letter": "A",
+    "term": "AML",
+    "full": "Acute Myeloid Leukemia",
+    "definition": "Fast-growing cancer of myeloid cells in bone marrow, requires immediate treatment."
+  },
+  {
+    "letter": "A",
+    "term": "Angiogenesis",
+    "full": "",
+    "definition": "Formation of new blood vessels that tumors trigger to feed themselves."
+  },
+  {
+    "letter": "A",
+    "term": "Antagonist",
+    "full": "",
+    "definition": "A drug that blocks a receptor, preventing activation - like putting tape over a light switch."
+  },
+  {
+    "letter": "A",
+    "term": "APC",
+    "full": "Adenomatous Polyposis Coli",
+    "definition": "Tumor suppressor gene mutated in most colorectal cancers."
+  },
+  {
+    "letter": "A",
+    "term": "API",
+    "full": "Active Pharmaceutical Ingredient",
+    "definition": "The actual chemical in a drug that makes it work."
+  },
+  {
+    "letter": "A",
+    "term": "Apoptosis",
+    "full": "",
+    "definition": "Programmed cell death - cancer cells often evade this through mutations."
+  },
+  {
+    "letter": "A",
+    "term": "Assay",
+    "full": "",
+    "definition": "A test or analysis done in the lab to measure drug or substance activity."
+  },
+  {
+    "letter": "A",
+    "term": "Astrocytoma",
+    "full": "",
+    "definition": "Brain tumor from star-shaped glial cells, includes glioblastoma."
+  },
+  {
+    "letter": "A",
+    "term": "ATM",
+    "full": "Ataxia Telangiectasia Mutated",
+    "definition": "DNA repair gene, mutations increase cancer risk and may predict PARP inhibitor response."
+  },
+  {
+    "letter": "A",
+    "term": "Autoimmune",
+    "full": "",
+    "definition": "When your immune system attacks your own healthy cells, can be triggered by immunotherapy."
+  },
+  {
+    "letter": "B",
+    "term": "Basal Cell Carcinoma",
+    "full": "BCC",
+    "definition": "Most common skin cancer, rarely spreads but can be locally destructive."
+  },
+  {
+    "letter": "B",
+    "term": "BCL2",
+    "full": "B-cell Lymphoma 2",
+    "definition": "Anti-death protein overexpressed in many cancers, targeted by venetoclax."
+  },
+  {
+    "letter": "B",
+    "term": "BCR-ABL",
+    "full": "",
+    "definition": "Fusion gene causing chronic myeloid leukemia, targeted by imatinib (Gleevec)."
+  },
+  {
+    "letter": "B",
+    "term": "Bioavailability",
+    "full": "",
+    "definition": "How much of a drug actually gets into your bloodstream to be used."
+  },
+  {
+    "letter": "B",
+    "term": "Biomarker",
+    "full": "",
+    "definition": "A measurable indicator showing disease presence or treatment response."
+  },
+  {
+    "letter": "B",
+    "term": "Biopsy",
+    "full": "",
+    "definition": "Taking a small tissue sample to examine for cancer diagnosis."
+  },
+  {
+    "letter": "B",
+    "term": "Biosimilar",
+    "full": "",
+    "definition": "A nearly identical copy of an already approved biological drug."
+  },
+  {
+    "letter": "B",
+    "term": "Bladder Cancer",
+    "full": "",
+    "definition": "Usually urothelial carcinoma, may have FGFR3 or TP53 mutations."
+  },
+  {
+    "letter": "B",
+    "term": "Blinding",
+    "full": "",
+    "definition": "Keeping patients/doctors from knowing who gets real drug vs placebo in trials."
+  },
+  {
+    "letter": "B",
+    "term": "Blood-Brain Barrier",
+    "full": "BBB",
+    "definition": "Protective filter between blood and brain that keeps out most drugs."
+  },
+  {
+    "letter": "B",
+    "term": "BRAF",
+    "full": "",
+    "definition": "Gene mutated in ~50% of melanomas, V600E most common mutation, targeted by vemurafenib."
+  },
+  {
+    "letter": "B",
+    "term": "Brain Metastases",
+    "full": "",
+    "definition": "Cancer spread to brain from elsewhere, common from lung, breast, melanoma."
+  },
+  {
+    "letter": "B",
+    "term": "BRCA1/BRCA2",
+    "full": "",
+    "definition": "DNA repair genes, mutations greatly increase breast/ovarian cancer risk."
+  },
+  {
+    "letter": "B",
+    "term": "Breast Cancer",
+    "full": "",
+    "definition": "Classified by receptors: ER+, PR+, HER2+, or triple-negative (none)."
+  },
+  {
+    "letter": "B",
+    "term": "BTK",
+    "full": "Bruton's Tyrosine Kinase",
+    "definition": "B-cell signaling protein targeted by ibrutinib in CLL."
+  },
+  {
+    "letter": "B",
+    "term": "Burkitt Lymphoma",
+    "full": "",
+    "definition": "Fast-growing B-cell lymphoma with MYC translocation."
+  },
+  {
+    "letter": "C",
+    "term": "CAR-T",
+    "full": "Chimeric Antigen Receptor T-cell",
+    "definition": "Patient's T-cells engineered to attack cancer, revolutionary in blood cancers."
+  },
+  {
+    "letter": "C",
+    "term": "Carcinoma",
+    "full": "",
+    "definition": "Cancer from epithelial cells, includes most common cancers (lung, breast, colon)."
+  },
+  {
+    "letter": "C",
+    "term": "CDK4/6",
+    "full": "Cyclin-Dependent Kinases",
+    "definition": "Cell cycle regulators targeted by palbociclib in ER+ breast cancer."
+  },
+  {
+    "letter": "C",
+    "term": "CDx",
+    "full": "Companion Diagnostic",
+    "definition": "Test determining if a specific drug will work for a patient."
+  },
+  {
+    "letter": "C",
+    "term": "Checkpoint Inhibitor",
+    "full": "",
+    "definition": "Immunotherapy drugs releasing 'brakes' on immune system to attack cancer."
+  },
+  {
+    "letter": "C",
+    "term": "Chemotherapy",
+    "full": "",
+    "definition": "Drug treatment killing fast-growing cells, affects cancer and healthy cells."
+  },
+  {
+    "letter": "C",
+    "term": "Cholangiocarcinoma",
+    "full": "",
+    "definition": "Bile duct cancer, may have IDH1/2 or FGFR2 mutations."
+  },
+  {
+    "letter": "C",
+    "term": "Chronic Lymphocytic Leukemia",
+    "full": "CLL",
+    "definition": "Slow-growing leukemia of B cells."
+  },
+  {
+    "letter": "C",
+    "term": "Chronic Myeloid Leukemia",
+    "full": "CML",
+    "definition": "Caused by BCR-ABL fusion (Philadelphia chromosome), transformed by imatinib."
+  },
+  {
+    "letter": "C",
+    "term": "Clinical Trial",
+    "full": "",
+    "definition": "Research study testing new treatments in people, phases I-IV."
+  },
+  {
+    "letter": "C",
+    "term": "CMC",
+    "full": "Chemistry, Manufacturing, and Controls",
+    "definition": "Information about how a drug is made and quality controlled."
+  },
+  {
+    "letter": "C",
+    "term": "Colorectal Cancer",
+    "full": "CRC",
+    "definition": "Third most common cancer, may have APC, KRAS, BRAF mutations."
+  },
+  {
+    "letter": "C",
+    "term": "CRISPR",
+    "full": "",
+    "definition": "Gene-editing technology acting like molecular scissors to modify DNA."
+  },
+  {
+    "letter": "C",
+    "term": "CRO",
+    "full": "Contract Research Organization",
+    "definition": "Company hired to manage and conduct clinical trials."
+  },
+  {
+    "letter": "C",
+    "term": "CTLA-4",
+    "full": "",
+    "definition": "Immune checkpoint targeted by ipilimumab, first checkpoint inhibitor."
+  },
+  {
+    "letter": "C",
+    "term": "Cytotoxic",
+    "full": "",
+    "definition": "Cell-killing, describes chemotherapy drugs."
+  },
+  {
+    "letter": "D",
+    "term": "DCT",
+    "full": "Decentralized Clinical Trial",
+    "definition": "Trials allowing patients to participate from home using technology."
+  },
+  {
+    "letter": "D",
+    "term": "Degrader",
+    "full": "Targeted Protein Degrader",
+    "definition": "Drugs that tag proteins for destruction rather than just blocking them."
+  },
+  {
+    "letter": "D",
+    "term": "DIPG",
+    "full": "Diffuse Intrinsic Pontine Glioma",
+    "definition": "Devastating childhood brain tumor, very poor prognosis."
+  },
+  {
+    "letter": "D",
+    "term": "DLBCL",
+    "full": "Diffuse Large B-Cell Lymphoma",
+    "definition": "Most common aggressive lymphoma."
+  },
+  {
+    "letter": "D",
+    "term": "DMC",
+    "full": "Data Monitoring Committee",
+    "definition": "Independent group reviewing trial data for safety."
+  },
+  {
+    "letter": "D",
+    "term": "DNA Mismatch Repair",
+    "full": "MMR",
+    "definition": "System fixing DNA errors, deficiency causes MSI-H and immunotherapy response."
+  },
+  {
+    "letter": "D",
+    "term": "Dose Escalation",
+    "full": "",
+    "definition": "Gradually increasing drug dose in trials to find maximum safe dose."
+  },
+  {
+    "letter": "D",
+    "term": "Drug-Drug Interaction",
+    "full": "DDI",
+    "definition": "When one drug affects another's effectiveness or toxicity."
+  },
+  {
+    "letter": "D",
+    "term": "Duration of Response",
+    "full": "DoR",
+    "definition": "How long a treatment keeps working once it starts."
+  },
+  {
+    "letter": "D",
+    "term": "Dysplasia",
+    "full": "",
+    "definition": "Abnormal cell growth that's pre-cancerous."
+  },
+  {
+    "letter": "E",
+    "term": "EGFR",
+    "full": "Epidermal Growth Factor Receptor",
+    "definition": "Mutated in ~15% of lung cancers, targeted by erlotinib, osimertinib. T790M causes resistance."
+  },
+  {
+    "letter": "E",
+    "term": "EMA",
+    "full": "European Medicines Agency",
+    "definition": "European equivalent of FDA for drug approval."
+  },
+  {
+    "letter": "E",
+    "term": "Endometrial Cancer",
+    "full": "",
+    "definition": "Most common gynecologic cancer, often MSI-H or TP53 mutant."
+  },
+  {
+    "letter": "E",
+    "term": "Endpoint",
+    "full": "",
+    "definition": "What's measured in trials - OS (survival), PFS (progression-free), ORR (response rate)."
+  },
+  {
+    "letter": "E",
+    "term": "Ependymoma",
+    "full": "",
+    "definition": "Brain or spinal cord tumor from ependymal cells."
+  },
+  {
+    "letter": "E",
+    "term": "ER/PR",
+    "full": "Estrogen/Progesterone Receptor",
+    "definition": "Hormone receptors in ~70% of breast cancers, targeted by tamoxifen."
+  },
+  {
+    "letter": "E",
+    "term": "ERBB2",
+    "full": "HER2/neu",
+    "definition": "Amplified in ~20% of breast cancers, targeted by trastuzumab."
+  },
+  {
+    "letter": "E",
+    "term": "Esophageal Cancer",
+    "full": "",
+    "definition": "Includes adenocarcinoma (reflux-associated) and squamous cell (smoking-associated)."
+  },
+  {
+    "letter": "E",
+    "term": "Ewing Sarcoma",
+    "full": "",
+    "definition": "Bone/soft tissue cancer in youth with EWSR1-FLI1 fusion."
+  },
+  {
+    "letter": "E",
+    "term": "Excipient",
+    "full": "",
+    "definition": "Inactive ingredients in drugs helping deliver the active ingredient."
+  },
+  {
+    "letter": "E",
+    "term": "EZH2",
+    "full": "",
+    "definition": "Epigenetic regulator mutated in lymphomas, targeted by tazemetostat."
+  },
+  {
+    "letter": "F",
+    "term": "FAP",
+    "full": "Familial Adenomatous Polyposis",
+    "definition": "Inherited APC mutation causing hundreds of colon polyps."
+  },
+  {
+    "letter": "F",
+    "term": "Fast Track",
+    "full": "",
+    "definition": "FDA designation speeding review of drugs for serious conditions."
+  },
+  {
+    "letter": "F",
+    "term": "FDA",
+    "full": "Food and Drug Administration",
+    "definition": "US agency approving new drugs and ensuring safety/efficacy."
+  },
+  {
+    "letter": "F",
+    "term": "FGFR",
+    "full": "Fibroblast Growth Factor Receptor",
+    "definition": "Family with fusions in cholangiocarcinoma, mutations in bladder cancer."
+  },
+  {
+    "letter": "F",
+    "term": "First-in-Human",
+    "full": "FIH",
+    "definition": "Very first clinical trial of a new drug in people."
+  },
+  {
+    "letter": "F",
+    "term": "First-Line Therapy",
+    "full": "",
+    "definition": "Initial treatment for cancer, usually most effective."
+  },
+  {
+    "letter": "F",
+    "term": "FLT3",
+    "full": "",
+    "definition": "Mutated in ~30% of AML, poor prognosis, targeted by midostaurin."
+  },
+  {
+    "letter": "F",
+    "term": "Follicular Lymphoma",
+    "full": "",
+    "definition": "Second most common lymphoma, indolent with BCL2 translocation."
+  },
+  {
+    "letter": "F",
+    "term": "Formulation",
+    "full": "",
+    "definition": "The specific recipe and form of a drug product."
+  },
+  {
+    "letter": "F",
+    "term": "Fusion Gene",
+    "full": "",
+    "definition": "Abnormal gene when two genes join together, like BCR-ABL."
+  },
+  {
+    "letter": "G",
+    "term": "Gallbladder Cancer",
+    "full": "",
+    "definition": "Often diagnosed late, may have HER2 amplification."
+  },
+  {
+    "letter": "G",
+    "term": "Gastric Cancer",
+    "full": "",
+    "definition": "Stomach cancer, subtypes include intestinal and diffuse (signet ring)."
+  },
+  {
+    "letter": "G",
+    "term": "GIST",
+    "full": "Gastrointestinal Stromal Tumor",
+    "definition": "Sarcoma with KIT/PDGFRA mutations, responds dramatically to imatinib."
+  },
+  {
+    "letter": "G",
+    "term": "Glioblastoma",
+    "full": "GBM",
+    "definition": "Most aggressive brain cancer, IDH wild-type has worse prognosis."
+  },
+  {
+    "letter": "G",
+    "term": "GCP",
+    "full": "Good Clinical Practice",
+    "definition": "International quality standards for clinical trials."
+  },
+  {
+    "letter": "G",
+    "term": "Gene Therapy",
+    "full": "",
+    "definition": "Treatment inserting or replacing genes to treat disease."
+  },
+  {
+    "letter": "G",
+    "term": "Generic Drug",
+    "full": "",
+    "definition": "Copy of brand-name drug with same active ingredient, costs less."
+  },
+  {
+    "letter": "G",
+    "term": "Germ Cell Tumor",
+    "full": "",
+    "definition": "From reproductive cells, includes seminoma and non-seminomatous types."
+  },
+  {
+    "letter": "G",
+    "term": "Glioma",
+    "full": "",
+    "definition": "Brain tumors from glial cells, graded 1-4."
+  },
+  {
+    "letter": "G",
+    "term": "GMP",
+    "full": "Good Manufacturing Practice",
+    "definition": "Quality standards for drug production."
+  },
+  {
+    "letter": "G",
+    "term": "Grade",
+    "full": "Tumor Grade",
+    "definition": "How abnormal cancer cells look - higher grade means more aggressive."
+  },
+  {
+    "letter": "H",
+    "term": "Half-life",
+    "full": "",
+    "definition": "Time for half a drug to be eliminated from body."
+  },
+  {
+    "letter": "H",
+    "term": "Hazard Ratio",
+    "full": "HR",
+    "definition": "Measure comparing event likelihood between two groups in trials."
+  },
+  {
+    "letter": "H",
+    "term": "HCC",
+    "full": "Hepatocellular Carcinoma",
+    "definition": "Most common liver cancer, often in cirrhosis setting."
+  },
+  {
+    "letter": "H",
+    "term": "Head and Neck Cancer",
+    "full": "HNSCC",
+    "definition": "Squamous cancers of mouth, throat, larynx. HPV-positive have better prognosis."
+  },
+  {
+    "letter": "H",
+    "term": "Hematologic Malignancy",
+    "full": "",
+    "definition": "Blood cancers including leukemias, lymphomas, myeloma."
+  },
+  {
+    "letter": "H",
+    "term": "HER2",
+    "full": "Human Epidermal growth factor Receptor 2",
+    "definition": "Amplified in ~20% breast cancers, targeted by trastuzumab (Herceptin)."
+  },
+  {
+    "letter": "H",
+    "term": "Hereditary Cancer Syndromes",
+    "full": "",
+    "definition": "Include Lynch syndrome, BRCA1/2, Li-Fraumeni, FAP."
+  },
+  {
+    "letter": "H",
+    "term": "Hodgkin Lymphoma",
+    "full": "HL",
+    "definition": "B-cell lymphoma with Reed-Sternberg cells, high cure rate."
+  },
+  {
+    "letter": "H",
+    "term": "Hormone Receptor",
+    "full": "HR",
+    "definition": "ER and PR in breast cancer, determine endocrine therapy use."
+  },
+  {
+    "letter": "H",
+    "term": "HPV",
+    "full": "Human Papillomavirus",
+    "definition": "Causes cervical cancer and some head/neck cancers, preventable with vaccine."
+  },
+  {
+    "letter": "H",
+    "term": "HRD",
+    "full": "Homologous Recombination Deficiency",
+    "definition": "DNA repair defect from BRCA mutations, predicts PARP inhibitor response."
+  },
+  {
+    "letter": "H",
+    "term": "Hypoxia",
+    "full": "",
+    "definition": "Low oxygen in tissues, tumors often have hypoxic areas resisting treatment."
+  },
+  {
+    "letter": "I",
+    "term": "IDH1/IDH2",
+    "full": "Isocitrate Dehydrogenase",
+    "definition": "Mutated in gliomas, AML, cholangiocarcinoma. Targeted by ivosidenib and enasidenib."
+  },
+  {
+    "letter": "I",
+    "term": "Imatinib",
+    "full": "Gleevec",
+    "definition": "First targeted therapy, revolutionized CML treatment."
+  },
+  {
+    "letter": "I",
+    "term": "Immune Checkpoint",
+    "full": "",
+    "definition": "Molecules preventing immune attack on normal cells, hijacked by cancer."
+  },
+  {
+    "letter": "I",
+    "term": "Immunotherapy",
+    "full": "",
+    "definition": "Treatments harnessing immune system against cancer."
+  },
+  {
+    "letter": "I",
+    "term": "IND",
+    "full": "Investigational New Drug",
+    "definition": "FDA application allowing human testing of new drugs."
+  },
+  {
+    "letter": "I",
+    "term": "Indication",
+    "full": "",
+    "definition": "The specific disease a drug is approved to treat."
+  },
+  {
+    "letter": "I",
+    "term": "Inhibitor",
+    "full": "",
+    "definition": "Drug blocking a protein's function."
+  },
+  {
+    "letter": "I",
+    "term": "Intratumoral",
+    "full": "",
+    "definition": "Injection directly into tumor for local effect."
+  },
+  {
+    "letter": "I",
+    "term": "Invasive Ductal Carcinoma",
+    "full": "IDC",
+    "definition": "Most common breast cancer type (~80%)."
+  },
+  {
+    "letter": "I",
+    "term": "IV",
+    "full": "Intravenous",
+    "definition": "Drug delivery directly into vein."
+  },
+  {
+    "letter": "J",
+    "term": "JAK Inhibitor",
+    "full": "Janus Kinase Inhibitor",
+    "definition": "Drugs blocking JAK enzymes, used in myeloproliferative neoplasms."
+  },
+  {
+    "letter": "J",
+    "term": "JAK2 V617F",
+    "full": "",
+    "definition": "Most common mutation in polycythemia vera."
+  },
+  {
+    "letter": "J",
+    "term": "JAK-STAT",
+    "full": "",
+    "definition": "Signaling pathway important in immune responses and cancer."
+  },
+  {
+    "letter": "J",
+    "term": "JMML",
+    "full": "Juvenile Myelomonocytic Leukemia",
+    "definition": "Rare childhood leukemia with RAS pathway mutations."
+  },
+  {
+    "letter": "J",
+    "term": "Joint Trial",
+    "full": "",
+    "definition": "Clinical trial at multiple sites testing same treatment."
+  },
+  {
+    "letter": "K",
+    "term": "Kaplan-Meier",
+    "full": "",
+    "definition": "Statistical method for survival curves in cancer studies."
+  },
+  {
+    "letter": "K",
+    "term": "Karyotype",
+    "full": "",
+    "definition": "Picture of all chromosomes showing cancer-related changes."
+  },
+  {
+    "letter": "K",
+    "term": "Ki-67",
+    "full": "",
+    "definition": "Proliferation marker - higher percentage means faster growing tumor."
+  },
+  {
+    "letter": "K",
+    "term": "Kidney Cancer",
+    "full": "RCC",
+    "definition": "Renal cell carcinoma, clear cell type often has VHL mutations."
+  },
+  {
+    "letter": "K",
+    "term": "Kinase",
+    "full": "",
+    "definition": "Enzyme adding phosphate groups to proteins, many are drug targets."
+  },
+  {
+    "letter": "K",
+    "term": "KIT",
+    "full": "CD117",
+    "definition": "Receptor mutated in GIST, targeted by imatinib."
+  },
+  {
+    "letter": "K",
+    "term": "KRAS",
+    "full": "",
+    "definition": "Most commonly mutated RAS gene in cancer, G12C now targetable with sotorasib."
+  },
+  {
+    "letter": "L",
+    "term": "Label",
+    "full": "Drug Label",
+    "definition": "FDA-approved prescribing information for a drug."
+  },
+  {
+    "letter": "L",
+    "term": "Leukemia",
+    "full": "",
+    "definition": "Blood cancers from bone marrow, includes acute and chronic types."
+  },
+  {
+    "letter": "L",
+    "term": "Li-Fraumeni Syndrome",
+    "full": "",
+    "definition": "Inherited TP53 mutation causing very high cancer risk."
+  },
+  {
+    "letter": "L",
+    "term": "Ligand",
+    "full": "",
+    "definition": "Molecule binding to receptor, can be natural or drug."
+  },
+  {
+    "letter": "L",
+    "term": "Liquid Biopsy",
+    "full": "",
+    "definition": "Blood test detecting circulating tumor DNA for monitoring."
+  },
+  {
+    "letter": "L",
+    "term": "Loading Dose",
+    "full": "",
+    "definition": "Larger initial dose to quickly reach therapeutic levels."
+  },
+  {
+    "letter": "L",
+    "term": "Lung Adenocarcinoma",
+    "full": "",
+    "definition": "Most common lung cancer, may have EGFR, ALK, ROS1 mutations."
+  },
+  {
+    "letter": "L",
+    "term": "Lymph Node",
+    "full": "",
+    "definition": "Immune filters where cancer often spreads first."
+  },
+  {
+    "letter": "L",
+    "term": "Lymphoma",
+    "full": "",
+    "definition": "Cancer of lymph system, includes Hodgkin and non-Hodgkin types."
+  },
+  {
+    "letter": "L",
+    "term": "Lynch Syndrome",
+    "full": "",
+    "definition": "Inherited MMR gene mutations causing colorectal/endometrial cancer risk."
+  },
+  {
+    "letter": "L",
+    "term": "Lyophilization",
+    "full": "",
+    "definition": "Freeze-drying process for preserving biological drugs."
+  },
+  {
+    "letter": "M",
+    "term": "MAb",
+    "full": "Monoclonal Antibody",
+    "definition": "Lab-made antibodies targeting specific proteins, names end in '-mab'."
+  },
+  {
+    "letter": "M",
+    "term": "Maintenance Therapy",
+    "full": "",
+    "definition": "Lower-intensity treatment to prevent disease return."
+  },
+  {
+    "letter": "M",
+    "term": "Mantle Cell Lymphoma",
+    "full": "MCL",
+    "definition": "Aggressive B-cell lymphoma with cyclin D1 translocation."
+  },
+  {
+    "letter": "M",
+    "term": "MDM2",
+    "full": "",
+    "definition": "p53 regulator amplified in sarcomas."
+  },
+  {
+    "letter": "M",
+    "term": "MDS",
+    "full": "Myelodysplastic Syndrome",
+    "definition": "Pre-leukemic condition that can transform to AML."
+  },
+  {
+    "letter": "M",
+    "term": "Mechanism of Action",
+    "full": "MOA",
+    "definition": "How a drug works at molecular level."
+  },
+  {
+    "letter": "M",
+    "term": "Medulloblastoma",
+    "full": "",
+    "definition": "Most common malignant childhood brain tumor."
+  },
+  {
+    "letter": "M",
+    "term": "MEK Inhibitor",
+    "full": "",
+    "definition": "Drugs blocking MAPK pathway, often combined with BRAF inhibitors."
+  },
+  {
+    "letter": "M",
+    "term": "Melanoma",
+    "full": "",
+    "definition": "Aggressive skin cancer, ~50% have BRAF mutations."
+  },
+  {
+    "letter": "M",
+    "term": "Mesothelioma",
+    "full": "",
+    "definition": "Cancer of mesothelial lining, usually from asbestos exposure."
+  },
+  {
+    "letter": "M",
+    "term": "MET",
+    "full": "",
+    "definition": "Receptor with mutations/amplifications, MET exon 14 skipping targetable."
+  },
+  {
+    "letter": "M",
+    "term": "Metabolite",
+    "full": "",
+    "definition": "What a drug becomes after body processes it."
+  },
+  {
+    "letter": "M",
+    "term": "Metastasis",
+    "full": "",
+    "definition": "Cancer spread to distant sites, major cause of deaths."
+  },
+  {
+    "letter": "M",
+    "term": "MGMT",
+    "full": "",
+    "definition": "DNA repair enzyme, methylation predicts temozolomide response in GBM."
+  },
+  {
+    "letter": "M",
+    "term": "Microbiome",
+    "full": "",
+    "definition": "Gut bacteria affecting drug response and immunotherapy efficacy."
+  },
+  {
+    "letter": "M",
+    "term": "Microsatellite Instability",
+    "full": "MSI-H",
+    "definition": "DNA repair deficiency causing hypermutation, predicts immunotherapy response."
+  },
+  {
+    "letter": "M",
+    "term": "Multiple Myeloma",
+    "full": "MM",
+    "definition": "Plasma cell cancer in bone marrow."
+  },
+  {
+    "letter": "M",
+    "term": "Mutation",
+    "full": "",
+    "definition": "DNA change that can drive cancer."
+  },
+  {
+    "letter": "M",
+    "term": "MYC",
+    "full": "",
+    "definition": "Master regulator amplified in many cancers, largely undruggable."
+  },
+  {
+    "letter": "M",
+    "term": "MYCN",
+    "full": "",
+    "definition": "MYC family member amplified in neuroblastoma."
+  },
+  {
+    "letter": "N",
+    "term": "Nasopharyngeal Carcinoma",
+    "full": "NPC",
+    "definition": "Head/neck cancer associated with EBV, endemic in Asia."
+  },
+  {
+    "letter": "N",
+    "term": "NCCN",
+    "full": "National Comprehensive Cancer Network",
+    "definition": "Organization providing cancer treatment guidelines."
+  },
+  {
+    "letter": "N",
+    "term": "NCI",
+    "full": "National Cancer Institute",
+    "definition": "US government's principal cancer research agency."
+  },
+  {
+    "letter": "N",
+    "term": "NDA",
+    "full": "New Drug Application",
+    "definition": "FDA submission for drug approval."
+  },
+  {
+    "letter": "N",
+    "term": "Necrosis",
+    "full": "",
+    "definition": "Uncontrolled cell death causing inflammation."
+  },
+  {
+    "letter": "N",
+    "term": "Neoadjuvant",
+    "full": "",
+    "definition": "Treatment before main therapy (surgery) to shrink tumor."
+  },
+  {
+    "letter": "N",
+    "term": "Neoplasm",
+    "full": "",
+    "definition": "Abnormal growth, can be benign or malignant."
+  },
+  {
+    "letter": "N",
+    "term": "NET",
+    "full": "Neuroendocrine Tumor",
+    "definition": "From hormone-producing cells, includes carcinoid."
+  },
+  {
+    "letter": "N",
+    "term": "Neuroblastoma",
+    "full": "",
+    "definition": "Childhood nerve tissue cancer, MYCN amplification indicates high risk."
+  },
+  {
+    "letter": "N",
+    "term": "Neuropathy",
+    "full": "",
+    "definition": "Nerve damage from chemotherapy."
+  },
+  {
+    "letter": "N",
+    "term": "Neutropenia",
+    "full": "",
+    "definition": "Low neutrophil count from chemotherapy, infection risk."
+  },
+  {
+    "letter": "N",
+    "term": "NGS",
+    "full": "Next-Generation Sequencing",
+    "definition": "Technology for rapid DNA sequencing, enables precision medicine."
+  },
+  {
+    "letter": "N",
+    "term": "NHL",
+    "full": "Non-Hodgkin Lymphoma",
+    "definition": "Diverse group of lymphomas."
+  },
+  {
+    "letter": "N",
+    "term": "NOTCH",
+    "full": "",
+    "definition": "Signaling pathway mutated in T-ALL."
+  },
+  {
+    "letter": "N",
+    "term": "NSCLC",
+    "full": "Non-Small Cell Lung Cancer",
+    "definition": "~85% of lung cancers, includes adenocarcinoma and squamous types."
+  },
+  {
+    "letter": "N",
+    "term": "NTRK",
+    "full": "",
+    "definition": "Gene fusions targeted by larotrectinib and entrectinib."
+  },
+  {
+    "letter": "O",
+    "term": "Obinutuzumab",
+    "full": "Gazyva",
+    "definition": "Anti-CD20 antibody for lymphomas and CLL."
+  },
+  {
+    "letter": "O",
+    "term": "Off-label",
+    "full": "",
+    "definition": "Prescribing drug for condition different from FDA approval."
+  },
+  {
+    "letter": "O",
+    "term": "Olaparib",
+    "full": "Lynparza",
+    "definition": "First approved PARP inhibitor for BRCA-mutated cancers."
+  },
+  {
+    "letter": "O",
+    "term": "Oligometastatic",
+    "full": "",
+    "definition": "Limited metastatic disease potentially curable with aggressive treatment."
+  },
+  {
+    "letter": "O",
+    "term": "Oncogene",
+    "full": "",
+    "definition": "Gene driving cancer when activated/amplified."
+  },
+  {
+    "letter": "O",
+    "term": "Oncologist",
+    "full": "",
+    "definition": "Doctor specializing in cancer treatment."
+  },
+  {
+    "letter": "O",
+    "term": "Oncology",
+    "full": "",
+    "definition": "Medical specialty dealing with cancer."
+  },
+  {
+    "letter": "O",
+    "term": "Open-Label",
+    "full": "",
+    "definition": "Trial where everyone knows what treatment is given."
+  },
+  {
+    "letter": "O",
+    "term": "Orphan Drug",
+    "full": "",
+    "definition": "Drug for rare disease, gets FDA incentives."
+  },
+  {
+    "letter": "O",
+    "term": "ORR",
+    "full": "Overall Response Rate",
+    "definition": "Percentage of patients with tumor shrinkage."
+  },
+  {
+    "letter": "O",
+    "term": "OS",
+    "full": "Overall Survival",
+    "definition": "How long patients live from treatment start."
+  },
+  {
+    "letter": "O",
+    "term": "Osimertinib",
+    "full": "Tagrisso",
+    "definition": "Third-generation EGFR inhibitor overcoming T790M resistance."
+  },
+  {
+    "letter": "O",
+    "term": "Osteosarcoma",
+    "full": "",
+    "definition": "Most common primary bone cancer in adolescents."
+  },
+  {
+    "letter": "O",
+    "term": "Ovarian Cancer",
+    "full": "",
+    "definition": "Includes epithelial (90%), germ cell, and stromal types."
+  },
+  {
+    "letter": "P",
+    "term": "p53",
+    "full": "TP53",
+    "definition": "'Guardian of genome' mutated in >50% of cancers."
+  },
+  {
+    "letter": "P",
+    "term": "Paclitaxel",
+    "full": "Taxol",
+    "definition": "Chemotherapy from yew tree, stabilizes microtubules."
+  },
+  {
+    "letter": "P",
+    "term": "PALB2",
+    "full": "",
+    "definition": "DNA repair gene, mutations increase breast/pancreatic cancer risk."
+  },
+  {
+    "letter": "P",
+    "term": "Palliative",
+    "full": "",
+    "definition": "Treatment to relieve symptoms rather than cure."
+  },
+  {
+    "letter": "P",
+    "term": "Pancreatic Cancer",
+    "full": "PDAC",
+    "definition": "Very poor prognosis, >90% have KRAS mutations."
+  },
+  {
+    "letter": "P",
+    "term": "PARP Inhibitor",
+    "full": "",
+    "definition": "Drugs blocking DNA repair, effective in BRCA-mutated cancers."
+  },
+  {
+    "letter": "P",
+    "term": "Pathologic Complete Response",
+    "full": "pCR",
+    "definition": "No cancer found at surgery after neoadjuvant therapy."
+  },
+  {
+    "letter": "P",
+    "term": "PD-1/PD-L1",
+    "full": "Programmed Death 1/Ligand 1",
+    "definition": "Checkpoint proteins cancer uses to hide from immune system."
+  },
+  {
+    "letter": "P",
+    "term": "Pembrolizumab",
+    "full": "Keytruda",
+    "definition": "PD-1 inhibitor, first tissue-agnostic approval for MSI-H."
+  },
+  {
+    "letter": "P",
+    "term": "Personalized Medicine",
+    "full": "Precision Medicine",
+    "definition": "Treatment based on patient's specific tumor genetics."
+  },
+  {
+    "letter": "P",
+    "term": "PFS",
+    "full": "Progression-Free Survival",
+    "definition": "Time until disease worsens."
+  },
+  {
+    "letter": "P",
+    "term": "Phase I/II/III",
+    "full": "Clinical Trial Phases",
+    "definition": "I=safety, II=efficacy, III=comparison to standard."
+  },
+  {
+    "letter": "P",
+    "term": "Philadelphia Chromosome",
+    "full": "Ph+",
+    "definition": "BCR-ABL fusion causing CML and some ALL."
+  },
+  {
+    "letter": "P",
+    "term": "PI3K",
+    "full": "Phosphatidylinositol 3-Kinase",
+    "definition": "Key pathway, PIK3CA mutated in many cancers."
+  },
+  {
+    "letter": "P",
+    "term": "PK/PD",
+    "full": "Pharmacokinetics/Pharmacodynamics",
+    "definition": "What body does to drug/what drug does to body."
+  },
+  {
+    "letter": "P",
+    "term": "Placebo",
+    "full": "",
+    "definition": "Inactive substance used as control in trials."
+  },
+  {
+    "letter": "P",
+    "term": "Platinum",
+    "full": "",
+    "definition": "Chemotherapy class (cisplatin, carboplatin) causing DNA damage."
+  },
+  {
+    "letter": "P",
+    "term": "Preclinical",
+    "full": "",
+    "definition": "Lab and animal testing before human trials."
+  },
+  {
+    "letter": "P",
+    "term": "Primary Tumor",
+    "full": "",
+    "definition": "Original cancer site, not metastases."
+  },
+  {
+    "letter": "P",
+    "term": "Prostate Cancer",
+    "full": "",
+    "definition": "Most common male cancer, may have TMPRSS2-ERG fusion."
+  },
+  {
+    "letter": "P",
+    "term": "PROTAC",
+    "full": "Proteolysis Targeting Chimera",
+    "definition": "Degrader drug hijacking cell's disposal system."
+  },
+  {
+    "letter": "P",
+    "term": "Protocol",
+    "full": "",
+    "definition": "Detailed plan for clinical trial."
+  },
+  {
+    "letter": "P",
+    "term": "PTEN",
+    "full": "",
+    "definition": "Tumor suppressor in PI3K pathway, lost in many cancers."
+  },
+  {
+    "letter": "Q",
+    "term": "QC",
+    "full": "Quality Control",
+    "definition": "Testing to ensure drug batches meet specifications."
+  },
+  {
+    "letter": "Q",
+    "term": "QoL",
+    "full": "Quality of Life",
+    "definition": "Patient wellbeing measure in trials beyond just survival."
+  },
+  {
+    "letter": "Q",
+    "term": "QTc",
+    "full": "Corrected QT Interval",
+    "definition": "Heart rhythm measurement, some drugs prolong it dangerously."
+  },
+  {
+    "letter": "Q",
+    "term": "Quadrantectomy",
+    "full": "",
+    "definition": "Breast surgery removing quarter of breast."
+  },
+  {
+    "letter": "Q",
+    "term": "Quantitative PCR",
+    "full": "qPCR",
+    "definition": "Technique measuring gene expression or mutations."
+  },
+  {
+    "letter": "Q",
+    "term": "Quiescent",
+    "full": "",
+    "definition": "Non-dividing cells that can survive chemotherapy."
+  },
+  {
+    "letter": "R",
+    "term": "Radiation Therapy",
+    "full": "RT",
+    "definition": "Using high-energy rays to kill cancer cells."
+  },
+  {
+    "letter": "R",
+    "term": "RAF",
+    "full": "",
+    "definition": "Protein family in MAPK pathway, includes BRAF."
+  },
+  {
+    "letter": "R",
+    "term": "RAS",
+    "full": "",
+    "definition": "Gene family (KRAS, NRAS, HRAS) mutated in ~30% of cancers."
+  },
+  {
+    "letter": "R",
+    "term": "Rb",
+    "full": "Retinoblastoma protein",
+    "definition": "Tumor suppressor controlling cell cycle."
+  },
+  {
+    "letter": "R",
+    "term": "Real-World Evidence",
+    "full": "RWE",
+    "definition": "Data from actual clinical practice vs controlled trials."
+  },
+  {
+    "letter": "R",
+    "term": "Receptor",
+    "full": "",
+    "definition": "Protein receiving signals, many are drug targets."
+  },
+  {
+    "letter": "R",
+    "term": "Recurrence",
+    "full": "",
+    "definition": "Cancer returning after treatment."
+  },
+  {
+    "letter": "R",
+    "term": "Refractory",
+    "full": "",
+    "definition": "Disease not responding to treatment."
+  },
+  {
+    "letter": "R",
+    "term": "Regulatory",
+    "full": "",
+    "definition": "Related to FDA and drug approval process."
+  },
+  {
+    "letter": "R",
+    "term": "Remission",
+    "full": "",
+    "definition": "Decrease or disappearance of cancer signs/symptoms."
+  },
+  {
+    "letter": "R",
+    "term": "Resistance",
+    "full": "",
+    "definition": "When disease stops responding to previously effective treatment."
+  },
+  {
+    "letter": "R",
+    "term": "RET",
+    "full": "",
+    "definition": "Gene with fusions in lung/thyroid cancer, targeted by selpercatinib."
+  },
+  {
+    "letter": "R",
+    "term": "Retinoblastoma",
+    "full": "",
+    "definition": "Childhood eye cancer from RB1 mutations."
+  },
+  {
+    "letter": "R",
+    "term": "RNA",
+    "full": "Ribonucleic Acid",
+    "definition": "Genetic material, target of some new therapies."
+  },
+  {
+    "letter": "R",
+    "term": "ROS1",
+    "full": "",
+    "definition": "Gene fusion in ~1-2% of lung cancers, targeted by crizotinib."
+  },
+  {
+    "letter": "S",
+    "term": "Sarcoma",
+    "full": "",
+    "definition": "Cancer from connective tissue (bone, muscle, fat), >70 subtypes."
+  },
+  {
+    "letter": "S",
+    "term": "SCLC",
+    "full": "Small Cell Lung Cancer",
+    "definition": "Aggressive neuroendocrine lung cancer, usually from smoking."
+  },
+  {
+    "letter": "S",
+    "term": "Second-Line Therapy",
+    "full": "",
+    "definition": "Treatment used when first-line fails."
+  },
+  {
+    "letter": "S",
+    "term": "Seminoma",
+    "full": "",
+    "definition": "Most common testicular germ cell tumor, very curable."
+  },
+  {
+    "letter": "S",
+    "term": "Senescence",
+    "full": "",
+    "definition": "Permanent growth arrest, cancer prevention mechanism."
+  },
+  {
+    "letter": "S",
+    "term": "siRNA",
+    "full": "Small Interfering RNA",
+    "definition": "Short RNAs for gene silencing."
+  },
+  {
+    "letter": "S",
+    "term": "Small Molecule",
+    "full": "",
+    "definition": "Traditional drugs entering cells easily, most oral cancer drugs."
+  },
+  {
+    "letter": "S",
+    "term": "SOC",
+    "full": "Standard of Care",
+    "definition": "Current best accepted treatment for a condition."
+  },
+  {
+    "letter": "S",
+    "term": "Somatic Mutation",
+    "full": "",
+    "definition": "Mutation in body cells, not inherited."
+  },
+  {
+    "letter": "S",
+    "term": "Squamous Cell Carcinoma",
+    "full": "SCC",
+    "definition": "Cancer from squamous epithelium in skin, lung, head/neck, cervix."
+  },
+  {
+    "letter": "S",
+    "term": "Stage",
+    "full": "Cancer Stage",
+    "definition": "Extent of cancer spread, determines treatment."
+  },
+  {
+    "letter": "S",
+    "term": "Stem Cell Transplant",
+    "full": "SCT",
+    "definition": "Replacing blood-forming cells, autologous or allogeneic."
+  },
+  {
+    "letter": "S",
+    "term": "Subcutaneous",
+    "full": "SubQ",
+    "definition": "Injection under skin, common for biologics."
+  },
+  {
+    "letter": "S",
+    "term": "Surrogate Endpoint",
+    "full": "",
+    "definition": "Measurable outcome predicting clinical benefit."
+  },
+  {
+    "letter": "S",
+    "term": "Synthetic Lethality",
+    "full": "",
+    "definition": "Two defects together kill cells, basis for PARP inhibitors."
+  },
+  {
+    "letter": "T",
+    "term": "T-cell",
+    "full": "",
+    "definition": "Lymphocytes that kill infected/cancer cells or coordinate immunity."
+  },
+  {
+    "letter": "T",
+    "term": "Targeted Therapy",
+    "full": "",
+    "definition": "Drugs designed for specific molecular targets in cancer."
+  },
+  {
+    "letter": "T",
+    "term": "TCR",
+    "full": "T-Cell Receptor",
+    "definition": "Recognizes antigens, engineered in TCR-T therapy."
+  },
+  {
+    "letter": "T",
+    "term": "Testicular Cancer",
+    "full": "",
+    "definition": "Usually germ cell tumors, highly curable."
+  },
+  {
+    "letter": "T",
+    "term": "Therapeutic Index",
+    "full": "TI",
+    "definition": "Ratio between toxic and effective doses."
+  },
+  {
+    "letter": "T",
+    "term": "Therapeutic Window",
+    "full": "",
+    "definition": "Dose range where drug works without excessive toxicity."
+  },
+  {
+    "letter": "T",
+    "term": "Thyroid Cancer",
+    "full": "",
+    "definition": "Includes papillary (80%), follicular, medullary, anaplastic types."
+  },
+  {
+    "letter": "T",
+    "term": "TILs",
+    "full": "Tumor-Infiltrating Lymphocytes",
+    "definition": "Immune cells in tumors, more means better prognosis."
+  },
+  {
+    "letter": "T",
+    "term": "TKI",
+    "full": "Tyrosine Kinase Inhibitor",
+    "definition": "Drugs blocking kinases, names often end in '-tinib'."
+  },
+  {
+    "letter": "T",
+    "term": "TMB",
+    "full": "Tumor Mutational Burden",
+    "definition": "Total mutations in tumor, high TMB predicts immunotherapy response."
+  },
+  {
+    "letter": "T",
+    "term": "TME",
+    "full": "Tumor Microenvironment",
+    "definition": "Ecosystem around tumor affecting its behavior."
+  },
+  {
+    "letter": "T",
+    "term": "TNBC",
+    "full": "Triple-Negative Breast Cancer",
+    "definition": "Lacks ER, PR, HER2, ~15% of breast cancers."
+  },
+  {
+    "letter": "T",
+    "term": "TNM Staging",
+    "full": "Tumor, Nodes, Metastasis",
+    "definition": "System for cancer staging."
+  },
+  {
+    "letter": "T",
+    "term": "Tox",
+    "full": "Toxicology",
+    "definition": "Studies of drug's harmful effects and safety."
+  },
+  {
+    "letter": "T",
+    "term": "TP53",
+    "full": "p53",
+    "definition": "Most commonly mutated gene in cancer."
+  },
+  {
+    "letter": "T",
+    "term": "Translational Research",
+    "full": "",
+    "definition": "'Bench to bedside' - lab discoveries to clinical practice."
+  },
+  {
+    "letter": "T",
+    "term": "Translocation",
+    "full": "",
+    "definition": "Chromosome pieces switching places, creates fusion genes."
+  },
+  {
+    "letter": "T",
+    "term": "Trastuzumab",
+    "full": "Herceptin",
+    "definition": "First HER2-targeted antibody, transformed HER2+ breast cancer."
+  },
+  {
+    "letter": "T",
+    "term": "TRK",
+    "full": "",
+    "definition": "NTRK fusions targeted by larotrectinib."
+  },
+  {
+    "letter": "T",
+    "term": "Tumor Heterogeneity",
+    "full": "",
+    "definition": "Differences between cancer cells within same tumor."
+  },
+  {
+    "letter": "T",
+    "term": "Tumor Suppressor",
+    "full": "",
+    "definition": "Genes preventing uncontrolled growth (TP53, RB, PTEN)."
+  },
+  {
+    "letter": "U",
+    "term": "Ultramutation",
+    "full": "",
+    "definition": "Extremely high mutation burden from POLE/POLD1 or MMR deficiency."
+  },
+  {
+    "letter": "U",
+    "term": "Umbrella Trial",
+    "full": "",
+    "definition": "One trial testing multiple targeted therapies for different mutations."
+  },
+  {
+    "letter": "U",
+    "term": "Undifferentiated",
+    "full": "",
+    "definition": "Cancer cells looking nothing like normal cells, very aggressive."
+  },
+  {
+    "letter": "U",
+    "term": "Unknown Primary",
+    "full": "CUP",
+    "definition": "Metastatic cancer where original site cannot be found."
+  },
+  {
+    "letter": "U",
+    "term": "Unresectable",
+    "full": "",
+    "definition": "Tumors that can't be removed surgically."
+  },
+  {
+    "letter": "U",
+    "term": "Upstream/Downstream",
+    "full": "",
+    "definition": "In biotech: upstream=growing cells, downstream=purifying product."
+  },
+  {
+    "letter": "U",
+    "term": "Urothelial Carcinoma",
+    "full": "",
+    "definition": "Most common bladder cancer type."
+  },
+  {
+    "letter": "U",
+    "term": "USP",
+    "full": "United States Pharmacopeia",
+    "definition": "Standards organization for drug quality."
+  },
+  {
+    "letter": "U",
+    "term": "Uveal Melanoma",
+    "full": "",
+    "definition": "Eye melanoma with different genetics than skin melanoma."
+  },
+  {
+    "letter": "V",
+    "term": "Vaccine",
+    "full": "",
+    "definition": "Prevention or treatment stimulating immune response, cancer vaccines in development."
+  },
+  {
+    "letter": "V",
+    "term": "Validation",
+    "full": "",
+    "definition": "Confirming biomarker or target works as expected."
+  },
+  {
+    "letter": "V",
+    "term": "VEGF",
+    "full": "Vascular Endothelial Growth Factor",
+    "definition": "Promotes blood vessel growth, targeted by bevacizumab."
+  },
+  {
+    "letter": "V",
+    "term": "VEGFR",
+    "full": "VEGF Receptor",
+    "definition": "Target of multi-kinase inhibitors like sunitinib."
+  },
+  {
+    "letter": "V",
+    "term": "Vemurafenib",
+    "full": "Zelboraf",
+    "definition": "BRAF V600E inhibitor for melanoma."
+  },
+  {
+    "letter": "V",
+    "term": "Venetoclax",
+    "full": "Venclexta",
+    "definition": "BCL2 inhibitor for CLL and AML."
+  },
+  {
+    "letter": "V",
+    "term": "VHL",
+    "full": "Von Hippel-Lindau",
+    "definition": "Tumor suppressor mutated in clear cell kidney cancer."
+  },
+  {
+    "letter": "V",
+    "term": "Vinca Alkaloid",
+    "full": "",
+    "definition": "Plant-derived chemo (vincristine, vinblastine) disrupting cell division."
+  },
+  {
+    "letter": "V",
+    "term": "Viral Load",
+    "full": "",
+    "definition": "Amount of virus in blood, monitored in infections."
+  },
+  {
+    "letter": "V",
+    "term": "Vismodegib",
+    "full": "Erivedge",
+    "definition": "Hedgehog pathway inhibitor for basal cell carcinoma."
+  },
+  {
+    "letter": "V",
+    "term": "Volume of Distribution",
+    "full": "Vd",
+    "definition": "How widely drug spreads through body."
+  },
+  {
+    "letter": "W",
+    "term": "Waldenstrom Macroglobulinemia",
+    "full": "",
+    "definition": "Indolent lymphoma producing IgM, ~90% have MYD88 mutation."
+  },
+  {
+    "letter": "W",
+    "term": "Warburg Effect",
+    "full": "",
+    "definition": "Cancer cells preferring glycolysis even with oxygen present."
+  },
+  {
+    "letter": "W",
+    "term": "Washout Period",
+    "full": "",
+    "definition": "Time between stopping one treatment and starting another."
+  },
+  {
+    "letter": "W",
+    "term": "Waterfall Plot",
+    "full": "",
+    "definition": "Graph showing each patient's tumor response in a trial."
+  },
+  {
+    "letter": "W",
+    "term": "WBC",
+    "full": "White Blood Cell",
+    "definition": "Immune cells fighting infection, lowered by chemotherapy."
+  },
+  {
+    "letter": "W",
+    "term": "Weight-Based Dosing",
+    "full": "",
+    "definition": "Calculating drug dose based on patient's body weight."
+  },
+  {
+    "letter": "W",
+    "term": "WHO",
+    "full": "World Health Organization",
+    "definition": "UN agency setting global health standards."
+  },
+  {
+    "letter": "W",
+    "term": "Whole Exome Sequencing",
+    "full": "WES",
+    "definition": "Sequencing all protein-coding genes to find mutations."
+  },
+  {
+    "letter": "W",
+    "term": "Wild-type",
+    "full": "",
+    "definition": "Normal, non-mutated version of a gene."
+  },
+  {
+    "letter": "W",
+    "term": "Window Period",
+    "full": "Therapeutic Window",
+    "definition": "Dose range where drug works without excessive toxicity."
+  },
+  {
+    "letter": "W",
+    "term": "WT1",
+    "full": "Wilms Tumor 1",
+    "definition": "Gene in kidney development, marker in some leukemias."
+  },
+  {
+    "letter": "X",
+    "term": "X-linked",
+    "full": "",
+    "definition": "Genetic conditions on X chromosome, affecting mainly males."
+  },
+  {
+    "letter": "X",
+    "term": "X-ray",
+    "full": "",
+    "definition": "Radiation for imaging, chest X-rays routine in lung cancer."
+  },
+  {
+    "letter": "X",
+    "term": "Xenograft",
+    "full": "",
+    "definition": "Transplanting human cancer cells into mice for research."
+  },
+  {
+    "letter": "X",
+    "term": "Xeroderma",
+    "full": "",
+    "definition": "Dry skin, common side effect of targeted therapies."
+  },
+  {
+    "letter": "X",
+    "term": "Xerostomia",
+    "full": "",
+    "definition": "Dry mouth from radiation or medications."
+  },
+  {
+    "letter": "X",
+    "term": "XRT",
+    "full": "External Radiation Therapy",
+    "definition": "Radiation delivered from outside the body."
+  },
+  {
+    "letter": "X",
+    "term": "XIAP",
+    "full": "X-linked Inhibitor of Apoptosis",
+    "definition": "Protein preventing cell death, overexpressed in cancer."
+  },
+  {
+    "letter": "Y",
+    "term": "Y-90",
+    "full": "Yttrium-90",
+    "definition": "Radioactive isotope for targeted radiotherapy in liver cancer."
+  },
+  {
+    "letter": "Y",
+    "term": "Yeast",
+    "full": "",
+    "definition": "Used to produce biologics through genetic engineering."
+  },
+  {
+    "letter": "Y",
+    "term": "Yellow Card",
+    "full": "",
+    "definition": "UK's adverse drug reaction reporting system."
+  },
+  {
+    "letter": "Y",
+    "term": "Yervoy",
+    "full": "Ipilimumab",
+    "definition": "Anti-CTLA-4 checkpoint inhibitor for melanoma."
+  },
+  {
+    "letter": "Y",
+    "term": "Yield",
+    "full": "",
+    "definition": "Amount of drug produced vs theoretical maximum in manufacturing."
+  },
+  {
+    "letter": "Y",
+    "term": "Yolk Sac Tumor",
+    "full": "",
+    "definition": "Rare germ cell tumor producing AFP biomarker."
+  },
+  {
+    "letter": "Y",
+    "term": "Young Adult",
+    "full": "",
+    "definition": "Age 18-39 in trials, some cancers affect this group differently."
+  },
+  {
+    "letter": "Y",
+    "term": "Yttrium",
+    "full": "",
+    "definition": "Rare earth element used in cancer radiotherapy."
+  },
+  {
+    "letter": "Z",
+    "term": "ZAP-70",
+    "full": "",
+    "definition": "Prognostic marker in CLL, presence indicates aggressive disease."
+  },
+  {
+    "letter": "Z",
+    "term": "Zeta Potential",
+    "full": "",
+    "definition": "Electrical charge affecting nanoparticle drug delivery."
+  },
+  {
+    "letter": "Z",
+    "term": "Zero-Order Kinetics",
+    "full": "",
+    "definition": "Drug eliminated at constant rate regardless of concentration."
+  },
+  {
+    "letter": "Z",
+    "term": "Zinc Finger",
+    "full": "",
+    "definition": "Protein structures for gene editing before CRISPR."
+  },
+  {
+    "letter": "Z",
+    "term": "Zone of Inhibition",
+    "full": "",
+    "definition": "Clear area showing drug effectiveness against bacteria."
+  },
+  {
+    "letter": "Z",
+    "term": "Zoonotic",
+    "full": "",
+    "definition": "Diseases jumping from animals to humans."
+  },
+  {
+    "letter": "Z",
+    "term": "Zoster",
+    "full": "Shingles",
+    "definition": "Varicella reactivation common in immunocompromised patients."
+  },
+  {
+    "letter": "Z",
+    "term": "Z-Score",
+    "full": "",
+    "definition": "Statistical measure of distance from average in trial data."
+  },
+  {
+    "letter": "Z",
+    "term": "Zygosity",
+    "full": "",
+    "definition": "Whether gene copies are identical (homo) or different (hetero)."
+  },
+  {
+    "letter": "Z",
+    "term": "Zymogen",
+    "full": "",
+    "definition": "Inactive enzyme precursor activated when needed."
+  }
+]

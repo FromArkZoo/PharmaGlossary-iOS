@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A37A6F8882BB845A660AAB0 /* PharmaGlossaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2AC3CAF08B7BCA921EAFD /* PharmaGlossaryApp.swift */; };
+		35A222E608354F79E39E7C4D /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */; };
+		38407B4845DE57E8DE03FC1D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E38546C90D38B314EB209CA /* Colors.swift */; };
+		5246BA99C15799316CB30CD0 /* TermDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E37C2FF5FACD43C57A2A048 /* TermDetailView.swift */; };
+		8434E33E025A8FDE799A1FF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E1C27794154C377F1B526 /* Assets.xcassets */; };
+		AC98DCD571CBD293834FE267 /* glossary.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D4359037BAF4890035BF24F /* glossary.json */; };
+		B4212259FC08D61BF6A70C76 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730E5938DF5BC8CF7C687E31 /* Typography.swift */; };
+		D63D4378000B3DA3C171BC29 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BD9B8F335704D468D2D62 /* RootView.swift */; };
+		E977B208360F0B1378C8A7FE /* Glossary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE29B15500756634D070132 /* Glossary.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E37C2FF5FACD43C57A2A048 /* TermDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermDetailView.swift; sourceTree = "<group>"; };
+		17A77974A0885F60BD0FB030 /* PharmaGlossary.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PharmaGlossary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3BD9B8F335704D468D2D62 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		1E38546C90D38B314EB209CA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3D4359037BAF4890035BF24F /* glossary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = glossary.json; sourceTree = "<group>"; };
+		4AE29B15500756634D070132 /* Glossary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glossary.swift; sourceTree = "<group>"; };
+		6B3E1C27794154C377F1B526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		730E5938DF5BC8CF7C687E31 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		83C2AC3CAF08B7BCA921EAFD /* PharmaGlossaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaGlossaryApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1B7F980A9F322F70CAC7E881 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4AE29B15500756634D070132 /* Glossary.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29EF4BF8F52FD625C48FD475 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */,
+				1C3BD9B8F335704D468D2D62 /* RootView.swift */,
+				0E37C2FF5FACD43C57A2A048 /* TermDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53CB1595AAD513DD50D4FE04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17A77974A0885F60BD0FB030 /* PharmaGlossary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DA4424CE580CB89633CD284 /* PharmaGlossary */ = {
+			isa = PBXGroup;
+			children = (
+				83C2AC3CAF08B7BCA921EAFD /* PharmaGlossaryApp.swift */,
+				94FC189B8DC55C523573DA77 /* DesignSystem */,
+				1B7F980A9F322F70CAC7E881 /* Models */,
+				AEA613C684A6F66CBB34E990 /* Resources */,
+				29EF4BF8F52FD625C48FD475 /* Views */,
+			);
+			path = PharmaGlossary;
+			sourceTree = "<group>";
+		};
+		94FC189B8DC55C523573DA77 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				1E38546C90D38B314EB209CA /* Colors.swift */,
+				730E5938DF5BC8CF7C687E31 /* Typography.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		AACFAD0B9B2124F44BEE2046 = {
+			isa = PBXGroup;
+			children = (
+				5DA4424CE580CB89633CD284 /* PharmaGlossary */,
+				53CB1595AAD513DD50D4FE04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEA613C684A6F66CBB34E990 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B3E1C27794154C377F1B526 /* Assets.xcassets */,
+				3D4359037BAF4890035BF24F /* glossary.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC90701B1607DD3EAD3CF7AA /* PharmaGlossary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3FC8465FEEA3B59ECCD3D1 /* Build configuration list for PBXNativeTarget "PharmaGlossary" */;
+			buildPhases = (
+				959B158B7E4D0F126B23BA9D /* Sources */,
+				2722AD44F6D0EB44AA94ECF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PharmaGlossary;
+			packageProductDependencies = (
+			);
+			productName = PharmaGlossary;
+			productReference = 17A77974A0885F60BD0FB030 /* PharmaGlossary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8657F3ECCD8A06FA0E99B84E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = B6312D2592591D51C079C79E /* Build configuration list for PBXProject "PharmaGlossary" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = AACFAD0B9B2124F44BEE2046;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 53CB1595AAD513DD50D4FE04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC90701B1607DD3EAD3CF7AA /* PharmaGlossary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2722AD44F6D0EB44AA94ECF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8434E33E025A8FDE799A1FF9 /* Assets.xcassets in Resources */,
+				AC98DCD571CBD293834FE267 /* glossary.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		959B158B7E4D0F126B23BA9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38407B4845DE57E8DE03FC1D /* Colors.swift in Sources */,
+				E977B208360F0B1378C8A7FE /* Glossary.swift in Sources */,
+				35A222E608354F79E39E7C4D /* LetterView.swift in Sources */,
+				2A37A6F8882BB845A660AAB0 /* PharmaGlossaryApp.swift in Sources */,
+				D63D4378000B3DA3C171BC29 /* RootView.swift in Sources */,
+				5246BA99C15799316CB30CD0 /* TermDetailView.swift in Sources */,
+				B4212259FC08D61BF6A70C76 /* Typography.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		39D579571C3E95E618DADE7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PharmaGlossary/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesbrowne.PharmaGlossary;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		500AD656A841A12C8CD99F07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		73683B090DFD20931FAD9996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PharmaGlossary/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesbrowne.PharmaGlossary;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C98CE8020D1FAC798F5C808A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA3FC8465FEEA3B59ECCD3D1 /* Build configuration list for PBXNativeTarget "PharmaGlossary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73683B090DFD20931FAD9996 /* Debug */,
+				39D579571C3E95E618DADE7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B6312D2592591D51C079C79E /* Build configuration list for PBXProject "PharmaGlossary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98CE8020D1FAC798F5C808A /* Debug */,
+				500AD656A841A12C8CD99F07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8657F3ECCD8A06FA0E99B84E /* Project object */;
+}
