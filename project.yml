@@ -28,7 +28,7 @@ targets:
     info:
       path: PharmaGlossary/Resources/Info.plist
       properties:
-        CFBundleDisplayName: Pharma Glossary
+        CFBundleDisplayName: JB Pharma
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         UILaunchScreen:
