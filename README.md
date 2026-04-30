@@ -2,6 +2,10 @@
 
 Native SwiftUI port of the Python tkinter pharma glossary. 324 terms across 26 letters.
 
+<p align="center">
+  <img src="docs/demo.gif" alt="Pharma Glossary demo" width="320">
+</p>
+
 ## Run on simulator
 
 ```bash
