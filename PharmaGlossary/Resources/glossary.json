@@ -29,6 +29,21 @@
   },
   {
     "letter": "A",
+    "term": "ACE Inhibitor",
+    "full": "Angiotensin-Converting Enzyme Inhibitor",
+    "snappy": "A class of blood-pressure drugs that blocks an enzyme the body uses to constrict blood vessels — first-line for hypertension, heart failure, and protecting the kidneys.",
+    "detail": "ACE inhibitors — lisinopril, enalapril, ramipril — and the closely related angiotensin receptor blockers (ARBs, like Diovan/valsartan) are workhorse cardiovascular drugs, all generic and prescribed by the millions. The 2018 valsartan recalls over nitrosamine contamination became one of pharma's biggest manufacturing crises. You'll hear ACE/ARB on cardio earnings calls as the durable generic baseline newer mechanisms have to compete with, and in FDA Form 483 discussions when API supply-chain quality surfaces.",
+    "indications": [
+      "Cardiovascular"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Adaptive Trial Design",
     "full": "",
     "snappy": "A clinical trial that lets researchers change course mid-study — adjusting dose, dropping a treatment arm, or expanding enrollment — based on what early data shows.",
@@ -67,6 +82,20 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "ADHD",
+    "full": "Attention-Deficit/Hyperactivity Disorder",
+    "snappy": "A condition marked by trouble focusing, controlling impulses, and sitting still — most often diagnosed in childhood, but increasingly recognized and treated in adults too.",
+    "detail": "ADHD treatment leans heavily on stimulants like Adderall (mixed amphetamine salts) and Ritalin (methylphenidate), supplemented by non-stimulants like Strattera (atomoxetine). Adult diagnosis has surged, driving multi-year US shortages of generic Adderall that became front-page news in 2023. You'll hear ADHD pipelines pitched at investor days as a high-growth segment, and DEA quotas on stimulant manufacturing surface regularly in earnings calls and supply commentary.",
+    "indications": [
+      "Mental Health"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH NIMH"
     ]
   },
   {
@@ -169,6 +198,20 @@
   },
   {
     "letter": "A",
+    "term": "Alzheimer's Disease",
+    "full": "",
+    "snappy": "A progressive brain disease — the most common form of dementia — where abnormal protein clumps build up and slowly destroy memory, thinking, and the ability to live independently.",
+    "detail": "Alzheimer's affects roughly 6 million Americans. Symptomatic drugs like donepezil and memantine offer modest benefit; the new disease-modifying anti-amyloid antibodies — Leqembi (lecanemab) and Kisunla (donanemab) — slow decline by 25-35% but require infusions, MRI monitoring for brain swelling, and have driven uneven Medicare coverage. You'll hear Alzheimer's at every Eli Lilly and Biogen-Eisai earnings call, and at CTAD when readouts on next-generation drugs targeting tau and earlier intervention shape investor expectations.",
+    "indications": [
+      "Neurology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH NIA"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "AML",
     "full": "Acute Myeloid Leukemia",
     "snappy": "A fast-moving blood cancer that starts in the bone marrow and demands urgent treatment — primarily affects older adults but can hit at any age.",
@@ -221,6 +264,81 @@
     "category": "Mechanism",
     "sources": [
       "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Antibiotic",
+    "full": "",
+    "snappy": "A drug that kills or stops the growth of bacteria — the foundation of modern medicine since penicillin, and increasingly under threat as bacteria evolve resistance.",
+    "detail": "Antibiotic classes range from penicillins and cephalosporins to fluoroquinolones, macrolides, and last-resort drugs like vancomycin and carbapenems. Despite enormous public-health value, antibiotics earn poor commercial returns — most are short-course generics — and the pipeline has thinned. You'll hear antibiotics framed on policy panels and at JPMorgan as a market-failure problem, and in PASTEUR Act discussions about subscription-style government payment models to revive the pipeline.",
+    "indications": [
+      "Infectious Disease"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Anticoagulant",
+    "full": "",
+    "snappy": "A blood thinner — a drug that slows the clotting cascade so dangerous clots don't form in your veins, lungs, or brain.",
+    "detail": "The class spans heparin and warfarin (cheap, requires monitoring) and the newer direct oral anticoagulants — Eliquis (apixaban), Xarelto (rivaroxaban), Pradaxa (dabigatran) — that don't require blood-test monitoring. DOACs have largely displaced warfarin in atrial fibrillation and venous thromboembolism. You'll hear anticoagulants in every BMS-Pfizer commentary on Eliquis franchise revenue, in IRA negotiation news (Eliquis is on the first Medicare list), and in stroke-prevention policy discussions.",
+    "indications": [
+      "Cardiovascular"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Antimicrobial Resistance",
+    "full": "",
+    "snappy": "What happens when bacteria, viruses, or fungi evolve to survive the drugs designed to kill them — turning routine infections into life-threatening ones.",
+    "detail": "AMR is responsible for roughly 1.3 million deaths globally each year and rising, driven by overuse of antibiotics in human medicine and livestock. The CDC tracks priority pathogens like MRSA, drug-resistant gonorrhea, and CRE; the WHO calls AMR one of the top global health threats. You'll hear AMR at WHO assemblies, in CDC press releases, and at pharma policy panels arguing for new economic models — including the proposed PASTEUR Act — to fund antibiotic R&D that markets won't.",
+    "indications": [
+      "Infectious Disease",
+      "General"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "CDC",
+      "WHO"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Antiviral",
+    "full": "",
+    "snappy": "A drug that targets viruses — typically by blocking the proteins they need to enter cells, copy themselves, or assemble new particles — without harming healthy human cells.",
+    "detail": "Antiviral classes span HIV (integrase inhibitors, NRTIs), hepatitis C (cures like Harvoni/ledipasvir-sofosbuvir), influenza (Tamiflu/oseltamivir), herpes (acyclovir), and COVID (Paxlovid/nirmatrelvir-ritonavir). Unlike antibiotics, several blockbuster antiviral franchises remain — Gilead's HIV portfolio funded its rise. You'll hear antivirals at every Gilead, Pfizer, and Merck earnings call when COVID seasonality and HIV pipelines come up, and in WHO press communications about influenza pandemic readiness.",
+    "indications": [
+      "Infectious Disease"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Anxiety Disorder",
+    "full": "",
+    "snappy": "Excessive, persistent worry that interferes with daily life — covering generalized anxiety, panic, social phobia, and PTSD as a related family of conditions.",
+    "detail": "Anxiety disorders are the most common mental health condition in the US, affecting roughly 19% of adults. Treatment combines therapy with SSRIs, SNRIs, or short-term benzodiazepines like Xanax (alprazolam), though benzo dependence is a known risk. Newer entrants target GABA pathways without sedation. You'll hear anxiety markets framed at JPMorgan as massive but commoditized, and on investor days when companies pitch novel mechanisms designed to avoid the dependence problem of older sedatives.",
+    "indications": [
+      "Mental Health"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH NIMH"
     ]
   },
   {
@@ -282,6 +400,21 @@
   },
   {
     "letter": "A",
+    "term": "Asthma",
+    "full": "",
+    "snappy": "A chronic condition where the airways tighten, swell, and fill with mucus — causing wheezing, coughing, and shortness of breath that ranges from mild to life-threatening.",
+    "detail": "Asthma treatment escalates from rescue inhalers (albuterol) to maintenance inhaled corticosteroids and combination LABA/ICS inhalers like Advair, then to biologics for severe disease — Dupixent (dupilumab), Xolair (omalizumab), Nucala (mepolizumab), Tezspire (tezepelumab). The biologic shift has split the market between cheap generic inhalers and high-priced injectables. You'll hear asthma on every GSK, Sanofi-Regeneron, and AstraZeneca earnings call, and at ATS when biomarker-defined patient subsets reshape which biologic wins for whom.",
+    "indications": [
+      "Respiratory",
+      "Immunology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Astrocytoma",
     "full": "",
     "snappy": "A brain tumor that arises from star-shaped support cells called astrocytes — the family includes glioblastoma, the most aggressive.",
@@ -307,6 +440,20 @@
     "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Atrial Fibrillation",
+    "full": "",
+    "snappy": "An irregular, often fast heartbeat caused by chaotic electrical signals in the upper chambers — the most common heart-rhythm problem and a leading cause of stroke.",
+    "detail": "Afib treatment has two arms: rhythm/rate control (drugs like amiodarone or procedures like ablation) and stroke prevention with anticoagulants. The shift from warfarin to direct oral anticoagulants — Eliquis (apixaban), Xarelto (rivaroxaban) — is one of the biggest commercial stories of the last decade. You'll hear afib on every BMS and Pfizer earnings call given Eliquis's status as one of pharma's largest drugs, and at HRS when ablation device makers report procedure volumes.",
+    "indications": [
+      "Cardiovascular"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
     ]
   },
   {
@@ -378,6 +525,22 @@
     "category": "Mechanism",
     "sources": [
       "FDA"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Biologic",
+    "full": "",
+    "snappy": "A drug grown from living cells rather than synthesized in a chemistry lab — antibodies, proteins, vaccines, and gene therapies all fall under the biologic umbrella.",
+    "detail": "Biologics are larger and more complex than small-molecule pills, must be injected or infused, and cost far more to manufacture — driving high prices and the rise of biosimilars after patents expire. Examples span Humira (adalimumab) for autoimmune disease, Keytruda (pembrolizumab) for cancer, and the COVID mRNA vaccines. You'll hear biologic versus small-molecule debates everywhere in pharma — at JPMorgan when companies pitch their pipeline mix, and on earnings calls when biosimilar erosion forecasts hit.",
+    "indications": [
+      "General",
+      "Immunology"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
     ]
   },
   {
@@ -809,6 +972,20 @@
     "category": "Commercial / Market Access",
     "sources": [
       "CMS Glossary"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "COPD",
+    "full": "Chronic Obstructive Pulmonary Disease",
+    "snappy": "Long-term lung damage, mostly from smoking, that makes breathing progressively harder and can't be reversed — only slowed and managed with the right treatment.",
+    "detail": "COPD covers chronic bronchitis and emphysema and affects roughly 16 million diagnosed Americans, with millions more undiagnosed. Treatment relies on inhaled bronchodilators (LABA, LAMA) and corticosteroids — Trelegy (fluticasone-umeclidinium-vilanterol) is the leading triple-therapy inhaler. The first IL-targeting biologic, Dupixent (dupilumab), was approved for COPD in 2024, opening a new chapter. You'll hear COPD on GSK, AstraZeneca, and Sanofi-Regeneron earnings calls as a market shifting from generic inhalers to biologics.",
+    "indications": [
+      "Respiratory"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
     ]
   },
   {
@@ -1477,6 +1654,22 @@
   },
   {
     "letter": "G",
+    "term": "GLP-1 Agonist",
+    "full": "",
+    "snappy": "A drug that mimics a natural gut hormone to lower blood sugar and curb appetite — the engine behind the Ozempic and Wegovy phenomenon.",
+    "detail": "GLP-1 receptor agonists — Ozempic (semaglutide), Mounjaro (tirzepatide, dual GLP-1/GIP), Trulicity (dulaglutide), Wegovy — were originally approved for type 2 diabetes, then revolutionized obesity treatment with weight loss of 15-20%. New trials show benefit in heart failure, kidney disease, and possibly Alzheimer's. You'll hear GLP-1 dominate every Novo Nordisk and Eli Lilly earnings call, and at JPMorgan it's the single most-discussed therapeutic class — supply, oral formulations, and label expansions are the running storylines.",
+    "indications": [
+      "Metabolic",
+      "Cardiovascular"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "GMP",
     "full": "Good Manufacturing Practice",
     "snappy": "The quality standards drug manufacturers must follow to make sure every batch is safe, pure, and consistent — enforced by FDA inspections.",
@@ -1572,6 +1765,20 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "Heart Failure",
+    "full": "",
+    "snappy": "A condition where the heart can't pump enough blood to meet the body's needs — not the same as a heart attack, and increasingly manageable as a chronic disease.",
+    "detail": "Heart failure is split into reduced (HFrEF) and preserved (HFpEF) ejection fraction — for years only HFrEF had effective drugs, but SGLT2 inhibitors like Jardiance (empagliflozin) changed that. The four-pillar regimen (ARNI, beta blocker, MRA, SGLT2) is now guideline-standard. You'll hear heart failure framed on Boehringer, AstraZeneca, and Novartis earnings calls as a multi-billion-dollar growth story driven by HFpEF expansion, and at AHA and ESC when trial readouts redefine standard of care.",
+    "indications": [
+      "Cardiovascular"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
     ]
   },
   {
@@ -1694,6 +1901,20 @@
   },
   {
     "letter": "H",
+    "term": "Hypertension",
+    "full": "",
+    "snappy": "Chronically high blood pressure — the silent driver of heart attacks, strokes, and kidney failure that affects nearly half of US adults.",
+    "detail": "Hypertension is treated with a stepwise stack: ACE inhibitors or ARBs first, often layered with diuretics, calcium-channel blockers, and beta blockers. Most drugs are generic and cheap, making it a low-margin commercial space. You'll hear hypertension less on earnings calls than in policy commentary — uncontrolled blood pressure is the biggest preventable driver of US cardiovascular disease, and population-health programs at insurers and integrated systems live or die on their hypertension numbers.",
+    "indications": [
+      "Cardiovascular"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "H",
     "term": "Hypoxia",
     "full": "",
     "snappy": "Low oxygen levels — a condition tumors create as they outgrow their blood supply, paradoxically making them harder to kill with radiation and chemo.",
@@ -1793,6 +2014,21 @@
   },
   {
     "letter": "I",
+    "term": "Inflammatory Bowel Disease",
+    "full": "",
+    "snappy": "An umbrella term for chronic conditions — Crohn's disease and ulcerative colitis — where the immune system attacks the digestive tract, causing pain, bleeding, and severe diarrhea.",
+    "detail": "IBD treatment ranges from steroids and 5-ASAs to biologics like Humira (adalimumab), Stelara (ustekinumab), and the IL-23 class led by Skyrizi (risankizumab) and Tremfya (guselkumab). Patients often cycle through multiple biologics as drugs lose effect over years. You'll hear IBD on AbbVie, J&J, and Takeda earnings calls as a multi-billion-dollar autoimmune market, and at Digestive Disease Week (DDW) when head-to-head trial readouts shake up prescribing patterns.",
+    "indications": [
+      "Immunology",
+      "Gastroenterology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "I",
     "term": "Informed Consent",
     "full": "",
     "snappy": "The legal and ethical promise that patients in a clinical trial understand the risks, benefits, and alternatives — and agree freely, in writing, to participate.",
@@ -1818,6 +2054,21 @@
     "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Insulin",
+    "full": "",
+    "snappy": "The hormone your pancreas makes to move sugar out of your blood and into your cells — and the lifesaving drug people with diabetes use when their bodies can't.",
+    "detail": "Insulin has been pharma since Banting's 1921 discovery, with modern forms ranging from short-acting Humalog (lispro) to ultra-long Tresiba (degludec). Pricing became a political flashpoint in the 2010s after list prices tripled, and the 2022 Inflation Reduction Act capped Medicare insulin copays at $35. You'll hear insulin in every diabetes earnings call, in coverage debates, and at hearings on PBM and manufacturer pricing — it's the textbook example of US drug-pricing controversy.",
+    "indications": [
+      "Metabolic"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
     ]
   },
   {
@@ -2240,6 +2491,20 @@
   },
   {
     "letter": "M",
+    "term": "Major Depressive Disorder",
+    "full": "",
+    "snappy": "Persistent low mood, loss of interest, and physical symptoms like sleep and appetite changes — diagnosed when they last at least two weeks and disrupt daily life.",
+    "detail": "MDD affects roughly 8% of US adults in any given year and is the leading cause of disability worldwide. First-line treatment is usually SSRIs or SNRIs paired with talk therapy, but newer options include Spravato (esketamine) for treatment-resistant cases and the rapid-acting Auvelity (dextromethorphan-bupropion). You'll hear MDD framed at JPMorgan as one of the largest underserved markets in pharma, and at investor days when companies pitch novel mechanisms beyond the serotonin pathway.",
+    "indications": [
+      "Mental Health"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH NIMH"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Mantle Cell Lymphoma",
     "full": "MCL",
     "snappy": "An aggressive, hard-to-cure non-Hodgkin lymphoma defined by a specific gene translocation that switches on a key cell-cycle regulator.",
@@ -2456,6 +2721,20 @@
   },
   {
     "letter": "M",
+    "term": "Migraine",
+    "full": "",
+    "snappy": "A severe, often disabling headache — usually one-sided, throbbing, and accompanied by nausea, light sensitivity, or visual auras — that can knock people out for hours or days.",
+    "detail": "Acute migraine treatment ranges from triptans like sumatriptan to the newer gepants — Nurtec (rimegepant), Ubrelvy (ubrogepant). Prevention has been transformed by anti-CGRP monoclonal antibodies (Aimovig/erenumab, Ajovy, Emgality) and oral CGRP-targeting drugs. You'll hear migraine pitched on AbbVie, Pfizer, and Lilly earnings calls as a high-growth specialty market, and at AHS when head-to-head data on CGRP drugs reshape prescribing — it's one of the most actively prescribed-by-neurologists categories.",
+    "indications": [
+      "Neurology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "mRNA Therapy",
     "full": "",
     "snappy": "A treatment that delivers a strand of genetic instructions to your cells, telling them to make a protein — used in COVID vaccines and now expanding to cancer.",
@@ -2483,6 +2762,21 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Multiple Sclerosis",
+    "full": "",
+    "snappy": "An autoimmune disease where the immune system attacks the protective coating of nerves — disrupting signals between brain and body and causing symptoms that flare and remit.",
+    "detail": "MS treatment is built around disease-modifying therapies that reduce relapses: high-efficacy infused drugs like Ocrevus (ocrelizumab) and Tysabri (natalizumab), oral options like Mavenclad (cladribine) and Tecfidera (dimethyl fumarate), and a growing class of S1P modulators. You'll hear MS at Roche, Biogen, and Novartis earnings calls as a fiercely competitive market, and at ECTRIMS and AAN when new readouts on remyelination or progressive MS shift competitive positioning.",
+    "indications": [
+      "Neurology",
+      "Immunology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
     ]
   },
   {
@@ -3065,6 +3359,20 @@
   },
   {
     "letter": "P",
+    "term": "Parkinson's Disease",
+    "full": "",
+    "snappy": "A progressive movement disorder caused by the loss of dopamine-producing brain cells — leading to tremor, stiffness, and slowness, and often affecting mood and thinking later.",
+    "detail": "Parkinson's treatment has been dominated for 50 years by levodopa, which replaces missing dopamine but loses effectiveness over time. Newer extended-release and inhaled formulations — Inbrija (inhaled levodopa), Crexont — and adjuncts like MAO-B inhibitors fill gaps. Disease-modifying therapy remains the holy grail. You'll hear Parkinson's at every neurology investor day where companies pitch alpha-synuclein and GBA-targeted programs, and at MDS Congress when surgical approaches like deep brain stimulation get reframed by new device generations.",
+    "indications": [
+      "Neurology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH NIA"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "PARP Inhibitor",
     "full": "",
     "snappy": "A class of drugs that block a key DNA-repair enzyme — devastating to tumors that already have broken DNA-repair machinery (especially BRCA-mutated cancers).",
@@ -3307,6 +3615,21 @@
   },
   {
     "letter": "P",
+    "term": "PrEP",
+    "full": "Pre-Exposure Prophylaxis",
+    "snappy": "A daily pill or injection that lowers a person's risk of getting HIV by roughly 99% when taken as directed — a public-health breakthrough hiding in plain sight.",
+    "detail": "PrEP is delivered as oral Truvada (emtricitabine-tenofovir) and Descovy, plus the long-acting injectable Apretude (cabotegravir) given every two months. Apretude addresses adherence, the biggest weak point of daily pills. Yet uptake remains far below need, especially in Southern US states most affected by HIV. You'll hear PrEP at Gilead and ViiV earnings calls, in CDC End the HIV Epidemic updates, and in policy debates about Medicaid and 340B coverage that determine whether PrEP actually reaches at-risk populations.",
+    "indications": [
+      "Infectious Disease"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "FDA",
+      "CDC"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Primary Endpoint",
     "full": "",
     "snappy": "The single, pre-declared measurement a clinical trial is built to answer — the outcome the whole study is powered to detect, win or lose.",
@@ -3387,6 +3710,21 @@
     "category": "Clinical",
     "sources": [
       "FDA"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Psoriasis",
+    "full": "",
+    "snappy": "A chronic autoimmune skin disease where overactive immune signals make skin cells multiply too fast — leaving thick, scaly red patches that can crack and bleed.",
+    "detail": "Psoriasis treatment has moved from topical creams to a procession of biologics — TNF inhibitors, IL-17 blockers like Cosentyx (secukinumab) and Taltz (ixekizumab), and IL-23 blockers like Skyrizi (risankizumab) — each cycle delivering higher skin-clearance rates. Up to 30% of patients also develop psoriatic arthritis. You'll hear psoriasis on AbbVie, Novartis, and Lilly earnings calls as one of the most competitive biologic markets, and at AAD when new clearance data resets the standard of care.",
+    "indications": [
+      "Immunology",
+      "Dermatology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
     ]
   },
   {
@@ -3709,6 +4047,20 @@
   },
   {
     "letter": "R",
+    "term": "Rheumatoid Arthritis",
+    "full": "",
+    "snappy": "An autoimmune disease where the immune system attacks the lining of joints — causing pain, swelling, and over time the kind of damage that deforms hands and feet.",
+    "detail": "RA treatment has evolved from old-school methotrexate to TNF inhibitors like Humira (adalimumab), JAK inhibitors like Rinvoq (upadacitinib), and IL-6 blockers like Actemra (tocilizumab). Patients are typically managed by rheumatologists who escalate therapy as the disease progresses. You'll hear RA mentioned at every immunology investor day as the foundational autoimmune market, and on AbbVie and Lilly earnings calls when JAK inhibitors come up — they carry FDA Black Box Warnings for cardiovascular and cancer risk.",
+    "indications": [
+      "Immunology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "RNA",
     "full": "Ribonucleic Acid",
     "snappy": "The molecular messenger that carries genetic instructions from DNA to make proteins — and the basis for a new wave of vaccines and therapies.",
@@ -3769,6 +4121,20 @@
   },
   {
     "letter": "S",
+    "term": "Schizophrenia",
+    "full": "",
+    "snappy": "A serious mental illness causing hallucinations, delusions, and disorganized thinking — typically emerging in young adulthood and lifelong, but manageable with the right treatment.",
+    "detail": "Treatment relies on antipsychotics — older ones like haloperidol and newer atypicals like Abilify (aripiprazole), Latuda (lurasidone), and Cobenfy (xanomeline-trospium), the first non-dopamine antipsychotic approved by the FDA in decades. Long-acting injectable forms help patients who struggle with daily pills. You'll hear schizophrenia framed at JPMorgan as one of the most stagnant therapeutic areas before Cobenfy's 2024 approval reset expectations, and on launch calls discussing the long-acting injectable market.",
+    "indications": [
+      "Mental Health"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH NIMH"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SCLC",
     "full": "Small Cell Lung Cancer",
     "snappy": "A particularly aggressive form of lung cancer that grows fast, spreads quickly, and is almost always linked to a long smoking history.",
@@ -3824,6 +4190,22 @@
     "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "SGLT2 Inhibitor",
+    "full": "",
+    "snappy": "A class of pills that lowers blood sugar by making the kidneys flush excess glucose into the urine — and unexpectedly turned out to also protect the heart.",
+    "detail": "Originally approved for type 2 diabetes, SGLT2 inhibitors — Jardiance (empagliflozin), Farxiga (dapagliflozin), Invokana (canagliflozin) — proved in landmark trials to reduce cardiovascular death and hospitalization in heart failure patients regardless of diabetes status, and to slow chronic kidney disease. The class has become standard of care across cardiology and nephrology. You'll hear SGLT2s on every cardio earnings call and at AHA when guideline updates expand their use.",
+    "indications": [
+      "Metabolic",
+      "Cardiovascular"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
     ]
   },
   {
@@ -3901,6 +4283,21 @@
   },
   {
     "letter": "S",
+    "term": "SSRI",
+    "full": "Selective Serotonin Reuptake Inhibitor",
+    "snappy": "The most-prescribed class of antidepressants — they raise serotonin levels in the brain by blocking the molecular vacuum that would normally pull it back into nerve cells.",
+    "detail": "Prozac (fluoxetine), Zoloft (sertraline), and Lexapro (escitalopram) are the household-name SSRIs, used in depression, anxiety, OCD, and PTSD. They work over weeks rather than instantly, and carry the FDA's Black Box Warning for suicide risk in young patients. You'll hear SSRIs in earnings calls when generics-vs-brand pricing comes up, and in policy debates around mental-health access — they're one of the most prescribed drug classes in the US.",
+    "indications": [
+      "Mental Health"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Stage",
     "full": "Cancer Stage",
     "snappy": "How far cancer has spread — usually 1 (localized) to 4 (metastatic) — and the single most important factor in choosing treatment and predicting outcomes.",
@@ -3911,6 +4308,22 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Statin",
+    "full": "",
+    "snappy": "The class of cholesterol-lowering pills nearly every American over 50 has been offered — they block the liver enzyme that builds cholesterol from scratch.",
+    "detail": "Statins — Lipitor (atorvastatin), Crestor (rosuvastatin), simvastatin — are among the most-prescribed drugs in history, proven to cut heart attacks and strokes by roughly 25% in at-risk patients. All major statins are now generic and cost pennies a pill. You'll hear statins on cardio earnings calls as the durable backdrop newer cholesterol drugs (PCSK9 inhibitors, RNAi like Leqvio) have to beat on either potency or convenience, and in formulary discussions as the textbook generic baseline.",
+    "indications": [
+      "Cardiovascular",
+      "Metabolic"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
     ]
   },
   {
@@ -4156,6 +4569,21 @@
   },
   {
     "letter": "T",
+    "term": "TNF Inhibitor",
+    "full": "Tumor Necrosis Factor Inhibitor",
+    "snappy": "A class of biologic drugs that block tumor necrosis factor — an inflammation-driving signal — to dial down overactive immune attacks in autoimmune disease.",
+    "detail": "TNF inhibitors — Humira (adalimumab), Enbrel (etanercept), Remicade (infliximab) — transformed treatment of rheumatoid arthritis, Crohn's, ulcerative colitis, and psoriasis starting in the late 1990s. Humira was the world's top-selling drug for years before biosimilars arrived in 2023. You'll hear TNF inhibitors on every AbbVie earnings call as the post-Humira-cliff transition story, and in formulary discussions about how aggressively PBMs steer patients to biosimilars to capture savings.",
+    "indications": [
+      "Immunology"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "TNM Staging",
     "full": "Tumor, Nodes, Metastasis",
     "snappy": "The international cancer staging system — T for tumor size, N for lymph nodes involved, M for metastases — combined into stage groups from I to IV.",
@@ -4279,6 +4707,20 @@
     "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Type 2 Diabetes",
+    "full": "",
+    "snappy": "A chronic condition where the body either doesn't make enough insulin or stops responding to it properly — leading to dangerously high blood sugar over time.",
+    "detail": "T2D affects roughly 11% of US adults and drives massive downstream costs in heart disease, kidney failure, blindness, and amputations. Treatment has shifted from metformin-only to GLP-1 agonists like Ozempic (semaglutide) and SGLT2 inhibitors like Jardiance (empagliflozin), often layered together. You'll hear T2D framed at JPMorgan as a market reshaped overnight by GLP-1s, and on managed-care calls discussing how Medicare coverage and copay barriers shape which patients actually get newer drugs.",
+    "indications": [
+      "Metabolic"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
     ]
   },
   {
