@@ -1,5 +1,47 @@
 [
   {
+    "letter": "3",
+    "term": "340B",
+    "full": "",
+    "snappy": "A federal program that forces drugmakers to sell heavily discounted medicines to hospitals and clinics serving low-income patients — controversial because of how the savings get used.",
+    "detail": "Created in 1992, 340B requires manufacturers to give qualifying safety-net providers steep discounts (often 25-50% off list price) on outpatient drugs. The program has ballooned in size and become a flashpoint: pharma argues hospitals pocket the savings instead of passing them to patients, while hospitals say it funds critical care. You'll see 340B fights surface in earnings calls, congressional testimony, and lawsuits between manufacturers and HRSA.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "HRSA"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Accelerated Approval",
+    "full": "",
+    "snappy": "An FDA fast-track that lets a drug reach patients based on early evidence — but requires the company to confirm benefit in follow-up trials, or risk getting yanked.",
+    "detail": "Accelerated approval relies on a surrogate measure — like tumor shrinkage instead of survival — to grant approval years earlier than full evidence would allow. The pathway has been controversial: Aduhelm (aducanumab) for Alzheimer's was accelerated, then commercially failed. Companies must run confirmatory trials post-approval, and the FDA can withdraw the drug if benefit doesn't hold. You'll hear \"accel approval\" on every oncology earnings call and at ASCO when companies discuss launch timing.",
+    "indications": [
+      "General"
+    ],
+    "category": "Regulatory",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Adaptive Trial Design",
+    "full": "",
+    "snappy": "A clinical trial that lets researchers change course mid-study — adjusting dose, dropping a treatment arm, or expanding enrollment — based on what early data shows.",
+    "detail": "Adaptive designs use pre-specified rules so changes don't compromise statistical integrity. Common adaptations include sample-size re-estimation, response-adaptive randomization, and seamless Phase 2/3 transitions. The FDA published guidance encouraging the approach, and COVID-era trials like RECOVERY popularized it. You'll hear adaptive design pitched at every R&D day as a way to cut development time and cost, and at ASCO when trials use early-stage signals to decide which combinations to push forward.",
+    "indications": [
+      "General"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
     "letter": "A",
     "term": "ADC",
     "full": "Antibody-Drug Conjugate",
@@ -29,20 +71,6 @@
   },
   {
     "letter": "A",
-    "term": "ADME",
-    "full": "Absorption, Distribution, Metabolism, Excretion",
-    "snappy": "The four-step journey every drug takes through your body — getting in, getting around, getting broken down, and getting out.",
-    "detail": "ADME is the framework drug developers use to predict how a drug behaves once it enters the body. Each step affects how much drug reaches the target, how long it lasts, and what side effects emerge. You'll hear ADME on biotech earnings calls when companies discuss whether a candidate has good \"drug-like properties,\" and in early-stage trial design where these properties first get measured.",
-    "indications": [
-      "General"
-    ],
-    "category": "Mechanism",
-    "sources": [
-      "FDA"
-    ]
-  },
-  {
-    "letter": "A",
     "term": "Adjuvant",
     "full": "",
     "snappy": "The follow-up treatment after surgery or radiation, designed to mop up cancer cells you can't see and stop the disease coming back.",
@@ -53,6 +81,20 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "ADME",
+    "full": "Absorption, Distribution, Metabolism, Excretion",
+    "snappy": "The four-step journey every drug takes through your body — getting in, getting around, getting broken down, and getting out.",
+    "detail": "ADME is the framework drug developers use to predict how a drug behaves once it enters the body. Each step affects how much drug reaches the target, how long it lasts, and what side effects emerge. You'll hear ADME on biotech earnings calls when companies discuss whether a candidate has good \"drug-like properties,\" and in early-stage trial design where these properties first get measured.",
+    "indications": [
+      "General"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA"
     ]
   },
   {
@@ -137,6 +179,20 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "ANDA",
+    "full": "Abbreviated New Drug Application",
+    "snappy": "The shortcut a generic drug company files instead of a full new-drug application — proving its copy is bioequivalent to the original branded drug.",
+    "detail": "ANDAs let generic manufacturers skip duplicating safety and efficacy trials, since the original drug already proved them — they only need to show their version delivers the same active ingredient at the same rate. After the brand's patents expire, multiple generics typically file ANDAs to compete on price. You'll see ANDA filings drive earnings volatility for any company with a major drug nearing patent cliff, and \"first-to-file\" generics earn 180-day exclusivity.",
+    "indications": [
+      "General"
+    ],
+    "category": "Regulatory",
+    "sources": [
+      "FDA"
     ]
   },
   {
@@ -370,6 +426,49 @@
   },
   {
     "letter": "B",
+    "term": "Bispecific Antibody",
+    "full": "",
+    "snappy": "An engineered antibody with two grabbers instead of one — designed to grab a cancer cell with one hand and an immune cell with the other, forcing them together.",
+    "detail": "Bispecifics — also called BiTEs (Bispecific T-cell Engagers) — physically yoke a tumor cell to a T-cell so the immune system kills it on contact. Approved examples include Blincyto (blinatumomab) for leukemia and Tecvayli (teclistamab) for multiple myeloma. The class has expanded fast across blood and solid cancers, and is one of the most-watched modalities at ASCO and in oncology investor decks.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "BLA",
+    "full": "Biologics License Application",
+    "snappy": "The paperwork a company files with the FDA to win approval to sell a biologic drug — anything from a vaccine to an antibody to a cell therapy.",
+    "detail": "BLAs go to the FDA's biologics center (CBER) or drug center (CDER) depending on the product, and run on the PDUFA review clock just like small-molecule applications. Recent high-profile BLA approvals include bluebird's gene therapies for sickle cell and several GLP-1 biologics. You'll hear \"BLA filing\" celebrated in press releases and earnings calls — it marks the moment a company has handed its full dossier to regulators and is awaiting the verdict.",
+    "indications": [
+      "General"
+    ],
+    "category": "Regulatory",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Black Box Warning",
+    "full": "",
+    "snappy": "The FDA's strongest safety alert — a warning printed in a literal black-bordered box on a drug's label when the risks are serious enough to demand prescriber attention.",
+    "detail": "Black Box Warnings are added when post-market surveillance or clinical trials reveal a risk of serious harm — well-known examples include certain antidepressants flagged for suicide risk in young patients, and some immunotherapies for severe autoimmune side effects. The warning doesn't pull a drug from the market; it requires prescribers to weigh the risk explicitly. You'll see the term in FDA press releases, legal proceedings, and any commercial discussion of a drug's market trajectory after the warning lands.",
+    "indications": [
+      "General"
+    ],
+    "category": "Pharmacovigilance",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "Bladder Cancer",
     "full": "",
     "snappy": "Cancer that starts in the lining of the bladder — most often in long-time smokers — and frequently recurs even after early-stage treatment.",
@@ -453,6 +552,20 @@
     "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Breakthrough Therapy Designation",
+    "full": "",
+    "snappy": "An FDA badge granted to drugs targeting serious conditions when early evidence suggests they're substantially better than existing options — bringing intensive agency support along the way.",
+    "detail": "Created in 2012, Breakthrough Therapy is one of four FDA expedited programs and includes more frequent FDA meetings, intensive guidance on trial design, and eligibility for rolling review. Roughly half of recent oncology approvals carried the designation. You'll see \"Breakthrough\" stamped on press releases the day it's granted — pharma stocks often pop on the news, and analysts track the running tally of breakthrough drugs at every JPMorgan.",
+    "indications": [
+      "General"
+    ],
+    "category": "Regulatory",
+    "sources": [
+      "FDA"
     ]
   },
   {
@@ -656,6 +769,21 @@
   },
   {
     "letter": "C",
+    "term": "Cold Chain",
+    "full": "",
+    "snappy": "An unbroken refrigeration network from factory to patient — required for biologics, vaccines, and cell therapies that lose potency the moment they warm up.",
+    "detail": "Cold chain logistics range from standard 2-8°C refrigeration for most biologics to ultra-cold -70°C handling for the original Pfizer COVID vaccine and cell therapies like Kymriah (tisagenlecleucel). A single excursion outside spec can force a shipment to be discarded. You'll hear cold chain framed as a barrier in commercial discussions of biologic launches in emerging markets, and as a competitive moat for companies that have built reliable logistics partnerships.",
+    "indications": [
+      "General"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "FDA",
+      "WHO"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Colorectal Cancer",
     "full": "CRC",
     "snappy": "Cancer of the colon or rectum — the third most common cancer globally, and one of the most preventable through screening colonoscopies.",
@@ -667,6 +795,20 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Copay",
+    "full": "",
+    "snappy": "The flat fee you pay at the pharmacy counter when you fill a prescription — separate from your premium and your deductible.",
+    "detail": "Copays are set by your insurance plan and vary by formulary tier — generics might cost $5, preferred brands $30, specialty drugs hundreds or thousands. Pharma often offers \"copay cards\" to cover the patient's share for branded drugs, a practice insurers and PBMs argue inflates overall spend. You'll hear copay strategy debated on launch-readiness calls and in commercial discussions of how patients actually access a newly approved drug.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "CMS Glossary"
     ]
   },
   {
@@ -837,6 +979,20 @@
       "General"
     ],
     "category": "Pharmacovigilance",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "DTx",
+    "full": "Digital Therapeutic",
+    "snappy": "A software-based treatment — usually an app — designed to prevent or manage a medical condition, sometimes prescribed by a doctor like a pill.",
+    "detail": "Digital therapeutics deliver evidence-based interventions through software, ranging from cognitive behavioral therapy apps for insomnia to attention-training games for ADHD. Some are FDA-cleared and prescription-only — known as \"PDTs\" (Prescription Digital Therapeutics) — while others are over-the-counter. You'll hear DTx in pharma earnings calls when companies pitch software as the next growth frontier, and at health-tech conferences where pilots are being run with insurers.",
+    "indications": [
+      "General"
+    ],
+    "category": "Digital Health",
     "sources": [
       "FDA"
     ]
@@ -1145,6 +1301,20 @@
   },
   {
     "letter": "F",
+    "term": "Formulary",
+    "full": "",
+    "snappy": "The list of drugs your insurance will pay for — and the rules that decide what it costs you when you fill a prescription.",
+    "detail": "Insurers and pharmacy benefit managers (PBMs) build formularies to control costs, negotiating rebates with drugmakers in exchange for preferred placement. A drug's tier on the formulary determines patient copays, prior-authorization requirements, and ultimately how easily it gets prescribed. Pharma launch teams obsess over formulary access — at JPMorgan and on earnings calls you'll hear it called \"access\" or \"reimbursement,\" and it's often the difference between a drug's commercial success and failure.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "CMS Glossary"
+    ]
+  },
+  {
+    "letter": "F",
     "term": "Formulation",
     "full": "",
     "snappy": "The specific recipe and physical form of a drug product — pill, injection, patch, inhaler — and the choices that affect how (and whether) it works.",
@@ -1196,37 +1366,6 @@
     "indications": [
       "Oncology",
       "Gastroenterology"
-    ],
-    "category": "Clinical",
-    "sources": [
-      "NCI Dictionary of Cancer Terms"
-    ]
-  },
-  {
-    "letter": "G",
-    "term": "GIST",
-    "full": "Gastrointestinal Stromal Tumor",
-    "snappy": "A rare sarcoma of the digestive tract — and one of oncology's biggest precision-medicine wins after Gleevec turned a deadly cancer into a manageable disease.",
-    "detail": "Most GISTs carry KIT or PDGFRA mutations, making them dramatically responsive to imatinib (Gleevec) and successor drugs Sutent (sunitinib), Stivarga (regorafenib), and Qinlock (ripretinib). The cancer is the textbook proof that targeted therapy works in solid tumors. You'll hear GIST in sarcoma research and in any commercial discussion of KIT-driven oncology.",
-    "indications": [
-      "Oncology",
-      "Rare Disease",
-      "Gastroenterology"
-    ],
-    "category": "Mechanism",
-    "sources": [
-      "NCI Dictionary of Cancer Terms"
-    ]
-  },
-  {
-    "letter": "G",
-    "term": "Glioblastoma",
-    "full": "GBM",
-    "snappy": "The most aggressive brain cancer — fast-growing, deeply infiltrating, and despite intensive treatment, currently incurable in nearly all cases.",
-    "detail": "GBM has median survival of about 15 months despite surgery, radiation, and temozolomide chemotherapy. Tumor Treating Fields (Optune) is one of the few additions in decades. The disease is a perennial focus of biotech-and-academic effort, but most trials have failed. You'll hear GBM in neuro-oncology research, in patient-advocacy fundraising, and in commercial pitches highlighting an underserved indication.",
-    "indications": [
-      "Oncology",
-      "Neurology"
     ],
     "category": "Clinical",
     "sources": [
@@ -1292,6 +1431,37 @@
   },
   {
     "letter": "G",
+    "term": "GIST",
+    "full": "Gastrointestinal Stromal Tumor",
+    "snappy": "A rare sarcoma of the digestive tract — and one of oncology's biggest precision-medicine wins after Gleevec turned a deadly cancer into a manageable disease.",
+    "detail": "Most GISTs carry KIT or PDGFRA mutations, making them dramatically responsive to imatinib (Gleevec) and successor drugs Sutent (sunitinib), Stivarga (regorafenib), and Qinlock (ripretinib). The cancer is the textbook proof that targeted therapy works in solid tumors. You'll hear GIST in sarcoma research and in any commercial discussion of KIT-driven oncology.",
+    "indications": [
+      "Oncology",
+      "Rare Disease",
+      "Gastroenterology"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Glioblastoma",
+    "full": "GBM",
+    "snappy": "The most aggressive brain cancer — fast-growing, deeply infiltrating, and despite intensive treatment, currently incurable in nearly all cases.",
+    "detail": "GBM has median survival of about 15 months despite surgery, radiation, and temozolomide chemotherapy. Tumor Treating Fields (Optune) is one of the few additions in decades. The disease is a perennial focus of biotech-and-academic effort, but most trials have failed. You'll hear GBM in neuro-oncology research, in patient-advocacy fundraising, and in commercial pitches highlighting an underserved indication.",
+    "indications": [
+      "Oncology",
+      "Neurology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "Glioma",
     "full": "",
     "snappy": "The umbrella name for brain tumors arising from glial cells — the supporting cells of the nervous system — graded by aggressiveness from 1 to 4.",
@@ -1331,6 +1501,20 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Gross-to-Net",
+    "full": "",
+    "snappy": "The gap between a drug's list price and what the manufacturer actually keeps after rebates, discounts, fees, and chargebacks — often half of revenue or more.",
+    "detail": "Gross-to-net adjustments are the deductions pharma takes off list price before booking real revenue: PBM rebates, 340B discounts, Medicaid mandatory rebates, distributor fees, and patient assistance. For drugs like Humira (adalimumab) or Eliquis (apixaban) the GTN bubble can exceed 50%. You'll hear analysts grill CFOs on \"net pricing\" at every earnings call, and it's the single biggest line item between a drug's headline price and what reaches the bottom line.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "CMS Glossary"
     ]
   },
   {
@@ -1402,6 +1586,21 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "HEOR",
+    "full": "Health Economics and Outcomes Research",
+    "snappy": "The discipline that translates a drug's clinical benefit into dollars and quality-of-life numbers — building the case payers actually want to see before they'll cover it.",
+    "detail": "HEOR teams produce the evidence pharma uses in formulary submissions, ICER reviews, and payer negotiations: cost-effectiveness models, budget-impact analyses, and real-world outcomes data. Quality-adjusted life years (QALYs) are a common currency, especially in markets like the UK's NICE. You'll hear HEOR cited at every launch readiness review and ISPOR conference, and in commercial discussions of how to position a drug against existing treatments on value, not just clinical results.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "CMS Glossary",
+      "ISPOR"
     ]
   },
   {
@@ -1594,6 +1793,21 @@
   },
   {
     "letter": "I",
+    "term": "Informed Consent",
+    "full": "",
+    "snappy": "The legal and ethical promise that patients in a clinical trial understand the risks, benefits, and alternatives — and agree freely, in writing, to participate.",
+    "detail": "Informed consent is the cornerstone of human-subjects research, codified after the abuses of Tuskegee and Nuremberg. Patients receive a document — sometimes 30+ pages — covering everything from study procedures to potential side effects, and can withdraw at any time. You'll see informed consent surface in regulatory inspections, trial-misconduct lawsuits, and any commercial discussion of patient recruitment, since dense or rushed consent processes are a leading cause of FDA warning letters.",
+    "indications": [
+      "General"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "FDA",
+      "ICH GCP"
+    ]
+  },
+  {
+    "letter": "I",
     "term": "Inhibitor",
     "full": "",
     "snappy": "A drug that blocks a protein from doing its job — most cancer drugs are inhibitors of one enzyme or receptor or another.",
@@ -1604,6 +1818,21 @@
     "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Intention-to-Treat",
+    "full": "",
+    "snappy": "A trial-analysis rule that counts every patient in the group they were originally assigned to, even if they dropped out or switched treatments midway.",
+    "detail": "ITT analysis preserves randomization — the foundation of clinical-trial credibility — by refusing to cherry-pick the patients who actually completed treatment. The opposite, \"per-protocol,\" can inflate apparent benefit by excluding non-compliers. Regulators almost always demand ITT as the primary analysis for confirmatory trials. You'll hear it on trial readouts at ASCO and in earnings calls when companies parse why a per-protocol number looked stronger than the headline ITT result.",
+    "indications": [
+      "General"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "FDA",
+      "ICH E9"
     ]
   },
   {
@@ -1666,20 +1895,6 @@
   },
   {
     "letter": "J",
-    "term": "JAK2 V617F",
-    "full": "",
-    "snappy": "A specific gene mutation that causes the bone marrow to make too many red blood cells — the defining genetic change in polycythemia vera.",
-    "detail": "JAK2 V617F is found in nearly all polycythemia vera cases and most cases of essential thrombocythemia and primary myelofibrosis. The mutation is what makes Jakafi (ruxolitinib) effective in these myeloproliferative neoplasms. You'll hear JAK2 V617F in hematology contexts, MPN pipeline discussions, and in any commercial conversation about JAK-targeted therapy.",
-    "indications": [
-      "Oncology"
-    ],
-    "category": "Mechanism",
-    "sources": [
-      "NCI Dictionary of Cancer Terms"
-    ]
-  },
-  {
-    "letter": "J",
     "term": "JAK-STAT",
     "full": "",
     "snappy": "A signaling pathway that runs from cell-surface receptors straight into the nucleus — central to immune responses, blood-cell production, and many cancers.",
@@ -1691,6 +1906,20 @@
     "category": "Mechanism",
     "sources": [
       "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "J",
+    "term": "JAK2 V617F",
+    "full": "",
+    "snappy": "A specific gene mutation that causes the bone marrow to make too many red blood cells — the defining genetic change in polycythemia vera.",
+    "detail": "JAK2 V617F is found in nearly all polycythemia vera cases and most cases of essential thrombocythemia and primary myelofibrosis. The mutation is what makes Jakafi (ruxolitinib) effective in these myeloproliferative neoplasms. You'll hear JAK2 V617F in hematology contexts, MPN pipeline discussions, and in any commercial conversation about JAK-targeted therapy.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
     ]
   },
   {
@@ -2067,6 +2296,20 @@
   },
   {
     "letter": "M",
+    "term": "Medicare Part D",
+    "full": "",
+    "snappy": "The federal program that pays for prescription drugs for seniors on Medicare — funded jointly by patient premiums, government dollars, and pharma rebates.",
+    "detail": "Launched in 2006, Part D covers outpatient prescriptions through private plans contracted by CMS — plans negotiate with PBMs, set formularies, and structure tiers. The 2022 Inflation Reduction Act gave Medicare new powers to negotiate prices on top-spend drugs starting 2026, a seismic shift pharma has been fighting in court. You'll hear Part D in every CFO commentary on pricing risk, and it dominates the policy track at JPMorgan.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "CMS Glossary"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Medulloblastoma",
     "full": "",
     "snappy": "The most common malignant brain tumor in children — usually arising from the cerebellum and increasingly classified by molecular subtype rather than appearance.",
@@ -2209,6 +2452,23 @@
     "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "mRNA Therapy",
+    "full": "",
+    "snappy": "A treatment that delivers a strand of genetic instructions to your cells, telling them to make a protein — used in COVID vaccines and now expanding to cancer.",
+    "detail": "Messenger RNA was a niche idea until Pfizer-BioNTech and Moderna's COVID vaccines validated the platform at global scale. The same technology now powers personalized cancer vaccines, including Moderna and Merck's mRNA-4157 paired with Keytruda (pembrolizumab) in melanoma. You'll hear mRNA pitched as a platform play at JPMorgan and on R&D days, and trial readouts in oncology and rare disease are increasingly studied as the next proof points beyond infectious disease.",
+    "indications": [
+      "General",
+      "Oncology",
+      "Infectious Disease"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
     ]
   },
   {
@@ -2460,6 +2720,20 @@
   },
   {
     "letter": "N",
+    "term": "Non-inferiority Trial",
+    "full": "",
+    "snappy": "A trial designed to prove a new drug is at least as good as the existing standard — not necessarily better, just close enough not to be worse.",
+    "detail": "Non-inferiority is the design pharma reaches for when the new drug offers something other than raw efficacy — better tolerability, simpler dosing, lower cost. The trial sets a \"margin\" — typically how much worse the new drug could be while still being acceptable — and tries to show the difference falls inside it. You'll see this design in cardiovascular trials of new anticoagulants and infectious-disease readouts where the bar is matching, not beating, the standard.",
+    "indications": [
+      "General"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "N",
     "term": "NOTCH",
     "full": "",
     "snappy": "A signaling pathway that decides cell fate during development — when mutated, it can drive certain leukemias and several solid tumors.",
@@ -2689,6 +2963,20 @@
   },
   {
     "letter": "O",
+    "term": "OTC",
+    "full": "Over-the-Counter",
+    "snappy": "Drugs you can buy without a prescription — pulled off the shelf based on FDA monographs that decide which ingredients are safe for self-care.",
+    "detail": "OTC drugs cover everything from ibuprofen to nicotine patches to the recently approved Opill — the first non-prescription daily birth control pill in the US. The FDA can switch a drug from prescription to OTC after evidence shows consumers can use it safely without a doctor, a process called \"Rx-to-OTC switch.\" You'll hear it in commercial discussions when companies pitch OTC switches as a second life for aging brands losing exclusivity.",
+    "indications": [
+      "General"
+    ],
+    "category": "Regulatory",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "O",
     "term": "Ovarian Cancer",
     "full": "",
     "snappy": "A frequently fatal gynecologic cancer that often spreads silently before being detected — and a disease where PARP inhibitors have been transformative.",
@@ -2805,6 +3093,20 @@
   },
   {
     "letter": "P",
+    "term": "PBM",
+    "full": "Pharmacy Benefit Manager",
+    "snappy": "The middleman between drugmakers, insurers, and pharmacies — they negotiate prices, decide what's covered, and ultimately shape what you pay at the counter.",
+    "detail": "The big three — CVS Caremark, Express Scripts, and OptumRx — manage formularies for most US insurance plans, extracting rebates from pharma in exchange for preferred placement. They've been a frequent target of Congressional hearings and FTC scrutiny over how rebates flow. You'll hear PBM constantly in pharma earnings calls when companies discuss pricing pressure, and at JPMorgan when launch teams game out access strategy.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "CMS Glossary"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "PD-1/PD-L1",
     "full": "Programmed Death 1/Ligand 1",
     "snappy": "The immune checkpoint that cancer most often hijacks to hide — and the target of the biggest immunotherapy success story in oncology.",
@@ -2819,6 +3121,20 @@
   },
   {
     "letter": "P",
+    "term": "PDUFA",
+    "full": "Prescription Drug User Fee Act",
+    "snappy": "The deal where drug companies pay the FDA to review their applications on a clock — and Congress renews it every five years.",
+    "detail": "PDUFA sets the FDA's review timeline — typically 10 months for standard drugs, 6 months for priority ones — and is funded by industry fees rather than taxpayers. Investors and journalists watch the \"PDUFA date\" the way they watch earnings: it's the day the FDA must rule on whether a drug gets approved.",
+    "indications": [
+      "General"
+    ],
+    "category": "Regulatory",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Pembrolizumab",
     "full": "Keytruda",
     "snappy": "Merck's checkpoint inhibitor — the best-selling cancer drug in the world, and the first ever approved based on a biomarker rather than a tumor type.",
@@ -2829,6 +3145,22 @@
     "category": "Mechanism",
     "sources": [
       "FDA"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Peptide Therapy",
+    "full": "",
+    "snappy": "A drug made of a short chain of amino acids — bigger than a small molecule, smaller than a full antibody — designed to hit targets neither extreme can reach.",
+    "detail": "Peptide drugs sit between traditional pills and biologics, and the GLP-1 class — Ozempic (semaglutide), Mounjaro (tirzepatide), Wegovy — has made them the most-watched drug category in pharma. Other approved peptides include Sandostatin (octreotide) for hormone-secreting tumors and oral GLP-1s now reaching late-stage trials. You'll hear \"peptide\" everywhere now in earnings calls about obesity and diabetes pipelines, and at JPMorgan when companies pitch their position in the GLP-1 race.",
+    "indications": [
+      "General",
+      "Metabolic"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
     ]
   },
   {
@@ -2858,6 +3190,21 @@
     "category": "Clinical",
     "sources": [
       "FDA"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Pharmacovigilance",
+    "full": "",
+    "snappy": "The ongoing job of watching for safety problems after a drug is on the market — collecting reports, spotting patterns, and acting before a small signal becomes a crisis.",
+    "detail": "Pharmacovigilance — \"PV\" in industry shorthand — combines spontaneous adverse-event reports (FDA's FAERS, EMA's EudraVigilance), claims data, and active surveillance to catch risks trials missed. PV findings can trigger label changes, Black Box Warnings, or full withdrawals — Vioxx (rofecoxib) is the textbook example. You'll see PV teams cited in every FDA safety communication, and in earnings calls when a competitor's safety signal becomes a market opportunity.",
+    "indications": [
+      "General"
+    ],
+    "category": "Pharmacovigilance",
+    "sources": [
+      "FDA",
+      "EMA"
     ]
   },
   {
@@ -2960,6 +3307,20 @@
   },
   {
     "letter": "P",
+    "term": "Primary Endpoint",
+    "full": "",
+    "snappy": "The single, pre-declared measurement a clinical trial is built to answer — the outcome the whole study is powered to detect, win or lose.",
+    "detail": "Companies pick a primary endpoint before the trial starts: overall survival, progression-free survival, A1C reduction, blood-pressure drop. Hitting it is the difference between a positive readout and a failed one — and statistical adjustments make it harder to claim wins on backup measures if the primary misses. You'll hear \"hit the primary\" celebrated on the day of trial readouts, and \"missed the primary\" wipe billions off market caps within minutes.",
+    "indications": [
+      "General"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Primary Tumor",
     "full": "",
     "snappy": "The original cancer site where the disease started — distinct from metastases, which are where the cancer has since spread.",
@@ -2970,6 +3331,20 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Prior Authorization",
+    "full": "",
+    "snappy": "The paperwork hurdle where your doctor has to convince your insurer that a specific drug is medically necessary before they'll cover it.",
+    "detail": "Prior auth — \"PA\" in industry shorthand — is the most common utilization-management tool insurers use to gate expensive drugs, often requiring documentation of failed alternatives or specific diagnostic criteria. Physicians complain it consumes hours of staff time per case and delays care. You'll see it cited as a launch barrier on pharma earnings calls, and it's a frequent target in policy reform conversations from both parties in Congress.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "CMS Glossary"
     ]
   },
   {
@@ -3188,6 +3563,20 @@
   },
   {
     "letter": "R",
+    "term": "Rebate",
+    "full": "",
+    "snappy": "A discount drugmakers pay back to insurers and PBMs after the fact — in exchange for putting their drug on the formulary.",
+    "detail": "Rebates are negotiated privately between manufacturers and PBMs, with the size often tied to formulary placement and market share. They're the engine behind US drug pricing's gross-to-net gap and a major target of policy reform — the Trump and Biden administrations both proposed rebate-reform rules. You'll hear pharma CFOs reference \"rebate pressure\" as the biggest variable in net pricing, and analysts model rebate trajectories at JPMorgan and on launch calls.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "CMS Glossary"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "Receptor",
     "full": "",
     "snappy": "A protein on cell surfaces or inside cells that receives biological signals — and the most common type of drug target in pharma.",
@@ -3261,6 +3650,20 @@
   },
   {
     "letter": "R",
+    "term": "REMS",
+    "full": "Risk Evaluation and Mitigation Strategy",
+    "snappy": "A safety program the FDA can require for drugs whose benefits only outweigh the risks if specific guardrails — like patient registries or pharmacist training — stay in place.",
+    "detail": "REMS programs vary in intensity: a simple medication guide for one drug, a full restricted-distribution system requiring physician certification for another. Examples include Clozaril (clozapine) for schizophrenia, which requires regular blood monitoring, and isotretinoin for acne, which requires the iPLEDGE registry to prevent fetal exposure. You'll see REMS discussed in FDA approval announcements and in commercial planning, since strict programs can substantially limit how easily a drug gets prescribed.",
+    "indications": [
+      "General"
+    ],
+    "category": "Regulatory",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "Resistance",
     "full": "",
     "snappy": "When a previously effective treatment stops working — typically because cancer cells evolved new mutations to escape the drug's mechanism.",
@@ -3316,6 +3719,23 @@
     "category": "Mechanism",
     "sources": [
       "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "RNAi",
+    "full": "RNA Interference",
+    "snappy": "A natural cellular silencer that pharma has hijacked to switch off harmful genes — turning down the volume on disease at the source rather than blocking it downstream.",
+    "detail": "RNAi drugs like Onpattro (patisiran) for hereditary amyloidosis and Leqvio (inclisiran) for high cholesterol use small RNA molecules to degrade specific mRNAs before they're translated into proteins. Alnylam pioneered the platform after the 2006 Nobel-winning discovery, and the field has expanded into liver, kidney, and CNS targets. You'll hear RNAi pitched as a platform alongside mRNA and gene therapy at JPMorgan, and earnings calls increasingly track the silencing-drug pipeline.",
+    "indications": [
+      "General",
+      "Rare Disease",
+      "Cardiovascular"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
     ]
   },
   {
@@ -3505,6 +3925,20 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Step Therapy",
+    "full": "",
+    "snappy": "An insurance rule that makes you try a cheaper drug first — and only pay for the expensive one if the cheap one fails.",
+    "detail": "Also called \"fail-first,\" step therapy is a cost-control tool insurers and PBMs use to steer patients toward generics or preferred brands before approving newer, pricier options. Patients and physicians often appeal it as a barrier to care, especially in autoimmune diseases where biologics like Humira (adalimumab) sit behind a step. You'll hear it on earnings calls when pharma talks about \"access barriers,\" and in policy debates about restrictive utilization management.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "CMS Glossary"
     ]
   },
   {
@@ -4371,6 +4805,20 @@
   },
   {
     "letter": "X",
+    "term": "XIAP",
+    "full": "X-linked Inhibitor of Apoptosis",
+    "snappy": "A protein that blocks cell death — overexpressed in many cancers as a way to resist chemotherapy and targeted therapy.",
+    "detail": "XIAP and related IAP proteins are emerging drug targets; SMAC mimetics that inhibit them are in clinical development. The strategy aims to restore the apoptosis machinery that cancer has disabled. You'll hear XIAP in apoptosis-targeted drug development and in any pipeline pitch around IAP antagonism.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "X",
     "term": "XRT",
     "full": "External Radiation Therapy",
     "snappy": "Standard radiation therapy delivered from a machine outside the body — distinct from internal radiation (brachytherapy) where sources are placed inside the body.",
@@ -4380,20 +4828,6 @@
       "Oncology"
     ],
     "category": "Clinical",
-    "sources": [
-      "NCI Dictionary of Cancer Terms"
-    ]
-  },
-  {
-    "letter": "X",
-    "term": "XIAP",
-    "full": "X-linked Inhibitor of Apoptosis",
-    "snappy": "A protein that blocks cell death — overexpressed in many cancers as a way to resist chemotherapy and targeted therapy.",
-    "detail": "XIAP and related IAP proteins are emerging drug targets; SMAC mimetics that inhibit them are in clinical development. The strategy aims to restore the apoptosis machinery that cancer has disabled. You'll hear XIAP in apoptosis-targeted drug development and in any pipeline pitch around IAP antagonism.",
-    "indications": [
-      "Oncology"
-    ],
-    "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
     ]
@@ -4515,6 +4949,20 @@
   },
   {
     "letter": "Z",
+    "term": "Z-Score",
+    "full": "",
+    "snappy": "A statistical measure showing how far a value is from the average — measured in standard deviations. A way to compare individual data points to a reference distribution.",
+    "detail": "In clinical trials and biomarker work, Z-scores standardize measurements across different scales. Pediatric growth charts, bone-density tests (T- and Z-scores), and normalized gene-expression data all use them. You'll hear Z-score in biostatistics, in lab-test interpretation, and in any quantitative-trait analysis.",
+    "indications": [
+      "General"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "Z",
     "term": "ZAP-70",
     "full": "",
     "snappy": "A protein in the T-cell receptor signaling pathway — when overexpressed on CLL cells, it predicts more aggressive disease and worse prognosis.",
@@ -4529,20 +4977,6 @@
   },
   {
     "letter": "Z",
-    "term": "Zeta Potential",
-    "full": "",
-    "snappy": "An electrical charge measurement on the surface of nanoparticles — used to predict whether a drug formulation will be stable or clump together.",
-    "detail": "Zeta potential is a key quality attribute for nanoparticle drugs (mRNA vaccines, lipid nanoparticles, ADC formulations). Particles with strong charges repel each other and stay dispersed; weak charges allow aggregation. You'll hear zeta potential in nanoparticle-drug formulation and CMC discussions.",
-    "indications": [
-      "General"
-    ],
-    "category": "Manufacturing",
-    "sources": [
-      "FDA"
-    ]
-  },
-  {
-    "letter": "Z",
     "term": "Zero-Order Kinetics",
     "full": "",
     "snappy": "A drug-elimination pattern where the body removes the drug at a constant rate regardless of how much is in the bloodstream — easily leading to dangerous accumulation if dosing is too frequent.",
@@ -4551,6 +4985,20 @@
       "General"
     ],
     "category": "Mechanism",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "Z",
+    "term": "Zeta Potential",
+    "full": "",
+    "snappy": "An electrical charge measurement on the surface of nanoparticles — used to predict whether a drug formulation will be stable or clump together.",
+    "detail": "Zeta potential is a key quality attribute for nanoparticle drugs (mRNA vaccines, lipid nanoparticles, ADC formulations). Particles with strong charges repel each other and stay dispersed; weak charges allow aggregation. You'll hear zeta potential in nanoparticle-drug formulation and CMC discussions.",
+    "indications": [
+      "General"
+    ],
+    "category": "Manufacturing",
     "sources": [
       "FDA"
     ]
@@ -4610,20 +5058,6 @@
     "category": "Clinical",
     "sources": [
       "NIH MedlinePlus"
-    ]
-  },
-  {
-    "letter": "Z",
-    "term": "Z-Score",
-    "full": "",
-    "snappy": "A statistical measure showing how far a value is from the average — measured in standard deviations. A way to compare individual data points to a reference distribution.",
-    "detail": "In clinical trials and biomarker work, Z-scores standardize measurements across different scales. Pediatric growth charts, bone-density tests (T- and Z-scores), and normalized gene-expression data all use them. You'll hear Z-score in biostatistics, in lab-test interpretation, and in any quantitative-trait analysis.",
-    "indications": [
-      "General"
-    ],
-    "category": "Clinical",
-    "sources": [
-      "FDA"
     ]
   },
   {
