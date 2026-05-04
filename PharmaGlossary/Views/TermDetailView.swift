@@ -9,7 +9,13 @@ struct TermDetailView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
                     header
-                    definitionCard
+                    if term.hasSnappy {
+                        snappyCard
+                    }
+                    detailCard
+                    if term.hasSources {
+                        sourcesFooter
+                    }
                     Spacer(minLength: 24)
                 }
                 .padding(.horizontal, 16)
@@ -53,14 +59,27 @@ struct TermDetailView: View {
         }
     }
 
-    private var definitionCard: some View {
+    private var snappyCard: some View {
+        Text(term.snappy)
+            .font(.system(size: 18, weight: .regular).italic())
+            .foregroundStyle(PGColors.text)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(20)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .fill(PGColors.hover)
+            )
+    }
+
+    private var detailCard: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Definition")
                 .font(.system(size: 11, weight: .semibold))
                 .foregroundStyle(PGColors.textLight)
                 .textCase(.uppercase)
                 .tracking(0.5)
-            Text(term.definition)
+            Text(term.detail)
                 .font(PGFont.definition)
                 .foregroundStyle(PGColors.text)
                 .fixedSize(horizontal: false, vertical: true)
@@ -69,14 +88,22 @@ struct TermDetailView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(PGColors.hover)
+                .fill(PGColors.card)
         )
+    }
+
+    private var sourcesFooter: some View {
+        Text("Source: \(term.sources.joined(separator: ", "))")
+            .font(.system(size: 11, weight: .regular))
+            .foregroundStyle(PGColors.textLight)
+            .padding(.horizontal, 4)
     }
 
     private var shareText: String {
         var s = term.term
         if term.hasFull { s += " (\(term.full))" }
-        s += "\n\n\(term.definition)"
+        if term.hasSnappy { s += "\n\n\(term.snappy)" }
+        s += "\n\n\(term.detail)"
         return s
     }
 }

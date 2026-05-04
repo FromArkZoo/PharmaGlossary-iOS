@@ -12,6 +12,7 @@
 		38407B4845DE57E8DE03FC1D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E38546C90D38B314EB209CA /* Colors.swift */; };
 		5246BA99C15799316CB30CD0 /* TermDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E37C2FF5FACD43C57A2A048 /* TermDetailView.swift */; };
 		8434E33E025A8FDE799A1FF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E1C27794154C377F1B526 /* Assets.xcassets */; };
+		855944527A4B955455FCDBC5 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24C7850E5D59C353EB6A6F /* Brand.swift */; };
 		AC98DCD571CBD293834FE267 /* glossary.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D4359037BAF4890035BF24F /* glossary.json */; };
 		B4212259FC08D61BF6A70C76 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730E5938DF5BC8CF7C687E31 /* Typography.swift */; };
 		D63D4378000B3DA3C171BC29 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BD9B8F335704D468D2D62 /* RootView.swift */; };
@@ -23,6 +24,7 @@
 		17A77974A0885F60BD0FB030 /* PharmaGlossary.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PharmaGlossary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3BD9B8F335704D468D2D62 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		1E38546C90D38B314EB209CA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2D24C7850E5D59C353EB6A6F /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		3D4359037BAF4890035BF24F /* glossary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = glossary.json; sourceTree = "<group>"; };
 		4AE29B15500756634D070132 /* Glossary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glossary.swift; sourceTree = "<group>"; };
 		6B3E1C27794154C377F1B526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		94FC189B8DC55C523573DA77 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				2D24C7850E5D59C353EB6A6F /* Brand.swift */,
 				1E38546C90D38B314EB209CA /* Colors.swift */,
 				730E5938DF5BC8CF7C687E31 /* Typography.swift */,
 			);
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855944527A4B955455FCDBC5 /* Brand.swift in Sources */,
 				38407B4845DE57E8DE03FC1D /* Colors.swift in Sources */,
 				E977B208360F0B1378C8A7FE /* Glossary.swift in Sources */,
 				35A222E608354F79E39E7C4D /* LetterView.swift in Sources */,

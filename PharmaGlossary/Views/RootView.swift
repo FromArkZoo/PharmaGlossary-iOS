@@ -12,7 +12,7 @@ struct RootView: View {
                 PGColors.bg.ignoresSafeArea()
                 content
             }
-            .navigationTitle("Pharma Glossary")
+            .navigationTitle(Brand.current.navigationTitle)
             .navigationBarTitleDisplayMode(.large)
             .searchable(text: $query, placement: .navigationBarDrawer(displayMode: .always),
                         prompt: "Search terms, abbreviations, definitions")
@@ -33,7 +33,7 @@ struct RootView: View {
     private var alphabetGrid: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                Text("\(store.allTerms.count) terms across cancer types, mutations, and drug terminology")
+                Text("\(store.allTerms.count) terms · \(Brand.current.subtitle)")
                     .font(PGFont.subtitle)
                     .foregroundStyle(PGColors.textLight)
                     .padding(.horizontal, 16)

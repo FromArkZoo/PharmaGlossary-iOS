@@ -4,11 +4,18 @@ struct Term: Codable, Identifiable, Hashable {
     let letter: String
     let term: String
     let full: String
-    let definition: String
+    let snappy: String
+    let detail: String
+    let indications: [String]
+    let category: String
+    let sources: [String]
 
     var id: String { "\(letter)::\(term)" }
 
     var hasFull: Bool { !full.isEmpty }
+    var hasSnappy: Bool { !snappy.isEmpty }
+    var hasCategory: Bool { !category.isEmpty }
+    var hasSources: Bool { !sources.isEmpty }
 }
 
 @MainActor
@@ -22,8 +29,8 @@ final class GlossaryStore: ObservableObject {
     }
 
     private func load() {
-        guard let url = Bundle.main.url(forResource: "glossary", withExtension: "json") else {
-            assertionFailure("glossary.json missing from bundle")
+        guard let url = Bundle.main.url(forResource: Brand.current.dataResource, withExtension: "json") else {
+            assertionFailure("\(Brand.current.dataResource).json missing from bundle")
             return
         }
         do {
@@ -33,7 +40,7 @@ final class GlossaryStore: ObservableObject {
             self.byLetter = Dictionary(grouping: terms, by: { $0.letter })
             self.letters = byLetter.keys.sorted()
         } catch {
-            assertionFailure("Failed to decode glossary.json: \(error)")
+            assertionFailure("Failed to decode \(Brand.current.dataResource).json: \(error)")
         }
     }
 
@@ -43,7 +50,8 @@ final class GlossaryStore: ObservableObject {
         return allTerms.filter {
             $0.term.lowercased().contains(q)
                 || $0.full.lowercased().contains(q)
-                || $0.definition.lowercased().contains(q)
+                || $0.snappy.lowercased().contains(q)
+                || $0.detail.lowercased().contains(q)
         }
     }
 }

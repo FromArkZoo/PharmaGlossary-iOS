@@ -3,1944 +3,3888 @@
     "letter": "A",
     "term": "ADC",
     "full": "Antibody-Drug Conjugate",
-    "definition": "A targeted cancer therapy that combines an antibody (which finds cancer cells) with a chemotherapy drug (which kills them). Think of it as a 'guided missile' for cancer treatment."
+    "snappy": "",
+    "detail": "A targeted cancer therapy that combines an antibody (which finds cancer cells) with a chemotherapy drug (which kills them). Think of it as a 'guided missile' for cancer treatment.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "Adenocarcinoma",
     "full": "",
-    "definition": "Cancer that starts in gland cells, most common type in lung, colon, prostate, and pancreatic cancers."
+    "snappy": "",
+    "detail": "Cancer that starts in gland cells, most common type in lung, colon, prostate, and pancreatic cancers.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "ADME",
     "full": "Absorption, Distribution, Metabolism, Excretion",
-    "definition": "The four key processes that determine how a drug moves through your body."
+    "snappy": "",
+    "detail": "The four key processes that determine how a drug moves through your body.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "Adjuvant",
     "full": "",
-    "definition": "Treatment given after primary therapy (like surgery) to prevent cancer from coming back."
+    "snappy": "",
+    "detail": "Treatment given after primary therapy (like surgery) to prevent cancer from coming back.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "Adverse Event",
     "full": "AE",
-    "definition": "Any unwanted or harmful effect that happens during a clinical trial, whether or not caused by the drug."
+    "snappy": "",
+    "detail": "Any unwanted or harmful effect that happens during a clinical trial, whether or not caused by the drug.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "Agonist",
     "full": "",
-    "definition": "A drug that activates a receptor in your body, like turning on a switch."
+    "snappy": "",
+    "detail": "A drug that activates a receptor in your body, like turning on a switch.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "AKT",
     "full": "Protein Kinase B",
-    "definition": "Key signaling protein often overactive in cancer, part of PI3K/AKT/mTOR pathway."
+    "snappy": "",
+    "detail": "Key signaling protein often overactive in cancer, part of PI3K/AKT/mTOR pathway.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "ALK",
     "full": "Anaplastic Lymphoma Kinase",
-    "definition": "Gene fusion found in ~5% of lung cancers, targeted by drugs like crizotinib."
+    "snappy": "",
+    "detail": "Gene fusion found in ~5% of lung cancers, targeted by drugs like crizotinib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "ALL",
     "full": "Acute Lymphoblastic Leukemia",
-    "definition": "Fast-growing cancer of lymphoid cells, most common childhood cancer."
+    "snappy": "",
+    "detail": "Fast-growing cancer of lymphoid cells, most common childhood cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "AML",
     "full": "Acute Myeloid Leukemia",
-    "definition": "Fast-growing cancer of myeloid cells in bone marrow, requires immediate treatment."
+    "snappy": "",
+    "detail": "Fast-growing cancer of myeloid cells in bone marrow, requires immediate treatment.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "Angiogenesis",
     "full": "",
-    "definition": "Formation of new blood vessels that tumors trigger to feed themselves."
+    "snappy": "",
+    "detail": "Formation of new blood vessels that tumors trigger to feed themselves.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "Antagonist",
     "full": "",
-    "definition": "A drug that blocks a receptor, preventing activation - like putting tape over a light switch."
+    "snappy": "",
+    "detail": "A drug that blocks a receptor, preventing activation - like putting tape over a light switch.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "APC",
     "full": "Adenomatous Polyposis Coli",
-    "definition": "Tumor suppressor gene mutated in most colorectal cancers."
+    "snappy": "",
+    "detail": "Tumor suppressor gene mutated in most colorectal cancers.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "API",
     "full": "Active Pharmaceutical Ingredient",
-    "definition": "The actual chemical in a drug that makes it work."
+    "snappy": "",
+    "detail": "The actual chemical in a drug that makes it work.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "Apoptosis",
     "full": "",
-    "definition": "Programmed cell death - cancer cells often evade this through mutations."
+    "snappy": "",
+    "detail": "Programmed cell death - cancer cells often evade this through mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "Assay",
     "full": "",
-    "definition": "A test or analysis done in the lab to measure drug or substance activity."
+    "snappy": "",
+    "detail": "A test or analysis done in the lab to measure drug or substance activity.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "Astrocytoma",
     "full": "",
-    "definition": "Brain tumor from star-shaped glial cells, includes glioblastoma."
+    "snappy": "",
+    "detail": "Brain tumor from star-shaped glial cells, includes glioblastoma.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "ATM",
     "full": "Ataxia Telangiectasia Mutated",
-    "definition": "DNA repair gene, mutations increase cancer risk and may predict PARP inhibitor response."
+    "snappy": "",
+    "detail": "DNA repair gene, mutations increase cancer risk and may predict PARP inhibitor response.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "A",
     "term": "Autoimmune",
     "full": "",
-    "definition": "When your immune system attacks your own healthy cells, can be triggered by immunotherapy."
+    "snappy": "",
+    "detail": "When your immune system attacks your own healthy cells, can be triggered by immunotherapy.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "Basal Cell Carcinoma",
     "full": "BCC",
-    "definition": "Most common skin cancer, rarely spreads but can be locally destructive."
+    "snappy": "",
+    "detail": "Most common skin cancer, rarely spreads but can be locally destructive.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "BCL2",
     "full": "B-cell Lymphoma 2",
-    "definition": "Anti-death protein overexpressed in many cancers, targeted by venetoclax."
+    "snappy": "",
+    "detail": "Anti-death protein overexpressed in many cancers, targeted by venetoclax.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "BCR-ABL",
     "full": "",
-    "definition": "Fusion gene causing chronic myeloid leukemia, targeted by imatinib (Gleevec)."
+    "snappy": "",
+    "detail": "Fusion gene causing chronic myeloid leukemia, targeted by imatinib (Gleevec).",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "Bioavailability",
     "full": "",
-    "definition": "How much of a drug actually gets into your bloodstream to be used."
+    "snappy": "",
+    "detail": "How much of a drug actually gets into your bloodstream to be used.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "Biomarker",
     "full": "",
-    "definition": "A measurable indicator showing disease presence or treatment response."
+    "snappy": "",
+    "detail": "A measurable indicator showing disease presence or treatment response.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "Biopsy",
     "full": "",
-    "definition": "Taking a small tissue sample to examine for cancer diagnosis."
+    "snappy": "",
+    "detail": "Taking a small tissue sample to examine for cancer diagnosis.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "Biosimilar",
     "full": "",
-    "definition": "A nearly identical copy of an already approved biological drug."
+    "snappy": "",
+    "detail": "A nearly identical copy of an already approved biological drug.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "Bladder Cancer",
     "full": "",
-    "definition": "Usually urothelial carcinoma, may have FGFR3 or TP53 mutations."
+    "snappy": "",
+    "detail": "Usually urothelial carcinoma, may have FGFR3 or TP53 mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "Blinding",
     "full": "",
-    "definition": "Keeping patients/doctors from knowing who gets real drug vs placebo in trials."
+    "snappy": "",
+    "detail": "Keeping patients/doctors from knowing who gets real drug vs placebo in trials.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "Blood-Brain Barrier",
     "full": "BBB",
-    "definition": "Protective filter between blood and brain that keeps out most drugs."
+    "snappy": "",
+    "detail": "Protective filter between blood and brain that keeps out most drugs.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "BRAF",
     "full": "",
-    "definition": "Gene mutated in ~50% of melanomas, V600E most common mutation, targeted by vemurafenib."
+    "snappy": "",
+    "detail": "Gene mutated in ~50% of melanomas, V600E most common mutation, targeted by vemurafenib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "Brain Metastases",
     "full": "",
-    "definition": "Cancer spread to brain from elsewhere, common from lung, breast, melanoma."
+    "snappy": "",
+    "detail": "Cancer spread to brain from elsewhere, common from lung, breast, melanoma.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "BRCA1/BRCA2",
     "full": "",
-    "definition": "DNA repair genes, mutations greatly increase breast/ovarian cancer risk."
+    "snappy": "",
+    "detail": "DNA repair genes, mutations greatly increase breast/ovarian cancer risk.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "Breast Cancer",
     "full": "",
-    "definition": "Classified by receptors: ER+, PR+, HER2+, or triple-negative (none)."
+    "snappy": "",
+    "detail": "Classified by receptors: ER+, PR+, HER2+, or triple-negative (none).",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "BTK",
     "full": "Bruton's Tyrosine Kinase",
-    "definition": "B-cell signaling protein targeted by ibrutinib in CLL."
+    "snappy": "",
+    "detail": "B-cell signaling protein targeted by ibrutinib in CLL.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "B",
     "term": "Burkitt Lymphoma",
     "full": "",
-    "definition": "Fast-growing B-cell lymphoma with MYC translocation."
+    "snappy": "",
+    "detail": "Fast-growing B-cell lymphoma with MYC translocation.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "CAR-T",
     "full": "Chimeric Antigen Receptor T-cell",
-    "definition": "Patient's T-cells engineered to attack cancer, revolutionary in blood cancers."
+    "snappy": "",
+    "detail": "Patient's T-cells engineered to attack cancer, revolutionary in blood cancers.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "Carcinoma",
     "full": "",
-    "definition": "Cancer from epithelial cells, includes most common cancers (lung, breast, colon)."
+    "snappy": "",
+    "detail": "Cancer from epithelial cells, includes most common cancers (lung, breast, colon).",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "CDK4/6",
     "full": "Cyclin-Dependent Kinases",
-    "definition": "Cell cycle regulators targeted by palbociclib in ER+ breast cancer."
+    "snappy": "",
+    "detail": "Cell cycle regulators targeted by palbociclib in ER+ breast cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "CDx",
     "full": "Companion Diagnostic",
-    "definition": "Test determining if a specific drug will work for a patient."
+    "snappy": "",
+    "detail": "Test determining if a specific drug will work for a patient.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "Checkpoint Inhibitor",
     "full": "",
-    "definition": "Immunotherapy drugs releasing 'brakes' on immune system to attack cancer."
+    "snappy": "",
+    "detail": "Immunotherapy drugs releasing 'brakes' on immune system to attack cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "Chemotherapy",
     "full": "",
-    "definition": "Drug treatment killing fast-growing cells, affects cancer and healthy cells."
+    "snappy": "",
+    "detail": "Drug treatment killing fast-growing cells, affects cancer and healthy cells.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "Cholangiocarcinoma",
     "full": "",
-    "definition": "Bile duct cancer, may have IDH1/2 or FGFR2 mutations."
+    "snappy": "",
+    "detail": "Bile duct cancer, may have IDH1/2 or FGFR2 mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "Chronic Lymphocytic Leukemia",
     "full": "CLL",
-    "definition": "Slow-growing leukemia of B cells."
+    "snappy": "",
+    "detail": "Slow-growing leukemia of B cells.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "Chronic Myeloid Leukemia",
     "full": "CML",
-    "definition": "Caused by BCR-ABL fusion (Philadelphia chromosome), transformed by imatinib."
+    "snappy": "",
+    "detail": "Caused by BCR-ABL fusion (Philadelphia chromosome), transformed by imatinib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "Clinical Trial",
     "full": "",
-    "definition": "Research study testing new treatments in people, phases I-IV."
+    "snappy": "",
+    "detail": "Research study testing new treatments in people, phases I-IV.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "CMC",
     "full": "Chemistry, Manufacturing, and Controls",
-    "definition": "Information about how a drug is made and quality controlled."
+    "snappy": "",
+    "detail": "Information about how a drug is made and quality controlled.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "Colorectal Cancer",
     "full": "CRC",
-    "definition": "Third most common cancer, may have APC, KRAS, BRAF mutations."
+    "snappy": "",
+    "detail": "Third most common cancer, may have APC, KRAS, BRAF mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "CRISPR",
     "full": "",
-    "definition": "Gene-editing technology acting like molecular scissors to modify DNA."
+    "snappy": "",
+    "detail": "Gene-editing technology acting like molecular scissors to modify DNA.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "CRO",
     "full": "Contract Research Organization",
-    "definition": "Company hired to manage and conduct clinical trials."
+    "snappy": "",
+    "detail": "Company hired to manage and conduct clinical trials.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "CTLA-4",
     "full": "",
-    "definition": "Immune checkpoint targeted by ipilimumab, first checkpoint inhibitor."
+    "snappy": "",
+    "detail": "Immune checkpoint targeted by ipilimumab, first checkpoint inhibitor.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "C",
     "term": "Cytotoxic",
     "full": "",
-    "definition": "Cell-killing, describes chemotherapy drugs."
+    "snappy": "",
+    "detail": "Cell-killing, describes chemotherapy drugs.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "D",
     "term": "DCT",
     "full": "Decentralized Clinical Trial",
-    "definition": "Trials allowing patients to participate from home using technology."
+    "snappy": "",
+    "detail": "Trials allowing patients to participate from home using technology.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "D",
     "term": "Degrader",
     "full": "Targeted Protein Degrader",
-    "definition": "Drugs that tag proteins for destruction rather than just blocking them."
+    "snappy": "",
+    "detail": "Drugs that tag proteins for destruction rather than just blocking them.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "D",
     "term": "DIPG",
     "full": "Diffuse Intrinsic Pontine Glioma",
-    "definition": "Devastating childhood brain tumor, very poor prognosis."
+    "snappy": "",
+    "detail": "Devastating childhood brain tumor, very poor prognosis.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "D",
     "term": "DLBCL",
     "full": "Diffuse Large B-Cell Lymphoma",
-    "definition": "Most common aggressive lymphoma."
+    "snappy": "",
+    "detail": "Most common aggressive lymphoma.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "D",
     "term": "DMC",
     "full": "Data Monitoring Committee",
-    "definition": "Independent group reviewing trial data for safety."
+    "snappy": "",
+    "detail": "Independent group reviewing trial data for safety.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "D",
     "term": "DNA Mismatch Repair",
     "full": "MMR",
-    "definition": "System fixing DNA errors, deficiency causes MSI-H and immunotherapy response."
+    "snappy": "",
+    "detail": "System fixing DNA errors, deficiency causes MSI-H and immunotherapy response.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "D",
     "term": "Dose Escalation",
     "full": "",
-    "definition": "Gradually increasing drug dose in trials to find maximum safe dose."
+    "snappy": "",
+    "detail": "Gradually increasing drug dose in trials to find maximum safe dose.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "D",
     "term": "Drug-Drug Interaction",
     "full": "DDI",
-    "definition": "When one drug affects another's effectiveness or toxicity."
+    "snappy": "",
+    "detail": "When one drug affects another's effectiveness or toxicity.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "D",
     "term": "Duration of Response",
     "full": "DoR",
-    "definition": "How long a treatment keeps working once it starts."
+    "snappy": "",
+    "detail": "How long a treatment keeps working once it starts.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "D",
     "term": "Dysplasia",
     "full": "",
-    "definition": "Abnormal cell growth that's pre-cancerous."
+    "snappy": "",
+    "detail": "Abnormal cell growth that's pre-cancerous.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "E",
     "term": "EGFR",
     "full": "Epidermal Growth Factor Receptor",
-    "definition": "Mutated in ~15% of lung cancers, targeted by erlotinib, osimertinib. T790M causes resistance."
+    "snappy": "",
+    "detail": "Mutated in ~15% of lung cancers, targeted by erlotinib, osimertinib. T790M causes resistance.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "E",
     "term": "EMA",
     "full": "European Medicines Agency",
-    "definition": "European equivalent of FDA for drug approval."
+    "snappy": "",
+    "detail": "European equivalent of FDA for drug approval.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "E",
     "term": "Endometrial Cancer",
     "full": "",
-    "definition": "Most common gynecologic cancer, often MSI-H or TP53 mutant."
+    "snappy": "",
+    "detail": "Most common gynecologic cancer, often MSI-H or TP53 mutant.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "E",
     "term": "Endpoint",
     "full": "",
-    "definition": "What's measured in trials - OS (survival), PFS (progression-free), ORR (response rate)."
+    "snappy": "",
+    "detail": "What's measured in trials - OS (survival), PFS (progression-free), ORR (response rate).",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "E",
     "term": "Ependymoma",
     "full": "",
-    "definition": "Brain or spinal cord tumor from ependymal cells."
+    "snappy": "",
+    "detail": "Brain or spinal cord tumor from ependymal cells.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "E",
     "term": "ER/PR",
     "full": "Estrogen/Progesterone Receptor",
-    "definition": "Hormone receptors in ~70% of breast cancers, targeted by tamoxifen."
+    "snappy": "",
+    "detail": "Hormone receptors in ~70% of breast cancers, targeted by tamoxifen.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "E",
     "term": "ERBB2",
     "full": "HER2/neu",
-    "definition": "Amplified in ~20% of breast cancers, targeted by trastuzumab."
+    "snappy": "",
+    "detail": "Amplified in ~20% of breast cancers, targeted by trastuzumab.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "E",
     "term": "Esophageal Cancer",
     "full": "",
-    "definition": "Includes adenocarcinoma (reflux-associated) and squamous cell (smoking-associated)."
+    "snappy": "",
+    "detail": "Includes adenocarcinoma (reflux-associated) and squamous cell (smoking-associated).",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "E",
     "term": "Ewing Sarcoma",
     "full": "",
-    "definition": "Bone/soft tissue cancer in youth with EWSR1-FLI1 fusion."
+    "snappy": "",
+    "detail": "Bone/soft tissue cancer in youth with EWSR1-FLI1 fusion.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "E",
     "term": "Excipient",
     "full": "",
-    "definition": "Inactive ingredients in drugs helping deliver the active ingredient."
+    "snappy": "",
+    "detail": "Inactive ingredients in drugs helping deliver the active ingredient.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "E",
     "term": "EZH2",
     "full": "",
-    "definition": "Epigenetic regulator mutated in lymphomas, targeted by tazemetostat."
+    "snappy": "",
+    "detail": "Epigenetic regulator mutated in lymphomas, targeted by tazemetostat.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "F",
     "term": "FAP",
     "full": "Familial Adenomatous Polyposis",
-    "definition": "Inherited APC mutation causing hundreds of colon polyps."
+    "snappy": "",
+    "detail": "Inherited APC mutation causing hundreds of colon polyps.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "F",
     "term": "Fast Track",
     "full": "",
-    "definition": "FDA designation speeding review of drugs for serious conditions."
+    "snappy": "",
+    "detail": "FDA designation speeding review of drugs for serious conditions.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "F",
     "term": "FDA",
     "full": "Food and Drug Administration",
-    "definition": "US agency approving new drugs and ensuring safety/efficacy."
+    "snappy": "",
+    "detail": "US agency approving new drugs and ensuring safety/efficacy.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "F",
     "term": "FGFR",
     "full": "Fibroblast Growth Factor Receptor",
-    "definition": "Family with fusions in cholangiocarcinoma, mutations in bladder cancer."
+    "snappy": "",
+    "detail": "Family with fusions in cholangiocarcinoma, mutations in bladder cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "F",
     "term": "First-in-Human",
     "full": "FIH",
-    "definition": "Very first clinical trial of a new drug in people."
+    "snappy": "",
+    "detail": "Very first clinical trial of a new drug in people.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "F",
     "term": "First-Line Therapy",
     "full": "",
-    "definition": "Initial treatment for cancer, usually most effective."
+    "snappy": "",
+    "detail": "Initial treatment for cancer, usually most effective.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "F",
     "term": "FLT3",
     "full": "",
-    "definition": "Mutated in ~30% of AML, poor prognosis, targeted by midostaurin."
+    "snappy": "",
+    "detail": "Mutated in ~30% of AML, poor prognosis, targeted by midostaurin.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "F",
     "term": "Follicular Lymphoma",
     "full": "",
-    "definition": "Second most common lymphoma, indolent with BCL2 translocation."
+    "snappy": "",
+    "detail": "Second most common lymphoma, indolent with BCL2 translocation.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "F",
     "term": "Formulation",
     "full": "",
-    "definition": "The specific recipe and form of a drug product."
+    "snappy": "",
+    "detail": "The specific recipe and form of a drug product.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "F",
     "term": "Fusion Gene",
     "full": "",
-    "definition": "Abnormal gene when two genes join together, like BCR-ABL."
+    "snappy": "",
+    "detail": "Abnormal gene when two genes join together, like BCR-ABL.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "G",
     "term": "Gallbladder Cancer",
     "full": "",
-    "definition": "Often diagnosed late, may have HER2 amplification."
+    "snappy": "",
+    "detail": "Often diagnosed late, may have HER2 amplification.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "G",
     "term": "Gastric Cancer",
     "full": "",
-    "definition": "Stomach cancer, subtypes include intestinal and diffuse (signet ring)."
+    "snappy": "",
+    "detail": "Stomach cancer, subtypes include intestinal and diffuse (signet ring).",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "G",
     "term": "GIST",
     "full": "Gastrointestinal Stromal Tumor",
-    "definition": "Sarcoma with KIT/PDGFRA mutations, responds dramatically to imatinib."
+    "snappy": "",
+    "detail": "Sarcoma with KIT/PDGFRA mutations, responds dramatically to imatinib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "G",
     "term": "Glioblastoma",
     "full": "GBM",
-    "definition": "Most aggressive brain cancer, IDH wild-type has worse prognosis."
+    "snappy": "",
+    "detail": "Most aggressive brain cancer, IDH wild-type has worse prognosis.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "G",
     "term": "GCP",
     "full": "Good Clinical Practice",
-    "definition": "International quality standards for clinical trials."
+    "snappy": "",
+    "detail": "International quality standards for clinical trials.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "G",
     "term": "Gene Therapy",
     "full": "",
-    "definition": "Treatment inserting or replacing genes to treat disease."
+    "snappy": "",
+    "detail": "Treatment inserting or replacing genes to treat disease.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "G",
     "term": "Generic Drug",
     "full": "",
-    "definition": "Copy of brand-name drug with same active ingredient, costs less."
+    "snappy": "",
+    "detail": "Copy of brand-name drug with same active ingredient, costs less.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "G",
     "term": "Germ Cell Tumor",
     "full": "",
-    "definition": "From reproductive cells, includes seminoma and non-seminomatous types."
+    "snappy": "",
+    "detail": "From reproductive cells, includes seminoma and non-seminomatous types.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "G",
     "term": "Glioma",
     "full": "",
-    "definition": "Brain tumors from glial cells, graded 1-4."
+    "snappy": "",
+    "detail": "Brain tumors from glial cells, graded 1-4.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "G",
     "term": "GMP",
     "full": "Good Manufacturing Practice",
-    "definition": "Quality standards for drug production."
+    "snappy": "",
+    "detail": "Quality standards for drug production.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "G",
     "term": "Grade",
     "full": "Tumor Grade",
-    "definition": "How abnormal cancer cells look - higher grade means more aggressive."
+    "snappy": "",
+    "detail": "How abnormal cancer cells look - higher grade means more aggressive.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "Half-life",
     "full": "",
-    "definition": "Time for half a drug to be eliminated from body."
+    "snappy": "",
+    "detail": "Time for half a drug to be eliminated from body.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "Hazard Ratio",
     "full": "HR",
-    "definition": "Measure comparing event likelihood between two groups in trials."
+    "snappy": "",
+    "detail": "Measure comparing event likelihood between two groups in trials.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "HCC",
     "full": "Hepatocellular Carcinoma",
-    "definition": "Most common liver cancer, often in cirrhosis setting."
+    "snappy": "",
+    "detail": "Most common liver cancer, often in cirrhosis setting.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "Head and Neck Cancer",
     "full": "HNSCC",
-    "definition": "Squamous cancers of mouth, throat, larynx. HPV-positive have better prognosis."
+    "snappy": "",
+    "detail": "Squamous cancers of mouth, throat, larynx. HPV-positive have better prognosis.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "Hematologic Malignancy",
     "full": "",
-    "definition": "Blood cancers including leukemias, lymphomas, myeloma."
+    "snappy": "",
+    "detail": "Blood cancers including leukemias, lymphomas, myeloma.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "HER2",
     "full": "Human Epidermal growth factor Receptor 2",
-    "definition": "Amplified in ~20% breast cancers, targeted by trastuzumab (Herceptin)."
+    "snappy": "",
+    "detail": "Amplified in ~20% breast cancers, targeted by trastuzumab (Herceptin).",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "Hereditary Cancer Syndromes",
     "full": "",
-    "definition": "Include Lynch syndrome, BRCA1/2, Li-Fraumeni, FAP."
+    "snappy": "",
+    "detail": "Include Lynch syndrome, BRCA1/2, Li-Fraumeni, FAP.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "Hodgkin Lymphoma",
     "full": "HL",
-    "definition": "B-cell lymphoma with Reed-Sternberg cells, high cure rate."
+    "snappy": "",
+    "detail": "B-cell lymphoma with Reed-Sternberg cells, high cure rate.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "Hormone Receptor",
     "full": "HR",
-    "definition": "ER and PR in breast cancer, determine endocrine therapy use."
+    "snappy": "",
+    "detail": "ER and PR in breast cancer, determine endocrine therapy use.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "HPV",
     "full": "Human Papillomavirus",
-    "definition": "Causes cervical cancer and some head/neck cancers, preventable with vaccine."
+    "snappy": "",
+    "detail": "Causes cervical cancer and some head/neck cancers, preventable with vaccine.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "HRD",
     "full": "Homologous Recombination Deficiency",
-    "definition": "DNA repair defect from BRCA mutations, predicts PARP inhibitor response."
+    "snappy": "",
+    "detail": "DNA repair defect from BRCA mutations, predicts PARP inhibitor response.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "H",
     "term": "Hypoxia",
     "full": "",
-    "definition": "Low oxygen in tissues, tumors often have hypoxic areas resisting treatment."
+    "snappy": "",
+    "detail": "Low oxygen in tissues, tumors often have hypoxic areas resisting treatment.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "I",
     "term": "IDH1/IDH2",
     "full": "Isocitrate Dehydrogenase",
-    "definition": "Mutated in gliomas, AML, cholangiocarcinoma. Targeted by ivosidenib and enasidenib."
+    "snappy": "",
+    "detail": "Mutated in gliomas, AML, cholangiocarcinoma. Targeted by ivosidenib and enasidenib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "I",
     "term": "Imatinib",
     "full": "Gleevec",
-    "definition": "First targeted therapy, revolutionized CML treatment."
+    "snappy": "",
+    "detail": "First targeted therapy, revolutionized CML treatment.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "I",
     "term": "Immune Checkpoint",
     "full": "",
-    "definition": "Molecules preventing immune attack on normal cells, hijacked by cancer."
+    "snappy": "",
+    "detail": "Molecules preventing immune attack on normal cells, hijacked by cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "I",
     "term": "Immunotherapy",
     "full": "",
-    "definition": "Treatments harnessing immune system against cancer."
+    "snappy": "",
+    "detail": "Treatments harnessing immune system against cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "I",
     "term": "IND",
     "full": "Investigational New Drug",
-    "definition": "FDA application allowing human testing of new drugs."
+    "snappy": "",
+    "detail": "FDA application allowing human testing of new drugs.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "I",
     "term": "Indication",
     "full": "",
-    "definition": "The specific disease a drug is approved to treat."
+    "snappy": "",
+    "detail": "The specific disease a drug is approved to treat.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "I",
     "term": "Inhibitor",
     "full": "",
-    "definition": "Drug blocking a protein's function."
+    "snappy": "",
+    "detail": "Drug blocking a protein's function.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "I",
     "term": "Intratumoral",
     "full": "",
-    "definition": "Injection directly into tumor for local effect."
+    "snappy": "",
+    "detail": "Injection directly into tumor for local effect.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "I",
     "term": "Invasive Ductal Carcinoma",
     "full": "IDC",
-    "definition": "Most common breast cancer type (~80%)."
+    "snappy": "",
+    "detail": "Most common breast cancer type (~80%).",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "I",
     "term": "IV",
     "full": "Intravenous",
-    "definition": "Drug delivery directly into vein."
+    "snappy": "",
+    "detail": "Drug delivery directly into vein.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "J",
     "term": "JAK Inhibitor",
     "full": "Janus Kinase Inhibitor",
-    "definition": "Drugs blocking JAK enzymes, used in myeloproliferative neoplasms."
+    "snappy": "",
+    "detail": "Drugs blocking JAK enzymes, used in myeloproliferative neoplasms.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "J",
     "term": "JAK2 V617F",
     "full": "",
-    "definition": "Most common mutation in polycythemia vera."
+    "snappy": "",
+    "detail": "Most common mutation in polycythemia vera.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "J",
     "term": "JAK-STAT",
     "full": "",
-    "definition": "Signaling pathway important in immune responses and cancer."
+    "snappy": "",
+    "detail": "Signaling pathway important in immune responses and cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "J",
     "term": "JMML",
     "full": "Juvenile Myelomonocytic Leukemia",
-    "definition": "Rare childhood leukemia with RAS pathway mutations."
+    "snappy": "",
+    "detail": "Rare childhood leukemia with RAS pathway mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "J",
     "term": "Joint Trial",
     "full": "",
-    "definition": "Clinical trial at multiple sites testing same treatment."
+    "snappy": "",
+    "detail": "Clinical trial at multiple sites testing same treatment.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "K",
     "term": "Kaplan-Meier",
     "full": "",
-    "definition": "Statistical method for survival curves in cancer studies."
+    "snappy": "",
+    "detail": "Statistical method for survival curves in cancer studies.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "K",
     "term": "Karyotype",
     "full": "",
-    "definition": "Picture of all chromosomes showing cancer-related changes."
+    "snappy": "",
+    "detail": "Picture of all chromosomes showing cancer-related changes.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "K",
     "term": "Ki-67",
     "full": "",
-    "definition": "Proliferation marker - higher percentage means faster growing tumor."
+    "snappy": "",
+    "detail": "Proliferation marker - higher percentage means faster growing tumor.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "K",
     "term": "Kidney Cancer",
     "full": "RCC",
-    "definition": "Renal cell carcinoma, clear cell type often has VHL mutations."
+    "snappy": "",
+    "detail": "Renal cell carcinoma, clear cell type often has VHL mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "K",
     "term": "Kinase",
     "full": "",
-    "definition": "Enzyme adding phosphate groups to proteins, many are drug targets."
+    "snappy": "",
+    "detail": "Enzyme adding phosphate groups to proteins, many are drug targets.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "K",
     "term": "KIT",
     "full": "CD117",
-    "definition": "Receptor mutated in GIST, targeted by imatinib."
+    "snappy": "",
+    "detail": "Receptor mutated in GIST, targeted by imatinib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "K",
     "term": "KRAS",
     "full": "",
-    "definition": "Most commonly mutated RAS gene in cancer, G12C now targetable with sotorasib."
+    "snappy": "",
+    "detail": "Most commonly mutated RAS gene in cancer, G12C now targetable with sotorasib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "L",
     "term": "Label",
     "full": "Drug Label",
-    "definition": "FDA-approved prescribing information for a drug."
+    "snappy": "",
+    "detail": "FDA-approved prescribing information for a drug.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "L",
     "term": "Leukemia",
     "full": "",
-    "definition": "Blood cancers from bone marrow, includes acute and chronic types."
+    "snappy": "",
+    "detail": "Blood cancers from bone marrow, includes acute and chronic types.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "L",
     "term": "Li-Fraumeni Syndrome",
     "full": "",
-    "definition": "Inherited TP53 mutation causing very high cancer risk."
+    "snappy": "",
+    "detail": "Inherited TP53 mutation causing very high cancer risk.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "L",
     "term": "Ligand",
     "full": "",
-    "definition": "Molecule binding to receptor, can be natural or drug."
+    "snappy": "",
+    "detail": "Molecule binding to receptor, can be natural or drug.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "L",
     "term": "Liquid Biopsy",
     "full": "",
-    "definition": "Blood test detecting circulating tumor DNA for monitoring."
+    "snappy": "",
+    "detail": "Blood test detecting circulating tumor DNA for monitoring.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "L",
     "term": "Loading Dose",
     "full": "",
-    "definition": "Larger initial dose to quickly reach therapeutic levels."
+    "snappy": "",
+    "detail": "Larger initial dose to quickly reach therapeutic levels.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "L",
     "term": "Lung Adenocarcinoma",
     "full": "",
-    "definition": "Most common lung cancer, may have EGFR, ALK, ROS1 mutations."
+    "snappy": "",
+    "detail": "Most common lung cancer, may have EGFR, ALK, ROS1 mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "L",
     "term": "Lymph Node",
     "full": "",
-    "definition": "Immune filters where cancer often spreads first."
+    "snappy": "",
+    "detail": "Immune filters where cancer often spreads first.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "L",
     "term": "Lymphoma",
     "full": "",
-    "definition": "Cancer of lymph system, includes Hodgkin and non-Hodgkin types."
+    "snappy": "",
+    "detail": "Cancer of lymph system, includes Hodgkin and non-Hodgkin types.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "L",
     "term": "Lynch Syndrome",
     "full": "",
-    "definition": "Inherited MMR gene mutations causing colorectal/endometrial cancer risk."
+    "snappy": "",
+    "detail": "Inherited MMR gene mutations causing colorectal/endometrial cancer risk.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "L",
     "term": "Lyophilization",
     "full": "",
-    "definition": "Freeze-drying process for preserving biological drugs."
+    "snappy": "",
+    "detail": "Freeze-drying process for preserving biological drugs.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "MAb",
     "full": "Monoclonal Antibody",
-    "definition": "Lab-made antibodies targeting specific proteins, names end in '-mab'."
+    "snappy": "",
+    "detail": "Lab-made antibodies targeting specific proteins, names end in '-mab'.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Maintenance Therapy",
     "full": "",
-    "definition": "Lower-intensity treatment to prevent disease return."
+    "snappy": "",
+    "detail": "Lower-intensity treatment to prevent disease return.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Mantle Cell Lymphoma",
     "full": "MCL",
-    "definition": "Aggressive B-cell lymphoma with cyclin D1 translocation."
+    "snappy": "",
+    "detail": "Aggressive B-cell lymphoma with cyclin D1 translocation.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "MDM2",
     "full": "",
-    "definition": "p53 regulator amplified in sarcomas."
+    "snappy": "",
+    "detail": "p53 regulator amplified in sarcomas.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "MDS",
     "full": "Myelodysplastic Syndrome",
-    "definition": "Pre-leukemic condition that can transform to AML."
+    "snappy": "",
+    "detail": "Pre-leukemic condition that can transform to AML.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Mechanism of Action",
     "full": "MOA",
-    "definition": "How a drug works at molecular level."
+    "snappy": "",
+    "detail": "How a drug works at molecular level.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Medulloblastoma",
     "full": "",
-    "definition": "Most common malignant childhood brain tumor."
+    "snappy": "",
+    "detail": "Most common malignant childhood brain tumor.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "MEK Inhibitor",
     "full": "",
-    "definition": "Drugs blocking MAPK pathway, often combined with BRAF inhibitors."
+    "snappy": "",
+    "detail": "Drugs blocking MAPK pathway, often combined with BRAF inhibitors.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Melanoma",
     "full": "",
-    "definition": "Aggressive skin cancer, ~50% have BRAF mutations."
+    "snappy": "",
+    "detail": "Aggressive skin cancer, ~50% have BRAF mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Mesothelioma",
     "full": "",
-    "definition": "Cancer of mesothelial lining, usually from asbestos exposure."
+    "snappy": "",
+    "detail": "Cancer of mesothelial lining, usually from asbestos exposure.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "MET",
     "full": "",
-    "definition": "Receptor with mutations/amplifications, MET exon 14 skipping targetable."
+    "snappy": "",
+    "detail": "Receptor with mutations/amplifications, MET exon 14 skipping targetable.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Metabolite",
     "full": "",
-    "definition": "What a drug becomes after body processes it."
+    "snappy": "",
+    "detail": "What a drug becomes after body processes it.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Metastasis",
     "full": "",
-    "definition": "Cancer spread to distant sites, major cause of deaths."
+    "snappy": "",
+    "detail": "Cancer spread to distant sites, major cause of deaths.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "MGMT",
     "full": "",
-    "definition": "DNA repair enzyme, methylation predicts temozolomide response in GBM."
+    "snappy": "",
+    "detail": "DNA repair enzyme, methylation predicts temozolomide response in GBM.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Microbiome",
     "full": "",
-    "definition": "Gut bacteria affecting drug response and immunotherapy efficacy."
+    "snappy": "",
+    "detail": "Gut bacteria affecting drug response and immunotherapy efficacy.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Microsatellite Instability",
     "full": "MSI-H",
-    "definition": "DNA repair deficiency causing hypermutation, predicts immunotherapy response."
+    "snappy": "",
+    "detail": "DNA repair deficiency causing hypermutation, predicts immunotherapy response.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Multiple Myeloma",
     "full": "MM",
-    "definition": "Plasma cell cancer in bone marrow."
+    "snappy": "",
+    "detail": "Plasma cell cancer in bone marrow.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "Mutation",
     "full": "",
-    "definition": "DNA change that can drive cancer."
+    "snappy": "",
+    "detail": "DNA change that can drive cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "MYC",
     "full": "",
-    "definition": "Master regulator amplified in many cancers, largely undruggable."
+    "snappy": "",
+    "detail": "Master regulator amplified in many cancers, largely undruggable.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "M",
     "term": "MYCN",
     "full": "",
-    "definition": "MYC family member amplified in neuroblastoma."
+    "snappy": "",
+    "detail": "MYC family member amplified in neuroblastoma.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "Nasopharyngeal Carcinoma",
     "full": "NPC",
-    "definition": "Head/neck cancer associated with EBV, endemic in Asia."
+    "snappy": "",
+    "detail": "Head/neck cancer associated with EBV, endemic in Asia.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "NCCN",
     "full": "National Comprehensive Cancer Network",
-    "definition": "Organization providing cancer treatment guidelines."
+    "snappy": "",
+    "detail": "Organization providing cancer treatment guidelines.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "NCI",
     "full": "National Cancer Institute",
-    "definition": "US government's principal cancer research agency."
+    "snappy": "",
+    "detail": "US government's principal cancer research agency.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "NDA",
     "full": "New Drug Application",
-    "definition": "FDA submission for drug approval."
+    "snappy": "",
+    "detail": "FDA submission for drug approval.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "Necrosis",
     "full": "",
-    "definition": "Uncontrolled cell death causing inflammation."
+    "snappy": "",
+    "detail": "Uncontrolled cell death causing inflammation.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "Neoadjuvant",
     "full": "",
-    "definition": "Treatment before main therapy (surgery) to shrink tumor."
+    "snappy": "",
+    "detail": "Treatment before main therapy (surgery) to shrink tumor.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "Neoplasm",
     "full": "",
-    "definition": "Abnormal growth, can be benign or malignant."
+    "snappy": "",
+    "detail": "Abnormal growth, can be benign or malignant.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "NET",
     "full": "Neuroendocrine Tumor",
-    "definition": "From hormone-producing cells, includes carcinoid."
+    "snappy": "",
+    "detail": "From hormone-producing cells, includes carcinoid.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "Neuroblastoma",
     "full": "",
-    "definition": "Childhood nerve tissue cancer, MYCN amplification indicates high risk."
+    "snappy": "",
+    "detail": "Childhood nerve tissue cancer, MYCN amplification indicates high risk.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "Neuropathy",
     "full": "",
-    "definition": "Nerve damage from chemotherapy."
+    "snappy": "",
+    "detail": "Nerve damage from chemotherapy.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "Neutropenia",
     "full": "",
-    "definition": "Low neutrophil count from chemotherapy, infection risk."
+    "snappy": "",
+    "detail": "Low neutrophil count from chemotherapy, infection risk.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "NGS",
     "full": "Next-Generation Sequencing",
-    "definition": "Technology for rapid DNA sequencing, enables precision medicine."
+    "snappy": "",
+    "detail": "Technology for rapid DNA sequencing, enables precision medicine.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "NHL",
     "full": "Non-Hodgkin Lymphoma",
-    "definition": "Diverse group of lymphomas."
+    "snappy": "",
+    "detail": "Diverse group of lymphomas.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "NOTCH",
     "full": "",
-    "definition": "Signaling pathway mutated in T-ALL."
+    "snappy": "",
+    "detail": "Signaling pathway mutated in T-ALL.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "NSCLC",
     "full": "Non-Small Cell Lung Cancer",
-    "definition": "~85% of lung cancers, includes adenocarcinoma and squamous types."
+    "snappy": "",
+    "detail": "~85% of lung cancers, includes adenocarcinoma and squamous types.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "N",
     "term": "NTRK",
     "full": "",
-    "definition": "Gene fusions targeted by larotrectinib and entrectinib."
+    "snappy": "",
+    "detail": "Gene fusions targeted by larotrectinib and entrectinib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Obinutuzumab",
     "full": "Gazyva",
-    "definition": "Anti-CD20 antibody for lymphomas and CLL."
+    "snappy": "",
+    "detail": "Anti-CD20 antibody for lymphomas and CLL.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Off-label",
     "full": "",
-    "definition": "Prescribing drug for condition different from FDA approval."
+    "snappy": "",
+    "detail": "Prescribing drug for condition different from FDA approval.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Olaparib",
     "full": "Lynparza",
-    "definition": "First approved PARP inhibitor for BRCA-mutated cancers."
+    "snappy": "",
+    "detail": "First approved PARP inhibitor for BRCA-mutated cancers.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Oligometastatic",
     "full": "",
-    "definition": "Limited metastatic disease potentially curable with aggressive treatment."
+    "snappy": "",
+    "detail": "Limited metastatic disease potentially curable with aggressive treatment.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Oncogene",
     "full": "",
-    "definition": "Gene driving cancer when activated/amplified."
+    "snappy": "",
+    "detail": "Gene driving cancer when activated/amplified.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Oncologist",
     "full": "",
-    "definition": "Doctor specializing in cancer treatment."
+    "snappy": "",
+    "detail": "Doctor specializing in cancer treatment.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Oncology",
     "full": "",
-    "definition": "Medical specialty dealing with cancer."
+    "snappy": "",
+    "detail": "Medical specialty dealing with cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Open-Label",
     "full": "",
-    "definition": "Trial where everyone knows what treatment is given."
+    "snappy": "",
+    "detail": "Trial where everyone knows what treatment is given.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Orphan Drug",
     "full": "",
-    "definition": "Drug for rare disease, gets FDA incentives."
+    "snappy": "",
+    "detail": "Drug for rare disease, gets FDA incentives.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "ORR",
     "full": "Overall Response Rate",
-    "definition": "Percentage of patients with tumor shrinkage."
+    "snappy": "",
+    "detail": "Percentage of patients with tumor shrinkage.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "OS",
     "full": "Overall Survival",
-    "definition": "How long patients live from treatment start."
+    "snappy": "",
+    "detail": "How long patients live from treatment start.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Osimertinib",
     "full": "Tagrisso",
-    "definition": "Third-generation EGFR inhibitor overcoming T790M resistance."
+    "snappy": "",
+    "detail": "Third-generation EGFR inhibitor overcoming T790M resistance.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Osteosarcoma",
     "full": "",
-    "definition": "Most common primary bone cancer in adolescents."
+    "snappy": "",
+    "detail": "Most common primary bone cancer in adolescents.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "O",
     "term": "Ovarian Cancer",
     "full": "",
-    "definition": "Includes epithelial (90%), germ cell, and stromal types."
+    "snappy": "",
+    "detail": "Includes epithelial (90%), germ cell, and stromal types.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "p53",
     "full": "TP53",
-    "definition": "'Guardian of genome' mutated in >50% of cancers."
+    "snappy": "",
+    "detail": "'Guardian of genome' mutated in >50% of cancers.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Paclitaxel",
     "full": "Taxol",
-    "definition": "Chemotherapy from yew tree, stabilizes microtubules."
+    "snappy": "",
+    "detail": "Chemotherapy from yew tree, stabilizes microtubules.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "PALB2",
     "full": "",
-    "definition": "DNA repair gene, mutations increase breast/pancreatic cancer risk."
+    "snappy": "",
+    "detail": "DNA repair gene, mutations increase breast/pancreatic cancer risk.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Palliative",
     "full": "",
-    "definition": "Treatment to relieve symptoms rather than cure."
+    "snappy": "",
+    "detail": "Treatment to relieve symptoms rather than cure.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Pancreatic Cancer",
     "full": "PDAC",
-    "definition": "Very poor prognosis, >90% have KRAS mutations."
+    "snappy": "",
+    "detail": "Very poor prognosis, >90% have KRAS mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "PARP Inhibitor",
     "full": "",
-    "definition": "Drugs blocking DNA repair, effective in BRCA-mutated cancers."
+    "snappy": "",
+    "detail": "Drugs blocking DNA repair, effective in BRCA-mutated cancers.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Pathologic Complete Response",
     "full": "pCR",
-    "definition": "No cancer found at surgery after neoadjuvant therapy."
+    "snappy": "",
+    "detail": "No cancer found at surgery after neoadjuvant therapy.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "PD-1/PD-L1",
     "full": "Programmed Death 1/Ligand 1",
-    "definition": "Checkpoint proteins cancer uses to hide from immune system."
+    "snappy": "",
+    "detail": "Checkpoint proteins cancer uses to hide from immune system.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Pembrolizumab",
     "full": "Keytruda",
-    "definition": "PD-1 inhibitor, first tissue-agnostic approval for MSI-H."
+    "snappy": "",
+    "detail": "PD-1 inhibitor, first tissue-agnostic approval for MSI-H.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Personalized Medicine",
     "full": "Precision Medicine",
-    "definition": "Treatment based on patient's specific tumor genetics."
+    "snappy": "",
+    "detail": "Treatment based on patient's specific tumor genetics.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "PFS",
     "full": "Progression-Free Survival",
-    "definition": "Time until disease worsens."
+    "snappy": "",
+    "detail": "Time until disease worsens.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Phase I/II/III",
     "full": "Clinical Trial Phases",
-    "definition": "I=safety, II=efficacy, III=comparison to standard."
+    "snappy": "",
+    "detail": "I=safety, II=efficacy, III=comparison to standard.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Philadelphia Chromosome",
     "full": "Ph+",
-    "definition": "BCR-ABL fusion causing CML and some ALL."
+    "snappy": "",
+    "detail": "BCR-ABL fusion causing CML and some ALL.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "PI3K",
     "full": "Phosphatidylinositol 3-Kinase",
-    "definition": "Key pathway, PIK3CA mutated in many cancers."
+    "snappy": "",
+    "detail": "Key pathway, PIK3CA mutated in many cancers.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "PK/PD",
     "full": "Pharmacokinetics/Pharmacodynamics",
-    "definition": "What body does to drug/what drug does to body."
+    "snappy": "",
+    "detail": "What body does to drug/what drug does to body.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Placebo",
     "full": "",
-    "definition": "Inactive substance used as control in trials."
+    "snappy": "",
+    "detail": "Inactive substance used as control in trials.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Platinum",
     "full": "",
-    "definition": "Chemotherapy class (cisplatin, carboplatin) causing DNA damage."
+    "snappy": "",
+    "detail": "Chemotherapy class (cisplatin, carboplatin) causing DNA damage.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Preclinical",
     "full": "",
-    "definition": "Lab and animal testing before human trials."
+    "snappy": "",
+    "detail": "Lab and animal testing before human trials.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Primary Tumor",
     "full": "",
-    "definition": "Original cancer site, not metastases."
+    "snappy": "",
+    "detail": "Original cancer site, not metastases.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Prostate Cancer",
     "full": "",
-    "definition": "Most common male cancer, may have TMPRSS2-ERG fusion."
+    "snappy": "",
+    "detail": "Most common male cancer, may have TMPRSS2-ERG fusion.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "PROTAC",
     "full": "Proteolysis Targeting Chimera",
-    "definition": "Degrader drug hijacking cell's disposal system."
+    "snappy": "",
+    "detail": "Degrader drug hijacking cell's disposal system.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "Protocol",
     "full": "",
-    "definition": "Detailed plan for clinical trial."
+    "snappy": "",
+    "detail": "Detailed plan for clinical trial.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "P",
     "term": "PTEN",
     "full": "",
-    "definition": "Tumor suppressor in PI3K pathway, lost in many cancers."
+    "snappy": "",
+    "detail": "Tumor suppressor in PI3K pathway, lost in many cancers.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Q",
     "term": "QC",
     "full": "Quality Control",
-    "definition": "Testing to ensure drug batches meet specifications."
+    "snappy": "",
+    "detail": "Testing to ensure drug batches meet specifications.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Q",
     "term": "QoL",
     "full": "Quality of Life",
-    "definition": "Patient wellbeing measure in trials beyond just survival."
+    "snappy": "",
+    "detail": "Patient wellbeing measure in trials beyond just survival.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Q",
     "term": "QTc",
     "full": "Corrected QT Interval",
-    "definition": "Heart rhythm measurement, some drugs prolong it dangerously."
+    "snappy": "",
+    "detail": "Heart rhythm measurement, some drugs prolong it dangerously.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Q",
     "term": "Quadrantectomy",
     "full": "",
-    "definition": "Breast surgery removing quarter of breast."
+    "snappy": "",
+    "detail": "Breast surgery removing quarter of breast.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Q",
     "term": "Quantitative PCR",
     "full": "qPCR",
-    "definition": "Technique measuring gene expression or mutations."
+    "snappy": "",
+    "detail": "Technique measuring gene expression or mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Q",
     "term": "Quiescent",
     "full": "",
-    "definition": "Non-dividing cells that can survive chemotherapy."
+    "snappy": "",
+    "detail": "Non-dividing cells that can survive chemotherapy.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "Radiation Therapy",
     "full": "RT",
-    "definition": "Using high-energy rays to kill cancer cells."
+    "snappy": "",
+    "detail": "Using high-energy rays to kill cancer cells.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "RAF",
     "full": "",
-    "definition": "Protein family in MAPK pathway, includes BRAF."
+    "snappy": "",
+    "detail": "Protein family in MAPK pathway, includes BRAF.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "RAS",
     "full": "",
-    "definition": "Gene family (KRAS, NRAS, HRAS) mutated in ~30% of cancers."
+    "snappy": "",
+    "detail": "Gene family (KRAS, NRAS, HRAS) mutated in ~30% of cancers.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "Rb",
     "full": "Retinoblastoma protein",
-    "definition": "Tumor suppressor controlling cell cycle."
+    "snappy": "",
+    "detail": "Tumor suppressor controlling cell cycle.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "Real-World Evidence",
     "full": "RWE",
-    "definition": "Data from actual clinical practice vs controlled trials."
+    "snappy": "",
+    "detail": "Data from actual clinical practice vs controlled trials.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "Receptor",
     "full": "",
-    "definition": "Protein receiving signals, many are drug targets."
+    "snappy": "",
+    "detail": "Protein receiving signals, many are drug targets.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "Recurrence",
     "full": "",
-    "definition": "Cancer returning after treatment."
+    "snappy": "",
+    "detail": "Cancer returning after treatment.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "Refractory",
     "full": "",
-    "definition": "Disease not responding to treatment."
+    "snappy": "",
+    "detail": "Disease not responding to treatment.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "Regulatory",
     "full": "",
-    "definition": "Related to FDA and drug approval process."
+    "snappy": "",
+    "detail": "Related to FDA and drug approval process.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "Remission",
     "full": "",
-    "definition": "Decrease or disappearance of cancer signs/symptoms."
+    "snappy": "",
+    "detail": "Decrease or disappearance of cancer signs/symptoms.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "Resistance",
     "full": "",
-    "definition": "When disease stops responding to previously effective treatment."
+    "snappy": "",
+    "detail": "When disease stops responding to previously effective treatment.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "RET",
     "full": "",
-    "definition": "Gene with fusions in lung/thyroid cancer, targeted by selpercatinib."
+    "snappy": "",
+    "detail": "Gene with fusions in lung/thyroid cancer, targeted by selpercatinib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "Retinoblastoma",
     "full": "",
-    "definition": "Childhood eye cancer from RB1 mutations."
+    "snappy": "",
+    "detail": "Childhood eye cancer from RB1 mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "RNA",
     "full": "Ribonucleic Acid",
-    "definition": "Genetic material, target of some new therapies."
+    "snappy": "",
+    "detail": "Genetic material, target of some new therapies.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "R",
     "term": "ROS1",
     "full": "",
-    "definition": "Gene fusion in ~1-2% of lung cancers, targeted by crizotinib."
+    "snappy": "",
+    "detail": "Gene fusion in ~1-2% of lung cancers, targeted by crizotinib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Sarcoma",
     "full": "",
-    "definition": "Cancer from connective tissue (bone, muscle, fat), >70 subtypes."
+    "snappy": "",
+    "detail": "Cancer from connective tissue (bone, muscle, fat), >70 subtypes.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "SCLC",
     "full": "Small Cell Lung Cancer",
-    "definition": "Aggressive neuroendocrine lung cancer, usually from smoking."
+    "snappy": "",
+    "detail": "Aggressive neuroendocrine lung cancer, usually from smoking.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Second-Line Therapy",
     "full": "",
-    "definition": "Treatment used when first-line fails."
+    "snappy": "",
+    "detail": "Treatment used when first-line fails.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Seminoma",
     "full": "",
-    "definition": "Most common testicular germ cell tumor, very curable."
+    "snappy": "",
+    "detail": "Most common testicular germ cell tumor, very curable.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Senescence",
     "full": "",
-    "definition": "Permanent growth arrest, cancer prevention mechanism."
+    "snappy": "",
+    "detail": "Permanent growth arrest, cancer prevention mechanism.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "siRNA",
     "full": "Small Interfering RNA",
-    "definition": "Short RNAs for gene silencing."
+    "snappy": "",
+    "detail": "Short RNAs for gene silencing.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Small Molecule",
     "full": "",
-    "definition": "Traditional drugs entering cells easily, most oral cancer drugs."
+    "snappy": "",
+    "detail": "Traditional drugs entering cells easily, most oral cancer drugs.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "SOC",
     "full": "Standard of Care",
-    "definition": "Current best accepted treatment for a condition."
+    "snappy": "",
+    "detail": "Current best accepted treatment for a condition.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Somatic Mutation",
     "full": "",
-    "definition": "Mutation in body cells, not inherited."
+    "snappy": "",
+    "detail": "Mutation in body cells, not inherited.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Squamous Cell Carcinoma",
     "full": "SCC",
-    "definition": "Cancer from squamous epithelium in skin, lung, head/neck, cervix."
+    "snappy": "",
+    "detail": "Cancer from squamous epithelium in skin, lung, head/neck, cervix.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Stage",
     "full": "Cancer Stage",
-    "definition": "Extent of cancer spread, determines treatment."
+    "snappy": "",
+    "detail": "Extent of cancer spread, determines treatment.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Stem Cell Transplant",
     "full": "SCT",
-    "definition": "Replacing blood-forming cells, autologous or allogeneic."
+    "snappy": "",
+    "detail": "Replacing blood-forming cells, autologous or allogeneic.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Subcutaneous",
     "full": "SubQ",
-    "definition": "Injection under skin, common for biologics."
+    "snappy": "",
+    "detail": "Injection under skin, common for biologics.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Surrogate Endpoint",
     "full": "",
-    "definition": "Measurable outcome predicting clinical benefit."
+    "snappy": "",
+    "detail": "Measurable outcome predicting clinical benefit.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "S",
     "term": "Synthetic Lethality",
     "full": "",
-    "definition": "Two defects together kill cells, basis for PARP inhibitors."
+    "snappy": "",
+    "detail": "Two defects together kill cells, basis for PARP inhibitors.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "T-cell",
     "full": "",
-    "definition": "Lymphocytes that kill infected/cancer cells or coordinate immunity."
+    "snappy": "",
+    "detail": "Lymphocytes that kill infected/cancer cells or coordinate immunity.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "Targeted Therapy",
     "full": "",
-    "definition": "Drugs designed for specific molecular targets in cancer."
+    "snappy": "",
+    "detail": "Drugs designed for specific molecular targets in cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "TCR",
     "full": "T-Cell Receptor",
-    "definition": "Recognizes antigens, engineered in TCR-T therapy."
+    "snappy": "",
+    "detail": "Recognizes antigens, engineered in TCR-T therapy.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "Testicular Cancer",
     "full": "",
-    "definition": "Usually germ cell tumors, highly curable."
+    "snappy": "",
+    "detail": "Usually germ cell tumors, highly curable.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "Therapeutic Index",
     "full": "TI",
-    "definition": "Ratio between toxic and effective doses."
+    "snappy": "",
+    "detail": "Ratio between toxic and effective doses.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "Therapeutic Window",
     "full": "",
-    "definition": "Dose range where drug works without excessive toxicity."
+    "snappy": "",
+    "detail": "Dose range where drug works without excessive toxicity.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "Thyroid Cancer",
     "full": "",
-    "definition": "Includes papillary (80%), follicular, medullary, anaplastic types."
+    "snappy": "",
+    "detail": "Includes papillary (80%), follicular, medullary, anaplastic types.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "TILs",
     "full": "Tumor-Infiltrating Lymphocytes",
-    "definition": "Immune cells in tumors, more means better prognosis."
+    "snappy": "",
+    "detail": "Immune cells in tumors, more means better prognosis.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "TKI",
     "full": "Tyrosine Kinase Inhibitor",
-    "definition": "Drugs blocking kinases, names often end in '-tinib'."
+    "snappy": "",
+    "detail": "Drugs blocking kinases, names often end in '-tinib'.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "TMB",
     "full": "Tumor Mutational Burden",
-    "definition": "Total mutations in tumor, high TMB predicts immunotherapy response."
+    "snappy": "",
+    "detail": "Total mutations in tumor, high TMB predicts immunotherapy response.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "TME",
     "full": "Tumor Microenvironment",
-    "definition": "Ecosystem around tumor affecting its behavior."
+    "snappy": "",
+    "detail": "Ecosystem around tumor affecting its behavior.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "TNBC",
     "full": "Triple-Negative Breast Cancer",
-    "definition": "Lacks ER, PR, HER2, ~15% of breast cancers."
+    "snappy": "",
+    "detail": "Lacks ER, PR, HER2, ~15% of breast cancers.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "TNM Staging",
     "full": "Tumor, Nodes, Metastasis",
-    "definition": "System for cancer staging."
+    "snappy": "",
+    "detail": "System for cancer staging.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "Tox",
     "full": "Toxicology",
-    "definition": "Studies of drug's harmful effects and safety."
+    "snappy": "",
+    "detail": "Studies of drug's harmful effects and safety.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "TP53",
     "full": "p53",
-    "definition": "Most commonly mutated gene in cancer."
+    "snappy": "",
+    "detail": "Most commonly mutated gene in cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "Translational Research",
     "full": "",
-    "definition": "'Bench to bedside' - lab discoveries to clinical practice."
+    "snappy": "",
+    "detail": "'Bench to bedside' - lab discoveries to clinical practice.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "Translocation",
     "full": "",
-    "definition": "Chromosome pieces switching places, creates fusion genes."
+    "snappy": "",
+    "detail": "Chromosome pieces switching places, creates fusion genes.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "Trastuzumab",
     "full": "Herceptin",
-    "definition": "First HER2-targeted antibody, transformed HER2+ breast cancer."
+    "snappy": "",
+    "detail": "First HER2-targeted antibody, transformed HER2+ breast cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "TRK",
     "full": "",
-    "definition": "NTRK fusions targeted by larotrectinib."
+    "snappy": "",
+    "detail": "NTRK fusions targeted by larotrectinib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "Tumor Heterogeneity",
     "full": "",
-    "definition": "Differences between cancer cells within same tumor."
+    "snappy": "",
+    "detail": "Differences between cancer cells within same tumor.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "T",
     "term": "Tumor Suppressor",
     "full": "",
-    "definition": "Genes preventing uncontrolled growth (TP53, RB, PTEN)."
+    "snappy": "",
+    "detail": "Genes preventing uncontrolled growth (TP53, RB, PTEN).",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "U",
     "term": "Ultramutation",
     "full": "",
-    "definition": "Extremely high mutation burden from POLE/POLD1 or MMR deficiency."
+    "snappy": "",
+    "detail": "Extremely high mutation burden from POLE/POLD1 or MMR deficiency.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "U",
     "term": "Umbrella Trial",
     "full": "",
-    "definition": "One trial testing multiple targeted therapies for different mutations."
+    "snappy": "",
+    "detail": "One trial testing multiple targeted therapies for different mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "U",
     "term": "Undifferentiated",
     "full": "",
-    "definition": "Cancer cells looking nothing like normal cells, very aggressive."
+    "snappy": "",
+    "detail": "Cancer cells looking nothing like normal cells, very aggressive.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "U",
     "term": "Unknown Primary",
     "full": "CUP",
-    "definition": "Metastatic cancer where original site cannot be found."
+    "snappy": "",
+    "detail": "Metastatic cancer where original site cannot be found.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "U",
     "term": "Unresectable",
     "full": "",
-    "definition": "Tumors that can't be removed surgically."
+    "snappy": "",
+    "detail": "Tumors that can't be removed surgically.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "U",
     "term": "Upstream/Downstream",
     "full": "",
-    "definition": "In biotech: upstream=growing cells, downstream=purifying product."
+    "snappy": "",
+    "detail": "In biotech: upstream=growing cells, downstream=purifying product.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "U",
     "term": "Urothelial Carcinoma",
     "full": "",
-    "definition": "Most common bladder cancer type."
+    "snappy": "",
+    "detail": "Most common bladder cancer type.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "U",
     "term": "USP",
     "full": "United States Pharmacopeia",
-    "definition": "Standards organization for drug quality."
+    "snappy": "",
+    "detail": "Standards organization for drug quality.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "U",
     "term": "Uveal Melanoma",
     "full": "",
-    "definition": "Eye melanoma with different genetics than skin melanoma."
+    "snappy": "",
+    "detail": "Eye melanoma with different genetics than skin melanoma.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "V",
     "term": "Vaccine",
     "full": "",
-    "definition": "Prevention or treatment stimulating immune response, cancer vaccines in development."
+    "snappy": "",
+    "detail": "Prevention or treatment stimulating immune response, cancer vaccines in development.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "V",
     "term": "Validation",
     "full": "",
-    "definition": "Confirming biomarker or target works as expected."
+    "snappy": "",
+    "detail": "Confirming biomarker or target works as expected.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "V",
     "term": "VEGF",
     "full": "Vascular Endothelial Growth Factor",
-    "definition": "Promotes blood vessel growth, targeted by bevacizumab."
+    "snappy": "",
+    "detail": "Promotes blood vessel growth, targeted by bevacizumab.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "V",
     "term": "VEGFR",
     "full": "VEGF Receptor",
-    "definition": "Target of multi-kinase inhibitors like sunitinib."
+    "snappy": "",
+    "detail": "Target of multi-kinase inhibitors like sunitinib.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "V",
     "term": "Vemurafenib",
     "full": "Zelboraf",
-    "definition": "BRAF V600E inhibitor for melanoma."
+    "snappy": "",
+    "detail": "BRAF V600E inhibitor for melanoma.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "V",
     "term": "Venetoclax",
     "full": "Venclexta",
-    "definition": "BCL2 inhibitor for CLL and AML."
+    "snappy": "",
+    "detail": "BCL2 inhibitor for CLL and AML.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "V",
     "term": "VHL",
     "full": "Von Hippel-Lindau",
-    "definition": "Tumor suppressor mutated in clear cell kidney cancer."
+    "snappy": "",
+    "detail": "Tumor suppressor mutated in clear cell kidney cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "V",
     "term": "Vinca Alkaloid",
     "full": "",
-    "definition": "Plant-derived chemo (vincristine, vinblastine) disrupting cell division."
+    "snappy": "",
+    "detail": "Plant-derived chemo (vincristine, vinblastine) disrupting cell division.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "V",
     "term": "Viral Load",
     "full": "",
-    "definition": "Amount of virus in blood, monitored in infections."
+    "snappy": "",
+    "detail": "Amount of virus in blood, monitored in infections.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "V",
     "term": "Vismodegib",
     "full": "Erivedge",
-    "definition": "Hedgehog pathway inhibitor for basal cell carcinoma."
+    "snappy": "",
+    "detail": "Hedgehog pathway inhibitor for basal cell carcinoma.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "V",
     "term": "Volume of Distribution",
     "full": "Vd",
-    "definition": "How widely drug spreads through body."
+    "snappy": "",
+    "detail": "How widely drug spreads through body.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "W",
     "term": "Waldenstrom Macroglobulinemia",
     "full": "",
-    "definition": "Indolent lymphoma producing IgM, ~90% have MYD88 mutation."
+    "snappy": "",
+    "detail": "Indolent lymphoma producing IgM, ~90% have MYD88 mutation.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "W",
     "term": "Warburg Effect",
     "full": "",
-    "definition": "Cancer cells preferring glycolysis even with oxygen present."
+    "snappy": "",
+    "detail": "Cancer cells preferring glycolysis even with oxygen present.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "W",
     "term": "Washout Period",
     "full": "",
-    "definition": "Time between stopping one treatment and starting another."
+    "snappy": "",
+    "detail": "Time between stopping one treatment and starting another.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "W",
     "term": "Waterfall Plot",
     "full": "",
-    "definition": "Graph showing each patient's tumor response in a trial."
+    "snappy": "",
+    "detail": "Graph showing each patient's tumor response in a trial.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "W",
     "term": "WBC",
     "full": "White Blood Cell",
-    "definition": "Immune cells fighting infection, lowered by chemotherapy."
+    "snappy": "",
+    "detail": "Immune cells fighting infection, lowered by chemotherapy.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "W",
     "term": "Weight-Based Dosing",
     "full": "",
-    "definition": "Calculating drug dose based on patient's body weight."
+    "snappy": "",
+    "detail": "Calculating drug dose based on patient's body weight.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "W",
     "term": "WHO",
     "full": "World Health Organization",
-    "definition": "UN agency setting global health standards."
+    "snappy": "",
+    "detail": "UN agency setting global health standards.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "W",
     "term": "Whole Exome Sequencing",
     "full": "WES",
-    "definition": "Sequencing all protein-coding genes to find mutations."
+    "snappy": "",
+    "detail": "Sequencing all protein-coding genes to find mutations.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "W",
     "term": "Wild-type",
     "full": "",
-    "definition": "Normal, non-mutated version of a gene."
+    "snappy": "",
+    "detail": "Normal, non-mutated version of a gene.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "W",
     "term": "Window Period",
     "full": "Therapeutic Window",
-    "definition": "Dose range where drug works without excessive toxicity."
+    "snappy": "",
+    "detail": "Dose range where drug works without excessive toxicity.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "W",
     "term": "WT1",
     "full": "Wilms Tumor 1",
-    "definition": "Gene in kidney development, marker in some leukemias."
+    "snappy": "",
+    "detail": "Gene in kidney development, marker in some leukemias.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "X",
     "term": "X-linked",
     "full": "",
-    "definition": "Genetic conditions on X chromosome, affecting mainly males."
+    "snappy": "",
+    "detail": "Genetic conditions on X chromosome, affecting mainly males.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "X",
     "term": "X-ray",
     "full": "",
-    "definition": "Radiation for imaging, chest X-rays routine in lung cancer."
+    "snappy": "",
+    "detail": "Radiation for imaging, chest X-rays routine in lung cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "X",
     "term": "Xenograft",
     "full": "",
-    "definition": "Transplanting human cancer cells into mice for research."
+    "snappy": "",
+    "detail": "Transplanting human cancer cells into mice for research.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "X",
     "term": "Xeroderma",
     "full": "",
-    "definition": "Dry skin, common side effect of targeted therapies."
+    "snappy": "",
+    "detail": "Dry skin, common side effect of targeted therapies.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "X",
     "term": "Xerostomia",
     "full": "",
-    "definition": "Dry mouth from radiation or medications."
+    "snappy": "",
+    "detail": "Dry mouth from radiation or medications.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "X",
     "term": "XRT",
     "full": "External Radiation Therapy",
-    "definition": "Radiation delivered from outside the body."
+    "snappy": "",
+    "detail": "Radiation delivered from outside the body.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "X",
     "term": "XIAP",
     "full": "X-linked Inhibitor of Apoptosis",
-    "definition": "Protein preventing cell death, overexpressed in cancer."
+    "snappy": "",
+    "detail": "Protein preventing cell death, overexpressed in cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Y",
     "term": "Y-90",
     "full": "Yttrium-90",
-    "definition": "Radioactive isotope for targeted radiotherapy in liver cancer."
+    "snappy": "",
+    "detail": "Radioactive isotope for targeted radiotherapy in liver cancer.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Y",
     "term": "Yeast",
     "full": "",
-    "definition": "Used to produce biologics through genetic engineering."
+    "snappy": "",
+    "detail": "Used to produce biologics through genetic engineering.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Y",
     "term": "Yellow Card",
     "full": "",
-    "definition": "UK's adverse drug reaction reporting system."
+    "snappy": "",
+    "detail": "UK's adverse drug reaction reporting system.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Y",
     "term": "Yervoy",
     "full": "Ipilimumab",
-    "definition": "Anti-CTLA-4 checkpoint inhibitor for melanoma."
+    "snappy": "",
+    "detail": "Anti-CTLA-4 checkpoint inhibitor for melanoma.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Y",
     "term": "Yield",
     "full": "",
-    "definition": "Amount of drug produced vs theoretical maximum in manufacturing."
+    "snappy": "",
+    "detail": "Amount of drug produced vs theoretical maximum in manufacturing.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Y",
     "term": "Yolk Sac Tumor",
     "full": "",
-    "definition": "Rare germ cell tumor producing AFP biomarker."
+    "snappy": "",
+    "detail": "Rare germ cell tumor producing AFP biomarker.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Y",
     "term": "Young Adult",
     "full": "",
-    "definition": "Age 18-39 in trials, some cancers affect this group differently."
+    "snappy": "",
+    "detail": "Age 18-39 in trials, some cancers affect this group differently.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Y",
     "term": "Yttrium",
     "full": "",
-    "definition": "Rare earth element used in cancer radiotherapy."
+    "snappy": "",
+    "detail": "Rare earth element used in cancer radiotherapy.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Z",
     "term": "ZAP-70",
     "full": "",
-    "definition": "Prognostic marker in CLL, presence indicates aggressive disease."
+    "snappy": "",
+    "detail": "Prognostic marker in CLL, presence indicates aggressive disease.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Z",
     "term": "Zeta Potential",
     "full": "",
-    "definition": "Electrical charge affecting nanoparticle drug delivery."
+    "snappy": "",
+    "detail": "Electrical charge affecting nanoparticle drug delivery.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Z",
     "term": "Zero-Order Kinetics",
     "full": "",
-    "definition": "Drug eliminated at constant rate regardless of concentration."
+    "snappy": "",
+    "detail": "Drug eliminated at constant rate regardless of concentration.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Z",
     "term": "Zinc Finger",
     "full": "",
-    "definition": "Protein structures for gene editing before CRISPR."
+    "snappy": "",
+    "detail": "Protein structures for gene editing before CRISPR.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Z",
     "term": "Zone of Inhibition",
     "full": "",
-    "definition": "Clear area showing drug effectiveness against bacteria."
+    "snappy": "",
+    "detail": "Clear area showing drug effectiveness against bacteria.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Z",
     "term": "Zoonotic",
     "full": "",
-    "definition": "Diseases jumping from animals to humans."
+    "snappy": "",
+    "detail": "Diseases jumping from animals to humans.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Z",
     "term": "Zoster",
     "full": "Shingles",
-    "definition": "Varicella reactivation common in immunocompromised patients."
+    "snappy": "",
+    "detail": "Varicella reactivation common in immunocompromised patients.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Z",
     "term": "Z-Score",
     "full": "",
-    "definition": "Statistical measure of distance from average in trial data."
+    "snappy": "",
+    "detail": "Statistical measure of distance from average in trial data.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Z",
     "term": "Zygosity",
     "full": "",
-    "definition": "Whether gene copies are identical (homo) or different (hetero)."
+    "snappy": "",
+    "detail": "Whether gene copies are identical (homo) or different (hetero).",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   },
   {
     "letter": "Z",
     "term": "Zymogen",
     "full": "",
-    "definition": "Inactive enzyme precursor activated when needed."
+    "snappy": "",
+    "detail": "Inactive enzyme precursor activated when needed.",
+    "indications": [
+      "Oncology"
+    ],
+    "category": "",
+    "sources": []
   }
 ]
