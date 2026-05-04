@@ -3,421 +3,500 @@
     "letter": "A",
     "term": "ADC",
     "full": "Antibody-Drug Conjugate",
-    "snappy": "",
-    "detail": "A targeted cancer therapy that combines an antibody (which finds cancer cells) with a chemotherapy drug (which kills them). Think of it as a 'guided missile' for cancer treatment.",
+    "snappy": "Think of it as a guided missile for cancer: an antibody that hunts down tumor cells, fused to a chemo drug that destroys them on contact.",
+    "detail": "ADCs deliver toxic chemotherapy directly to cancer cells while sparing healthy ones, which means stronger results with fewer side effects than traditional chemo. They're a fast-growing class across breast, bladder, and lung cancers — well-known examples include Kadcyla (trastuzumab emtansine) and Enhertu.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "Adenocarcinoma",
     "full": "",
-    "snappy": "",
-    "detail": "Cancer that starts in gland cells, most common type in lung, colon, prostate, and pancreatic cancers.",
+    "snappy": "Cancer that starts in cells lining your organs and making mucus or fluids — the most common form of lung, colon, prostate, and pancreatic cancer.",
+    "detail": "Most cancers diagnosed in the lung, colon, prostate, and pancreas are adenocarcinomas — meaning they originate in glandular tissue rather than skin-like or supporting cells. The distinction matters because different cancer types respond to different treatments. You'll see the term in pathology reports, oncology trial enrollment criteria, and any commercial discussion of which patient population a new drug is targeting.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Clinical",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "ADME",
     "full": "Absorption, Distribution, Metabolism, Excretion",
-    "snappy": "",
-    "detail": "The four key processes that determine how a drug moves through your body.",
+    "snappy": "The four-step journey every drug takes through your body — getting in, getting around, getting broken down, and getting out.",
+    "detail": "ADME is the framework drug developers use to predict how a drug behaves once it enters the body. Each step affects how much drug reaches the target, how long it lasts, and what side effects emerge. You'll hear ADME on biotech earnings calls when companies discuss whether a candidate has good \"drug-like properties,\" and in early-stage trial design where these properties first get measured.",
     "indications": [
-      "Oncology"
+      "General"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "FDA"
+    ]
   },
   {
     "letter": "A",
     "term": "Adjuvant",
     "full": "",
-    "snappy": "",
-    "detail": "Treatment given after primary therapy (like surgery) to prevent cancer from coming back.",
+    "snappy": "The follow-up treatment after surgery or radiation, designed to mop up cancer cells you can't see and stop the disease coming back.",
+    "detail": "Adjuvant therapy — usually chemo, hormone therapy, or immunotherapy — is what oncologists use to lower the chance of recurrence after the visible tumor has been removed. You'll hear it constantly in breast, colon, and lung cancer trial readouts, often framed around the question \"did adjuvant treatment improve survival?\"",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Clinical",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "Adverse Event",
     "full": "AE",
-    "snappy": "",
-    "detail": "Any unwanted or harmful effect that happens during a clinical trial, whether or not caused by the drug.",
+    "snappy": "Any unwanted or harmful effect a patient experiences during a clinical trial — whether or not the drug actually caused it.",
+    "detail": "Adverse events are tracked exhaustively in trials because regulators need to know what users might experience. The term covers everything from a mild headache to a serious hospitalization — the more severe ones get reclassified as Serious Adverse Events (SAEs). You'll hear AEs come up in trial readouts (\"the safety profile was consistent with…\") and in FDA review letters that decide whether a drug gets approved.",
     "indications": [
-      "Oncology"
+      "General"
     ],
-    "category": "",
-    "sources": []
+    "category": "Pharmacovigilance",
+    "sources": [
+      "FDA"
+    ]
   },
   {
     "letter": "A",
     "term": "Agonist",
     "full": "",
-    "snappy": "",
-    "detail": "A drug that activates a receptor in your body, like turning on a switch.",
+    "snappy": "A drug that flips a switch to activate a receptor in your body — telling cells to do something, like a thermostat dialing up the heat.",
+    "detail": "Agonists mimic natural signaling molecules — when one binds to a receptor, the receptor activates as if its natural partner had arrived. Many medications work this way: opioids agonize pain receptors; asthma inhalers like albuterol agonize beta-2 receptors to relax airways. You'll hear the term in pharmacology basics and any discussion of how a new drug actually does its job in the body.",
     "indications": [
-      "Oncology"
+      "General"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
   },
   {
     "letter": "A",
     "term": "AKT",
     "full": "Protein Kinase B",
-    "snappy": "",
-    "detail": "Key signaling protein often overactive in cancer, part of PI3K/AKT/mTOR pathway.",
+    "snappy": "A key signaling protein that pushes cells to grow and survive — and is often hijacked by cancer to fuel its own growth.",
+    "detail": "AKT (also called Protein Kinase B) sits at the center of the PI3K/AKT/mTOR pathway, one of the most commonly disrupted signaling networks in cancer. When AKT is overactive, cells refuse to die and keep multiplying — so drugs that block it have been a long-running area of cancer research. You'll hear AKT in oncology trial designs, pipeline discussions, and commercial pitches involving \"pathway inhibitors.\"",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "ALK",
     "full": "Anaplastic Lymphoma Kinase",
-    "snappy": "",
-    "detail": "Gene fusion found in ~5% of lung cancers, targeted by drugs like crizotinib.",
+    "snappy": "A gene mutation that drives about 5% of lung cancers — and the target of some of oncology's biggest precision-medicine wins.",
+    "detail": "ALK gene fusions cause uncontrolled cell growth in a subset of non-small-cell lung cancer patients. The story is a precision-medicine showcase: identify the mutation, prescribe a targeted drug like Xalkori (crizotinib) or Alecensa (alectinib), and patients live dramatically longer than they would on chemo. You'll hear ALK in lung cancer trial readouts and at ASCO whenever new generations of inhibitors are presented.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "ALL",
     "full": "Acute Lymphoblastic Leukemia",
-    "snappy": "",
-    "detail": "Fast-growing cancer of lymphoid cells, most common childhood cancer.",
+    "snappy": "A fast-growing blood cancer that starts in immature lymphocytes — the most common cancer in children, though it also affects adults.",
+    "detail": "ALL develops when lymphoid cells in the bone marrow turn cancerous and crowd out healthy blood cells. Treatment is intensive — combination chemo, sometimes a bone marrow transplant, increasingly CAR-T cell therapy in relapsed cases. You'll hear ALL discussed in pediatric oncology contexts and in any commercial story around CAR-T (Kymriah was approved for pediatric and young-adult ALL in 2017).",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Clinical",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "AML",
     "full": "Acute Myeloid Leukemia",
-    "snappy": "",
-    "detail": "Fast-growing cancer of myeloid cells in bone marrow, requires immediate treatment.",
+    "snappy": "A fast-moving blood cancer that starts in the bone marrow and demands urgent treatment — primarily affects older adults but can hit at any age.",
+    "detail": "AML develops when myeloid cells — the precursors to red cells, platelets, and most white cells — become cancerous and overrun the bone marrow. Treatment is aggressive (high-dose chemo, often bone marrow transplant) and increasingly genotype-driven, with FLT3 and IDH inhibitors targeting specific mutations. You'll hear AML in oncology pipeline discussions, ASCO/ASH conference coverage, and around companies developing targeted leukemia therapies.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Clinical",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "Angiogenesis",
     "full": "",
-    "snappy": "",
-    "detail": "Formation of new blood vessels that tumors trigger to feed themselves.",
+    "snappy": "The process where the body builds new blood vessels — which tumors hijack to feed their own growth.",
+    "detail": "Tumors trick surrounding tissue into growing new blood vessels that supply oxygen and nutrients, letting them expand beyond what local blood supply can sustain. Drugs that block this process — including Avastin (bevacizumab) — are a major class in oncology. You'll hear angiogenesis come up in solid-tumor trial designs and in commercial discussions of how \"anti-angiogenics\" fit alongside immunotherapy and chemo.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "Antagonist",
     "full": "",
-    "snappy": "",
-    "detail": "A drug that blocks a receptor, preventing activation - like putting tape over a light switch.",
+    "snappy": "A drug that blocks a receptor — like sliding tape over a light switch so it can't be turned on.",
+    "detail": "Antagonists work by occupying a receptor site without activating it, preventing the body's natural signaling molecule from binding. Beta blockers like propranolol are antagonists at beta-adrenergic receptors, slowing the heart. Antihistamines block histamine receptors. You'll hear the term in pharmacology basics, in any drug-development discussion of mechanism, and on earnings calls when companies position their drug against a competitor's.",
     "indications": [
-      "Oncology"
+      "General"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
   },
   {
     "letter": "A",
     "term": "APC",
     "full": "Adenomatous Polyposis Coli",
-    "snappy": "",
-    "detail": "Tumor suppressor gene mutated in most colorectal cancers.",
+    "snappy": "A tumor-suppressor gene whose job is to keep cells from dividing out of control — and its breakdown is the first step toward most colorectal cancers.",
+    "detail": "APC mutations are among the earliest genetic changes in colorectal cancer development — they're found in roughly 80% of sporadic cases and in nearly all patients with familial adenomatous polyposis (FAP), an inherited cancer syndrome. You'll hear APC in colorectal cancer screening discussions, hereditary-cancer-syndrome contexts, and in any pipeline conversation involving Wnt-pathway-targeted therapies.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "API",
     "full": "Active Pharmaceutical Ingredient",
-    "snappy": "",
-    "detail": "The actual chemical in a drug that makes it work.",
+    "snappy": "The actual chemical inside a pill or injection that does the work — everything else (fillers, coatings, capsule) is just delivery.",
+    "detail": "An API is what's pharmacologically active in a finished drug; the inactive components — called excipients — give it shape, stability, and a delivery mechanism. APIs are typically manufactured at specialized facilities, often in India or China, before being formulated into the final product. You'll hear API in supply-chain discussions (especially around shortages), at drug-pricing debates, and on earnings calls when companies discuss vertical integration.",
     "indications": [
-      "Oncology"
+      "General"
     ],
-    "category": "",
-    "sources": []
+    "category": "Manufacturing",
+    "sources": [
+      "FDA"
+    ]
   },
   {
     "letter": "A",
     "term": "Apoptosis",
     "full": "",
-    "snappy": "",
-    "detail": "Programmed cell death - cancer cells often evade this through mutations.",
+    "snappy": "Programmed cell death — the body's built-in self-destruct mechanism for damaged or unwanted cells. Cancer cells routinely figure out how to switch it off.",
+    "detail": "Apoptosis is how the body removes cells that are no longer needed or are too damaged to function — about a million cells per second, in normal physiology. Cancer cells acquire mutations that disable apoptosis, allowing them to keep dividing instead of self-destructing. You'll hear apoptosis come up in cancer-mechanism discussions and in any drug-development pitch around restoring cell death (e.g., BH3 mimetics, BCL-2 inhibitors).",
     "indications": [
+      "General",
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "Assay",
     "full": "",
-    "snappy": "",
-    "detail": "A test or analysis done in the lab to measure drug or substance activity.",
+    "snappy": "A laboratory test that measures something — usually whether a drug works, how much of it is present, or what it does to cells.",
+    "detail": "Assays are the workhorses of drug development: high-throughput screens to find compounds that hit a target, ELISAs to detect proteins in blood, cell-based assays to measure tumor killing. Diagnostic companies sell assays as products in their own right. You'll hear the term across early-stage research papers, biotech investor decks describing platforms, and any FDA discussion of analytical validation.",
     "indications": [
-      "Oncology"
+      "General"
     ],
-    "category": "",
-    "sources": []
+    "category": "Diagnostics",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
   },
   {
     "letter": "A",
     "term": "Astrocytoma",
     "full": "",
-    "snappy": "",
-    "detail": "Brain tumor from star-shaped glial cells, includes glioblastoma.",
+    "snappy": "A brain tumor that arises from star-shaped support cells called astrocytes — the family includes glioblastoma, the most aggressive.",
+    "detail": "Astrocytomas range from slow-growing low-grade tumors to glioblastoma multiforme — one of the deadliest cancers, with median survival measured in months despite surgery, radiation, and chemo. The category is graded I to IV by aggressiveness. You'll hear astrocytoma in neuro-oncology contexts, brain-cancer trial readouts, and around clinical-trial sponsors developing therapies for the underserved glioblastoma population.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Clinical",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "ATM",
     "full": "Ataxia Telangiectasia Mutated",
-    "snappy": "",
-    "detail": "DNA repair gene, mutations increase cancer risk and may predict PARP inhibitor response.",
+    "snappy": "A gene that helps cells fix damaged DNA — when it's broken, cells accumulate mutations and cancer risk goes up.",
+    "detail": "ATM is a key DNA-damage response gene; people who inherit mutations in both copies develop ataxia telangiectasia, a rare disorder with sharply elevated cancer risk. ATM mutations also turn up in breast, prostate, and pancreatic cancers, where they may flag tumors that respond to PARP inhibitors. You'll hear ATM in precision-oncology trial designs and any commercial discussion of biomarker-driven drug selection.",
     "indications": [
-      "Oncology"
+      "Oncology",
+      "Rare Disease"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "A",
     "term": "Autoimmune",
     "full": "",
-    "snappy": "",
-    "detail": "When your immune system attacks your own healthy cells, can be triggered by immunotherapy.",
+    "snappy": "When the body's immune system mistakes its own healthy cells for invaders and attacks them — sometimes triggered by cancer immunotherapy.",
+    "detail": "Autoimmune diseases — rheumatoid arthritis, lupus, type 1 diabetes, multiple sclerosis — affect roughly 5% of the population and are a major commercial market for biologic drugs like Humira (adalimumab) and Stelara (ustekinumab). Cancer immunotherapy can also trigger autoimmune-like side effects called immune-related adverse events. You'll hear autoimmune in immunology pipeline discussions, biologic earnings calls, and immunotherapy trial readouts.",
     "indications": [
-      "Oncology"
+      "Immunology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
   },
   {
     "letter": "B",
     "term": "Basal Cell Carcinoma",
     "full": "BCC",
-    "snappy": "",
-    "detail": "Most common skin cancer, rarely spreads but can be locally destructive.",
+    "snappy": "The most common skin cancer — slow-growing, rarely spreads to other organs, but can quietly cause real damage to the skin and underlying tissue if left alone.",
+    "detail": "BCC arises from the deepest layer of the skin's outer surface, usually on sun-exposed areas like the face, ears, and neck. Treatment is typically surgical removal, with high cure rates. For advanced or rare metastatic cases, hedgehog-pathway inhibitors like Erivedge (vismodegib) are options. You'll hear BCC in dermatology drug development and in commercial discussions of skin-cancer immunotherapy and topical agents.",
     "indications": [
-      "Oncology"
+      "Oncology",
+      "Dermatology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Clinical",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "B",
     "term": "BCL2",
     "full": "B-cell Lymphoma 2",
-    "snappy": "",
-    "detail": "Anti-death protein overexpressed in many cancers, targeted by venetoclax.",
+    "snappy": "A protein that helps cells avoid death — when it's overactive, cancer cells refuse to die, which is how many blood cancers stay alive.",
+    "detail": "BCL-2 was the first cancer gene discovered to work by blocking apoptosis (programmed cell death) rather than by driving growth. It's overexpressed in CLL, follicular lymphoma, and AML, and Venclexta (venetoclax) is a BCL-2 inhibitor that has reshaped treatment in those settings. You'll hear BCL-2 at hematology conferences (ASH especially) and in any pipeline discussion involving \"apoptosis-targeted\" oncology.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "B",
     "term": "BCR-ABL",
     "full": "",
-    "snappy": "",
-    "detail": "Fusion gene causing chronic myeloid leukemia, targeted by imatinib (Gleevec).",
+    "snappy": "A fused gene that drives chronic myeloid leukemia — and the target of one of the first and most successful precision-medicine drugs ever made.",
+    "detail": "When parts of chromosomes 9 and 22 swap places, they form the abnormal BCR-ABL gene that produces a constantly active growth signal in white blood cells, causing CML. The story is legendary in oncology: Gleevec (imatinib), launched in 2001, transformed CML from a fatal disease into a manageable chronic condition. You'll hear BCR-ABL in any drug-development pitch invoking targeted therapy as a paradigm.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "B",
     "term": "Bioavailability",
     "full": "",
-    "snappy": "",
-    "detail": "How much of a drug actually gets into your bloodstream to be used.",
+    "snappy": "How much of a drug actually makes it into your bloodstream after you take it — the rest is broken down or never absorbed.",
+    "detail": "When you swallow a pill, only a fraction reaches the circulation; the rest is destroyed by stomach acid, liver enzymes, or never absorbed by the gut. IV drugs are 100% bioavailable by definition; pills can range from 5% to 95% depending on chemistry. You'll hear the term in early drug development, formulation discussions, and at FDA reviews of generic-drug equivalence.",
     "indications": [
-      "Oncology"
+      "General"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "FDA"
+    ]
   },
   {
     "letter": "B",
     "term": "Biomarker",
     "full": "",
-    "snappy": "",
-    "detail": "A measurable indicator showing disease presence or treatment response.",
+    "snappy": "A measurable biological signal — like a fingerprint your body leaves behind — that tells doctors what's happening inside you.",
+    "detail": "Biomarkers can be molecules in your blood (such as PSA for prostate cancer), genetic mutations (such as HER2 in breast cancer), or imaging signals. Pharma uses them to diagnose disease, predict which patients will respond to a drug, and track whether a treatment is working — they're the foundation of \"precision medicine.\"",
     "indications": [
+      "General",
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "B",
     "term": "Biopsy",
     "full": "",
-    "snappy": "",
-    "detail": "Taking a small tissue sample to examine for cancer diagnosis.",
+    "snappy": "Taking a small piece of tissue from your body to examine under a microscope — usually to confirm whether something is cancer.",
+    "detail": "Biopsies range from a needle aspirate (a few cells from a lymph node) to a surgical excision (a whole lump removed). The sample is processed by a pathologist who diagnoses the disease and increasingly identifies genetic mutations that guide treatment selection. You'll hear biopsy in cancer trial design (\"tumor biopsy required\"), liquid-biopsy startup discussions, and any commercial conversation about companion diagnostics.",
     "indications": [
+      "General",
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Diagnostics",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "B",
     "term": "Biosimilar",
     "full": "",
-    "snappy": "",
-    "detail": "A nearly identical copy of an already approved biological drug.",
+    "snappy": "A near-identical copy of an existing biologic drug — like a generic, but more complicated to make because biologics are produced by living cells.",
+    "detail": "Unlike small-molecule generics, biosimilars can't be exactly identical to their reference biologic — biology doesn't allow it — so the FDA approves them based on showing no clinically meaningful differences. They drive down prices when biologics like Remicade (infliximab) and Humira (adalimumab) lose patent protection. You'll hear biosimilar in payer discussions about cost savings and at investor briefings on biologic patent cliffs.",
     "indications": [
-      "Oncology"
+      "General"
     ],
-    "category": "",
-    "sources": []
+    "category": "Regulatory",
+    "sources": [
+      "FDA"
+    ]
   },
   {
     "letter": "B",
     "term": "Bladder Cancer",
     "full": "",
-    "snappy": "",
-    "detail": "Usually urothelial carcinoma, may have FGFR3 or TP53 mutations.",
+    "snappy": "Cancer that starts in the lining of the bladder — most often in long-time smokers — and frequently recurs even after early-stage treatment.",
+    "detail": "Bladder cancer is overwhelmingly urothelial carcinoma, with FGFR3 and TP53 mutations driving subsets. Treatment ranges from intravesical BCG for early-stage disease to systemic therapy for advanced cases — Keytruda (pembrolizumab), Padcev (enfortumab vedotin), and the FGFR inhibitor Balversa (erdafitinib) are recent additions. You'll hear bladder cancer at ASCO in commercial discussions of immunotherapy and ADC market expansion.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Clinical",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "B",
     "term": "Blinding",
     "full": "",
-    "snappy": "",
-    "detail": "Keeping patients/doctors from knowing who gets real drug vs placebo in trials.",
+    "snappy": "Hiding from patients, doctors, or both whether a person is getting the real drug or a placebo — so expectations don't bias the results.",
+    "detail": "Trials can be single-blind (only patients don't know) or double-blind (neither patients nor doctors know); placebo bias is real and measurable, so blinding is essential to clean results. The unblinded readout is what triggers stock-moving headlines. You'll hear blinding in trial-design discussions, FDA review documents, and at investor conferences when companies preview Phase 3 data they expect to release.",
     "indications": [
-      "Oncology"
+      "General"
     ],
-    "category": "",
-    "sources": []
+    "category": "Clinical",
+    "sources": [
+      "FDA"
+    ]
   },
   {
     "letter": "B",
     "term": "Blood-Brain Barrier",
     "full": "BBB",
-    "snappy": "",
-    "detail": "Protective filter between blood and brain that keeps out most drugs.",
+    "snappy": "The body's bouncer for the brain — a tight wall of cells that keeps most chemicals (including most drugs) from crossing from the blood to the brain.",
+    "detail": "The BBB protects the brain from toxins but also keeps out most therapeutic drugs, making CNS conditions especially hard to treat. Crossing the BBB is a central engineering problem in neurology drug development — solved with small-molecule design, antibody shuttles, or ultrasound. You'll hear BBB in pipeline discussions for Alzheimer's, brain cancer, and any neuro-immunotherapy conversation, often as the reason something failed.",
     "indications": [
-      "Oncology"
+      "General",
+      "Neurology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
   },
   {
     "letter": "B",
     "term": "BRAF",
     "full": "",
-    "snappy": "",
-    "detail": "Gene mutated in ~50% of melanomas, V600E most common mutation, targeted by vemurafenib.",
+    "snappy": "A gene that, when mutated, drives uncontrolled cell growth — found in about half of all melanomas, plus some lung and colon cancers.",
+    "detail": "The BRAF V600E mutation makes the protein constantly \"on,\" pushing cells to proliferate. Tafinlar (dabrafenib) plus Mekinist (trametinib) is the standard combo for BRAF-mutant melanoma — together they shrink tumors dramatically, though resistance often develops. You'll hear BRAF in melanoma trial readouts, precision-oncology discussions, and in any company commentary on tumor-agnostic mutation testing.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "B",
     "term": "Brain Metastases",
     "full": "",
-    "snappy": "",
-    "detail": "Cancer spread to brain from elsewhere, common from lung, breast, melanoma.",
+    "snappy": "Cancer that has spread from somewhere else in the body — usually lung, breast, or melanoma — into the brain.",
+    "detail": "Once cancer reaches the brain, treatment options narrow because most drugs can't cross the blood-brain barrier; whole-brain radiation, stereotactic radiosurgery, and a small group of brain-penetrant drugs (Tagrisso, Alecensa, Tukysa) become the toolkit. You'll hear brain metastases in oncology trial-enrollment criteria (often excluded) and in any drug pitch claiming \"CNS activity\" — a key commercial differentiator.",
     "indications": [
-      "Oncology"
+      "Oncology",
+      "Neurology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Clinical",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "B",
     "term": "BRCA1/BRCA2",
     "full": "",
-    "snappy": "",
-    "detail": "DNA repair genes, mutations greatly increase breast/ovarian cancer risk.",
+    "snappy": "Two genes that normally help cells repair damaged DNA — when inherited as broken copies, they sharply raise the lifetime risk of breast and ovarian cancer.",
+    "detail": "BRCA mutations affect roughly 1 in 400 people; carriers face up to 70% lifetime breast cancer risk and elevated risk for ovarian, prostate, and pancreatic cancers. The genes are also a treatment target — PARP inhibitors like Lynparza (olaparib) work especially well on BRCA-mutated tumors. You'll hear BRCA in genetic-testing conversations, oncology trial enrollment criteria, and at any company developing PARP-class therapies.",
     "indications": [
-      "Oncology"
+      "Oncology",
+      "Women's Health"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "B",
     "term": "Breast Cancer",
     "full": "",
-    "snappy": "",
-    "detail": "Classified by receptors: ER+, PR+, HER2+, or triple-negative (none).",
+    "snappy": "The most common cancer in women — classified by which receptors are present (estrogen, progesterone, HER2), because the receptors decide treatment.",
+    "detail": "Breast cancer subtypes — ER+, PR+, HER2+, triple-negative — drive entirely different treatment paths: hormone therapies for ER+, HER2-targeted drugs like Herceptin (trastuzumab) and ADCs like Enhertu for HER2+, and immunotherapy plus chemo for triple-negative. You'll hear breast cancer almost everywhere in oncology — at every major conference, in every pharma pipeline, and in any commercial discussion of women's-health markets.",
     "indications": [
-      "Oncology"
+      "Oncology",
+      "Women's Health"
     ],
-    "category": "",
-    "sources": []
+    "category": "Clinical",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "B",
     "term": "BTK",
     "full": "Bruton's Tyrosine Kinase",
-    "snappy": "",
-    "detail": "B-cell signaling protein targeted by ibrutinib in CLL.",
+    "snappy": "A signaling protein that helps cancerous B-cells survive and multiply — and the target of a major class of leukemia and lymphoma drugs.",
+    "detail": "BTK is essential for B-cell development; in CLL and certain lymphomas, blocking it stops the cancer's growth signals. Imbruvica (ibrutinib) and Calquence (acalabrutinib) are the leading BTK inhibitors and major commercial products. You'll hear BTK at ASH, in CLL trial readouts, and in pipeline discussion of next-generation \"covalent\" or \"non-covalent\" inhibitors and their resistance profiles.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Mechanism",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "B",
     "term": "Burkitt Lymphoma",
     "full": "",
-    "snappy": "",
-    "detail": "Fast-growing B-cell lymphoma with MYC translocation.",
+    "snappy": "A very fast-growing blood cancer of B-cells — one of the most aggressive cancers known, but often curable with intensive chemo when caught early.",
+    "detail": "Burkitt lymphoma is driven by a translocation that activates the MYC gene — the cancer cells double in less than a day, making it one of the fastest-growing tumors. Treatment is intensive, hospital-based combination chemotherapy, with cure rates exceeding 80% in younger patients. You'll hear Burkitt in hematology pipeline discussions and at ASH, often referenced as a benchmark for aggressive lymphoma biology.",
     "indications": [
       "Oncology"
     ],
-    "category": "",
-    "sources": []
+    "category": "Clinical",
+    "sources": [
+      "NCI Dictionary of Cancer Terms"
+    ]
   },
   {
     "letter": "C",
