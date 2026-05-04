@@ -15,6 +15,20 @@
   },
   {
     "letter": "A",
+    "term": "A1C",
+    "full": "Hemoglobin A1C",
+    "snappy": "A blood test that captures average blood-sugar control over the past three months — the single most important number in diabetes care, and a near-universal trial measurement.",
+    "detail": "A1C measures the percentage of hemoglobin that has glucose stuck to it — the higher your blood sugar, the higher the number. Diabetes is diagnosed at 6.5% and most patients aim for under 7%. Almost every diabetes drug trial uses A1C reduction as the primary measure of efficacy. You'll see A1C cited in every Phase 3 readout for diabetes drugs, in formulary justifications for newer agents, and in HEDIS quality metrics that drive insurer behavior toward better diabetes management.",
+    "indications": [
+      "Metabolic"
+    ],
+    "category": "Diagnostics",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Accelerated Approval",
     "full": "",
     "snappy": "An FDA fast-track that lets a drug reach patients based on early evidence — but requires the company to confirm benefit in follow-up trials, or risk getting yanked.",
@@ -314,6 +328,21 @@
   },
   {
     "letter": "A",
+    "term": "Antipsychotic",
+    "full": "",
+    "snappy": "A drug that calms hallucinations, delusions, and severe mood disturbances by adjusting brain chemistry — used in schizophrenia, bipolar mania, and severe depression.",
+    "detail": "Antipsychotics split into older (\"typical\" — haloperidol, chlorpromazine) and newer (\"atypical\" — Abilify/aripiprazole, Latuda/lurasidone, Vraylar/cariprazine) classes. The 2024 approval of Cobenfy (xanomeline-trospium), the first non-dopamine antipsychotic, opened a new chapter after decades of mechanism stagnation. Long-acting injectable forms address adherence. You'll hear antipsychotics on BMS, J&J, and Otsuka earnings calls, and at psychiatric conferences when novel-mechanism programs (TAAR1, muscarinic, glutamatergic) reset expectations for what's possible.",
+    "indications": [
+      "Mental Health"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Antiviral",
     "full": "",
     "snappy": "A drug that targets viruses — typically by blocking the proteins they need to enter cells, copy themselves, or assemble new particles — without harming healthy human cells.",
@@ -458,6 +487,21 @@
   },
   {
     "letter": "A",
+    "term": "AUC",
+    "full": "Area Under the Curve",
+    "snappy": "The total drug exposure your body experiences over time — calculated as the area under the blood-concentration-versus-time graph, and a fundamental measure of how much medicine actually reached you.",
+    "detail": "AUC is the headline number regulators and clinicians use to compare drug exposures: between formulations, between patients, between dosing regimens. Bioequivalence studies — the foundation of generic-drug approval — are essentially comparisons of generic AUC and Cmax against the brand. You'll see AUC quoted in Phase 1 readouts, in any drug-drug interaction discussion, and in ANDA filings where generic manufacturers prove their version delivers within the FDA's 80-125% bioequivalence band.",
+    "indications": [
+      "General"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Autoimmune",
     "full": "",
     "snappy": "When the body's immune system mistakes its own healthy cells for invaders and attacks them — sometimes triggered by cancer immunotherapy.",
@@ -487,6 +531,20 @@
   },
   {
     "letter": "B",
+    "term": "Batch Release",
+    "full": "",
+    "snappy": "The QC checkpoint where a batch of manufactured drug is tested against specs and formally cleared for shipment — or held back if anything is off.",
+    "detail": "Each batch goes through a battery of tests — potency, sterility, endotoxin, particulate, identity — before a Qualified Person signs off on release. Failed batches can wipe out hundreds of millions in revenue and trigger supply shortages. You'll see batch-release issues surface in FDA Form 483 reports, in earnings calls when revenue misses get blamed on \"manufacturing variability,\" and in commercial discussions of how supply-chain reliability shapes formulary positioning.",
+    "indications": [
+      "General"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "BCL2",
     "full": "B-cell Lymphoma 2",
     "snappy": "A protein that helps cells avoid death — when it's overactive, cancer cells refuse to die, which is how many blood cancers stay alive.",
@@ -511,6 +569,21 @@
     "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Beta Blocker",
+    "full": "",
+    "snappy": "A class of cardiovascular drugs that blunts the effect of adrenaline on the heart — slowing it down and easing blood-pressure spikes — used since the 1960s.",
+    "detail": "Beta blockers — metoprolol, carvedilol, atenolol, propranolol — are workhorses across hypertension, atrial fibrillation, heart failure, and post-heart-attack care. Non-cardiac uses include migraine prevention, performance anxiety, and essential tremor. Almost all are generic. You'll hear beta blockers framed in cardiology commentary as the durable foundation newer mechanisms have to beat, and in formulary discussions where their pennies-a-pill cost makes them the default first step in stepped-therapy protocols.",
+    "indications": [
+      "Cardiovascular"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
     ]
   },
   {
@@ -585,6 +658,20 @@
     "category": "Regulatory",
     "sources": [
       "FDA"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Bipolar Disorder",
+    "full": "",
+    "snappy": "A mental illness marked by dramatic swings between depressive lows and manic or hypomanic highs — sometimes lasting weeks, sometimes hours, and often diagnosed in early adulthood.",
+    "detail": "Treatment combines mood stabilizers like lithium and Depakote (valproate), atypical antipsychotics like Latuda (lurasidone) and Vraylar (cariprazine), and SSRIs paired with mood stabilizers for depressive phases. Roughly 1-3% of US adults live with bipolar I or II. You'll hear bipolar disorder framed at investor days as a stable specialty market with clear unmet need, and on earnings calls discussing the long-acting injectable antipsychotic franchise expanding from schizophrenia into bipolar maintenance.",
+    "indications": [
+      "Mental Health"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH NIMH"
     ]
   },
   {
@@ -804,6 +891,20 @@
   },
   {
     "letter": "C",
+    "term": "CBC",
+    "full": "Complete Blood Count",
+    "snappy": "The most-ordered blood test in medicine — measuring red cells, white cells, and platelets to check for anemia, infection, clotting problems, and a hundred other conditions.",
+    "detail": "CBC values are the bread-and-butter labs every chemo, immunotherapy, or autoimmune drug requires monitoring — neutrophil counts dictate whether the next dose of chemotherapy can go ahead, platelet counts gate decisions about anticoagulants. The components (hemoglobin, WBC, platelets, hematocrit) are referenced in nearly every clinical trial protocol. You'll see CBC monitoring requirements in FDA approval letters and REMS programs, and in commercial discussions of drugs that demand frequent lab visits — a known barrier to patient adherence.",
+    "indications": [
+      "General"
+    ],
+    "category": "Diagnostics",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "CDK4/6",
     "full": "Cyclin-Dependent Kinases 4 and 6",
     "snappy": "Two proteins that act as the cell's accelerator pedal — when overactive in cancer, drugs that block them slam the brakes on tumor growth.",
@@ -918,6 +1019,21 @@
   },
   {
     "letter": "C",
+    "term": "Cmax/Tmax",
+    "full": "",
+    "snappy": "The two most-watched numbers when a drug is being measured in the blood — Cmax is the peak concentration it reaches, Tmax is how long it took to get there.",
+    "detail": "Together with the AUC (total exposure), Cmax and Tmax are the basic shape parameters of any drug's blood-concentration curve. Drugmakers tune formulations — extended-release coatings, lipid carriers, dosing schedules — to control these numbers so peaks don't trigger side effects and troughs don't drop below therapeutic level. You'll see Cmax/Tmax in every Phase 1 readout press release and in formulation comparisons at investor R&D days when companies pitch a longer-acting or once-daily version of an existing drug.",
+    "indications": [
+      "General"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "CMC",
     "full": "Chemistry, Manufacturing, and Controls",
     "snappy": "The detailed package describing how a drug is actually made, tested, and kept consistent — required for FDA approval and ongoing oversight.",
@@ -958,6 +1074,20 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Compassionate Use",
+    "full": "",
+    "snappy": "A pathway letting seriously ill patients access an experimental drug before it's approved — when no other treatment works and the risk-benefit math leans toward trying it.",
+    "detail": "Also called \"expanded access,\" compassionate use is run by the FDA in coordination with manufacturers, who must agree to provide the drug. The 2018 federal Right to Try law added a parallel route bypassing the FDA, though uptake has been limited. You'll see compassionate-use stories surface in FDA press releases, in patient-advocacy campaigns, and in commercial discussions of the careful balance between humanitarian access and protecting trial enrollment for the formal approval pathway.",
+    "indications": [
+      "General"
+    ],
+    "category": "Regulatory",
+    "sources": [
+      "FDA"
     ]
   },
   {
@@ -1029,6 +1159,21 @@
     "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "CYP450",
+    "full": "Cytochrome P450",
+    "snappy": "The family of liver enzymes that breaks down most of the drugs you take — and the reason one medication can change the safe dose of another.",
+    "detail": "CYPs (especially CYP3A4, CYP2D6, CYP2C9) metabolize roughly 75% of marketed drugs. Some drugs inhibit or induce these enzymes, slowing or speeding the breakdown of others — the basis of most clinically important drug-drug interactions. Grapefruit juice's warning is CYP3A4 inhibition. You'll see CYP450 in every drug's package insert, in pharmacovigilance signal investigations, and in trial-design discussions where drug-drug interaction studies are required before approval.",
+    "indications": [
+      "General"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
     ]
   },
   {
@@ -1106,6 +1251,21 @@
   },
   {
     "letter": "D",
+    "term": "DMARD",
+    "full": "Disease-Modifying Antirheumatic Drug",
+    "snappy": "A drug that doesn't just calm symptoms but slows the underlying joint damage of rheumatoid arthritis — anchored for decades by methotrexate, now expanded by biologics and JAK inhibitors.",
+    "detail": "Conventional DMARDs (methotrexate, sulfasalazine, leflunomide) remain first-line for RA and inflammatory arthritis, often kept alongside biologics (Humira/adalimumab, Enbrel/etanercept) and targeted-synthetic DMARDs like Rinvoq (upadacitinib). Methotrexate alone is one of the most-prescribed RA drugs globally — and cheap. You'll hear DMARD strategy on AbbVie and Lilly earnings calls when JAK inhibitor uptake versus biologic positioning surfaces, and at ACR when head-to-head readouts redefine the order in which DMARDs get tried.",
+    "indications": [
+      "Immunology"
+    ],
+    "category": "Mechanism",
+    "sources": [
+      "FDA",
+      "NIH"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "DMC",
     "full": "Data Monitoring Committee",
     "snappy": "An independent group of experts that reviews trial data while a study is running — and can stop the trial if patients are being harmed or already clearly benefiting.",
@@ -1162,6 +1322,20 @@
   },
   {
     "letter": "D",
+    "term": "DTC Advertising",
+    "full": "Direct-to-Consumer Advertising",
+    "snappy": "The TV, web, and print ads that pitch prescription drugs straight to patients — a uniquely American practice that the rest of the developed world has largely banned.",
+    "detail": "Pharma spends roughly $7 billion a year on DTC ads in the US, telling viewers to \"ask your doctor about\" everything from Humira (adalimumab) to GLP-1s. The FDA requires balanced risk disclosure (the famous \"side effects may include\") but otherwise lets the ads run. You'll see DTC framed in policy debates as a driver of branded-drug demand, on earnings calls when launch teams talk about awareness campaigns, and at hearings on pharmaceutical pricing.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "DTx",
     "full": "Digital Therapeutic",
     "snappy": "A software-based treatment — usually an app — designed to prevent or manage a medical condition, sometimes prescribed by a doctor like a pill.",
@@ -1200,6 +1374,22 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "ECG",
+    "full": "Electrocardiogram",
+    "snappy": "A simple, painless test that records the heart's electrical activity through stickers on the chest — used to spot rhythm problems, heart attacks, and drug-induced effects.",
+    "detail": "ECGs (called EKG in the US) are everywhere in pharma trials, especially the QTc interval — a measurement of heart-rhythm stability that the FDA requires for almost every new drug since several blockbusters were withdrawn for QTc-related arrhythmias. Wearable ECG patches and Apple Watch ECG features have moved monitoring from clinic to home. You'll see ECG flagged in FDA safety communications, in cardiovascular trial readouts, and in digital-health pitches at JPMorgan.",
+    "indications": [
+      "General",
+      "Cardiovascular"
+    ],
+    "category": "Diagnostics",
+    "sources": [
+      "FDA",
+      "NIH MedlinePlus"
     ]
   },
   {
@@ -1273,6 +1463,20 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Epilepsy",
+    "full": "",
+    "snappy": "A neurological disorder defined by recurring seizures — sudden bursts of disordered electrical activity in the brain — affecting people of every age and background.",
+    "detail": "Epilepsy treatment leans on a long list of antiseizure drugs (older ones like phenytoin and valproate, newer ones like Vimpat/lacosamide and Briviact/brivaracetam), with surgery and devices for drug-resistant cases. Cannabidiol (Epidiolex) was the first FDA-approved cannabis-derived drug, indicated for rare pediatric epilepsies. You'll hear epilepsy on UCB, Jazz, and SK earnings calls as a steady specialty market, and at AES when readouts on novel mechanisms shift expectations.",
+    "indications": [
+      "Neurology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
     ]
   },
   {
@@ -1418,6 +1622,20 @@
     "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Fill-Finish",
+    "full": "",
+    "snappy": "The final step of biologic drug manufacturing — taking the bulk drug substance and filling it into vials, syringes, or pens, sealed sterile and ready for patients.",
+    "detail": "Fill-finish is one of pharma's biggest capacity bottlenecks: COVID vaccines exposed how few facilities could fill billions of doses to sterile standards. Specialist contract manufacturers like Catalent and Lonza have ridden the wave, and biologics-heavy companies have invested billions building dedicated fill-finish lines. You'll hear fill-finish in earnings calls when launch-supply commentary surfaces, and in FDA inspection news — Form 483 observations on fill-finish quality have led to multi-year supply disruptions for major drugs.",
+    "indications": [
+      "General"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "FDA"
     ]
   },
   {
@@ -1842,6 +2060,21 @@
   },
   {
     "letter": "H",
+    "term": "HIV",
+    "full": "Human Immunodeficiency Virus",
+    "snappy": "The virus that attacks immune cells and, untreated, leads to AIDS — but with modern antiretroviral therapy is now a chronic, manageable condition for life.",
+    "detail": "HIV treatment has progressed from the toxic AZT cocktails of the 1990s to today's single-tablet, once-daily regimens — Biktarvy (bictegravir-emtricitabine-tenofovir), Dovato (dolutegravir-lamivudine) — that bring viral load below detection. Long-acting injectables like Cabenuva given monthly are next. You'll hear HIV on every Gilead and ViiV earnings call as one of pharma's most durable franchises, and in policy debates about the End the HIV Epidemic initiative and 340B-funded programs.",
+    "indications": [
+      "Infectious Disease"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus",
+      "CDC"
+    ]
+  },
+  {
+    "letter": "H",
     "term": "Hodgkin Lymphoma",
     "full": "HL",
     "snappy": "A cancer of B-cells with a distinct microscope appearance — historically among the most curable cancers, even at advanced stages.",
@@ -1925,6 +2158,20 @@
     "category": "Mechanism",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "ICER",
+    "full": "Institute for Clinical and Economic Review",
+    "snappy": "An independent US watchdog that crunches the numbers on whether a new drug is worth its price — and publishes verdicts that increasingly shape what insurers will pay.",
+    "detail": "Founded in 2006, ICER models cost-effectiveness using QALYs (quality-adjusted life years) and benchmarks, then issues reports that influence formulary decisions and rebate negotiations. Pharma argues ICER underestimates value; payers cite ICER reports in coverage decisions. You'll see ICER reports drive earnings-call defenses and Q&A when expensive drugs get rated unfavorably, and at JPMorgan when access strategy comes up — they're the closest thing the US has to a NICE equivalent.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "ICER"
     ]
   },
   {
@@ -2113,6 +2360,21 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "IRB",
+    "full": "Institutional Review Board",
+    "snappy": "The independent committee — usually based at a hospital or university — that reviews and approves clinical trials before they can enroll patients, focused on protecting participants.",
+    "detail": "IRBs review every protocol, consent form, and amendment, ensuring risks are justified, vulnerable populations are protected, and informed consent meets standards. Commercial \"central IRBs\" handle multi-site trials. The FDA inspects IRBs as part of trial oversight, and IRB findings can pause or terminate studies. You'll see IRB approvals cited in every clinical-trial registration, in regulatory inspection news, and in academic-pharma partnership commentary about how site startup speed depends on IRB efficiency.",
+    "indications": [
+      "General"
+    ],
+    "category": "Regulatory",
+    "sources": [
+      "FDA",
+      "ICH GCP"
     ]
   },
   {
@@ -2317,6 +2579,21 @@
   },
   {
     "letter": "L",
+    "term": "LD50",
+    "full": "",
+    "snappy": "The dose of a drug or substance that kills half the test animals in a toxicity study — historically the benchmark for how dangerous a chemical is.",
+    "detail": "LD50 (\"lethal dose 50%\") comes from preclinical animal toxicology, providing a rough scale of acute toxicity before any drug ever reaches humans. Modern regulators have moved away from purely lethal endpoints toward more refined toxicity measures, but LD50 remains a familiar shorthand. You'll see LD50 cited in news reports comparing chemical hazards, in poison-control discussions, and in early preclinical readouts when companies disclose toxicology before filing IND applications.",
+    "indications": [
+      "General"
+    ],
+    "category": "Pharmacovigilance",
+    "sources": [
+      "FDA",
+      "NIH"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "Leukemia",
     "full": "",
     "snappy": "Cancer of the blood-forming cells in bone marrow — divided into acute or chronic, and lymphoid or myeloid, with very different behaviors and treatments.",
@@ -2389,6 +2666,20 @@
   },
   {
     "letter": "L",
+    "term": "Loss of Exclusivity",
+    "full": "",
+    "snappy": "Pharma shorthand for the moment generic competition arrives and a branded drug's protected profits end — the broader umbrella that includes patent cliffs and exclusivity expirations.",
+    "detail": "LOE captures more than just patent expiration: it includes regulatory exclusivities (orphan, pediatric, biologic 12-year) and \"first-to-file\" generic 180-day windows. Companies model LOE 5-10 years out and stage launches, lifecycle management, and acquisitions accordingly. You'll hear LOE on every earnings call as the multi-year revenue forecast variable, and at JPMorgan when companies pitch how their pipeline replaces the LOE-exposed franchise — \"LOE management\" is a job title at most large-cap pharmas.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "Lung Adenocarcinoma",
     "full": "",
     "snappy": "The most common type of lung cancer — and the one most likely to carry targetable genetic mutations like EGFR, ALK, ROS1, and KRAS.",
@@ -2400,6 +2691,20 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Lupus",
+    "full": "",
+    "snappy": "A chronic autoimmune disease where the immune system attacks the body's own tissue — joints, skin, kidneys, brain — causing flares that come and go unpredictably.",
+    "detail": "Systemic lupus (SLE) affects roughly 200,000 Americans, mostly women. Treatment combines hydroxychloroquine, steroids, and biologics including Benlysta (belimumab) and the newer Saphnelo (anifrolumab) targeting type-1 interferon. Lupus nephritis — kidney involvement — is the most aggressive form and the focus of many trials. You'll hear lupus on AstraZeneca and GSK earnings calls as a high-profile autoimmune market, and at ACR when readouts on novel mechanisms (BAFF, type-1 IFN, BTK) reset expectations.",
+    "indications": [
+      "Immunology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
     ]
   },
   {
@@ -2735,6 +3040,22 @@
   },
   {
     "letter": "M",
+    "term": "MRI",
+    "full": "Magnetic Resonance Imaging",
+    "snappy": "A scan that uses powerful magnets and radio waves — no radiation — to produce detailed images of soft tissue, especially brain, joints, and organs.",
+    "detail": "MRI is essential to drug development in oncology (tumor measurement under RECIST), neurology (MS lesion counting, Alzheimer's brain volume), and musculoskeletal disease. The new anti-amyloid antibodies for Alzheimer's — Leqembi (lecanemab), Kisunla (donanemab) — require ongoing MRI monitoring for ARIA brain swelling. You'll see MRI cited in trial readouts and FDA approval announcements, and in commercial discussions of which centers can actually deliver new drugs that require advanced imaging access.",
+    "indications": [
+      "General",
+      "Oncology",
+      "Neurology"
+    ],
+    "category": "Diagnostics",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "mRNA Therapy",
     "full": "",
     "snappy": "A treatment that delivers a strand of genetic instructions to your cells, telling them to make a protein — used in COVID vaccines and now expanding to cancer.",
@@ -2748,6 +3069,20 @@
     "sources": [
       "FDA",
       "NIH"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "MSL",
+    "full": "Medical Science Liaison",
+    "snappy": "A specialist field role inside pharma — typically a PhD or PharmD — who talks to leading doctors about the science behind a drug, separate from the sales reps.",
+    "detail": "MSLs sit in medical affairs, not sales, and they're the people who present the science at academic centers, attend congresses like ASCO and AHA, and feed insights from key opinion leaders back to R&D. Strict rules separate them from commercial promotion. You'll hear about MSL teams ramping up in launch-readiness calls, in JPMorgan presentations on a company's medical capability, and in pharmaceutical compliance discussions about the line between scientific exchange and promotion.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "FDA"
     ]
   },
   {
@@ -3072,6 +3407,21 @@
   },
   {
     "letter": "O",
+    "term": "Obesity",
+    "full": "",
+    "snappy": "A chronic disease defined by excess body fat that raises the risk of dozens of conditions — heart disease, diabetes, cancer — affecting roughly 42% of US adults.",
+    "detail": "Obesity treatment was a backwater of niche pills until GLP-1 agonists — Wegovy (semaglutide), Zepbound (tirzepatide) — delivered 15-22% weight loss in trials and reshaped the entire pharma landscape. Older drugs like phentermine and Contrave (naltrexone-bupropion) remain but look modest by comparison. You'll hear obesity framed at JPMorgan as the largest emerging therapeutic market in pharma history, and on every Novo Nordisk and Eli Lilly earnings call as the dominant growth story.",
+    "indications": [
+      "Metabolic"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus",
+      "CDC"
+    ]
+  },
+  {
+    "letter": "O",
     "term": "Obinutuzumab",
     "full": "Gazyva",
     "snappy": "A second-generation antibody against the CD20 protein on B-cells — designed to be more potent than rituximab against certain lymphomas and CLL.",
@@ -3242,6 +3592,20 @@
   },
   {
     "letter": "O",
+    "term": "Osteoporosis",
+    "full": "",
+    "snappy": "A condition where bones become thin and fragile — most common in postmenopausal women — quietly raising the risk of fractures from minor falls or even sneezes.",
+    "detail": "Osteoporosis treatment has moved from older bisphosphonates (Fosamax/alendronate, Reclast/zoledronic acid) to monoclonal antibodies that block bone breakdown — Prolia (denosumab), Evenity (romosozumab) — and the bone-builder Forteo (teriparatide). DEXA scans diagnose and track the disease. You'll hear osteoporosis on Amgen earnings calls (Prolia is one of its top franchises) and in commercial discussions of how Medicare coverage and women's-health primary-care patterns shape who actually gets diagnosed and treated.",
+    "indications": [
+      "Women's Health"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus"
+    ]
+  },
+  {
+    "letter": "O",
     "term": "Osteosarcoma",
     "full": "",
     "snappy": "The most common primary bone cancer — typically affecting teenagers in growing bones — and a disease where treatment hasn't meaningfully changed in decades.",
@@ -3387,6 +3751,20 @@
   },
   {
     "letter": "P",
+    "term": "Patent Cliff",
+    "full": "",
+    "snappy": "The point in a drug's lifecycle when its patent protection runs out — and generic or biosimilar competitors flood in, often vaporizing 80-90% of revenue within a year.",
+    "detail": "Lipitor's 2011 expiration is the textbook example: $13B in peak revenue collapsed to under $2B within two years. Pharma calendars are organized around patent cliffs, driving M&A and pipeline urgency. The 2030s loom as one of the steepest cliffs in industry history with Keytruda (pembrolizumab), Eliquis (apixaban), and dozens of biologics losing exclusivity. You'll hear \"patent cliff\" on every earnings call as the existential question CFOs spend their careers preparing for, and at JPMorgan when M&A speculation hits.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "FDA"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Pathologic Complete Response",
     "full": "pCR",
     "snappy": "When surgery after pre-treatment shows no remaining live cancer in the removed tissue — the cleanest signal that a drug is working.",
@@ -3513,6 +3891,20 @@
     "sources": [
       "FDA",
       "EMA"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Phase 4",
+    "full": "",
+    "snappy": "The post-approval studies a drugmaker runs after the FDA has greenlit the medicine — to track real-world safety, expand uses, and meet conditions of accelerated approvals.",
+    "detail": "Phase 4 covers everything from FDA-mandated post-marketing requirements (PMRs) to investigator-initiated studies pharma supports for label expansion. Failed Phase 4 confirmatory trials can pull accelerated-approval drugs off the market, as the Aduhelm (aducanumab) saga showed. You'll hear Phase 4 in FDA approval announcements that come with conditions, in pharmacovigilance discussions of post-market signals, and on earnings calls when companies announce label expansions from real-world evidence and observational studies.",
+    "indications": [
+      "General"
+    ],
+    "category": "Regulatory",
+    "sources": [
+      "FDA"
     ]
   },
   {
@@ -4298,6 +4690,21 @@
   },
   {
     "letter": "S",
+    "term": "Stability",
+    "full": "",
+    "snappy": "The body of testing that proves a drug stays safe and potent through its claimed shelf life — under storage temperatures, light exposure, and packaging conditions.",
+    "detail": "Stability programs run for years and follow ICH guidelines, with samples pulled at intervals and tested for potency, impurities, and degradation products. The data set the expiration date printed on every package and dictate cold-chain requirements. You'll see stability cited in FDA inspection reports, in formulation patents, and in earnings-call discussions when temperature excursions force product recalls or extend launches in markets without reliable cold storage.",
+    "indications": [
+      "General"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "FDA",
+      "ICH"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Stage",
     "full": "Cancer Stage",
     "snappy": "How far cancer has spread — usually 1 (localized) to 4 (metastatic) — and the single most important factor in choosing treatment and predicting outcomes.",
@@ -4352,6 +4759,22 @@
     "category": "Commercial / Market Access",
     "sources": [
       "CMS Glossary"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Stroke",
+    "full": "",
+    "snappy": "A medical emergency where blood flow to part of the brain is cut off — by a clot or a bleed — causing brain cells to die within minutes.",
+    "detail": "Strokes are split into ischemic (clot, ~85%) and hemorrhagic (bleed) — treatment hinges on which one and how fast. Ischemic strokes get tPA (alteplase) or mechanical thrombectomy if caught within hours. Stroke prevention drives huge anticoagulant markets — Eliquis (apixaban) for atrial fibrillation, statins for atherosclerosis. You'll hear stroke at every BMS-Pfizer earnings call linked to Eliquis, in cardiovascular trial readouts at AHA and ESC, and in policy commentary about the unequal US burden across geography and race.",
+    "indications": [
+      "Cardiovascular",
+      "Neurology"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "NIH MedlinePlus",
+      "CDC"
     ]
   },
   {
@@ -4452,6 +4875,21 @@
     "category": "Clinical",
     "sources": [
       "NCI Dictionary of Cancer Terms"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Therapeutic Drug Monitoring",
+    "full": "",
+    "snappy": "Measuring the level of a drug in a patient's blood to make sure they're getting enough to work — and not so much that side effects kick in.",
+    "detail": "TDM is standard for narrow-therapeutic-window drugs where the dose that works and the dose that harms are uncomfortably close — warfarin (now largely replaced by DOACs), digoxin, lithium, vancomycin, immunosuppressants like tacrolimus. Increasingly, biologics like Humira (adalimumab) are also monitored to catch loss of response. You'll hear TDM in earnings calls when companion-diagnostic plays come up, and in commercial discussions of how lab partnerships can extend a drug's value beyond the molecule itself.",
+    "indications": [
+      "General"
+    ],
+    "category": "Clinical",
+    "sources": [
+      "FDA",
+      "NIH"
     ]
   },
   {
