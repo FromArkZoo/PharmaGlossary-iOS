@@ -11,6 +11,7 @@
 		35A222E608354F79E39E7C4D /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */; };
 		38407B4845DE57E8DE03FC1D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E38546C90D38B314EB209CA /* Colors.swift */; };
 		5246BA99C15799316CB30CD0 /* TermDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E37C2FF5FACD43C57A2A048 /* TermDetailView.swift */; };
+		61B1DF64462A063998D10392 /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9357FB67693080C505E10 /* FilterSheet.swift */; };
 		778B28EF0F1BE29FFB2E00EC /* PolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE935826064BF8487C934F8 /* PolicyView.swift */; };
 		8434E33E025A8FDE799A1FF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E1C27794154C377F1B526 /* Assets.xcassets */; };
 		855944527A4B955455FCDBC5 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24C7850E5D59C353EB6A6F /* Brand.swift */; };
@@ -22,9 +23,10 @@
 
 /* Begin PBXFileReference section */
 		0E37C2FF5FACD43C57A2A048 /* TermDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermDetailView.swift; sourceTree = "<group>"; };
-		17A77974A0885F60BD0FB030 /* PharmaGlossary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PharmaGlossary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A77974A0885F60BD0FB030 /* PharmaGlossary.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PharmaGlossary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3BD9B8F335704D468D2D62 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		1E38546C90D38B314EB209CA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		24C9357FB67693080C505E10 /* FilterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSheet.swift; sourceTree = "<group>"; };
 		2D24C7850E5D59C353EB6A6F /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		3D4359037BAF4890035BF24F /* glossary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = glossary.json; sourceTree = "<group>"; };
 		4AE29B15500756634D070132 /* Glossary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glossary.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 		29EF4BF8F52FD625C48FD475 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				24C9357FB67693080C505E10 /* FilterSheet.swift */,
 				74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */,
 				5DE935826064BF8487C934F8 /* PolicyView.swift */,
 				1C3BD9B8F335704D468D2D62 /* RootView.swift */,
@@ -131,6 +134,8 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = B6312D2592591D51C079C79E /* Build configuration list for PBXProject "PharmaGlossary" */;
 			developmentRegion = en;
@@ -170,6 +175,7 @@
 			files = (
 				855944527A4B955455FCDBC5 /* Brand.swift in Sources */,
 				38407B4845DE57E8DE03FC1D /* Colors.swift in Sources */,
+				61B1DF64462A063998D10392 /* FilterSheet.swift in Sources */,
 				E977B208360F0B1378C8A7FE /* Glossary.swift in Sources */,
 				35A222E608354F79E39E7C4D /* LetterView.swift in Sources */,
 				2A37A6F8882BB845A660AAB0 /* PharmaGlossaryApp.swift in Sources */,
@@ -189,7 +195,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 278RL79DB5;
 				INFOPLIST_FILE = PharmaGlossary/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -267,7 +272,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 278RL79DB5;
 				INFOPLIST_FILE = PharmaGlossary/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -18,6 +18,18 @@ struct Term: Codable, Identifiable, Hashable {
     var hasSources: Bool { !sources.isEmpty }
 }
 
+struct FilterState: Equatable {
+    var indications: Set<String> = []
+    var categories: Set<String> = []
+
+    var isActive: Bool { !indications.isEmpty || !categories.isEmpty }
+
+    var summary: String {
+        let parts = indications.sorted() + categories.sorted()
+        return parts.joined(separator: " · ")
+    }
+}
+
 @MainActor
 final class GlossaryStore: ObservableObject {
     @Published private(set) var allTerms: [Term] = []
@@ -68,5 +80,39 @@ final class GlossaryStore: ObservableObject {
                 || $0.snappy.lowercased().contains(q)
                 || $0.detail.lowercased().contains(q)
         }
+    }
+
+    func filtered(by filter: FilterState) -> [Term] {
+        allTerms
+            .filter { term in
+                let indMatch = filter.indications.isEmpty
+                    || !filter.indications.isDisjoint(with: Set(term.indications))
+                let catMatch = filter.categories.isEmpty
+                    || filter.categories.contains(term.category)
+                return indMatch && catMatch
+            }
+            .sorted { $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending }
+    }
+
+    var allIndications: [String] {
+        let counts = allTerms.reduce(into: [String: Int]()) { acc, term in
+            for ind in term.indications { acc[ind, default: 0] += 1 }
+        }
+        return counts.keys.sorted { (counts[$0] ?? 0) > (counts[$1] ?? 0) }
+    }
+
+    var allCategories: [String] {
+        let counts = allTerms.reduce(into: [String: Int]()) { acc, term in
+            acc[term.category, default: 0] += 1
+        }
+        return counts.keys.sorted { (counts[$0] ?? 0) > (counts[$1] ?? 0) }
+    }
+
+    func indicationCount(_ name: String) -> Int {
+        allTerms.reduce(0) { $0 + ($1.indications.contains(name) ? 1 : 0) }
+    }
+
+    func categoryCount(_ name: String) -> Int {
+        allTerms.reduce(0) { $0 + ($1.category == name ? 1 : 0) }
     }
 }
