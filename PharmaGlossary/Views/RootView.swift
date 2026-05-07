@@ -39,8 +39,14 @@ struct RootView: View {
                     .padding(.horizontal, 16)
                     .padding(.top, 8)
 
+                NavigationLink(value: Route.policy) {
+                    PolicyTile(count: store.policyTerms.count)
+                }
+                .buttonStyle(.plain)
+                .padding(.horizontal, 16)
+
                 LazyVGrid(columns: columns, spacing: 10) {
-                    ForEach(store.letters, id: \.self) { letter in
+                    ForEach(store.alphabetLetters, id: \.self) { letter in
                         NavigationLink(value: Route.letter(letter)) {
                             LetterTile(letter: letter,
                                        count: store.byLetter[letter]?.count ?? 0)
@@ -58,6 +64,8 @@ struct RootView: View {
                 LetterView(letter: letter)
             case .term(let term):
                 TermDetailView(term: term)
+            case .policy:
+                PolicyView()
             }
         }
     }
@@ -84,6 +92,8 @@ struct RootView: View {
                 LetterView(letter: letter)
             case .term(let term):
                 TermDetailView(term: term)
+            case .policy:
+                PolicyView()
             }
         }
     }
@@ -92,6 +102,41 @@ struct RootView: View {
 enum Route: Hashable {
     case letter(String)
     case term(Term)
+    case policy
+}
+
+private struct PolicyTile: View {
+    let count: Int
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: "building.columns.fill")
+                .font(.system(size: 22, weight: .semibold))
+                .foregroundStyle(.white)
+                .frame(width: 44, height: 44)
+                .background(.white.opacity(0.18), in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Policy")
+                    .font(PGFont.term)
+                    .foregroundStyle(.white)
+                Text("Regulation, pricing, access · \(count) terms")
+                    .font(.system(size: 13, weight: .medium))
+                    .foregroundStyle(.white.opacity(0.85))
+            }
+            Spacer()
+            Image(systemName: "chevron.right")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(.white.opacity(0.7))
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 12)
+        .background(
+            LinearGradient(colors: [PGColors.primary, PGColors.primaryDark],
+                           startPoint: .topLeading, endPoint: .bottomTrailing)
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .shadow(color: PGColors.primary.opacity(0.25), radius: 6, x: 0, y: 3)
+    }
 }
 
 private struct LetterTile: View {

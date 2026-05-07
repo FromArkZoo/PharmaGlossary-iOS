@@ -24,6 +24,21 @@ final class GlossaryStore: ObservableObject {
     @Published private(set) var byLetter: [String: [Term]] = [:]
     @Published private(set) var letters: [String] = []
 
+    static let policyCategories: Set<String> = ["Regulatory", "Commercial / Market Access"]
+    static let policyExcludedTerms: Set<String> = [
+        "MSL", "Loss of Exclusivity", "Patent Cliff", "NCI", "HEOR", "Gross-to-Net", "Phase 4"
+    ]
+
+    var alphabetLetters: [String] {
+        letters.filter { $0.range(of: "^[A-Z]$", options: .regularExpression) != nil }
+    }
+
+    var policyTerms: [Term] {
+        allTerms
+            .filter { Self.policyCategories.contains($0.category) && !Self.policyExcludedTerms.contains($0.term) }
+            .sorted { $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending }
+    }
+
     init() {
         load()
     }

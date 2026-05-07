@@ -5967,5 +5967,19 @@
     "sources": [
       "NIH MedlinePlus"
     ]
+  },
+  {
+    "letter": "I",
+    "term": "IRA",
+    "full": "Inflation Reduction Act",
+    "snappy": "The 2022 US law that for the first time lets Medicare negotiate prices on top-selling drugs — pharma's biggest pricing shock in decades.",
+    "detail": "Signed in August 2022, the IRA's drug provisions cap insulin at $35 for Medicare patients, redesign Part D out-of-pocket costs, and authorize CMS to set 'maximum fair prices' on the highest-spend drugs, starting with 10 in 2026 and expanding annually. Pharma has fought the negotiation program in court on multiple constitutional grounds — so far unsuccessfully. You'll hear IRA in every earnings call discussing US pricing risk and in launch strategy debates over which indications to pursue.",
+    "indications": [
+      "General"
+    ],
+    "category": "Commercial / Market Access",
+    "sources": [
+      "CMS"
+    ]
   }
 ]
