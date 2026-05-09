@@ -13,11 +13,12 @@ struct PolicyView: View {
                     TermRow(term: term)
                 }
                 .listRowBackground(PGColors.card)
+                .listRowSeparatorTint(PGColors.inkRule)
             }
             .listStyle(.plain)
             .scrollContentBackground(.hidden)
         }
-        .navigationTitle("Policy · \(terms.count) terms")
+        .navigationTitle("Policy")
         .navigationBarTitleDisplayMode(.inline)
     }
 }

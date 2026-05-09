@@ -15,11 +15,12 @@ struct FilterSheet: View {
             ZStack {
                 PGColors.bg.ignoresSafeArea()
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 24) {
+                    VStack(alignment: .leading, spacing: 0) {
                         lensesSection
+
                         section(
                             title: "Indications",
-                            options: store.allIndications,
+                            options: sortedByLengthDescending(store.allIndications),
                             selected: filter.indications,
                             count: { store.indicationCount($0) },
                             toggle: { name in
@@ -30,9 +31,10 @@ struct FilterSheet: View {
                                 }
                             }
                         )
+
                         section(
                             title: "Categories",
-                            options: store.allCategories,
+                            options: sortedByLengthDescending(store.allCategories),
                             selected: filter.categories,
                             count: { store.categoryCount($0) },
                             toggle: { name in
@@ -45,8 +47,8 @@ struct FilterSheet: View {
                         )
                     }
                     .padding(.horizontal, 16)
-                    .padding(.top, 12)
-                    .padding(.bottom, 96)
+                    .padding(.top, 8)
+                    .padding(.bottom, 110)
                 }
 
                 VStack {
@@ -54,62 +56,66 @@ struct FilterSheet: View {
                     applyBar
                 }
             }
-            .navigationTitle("Filter")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Filter")
+                        .font(PGFont.filterTitleItalic)
+                        .foregroundStyle(PGColors.ink)
+                }
                 ToolbarItem(placement: .topBarLeading) {
                     Button("Clear") { filter = FilterState() }
+                        .font(PGFont.toolbarPlain)
+                        .foregroundStyle(filter.isActive ? PGColors.inkLight : PGColors.inkFaint)
                         .disabled(!filter.isActive)
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") { dismiss() }
-                        .fontWeight(.semibold)
+                        .font(PGFont.toolbarStrong)
+                        .foregroundStyle(PGColors.accent)
                 }
             }
         }
     }
 
+    private func sortedByLengthDescending(_ items: [String]) -> [String] {
+        items.sorted { $0.count > $1.count }
+    }
+
     private var lensesSection: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("Lenses")
-                .font(.system(size: 13, weight: .semibold))
-                .foregroundStyle(PGColors.textLight)
-                .textCase(.uppercase)
-                .tracking(0.5)
+        VStack(alignment: .leading, spacing: 8) {
+            sectionLabel("Lenses")
             Button(action: onSelectPolicy) {
                 HStack(spacing: 12) {
-                    Image(systemName: "building.columns.fill")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundStyle(.white)
-                        .frame(width: 36, height: 36)
-                        .background(
-                            LinearGradient(colors: [PGColors.primary, PGColors.primaryDark],
-                                           startPoint: .topLeading, endPoint: .bottomTrailing),
-                            in: RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        )
+                    Text("P")
+                        .font(PGFont.policyIcon)
+                        .foregroundStyle(PGColors.bg)
+                        .frame(width: 34, height: 34)
+                        .background(PGColors.ink, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
                     VStack(alignment: .leading, spacing: 2) {
                         Text("Policy")
-                            .font(.system(size: 15, weight: .semibold))
-                            .foregroundStyle(PGColors.text)
+                            .font(PGFont.policyTitle)
+                            .foregroundStyle(PGColors.ink)
                         Text("Regulation, pricing, access · \(store.policyTerms.count) terms")
-                            .font(.system(size: 13))
-                            .foregroundStyle(PGColors.textLight)
+                            .font(PGFont.policySub)
+                            .foregroundStyle(PGColors.inkLight)
                     }
                     Spacer()
                     Image(systemName: "chevron.right")
                         .font(.system(size: 13, weight: .semibold))
-                        .foregroundStyle(PGColors.textLight)
+                        .foregroundStyle(PGColors.inkFaint)
                 }
                 .padding(.horizontal, 12)
                 .padding(.vertical, 10)
-                .background(PGColors.card, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                .background(PGColors.card, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
                 .overlay(
-                    RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .stroke(PGColors.textLight.opacity(0.15), lineWidth: 1)
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .stroke(PGColors.cardBorder, lineWidth: 1)
                 )
             }
             .buttonStyle(.plain)
         }
+        .padding(.bottom, 4)
     }
 
     @ViewBuilder
@@ -118,13 +124,9 @@ struct FilterSheet: View {
                          selected: Set<String>,
                          count: @escaping (String) -> Int,
                          toggle: @escaping (String) -> Void) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(title)
-                .font(.system(size: 13, weight: .semibold))
-                .foregroundStyle(PGColors.textLight)
-                .textCase(.uppercase)
-                .tracking(0.5)
-            FlowLayout(spacing: 8) {
+        VStack(alignment: .leading, spacing: 8) {
+            sectionLabel(title)
+            FlowLayout(spacing: 6) {
                 ForEach(options, id: \.self) { name in
                     Chip(label: name,
                          count: count(name),
@@ -133,27 +135,32 @@ struct FilterSheet: View {
                 }
             }
         }
+        .padding(.top, 14)
+    }
+
+    private func sectionLabel(_ text: String) -> some View {
+        Text(text.uppercased())
+            .font(PGFont.eyebrow)
+            .tracking(1.8)
+            .foregroundStyle(PGColors.accent)
     }
 
     private var applyBar: some View {
         HStack {
             Text(filter.isActive ? "\(matchCount) terms match" : "All \(store.allTerms.count) terms")
-                .font(.system(size: 14, weight: .medium))
-                .foregroundStyle(PGColors.textLight)
+                .font(PGFont.metaItalic)
+                .foregroundStyle(PGColors.inkLight)
             Spacer()
             Button {
                 dismiss()
             } label: {
-                Text("Apply")
-                    .font(.system(size: 16, weight: .semibold))
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 24)
-                    .padding(.vertical, 12)
-                    .background(
-                        LinearGradient(colors: [PGColors.primary, PGColors.primaryDark],
-                                       startPoint: .topLeading, endPoint: .bottomTrailing),
-                        in: Capsule()
-                    )
+                Text("APPLY")
+                    .font(PGFont.applyLabel)
+                    .tracking(1.4)
+                    .foregroundStyle(PGColors.bg)
+                    .padding(.horizontal, 22)
+                    .padding(.vertical, 9)
+                    .background(PGColors.accent, in: Capsule())
             }
             .disabled(filter.isActive && matchCount == 0)
             .opacity(filter.isActive && matchCount == 0 ? 0.4 : 1.0)
@@ -161,6 +168,11 @@ struct FilterSheet: View {
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
         .background(.ultraThinMaterial)
+        .overlay(alignment: .top) {
+            Rectangle()
+                .fill(PGColors.inkRule)
+                .frame(height: 1)
+        }
     }
 }
 
@@ -172,29 +184,26 @@ private struct Chip: View {
 
     var body: some View {
         Button(action: action) {
-            HStack(spacing: 6) {
+            HStack(spacing: 5) {
                 Text(label)
-                    .font(.system(size: 14, weight: .medium))
+                    .font(PGFont.chip)
                 Text("\(count)")
-                    .font(.system(size: 12, weight: .medium))
-                    .foregroundStyle(isSelected ? .white.opacity(0.8) : PGColors.textLight)
+                    .font(PGFont.chipCountItalic)
+                    .foregroundStyle(isSelected ? PGColors.accentTint : PGColors.inkFaint)
             }
-            .foregroundStyle(isSelected ? Color.white : PGColors.text)
-            .padding(.horizontal, 12)
-            .padding(.vertical, 8)
+            .foregroundStyle(isSelected ? PGColors.bg : PGColors.ink)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
             .background {
                 if isSelected {
-                    Capsule().fill(
-                        LinearGradient(colors: [PGColors.primary, PGColors.primaryDark],
-                                       startPoint: .topLeading, endPoint: .bottomTrailing)
-                    )
+                    Capsule().fill(PGColors.ink)
                 } else {
                     Capsule().fill(PGColors.card)
                 }
             }
             .overlay(
                 Capsule()
-                    .stroke(isSelected ? Color.clear : PGColors.textLight.opacity(0.25), lineWidth: 1)
+                    .stroke(isSelected ? Color.clear : PGColors.cardBorder, lineWidth: 1)
             )
         }
         .buttonStyle(.plain)

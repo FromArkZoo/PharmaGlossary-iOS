@@ -13,11 +13,11 @@ struct Brand {
     static let current = Brand(
         appStoreName: "JB Pharma Glossary",
         displayName: "JB Pharma",
-        navigationTitle: "JB Pharma Glossary",
-        subtitle: "Decode pharma jargon, fast",
+        navigationTitle: "JB Pharma",
+        subtitle: "decoding pharma jargon",
         dataResource: "glossary",
-        primaryColor: PGColors.primary,
-        primaryDarkColor: PGColors.primaryDark,
+        primaryColor: PGColors.accent,
+        primaryDarkColor: PGColors.accentDark,
         aboutBlurb: "Quick-reference glossary for pharma and healthcare jargon — built for conferences, meetings, and the news."
     )
 }

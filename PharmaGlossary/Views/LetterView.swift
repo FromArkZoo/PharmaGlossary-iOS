@@ -5,7 +5,8 @@ struct LetterView: View {
     @EnvironmentObject var store: GlossaryStore
 
     private var terms: [Term] {
-        store.byLetter[letter] ?? []
+        (store.byLetter[letter] ?? [])
+            .sorted { $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending }
     }
 
     var body: some View {
@@ -16,11 +17,12 @@ struct LetterView: View {
                     TermRow(term: term)
                 }
                 .listRowBackground(PGColors.card)
+                .listRowSeparatorTint(PGColors.inkRule)
             }
             .listStyle(.plain)
             .scrollContentBackground(.hidden)
         }
-        .navigationTitle("\(letter) · \(terms.count) terms")
+        .navigationTitle(letter)
         .navigationBarTitleDisplayMode(.inline)
     }
 }

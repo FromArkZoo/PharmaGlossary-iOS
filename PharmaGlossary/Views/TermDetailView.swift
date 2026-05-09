@@ -1,25 +1,27 @@
 import SwiftUI
 
 struct TermDetailView: View {
+    @EnvironmentObject var store: GlossaryStore
     let term: Term
 
     var body: some View {
         ZStack {
             PGColors.bg.ignoresSafeArea()
             ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
+                VStack(alignment: .leading, spacing: 14) {
                     header
                     if term.hasSnappy {
-                        snappyCard
+                        snappy
                     }
-                    detailCard
+                    definition
+                    tags
                     if term.hasSources {
                         sourcesFooter
                     }
                     Spacer(minLength: 24)
                 }
                 .padding(.horizontal, 16)
-                .padding(.top, 16)
+                .padding(.top, 8)
             }
         }
         .navigationTitle(term.term)
@@ -29,74 +31,110 @@ struct TermDetailView: View {
                 ShareLink(item: shareText) {
                     Image(systemName: "square.and.arrow.up")
                 }
-                .tint(PGColors.primary)
+                .tint(PGColors.accent)
             }
         }
     }
 
     private var header: some View {
-        VStack(alignment: .leading, spacing: 6) {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(eyebrowText)
+                .font(PGFont.eyebrow)
+                .tracking(1.6)
+                .textCase(.uppercase)
+                .foregroundStyle(PGColors.accent)
+                .padding(.top, 14)
             Text(term.term)
-                .font(.system(size: 30, weight: .bold))
-                .foregroundStyle(PGColors.text)
+                .font(PGFont.termTitle)
+                .foregroundStyle(PGColors.ink)
+                .lineLimit(2)
+                .minimumScaleFactor(0.7)
+                .padding(.top, 2)
             if term.hasFull {
                 Text(term.full)
-                    .font(.system(size: 15, weight: .medium))
-                    .foregroundStyle(PGColors.primary)
+                    .font(PGFont.termFullItalic)
+                    .foregroundStyle(PGColors.inkLight)
+                    .padding(.top, 2)
             }
-            HStack(spacing: 6) {
-                Text(term.letter)
-                    .font(.system(size: 11, weight: .bold))
-                    .foregroundStyle(.white)
-                    .frame(width: 22, height: 22)
-                    .background(PGColors.primary)
-                    .clipShape(Circle())
-                Text("Letter \(term.letter)")
-                    .font(.system(size: 12, weight: .regular))
-                    .foregroundStyle(PGColors.textLight)
-            }
-            .padding(.top, 4)
+            Rectangle()
+                .fill(PGColors.inkRule)
+                .frame(height: 1)
+                .padding(.top, 12)
         }
     }
 
-    private var snappyCard: some View {
-        Text(term.snappy)
-            .font(.system(size: 18, weight: .regular).italic())
-            .foregroundStyle(PGColors.text)
-            .fixedSize(horizontal: false, vertical: true)
-            .padding(20)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(
-                RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(PGColors.hover)
-            )
+    private var eyebrowText: String {
+        var parts = ["Letter \(term.letter)"]
+        if term.hasCategory { parts.append(term.category) }
+        return parts.joined(separator: " · ")
     }
 
-    private var detailCard: some View {
+    private var snappy: some View {
+        Text(term.snappy)
+            .font(PGFont.snappyItalic)
+            .foregroundStyle(PGColors.accent)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(.leading, 14)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .overlay(alignment: .leading) {
+                Rectangle()
+                    .fill(PGColors.accent)
+                    .frame(width: 2)
+            }
+            .padding(.top, 2)
+            .padding(.bottom, 6)
+    }
+
+    private var definition: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Definition")
-                .font(.system(size: 11, weight: .semibold))
-                .foregroundStyle(PGColors.textLight)
+                .font(PGFont.eyebrow)
+                .tracking(2)
                 .textCase(.uppercase)
-                .tracking(0.5)
-            Text(term.detail)
-                .font(PGFont.definition)
-                .foregroundStyle(PGColors.text)
-                .fixedSize(horizontal: false, vertical: true)
+                .foregroundStyle(PGColors.inkLight)
+            Text(store.attributedDetail(for: term))
+                .font(PGFont.body)
+                .foregroundStyle(PGColors.ink)
+                .lineSpacing(3)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .padding(20)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(PGColors.card)
-        )
+    }
+
+    @ViewBuilder
+    private var tags: some View {
+        let chips = tagLabels
+        if !chips.isEmpty {
+            HStack(spacing: 6) {
+                ForEach(chips, id: \.self) { label in
+                    Text(label.uppercased())
+                        .font(.system(size: 10, weight: .semibold))
+                        .tracking(0.6)
+                        .foregroundStyle(PGColors.accent)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 3)
+                        .overlay(
+                            Capsule().stroke(PGColors.accent, lineWidth: 1)
+                        )
+                }
+                Spacer()
+            }
+            .padding(.top, 6)
+        }
+    }
+
+    private var tagLabels: [String] {
+        var labels: [String] = []
+        if term.hasCategory { labels.append(term.category) }
+        labels.append(contentsOf: term.indications.prefix(2))
+        return labels
     }
 
     private var sourcesFooter: some View {
         Text("Source: \(term.sources.joined(separator: ", "))")
-            .font(.system(size: 11, weight: .regular))
-            .foregroundStyle(PGColors.textLight)
+            .font(.system(size: 11, weight: .regular, design: .serif).italic())
+            .foregroundStyle(PGColors.inkFaint)
             .padding(.horizontal, 4)
+            .padding(.top, 6)
     }
 
     private var shareText: String {

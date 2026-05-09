@@ -1,13 +1,22 @@
 import SwiftUI
 
 enum PGColors {
-    static let bg          = Color(red: 0.933, green: 0.949, blue: 1.000) // #EEF2FF
+    static let bg          = Color(red: 0.961, green: 0.937, blue: 0.902) // #F5EFE6 warm paper
     static let card        = Color.white
-    static let primary     = Color(red: 0.310, green: 0.275, blue: 0.898) // #4F46E5 indigo-600
-    static let primaryDark = Color(red: 0.263, green: 0.220, blue: 0.792) // #4338CA indigo-700
-    static let accent      = Color(red: 0.231, green: 0.510, blue: 0.965) // #3B82F6 blue-500
-    static let text        = Color(red: 0.122, green: 0.161, blue: 0.216) // #1F2937 gray-800
-    static let textLight   = Color(red: 0.420, green: 0.447, blue: 0.502) // #6B7280 gray-500
-    static let hover       = Color(red: 0.859, green: 0.918, blue: 0.996) // #DBEAFE blue-100
-    static let listBg      = Color(red: 0.976, green: 0.980, blue: 0.984) // #F9FAFB gray-50
+    static let cardBorder  = Color(red: 0.863, green: 0.824, blue: 0.761) // #DCD2C2
+
+    static let ink         = Color(red: 0.106, green: 0.094, blue: 0.078) // #1B1814 ink black
+    static let inkLight    = Color(red: 0.361, green: 0.329, blue: 0.314) // #5C5450 warm gray
+    static let inkFaint    = Color(red: 0.557, green: 0.518, blue: 0.482) // #8E847B fade
+    static let inkRule     = Color(red: 0.106, green: 0.094, blue: 0.078).opacity(0.18)
+
+    static let accent      = Color(red: 0.545, green: 0.180, blue: 0.122) // #8B2E1F oxblood
+    static let accentDark  = Color(red: 0.467, green: 0.137, blue: 0.094) // deeper oxblood
+    static let accentTint  = Color(red: 0.784, green: 0.714, blue: 0.541) // #C8B68A used for selected count text
+
+    // Aliases preserved for Brand.swift / PharmaGlossaryApp tint
+    static let primary     = accent
+    static let primaryDark = accentDark
+    static let text        = ink
+    static let textLight   = inkLight
 }

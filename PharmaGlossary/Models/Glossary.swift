@@ -36,6 +36,8 @@ final class GlossaryStore: ObservableObject {
     @Published private(set) var byLetter: [String: [Term]] = [:]
     @Published private(set) var letters: [String] = []
 
+    var detailCache: [String: AttributedString] = [:]
+
     static let policyCategories: Set<String> = ["Regulatory", "Commercial / Market Access"]
     static let policyExcludedTerms: Set<String> = [
         "MSL", "Loss of Exclusivity", "Patent Cliff", "NCI", "HEOR", "Gross-to-Net", "Phase 4"
@@ -66,8 +68,27 @@ final class GlossaryStore: ObservableObject {
             self.allTerms = terms
             self.byLetter = Dictionary(grouping: terms, by: { $0.letter })
             self.letters = byLetter.keys.sorted()
+            prewarmDetailCache(terms: terms)
         } catch {
             assertionFailure("Failed to decode \(Brand.current.dataResource).json: \(error)")
+        }
+    }
+
+    /// Build every term's `attributedDetail` off the main thread, then bulk-merge
+    /// into the cache so the first link tap doesn't pay the regex cost.
+    private func prewarmDetailCache(terms: [Term]) {
+        Task.detached(priority: .utility) { [weak self] in
+            var built: [String: AttributedString] = [:]
+            built.reserveCapacity(terms.count)
+            for term in terms {
+                built[term.id] = Self.computeAttributedDetail(for: term, against: terms)
+            }
+            await MainActor.run {
+                guard let self else { return }
+                for (id, attr) in built where self.detailCache[id] == nil {
+                    self.detailCache[id] = attr
+                }
+            }
         }
     }
 

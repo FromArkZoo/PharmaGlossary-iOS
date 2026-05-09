@@ -1,5 +1,11 @@
 import SwiftUI
 
+enum Route: Hashable {
+    case letter(String)
+    case term(Term)
+    case policy
+}
+
 struct RootView: View {
     @EnvironmentObject var store: GlossaryStore
     @State private var query: String = ""
@@ -7,7 +13,7 @@ struct RootView: View {
     @State private var showingFilter = false
     @State private var path: [Route] = []
 
-    private let columns = Array(repeating: GridItem(.flexible(), spacing: 10), count: 4)
+    private let columns = Array(repeating: GridItem(.flexible(minimum: 50), spacing: 6), count: 4)
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -15,8 +21,10 @@ struct RootView: View {
                 PGColors.bg.ignoresSafeArea()
                 content
             }
-            .navigationTitle(Brand.current.navigationTitle)
-            .navigationBarTitleDisplayMode(.large)
+            .navigationTitle("")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(PGColors.bg, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
             .searchable(text: $query, placement: .navigationBarDrawer(displayMode: .always),
                         prompt: "Search terms, abbreviations, definitions")
             .autocorrectionDisabled()
@@ -29,8 +37,8 @@ struct RootView: View {
                         Image(systemName: filter.isActive
                               ? "line.3.horizontal.decrease.circle.fill"
                               : "line.3.horizontal.decrease.circle")
-                            .font(.system(size: 20, weight: .semibold))
-                            .foregroundStyle(PGColors.primary)
+                            .font(.system(size: 19, weight: .semibold))
+                            .foregroundStyle(PGColors.accent)
                     }
                     .accessibilityLabel("Filter")
                 }
@@ -41,6 +49,42 @@ struct RootView: View {
                     path.append(.policy)
                 })
                 .presentationDetents([.large])
+            }
+            .navigationDestination(for: Route.self) { route in
+                switch route {
+                case .letter(let letter):
+                    LetterView(letter: letter)
+                case .term(let term):
+                    TermDetailView(term: term)
+                case .policy:
+                    PolicyView()
+                }
+            }
+        }
+        .tint(PGColors.accent)
+        .environment(\.openURL, OpenURLAction { url in
+            if let term = store.term(matchingURL: url) {
+                path.append(.term(term))
+                return .handled
+            }
+            return .systemAction
+        })
+    }
+
+    private var editorialHeader: some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text("REFERENCE")
+                .font(PGFont.eyebrow)
+                .tracking(1.8)
+                .foregroundStyle(PGColors.accent)
+                .padding(.bottom, 2)
+            HStack(alignment: .firstTextBaseline, spacing: 6) {
+                Text("JB")
+                    .font(PGFont.displayBold)
+                    .foregroundStyle(PGColors.ink)
+                Text("Pharma")
+                    .font(PGFont.displayItalic)
+                    .foregroundStyle(PGColors.accent)
             }
         }
     }
@@ -58,14 +102,19 @@ struct RootView: View {
 
     private var alphabetGrid: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                Text("\(store.allTerms.count) terms · \(Brand.current.subtitle)")
-                    .font(PGFont.subtitle)
-                    .foregroundStyle(PGColors.textLight)
+            VStack(alignment: .leading, spacing: 0) {
+                editorialHeader
                     .padding(.horizontal, 16)
-                    .padding(.top, 8)
+                    .padding(.top, 4)
+                    .padding(.bottom, 8)
 
-                LazyVGrid(columns: columns, spacing: 10) {
+                Text("\(store.allTerms.count) entries")
+                    .font(PGFont.metaItalic)
+                    .foregroundStyle(PGColors.inkLight)
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 14)
+
+                LazyVGrid(columns: columns, spacing: 6) {
                     ForEach(store.alphabetLetters, id: \.self) { letter in
                         NavigationLink(value: Route.letter(letter)) {
                             LetterTile(letter: letter,
@@ -76,16 +125,6 @@ struct RootView: View {
                 }
                 .padding(.horizontal, 16)
                 .padding(.bottom, 24)
-            }
-        }
-        .navigationDestination(for: Route.self) { route in
-            switch route {
-            case .letter(let letter):
-                LetterView(letter: letter)
-            case .term(let term):
-                TermDetailView(term: term)
-            case .policy:
-                PolicyView()
             }
         }
     }
@@ -101,19 +140,10 @@ struct RootView: View {
                         TermRow(term: term)
                     }
                     .listRowBackground(PGColors.card)
+                    .listRowSeparatorTint(PGColors.inkRule)
                 }
                 .listStyle(.plain)
                 .scrollContentBackground(.hidden)
-            }
-        }
-        .navigationDestination(for: Route.self) { route in
-            switch route {
-            case .letter(let letter):
-                LetterView(letter: letter)
-            case .term(let term):
-                TermDetailView(term: term)
-            case .policy:
-                PolicyView()
             }
         }
     }
@@ -130,16 +160,16 @@ struct RootView: View {
 
             if results.isEmpty {
                 Spacer()
-                VStack(spacing: 12) {
+                VStack(spacing: 10) {
                     Image(systemName: "magnifyingglass")
-                        .font(.system(size: 36))
-                        .foregroundStyle(PGColors.textLight)
+                        .font(.system(size: 32))
+                        .foregroundStyle(PGColors.inkFaint)
                     Text("No terms match these filters")
-                        .font(PGFont.term)
-                        .foregroundStyle(PGColors.text)
+                        .font(PGFont.termRowTitle)
+                        .foregroundStyle(PGColors.ink)
                     Button("Clear filters") { filter = FilterState() }
-                        .font(.system(size: 14, weight: .semibold))
-                        .foregroundStyle(PGColors.primary)
+                        .font(PGFont.buttonLabel)
+                        .foregroundStyle(PGColors.accent)
                 }
                 Spacer()
                 Spacer()
@@ -149,19 +179,10 @@ struct RootView: View {
                         TermRow(term: term)
                     }
                     .listRowBackground(PGColors.card)
+                    .listRowSeparatorTint(PGColors.inkRule)
                 }
                 .listStyle(.plain)
                 .scrollContentBackground(.hidden)
-            }
-        }
-        .navigationDestination(for: Route.self) { route in
-            switch route {
-            case .letter(let letter):
-                LetterView(letter: letter)
-            case .term(let term):
-                TermDetailView(term: term)
-            case .policy:
-                PolicyView()
             }
         }
     }
@@ -176,37 +197,27 @@ private struct FilterPill: View {
         HStack(spacing: 8) {
             Image(systemName: "line.3.horizontal.decrease.circle.fill")
                 .font(.system(size: 14, weight: .semibold))
-                .foregroundStyle(.white)
+                .foregroundStyle(PGColors.bg)
             Text(filter.summary)
-                .font(.system(size: 14, weight: .medium))
-                .foregroundStyle(.white)
+                .font(.system(size: 13, weight: .medium))
+                .foregroundStyle(PGColors.bg)
                 .lineLimit(1)
             Text("· \(count)")
-                .font(.system(size: 13, weight: .medium))
-                .foregroundStyle(.white.opacity(0.85))
+                .font(PGFont.chipCountItalic)
+                .foregroundStyle(PGColors.accentTint)
             Spacer()
             Button(action: onClear) {
                 Image(systemName: "xmark.circle.fill")
                     .font(.system(size: 16))
-                    .foregroundStyle(.white.opacity(0.85))
+                    .foregroundStyle(PGColors.bg.opacity(0.85))
             }
             .buttonStyle(.plain)
             .accessibilityLabel("Clear filters")
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
-        .background(
-            LinearGradient(colors: [PGColors.primary, PGColors.primaryDark],
-                           startPoint: .leading, endPoint: .trailing),
-            in: Capsule()
-        )
+        .background(PGColors.ink, in: Capsule())
     }
-}
-
-enum Route: Hashable {
-    case letter(String)
-    case term(Term)
-    case policy
 }
 
 private struct LetterTile: View {
@@ -216,20 +227,22 @@ private struct LetterTile: View {
     var body: some View {
         VStack(spacing: 2) {
             Text(letter)
-                .font(PGFont.letterTile)
-                .foregroundStyle(.white)
+                .font(PGFont.letterTileItalic)
+                .foregroundStyle(PGColors.ink)
             Text("\(count)")
-                .font(.system(size: 11, weight: .medium))
-                .foregroundStyle(.white.opacity(0.85))
+                .font(PGFont.tileCount)
+                .foregroundStyle(PGColors.inkFaint)
         }
-        .frame(maxWidth: .infinity)
-        .frame(height: 64)
+        .frame(maxWidth: .infinity, minHeight: 56)
+        .padding(.vertical, 4)
         .background(
-            LinearGradient(colors: [PGColors.primary, PGColors.primaryDark],
-                           startPoint: .topLeading, endPoint: .bottomTrailing)
+            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                .fill(PGColors.card)
         )
-        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-        .shadow(color: PGColors.primary.opacity(0.25), radius: 6, x: 0, y: 3)
+        .overlay(
+            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                .stroke(PGColors.cardBorder, lineWidth: 1)
+        )
     }
 }
 
@@ -239,12 +252,12 @@ struct TermRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(term.term)
-                .font(PGFont.term)
-                .foregroundStyle(PGColors.text)
+                .font(PGFont.termRowTitle)
+                .foregroundStyle(PGColors.ink)
             if term.hasFull {
                 Text(term.full)
-                    .font(PGFont.full)
-                    .foregroundStyle(PGColors.textLight)
+                    .font(PGFont.termRowFullItalic)
+                    .foregroundStyle(PGColors.inkLight)
             }
         }
         .padding(.vertical, 4)
