@@ -33,8 +33,12 @@ extension GlossaryStore {
 
         for candidate in candidates {
             let escaped = NSRegularExpression.escapedPattern(for: candidate.term)
-            // Word boundaries so "antibody" doesn't match inside "antibodyless".
-            let pattern = "\\b\(escaped)\\b"
+            // Reject matches where either neighbor is a word character OR a hyphen.
+            // Plain \b would let "cell" match inside "B-cell" / "non-small-cell" because
+            // \b treats hyphens as boundaries — we don't want a substring of a hyphenated
+            // medical compound to win. The lookarounds skip those cases while still
+            // matching standalone occurrences ("cell." / "cell," / "the cell ").
+            let pattern = "(?<![\\w-])\(escaped)(?![\\w-])"
             // Acronym terms (no lowercase letters, e.g. "ALL", "NET", "PD-1") match case-
             // sensitively so common English words like "all" or "net" don't get linked.
             // Mixed/lowercase terms ("Antibody", "Cmax") match case-insensitively so a
