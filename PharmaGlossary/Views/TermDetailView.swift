@@ -31,7 +31,7 @@ struct TermDetailView: View {
                 Button {
                     store.toggleFavorite(term)
                 } label: {
-                    Image(systemName: store.isFavorited(term) ? "heart.fill" : "heart")
+                    Image(systemName: store.isFavorited(term) ? "star.fill" : "star")
                         .font(.system(size: 19, weight: .semibold))
                         .foregroundStyle(PGColors.accent)
                 }

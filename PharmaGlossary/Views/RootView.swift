@@ -231,7 +231,7 @@ private struct FavoritesHeroCard: View {
 
     var body: some View {
         HStack(spacing: 14) {
-            Image(systemName: count > 0 ? "heart.fill" : "heart")
+            Image(systemName: count > 0 ? "star.fill" : "star")
                 .font(.system(size: 22, weight: .semibold))
                 .foregroundStyle(PGColors.accent)
                 .frame(width: 44, height: 44)
@@ -243,7 +243,7 @@ private struct FavoritesHeroCard: View {
                 Text("Favorites")
                     .font(PGFont.termRowTitle)
                     .foregroundStyle(PGColors.ink)
-                Text(count == 0 ? "Tap the heart on any term to save" : "\(count) saved")
+                Text(count == 0 ? "Tap the star on any term to save" : "\(count) saved")
                     .font(PGFont.metaItalic)
                     .foregroundStyle(PGColors.inkLight)
             }

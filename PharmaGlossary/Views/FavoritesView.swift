@@ -76,13 +76,13 @@ struct FavoritesView: View {
 
     private var emptyState: some View {
         VStack(spacing: 14) {
-            Image(systemName: "heart")
+            Image(systemName: "star")
                 .font(.system(size: 40, weight: .light))
                 .foregroundStyle(PGColors.inkFaint)
             Text("No favorites yet")
                 .font(PGFont.termRowTitle)
                 .foregroundStyle(PGColors.ink)
-            Text("Tap the heart on any term to save it here.")
+            Text("Tap the star on any term to save it here.")
                 .font(PGFont.metaItalic)
                 .foregroundStyle(PGColors.inkLight)
                 .multilineTextAlignment(.center)
