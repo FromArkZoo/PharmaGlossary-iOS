@@ -23,7 +23,6 @@
 		B44B58E211C41EDA88B3873E /* BasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92939319547EB7A139012F47 /* BasicsView.swift */; };
 		C0D6851E452C20D33AA01C03 /* PGSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A8E94BB2FE9AE3986922F /* PGSearchBar.swift */; };
 		C132FF804870A14A37018107 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA967367C4547483830E5D /* FavoritesView.swift */; };
-		D147183F2348E3B12453A33B /* RootView.swift.tmp in Resources */ = {isa = PBXBuildFile; fileRef = FAF20B244FDD770A5097A314 /* RootView.swift.tmp */; };
 		D63D4378000B3DA3C171BC29 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BD9B8F335704D468D2D62 /* RootView.swift */; };
 		DB19206C1005498AF482BB7D /* ContentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F09C27A0FAE6EEF076F2E75 /* ContentRouter.swift */; };
 		E1223026709460B01ECBDF67 /* PGBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A89AC7B89886FFBCC4E1EF /* PGBackground.swift */; };
@@ -52,7 +51,6 @@
 		9AED062EE94161BB9EF13D20 /* EditorialHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorialHeader.swift; sourceTree = "<group>"; };
 		E85A8E94BB2FE9AE3986922F /* PGSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSearchBar.swift; sourceTree = "<group>"; };
 		F13720AE9AE917F883D8A775 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		FAF20B244FDD770A5097A314 /* RootView.swift.tmp */ = {isa = PBXFileReference; path = RootView.swift.tmp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -75,7 +73,6 @@
 				74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */,
 				5DE935826064BF8487C934F8 /* PolicyView.swift */,
 				1C3BD9B8F335704D468D2D62 /* RootView.swift */,
-				FAF20B244FDD770A5097A314 /* RootView.swift.tmp */,
 				F13720AE9AE917F883D8A775 /* SplashView.swift */,
 				0E37C2FF5FACD43C57A2A048 /* TermDetailView.swift */,
 			);
@@ -189,7 +186,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8434E33E025A8FDE799A1FF9 /* Assets.xcassets in Resources */,
-				D147183F2348E3B12453A33B /* RootView.swift.tmp in Resources */,
 				AC98DCD571CBD293834FE267 /* glossary.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
