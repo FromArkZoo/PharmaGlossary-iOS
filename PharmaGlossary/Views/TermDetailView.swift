@@ -20,6 +20,8 @@ struct TermDetailView: View {
                     }
                     Spacer(minLength: 24)
                 }
+                .frame(maxWidth: 720, alignment: .leading)
+                .frame(maxWidth: .infinity, alignment: .center)
                 .padding(.horizontal, 16)
                 .padding(.top, 8)
             }
