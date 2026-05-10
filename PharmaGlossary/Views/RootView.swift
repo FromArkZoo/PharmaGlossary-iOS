@@ -6,6 +6,7 @@ enum Route: Hashable {
     case policy
     case basics
     case favorites
+    case about
 }
 
 struct RootView: View {
@@ -65,6 +66,10 @@ struct RootView: View {
                     onSelectBasics: {
                         showingFilter = false
                         path.append(.basics)
+                    },
+                    onSelectAbout: {
+                        showingFilter = false
+                        path.append(.about)
                     }
                 )
                 .presentationDetents([.large])
@@ -81,6 +86,8 @@ struct RootView: View {
                     BasicsView()
                 case .favorites:
                     FavoritesView()
+                case .about:
+                    AboutView()
                 }
             }
         }

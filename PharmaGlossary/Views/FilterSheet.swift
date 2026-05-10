@@ -5,6 +5,7 @@ struct FilterSheet: View {
     @Binding var filter: FilterState
     var onSelectPolicy: () -> Void
     var onSelectBasics: () -> Void
+    var onSelectAbout: () -> Void
     @Environment(\.dismiss) private var dismiss
 
     private var matchCount: Int {
@@ -46,6 +47,8 @@ struct FilterSheet: View {
                                 }
                             }
                         )
+
+                        aboutLink
                     }
                     .padding(.horizontal, 16)
                     .padding(.top, 8)
@@ -152,6 +155,24 @@ struct FilterSheet: View {
             }
         }
         .padding(.top, 14)
+    }
+
+    private var aboutLink: some View {
+        HStack {
+            Spacer()
+            Button(action: onSelectAbout) {
+                HStack(spacing: 6) {
+                    Image(systemName: "info.circle")
+                        .font(.system(size: 13, weight: .semibold))
+                    Text("About JB Pharma")
+                        .font(PGFont.policySub)
+                }
+                .foregroundStyle(PGColors.inkLight)
+            }
+            .buttonStyle(.plain)
+            Spacer()
+        }
+        .padding(.top, 28)
     }
 
     private func sectionLabel(_ text: String) -> some View {
