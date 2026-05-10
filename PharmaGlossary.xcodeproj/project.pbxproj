@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16018CD4049FE37E6F92FA69 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13720AE9AE917F883D8A775 /* SplashView.swift */; };
 		2A37A6F8882BB845A660AAB0 /* PharmaGlossaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2AC3CAF08B7BCA921EAFD /* PharmaGlossaryApp.swift */; };
 		35A222E608354F79E39E7C4D /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */; };
 		38407B4845DE57E8DE03FC1D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E38546C90D38B314EB209CA /* Colors.swift */; };
@@ -22,7 +23,9 @@
 		B44B58E211C41EDA88B3873E /* BasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92939319547EB7A139012F47 /* BasicsView.swift */; };
 		C0D6851E452C20D33AA01C03 /* PGSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A8E94BB2FE9AE3986922F /* PGSearchBar.swift */; };
 		C132FF804870A14A37018107 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA967367C4547483830E5D /* FavoritesView.swift */; };
+		D147183F2348E3B12453A33B /* RootView.swift.tmp in Resources */ = {isa = PBXBuildFile; fileRef = FAF20B244FDD770A5097A314 /* RootView.swift.tmp */; };
 		D63D4378000B3DA3C171BC29 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BD9B8F335704D468D2D62 /* RootView.swift */; };
+		DB19206C1005498AF482BB7D /* ContentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F09C27A0FAE6EEF076F2E75 /* ContentRouter.swift */; };
 		E1223026709460B01ECBDF67 /* PGBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A89AC7B89886FFBCC4E1EF /* PGBackground.swift */; };
 		E977B208360F0B1378C8A7FE /* Glossary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE29B15500756634D070132 /* Glossary.swift */; };
 /* End PBXBuildFile section */
@@ -44,9 +47,12 @@
 		730E5938DF5BC8CF7C687E31 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
 		83C2AC3CAF08B7BCA921EAFD /* PharmaGlossaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaGlossaryApp.swift; sourceTree = "<group>"; };
+		8F09C27A0FAE6EEF076F2E75 /* ContentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRouter.swift; sourceTree = "<group>"; };
 		92939319547EB7A139012F47 /* BasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsView.swift; sourceTree = "<group>"; };
 		9AED062EE94161BB9EF13D20 /* EditorialHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorialHeader.swift; sourceTree = "<group>"; };
 		E85A8E94BB2FE9AE3986922F /* PGSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSearchBar.swift; sourceTree = "<group>"; };
+		F13720AE9AE917F883D8A775 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		FAF20B244FDD770A5097A314 /* RootView.swift.tmp */ = {isa = PBXFileReference; path = RootView.swift.tmp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -63,11 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				92939319547EB7A139012F47 /* BasicsView.swift */,
+				8F09C27A0FAE6EEF076F2E75 /* ContentRouter.swift */,
 				0AEA967367C4547483830E5D /* FavoritesView.swift */,
 				24C9357FB67693080C505E10 /* FilterSheet.swift */,
 				74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */,
 				5DE935826064BF8487C934F8 /* PolicyView.swift */,
 				1C3BD9B8F335704D468D2D62 /* RootView.swift */,
+				FAF20B244FDD770A5097A314 /* RootView.swift.tmp */,
+				F13720AE9AE917F883D8A775 /* SplashView.swift */,
 				0E37C2FF5FACD43C57A2A048 /* TermDetailView.swift */,
 			);
 			path = Views;
@@ -180,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8434E33E025A8FDE799A1FF9 /* Assets.xcassets in Resources */,
+				D147183F2348E3B12453A33B /* RootView.swift.tmp in Resources */,
 				AC98DCD571CBD293834FE267 /* glossary.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +204,7 @@
 				B44B58E211C41EDA88B3873E /* BasicsView.swift in Sources */,
 				855944527A4B955455FCDBC5 /* Brand.swift in Sources */,
 				38407B4845DE57E8DE03FC1D /* Colors.swift in Sources */,
+				DB19206C1005498AF482BB7D /* ContentRouter.swift in Sources */,
 				4375D1D7344BBB6DD087320A /* EditorialHeader.swift in Sources */,
 				C132FF804870A14A37018107 /* FavoritesView.swift in Sources */,
 				61B1DF64462A063998D10392 /* FilterSheet.swift in Sources */,
@@ -205,6 +216,7 @@
 				2A37A6F8882BB845A660AAB0 /* PharmaGlossaryApp.swift in Sources */,
 				778B28EF0F1BE29FFB2E00EC /* PolicyView.swift in Sources */,
 				D63D4378000B3DA3C171BC29 /* RootView.swift in Sources */,
+				16018CD4049FE37E6F92FA69 /* SplashView.swift in Sources */,
 				5246BA99C15799316CB30CD0 /* TermDetailView.swift in Sources */,
 				B4212259FC08D61BF6A70C76 /* Typography.swift in Sources */,
 			);

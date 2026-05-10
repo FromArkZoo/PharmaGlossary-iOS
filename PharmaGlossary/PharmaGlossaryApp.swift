@@ -11,7 +11,7 @@ struct PharmaGlossaryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
+            ContentRouter()
                 .environmentObject(store)
                 .tint(PGColors.accent)
         }
