@@ -4,6 +4,8 @@ struct FavoritesView: View {
     @EnvironmentObject var store: GlossaryStore
     @State private var selectMode: Bool = false
     @State private var selected: Set<String> = []
+    @State private var lastRemoved: Term?
+    @State private var undoTask: Task<Void, Never>?
 
     var body: some View {
         ZStack {
@@ -29,7 +31,13 @@ struct FavoritesView: View {
         .safeAreaInset(edge: .bottom) {
             if selectMode {
                 selectionToolbar
+            } else if lastRemoved != nil {
+                undoBanner
             }
+        }
+        .onDisappear {
+            undoTask?.cancel()
+            lastRemoved = nil
         }
     }
 
@@ -43,6 +51,15 @@ struct FavoritesView: View {
                 row(for: term)
                     .listRowBackground(PGColors.card)
                     .listRowSeparatorTint(PGColors.inkRule)
+                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                        if !selectMode {
+                            Button(role: .destructive) {
+                                remove(term)
+                            } label: {
+                                Label("Remove", systemImage: "star.slash.fill")
+                            }
+                        }
+                    }
             }
             .listStyle(.plain)
             .scrollContentBackground(.hidden)
@@ -126,8 +143,54 @@ struct FavoritesView: View {
         .background(.ultraThinMaterial)
     }
 
+    private var undoBanner: some View {
+        HStack(spacing: 12) {
+            Image(systemName: "star.slash.fill")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(PGColors.inkLight)
+            Text("Removed \(lastRemoved?.term ?? "")")
+                .font(PGFont.metaItalic)
+                .foregroundStyle(PGColors.ink)
+                .lineLimit(1)
+            Spacer()
+            Button {
+                undo()
+            } label: {
+                Text("Undo")
+                    .font(PGFont.toolbarStrong)
+                    .foregroundStyle(PGColors.accent)
+            }
+        }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 14)
+        .background(.ultraThinMaterial)
+        .transition(.move(edge: .bottom).combined(with: .opacity))
+        .animation(.easeOut(duration: 0.25), value: lastRemoved?.id)
+    }
+
     private var bulkShareText: String {
         let chosen = store.favoriteTerms.filter { selected.contains($0.term) }
         return chosen.map { $0.shareText }.joined(separator: "\n\n---\n\n")
+    }
+
+    private func remove(_ term: Term) {
+        guard store.isFavorited(term) else { return }
+        store.toggleFavorite(term)
+        lastRemoved = term
+        undoTask?.cancel()
+        undoTask = Task {
+            try? await Task.sleep(for: .seconds(4))
+            guard !Task.isCancelled else { return }
+            await MainActor.run { lastRemoved = nil }
+        }
+    }
+
+    private func undo() {
+        guard let term = lastRemoved else { return }
+        if !store.isFavorited(term) {
+            store.toggleFavorite(term)
+        }
+        undoTask?.cancel()
+        lastRemoved = nil
     }
 }
