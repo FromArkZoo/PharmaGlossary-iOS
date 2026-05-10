@@ -25,12 +25,14 @@ targets:
     resources:
       - PharmaGlossary/Resources/Assets.xcassets
       - PharmaGlossary/Resources/glossary.json
+      - PharmaGlossary/Resources/PrivacyInfo.xcprivacy
     info:
       path: PharmaGlossary/Resources/Info.plist
       properties:
         CFBundleDisplayName: JB Pharma
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UIUserInterfaceStyle: Light
         UILaunchScreen:
           UIColorName: LaunchBackground
         UISupportedInterfaceOrientations:
