@@ -38,12 +38,14 @@ struct TermDetailView: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(eyebrowText)
-                .font(PGFont.eyebrow)
-                .tracking(1.6)
-                .textCase(.uppercase)
-                .foregroundStyle(PGColors.accent)
-                .padding(.top, 14)
+            if term.hasCategory {
+                Text(term.category)
+                    .font(PGFont.eyebrow)
+                    .tracking(1.6)
+                    .textCase(.uppercase)
+                    .foregroundStyle(PGColors.accent)
+                    .padding(.top, 14)
+            }
             Text(term.term)
                 .font(PGFont.termTitle)
                 .foregroundStyle(PGColors.ink)
@@ -61,12 +63,6 @@ struct TermDetailView: View {
                 .frame(height: 1)
                 .padding(.top, 12)
         }
-    }
-
-    private var eyebrowText: String {
-        var parts = ["Letter \(term.letter)"]
-        if term.hasCategory { parts.append(term.category) }
-        return parts.joined(separator: " · ")
     }
 
     private var snappy: some View {
