@@ -28,10 +28,14 @@ struct TermDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                ShareLink(item: shareText) {
-                    Image(systemName: "square.and.arrow.up")
+                Button {
+                    store.toggleFavorite(term)
+                } label: {
+                    Image(systemName: store.isFavorited(term) ? "heart.fill" : "heart")
+                        .font(.system(size: 19, weight: .semibold))
+                        .foregroundStyle(PGColors.accent)
                 }
-                .tint(PGColors.accent)
+                .accessibilityLabel(store.isFavorited(term) ? "Remove from favorites" : "Add to favorites")
             }
         }
     }
@@ -133,11 +137,4 @@ struct TermDetailView: View {
             .padding(.top, 6)
     }
 
-    private var shareText: String {
-        var s = term.term
-        if term.hasFull { s += " (\(term.full))" }
-        if term.hasSnappy { s += "\n\n\(term.snappy)" }
-        s += "\n\n\(term.detail)"
-        return s
-    }
 }

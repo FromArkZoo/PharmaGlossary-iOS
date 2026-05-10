@@ -20,12 +20,14 @@
 		AC98DCD571CBD293834FE267 /* glossary.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D4359037BAF4890035BF24F /* glossary.json */; };
 		B4212259FC08D61BF6A70C76 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730E5938DF5BC8CF7C687E31 /* Typography.swift */; };
 		C0D6851E452C20D33AA01C03 /* PGSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A8E94BB2FE9AE3986922F /* PGSearchBar.swift */; };
+		C132FF804870A14A37018107 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA967367C4547483830E5D /* FavoritesView.swift */; };
 		D63D4378000B3DA3C171BC29 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BD9B8F335704D468D2D62 /* RootView.swift */; };
 		E1223026709460B01ECBDF67 /* PGBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A89AC7B89886FFBCC4E1EF /* PGBackground.swift */; };
 		E977B208360F0B1378C8A7FE /* Glossary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE29B15500756634D070132 /* Glossary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AEA967367C4547483830E5D /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		0E37C2FF5FACD43C57A2A048 /* TermDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermDetailView.swift; sourceTree = "<group>"; };
 		17A77974A0885F60BD0FB030 /* PharmaGlossary.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PharmaGlossary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3BD9B8F335704D468D2D62 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		29EF4BF8F52FD625C48FD475 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0AEA967367C4547483830E5D /* FavoritesView.swift */,
 				24C9357FB67693080C505E10 /* FilterSheet.swift */,
 				74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */,
 				5DE935826064BF8487C934F8 /* PolicyView.swift */,
@@ -188,6 +191,7 @@
 				855944527A4B955455FCDBC5 /* Brand.swift in Sources */,
 				38407B4845DE57E8DE03FC1D /* Colors.swift in Sources */,
 				4375D1D7344BBB6DD087320A /* EditorialHeader.swift in Sources */,
+				C132FF804870A14A37018107 /* FavoritesView.swift in Sources */,
 				61B1DF64462A063998D10392 /* FilterSheet.swift in Sources */,
 				E977B208360F0B1378C8A7FE /* Glossary.swift in Sources */,
 				56C7B2C5AAFE34A5FF97AE80 /* Hyperlinks.swift in Sources */,

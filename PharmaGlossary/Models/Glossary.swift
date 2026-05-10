@@ -16,6 +16,14 @@ struct Term: Codable, Identifiable, Hashable {
     var hasSnappy: Bool { !snappy.isEmpty }
     var hasCategory: Bool { !category.isEmpty }
     var hasSources: Bool { !sources.isEmpty }
+
+    var shareText: String {
+        var s = term
+        if hasFull { s += " (\(full))" }
+        if hasSnappy { s += "\n\n\(snappy)" }
+        s += "\n\n\(detail)"
+        return s
+    }
 }
 
 struct FilterState: Equatable {
@@ -35,8 +43,11 @@ final class GlossaryStore: ObservableObject {
     @Published private(set) var allTerms: [Term] = []
     @Published private(set) var byLetter: [String: [Term]] = [:]
     @Published private(set) var letters: [String] = []
+    @Published private(set) var favorites: Set<String> = []
 
     var detailCache: [String: AttributedString] = [:]
+
+    private let favoritesKey = "pg.favorites.v1"
 
     static let policyCategories: Set<String> = ["Regulatory", "Commercial / Market Access"]
     static let policyExcludedTerms: Set<String> = [
@@ -55,6 +66,37 @@ final class GlossaryStore: ObservableObject {
 
     init() {
         load()
+        loadFavorites()
+    }
+
+    // MARK: - Favorites
+
+    private func loadFavorites() {
+        let stored = UserDefaults.standard.stringArray(forKey: favoritesKey) ?? []
+        favorites = Set(stored)
+    }
+
+    private func persistFavorites() {
+        UserDefaults.standard.set(Array(favorites).sorted(), forKey: favoritesKey)
+    }
+
+    func toggleFavorite(_ term: Term) {
+        if favorites.contains(term.term) {
+            favorites.remove(term.term)
+        } else {
+            favorites.insert(term.term)
+        }
+        persistFavorites()
+    }
+
+    func isFavorited(_ term: Term) -> Bool {
+        favorites.contains(term.term)
+    }
+
+    var favoriteTerms: [Term] {
+        allTerms
+            .filter { favorites.contains($0.term) }
+            .sorted { $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending }
     }
 
     private func load() {

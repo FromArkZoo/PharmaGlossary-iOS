@@ -4,6 +4,7 @@ enum Route: Hashable {
     case letter(String)
     case term(Term)
     case policy
+    case favorites
 }
 
 struct RootView: View {
@@ -68,6 +69,8 @@ struct RootView: View {
                     TermDetailView(term: term)
                 case .policy:
                     PolicyView()
+                case .favorites:
+                    FavoritesView()
                 }
             }
         }
@@ -98,18 +101,26 @@ struct RootView: View {
 
     private var alphabetGrid: some View {
         ScrollView {
-            LazyVGrid(columns: columns, spacing: 6) {
-                ForEach(store.alphabetLetters, id: \.self) { letter in
-                    NavigationLink(value: Route.letter(letter)) {
-                        LetterTile(letter: letter,
-                                   count: store.byLetter[letter]?.count ?? 0)
-                    }
-                    .buttonStyle(.plain)
+            VStack(spacing: 12) {
+                NavigationLink(value: Route.favorites) {
+                    FavoritesHeroCard(count: store.favorites.count)
                 }
+                .buttonStyle(.plain)
+                .padding(.horizontal, 20)
+                .padding(.top, 4)
+
+                LazyVGrid(columns: columns, spacing: 6) {
+                    ForEach(store.alphabetLetters, id: \.self) { letter in
+                        NavigationLink(value: Route.letter(letter)) {
+                            LetterTile(letter: letter,
+                                       count: store.byLetter[letter]?.count ?? 0)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                .padding(.horizontal, 20)
+                .padding(.bottom, 24)
             }
-            .padding(.horizontal, 20)
-            .padding(.top, 4)
-            .padding(.bottom, 24)
         }
         .scrollDismissesKeyboard(.immediately)
     }
@@ -202,6 +213,47 @@ private struct FilterPill: View {
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
         .background(PGColors.ink, in: Capsule())
+    }
+}
+
+private struct FavoritesHeroCard: View {
+    let count: Int
+
+    var body: some View {
+        HStack(spacing: 14) {
+            Image(systemName: count > 0 ? "heart.fill" : "heart")
+                .font(.system(size: 22, weight: .semibold))
+                .foregroundStyle(PGColors.accent)
+                .frame(width: 44, height: 44)
+                .background(
+                    Circle().fill(PGColors.accent.opacity(0.10))
+                )
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Favorites")
+                    .font(PGFont.termRowTitle)
+                    .foregroundStyle(PGColors.ink)
+                Text(count == 0 ? "Tap the heart on any term to save" : "\(count) saved")
+                    .font(PGFont.metaItalic)
+                    .foregroundStyle(PGColors.inkLight)
+            }
+
+            Spacer()
+
+            Image(systemName: "chevron.right")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(PGColors.inkFaint)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 14)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(PGColors.card)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .stroke(PGColors.cardBorder, lineWidth: 1)
+        )
     }
 }
 
