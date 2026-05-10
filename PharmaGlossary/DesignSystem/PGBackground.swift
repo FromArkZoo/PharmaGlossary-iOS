@@ -7,12 +7,12 @@ struct PGBackground: View {
             PGColors.bg
             RadialGradient(
                 colors: [
-                    PGColors.accent.opacity(0.10),
+                    PGColors.accent.opacity(0.16),
                     PGColors.accent.opacity(0.0)
                 ],
                 center: .bottomTrailing,
                 startRadius: 0,
-                endRadius: 620
+                endRadius: 750
             )
         }
         .ignoresSafeArea()

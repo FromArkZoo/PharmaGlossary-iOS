@@ -6,7 +6,7 @@ struct TermDetailView: View {
 
     var body: some View {
         ZStack {
-            PGColors.bg.ignoresSafeArea()
+            PGBackground()
             ScrollView {
                 VStack(alignment: .leading, spacing: 14) {
                     header

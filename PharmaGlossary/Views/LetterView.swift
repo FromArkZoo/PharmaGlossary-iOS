@@ -11,7 +11,7 @@ struct LetterView: View {
 
     var body: some View {
         ZStack {
-            PGColors.bg.ignoresSafeArea()
+            PGBackground()
             List(terms) { term in
                 NavigationLink(value: Route.term(term)) {
                     TermRow(term: term)
