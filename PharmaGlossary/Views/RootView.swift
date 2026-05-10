@@ -4,6 +4,7 @@ enum Route: Hashable {
     case letter(String)
     case term(Term)
     case policy
+    case basics
     case favorites
 }
 
@@ -55,10 +56,17 @@ struct RootView: View {
                 }
             }
             .sheet(isPresented: $showingFilter) {
-                FilterSheet(filter: $filter, onSelectPolicy: {
-                    showingFilter = false
-                    path.append(.policy)
-                })
+                FilterSheet(
+                    filter: $filter,
+                    onSelectPolicy: {
+                        showingFilter = false
+                        path.append(.policy)
+                    },
+                    onSelectBasics: {
+                        showingFilter = false
+                        path.append(.basics)
+                    }
+                )
                 .presentationDetents([.large])
             }
             .navigationDestination(for: Route.self) { route in
@@ -69,6 +77,8 @@ struct RootView: View {
                     TermDetailView(term: term)
                 case .policy:
                     PolicyView()
+                case .basics:
+                    BasicsView()
                 case .favorites:
                     FavoritesView()
                 }

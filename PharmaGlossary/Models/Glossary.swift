@@ -54,6 +54,32 @@ final class GlossaryStore: ObservableObject {
         "MSL", "Loss of Exclusivity", "Patent Cliff", "NCI", "HEOR", "Gross-to-Net", "Phase 4"
     ]
 
+    /// Foundational biology/chemistry concepts. Curated list, mirrors the Policy
+    /// lens pattern (allowlist rather than category filter) so we can scope it
+    /// precisely without changing the data schema.
+    static let basicsAllowlist: Set<String> = [
+        // Already present
+        "RNA", "Mutation", "siRNA", "Ligand", "Receptor", "Agonist", "Antagonist",
+        "MAb", "Apoptosis", "Insulin",
+        // Mol bio
+        "DNA", "Gene", "Genome", "Chromosome", "Allele", "Codon", "Nucleotide",
+        "Base Pair", "Transcription", "Translation",
+        "mRNA", "tRNA", "rRNA", "miRNA",
+        // Protein/enzyme
+        "Protein", "Peptide", "Amino Acid", "Alanine", "Glycine", "Lysine",
+        "Enzyme", "Antibody", "Antigen", "Epitope", "Immunoglobulin",
+        // Cell
+        "Cell", "Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum",
+        "Golgi Apparatus", "Cytoplasm", "Cell Membrane", "Mitosis", "Meiosis",
+        // Chemistry
+        "Atom", "Molecule", "Ion", "Isotope", "Isomer", "Polymer", "Monomer",
+        "Hydrogen Bond", "Covalent Bond", "Acid", "Base", "pH", "Buffer",
+        // Physiology
+        "Hormone", "Neurotransmitter", "Cytokine", "Chemokine", "Lipid",
+        "Fatty Acid", "Cholesterol", "Triglyceride", "Carbohydrate", "Glucose",
+        "Glycogen", "Metabolism", "ATP", "Glycolysis", "Krebs Cycle"
+    ]
+
     var alphabetLetters: [String] {
         letters.filter { $0.range(of: "^[A-Z]$", options: .regularExpression) != nil }
     }
@@ -61,6 +87,12 @@ final class GlossaryStore: ObservableObject {
     var policyTerms: [Term] {
         allTerms
             .filter { Self.policyCategories.contains($0.category) && !Self.policyExcludedTerms.contains($0.term) }
+            .sorted { $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending }
+    }
+
+    var basicsTerms: [Term] {
+        allTerms
+            .filter { Self.basicsAllowlist.contains($0.term) }
             .sorted { $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending }
     }
 

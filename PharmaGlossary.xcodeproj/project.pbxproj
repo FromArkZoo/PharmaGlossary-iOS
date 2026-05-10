@@ -19,6 +19,7 @@
 		855944527A4B955455FCDBC5 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24C7850E5D59C353EB6A6F /* Brand.swift */; };
 		AC98DCD571CBD293834FE267 /* glossary.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D4359037BAF4890035BF24F /* glossary.json */; };
 		B4212259FC08D61BF6A70C76 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730E5938DF5BC8CF7C687E31 /* Typography.swift */; };
+		B44B58E211C41EDA88B3873E /* BasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92939319547EB7A139012F47 /* BasicsView.swift */; };
 		C0D6851E452C20D33AA01C03 /* PGSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A8E94BB2FE9AE3986922F /* PGSearchBar.swift */; };
 		C132FF804870A14A37018107 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA967367C4547483830E5D /* FavoritesView.swift */; };
 		D63D4378000B3DA3C171BC29 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BD9B8F335704D468D2D62 /* RootView.swift */; };
@@ -43,6 +44,7 @@
 		730E5938DF5BC8CF7C687E31 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
 		83C2AC3CAF08B7BCA921EAFD /* PharmaGlossaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaGlossaryApp.swift; sourceTree = "<group>"; };
+		92939319547EB7A139012F47 /* BasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsView.swift; sourceTree = "<group>"; };
 		9AED062EE94161BB9EF13D20 /* EditorialHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorialHeader.swift; sourceTree = "<group>"; };
 		E85A8E94BB2FE9AE3986922F /* PGSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +62,7 @@
 		29EF4BF8F52FD625C48FD475 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				92939319547EB7A139012F47 /* BasicsView.swift */,
 				0AEA967367C4547483830E5D /* FavoritesView.swift */,
 				24C9357FB67693080C505E10 /* FilterSheet.swift */,
 				74CD0F1DDF34CD1030FE3D44 /* LetterView.swift */,
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44B58E211C41EDA88B3873E /* BasicsView.swift in Sources */,
 				855944527A4B955455FCDBC5 /* Brand.swift in Sources */,
 				38407B4845DE57E8DE03FC1D /* Colors.swift in Sources */,
 				4375D1D7344BBB6DD087320A /* EditorialHeader.swift in Sources */,

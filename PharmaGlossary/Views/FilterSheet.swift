@@ -4,6 +4,7 @@ struct FilterSheet: View {
     @EnvironmentObject var store: GlossaryStore
     @Binding var filter: FilterState
     var onSelectPolicy: () -> Void
+    var onSelectBasics: () -> Void
     @Environment(\.dismiss) private var dismiss
 
     private var matchCount: Int {
@@ -85,37 +86,52 @@ struct FilterSheet: View {
     private var lensesSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             sectionLabel("Lenses")
-            Button(action: onSelectPolicy) {
-                HStack(spacing: 12) {
-                    Text("P")
-                        .font(PGFont.policyIcon)
-                        .foregroundStyle(PGColors.bg)
-                        .frame(width: 34, height: 34)
-                        .background(PGColors.ink, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("Policy")
-                            .font(PGFont.policyTitle)
-                            .foregroundStyle(PGColors.ink)
-                        Text("Regulation, pricing, access · \(store.policyTerms.count) terms")
-                            .font(PGFont.policySub)
-                            .foregroundStyle(PGColors.inkLight)
-                    }
-                    Spacer()
-                    Image(systemName: "chevron.right")
-                        .font(.system(size: 13, weight: .semibold))
-                        .foregroundStyle(PGColors.inkFaint)
-                }
-                .padding(.horizontal, 12)
-                .padding(.vertical, 10)
-                .background(PGColors.card, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .stroke(PGColors.cardBorder, lineWidth: 1)
-                )
-            }
-            .buttonStyle(.plain)
+            lensCard(
+                glyph: "P",
+                title: "Policy",
+                subtitle: "Regulation, pricing, access · \(store.policyTerms.count) terms",
+                action: onSelectPolicy
+            )
+            lensCard(
+                glyph: "B",
+                title: "Basics",
+                subtitle: "Foundational biology & chemistry · \(store.basicsTerms.count) terms",
+                action: onSelectBasics
+            )
         }
         .padding(.bottom, 4)
+    }
+
+    private func lensCard(glyph: String, title: String, subtitle: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            HStack(spacing: 12) {
+                Text(glyph)
+                    .font(PGFont.policyIcon)
+                    .foregroundStyle(PGColors.bg)
+                    .frame(width: 34, height: 34)
+                    .background(PGColors.ink, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(title)
+                        .font(PGFont.policyTitle)
+                        .foregroundStyle(PGColors.ink)
+                    Text(subtitle)
+                        .font(PGFont.policySub)
+                        .foregroundStyle(PGColors.inkLight)
+                }
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(PGColors.inkFaint)
+            }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 10)
+            .background(PGColors.card, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                    .stroke(PGColors.cardBorder, lineWidth: 1)
+            )
+        }
+        .buttonStyle(.plain)
     }
 
     @ViewBuilder
