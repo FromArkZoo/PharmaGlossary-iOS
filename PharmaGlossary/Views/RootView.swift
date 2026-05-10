@@ -19,16 +19,26 @@ struct RootView: View {
         NavigationStack(path: $path) {
             ZStack {
                 PGColors.bg.ignoresSafeArea()
-                content
+                VStack(spacing: 0) {
+                    if shouldShowEditorialHeader {
+                        EditorialHeader(brand: .current, entryCount: store.allTerms.count)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, 20)
+                            .padding(.top, 8)
+                            .padding(.bottom, 16)
+                    }
+
+                    PGSearchBar(text: $query)
+                        .padding(.horizontal, 20)
+                        .padding(.bottom, 12)
+
+                    content
+                }
             }
             .navigationTitle("")
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(PGColors.bg, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
-            .searchable(text: $query, placement: .navigationBarDrawer(displayMode: .always),
-                        prompt: "Search terms, abbreviations, definitions")
-            .autocorrectionDisabled()
-            .textInputAutocapitalization(.never)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
@@ -71,22 +81,8 @@ struct RootView: View {
         })
     }
 
-    private var editorialHeader: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            Text("REFERENCE")
-                .font(PGFont.eyebrow)
-                .tracking(1.8)
-                .foregroundStyle(PGColors.accent)
-                .padding(.bottom, 2)
-            HStack(alignment: .firstTextBaseline, spacing: 6) {
-                Text("JB")
-                    .font(PGFont.displayBold)
-                    .foregroundStyle(PGColors.ink)
-                Text("Pharma")
-                    .font(PGFont.displayItalic)
-                    .foregroundStyle(PGColors.accent)
-            }
-        }
+    private var shouldShowEditorialHeader: Bool {
+        query.trimmingCharacters(in: .whitespaces).isEmpty && !filter.isActive
     }
 
     @ViewBuilder
@@ -102,31 +98,20 @@ struct RootView: View {
 
     private var alphabetGrid: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 0) {
-                editorialHeader
-                    .padding(.horizontal, 16)
-                    .padding(.top, 4)
-                    .padding(.bottom, 8)
-
-                Text("\(store.allTerms.count) entries")
-                    .font(PGFont.metaItalic)
-                    .foregroundStyle(PGColors.inkLight)
-                    .padding(.horizontal, 16)
-                    .padding(.bottom, 14)
-
-                LazyVGrid(columns: columns, spacing: 6) {
-                    ForEach(store.alphabetLetters, id: \.self) { letter in
-                        NavigationLink(value: Route.letter(letter)) {
-                            LetterTile(letter: letter,
-                                       count: store.byLetter[letter]?.count ?? 0)
-                        }
-                        .buttonStyle(.plain)
+            LazyVGrid(columns: columns, spacing: 6) {
+                ForEach(store.alphabetLetters, id: \.self) { letter in
+                    NavigationLink(value: Route.letter(letter)) {
+                        LetterTile(letter: letter,
+                                   count: store.byLetter[letter]?.count ?? 0)
                     }
+                    .buttonStyle(.plain)
                 }
-                .padding(.horizontal, 16)
-                .padding(.bottom, 24)
             }
+            .padding(.horizontal, 20)
+            .padding(.top, 4)
+            .padding(.bottom, 24)
         }
+        .scrollDismissesKeyboard(.immediately)
     }
 
     private var searchResults: some View {
