@@ -18,7 +18,7 @@ struct RootView: View {
     var body: some View {
         NavigationStack(path: $path) {
             ZStack {
-                PGColors.bg.ignoresSafeArea()
+                PGBackground()
                 VStack(spacing: 0) {
                     if shouldShowEditorialHeader {
                         EditorialHeader(brand: .current, entryCount: store.allTerms.count)
