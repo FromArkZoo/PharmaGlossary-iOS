@@ -9,12 +9,12 @@ extension GlossaryStore {
     /// navigations effectively free.
     func attributedDetail(for term: Term) -> AttributedString {
         if let cached = detailCache[term.id] { return cached }
-        let built = Self.computeAttributedDetail(for: term, against: allTerms)
+        let built = Self.computeAttributedDetail(for: term, against: allTerms, urlScheme: Brand.current.urlScheme)
         detailCache[term.id] = built
         return built
     }
 
-    nonisolated static func computeAttributedDetail(for term: Term, against allTerms: [Term]) -> AttributedString {
+    nonisolated static func computeAttributedDetail(for term: Term, against allTerms: [Term], urlScheme: String) -> AttributedString {
         var attributed = AttributedString(term.detail)
         guard !term.detail.isEmpty else { return attributed }
 
@@ -55,7 +55,7 @@ extension GlossaryStore {
                 guard
                     let stringRange = Range(r, in: body),
                     let attrRange = Range(stringRange, in: attributed),
-                    let url = Self.termURL(for: candidate)
+                    let url = Self.termURL(for: candidate, urlScheme: urlScheme)
                 else { continue }
 
                 attributed[attrRange].link = url
@@ -69,17 +69,17 @@ extension GlossaryStore {
         return attributed
     }
 
-    /// Resolve a `pharma://term/<encoded-name>` URL back to a Term in the store.
+    /// Resolve a `<brand-scheme>://term/<encoded-name>` URL back to a Term in the store.
     func term(matchingURL url: URL) -> Term? {
-        guard url.scheme == "pharma", url.host == "term" else { return nil }
+        guard url.scheme == Brand.current.urlScheme, url.host == "term" else { return nil }
         let raw = url.path.hasPrefix("/") ? String(url.path.dropFirst()) : url.path
         guard let decoded = raw.removingPercentEncoding else { return nil }
         return allTerms.first { $0.term.compare(decoded, options: .caseInsensitive) == .orderedSame }
     }
 
-    nonisolated static func termURL(for term: Term) -> URL? {
+    nonisolated static func termURL(for term: Term, urlScheme: String) -> URL? {
         let allowed = CharacterSet.urlPathAllowed
         let encoded = term.term.addingPercentEncoding(withAllowedCharacters: allowed) ?? term.term
-        return URL(string: "pharma://term/\(encoded)")
+        return URL(string: "\(urlScheme)://term/\(encoded)")
     }
 }

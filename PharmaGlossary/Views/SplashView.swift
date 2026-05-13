@@ -27,7 +27,7 @@ struct SplashView: View {
         HStack(spacing: 8) {
             ForEach(0..<3, id: \.self) { i in
                 Circle()
-                    .fill(PGColors.accent)
+                    .fill(Brand.current.primaryColor)
                     .frame(width: 6, height: 6)
                     .opacity(pulse ? 1.0 : 0.25)
                     .animation(

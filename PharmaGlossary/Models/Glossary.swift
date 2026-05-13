@@ -49,50 +49,21 @@ final class GlossaryStore: ObservableObject {
 
     private let favoritesKey = "pg.favorites.v1"
 
-    static let policyCategories: Set<String> = ["Regulatory", "Commercial / Market Access"]
-    static let policyExcludedTerms: Set<String> = [
-        "MSL", "Loss of Exclusivity", "Patent Cliff", "NCI", "HEOR", "Gross-to-Net", "Phase 4"
-    ]
-
-    /// Foundational biology/chemistry concepts. Curated list, mirrors the Policy
-    /// lens pattern (allowlist rather than category filter) so we can scope it
-    /// precisely without changing the data schema.
-    static let basicsAllowlist: Set<String> = [
-        // Already present
-        "RNA", "Mutation", "siRNA", "Ligand", "Receptor", "Agonist", "Antagonist",
-        "MAb", "Apoptosis", "Insulin",
-        // Mol bio
-        "DNA", "Gene", "Genome", "Chromosome", "Allele", "Codon", "Nucleotide",
-        "Base Pair", "Transcription", "Translation",
-        "mRNA", "tRNA", "rRNA", "miRNA",
-        // Protein/enzyme
-        "Protein", "Peptide", "Amino Acid", "Alanine", "Glycine", "Lysine",
-        "Enzyme", "Antibody", "Antigen", "Epitope", "Immunoglobulin",
-        // Cell
-        "Cell", "Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum",
-        "Golgi Apparatus", "Cytoplasm", "Cell Membrane", "Mitosis", "Meiosis",
-        // Chemistry
-        "Atom", "Molecule", "Ion", "Isotope", "Isomer", "Polymer", "Monomer",
-        "Hydrogen Bond", "Covalent Bond", "Acid", "Base", "pH", "Buffer",
-        // Physiology
-        "Hormone", "Neurotransmitter", "Cytokine", "Chemokine", "Lipid",
-        "Fatty Acid", "Cholesterol", "Triglyceride", "Carbohydrate", "Glucose",
-        "Glycogen", "Metabolism", "ATP", "Glycolysis", "Krebs Cycle"
-    ]
-
     var alphabetLetters: [String] {
         letters.filter { $0.range(of: "^[A-Z]$", options: .regularExpression) != nil }
     }
 
     var policyTerms: [Term] {
-        allTerms
-            .filter { Self.policyCategories.contains($0.category) && !Self.policyExcludedTerms.contains($0.term) }
+        let cfg = Brand.current.policyConfig
+        return allTerms
+            .filter { cfg.categories.contains($0.category) && !cfg.excludedTerms.contains($0.term) }
             .sorted { $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending }
     }
 
     var basicsTerms: [Term] {
-        allTerms
-            .filter { Self.basicsAllowlist.contains($0.term) }
+        let allow = Brand.current.basicsAllowlist
+        return allTerms
+            .filter { allow.contains($0.term) }
             .sorted { $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending }
     }
 
@@ -151,11 +122,12 @@ final class GlossaryStore: ObservableObject {
     /// Build every term's `attributedDetail` off the main thread, then bulk-merge
     /// into the cache so the first link tap doesn't pay the regex cost.
     private func prewarmDetailCache(terms: [Term]) {
+        let urlScheme = Brand.current.urlScheme
         Task.detached(priority: .utility) { [weak self] in
             var built: [String: AttributedString] = [:]
             built.reserveCapacity(terms.count)
             for term in terms {
-                built[term.id] = Self.computeAttributedDetail(for: term, against: terms)
+                built[term.id] = Self.computeAttributedDetail(for: term, against: terms, urlScheme: urlScheme)
             }
             await MainActor.run {
                 guard let self else { return }

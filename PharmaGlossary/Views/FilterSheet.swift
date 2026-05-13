@@ -87,18 +87,19 @@ struct FilterSheet: View {
     }
 
     private var lensesSection: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        let policy = Brand.current.policyConfig
+        return VStack(alignment: .leading, spacing: 8) {
             sectionLabel("Lenses")
             lensCard(
-                glyph: "P",
-                title: "Policy",
-                subtitle: "Regulation, pricing, access · \(store.policyTerms.count) terms",
+                glyph: String(policy.displayName.prefix(1)).uppercased(),
+                title: policy.displayName,
+                subtitle: "\(policy.subtitle) · \(store.policyTerms.count) terms",
                 action: onSelectPolicy
             )
             lensCard(
                 glyph: "B",
                 title: "Basics",
-                subtitle: "Foundational biology & chemistry · \(store.basicsTerms.count) terms",
+                subtitle: "\(Brand.current.basicsSubtitle) · \(store.basicsTerms.count) terms",
                 action: onSelectBasics
             )
         }
@@ -164,7 +165,7 @@ struct FilterSheet: View {
                 HStack(spacing: 6) {
                     Image(systemName: "info.circle")
                         .font(.system(size: 13, weight: .semibold))
-                    Text("About JB Pharma")
+                    Text("About \(Brand.current.displayName)")
                         .font(PGFont.policySub)
                 }
                 .foregroundStyle(PGColors.inkLight)
