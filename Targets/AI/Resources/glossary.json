@@ -1194,6 +1194,20 @@
   },
   {
     "letter": "B",
+    "term": "Best-of-N",
+    "full": "",
+    "snappy": "Inference strategy: generate N candidate answers and pick the best one (by reward model or simple heuristic).",
+    "detail": "Trades inference compute for quality. Used in RLHF (best-of-N over reward model is a baseline) and inference for accuracy-sensitive applications. N=4 to 64 is typical. Modern reasoning models (o1, Deep Think) often combine best-of-N with chain-of-thought.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "BF16",
     "full": "Brain Floating Point 16",
     "snappy": "16-bit format with the same exponent range as FP32 but fewer fraction bits — the modern default for training.",
@@ -1831,6 +1845,20 @@
     "category": "Alignment",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Constrained generation",
+    "full": "",
+    "snappy": "Forcing model output to match a specific format — grammar, JSON schema, regex, or finite-state machine.",
+    "detail": "Implemented at the sampling step: at each token, only allow choices consistent with the grammar. Used heavily for structured output, code generation in specific languages, and any place downstream code needs reliably-formatted text. Outlines, Guidance, and Microsoft's TypeChat are common open-source implementations.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Microsoft Research"
     ]
   },
   {
@@ -2968,6 +2996,20 @@
     "category": "Alignment",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Few-shot prompting",
+    "full": "",
+    "snappy": "Giving a model a handful of examples in the prompt so it can pattern-match to the desired behaviour.",
+    "detail": "Demonstrated by GPT-3 in 2020. Example: show the model 3-5 (question, answer) pairs, then ask a new question. The model often does much better than zero-shot. Modern instruction-tuned models need fewer examples (sometimes zero), but the technique is still useful for niche tasks and structured-output formats.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
@@ -4129,6 +4171,20 @@
   },
   {
     "letter": "I",
+    "term": "Inference budget",
+    "full": "",
+    "snappy": "How much compute (and money) is allocated to producing a single response.",
+    "detail": "Reasoning models (o-series, Claude extended thinking) explicitly trade off inference budget against response quality. \"Effort\" parameters (low, medium, high in OpenAI's API; tokens of thinking in Anthropic's) control this. Customers can pay more for harder problems and less for routine ones.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "I",
     "term": "Inference economics",
     "full": "",
     "snappy": "The cost-and-revenue model for running LLM serving — how much it costs per token, how much it sells for, where margins are.",
@@ -4516,6 +4572,20 @@
   },
   {
     "letter": "L",
+    "term": "LangGraph",
+    "full": "",
+    "snappy": "Open-source framework from LangChain for building stateful, multi-step LLM applications as graphs.",
+    "detail": "Released 2024 as an alternative to LangChain's linear chains. Each step is a node; transitions are edges that can loop, branch, or fork. Useful for agent workflows with retries, conditional logic, and human-in-the-loop. Increasingly the default architecture in production agent frameworks.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Software",
+    "sources": [
+      "Hugging Face"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "Latency",
     "full": "",
     "snappy": "How long a single request takes — usually split into time-to-first-token and time-per-token.",
@@ -4645,6 +4715,20 @@
   },
   {
     "letter": "L",
+    "term": "LiteLLM",
+    "full": "",
+    "snappy": "Python library that provides a single API across all LLM providers — OpenAI, Anthropic, Google, Mistral, and many more.",
+    "detail": "Lets developers swap providers without rewriting code: same call shape works for all. Adds observability, fallbacks, retries, cost tracking. Increasingly used in production deployments. Often paired with a hosted gateway (Portkey, Helicone, OpenRouter) for similar capabilities at network level.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Software",
+    "sources": [
+      "Hugging Face"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "Lithography",
     "full": "",
     "snappy": "Process of printing circuit patterns onto a wafer using light — the central technology of chip manufacturing.",
@@ -4715,6 +4799,20 @@
   },
   {
     "letter": "L",
+    "term": "LlamaIndex",
+    "full": "",
+    "snappy": "Open-source framework for building RAG and agentic applications — competitor to LangChain.",
+    "detail": "Originally GPT Index (2022). Focuses on data ingestion, indexing, and retrieval for LLM apps. Strong tooling for connecting to many data sources (SQL, PDFs, APIs, notion, etc.). Popular for the data-heavy side of agent development.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Software",
+    "sources": [
+      "Hugging Face"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "LLM-as-judge",
     "full": "",
     "snappy": "Using a strong language model to grade other models' outputs — much cheaper than human raters.",
@@ -4781,6 +4879,20 @@
     "category": "Inference",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Long-horizon task",
+    "full": "",
+    "snappy": "A task that takes many steps and multiple hours or days to complete — beyond what any single prompt can deliver.",
+    "detail": "Examples: writing a research paper, debugging a complex codebase, planning a multi-week project. Long-horizon tasks stress agent design — the model has to maintain coherence over many sub-tasks, handle interruptions, manage memory. Frontier of agent research as of 2024-2025.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -5417,6 +5529,20 @@
   },
   {
     "letter": "M",
+    "term": "Multi-turn conversation",
+    "full": "",
+    "snappy": "An exchange where context accumulates across many user/assistant turns.",
+    "detail": "Distinct from a single-shot prompt-and-response. The model has to carry context (\"the document we discussed earlier\"), maintain consistent persona, and handle clarifications. Modern frontier models handle multi-turn well; older ones struggled. Most production chatbots are multi-turn by design.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Multimodal model",
     "full": "",
     "snappy": "A model that takes more than one type of input — text, images, audio, video — and reasons across them.",
@@ -5759,6 +5885,20 @@
   },
   {
     "letter": "O",
+    "term": "Outcome supervision",
+    "full": "",
+    "snappy": "Training a model by rewarding only the final answer — simpler than process supervision, but coarser.",
+    "detail": "Standard for many RL pipelines because final-answer rewards are easy to compute. Drawback: the model can stumble onto right answers via wrong reasoning, and the training signal won't distinguish. Process supervision is the more sophisticated alternative when verifier reliability allows.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "O",
     "term": "Outer alignment",
     "full": "",
     "snappy": "Getting the reward signal or objective function right — does it actually capture what you want?",
@@ -5896,6 +6036,20 @@
     "category": "Eval",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Persona prompting",
+    "full": "Role prompting",
+    "snappy": "Telling the model to play a specific character — \"You are a senior software engineer\", \"You are Sherlock Holmes\".",
+    "detail": "Surprisingly effective: persona prompts can change output style, depth, and even task accuracy. Used both legitimately (specialised assistants) and adversarially (jailbreaks pretending the model is an evil-twin variant). Modern alignment training tries to make the model's safe behaviour robust to persona prompts.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -6159,6 +6313,21 @@
   },
   {
     "letter": "P",
+    "term": "Process supervision",
+    "full": "",
+    "snappy": "Training a model by rewarding correct intermediate reasoning steps, not just the final answer.",
+    "detail": "Contrast with outcome supervision (reward only the final answer). Process supervision is more sample-efficient on hard reasoning tasks because partial credit guides the model toward better intermediate behaviour. OpenAI's PRM (Process Reward Model) work in 2023 helped popularise the technique; central to modern reasoning-model training.",
+    "indications": [
+      "Training",
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Prompt",
     "full": "",
     "snappy": "The input text given to an LLM — the question, instruction, or context that prompts the response.",
@@ -6217,6 +6386,20 @@
   },
   {
     "letter": "P",
+    "term": "Prompt template",
+    "full": "",
+    "snappy": "Reusable prompt with variables that get filled in at runtime — the LLM equivalent of a template string.",
+    "detail": "\"Summarise this {{document}} in {{n}} bullet points\". Modern frameworks (LangChain, LlamaIndex, DSPy) provide structured prompt-template APIs with validation, escaping, and versioning. Production AI apps almost always have a prompt-template library — managing prompts as strings doesn't scale.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Hugging Face"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Protein language model",
     "full": "",
     "snappy": "Language model trained on amino-acid sequences instead of text — learns the \"grammar\" of proteins.",
@@ -6255,6 +6438,20 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Pydantic",
+    "full": "",
+    "snappy": "Python library for data validation — widely used to define expected output schemas for LLM responses.",
+    "detail": "Lets developers write Python types (a User has a name, an email, an age) and have them automatically converted to JSON schema for the LLM API and validated on the return trip. Standard pattern in modern AI-app code: \"give me a User object\" rather than \"give me JSON\" — much less error-prone.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Software",
+    "sources": [
+      "Hugging Face"
     ]
   },
   {
@@ -6415,6 +6612,21 @@
   },
   {
     "letter": "R",
+    "term": "Reasoning effort",
+    "full": "",
+    "snappy": "Knob on modern reasoning models that controls how much thinking the model does before answering.",
+    "detail": "OpenAI's o-series exposes \"low\", \"medium\", \"high\". Anthropic's extended thinking lets you specify a token budget for thinking. Higher effort → more compute spent on the chain of thought → better answers on hard problems but slower and more expensive. The right setting depends on the task.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "Recurrent neural network",
     "full": "RNN",
     "snappy": "Older type of language network that reads a sequence one word at a time, carrying a running memory between steps.",
@@ -6487,6 +6699,20 @@
   },
   {
     "letter": "R",
+    "term": "Reflexion",
+    "full": "",
+    "snappy": "Agent pattern where the model critiques its own output, identifies mistakes, and tries again.",
+    "detail": "Introduced 2023. Loop: produce output, evaluate it, generate a critique, regenerate with the critique in context. Especially effective for reasoning-heavy tasks. Used inside many agent frameworks and tool-calling pipelines. Conceptually related to self-consistency but with explicit critique instead of voting.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "Refusal training",
     "full": "",
     "snappy": "Teaching a model when to say no — declining requests for help with harmful, illegal, or otherwise off-policy tasks.",
@@ -6513,6 +6739,21 @@
     "category": "Concepts",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Rejection sampling",
+    "full": "",
+    "snappy": "Generating many candidates from a model and keeping only those that pass some filter — a check, a reward score, a verifier.",
+    "detail": "Used in training (build a fine-tuning corpus from rejected/accepted samples), in inference (combine with best-of-N), and in alignment work. Cheap and effective when you have a reliable verifier. Common pattern in modern reasoning-model training.",
+    "indications": [
+      "Training",
+      "Inference"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
@@ -6966,6 +7207,20 @@
   },
   {
     "letter": "S",
+    "term": "Self-critique",
+    "full": "",
+    "snappy": "Asking a model to evaluate its own previous output and find weaknesses.",
+    "detail": "A building block of Reflexion and Constitutional AI. Surprisingly effective at catching errors the model itself made — the model has more capability than its single-pass output reflects. Used in modern reasoning models and in many production prompting recipes.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Self-driving car",
     "full": "Autonomous vehicle, AV",
     "snappy": "Vehicle that drives itself — uses sensors, maps, and AI to navigate without human input.",
@@ -7038,6 +7293,20 @@
   },
   {
     "letter": "S",
+    "term": "Server-Sent Events",
+    "full": "SSE",
+    "snappy": "Standard for one-way streaming from server to client over HTTP — the standard delivery mechanism for LLM token streams.",
+    "detail": "Older than WebSockets, simpler. Each event is a line of text on a long-lived HTTP connection. OpenAI, Anthropic, Google, and most other LLM APIs use SSE for streaming. Web frontends consume via the EventSource browser API; backend code reads the line-delimited stream.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Software",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "ShareGPT",
     "full": "",
     "snappy": "Crowdsourced dump of ChatGPT conversations shared by users — used as fine-tuning data for early open chat models.",
@@ -7105,6 +7374,20 @@
     "category": "Company",
     "sources": [
       "SK Hynix"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Skeleton of thought",
+    "full": "",
+    "snappy": "Prompting technique where the model first outlines an answer (\"skeleton\"), then fills in details in parallel.",
+    "detail": "Introduced 2023. Outputs an abstract plan, then asks the model to elaborate each section independently. Useful for tasks where the structure matters (writing, multi-part answers). The parallelisation lets some agent frameworks fan out the section-filling across multiple model calls.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Microsoft Research"
     ]
   },
   {
@@ -7349,6 +7632,20 @@
   },
   {
     "letter": "S",
+    "term": "Step-back prompting",
+    "full": "",
+    "snappy": "Asking the model to first restate the question at a higher level, then answer.",
+    "detail": "Released by Google research in 2023. \"Take a step back\" — the model writes a more abstract version of the question, identifies the relevant general principles, then applies them to the specific question. Modest accuracy gains on hard reasoning benchmarks; one of many \"thinking aids\" in modern prompting practice.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Stochastic gradient descent",
     "full": "SGD",
     "snappy": "Variant of gradient descent that updates parameters using one batch at a time rather than the full dataset.",
@@ -7388,6 +7685,20 @@
     "category": "Concepts",
     "sources": [
       "Stability AI"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Subagent",
+    "full": "",
+    "snappy": "Specialised agent spawned by a primary agent to handle a specific sub-task.",
+    "detail": "Used to parallelise work and protect the primary agent's context window. Common in frameworks like Claude Code, OpenAI Operator, and LangGraph. The orchestrator agent delegates, gathers results, and continues with summarised context. Effective when sub-tasks are clearly bounded.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -7504,6 +7815,21 @@
     "category": "Concepts",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "System prompt",
+    "full": "",
+    "snappy": "Hidden instruction that sets a model's persona, ground rules, and context — placed before the user's first message.",
+    "detail": "Every chat interaction starts with a system prompt: \"You are a helpful assistant\", \"Always cite sources\", \"Never discuss sensitive topics\". Frontier APIs distinguish system from user roles in the message structure. Modern system prompts are often hundreds of lines long, encoding both persona and many specific instructions for behaviour.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic",
+      "OpenAI"
     ]
   },
   {
@@ -7800,6 +8126,20 @@
       "NLP"
     ],
     "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Token streaming",
+    "full": "Streaming",
+    "snappy": "Sending each token from the model to the client as soon as it's generated, instead of waiting for the full response.",
+    "detail": "Standard for chat UIs — produces the typewriter effect users see in ChatGPT. Implemented via Server-Sent Events (SSE) over HTTP. Lower time-to-first-token but higher total-bytes overhead. Almost all production LLM APIs support streaming as an option.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Software",
     "sources": [
       "OpenAI"
     ]
@@ -8201,6 +8541,21 @@
     "category": "Concepts",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "U",
+    "term": "User message",
+    "full": "",
+    "snappy": "The user's input in a chat — distinct from the system prompt or assistant responses.",
+    "detail": "Modern LLM APIs structure conversations as a list of {role, content} pairs: system, user, assistant, tool. The user message is what the human just typed (or, in agentic settings, what the orchestrator just generated). The model attends to all messages plus its own scratchpad when producing the next response.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic",
+      "OpenAI"
     ]
   },
   {
