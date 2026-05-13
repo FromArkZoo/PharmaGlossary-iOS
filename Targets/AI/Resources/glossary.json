@@ -272,6 +272,20 @@
   },
   {
     "letter": "A",
+    "term": "AI consciousness",
+    "full": "",
+    "snappy": "Open question — whether current or future AI systems have subjective experience.",
+    "detail": "Philosophers, neuroscientists, and AI researchers disagree sharply. Some (Daniel Dennett, many AI labs) hold that consciousness will or has already emerged as systems get more capable; others (David Chalmers, the hard-problem camp) argue it's deeply unclear. Currently a philosophy and welfare question more than a science one.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "AI customer service",
     "full": "",
     "snappy": "Use of AI in customer support — chatbots, automated triage, agent assist.",
@@ -577,6 +591,21 @@
     "category": "Industry",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI welfare",
+    "full": "Model welfare",
+    "snappy": "Speculative concern — that sufficiently advanced AI systems might have morally-relevant experiences and deserve consideration.",
+    "detail": "Anthropic has hired researchers focused on model welfare. The argument: if AI systems become conscious or quasi-conscious, even at low probability, the scale of deployment means the total welfare implications could be enormous. Highly contested; many AI researchers think it's premature or category-confused.",
+    "indications": [
+      "Frontier",
+      "Safety"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -1235,6 +1264,20 @@
   },
   {
     "letter": "B",
+    "term": "Bayes' theorem",
+    "full": "",
+    "snappy": "Formula for updating beliefs given new evidence — probability of A given B equals probability of B given A times prior probability of A, normalised.",
+    "detail": "Foundation of Bayesian statistics, used throughout AI: spam filters, fraud detection, medical diagnosis, RLHF reward modelling. Modern Bayesian deep learning uses Bayesian reasoning over neural network weights for uncertainty estimation. The Bayesian / frequentist debate is one of statistics' oldest.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "Beam search",
     "full": "",
     "snappy": "Decoding strategy that keeps several candidate sequences alive at once and picks the best at the end.",
@@ -1319,6 +1362,20 @@
     "category": "Regulation",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Bias-variance trade-off",
+    "full": "",
+    "snappy": "Classical ML idea — a model can be too simple (high bias, underfits) or too complex (high variance, overfits). The sweet spot is in between.",
+    "detail": "Foundational concept for understanding model selection. Modern deep learning complicates the picture (see double descent), but bias-variance trade-off remains the right intuition for classical ML and small-data regimes. Always think about both axes when diagnosing model performance.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -1929,6 +1986,20 @@
     "category": "Concepts",
     "sources": [
       "Hugging Face"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Compute allocation",
+    "full": "",
+    "snappy": "Process — formal or informal — by which a lab's compute budget is divided among teams, projects, and experiments.",
+    "detail": "Major operational question for any AI lab. Frontier labs report compute allocation as one of the most consequential management decisions: who gets to train, with how many GPUs, for how long. Often handled via internal bidding, dedicated allocation councils, or top-down strategy decisions.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -4165,6 +4236,21 @@
   },
   {
     "letter": "G",
+    "term": "GPU shortage",
+    "full": "GPU supply crunch",
+    "snappy": "Recurring supply-demand imbalance for high-end AI accelerators — has shaped the industry since 2023.",
+    "detail": "Driven by frontier-AI demand outrunning TSMC CoWoS packaging capacity (the binding constraint) and HBM memory supply. NVIDIA H100 lead times reached 52 weeks in 2024. Has eased somewhat in 2025 as Blackwell shipped and CoWoS capacity expanded, but every new generation re-tightens supply.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Industry",
+    "sources": [
+      "NVIDIA",
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "GPU virtualization",
     "full": "vGPU",
     "snappy": "Software splitting one physical GPU into multiple virtual GPUs that can be allocated to different jobs or tenants.",
@@ -4248,6 +4334,20 @@
     "category": "Training",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Gradio",
+    "full": "",
+    "snappy": "Python library for building quick web UIs around ML models — popular for research demos.",
+    "detail": "Created in 2019, acquired by Hugging Face in 2021. Lets researchers wrap a model in a usable web interface in 5 lines of code. The default way to share interactive ML demos. Hosted versions live in Hugging Face Spaces. Often the first interface a new open-weight model has.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Software",
+    "sources": [
+      "Hugging Face"
     ]
   },
   {
@@ -4347,6 +4447,21 @@
     "category": "Hardware",
     "sources": [
       "Groq"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GRPO",
+    "full": "Group Relative Policy Optimization",
+    "snappy": "RL algorithm — used to train DeepSeek-R1 and similar reasoning models. Variant of PPO that's simpler and works well for reasoning tasks.",
+    "detail": "Released by DeepSeek. Skips the explicit value network of PPO, computing advantages by comparing to other samples in the same batch. Made headlines because DeepSeek-R1 achieved reasoning-model performance with significantly less infrastructure than RLHF-based approaches.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "DeepSeek"
     ]
   },
   {
@@ -5005,6 +5120,20 @@
     "category": "Software",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "J",
+    "term": "JEPA",
+    "full": "Joint Embedding Predictive Architecture",
+    "snappy": "Yann LeCun's proposed alternative to generative pretraining — predict abstract representations rather than raw pixels or tokens.",
+    "detail": "Predicts what something \"should look like\" in embedding space rather than reconstructing pixel-level detail. Used in Meta's I-JEPA (image) and V-JEPA (video). LeCun argues this is the right path toward more efficient and robust AI; remains a research direction rather than a production replacement for diffusion or LLMs.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Meta AI / FAIR"
     ]
   },
   {
@@ -5691,6 +5820,20 @@
   },
   {
     "letter": "M",
+    "term": "Markov chain",
+    "full": "",
+    "snappy": "Sequence where each next state depends only on the current state, not the entire history.",
+    "detail": "Mathematical structure underlying many sequential models. Markov Decision Processes (used in RL) are stochastic Markov chains where you also choose actions. Hidden Markov Models were the workhorse of speech recognition pre-deep-learning. The Markov assumption (memorylessness) is a common simplifying choice in many AI systems.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "MATH",
     "full": "MATH benchmark",
     "snappy": "12,500 competition-math problems — significantly harder than GSM8K, drawn from AMC, AIME, etc.",
@@ -5860,6 +6003,34 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Mem0",
+    "full": "",
+    "snappy": "Open-source memory layer for LLM applications — adds persistent memory to chat agents.",
+    "detail": "Simple API for storing and retrieving facts across user sessions. Used in many AI-native consumer apps for personalisation. Built on top of vector databases. Part of the broader \"agent memory\" infrastructure category alongside Letta, Zep, and others.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Software",
+    "sources": [
+      "Hugging Face"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "MemGPT",
+    "full": "Letta",
+    "snappy": "Framework for giving LLMs persistent memory — manages context window like an operating system manages RAM.",
+    "detail": "Released 2023 by Berkeley researchers. Renamed Letta in 2024. The model has tools to read/write its own long-term memory store, freeing context-window space for the current task. Influential pattern; many production agents use MemGPT-style memory management whether or not they use the specific framework.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Software",
+    "sources": [
+      "UC Berkeley"
     ]
   },
   {
@@ -6930,6 +7101,20 @@
   },
   {
     "letter": "P",
+    "term": "Persistent KV cache",
+    "full": "",
+    "snappy": "Storing KV cache state across multiple LLM requests so it can be reused — basis of prompt caching.",
+    "detail": "If a long system prompt is shared across thousands of users, caching its KV state once on the server saves recomputing for each request. Implementations vary: OpenAI's caching is automatic, Anthropic's requires explicit cache markers. Significant cost and latency wins for any application with stable shared context.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Inference",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Persona prompting",
     "full": "Role prompting",
     "snappy": "Telling the model to play a specific character — \"You are a senior software engineer\", \"You are Sherlock Holmes\".",
@@ -7198,6 +7383,20 @@
     "category": "Alignment",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Pre-norm",
+    "full": "Pre-norm Transformer",
+    "snappy": "Placing layer normalization before the attention/feedforward layer rather than after — the modern standard.",
+    "detail": "Original 2017 Transformer was post-norm. Pre-norm produces more stable training, especially for deep networks (40+ layers). All modern frontier LLMs use pre-norm. Small architectural choice with outsize impact on training dynamics.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -7631,6 +7830,21 @@
   },
   {
     "letter": "R",
+    "term": "Reasoning model",
+    "full": "",
+    "snappy": "LLM trained with reinforcement learning over chains of thought — thinks step-by-step before answering.",
+    "detail": "OpenAI o1, o3, GPT-5 reasoning mode; Claude with extended thinking; Gemini Deep Think; DeepSeek R1; Qwen reasoning models. Common pattern: produce extensive internal reasoning, then a final answer. Dramatic improvements on math, code, and multi-step reasoning at higher per-question inference cost.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "Recurrent neural network",
     "full": "RNN",
     "snappy": "Older type of language network that reads a sequence one word at a time, carrying a running memory between steps.",
@@ -7976,6 +8190,20 @@
     "sources": [
       "OpenAI",
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "RMSNorm",
+    "full": "Root Mean Square Normalization",
+    "snappy": "Simpler variant of layer normalization — used in Llama, Mistral, and many modern LLMs.",
+    "detail": "Drops the mean-centering step from standard layer norm; just scales each activation vector by its RMS. Computes faster, gives similar (sometimes better) quality. Now the default normalization in most LLMs released after about 2022.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Meta AI / FAIR"
     ]
   },
   {
@@ -8467,6 +8695,20 @@
   },
   {
     "letter": "S",
+    "term": "SIMT",
+    "full": "Single Instruction Multiple Threads",
+    "snappy": "NVIDIA's programming model for GPUs — threads execute the same instruction together, on different data.",
+    "detail": "Variant of SIMD with finer-grained control. Each \"warp\" of 32 threads runs in lockstep but can branch differently (at performance cost). Understanding SIMT is essential for writing efficient CUDA kernels — divergent branches are slow. AMD's equivalent is called SIMT in GCN/CDNA architectures with wavefronts of 32 or 64.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SK Hynix",
     "full": "",
     "snappy": "South Korean memory maker — the leading supplier of HBM for AI accelerators.",
@@ -8849,6 +9091,20 @@
   },
   {
     "letter": "S",
+    "term": "Streamlit",
+    "full": "",
+    "snappy": "Python library for building data-app web interfaces — used widely for AI demos and internal tools.",
+    "detail": "Released 2019, acquired by Snowflake in 2022. Similar in spirit to Gradio but oriented toward data dashboards rather than ML demos. Production-quality enough for internal enterprise tools. Common stack: data scientist writes a Streamlit app to expose a model to colleagues.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Software",
+    "sources": [
+      "Hugging Face"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Structured output",
     "full": "",
     "snappy": "Forcing a model's output to match a schema — JSON, XML, function-call arguments, etc.",
@@ -8987,6 +9243,20 @@
     "category": "Eval",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "SwiGLU",
+    "full": "Swish-Gated Linear Unit",
+    "snappy": "Activation function used in modern Transformer feed-forward layers — combines a SiLU activation with a gating mechanism.",
+    "detail": "Used in Llama, Mistral, Llama 2/3, and many newer architectures. Replaces simpler activations like GELU. Performs slightly better in practice; the extra parameters (gating) pay off. Standard part of the modern LLM architectural recipe.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -9235,6 +9505,20 @@
   },
   {
     "letter": "T",
+    "term": "Test-time compute scaling",
+    "full": "",
+    "snappy": "Modern paradigm — improve frontier model performance by spending more compute at inference rather than training.",
+    "detail": "Demonstrated by o-series, Claude extended thinking, and similar. Performance scales smoothly with inference compute, not just training compute. Opens a new axis: providers can offer the same model in fast/cheap and slow/smart configurations. Reshaping LLM economics through 2024-2025.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Test-time training",
     "full": "TTT",
     "snappy": "Updating a model's parameters at inference time based on the current input — a research direction that blurs training/inference.",
@@ -9446,6 +9730,21 @@
   },
   {
     "letter": "T",
+    "term": "Tool spec",
+    "full": "Tool schema",
+    "snappy": "JSON-shaped description of a tool's name, description, and arguments — given to an LLM so it knows what it can call.",
+    "detail": "Each tool entry typically has a name, a natural-language description, and a JSON schema for arguments. Tool specs are added to the system prompt or passed through a dedicated API field. The quality of the tool description directly affects how often the model uses the tool correctly.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Agents",
+    "sources": [
+      "Anthropic",
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Tool use",
     "full": "",
     "snappy": "An LLM calling external functions — search, code, calculator, APIs — to extend its capabilities.",
@@ -9485,6 +9784,21 @@
     "category": "Inference",
     "sources": [
       "Allen Institute for AI"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "TOPS",
+    "full": "Tera Operations Per Second",
+    "snappy": "Compute throughput metric used for inference accelerators — like TFLOPS but counts any operation, not just floating-point.",
+    "detail": "Mobile NPUs are rated in TOPS: Apple's A18 Pro ~38 TOPS, Qualcomm Snapdragon X Elite ~45 TOPS. Microsoft's Copilot+ PC requirement is 40 TOPS NPU minimum. TOPS at INT8 is the most-commonly-quoted; same chip might do half as much at INT4 or twice as much at FP4.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Apple",
+      "Qualcomm"
     ]
   },
   {
@@ -10116,6 +10430,20 @@
   },
   {
     "letter": "W",
+    "term": "Warp",
+    "full": "GPU warp",
+    "snappy": "NVIDIA's term for a group of 32 GPU threads that execute together in lockstep.",
+    "detail": "The fundamental unit of GPU execution. All 32 threads in a warp share the same instruction pointer; if they need to take different code paths (\"warp divergence\"), the GPU serialises them, costing performance. Critical concept for GPU kernel optimization. AMD calls the equivalent a wavefront.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "W",
     "term": "Watermarking",
     "full": "",
     "snappy": "Embedding invisible signals in AI-generated content (text, images, video) to identify it later.",
@@ -10195,6 +10523,20 @@
       "Audio"
     ],
     "category": "Models",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "Whistleblower",
+    "full": "AI lab whistleblower",
+    "snappy": "Former employee of a frontier AI lab who publicly raises concerns about safety practices or governance.",
+    "detail": "Several high-profile cases since 2023: former OpenAI staffers (Daniel Kokotajlo, Geoffrey Irving, William Saunders) publicly criticised governance after the November 2023 board crisis. Anthropic researchers occasionally publish departure essays. The pattern raises questions about whether internal safety culture can self-correct without external pressure.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Industry",
     "sources": [
       "OpenAI"
     ]
