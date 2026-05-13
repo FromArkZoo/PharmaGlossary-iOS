@@ -99,6 +99,20 @@
   },
   {
     "letter": "A",
+    "term": "Active learning",
+    "full": "",
+    "snappy": "Training scheme that iteratively asks humans to label the data points the model is most uncertain about.",
+    "detail": "Useful when labels are expensive and you have a budget. Modern variant: use a strong model (Claude, GPT-4) as a labeler instead of humans, with active-learning techniques choosing which inputs deserve the expensive model's attention. Common in production data-labeling pipelines.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Actor-critic",
     "full": "",
     "snappy": "RL architecture combining two networks: an actor that picks actions, a critic that estimates how good those actions are.",
@@ -1065,6 +1079,20 @@
   },
   {
     "letter": "A",
+    "term": "AUROC",
+    "full": "Area Under the ROC Curve",
+    "snappy": "Single-number summary of a classifier's quality — measures how well the model separates positive from negative cases.",
+    "detail": "Ranges 0.5 (random) to 1.0 (perfect). Independent of any specific decision threshold, so useful for comparing models. Common in medical diagnostics, fraud detection, and any binary classification with class imbalance. AUPRC is the related precision-recall variant for very imbalanced settings.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "AWS",
     "full": "Amazon Web Services",
     "snappy": "Amazon's cloud arm — the largest cloud provider, with custom AI silicon (Trainium, Inferentia) and a $4-8B investment in Anthropic.",
@@ -1146,6 +1174,20 @@
     "category": "Packaging",
     "sources": [
       "Intel"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Bagging",
+    "full": "Bootstrap aggregating",
+    "snappy": "Ensemble technique — train many models on different random subsamples of the training set, then average predictions.",
+    "detail": "Random forests are an example of bagging applied to decision trees. The averaging reduces variance, making the ensemble more robust than any single member. Less effective when individual models are already low-variance; complements weak learners well.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -1348,6 +1390,20 @@
     "category": "Concepts",
     "sources": [
       "EleutherAI"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Boosting",
+    "full": "",
+    "snappy": "Ensemble technique — train a sequence of weak models, each focused on the mistakes of the previous ones.",
+    "detail": "Different from bagging in two ways: sequential rather than parallel, and the focus on errors rather than random sampling. AdaBoost (1995) was the first; gradient boosting and XGBoost are the modern descendants. Often produces strong final models from individually weak components.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -1637,6 +1693,20 @@
   },
   {
     "letter": "C",
+    "term": "Class imbalance",
+    "full": "",
+    "snappy": "Situation where one class is much rarer than another — challenging for many ML methods.",
+    "detail": "Fraud detection (99.9% legitimate transactions), medical screening (99% healthy), spam detection. Naive accuracy is misleading — predicting \"not fraud\" always gives 99.9%. Mitigations: weighted loss functions, oversampling minorities (SMOTE), undersampling majorities, threshold tuning, specialised metrics (AUPRC, F-beta).",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Claude",
     "full": "",
     "snappy": "Anthropic's LLM family — the main competitor to GPT in frontier chat and coding.",
@@ -1906,6 +1976,20 @@
   },
   {
     "letter": "C",
+    "term": "Confusion matrix",
+    "full": "",
+    "snappy": "Table showing prediction outcomes — true positives, false positives, true negatives, false negatives.",
+    "detail": "Foundational diagnostic for classification problems. Used to derive most other classification metrics (accuracy, precision, recall, F1). Heat-map visualisations are standard in ML reports. Helps identify which classes a model confuses with which others.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Constitutional AI",
     "full": "",
     "snappy": "Anthropic's approach to alignment — the model is shown a written list of principles and trained to critique itself against them.",
@@ -1973,6 +2057,21 @@
     "category": "Inference",
     "sources": [
       "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Contrastive learning",
+    "full": "",
+    "snappy": "Self-supervised technique — train an embedding model by pulling matching pairs (image, caption) together and pushing non-matching pairs apart.",
+    "detail": "Powers CLIP (image-text), SimCLR (image-image), SimCSE (sentence-sentence), and many other foundation models. The InfoNCE loss is the standard objective. Effective at producing semantically meaningful embeddings that work well in downstream tasks.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
@@ -2135,6 +2234,20 @@
   },
   {
     "letter": "C",
+    "term": "Cross-validation",
+    "full": "K-fold cross-validation",
+    "snappy": "Technique for measuring model performance — split data into K folds and train K models, each leaving one fold out for testing.",
+    "detail": "Gives a more reliable performance estimate than a single train/test split, at K× the compute cost. Standard for hyperparameter tuning and model selection on small-to-medium datasets. Less common in frontier deep learning because training runs are too expensive to repeat.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Crusoe",
     "full": "",
     "snappy": "AI infrastructure company building data centers next to stranded energy sources (oil flares, renewables).",
@@ -2191,6 +2304,20 @@
   },
   {
     "letter": "C",
+    "term": "Curriculum learning",
+    "full": "",
+    "snappy": "Training strategy — present the model with easier examples first, then progressively harder ones.",
+    "detail": "Inspired by how humans learn. In LLM training, this might mean training on cleaner web text first, then noisier crawls; or simple math problems before competition-grade ones. Effective when used carefully; tricky to get the difficulty ordering right. Reasoning-model training uses curriculum approaches over chains of thought.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Cursor",
     "full": "Cursor IDE",
     "snappy": "AI-first code editor — fork of VS Code with deep integration of large language models.",
@@ -2229,6 +2356,20 @@
     "category": "Models",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Data augmentation",
+    "full": "",
+    "snappy": "Producing more training data by transforming existing examples — rotating images, paraphrasing text, adding noise.",
+    "detail": "Standard practice in image classification (random crops, flips, colour jitter, RandAugment), speech (noise, time-stretching), and text (synonym replacement, back-translation). Improves model robustness and effective training-set size. Modern foundation models rely on heavy augmentation in pretraining.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -2344,6 +2485,20 @@
     "category": "Alignment",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Decision tree",
+    "full": "",
+    "snappy": "Classifier that asks a series of yes/no questions about features to arrive at a prediction.",
+    "detail": "Intuitive, interpretable, but prone to overfitting on its own. The basic building block of more powerful ensemble methods (random forests, gradient boosting). Still used standalone when interpretability matters more than accuracy.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -3183,6 +3338,20 @@
   },
   {
     "letter": "F",
+    "term": "Feature engineering",
+    "full": "",
+    "snappy": "The art of crafting input features that make a model's job easier — pre-deep-learning, this was where most ML work happened.",
+    "detail": "Date → day_of_week, age + height → BMI, location → census-tract demographics. Modern deep learning automates much of this, but feature engineering is still important for tabular ML, where domain expertise and clever features often beat raw model power.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "F",
     "term": "Few-shot prompting",
     "full": "",
     "snappy": "Giving a model a handful of examples in the prompt so it can pattern-match to the desired behaviour.",
@@ -3939,6 +4108,20 @@
   },
   {
     "letter": "G",
+    "term": "Gradient boosting",
+    "full": "",
+    "snappy": "Ensemble method — builds a sequence of decision trees, each one correcting errors from the previous ones.",
+    "detail": "XGBoost (2014), LightGBM (Microsoft, 2017), and CatBoost (Yandex, 2017) are the dominant implementations. Frequently the winning algorithm in Kaggle competitions for tabular problems. Modern industry: still the default for credit scoring, customer churn, fraud detection — anywhere tabular data dominates.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "Gradient descent",
     "full": "",
     "snappy": "The basic recipe for training neural networks — repeatedly nudge each parameter in the direction that reduces error.",
@@ -4106,6 +4289,20 @@
     "category": "Concepts",
     "sources": [
       "Anthropic",
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "Hard negative mining",
+    "full": "",
+    "snappy": "Training trick — focus learning on the negative examples the model finds hardest to distinguish from positives.",
+    "detail": "Critical for contrastive learning and ranking problems. Easy negatives provide little learning signal; hard negatives (those the model currently misclassifies) are where the action is. Used in image retrieval, dense retrievers (BM25 + neural), recommendation systems, embedding training.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
       "OpenAI"
     ]
   },
@@ -4726,6 +4923,20 @@
   },
   {
     "letter": "K",
+    "term": "k-means clustering",
+    "full": "",
+    "snappy": "Classical unsupervised algorithm — group data points into k clusters by repeatedly assigning each point to its nearest cluster center.",
+    "detail": "Simple, fast, widely used for exploratory analysis. Sensitive to initialisation (k-means++ helps), assumes spherical clusters (not always realistic), requires you to pick k in advance. Modern alternatives (DBSCAN, HDBSCAN, hierarchical clustering) address some of these limitations.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "K",
     "term": "Kimi",
     "full": "Moonshot Kimi",
     "snappy": "Chinese AI startup Moonshot's chat product — known for very long context windows.",
@@ -4750,6 +4961,21 @@
     "category": "Concepts",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "K",
+    "term": "Knowledge distillation",
+    "full": "",
+    "snappy": "Training a small \"student\" model to match the outputs of a larger \"teacher\" — covered earlier under \"Distillation\".",
+    "detail": "Foundational technique. The student often matches teacher quality at a fraction of the size and inference cost. Used everywhere from BERT distillation (DistilBERT) to mobile-deployable LLMs (Phi-3) to making API models cheaper to serve (GPT-4o mini, Claude Haiku).",
+    "indications": [
+      "Training",
+      "Inference"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Hugging Face"
     ]
   },
   {
@@ -6748,6 +6974,35 @@
   },
   {
     "letter": "P",
+    "term": "Precision and recall",
+    "full": "",
+    "snappy": "Two key metrics for classification — precision = (correct positives) / (predicted positives); recall = (correct positives) / (actual positives).",
+    "detail": "Precision asks: when the model says yes, is it right? Recall asks: of all actual yesses, how many did the model catch? Trade off against each other — make the model say yes more often and recall goes up, precision goes down. F1 is the harmonic mean of the two.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Pretext task",
+    "full": "",
+    "snappy": "Artificial task used in self-supervised learning whose labels can be derived from raw data automatically.",
+    "detail": "Examples: predict the next word (LLMs), predict a masked patch (BERT, vision), determine whether two image crops come from the same image (SimCLR). The pretext task isn't useful in itself but produces representations that transfer to many downstream tasks.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Pretraining",
     "full": "",
     "snappy": "The first big training phase where a model learns general language from huge amounts of internet text.",
@@ -7044,6 +7299,20 @@
     "category": "Agents",
     "sources": [
       "Hugging Face"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Random forest",
+    "full": "",
+    "snappy": "Ensemble method — combines many decision trees, each trained on a different random subset of the data.",
+    "detail": "Strong baseline for tabular data. Each tree votes; the forest's prediction is the majority. Robust to outliers, requires little tuning, handles missing data. Often beaten by gradient boosting on similar problems but easier to deploy. Implemented in scikit-learn and every other ML library.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -7755,6 +8024,21 @@
   },
   {
     "letter": "S",
+    "term": "Self-supervised learning",
+    "full": "",
+    "snappy": "Training scheme where the model learns from raw data without explicit labels, by predicting hidden parts of the input.",
+    "detail": "BERT's masked-language-modeling, GPT's next-token prediction, SimCLR's image augmentation-based contrastive learning, wav2vec for audio. Has eaten supervised learning's lunch in modern foundation models — almost all pretraining is now self-supervised. The huge gains come from using web-scale unlabeled data instead of small human-labeled datasets.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Semantic search",
     "full": "",
     "snappy": "Searching for meaning rather than keywords — \"car insurance claim\" matches \"auto policy filing\".",
@@ -7780,6 +8064,21 @@
     "category": "Concepts",
     "sources": [
       "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Semi-supervised learning",
+    "full": "",
+    "snappy": "Training scheme using a small labeled dataset and a large unlabeled one — combines self-supervised pretraining with fine-tuning.",
+    "detail": "Common modern pattern: pretrain on huge unlabeled data, then fine-tune on a small labeled set. Hugely improves performance when labels are expensive. The bedrock of foundation-model approaches across language, vision, and audio.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -8365,6 +8664,20 @@
   },
   {
     "letter": "S",
+    "term": "SVM",
+    "full": "Support Vector Machine",
+    "snappy": "Classical classifier that finds the hyperplane maximally separating two classes — once the dominant ML method.",
+    "detail": "Pre-deep-learning, SVMs were the standard for image and text classification. Now mostly outclassed by neural methods on large datasets but still useful when data is small, dimensions are large, and you need a strong baseline. Kernel SVMs can handle non-linear boundaries.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SWE-Bench",
     "full": "",
     "snappy": "Software engineering benchmark — model must fix real GitHub issues in real codebases.",
@@ -8434,6 +8747,20 @@
     "sources": [
       "Anthropic",
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "t-SNE",
+    "full": "t-Distributed Stochastic Neighbor Embedding",
+    "snappy": "Dimensionality-reduction technique — produces low-dim visualizations of high-dim data that preserve local structure.",
+    "detail": "Standard tool for visualising embeddings, clusters, or any high-dimensional dataset in 2D or 3D plots. UMAP (released 2018) is a faster modern alternative with similar output. Both are routinely used in interpretability and exploratory analysis of neural-network representations.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Hugging Face"
     ]
   },
   {
@@ -8877,6 +9204,20 @@
   },
   {
     "letter": "T",
+    "term": "Train/test/validation split",
+    "full": "",
+    "snappy": "Dividing a dataset into three parts — training (build the model), validation (tune hyperparameters), test (final evaluation).",
+    "detail": "Foundational practice in ML. Typical splits: 60/20/20 or 80/10/10. Critical that the test set is never used during model development — otherwise you're tuning to the test set and your reported performance is inflated. \"Data leakage\" is the standard term for accidental violations.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Training FLOPs",
     "full": "",
     "snappy": "The total number of math operations performed during training — the most rigorous \"size\" metric for a model.",
@@ -9131,6 +9472,20 @@
     "category": "Packaging",
     "sources": [
       "Apple"
+    ]
+  },
+  {
+    "letter": "U",
+    "term": "UMAP",
+    "full": "Uniform Manifold Approximation and Projection",
+    "snappy": "Dimensionality-reduction method — faster than t-SNE, better at preserving global structure.",
+    "detail": "Released 2018. Common tool for visualising embeddings, exploring clusters in vector databases, debugging fine-tuning effects. Outputs change less than t-SNE with different runs, so easier to communicate. Standard in scientific data exploration.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Hugging Face"
     ]
   },
   {
