@@ -489,6 +489,20 @@
   },
   {
     "letter": "C",
+    "term": "ChatGPT",
+    "full": "",
+    "snappy": "OpenAI's chat product — the application that turned LLMs into a household phenomenon in late 2022.",
+    "detail": "Released November 2022 on top of GPT-3.5. Reached 100 million users in 2 months — the fastest-adopted consumer software in history. Continually upgraded (GPT-4, then 4o, then 5) and added features (voice mode, memory, code interpreter, custom GPTs, image generation, agents/Operator). Single most important AI product launch.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Checkpoint",
     "full": "",
     "snappy": "Snapshot of training progress saved to disk so a run can resume after a crash or pause.",
@@ -499,6 +513,48 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Claude",
+    "full": "",
+    "snappy": "Anthropic's LLM family — the main competitor to GPT in frontier chat and coding.",
+    "detail": "Named after Claude Shannon. Released in stages: Claude 1 (2023), Claude 2, Claude 3 family (Haiku/Sonnet/Opus, 2024), Claude 3.5 Sonnet (2024), Claude 3.7 Sonnet (2025), Claude 4 family (2025). Strong reputation for coding (used as the backbone of Cursor, Claude Code, GitHub Copilot Agent), long-context tasks, and careful refusal behaviour.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Claude 3.5 Sonnet",
+    "full": "",
+    "snappy": "Anthropic's mid-2024 model — set a new bar for coding ability and was the workhorse of frontier development for over a year.",
+    "detail": "Released June 2024, refreshed October 2024. Hit ~75% on SWE-Bench Verified, well ahead of the rest of the industry at the time. Powered Cursor, Windsurf, Devin, and most serious AI coding tools through 2024-2025. Eventually replaced by Claude 3.7 Sonnet and Claude 4.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Claude 4",
+    "full": "",
+    "snappy": "Anthropic's 2025 frontier model family — Claude Opus 4 + Claude Sonnet 4 + later refreshes.",
+    "detail": "Continued Anthropic's coding lead and significantly expanded agentic ability — sustained multi-step tasks via Computer Use, long-running coding sessions in Claude Code. Opus 4 is the heavyweight; Sonnet 4 is the faster, cheaper workhorse most users interact with. Claude Opus 4.7 (1M context) and similar variants pushed long-context capability.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -800,6 +856,34 @@
     "category": "Inference",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "DeepSeek-R1",
+    "full": "",
+    "snappy": "Chinese open-weight reasoning model released January 2025 — first open competitor to OpenAI's o1.",
+    "detail": "Demonstrated that reinforcement learning over chains of thought could produce strong reasoning in a relatively small, fully open model. Built on the DeepSeek-V3 base. The release moved markets — NVIDIA stock dropped sharply on the news as investors questioned whether frontier AI required the previously-assumed compute budgets.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "DeepSeek"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "DeepSeek-V3",
+    "full": "",
+    "snappy": "Chinese open-weight MoE model released late 2024 — competitive with GPT-4o at a fraction of the training cost.",
+    "detail": "671B total parameters, 37B active per token. Reportedly trained for roughly $5.6M on 2,000 H800 GPUs over 2 months. Strong on reasoning, coding, and math. Sparked extensive discussion of how cheaply frontier-class models could be trained. Sister reasoning model R1 (early 2025) also generated headlines.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "DeepSeek"
     ]
   },
   {
@@ -1243,6 +1327,49 @@
   },
   {
     "letter": "G",
+    "term": "Gemini",
+    "full": "",
+    "snappy": "Google's frontier model family — successor to Bard and the PaLM line.",
+    "detail": "Released December 2023. Built natively multimodal from day one (unlike GPT-4 which added vision later). Tiers: Ultra (largest), Pro (mid), Flash (cheapest, fastest), Nano (on-device). Powers Google Search's AI Overviews, Workspace AI, and the standalone Gemini app. Gemini 2 and 2.5 lines (2024-2025) continued the cadence with improvements in reasoning and long context.",
+    "indications": [
+      "Multimodal",
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Gemini 1.5 Pro",
+    "full": "",
+    "snappy": "Mid-2024 Google model that pioneered ultra-long context windows — up to 2 million tokens.",
+    "detail": "Built on a custom MoE architecture. The headline was the context length: you could paste in a whole book, a multi-hour video, or a large codebase and the model could attend over all of it. Demonstrated practical use of huge contexts (long-document analysis, multi-hour video understanding) before competitors caught up.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Gemini 2.5 Pro",
+    "full": "",
+    "snappy": "Google's 2025 model with first-class reasoning and the strongest long-context capability of the major frontier models.",
+    "detail": "Released early 2025 in preview. Reasoning mode (\"Deep Think\") competes with OpenAI's o-series and Claude with extended thinking. 1-2 million token context remains a differentiator. Heavily integrated into Google products (Gmail, Docs, Search) on top of standalone API access.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "Generative adversarial network",
     "full": "GAN",
     "snappy": "Two networks playing a game: one makes fake samples, the other tries to spot them. Both get better.",
@@ -1296,6 +1423,77 @@
     "category": "Eval",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GPT",
+    "full": "Generative Pre-trained Transformer",
+    "snappy": "OpenAI's family of language models — the line that brought LLMs to mainstream attention.",
+    "detail": "Started with GPT-1 (2018), then GPT-2 (2019), GPT-3 (2020), GPT-4 (2023), GPT-4o (2024), GPT-5 (2025). Each generation grew in capability — GPT-3 demonstrated few-shot learning at scale, GPT-4 reached human-level on many professional exams, GPT-5 unified the reasoning model line with the chat line. The architectural template (decoder-only Transformer) is the dominant LLM design.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GPT-3",
+    "full": "",
+    "snappy": "OpenAI's 175-billion-parameter language model that launched the modern LLM era in 2020.",
+    "detail": "Demonstrated convincing few-shot learning across many tasks without fine-tuning. The first model to make \"prompt engineering\" a recognised discipline. Costing reportedly $5M to train at the time. Behind the original GitHub Copilot via the Codex variant. Now obsolete by capability but historically pivotal.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GPT-4",
+    "full": "",
+    "snappy": "OpenAI's 2023 model that defined the high end of LLM capability for over a year.",
+    "detail": "Released March 2023. Multimodal (text + images), scored top decile on bar exam, GRE, and many professional tests. Architecture details never officially disclosed but widely reported as an 8×220B-parameter MoE. ChatGPT initially ran on GPT-3.5 then upgraded to GPT-4. Now superseded by GPT-4o, o-series, and GPT-5.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GPT-4o",
+    "full": "GPT-4 omni",
+    "snappy": "OpenAI's 2024 multimodal frontier model — natively handles text, audio, and image input and output.",
+    "detail": "Released May 2024. The voice mode demos got the most attention: low-latency, emotional, interruptible spoken conversation. Same model handles vision, including video understanding via frame sampling. Replaced GPT-4 as the default ChatGPT model. Eventually evolved into GPT-4.1 and slotted under the reasoning models that came after.",
+    "indications": [
+      "Multimodal",
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GPT-5",
+    "full": "",
+    "snappy": "OpenAI's 2025 frontier model that merged the reasoning track (o-series) with the standard chat track.",
+    "detail": "Auto-routes between fast responses and deeper reasoning based on the prompt. Significantly stronger on math, coding, and multi-step reasoning. Available in multiple sizes (mini, full) on ChatGPT and the API. Marked the unification of OpenAI's product line after the o1/o3 detour.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
@@ -1354,6 +1552,20 @@
     "category": "Inference",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Grok",
+    "full": "",
+    "snappy": "xAI's chat model — Elon Musk's entry to the frontier-model race.",
+    "detail": "Grok 1 (2023), Grok 1.5, Grok 2, Grok 3 (early 2025), Grok 4 (mid 2025). Trained on the xAI Memphis cluster (Colossus). Distinguished by integration with X/Twitter data and a less restrictive default persona. Available via the X premium tier and the standalone Grok app.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "xAI"
     ]
   },
   {
@@ -1661,6 +1873,20 @@
   },
   {
     "letter": "K",
+    "term": "Kimi",
+    "full": "Moonshot Kimi",
+    "snappy": "Chinese AI startup Moonshot's chat product — known for very long context windows.",
+    "detail": "Notable for being among the first chat products to expose 200K+ token contexts (later 1M+). Popular in China; less visible internationally. Moonshot raised significant funding from Alibaba and others, marking it as one of the major Chinese frontier-model labs alongside DeepSeek, Qwen (Alibaba), and Baidu.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "DeepSeek"
+    ]
+  },
+  {
+    "letter": "K",
     "term": "KV cache",
     "full": "Key-Value cache",
     "snappy": "Memory of past computation that lets a language model generate each new token without redoing work for old ones.",
@@ -1786,6 +2012,48 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Llama",
+    "full": "Llama",
+    "snappy": "Meta's open-weight model family — the foundation of most open-source AI work in 2023-2025.",
+    "detail": "Llama (Feb 2023, weights leaked), Llama 2 (July 2023, openly released), Llama 3 (April 2024, multiple sizes), Llama 3.1 (July 2024, including 405B parameters), Llama 4 (2025, Mixture of Experts). Available for free download with a permissive licence. Underpins thousands of fine-tunes, derivatives, and commercial products that need on-prem or sovereign deployment.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Llama 3.1",
+    "full": "",
+    "snappy": "Meta's mid-2024 open-weight release — first to match closed frontier models on standard benchmarks.",
+    "detail": "Three sizes: 8B, 70B, 405B parameters. The 405B variant was the first openly-released model to compete with GPT-4 and Claude 3.5 Sonnet on capability. 128K context. Trained on 16,000 H100s for 54 days. Used as the starting point for many fine-tuned derivatives in enterprise deployments.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Llama 4",
+    "full": "",
+    "snappy": "Meta's 2025 model family — moved to MoE architecture and added native multimodality.",
+    "detail": "Variants: Scout (small), Maverick (mid), Behemoth (largest, 288B active parameters out of 2T total). MoE design lets Llama 4 scale total capacity without proportionally raising inference cost. Strong on long context (10M tokens advertised). Continues Meta's strategy of open-weight releases driving the open ecosystem.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Meta AI / FAIR"
     ]
   },
   {
@@ -2074,6 +2342,20 @@
   },
   {
     "letter": "M",
+    "term": "Mistral",
+    "full": "Mistral models",
+    "snappy": "French startup's family of open-weight and proprietary models — most prominent European AI lab.",
+    "detail": "Models include Mistral 7B (the breakout open release), Mixtral 8×7B and 8×22B (MoE variants), Mistral Large (proprietary frontier), Mistral Small/Nemo, and image-capable Pixtral. Strategy: ship strong open weights at smaller sizes + monetise larger proprietary models via API. Important player in European sovereignty conversations around AI.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Mistral"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Mixed precision",
     "full": "",
     "snappy": "Training or inference that uses 16-bit numbers for most operations and 32-bit only where needed.",
@@ -2085,6 +2367,20 @@
     "category": "Training",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Mixtral",
+    "full": "",
+    "snappy": "Mistral's open-weight MoE model — its 8×7B release in late 2023 was the first widely-deployed MoE open model.",
+    "detail": "Mixtral 8×7B has 47B total parameters but activates only 13B per token. Mixtral 8×22B (April 2024) is the larger sibling. Both released with permissive licences. Demonstrated that MoE was practical for open deployment and influenced subsequent open-source designs (DeepSeek-V3 followed).",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Mistral"
     ]
   },
   {
@@ -2266,6 +2562,34 @@
   },
   {
     "letter": "O",
+    "term": "o1",
+    "full": "OpenAI o1",
+    "snappy": "OpenAI's first dedicated reasoning model — thinks for a long time before answering.",
+    "detail": "Released September 2024. Trained with reinforcement learning on chains of thought, so it explores possible reasoning paths internally before committing to a response. Dramatic gains on math (AIME), code (Codeforces), and PhD-level science (GPQA). The technique inspired Claude's extended thinking and Gemini's Deep Think.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "O",
+    "term": "o3",
+    "full": "OpenAI o3",
+    "snappy": "Successor to o1 — pushed reasoning capabilities further and was the first model to surpass 80% on ARC-AGI.",
+    "detail": "Released late 2024 / early 2025. Larger reasoning budget, broader capability. The ARC-AGI breakthrough briefly reframed the AGI conversation. Then merged into GPT-5's unified line.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "O",
     "term": "OCI",
     "full": "Oracle Cloud Infrastructure",
     "snappy": "Oracle's cloud business — a smaller hyperscaler with a strategic GPU build-out and partnerships with OpenAI.",
@@ -2389,6 +2713,20 @@
     "category": "Hardware",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Phi",
+    "full": "Microsoft Phi",
+    "snappy": "Microsoft's family of small, capable open-weight models — designed to punch above their weight via better training data.",
+    "detail": "Phi-3 (2024) demonstrated that careful curation of synthetic and textbook-quality training data could produce 3-14B-parameter models competitive with much larger ones. Phi-4 (2024) continued the trend. Important for the on-device AI category where small model size matters.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
+      "Microsoft Research"
     ]
   },
   {
@@ -2563,6 +2901,20 @@
     "category": "Inference",
     "sources": [
       "NVIDIA",
+      "Hugging Face"
+    ]
+  },
+  {
+    "letter": "Q",
+    "term": "Qwen",
+    "full": "",
+    "snappy": "Alibaba's model family — the main open-weight contender from China alongside DeepSeek.",
+    "detail": "Qwen 1, 1.5, 2, 2.5, 3 (2023-2025) span text, multimodal (Qwen-VL), and reasoning variants. Frequently leads open-weight leaderboards in multiple sizes. Used heavily in Chinese AI products and by Western developers who want capable open models with permissive licences.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Models",
+    "sources": [
       "Hugging Face"
     ]
   },
