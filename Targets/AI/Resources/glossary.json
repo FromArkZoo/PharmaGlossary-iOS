@@ -1,0 +1,32 @@
+[
+  {
+    "letter": "G",
+    "term": "GPU",
+    "full": "Graphics Processing Unit",
+    "snappy": "Parallel hardware for training and inference",
+    "detail": "Originally designed for graphics rendering, GPUs are now the dominant accelerator for deep learning. Their wide SIMD architecture matches the matrix-multiply pattern of neural networks. NVIDIA's CUDA ecosystem and HBM-equipped data-center GPUs (H100, B200) drive most frontier training runs.",
+    "indications": ["Compute"],
+    "category": "Hardware",
+    "sources": ["NVIDIA", "TSMC"]
+  },
+  {
+    "letter": "S",
+    "term": "Scaling laws",
+    "full": "",
+    "snappy": "Predictable performance gains from more compute, data, and parameters",
+    "detail": "Empirical laws that relate model loss to compute, dataset size, and parameter count via power-law curves. Underpins frontier labs' strategy of investing in larger training runs on the bet that capabilities improve smoothly with scale. Kaplan et al. (2020) and the Chinchilla paper (2022) are the canonical references.",
+    "indications": ["Research"],
+    "category": "Concepts",
+    "sources": ["OpenAI", "DeepMind"]
+  },
+  {
+    "letter": "T",
+    "term": "Transformer",
+    "full": "",
+    "snappy": "Sequence model based on self-attention",
+    "detail": "Architecture introduced by Vaswani et al. (2017) that replaced recurrent networks for sequence modeling. Self-attention lets every token attend to every other token in a context window, enabling massive parallelism in training. Underlies GPT, Claude, Gemini, Llama, and essentially every modern large language model.",
+    "indications": ["Models"],
+    "category": "Architecture",
+    "sources": ["Vaswani 2017"]
+  }
+]

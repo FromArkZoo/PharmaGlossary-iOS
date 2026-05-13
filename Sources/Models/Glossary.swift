@@ -24,6 +24,19 @@ struct Term: Codable, Identifiable, Hashable {
         s += "\n\n\(detail)"
         return s
     }
+
+    /// "Source: [FDA](https://www.fda.gov), [NIH](https://www.nih.gov)".
+    /// Each source name becomes a markdown link if `Brand.sourceURLs` has
+    /// a matching key; otherwise it renders as plain text.
+    var sourcesMarkdown: String {
+        let parts = sources.map { name -> String in
+            if let url = Brand.sourceURLs[name] {
+                return "[\(name)](\(url.absoluteString))"
+            }
+            return name
+        }
+        return "Source: " + parts.joined(separator: ", ")
+    }
 }
 
 struct FilterState: Equatable {
