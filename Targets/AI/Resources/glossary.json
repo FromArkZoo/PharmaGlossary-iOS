@@ -15,6 +15,20 @@
   },
   {
     "letter": "A",
+    "term": "A3C",
+    "full": "Asynchronous Advantage Actor-Critic",
+    "snappy": "DeepMind's 2016 algorithm — runs many actor-learner pairs in parallel to stabilise training.",
+    "detail": "Important because it showed deep RL could be trained quickly on CPUs (no GPUs needed) by parallelising across many simulations. Variants A2C (synchronous) and IMPALA (more efficient asynchronous design) followed. Largely superseded by PPO for general use but historically influential.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Accelerate",
     "full": "Hugging Face Accelerate library",
     "snappy": "Hugging Face's wrapper around PyTorch that handles the boring parts of multi-GPU/multi-node training.",
@@ -39,6 +53,20 @@
     "category": "Hardware",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Actor-critic",
+    "full": "",
+    "snappy": "RL architecture combining two networks: an actor that picks actions, a critic that estimates how good those actions are.",
+    "detail": "The actor is the policy; the critic is the value function. They train together: critic provides a learning signal to the actor, actor's exploration generates data for the critic. Most modern RL algorithms (PPO, A3C, SAC, DDPG) are variants of actor-critic. The architectural insight that made deep RL stable enough to train.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -111,6 +139,34 @@
     "category": "Company",
     "sources": [
       "Hugging Face"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AlphaGo",
+    "full": "",
+    "snappy": "DeepMind's 2016 system that defeated world champion Lee Sedol at Go — a watershed AI moment.",
+    "detail": "Combined policy and value networks (deep CNNs trained on professional games) with Monte Carlo Tree Search. Beat Sedol 4-1 in March 2016. Successor AlphaGo Zero learned from self-play alone, no human data, and beat all earlier versions decisively. Sparked massive public attention to the capabilities of modern AI.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AlphaZero",
+    "full": "",
+    "snappy": "Generalisation of AlphaGo Zero to chess, shogi, and Go — same algorithm, no domain knowledge.",
+    "detail": "Released 2017. Took ~4 hours of self-play to surpass the strongest chess engines (Stockfish). Demonstrated that the AlphaGo Zero approach (deep network + MCTS + self-play) was a general technique for board games with full information. Foundational reference point in modern RL.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -972,6 +1028,21 @@
   },
   {
     "letter": "D",
+    "term": "DDPG",
+    "full": "Deep Deterministic Policy Gradient",
+    "snappy": "Early actor-critic algorithm for continuous-action environments — RL for steering, throttle, joint torques.",
+    "detail": "Introduced 2015. Bridged discrete-action methods (DQN) with continuous-action problems by using a deterministic policy. Brittle in practice — sensitive to hyperparameters. TD3 and SAC are improved successors that addressed DDPG's training instability.",
+    "indications": [
+      "RL",
+      "Robotics"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "Decoder",
     "full": "",
     "snappy": "The part of a model that writes its output one word at a time, each word built on what's come before.",
@@ -1133,6 +1204,20 @@
   },
   {
     "letter": "D",
+    "term": "DQN",
+    "full": "Deep Q-Network",
+    "snappy": "DeepMind's 2013 breakthrough that combined Q-learning with deep neural networks — solved Atari games from pixels.",
+    "detail": "Used a CNN to estimate Q-values from raw screen pixels. Key innovations: experience replay (store transitions, sample randomly), target network (slowly-updated copy of the Q-network for training stability). Played 49 Atari games at or above human level. Kicked off the modern deep-RL era.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "DRAM",
     "full": "Dynamic Random Access Memory",
     "snappy": "The standard form of main memory — fast, dense, but loses its contents when power cuts.",
@@ -1238,6 +1323,20 @@
   },
   {
     "letter": "E",
+    "term": "Environment",
+    "full": "",
+    "snappy": "The world the RL agent acts in — provides states the agent observes and changes in response to actions.",
+    "detail": "Could be a chess board, a video game, a simulated robot, a real robot, a stock market, or a dialogue with a human. The environment defines what observations the agent gets, what actions are available, and how rewards are computed. Designing a good environment is half the battle in RL research.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "E",
     "term": "Epoch",
     "full": "",
     "snappy": "One full pass through the training dataset — sometimes models train for many, sometimes less than one.",
@@ -1248,6 +1347,20 @@
     "category": "Training",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Epsilon-greedy",
+    "full": "",
+    "snappy": "Simple exploration rule: take the best-looking action most of the time, but with probability epsilon, take a random one.",
+    "detail": "Ubiquitous in early deep RL (DQN, Q-learning experiments). Epsilon typically anneals from 1.0 down to 0.01 over training. Crude but works surprisingly well in many environments. More sophisticated exploration strategies (curiosity, count-based, ensemble disagreement) help in harder environments.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -1291,6 +1404,20 @@
     "category": "Eval",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Exploration vs exploitation",
+    "full": "",
+    "snappy": "Fundamental trade-off in RL — should the agent try new things, or stick with what already works?",
+    "detail": "Pure exploitation can get stuck in local optima. Pure exploration learns slowly and never collects much reward. Modern algorithms balance the two via various tricks: epsilon-greedy action selection, entropy bonuses, intrinsic curiosity rewards, count-based exploration. A central design choice in any RL system.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
@@ -2170,6 +2297,20 @@
   },
   {
     "letter": "K",
+    "term": "KL divergence",
+    "full": "Kullback-Leibler divergence",
+    "snappy": "Measure of how different two probability distributions are — used throughout ML and RL.",
+    "detail": "Used in: trust regions and PPO (penalise policies that move too far from previous), VAEs (regularise the latent distribution to be near a prior), distillation (match student distribution to teacher), reward modelling. Not symmetric — KL(P||Q) ≠ KL(Q||P) — but ubiquitous enough that everyone learns to live with that quirk.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "K",
     "term": "KV cache",
     "full": "Key-Value cache",
     "snappy": "Memory of past computation that lets a language model generate each new token without redoing work for old ones.",
@@ -2542,6 +2683,36 @@
   },
   {
     "letter": "M",
+    "term": "MCTS",
+    "full": "Monte Carlo Tree Search",
+    "snappy": "Search algorithm that builds a tree of future possibilities by rolling out random or learned playthroughs.",
+    "detail": "Started gaining attention in computer Go in the 2000s. Combined with deep learning by DeepMind, it powered AlphaGo. The basic idea: at each search step, focus exploration on the most promising branch but occasionally try something new. Applied beyond games — modern reasoning models (o1, Deep Think) draw on MCTS-style search over chains of thought.",
+    "indications": [
+      "RL",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "MDP",
+    "full": "Markov Decision Process",
+    "snappy": "Mathematical framework for sequential decision making — the model RL algorithms are built on.",
+    "detail": "An MDP has states, actions, transitions (probabilistic rules for moving between states given an action), and rewards. \"Markov\" means the next state depends only on the current state and action, not the full history. Most real-world problems aren't strictly Markov but are approximated as such — a reason RL can be unstable in practice.",
+    "indications": [
+      "RL",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Megatron-LM",
     "full": "",
     "snappy": "NVIDIA's reference implementation of tensor and pipeline parallelism for Transformer training.",
@@ -2871,6 +3042,20 @@
     ]
   },
   {
+    "letter": "M",
+    "term": "MuZero",
+    "full": "",
+    "snappy": "DeepMind's 2019 algorithm that learns the rules of a game while learning to play it — a step toward more general intelligence.",
+    "detail": "Earlier AlphaZero needed the rules of chess and Go programmed in. MuZero learns a model of the environment from experience alone, then plans inside that learned model. Played Go, chess, shogi, and Atari games at AlphaZero-level performance without being told the rules of any of them.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
     "letter": "N",
     "term": "NAND flash",
     "full": "",
@@ -3026,6 +3211,20 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "O",
+    "term": "On-policy vs off-policy",
+    "full": "",
+    "snappy": "Two families of RL algorithm — does the algorithm learn from data collected by its current policy, or can it reuse old data?",
+    "detail": "On-policy (PPO, A3C): the agent must use data from the current policy. Simple but sample-inefficient. Off-policy (DQN, SAC, Q-learning): the agent can reuse older data via the replay buffer. More sample-efficient but more complex and sometimes less stable. RLHF is essentially on-policy with PPO; DPO sidesteps the dichotomy.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "UC Berkeley"
     ]
   },
   {
@@ -3230,6 +3429,20 @@
   },
   {
     "letter": "P",
+    "term": "Policy",
+    "full": "",
+    "snappy": "The rule that maps observations to actions — what the agent has learned.",
+    "detail": "Can be a lookup table (small environments), a neural network (large environments), or a stochastic distribution over actions. The goal of RL is to learn a policy that maximises cumulative reward. \"On-policy\" methods learn from the current policy's experience; \"off-policy\" methods can reuse experience from older or different policies.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Positional encoding",
     "full": "",
     "snappy": "Extra information added to each token so the model knows where it sits in the sequence — Transformers have no built-in sense of word order.",
@@ -3341,6 +3554,34 @@
     "category": "Software",
     "sources": [
       "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "Q",
+    "term": "Q-function",
+    "full": "",
+    "snappy": "Estimate of how much reward you'd get from taking a specific action in a given state.",
+    "detail": "Like the value function but action-conditioned: Q(state, action) rather than V(state). If you know the Q-function, you can pick actions greedily (always take the action with highest Q). Foundation of Q-learning and DQN. Sister concept: the advantage function A(s,a) = Q(s,a) - V(s).",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "Q",
+    "term": "Q-learning",
+    "full": "",
+    "snappy": "Classic RL algorithm — learn the Q-function by repeatedly updating it toward the observed reward plus the value of the next state.",
+    "detail": "Introduced in 1989. Off-policy: can learn from any experience, including historical data. Foundational; many modern algorithms (DQN, double Q-learning, distributional RL) are direct descendants.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -3504,6 +3745,21 @@
   },
   {
     "letter": "R",
+    "term": "Reinforcement learning",
+    "full": "RL",
+    "snappy": "Machine learning where an agent learns by taking actions in an environment and receiving rewards.",
+    "detail": "Distinct from supervised learning (which learns from labeled examples) and unsupervised learning (which finds patterns). The agent's goal is to maximise cumulative reward by trial and error. Powered milestones like AlphaGo, AlphaZero, robotic dexterity, and the alignment phase of modern LLMs (RLHF). Sample-efficient RL remains a major research challenge.",
+    "indications": [
+      "RL",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "Repetition penalty",
     "full": "",
     "snappy": "Downweighting tokens that have already appeared to stop the model getting stuck on the same words.",
@@ -3514,6 +3770,20 @@
     "category": "Inference",
     "sources": [
       "Hugging Face"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Replay buffer",
+    "full": "Experience replay",
+    "snappy": "Storage of past (state, action, reward, next-state) tuples that an off-policy RL algorithm samples from for learning.",
+    "detail": "Introduced as part of DQN. Lets the agent learn from each experience many times and breaks the temporal correlation between consecutive states (which would otherwise destabilise gradient-based training). Many variants: prioritised replay (sample surprising transitions more often), hindsight experience replay (relabel failed attempts as successes for a different goal).",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -3543,6 +3813,20 @@
     "category": "Architecture",
     "sources": [
       "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Reward",
+    "full": "",
+    "snappy": "Scalar signal the environment gives the agent — captures whatever the agent is supposed to maximise.",
+    "detail": "Sparse rewards (only at goal) make learning hard; dense rewards (frequent feedback) make learning easier but risk \"reward hacking\". Reward design is one of the most consequential decisions in any RL project. In RLHF, the reward is produced by a learned reward model rather than being hand-coded.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
@@ -3653,6 +3937,21 @@
   },
   {
     "letter": "S",
+    "term": "SAC",
+    "full": "Soft Actor-Critic",
+    "snappy": "Off-policy RL algorithm — strong performance on continuous control tasks like robotics.",
+    "detail": "Introduced 2018 by UC Berkeley. Uses maximum entropy reinforcement learning — the policy is encouraged to be stochastic, which improves exploration. State-of-the-art on many robotic locomotion benchmarks. Common in real-world robot learning where sample efficiency matters.",
+    "indications": [
+      "RL",
+      "Robotics"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SambaNova SN40L",
     "full": "",
     "snappy": "Reconfigurable dataflow accelerator from SambaNova — bet on a different architectural philosophy from GPUs.",
@@ -3663,6 +3962,20 @@
     "category": "Hardware",
     "sources": [
       "SambaNova"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Sample efficiency",
+    "full": "",
+    "snappy": "How few interactions with the environment an RL algorithm needs to learn a good policy.",
+    "detail": "Major dimension along which RL algorithms compete. Model-free methods (DQN, PPO) tend to be sample-inefficient; model-based methods (MuZero, world models) can be far more efficient. Sample efficiency matters enormously when each interaction is expensive — real robots, scientific experiments, RLHF with human raters.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "UC Berkeley"
     ]
   },
   {
@@ -4451,6 +4764,20 @@
   },
   {
     "letter": "T",
+    "term": "Trust region",
+    "full": "",
+    "snappy": "RL technique that constrains policy updates to be \"close enough\" to the current policy — keeps training stable.",
+    "detail": "Underpins TRPO (Trust Region Policy Optimization) and its simpler successor PPO. The idea: in RL, big policy changes can cause performance to collapse because the data you collected is no longer representative. Trust regions limit each update to a small KL-divergence step, ensuring monotonic improvement.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "TruthfulQA",
     "full": "",
     "snappy": "Benchmark for whether a model resists generating common misconceptions and falsehoods.",
@@ -4520,6 +4847,20 @@
     "category": "Interconnect",
     "sources": [
       "AMD"
+    ]
+  },
+  {
+    "letter": "V",
+    "term": "Value function",
+    "full": "",
+    "snappy": "Estimate of how much reward you'd expect to accumulate from a given state, following the current policy.",
+    "detail": "Foundational concept in RL: rather than just picking actions that look good now, the agent considers their downstream consequences. Modern RL algorithms (PPO, actor-critic methods) almost all learn value functions in parallel with policies. Value learning is often a major bottleneck on sample efficiency.",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -4663,6 +5004,20 @@
     "category": "Agents",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "World model",
+    "full": "",
+    "snappy": "Learned model of how the environment behaves — lets the agent imagine consequences and plan without acting.",
+    "detail": "Replaces interacting with the real environment by interacting with the learned model. Sample-efficient because the model's rollouts are free, but the agent's performance is capped by how accurate the model is. Hot research area for both video-game agents (DreamerV3) and embodied AI (NVIDIA Cosmos, Google Genie).",
+    "indications": [
+      "RL"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
