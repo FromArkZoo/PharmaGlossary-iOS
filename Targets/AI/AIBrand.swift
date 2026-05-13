@@ -45,9 +45,11 @@ let aiBrand = Brand(
             id: "frontier",
             glyph: "F",
             title: "Frontier",
-            subtitle: "Cutting-edge research & scaling",
+            subtitle: "ML, models, research & scaling",
             kind: .categoryFilter(
-                categories: ["Research", "Alignment", "Frontier", "Concepts"],
+                categories: ["Architecture", "Training", "Inference", "Eval",
+                             "Alignment", "Research", "Concepts", "Frontier",
+                             "Models", "Agents"],
                 excludedTerms: []
             )
         ),
@@ -55,9 +57,11 @@ let aiBrand = Brand(
             id: "hardware",
             glyph: "H",
             title: "Hardware",
-            subtitle: "Chips, fabs, memory, interconnect",
+            subtitle: "Chips, fabs, memory, interconnect, stack",
             kind: .categoryFilter(
-                categories: ["Hardware", "Manufacturing", "Memory", "Interconnect", "Packaging"],
+                categories: ["Hardware", "Manufacturing", "Memory",
+                             "Interconnect", "Packaging", "Software",
+                             "Infrastructure"],
                 excludedTerms: []
             )
         )
