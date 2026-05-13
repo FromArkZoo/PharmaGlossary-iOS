@@ -1,4 +1,4 @@
-name: PharmaGlossary
+name: JBGlossary
 options:
   bundleIdPrefix: com.jamesbrowne
   deploymentTarget:
@@ -14,20 +14,21 @@ settings:
     CURRENT_PROJECT_VERSION: "1"
     ENABLE_USER_SCRIPT_SANDBOXING: NO
 targets:
-  PharmaGlossary:
+  Pharma:
     type: application
     platform: iOS
     deploymentTarget: "17.0"
     sources:
-      - path: PharmaGlossary
+      - path: Sources
+      - path: Targets/Pharma
         excludes:
           - "Resources/Info.plist"
     resources:
-      - PharmaGlossary/Resources/Assets.xcassets
-      - PharmaGlossary/Resources/glossary.json
-      - PharmaGlossary/Resources/PrivacyInfo.xcprivacy
+      - Targets/Pharma/Resources/Assets.xcassets
+      - Targets/Pharma/Resources/glossary.json
+      - Targets/Pharma/Resources/PrivacyInfo.xcprivacy
     info:
-      path: PharmaGlossary/Resources/Info.plist
+      path: Targets/Pharma/Resources/Info.plist
       properties:
         CFBundleDisplayName: JB Pharma
         CFBundleShortVersionString: $(MARKETING_VERSION)

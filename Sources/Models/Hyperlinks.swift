@@ -3,10 +3,10 @@ import SwiftUI
 
 extension GlossaryStore {
     /// Builds an AttributedString for a term's detail body, with every reference to
-    /// another known term wrapped as a tappable `pharma://term/<name>` link styled
-    /// in oxblood with a thin underline. Result is cached per-term — the regex pass
-    /// is the dominant cost of pushing a TermDetailView, so caching makes repeat
-    /// navigations effectively free.
+    /// another known term wrapped as a tappable `<brand-scheme>://term/<name>` link
+    /// styled in the brand accent color with a thin underline. Result is cached
+    /// per-term — the regex pass is the dominant cost of pushing a TermDetailView,
+    /// so caching makes repeat navigations effectively free.
     func attributedDetail(for term: Term) -> AttributedString {
         if let cached = detailCache[term.id] { return cached }
         let built = Self.computeAttributedDetail(for: term, against: allTerms, urlScheme: Brand.current.urlScheme)

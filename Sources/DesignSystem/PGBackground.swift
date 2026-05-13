@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Page background: warm paper base with a subtle oxblood radial wash anchored bottom-right.
+/// Page background: warm paper base with a subtle brand-accent radial wash anchored bottom-right.
 struct PGBackground: View {
     var body: some View {
         ZStack {

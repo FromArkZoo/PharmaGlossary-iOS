@@ -2,7 +2,7 @@ import SwiftUI
 import UIKit
 
 @main
-struct PharmaGlossaryApp: App {
+struct JBGlossaryApp: App {
     @StateObject private var store = GlossaryStore()
 
     init() {
@@ -20,8 +20,8 @@ struct PharmaGlossaryApp: App {
     /// Inline navigation titles (back-page headers) get a serif font and ink color
     /// so they sit on the cream paper without clashing with the editorial body.
     /// Large titles are intentionally NOT customized here — RootView uses a custom
-    /// in-content header instead so we can do "JB Pharma" with an italic oxblood
-    /// "Pharma" that the system title style can't express.
+    /// in-content header instead so we can do "JB <Brand>" with an italic accent
+    /// "<Brand>" that the system title style can't express.
     private static func configureNavigationBarAppearance() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
