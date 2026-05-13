@@ -1,6 +1,20 @@
 [
   {
     "letter": "A",
+    "term": "A100",
+    "full": "Ampere A100",
+    "snappy": "NVIDIA's previous-generation training GPU — the workhorse of 2020-2022 LLM development.",
+    "detail": "Launched 2020. 40GB or 80GB of HBM2e, ~300 TFLOPS BF16. GPT-3, Stable Diffusion, original Llama were all trained on A100s. Now superseded by H100 and Blackwell but still common in production inference because supply is abundant and pricing is reasonable. Still widely available on cloud providers.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Accelerator",
     "full": "",
     "snappy": "Umbrella term for any chip designed to speed up a specific workload — GPUs, TPUs, NPUs, ASICs all qualify.",
@@ -30,6 +44,36 @@
   },
   {
     "letter": "A",
+    "term": "Apple M-series",
+    "full": "",
+    "snappy": "Apple's family of CPUs/SoCs powering modern Macs (and iPad Pro) — with the Neural Engine doing the on-device AI.",
+    "detail": "M1 (2020) through M4 (2024) and beyond. Unified memory architecture means the GPU and CPU share the same pool — important for large local LLM inference. Apple Intelligence's on-device 3B model runs natively. The M-series Max and Ultra variants are competitive with discrete GPUs for inference of mid-sized models.",
+    "indications": [
+      "Compute",
+      "Inference"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Apple"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Apple Neural Engine",
+    "full": "ANE",
+    "snappy": "Apple's on-device NPU, embedded in every iPhone, iPad, and Mac since 2017.",
+    "detail": "Optimised for inference of small-to-medium models at very low power. The ANE in A18 Pro and M4 chips delivers 35-38 TFLOPS. Apple Intelligence (the on-device part) runs on the ANE. Developers access it indirectly through Core ML, the Apple framework for on-device machine learning.",
+    "indications": [
+      "Compute",
+      "Inference"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Apple"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "ASIC",
     "full": "Application-Specific Integrated Circuit",
     "snappy": "A chip designed to do exactly one job extremely well — versus a CPU or GPU which is built to do anything.",
@@ -55,6 +99,34 @@
     "category": "Architecture",
     "sources": [
       "Vaswani 2017"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Axion",
+    "full": "Google Axion",
+    "snappy": "Google Cloud's custom ARM-based CPU — Google joining AWS Graviton and Microsoft Cobalt in the cloud-CPU race.",
+    "detail": "Built on ARM Neoverse cores. Targets cloud workloads that don't need the kind of single-thread performance x86 chips deliver — web servers, databases, data processing. Not an AI accelerator, but matters for the cloud-AI story because it reduces dependency on Intel/AMD for the host side of TPU-powered systems.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "B200",
+    "full": "Blackwell B200",
+    "snappy": "NVIDIA's successor to the H100 — twice the transistors via two dies stitched together.",
+    "detail": "Announced March 2024, shipping in 2025. Uses TSMC's CoWoS packaging to join two reticle-sized dies into one logical chip with 192GB of HBM3e. Roughly 2.5× the FP8 compute of an H100, much higher memory bandwidth, and native FP4 for inference. Sold mostly as part of GB200 systems combining it with the Grace CPU.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -294,6 +366,20 @@
   },
   {
     "letter": "D",
+    "term": "DGX",
+    "full": "NVIDIA DGX",
+    "snappy": "NVIDIA's pre-built AI server systems — racks of GPUs with networking and storage included.",
+    "detail": "DGX H100 is a single chassis with 8 H100s connected by NVSwitch. DGX SuperPOD links many DGX nodes into a multi-thousand-GPU cluster. NVIDIA also sells DGX Cloud, which rents these systems by the hour. The DGX brand carries premium pricing but takes the integration headaches off the customer.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "Diffusion model",
     "full": "",
     "snappy": "Generative model that learns to turn random static into a real-looking image by removing noise step by step.",
@@ -322,6 +408,20 @@
     "sources": [
       "Microsoft Research",
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Dojo",
+    "full": "Tesla Dojo",
+    "snappy": "Tesla's custom AI training accelerator, built specifically for self-driving and humanoid-robot training.",
+    "detail": "Each Dojo \"D1\" chip is custom silicon manufactured by TSMC. Cabinets combine many of them into \"tiles\" and then full systems. Tesla deploys Dojo as part of its training infrastructure for FSD and Optimus alongside large NVIDIA H100/B200 clusters. Existence and roadmap occasionally clouded by mixed signals from Tesla leadership.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -490,6 +590,34 @@
   },
   {
     "letter": "G",
+    "term": "Gaudi",
+    "full": "Intel Gaudi",
+    "snappy": "Intel's AI accelerator line, inherited from the Habana Labs acquisition.",
+    "detail": "Gaudi 2 (2022) and Gaudi 3 (2024). Targets training and inference at competitive cost vs NVIDIA. Strong adoption inside specific customers (Stability AI used Gaudi 2 for some workloads) but limited market share overall. Intel's Falcon Shores roadmap merges Gaudi with their Xeon CPU technology.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Intel"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GB200",
+    "full": "Grace-Blackwell 200",
+    "snappy": "NVIDIA's combined system: two B200 GPUs paired with one Grace CPU on a single board.",
+    "detail": "Sold as part of NVL36 (18 of these boards) and NVL72 (36 boards) rack-scale systems where all GPUs are connected via NVLink as if they were one giant accelerator. The GB200 NVL72 is rated around 1.4 EFLOPS of FP8 and is the workhorse of the 2025 training generation.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "Generative adversarial network",
     "full": "GAN",
     "snappy": "Two networks playing a game: one makes fake samples, the other tries to spot them. Both get better.",
@@ -499,6 +627,20 @@
       "Research"
     ],
     "category": "Architecture",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GH200",
+    "full": "Grace Hopper 200",
+    "snappy": "NVIDIA's CPU+GPU \"superchip\" pairing one Grace ARM CPU with one H100 GPU on a single board.",
+    "detail": "Connected by NVLink-C2C for 900 GB/s of CPU-GPU bandwidth — much higher than the PCIe link in a regular CPU+GPU pairing. Designed for memory-intensive workloads where you want fast access to host memory from the GPU. Now overshadowed by the GB200 (Grace+Blackwell) which is the same idea with the newer GPU.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
     "sources": [
       "NVIDIA"
     ]
@@ -548,6 +690,49 @@
     ]
   },
   {
+    "letter": "G",
+    "term": "Groq LPU",
+    "full": "Language Processing Unit",
+    "snappy": "Inference-focused accelerator designed for absurdly low latency on language model serving.",
+    "detail": "Groq's hardware doesn't try to compete with GPUs on flexibility — it's optimised for one thing: stream tokens out of an LLM as fast as physically possible. Demos consistently show 500-1,000 tokens/second on Llama models, several times faster than typical GPU serving. Sold via Groq's cloud API rather than direct hardware sales.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Groq"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "H100",
+    "full": "Hopper H100",
+    "snappy": "NVIDIA's data-centre GPU that powered the first wave of frontier LLM training and inference.",
+    "detail": "Announced 2022. 80GB of HBM3, 3 TB/s bandwidth, FP8 support. Around 1,000 TFLOPS at FP8. The H100 became the world's most strategically important chip — Saudi Arabia bought 3,000, Meta hoarded hundreds of thousands, US export controls restricted China's access. Replaced by H200 (more memory) and then by Blackwell.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "H200",
+    "full": "",
+    "snappy": "Mid-life upgrade to the H100 — same chip, more memory.",
+    "detail": "Released late 2023. Same Hopper silicon as the H100 but upgraded to 141GB of HBM3e at 4.8 TB/s — enough to fit a 70B-parameter model in BF16 on a single GPU. Helped close the gap to Blackwell while Blackwell was in late development. Common in inference deployments where memory bandwidth is the bottleneck.",
+    "indications": [
+      "Compute",
+      "Inference"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
     "letter": "I",
     "term": "Inference",
     "full": "",
@@ -561,6 +746,20 @@
     "sources": [
       "NVIDIA",
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Inferentia",
+    "full": "",
+    "snappy": "Amazon's inference-focused accelerator — sibling to Trainium, optimised for serving.",
+    "detail": "Two generations: Inferentia 1 (2019) and Inferentia 2 (2023). Powers some Alexa and AWS-internal inference. The selling point is lower cost-per-token than NVIDIA GPUs for AWS-hosted models. Like Trainium, it's exclusive to AWS.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -595,6 +794,36 @@
     ]
   },
   {
+    "letter": "I",
+    "term": "Intel Core Ultra",
+    "full": "",
+    "snappy": "Intel's modern laptop chip family with integrated NPU — Lunar Lake (2024) hits 48 TOPS.",
+    "detail": "Designed to qualify Intel laptops for Microsoft's Copilot+ branding. Combines CPU cores, integrated GPU, and a dedicated NPU on one die. Inference of small models (sub-10B parameters) runs comfortably on-device. Important for the consumer AI story but not relevant for frontier training.",
+    "indications": [
+      "Compute",
+      "Inference"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Intel"
+    ]
+  },
+  {
+    "letter": "J",
+    "term": "Jetson",
+    "full": "NVIDIA Jetson",
+    "snappy": "NVIDIA's family of edge AI compute modules for robotics, drones, and embedded systems.",
+    "detail": "Each Jetson module packs a small GPU plus ARM CPU cores in a single board, designed to run inference at the edge (no cloud needed). Jetson Orin Nano and AGX Orin are common; the newer Thor (2025) targets next-generation humanoid robots. Heavily used in autonomous machines and Edge AI products.",
+    "indications": [
+      "Compute",
+      "Robotics"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
     "letter": "K",
     "term": "KV cache",
     "full": "Key-Value cache",
@@ -604,6 +833,21 @@
       "Inference"
     ],
     "category": "Inference",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "L40",
+    "full": "",
+    "snappy": "NVIDIA's inference-focused data-centre GPU based on the gaming Ada Lovelace architecture.",
+    "detail": "48GB of GDDR6 memory (cheaper, slower than HBM). Designed for inference and graphics workloads where memory bandwidth matters less than total memory capacity and price. Common in lower-cost cloud inference offerings. The L4 is a smaller, single-slot variant for edge servers.",
+    "indications": [
+      "Inference",
+      "Compute"
+    ],
+    "category": "Hardware",
     "sources": [
       "NVIDIA"
     ]
@@ -779,6 +1023,34 @@
     "category": "Hardware",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "MI300X",
+    "full": "",
+    "snappy": "AMD's flagship AI accelerator — the only credible alternative to NVIDIA at frontier scale.",
+    "detail": "Announced late 2023. 192GB of HBM3 (more than the H100), 5.3 TB/s bandwidth, competitive FP8 throughput. Microsoft, Meta, and Oracle have all deployed MI300X clusters. The MI325X and MI350X (2025) further close the gap with Blackwell. AMD's main weakness is software (ROCm vs CUDA) rather than silicon.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "AMD"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "MI350",
+    "full": "",
+    "snappy": "AMD's 2025 generation — moves to 3nm and adds first-class FP4/FP6 support.",
+    "detail": "Built on TSMC's 3nm process with CDNA 4 architecture. Targets parity with NVIDIA Blackwell on FP8 inference and pushes ahead on memory capacity (288GB HBM3e). AMD's roadmap shows MI400 in 2026 with rack-scale interconnect to match NVIDIA's NVL systems.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "AMD"
     ]
   },
   {
@@ -1158,6 +1430,20 @@
   },
   {
     "letter": "S",
+    "term": "SambaNova SN40L",
+    "full": "",
+    "snappy": "Reconfigurable dataflow accelerator from SambaNova — bet on a different architectural philosophy from GPUs.",
+    "detail": "Each SN40L chip combines compute units with on-chip memory and reconfigurable interconnect. Targets enterprise customers who want to fine-tune and serve large models on dedicated hardware. Notable for very large model support (1T+ parameters) on small clusters.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "SambaNova"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Sampling",
     "full": "",
     "snappy": "Picking each next token randomly from the model's probability distribution, rather than always taking the top one.",
@@ -1212,6 +1498,21 @@
     "category": "Hardware",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Snapdragon X",
+    "full": "",
+    "snappy": "Qualcomm's laptop-class chip with a strong NPU — the engine behind Microsoft Copilot+ PCs.",
+    "detail": "Snapdragon X Elite (2024) was Qualcomm's serious entry into Windows laptops, with a 45 TOPS NPU dedicated to on-device AI. Microsoft requires 40+ TOPS for the Copilot+ branding, so Qualcomm, Intel (Lunar Lake), and AMD (Ryzen AI) all design chips with that in mind.",
+    "indications": [
+      "Compute",
+      "Inference"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Qualcomm"
     ]
   },
   {
@@ -1429,6 +1730,34 @@
   },
   {
     "letter": "T",
+    "term": "TPU v5p",
+    "full": "",
+    "snappy": "Google's training-focused TPU generation, deployed in pods of thousands for Gemini training.",
+    "detail": "Announced late 2023. 95GB of HBM, 459 TFLOPS BF16, connected via Google's custom optical interconnect into pods of up to 8,960 chips. Google trained Gemini Ultra on TPU v5p. The TPU v5e is a smaller, cheaper variant for inference. Followed by Trillium (v6) in 2024 and Ironwood in 2025.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Trainium",
+    "full": "",
+    "snappy": "Amazon's custom training accelerator — AWS's bet on owning the AI stack vertically.",
+    "detail": "Trainium 1 launched 2022. Trainium 2 (2024) targets H100-class performance at lower price-per-FLOP for AWS-internal workloads. Used by Anthropic for some Claude training (Anthropic has a deep AWS partnership). Available only through AWS, not for direct purchase.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Transformer",
     "full": "",
     "snappy": "Sequence model based on self-attention",
@@ -1439,6 +1768,20 @@
     "category": "Architecture",
     "sources": [
       "Vaswani 2017"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Trillium",
+    "full": "TPU v6",
+    "snappy": "Google's 2024 TPU generation — first major step beyond the v5 line.",
+    "detail": "Roughly 4.7× the compute of v5e at the same power. Used for Gemini 2 training and inference. Like all TPUs, only available inside Google Cloud — you can't buy one. The successor Ironwood (announced 2025) is positioned as an inference-optimised generation with focus on serving large models efficiently.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -1493,6 +1836,21 @@
     "detail": "Most chips are diced from a wafer into hundreds of small pieces. Cerebras keeps the whole wafer intact, yielding a single chip with ~900,000 cores and 44GB of on-chip memory. No off-chip memory bandwidth limits, no chip-to-chip communication overhead. Trade-off: yield is harder (one defect can kill the whole wafer) and they need custom packaging and cooling.",
     "indications": [
       "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Cerebras"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "WSE-3",
+    "full": "Wafer-Scale Engine 3",
+    "snappy": "Cerebras's flagship — a single chip the size of a dinner plate with 900,000 cores.",
+    "detail": "Latest of three wafer-scale generations. 4 trillion transistors, 44GB of on-chip SRAM, 21 PB/s of memory bandwidth (orders of magnitude more than any GPU). Used by Cerebras's inference cloud, which posts world-record latency numbers for large model serving by keeping everything on-chip.",
+    "indications": [
+      "Compute",
+      "Inference"
     ],
     "category": "Hardware",
     "sources": [
