@@ -132,11 +132,13 @@ struct TermDetailView: View {
     }
 
     private var sourcesFooter: some View {
-        Text("Source: \(term.sources.joined(separator: ", "))")
+        Text(LocalizedStringKey(term.sourcesMarkdown))
             .font(.system(size: 11, weight: .regular, design: .serif).italic())
             .foregroundStyle(PGColors.inkFaint)
+            .tint(PGColors.accent)
             .padding(.horizontal, 4)
             .padding(.top, 6)
+            .accessibilityHint("Source citations. Activate a link to open in browser.")
     }
 
 }

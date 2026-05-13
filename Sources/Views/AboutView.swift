@@ -61,12 +61,26 @@ struct AboutView: View {
                 .font(PGFont.policyTitle)
                 .foregroundStyle(PGColors.ink)
             ForEach(items, id: \.self) { item in
-                Text(item)
+                Text(LocalizedStringKey(linkifiedSource(item)))
                     .font(PGFont.body)
                     .foregroundStyle(PGColors.inkLight)
+                    .tint(PGColors.accent)
                     .lineSpacing(2)
+                    .accessibilityHint("Opens \(item) website in browser.")
             }
         }
+    }
+
+    /// "FDA — Food and Drug Administration"
+    ///   → "[FDA](https://www.fda.gov) — Food and Drug Administration"
+    private func linkifiedSource(_ item: String) -> String {
+        guard let dashRange = item.range(of: " — ") else { return item }
+        let abbrev = String(item[..<dashRange.lowerBound])
+        let rest = String(item[dashRange.lowerBound...])
+        if let url = Brand.sourceURLs[abbrev] {
+            return "[\(abbrev)](\(url.absoluteString))\(rest)"
+        }
+        return item
     }
 }
 
