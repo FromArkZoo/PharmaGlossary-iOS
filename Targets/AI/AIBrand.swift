@@ -76,6 +76,9 @@ let aiBrand = Brand(
         "Meta AI / FAIR":       URL(string: "https://ai.meta.com")!,
         "Stanford CRFM":        URL(string: "https://crfm.stanford.edu")!,
         "Allen Institute for AI": URL(string: "https://allenai.org")!,
+        "Mistral":              URL(string: "https://mistral.ai")!,
+        "DeepSeek":             URL(string: "https://www.deepseek.com")!,
+        "Stability AI":         URL(string: "https://stability.ai")!,
         // Hardware vendors
         "NVIDIA":               URL(string: "https://www.nvidia.com")!,
         "AMD":                  URL(string: "https://www.amd.com")!,

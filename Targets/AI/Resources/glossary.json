@@ -1,13 +1,290 @@
 [
   {
+    "letter": "A",
+    "term": "Attention",
+    "full": "",
+    "snappy": "How a model decides which parts of the input matter most for what it's about to produce.",
+    "detail": "Originally introduced in 2014 to fix a bottleneck in translation models, attention lets a network decide on the fly which parts of the input to look at, rather than processing them in a fixed order. The 2017 paper \"Attention Is All You Need\" showed that this trick alone — without the older sequential machinery — could match or beat the state of the art, kicking off the Transformer era that powers ChatGPT, Claude, and Gemini.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Vaswani 2017"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Byte-Pair Encoding",
+    "full": "BPE",
+    "snappy": "Common tokeniser training method — starts with single characters and repeatedly merges the most frequent pair into a new token.",
+    "detail": "Begin with single bytes as the token vocabulary. Find the most common adjacent pair, glue them together into a new token. Repeat until you hit the target vocabulary size. GPT, Llama, and Mistral all use BPE variants. Its strength is simplicity and coverage: any input, in any language or alphabet, can be tokenised.",
+    "indications": [
+      "NLP"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "CLIP",
+    "full": "Contrastive Language-Image Pretraining",
+    "snappy": "Model that links images and text in a shared space — lets you search images by description, or steer image generators with words.",
+    "detail": "OpenAI's 2021 CLIP trained a vision network and a text network side-by-side on 400 million image-caption pairs, with a loss that pulls matching pairs together and pushes mismatched pairs apart. The resulting shared space enables zero-shot image classification, text-based search, and prompt conditioning for image generators (Stable Diffusion uses CLIP for the text input).",
+    "indications": [
+      "Multimodal",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Context window",
+    "full": "",
+    "snappy": "The maximum amount of text a model can hold in mind at once, measured in tokens.",
+    "detail": "Bounded by attention's quadratic memory cost. Early GPT models had 2,000–4,000-token windows; GPT-4 expanded to 128,000; Claude 3.5 to 200,000; Gemini 1.5 to 1 million-plus. Longer windows let you stuff more context (whole books, long codebases) but inference cost rises with window length, and models often struggle to use very long contexts evenly — the \"lost in the middle\" effect.",
+    "indications": [
+      "NLP"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic",
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Convolutional neural network",
+    "full": "CNN",
+    "snappy": "Type of network built for images — it slides small pattern detectors across the input to pick up local features.",
+    "detail": "CNNs dominated computer vision from AlexNet (2012) through the late 2010s — face recognition, object detection, image classification. They're naturally suited to images because the same small filter can find an edge or a texture anywhere in the picture. Vision Transformers have since matched or beaten them on most benchmarks, but CNNs are still the default for vision on phones and small chips.",
+    "indications": [
+      "Vision",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Decoder",
+    "full": "",
+    "snappy": "The part of a model that writes its output one word at a time, each word built on what's come before.",
+    "detail": "Decoders can only look backward, never forward — necessary for left-to-right generation. Today's chatbots (ChatGPT, Claude, Gemini, Llama, Grok) are all decoder-only Transformers; they've absorbed the encoder's job into a single stack. This makes them simpler to train at scale and is one reason the decoder-only architecture has dominated since GPT-3.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Diffusion model",
+    "full": "",
+    "snappy": "Generative model that learns to turn random static into a real-looking image by removing noise step by step.",
+    "detail": "Training works by taking an image, adding random noise until it's pure static, and teaching the model to reverse one step of that process. At generation time, the model starts from noise and denoises iteratively to produce a fresh image. DALL-E 3, Stable Diffusion, Flux, Midjourney, and OpenAI's video model Sora all work this way. Diffusion is now spreading to audio, video, and even text.",
+    "indications": [
+      "Vision",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "OpenAI",
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Encoder",
+    "full": "",
+    "snappy": "The part of a model that reads the whole input upfront and prepares it for further processing.",
+    "detail": "Encoders work bidirectionally — every word can see every other word — making them well-suited to understanding tasks like classification and search. BERT, Google's 2018 model that became the foundation for search ranking, is encoder-only. In encoder-decoder models like T5 or the original Transformer, the encoder digests the input before handing off to a decoder that writes the output.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Google DeepMind",
+      "Vaswani 2017"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Encoder-decoder",
+    "full": "",
+    "snappy": "Two-part design where one network reads the input and another writes the output.",
+    "detail": "The original 2017 Transformer was encoder-decoder, built for translation. Modern translation models, summarisers, and speech recognisers (Whisper from OpenAI) still use this shape because the input-to-output mapping is clear. Decoder-only models have taken over chat and writing assistants, where the boundary between reading and writing is blurrier.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Vaswani 2017",
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Generative adversarial network",
+    "full": "GAN",
+    "snappy": "Two networks playing a game: one makes fake samples, the other tries to spot them. Both get better.",
+    "detail": "Goodfellow and co-authors introduced GANs in 2014 and launched the modern generative-modelling era. StyleGAN dominated face generation in the late 2010s — those uncanny \"this person does not exist\" galleries. Training was famously brittle: modes would collapse, networks would diverge. Diffusion has largely replaced GANs at the frontier, but GANs still win on speed: one shot instead of many denoising steps.",
+    "indications": [
+      "Vision",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
     "letter": "G",
     "term": "GPU",
     "full": "Graphics Processing Unit",
     "snappy": "Parallel hardware for training and inference",
     "detail": "Originally designed for graphics rendering, GPUs are now the dominant accelerator for deep learning. Their wide SIMD architecture matches the matrix-multiply pattern of neural networks. NVIDIA's CUDA ecosystem and HBM-equipped data-center GPUs (H100, B200) drive most frontier training runs.",
-    "indications": ["Compute"],
+    "indications": [
+      "Compute"
+    ],
     "category": "Hardware",
-    "sources": ["NVIDIA", "TSMC"]
+    "sources": [
+      "NVIDIA",
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Latent diffusion",
+    "full": "",
+    "snappy": "Diffusion that works on a compressed version of the image instead of raw pixels — much faster, almost no quality loss.",
+    "detail": "A small autoencoder first compresses a 512×512 image down to a 64×64 mini-representation. Diffusion runs there, and the autoencoder expands it back to pixels at the end. The compute saving is 50× or more. Stable Diffusion's breakthrough was making this approach practical at consumer scale; almost every image generator since copies the trick.",
+    "indications": [
+      "Vision",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "LSTM",
+    "full": "Long Short-Term Memory",
+    "snappy": "Improved RNN with built-in machinery for remembering things across long sequences — the workhorse of language AI before Transformers.",
+    "detail": "Introduced in 1997 by Hochreiter and Schmidhuber, dominant for sequence tasks through the 2010s. The trick is a small set of internal switches that decide what to keep in memory, what to drop, and what to pass on at each step. Google Translate ran on LSTMs in production before the Transformer takeover, and LSTMs are still useful when memory and compute are tight — for example on phones.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Mamba",
+    "full": "",
+    "snappy": "Newer alternative to Transformers, designed for very long inputs — runs in linear time instead of quadratic.",
+    "detail": "Released late 2023 by Gu and Dao. Mamba builds on \"state space models\": it keeps a compact rolling memory of the sequence so far, updated linearly per token. Its appeal is long-context efficiency — promising for tasks where Transformers' quadratic attention is prohibitive (long documents, video). Decoder-only Transformers remain dominant for general LLMs, but Mamba and its descendants are the leading alternative.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Mixture of Experts",
+    "full": "MoE",
+    "snappy": "Architecture that splits a model into many sub-networks and only activates a few of them for each input.",
+    "detail": "MoE separates a model's total capacity (large) from its per-question compute cost (small). A router picks, say, 2 out of 64 experts for each word, so a 400-billion-parameter model might only fire 40 billion at a time. Mixtral, DeepSeek-V3, and (reportedly) GPT-4 all use MoE to grow capacity without proportionally growing inference cost.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Mistral",
+      "DeepSeek"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Multi-head attention",
+    "full": "",
+    "snappy": "Several attention operations running in parallel, each learning to spot a different kind of pattern.",
+    "detail": "Instead of one attention pass, the model runs several at once with separate parameters. One head might track who-did-what; another might pick up rhyming patterns; another might handle long-range references. Frontier models use anywhere from 32 to 128 heads per layer. Recent variants — grouped-query attention, multi-query attention — share information across heads to cut inference cost.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Vaswani 2017"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Positional encoding",
+    "full": "",
+    "snappy": "Extra information added to each token so the model knows where it sits in the sequence — Transformers have no built-in sense of word order.",
+    "detail": "Without positional encoding a Transformer would see \"dog bites man\" and \"man bites dog\" as the same input. The original 2017 design used fixed sine-wave patterns. Modern models prefer learned variants like RoPE (rotary, used by Llama and GPT-NeoX) or ALiBi (linear bias, used by MPT). The choice affects how well a model generalises to longer contexts than it was trained on.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Recurrent neural network",
+    "full": "RNN",
+    "snappy": "Older type of language network that reads a sequence one word at a time, carrying a running memory between steps.",
+    "detail": "RNNs dominated translation, speech recognition, and language modelling pre-2017. Their core weakness is that they have to process one word before the next — you can't parallelise across time — so training is slow on long sequences. Transformers replaced them for most tasks. State space models like Mamba are bringing some RNN-like ideas back, with a twist that makes them parallelisable.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "ResNet",
+    "full": "Residual Network",
+    "snappy": "A trick that made it practical to train very deep networks — adds shortcut connections so signal can skip past layers.",
+    "detail": "Before ResNets (Microsoft Research, 2015), deeper networks paradoxically performed worse than shallower ones. Adding identity shortcuts solved this and unlocked 100-plus-layer networks. The residual idea — add the input to the layer's output — is now everywhere: every Transformer block uses it. One of the most-copied design patterns in modern deep learning.",
+    "indications": [
+      "Vision",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
   },
   {
     "letter": "S",
@@ -15,9 +292,71 @@
     "full": "",
     "snappy": "Predictable performance gains from more compute, data, and parameters",
     "detail": "Empirical laws that relate model loss to compute, dataset size, and parameter count via power-law curves. Underpins frontier labs' strategy of investing in larger training runs on the bet that capabilities improve smoothly with scale. Kaplan et al. (2020) and the Chinchilla paper (2022) are the canonical references.",
-    "indications": ["Research"],
+    "indications": [
+      "Research"
+    ],
     "category": "Concepts",
-    "sources": ["OpenAI", "DeepMind"]
+    "sources": [
+      "OpenAI",
+      "DeepMind"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Self-attention",
+    "full": "",
+    "snappy": "Attention used within a single piece of text — every word looks at every other word in the same input.",
+    "detail": "Self-attention lets every word in a sequence consider every other word in the same sequence, all in one pass. This is what makes Transformers fast to train: they can process a whole sentence in parallel, instead of one word at a time like the older recurrent networks they replaced. It's the engine inside every modern large language model.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Vaswani 2017"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Sparse MoE",
+    "full": "",
+    "snappy": "The standard form of MoE today — for any given input, only a handful of the model's experts wake up.",
+    "detail": "Contrasted with a \"dense\" version where every expert sees every input (rarely used in practice). The sparse routing has to be balanced carefully — otherwise a few experts get all the work and the rest never train. Google's Switch Transformer (2021) and GShard worked out the practical engineering. The payoff is dramatic: roughly 8× more capacity for the same inference cost.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Token",
+    "full": "",
+    "snappy": "The atomic unit a language model reads or writes — usually a word fragment of 3–4 characters, not a full word.",
+    "detail": "Models don't see characters or words directly; text is first split into tokens by a tokeniser. Common words like \"the\" become a single token; rare or compound words split into several. Context window is measured in tokens, API pricing is per-token, and a model's vocabulary size (typically 32k–256k) is the number of distinct tokens it knows.",
+    "indications": [
+      "NLP"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Tokenization",
+    "full": "",
+    "snappy": "Splitting text into tokens — the first preprocessing step before any model can read anything.",
+    "detail": "Modern LLMs use subword tokenisers — algorithms that produce tokens shorter than words but longer than letters — balancing vocabulary size against token length. The tokeniser is part of the model contract: GPT-4 tokens and Llama tokens aren't interchangeable. Tokenisation quirks cause many oddities: weak arithmetic, struggles with character-level tasks, sensitivity to whitespace.",
+    "indications": [
+      "NLP"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
   },
   {
     "letter": "T",
@@ -25,8 +364,56 @@
     "full": "",
     "snappy": "Sequence model based on self-attention",
     "detail": "Architecture introduced by Vaswani et al. (2017) that replaced recurrent networks for sequence modeling. Self-attention lets every token attend to every other token in a context window, enabling massive parallelism in training. Underlies GPT, Claude, Gemini, Llama, and essentially every modern large language model.",
-    "indications": ["Models"],
+    "indications": [
+      "Models"
+    ],
     "category": "Architecture",
-    "sources": ["Vaswani 2017"]
+    "sources": [
+      "Vaswani 2017"
+    ]
+  },
+  {
+    "letter": "U",
+    "term": "U-Net",
+    "full": "",
+    "snappy": "Image-to-image network shaped like a U — compresses the picture down, then expands it back up.",
+    "detail": "Designed for biomedical image segmentation in 2015. The encoder downsamples, the decoder upsamples, and shortcut connections pass high-resolution detail across the U. U-Net is now the workhorse of diffusion models — Stable Diffusion's denoising network is a U-Net — making it one of the most-used architectures by FLOP-hours in the world.",
+    "indications": [
+      "Vision",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "V",
+    "term": "Variational autoencoder",
+    "full": "VAE",
+    "snappy": "Model that learns to squeeze data down to a small code and reconstruct it — the workhorse compressor inside many image generators.",
+    "detail": "VAEs are trained to compress and rebuild data, with the constraint that the compressed code lives in a smooth, well-behaved space you can sample from. By themselves they produce slightly blurry samples. But they're now essential infrastructure inside latent diffusion: the part that turns pixels into compressed representations before diffusion, and back again afterwards.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "V",
+    "term": "Vision Transformer",
+    "full": "ViT",
+    "snappy": "Transformer applied to images by chopping them into small patches and treating each patch like a word.",
+    "detail": "Introduced by Google in 2020. Split an image into 16×16 patches, project each into an embedding, then run a standard Transformer encoder. ViTs match or beat CNNs at scale, especially when pretrained on enormous datasets. The architecture underpins modern vision-language models — CLIP, GPT-4o's vision capability, Gemini's image understanding — and most image generators.",
+    "indications": [
+      "Vision",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Google DeepMind"
+    ]
   }
 ]
