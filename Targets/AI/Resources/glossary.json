@@ -258,6 +258,20 @@
   },
   {
     "letter": "A",
+    "term": "ASR",
+    "full": "Automatic Speech Recognition",
+    "snappy": "Turning spoken audio into text — the inverse of TTS.",
+    "detail": "Modern ASR is dominated by Transformer encoders trained on huge multilingual audio corpora. Whisper, Google USM, Meta SeamlessM4T, Deepgram, AssemblyAI. Word error rates have dropped to single digits for major languages and clean audio. Real-time low-latency ASR is the frontier — used inside voice assistants and meeting transcription.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Attention",
     "full": "",
     "snappy": "How a model decides which parts of the input matter most for what it's about to produce.",
@@ -787,6 +801,20 @@
   },
   {
     "letter": "C",
+    "term": "ControlNet",
+    "full": "",
+    "snappy": "Add-on to diffusion image generators that lets you condition output on a pose, depth map, edge map, or other structure.",
+    "detail": "Released 2023. Lets you generate an image of a specific subject in a specific pose by giving the model a stick-figure or depth map alongside the prompt. Open-source. Hugely popular in the Stable Diffusion community because it gave creators much finer control over generation than text alone.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Convolutional neural network",
     "full": "CNN",
     "snappy": "Type of network built for images — it slides small pattern detectors across the input to pick up local features.",
@@ -897,6 +925,20 @@
     "category": "Interconnect",
     "sources": [
       "Intel"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "DALL-E",
+    "full": "",
+    "snappy": "OpenAI's text-to-image model family — released January 2021 (DALL-E 1), then DALL-E 2 (2022), DALL-E 3 (2023).",
+    "detail": "Pioneered the modern era of generative image AI. DALL-E 3 introduced in-context refinement via ChatGPT and significant quality improvement. Eventually subsumed into GPT-4o's native image generation (March 2025) which produces images directly from the chat model rather than calling a separate image model.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Models",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
@@ -1297,6 +1339,20 @@
   },
   {
     "letter": "F",
+    "term": "Flux",
+    "full": "Black Forest Labs Flux",
+    "snappy": "Open-weight image generator from Black Forest Labs — a startup formed by ex-Stability AI researchers.",
+    "detail": "Flux.1 (2024) and Flux.1.1 set new quality benchmarks among open-weight image generators. Three variants: Pro (proprietary API), Dev (open weights for non-commercial), Schnell (small, very fast). Popular in the open-source image-generation community alongside Stable Diffusion 3.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Models",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "F",
     "term": "FP16",
     "full": "16-bit Floating Point",
     "snappy": "Half-precision floating point — halves memory and roughly doubles throughput vs FP32.",
@@ -1350,6 +1406,20 @@
     "category": "Hardware",
     "sources": [
       "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Frame interpolation",
+    "full": "",
+    "snappy": "Generating in-between frames to smooth a low-frame-rate video to a higher rate, or to slow video down.",
+    "detail": "Modern interpolation uses diffusion models that condition on adjacent frames. Used to convert 30fps video to 60fps, create slow-motion from regular footage, or smooth animated content. Common feature in TVs (\"motion smoothing\") and video editing tools. Apple Vision Pro uses it to render virtual scenes at higher rates than the camera captures.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -1882,6 +1952,34 @@
   },
   {
     "letter": "I",
+    "term": "Image upscaling",
+    "full": "Super-resolution",
+    "snappy": "Generative AI that takes a low-resolution image and produces a higher-resolution version.",
+    "detail": "Older neural upscalers (ESRGAN, Real-ESRGAN) used GANs. Modern upscalers (Stable Diffusion-based, Topaz Gigapixel AI) use diffusion. Common use case: bringing old photos to printable resolution, restoring video frames. Adds detail that wasn't in the original — useful for aesthetic upscaling, problematic if accuracy matters (legal/medical).",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Imagen",
+    "full": "",
+    "snappy": "Google's text-to-image family — released within DeepMind in stages from 2022.",
+    "detail": "Imagen, Imagen 2, Imagen 3, Imagen 4 (2025). Strong reputation for photorealism and prompt adherence. Integrated into Gemini app, Google Workspace, and ImageFX product. Sister model Lumiere/Veo handles video.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "I",
     "term": "Immersion cooling",
     "full": "",
     "snappy": "Submerging entire servers in dielectric (non-conductive) fluid that absorbs heat directly.",
@@ -1936,6 +2034,20 @@
     "category": "Interconnect",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Inpainting",
+    "full": "",
+    "snappy": "Replacing a masked region of an existing image with newly-generated content that matches the surroundings.",
+    "detail": "Standard feature in modern image generators (Photoshop Generative Fill, Stable Diffusion inpainting, ChatGPT image edit). Powered by diffusion models conditioned on the surrounding pixels. Useful for object removal, replacement, and creative editing.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stability AI"
     ]
   },
   {
@@ -2140,6 +2252,21 @@
     "category": "Architecture",
     "sources": [
       "Stability AI"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Latent video",
+    "full": "",
+    "snappy": "Video generation done in a compressed latent space — the standard architecture for modern text-to-video models.",
+    "detail": "Same principle as latent diffusion for images: an autoencoder compresses video clips into compact latents (often spatio-temporal patches), diffusion operates there, and the autoencoder decompresses to pixel frames. Massive memory and compute savings vs operating on raw frames. Universal pattern across Sora, Veo, Runway Gen-3.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "OpenAI",
+      "Google DeepMind"
     ]
   },
   {
@@ -2556,6 +2683,20 @@
   },
   {
     "letter": "M",
+    "term": "Midjourney",
+    "full": "",
+    "snappy": "Closed-source text-to-image service known for a distinctive aesthetic — operates entirely through Discord and a web app.",
+    "detail": "Founded by David Holz. Frequently leads on aesthetic quality compared to rivals, particularly for illustrated and stylised outputs. V6 (2024) and V7 added photo realism and better prompt adherence. Subscription-only access; no public API or open weights.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Models",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Mistral",
     "full": "Mistral models",
     "snappy": "French startup's family of open-weight and proprietary models — most prominent European AI lab.",
@@ -2715,6 +2856,21 @@
     ]
   },
   {
+    "letter": "M",
+    "term": "Multimodal model",
+    "full": "",
+    "snappy": "A model that takes more than one type of input — text, images, audio, video — and reasons across them.",
+    "detail": "Pure text models were the original LLMs. Frontier models in 2024-2025 are natively multimodal: GPT-4o, Claude 3.5 Sonnet, Gemini 2.5 Pro all accept text+image input (and increasingly audio and video). The shift matters because most real-world tasks aren't purely textual — they involve diagrams, screenshots, photos, charts.",
+    "indications": [
+      "Multimodal"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
     "letter": "N",
     "term": "NAND flash",
     "full": "",
@@ -2742,6 +2898,20 @@
     "category": "Software",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "N",
+    "term": "Negative prompt",
+    "full": "",
+    "snappy": "Prompt component that tells an image or video generator what to avoid generating.",
+    "detail": "Standard in Stable Diffusion and most diffusion-based generators: \"a photo of a forest, negative prompt: people, text, watermarks\". Implemented by running the diffusion process with an extra unconditional signal weighted negatively. Lets users prune unwanted content without spelling out everything they do want.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stability AI"
     ]
   },
   {
@@ -2901,6 +3071,20 @@
     ]
   },
   {
+    "letter": "O",
+    "term": "Outpainting",
+    "full": "",
+    "snappy": "Extending an existing image beyond its borders — the model generates new content that fits the original.",
+    "detail": "Sister technique to inpainting: same diffusion model, but conditioning on the original pixels along the inside edge. Used to convert portrait images to landscape, restore cropped photos, or create panoramic outputs. Available in most image-gen products and tools.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
     "letter": "P",
     "term": "PagedAttention",
     "full": "",
@@ -3013,6 +3197,21 @@
     "sources": [
       "NVIDIA",
       "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Pixtral",
+    "full": "Mistral Pixtral",
+    "snappy": "Mistral's multimodal model family — vision-language capabilities on top of their text models.",
+    "detail": "Pixtral 12B (2024) was Mistral's first open multimodal release. Strong performance on document understanding, charts, and diagrams. Sister to Mistral Large for vision tasks. Important data point that open-weight VLMs were catching up to closed counterparts.",
+    "indications": [
+      "Multimodal",
+      "Vision"
+    ],
+    "category": "Models",
+    "sources": [
+      "Mistral"
     ]
   },
   {
@@ -3526,6 +3725,20 @@
   },
   {
     "letter": "S",
+    "term": "SDXL",
+    "full": "Stable Diffusion XL",
+    "snappy": "Bigger, better-quality Stable Diffusion variant released mid-2023 — the default open-source image model for over a year.",
+    "detail": "Two-stage pipeline: a base model produces an initial image, a refiner polishes it. ~3.5B parameters in the base. Native 1024×1024 generation. Widely used by community art tools and many commercial products before SD3 and Flux took over the frontier.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Models",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Self-attention",
     "full": "",
     "snappy": "Attention used within a single piece of text — every word looks at every other word in the same input.",
@@ -3657,6 +3870,20 @@
   },
   {
     "letter": "S",
+    "term": "Sora",
+    "full": "",
+    "snappy": "OpenAI's text-to-video model — produces minute-long photorealistic video from a prompt.",
+    "detail": "Announced February 2024 with viral demos; public access launched late 2024. Uses a diffusion model operating on video latents. The advance was duration and coherence — minute-long videos with consistent characters, physics, camera moves. Set off a video-generation race with Runway, Luma, Kling, and Veo.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Models",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Sparse MoE",
     "full": "",
     "snappy": "The standard form of MoE today — for any given input, only a handful of the model's experts wake up.",
@@ -3727,6 +3954,20 @@
   },
   {
     "letter": "S",
+    "term": "Stable Diffusion",
+    "full": "",
+    "snappy": "Open-weight diffusion-based image generator — released August 2022 by Stability AI, kicked off open-source image AI.",
+    "detail": "Original SD 1.x, then SDXL (2023), Stable Diffusion 3 (2024), Stable Diffusion 3.5. Trainable, fine-tunable, hostable anywhere with a consumer GPU. Backbone of thousands of community fine-tunes, LoRAs, and consumer apps. Hugely influential — its open release shaped the image-generation ecosystem.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Models",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Stargate",
     "full": "",
     "snappy": "OpenAI / Microsoft / Oracle / SoftBank consortium building a multi-hundred-billion-dollar AI compute build-out.",
@@ -3751,6 +3992,20 @@
     "category": "Agents",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Style transfer",
+    "full": "",
+    "snappy": "Producing an image that has the content of one source and the style of another.",
+    "detail": "Originally a deep-learning achievement of the 2010s using CNN feature matching (Gatys et al., 2015). Now mostly subsumed into the broader text-to-image space: \"a photo of a city, in the style of Studio Ghibli\". Specific style-transfer products (Lensa AI, popular phone-app filters) drove waves of public attention to generative AI in 2022-2023.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stability AI"
     ]
   },
   {
@@ -3909,6 +4164,35 @@
     "category": "Concepts",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Text-to-image",
+    "full": "T2I",
+    "snappy": "Generative AI that produces images from a text prompt — the killer demo of the 2022-2024 generative wave.",
+    "detail": "Modern T2I systems are diffusion-based. The user types \"a sunset over a Brazilian rainforest, hyperrealistic\"; the model produces a fresh image. Has shifted creative workflows in marketing, illustration, design, and game development. Continuing debate over training-data copyright and creative-industry impact.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Text-to-video",
+    "full": "T2V",
+    "snappy": "Generative AI that produces video from a text prompt — the 2024-2025 frontier of generative media.",
+    "detail": "Sora, Veo, Runway Gen-3, Luma Ray, Kling, MiniMax video. All diffusion-based, mostly operating on video latents (compressed sequences). Quality has improved dramatically — consistent characters across minute-long clips, physically plausible scenes — but cost is high and motion artefacts still common. Audio generation increasingly integrated.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI",
+      "Google DeepMind"
     ]
   },
   {
@@ -4196,6 +4480,20 @@
     ]
   },
   {
+    "letter": "T",
+    "term": "TTS",
+    "full": "Text-to-Speech",
+    "snappy": "Generative AI that turns written text into spoken audio — used for accessibility, narration, voice assistants.",
+    "detail": "Modern TTS uses diffusion or autoregressive transformers (ElevenLabs, OpenAI's tts-1 and gpt-4o-audio, Google TTS). Voice cloning lets a model imitate a specific speaker from a few seconds of audio. Quality has reached human-indistinguishable for many use cases, raising concerns about voice phishing and impersonation.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
     "letter": "U",
     "term": "U-Net",
     "full": "",
@@ -4254,6 +4552,20 @@
   },
   {
     "letter": "V",
+    "term": "Veo",
+    "full": "Google Veo",
+    "snappy": "Google's text-to-video model — Veo 2 (2024) and Veo 3 (2025) compete with Sora at the frontier.",
+    "detail": "Notable for synchronised audio generation (Veo 3 generates dialogue, sound effects, and music alongside the video). Distributed through the Gemini app, Vertex AI, and consumer products like Google's video-generation tool Flow. Photorealism and physical-world consistency improved sharply across versions.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "V",
     "term": "Vision Transformer",
     "full": "ViT",
     "snappy": "Transformer applied to images by chopping them into small patches and treating each patch like a word.",
@@ -4282,6 +4594,36 @@
     ]
   },
   {
+    "letter": "V",
+    "term": "VLM",
+    "full": "Vision-Language Model",
+    "snappy": "Model that combines image understanding with language — describes images, answers questions about them, follows visual instructions.",
+    "detail": "Built by attaching a vision encoder (typically a ViT) to a language model and training them together on image-caption pairs and visual question-answering data. CLIP was the early breakthrough; modern frontier VLMs (GPT-4o, Claude vision, Gemini) handle screenshots, diagrams, charts, and photos at near-human level.",
+    "indications": [
+      "Multimodal",
+      "Vision"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "V",
+    "term": "Voice cloning",
+    "full": "",
+    "snappy": "Generating speech in a specific person's voice from a short sample of their audio.",
+    "detail": "Modern voice cloning needs only 3-30 seconds of reference audio. ElevenLabs offers it commercially with consent checks; open-source tools (XTTS, OpenVoice) make it widely available. Powerful for accessibility (preserving someone's voice after illness) and content production (multilingual narration). Equally powerful for fraud — voice-cloning scams are now a documented threat.",
+    "indications": [
+      "Audio",
+      "Safety"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
     "letter": "W",
     "term": "Wafer-scale engine",
     "full": "",
@@ -4293,6 +4635,20 @@
     "category": "Hardware",
     "sources": [
       "Cerebras"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "Whisper",
+    "full": "",
+    "snappy": "OpenAI's open-weight speech-recognition model — released 2022, widely deployed.",
+    "detail": "Trained on 680,000 hours of multilingual audio. Handles transcription, translation, and voice activity detection. Released open-weight, which gave the open-source speech ecosystem a strong baseline overnight. Used inside many transcription products (Otter, Notion AI, voice features in chat apps).",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Models",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
