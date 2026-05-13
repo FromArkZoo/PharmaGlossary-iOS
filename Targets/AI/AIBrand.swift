@@ -33,14 +33,35 @@ let aiBrand = Brand(
             items: ["IEEE", "ACM", "MLCommons", "Open Compute Project"]
         )
     ],
-    basicsAllowlist: ["Transformer", "GPU"],
-    basicsSubtitle: "Foundational ML & hardware",
-    policyConfig: PolicyConfig(
-        displayName: "Frontier",
-        subtitle: "Cutting-edge research & scaling",
-        categories: ["Concepts", "Research"],
-        excludedTerms: []
-    ),
+    lenses: [
+        LensConfig(
+            id: "basics",
+            glyph: "B",
+            title: "Basics",
+            subtitle: "Foundational ML & hardware",
+            kind: .allowlist(["Transformer", "GPU"])
+        ),
+        LensConfig(
+            id: "frontier",
+            glyph: "F",
+            title: "Frontier",
+            subtitle: "Cutting-edge research & scaling",
+            kind: .categoryFilter(
+                categories: ["Research", "Alignment", "Frontier", "Concepts"],
+                excludedTerms: []
+            )
+        ),
+        LensConfig(
+            id: "hardware",
+            glyph: "H",
+            title: "Hardware",
+            subtitle: "Chips, fabs, memory, interconnect",
+            kind: .categoryFilter(
+                categories: ["Hardware", "Manufacturing", "Memory", "Interconnect", "Packaging"],
+                excludedTerms: []
+            )
+        )
+    ],
     accentTint: nil,
     sourceURLs: [
         // Research / labs

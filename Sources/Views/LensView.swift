@@ -1,9 +1,14 @@
 import SwiftUI
 
-struct PolicyView: View {
+/// Generic lens view — replaces the per-lens BasicsView/PolicyView pattern.
+/// Each industry's Brand.lenses array drives both the filter-sheet cards
+/// and the destination here; this view just dispatches to GlossaryStore
+/// using the LensConfig.
+struct LensView: View {
+    let lens: LensConfig
     @EnvironmentObject var store: GlossaryStore
 
-    private var terms: [Term] { store.policyTerms }
+    private var terms: [Term] { store.terms(forLens: lens) }
 
     var body: some View {
         ZStack {
@@ -18,7 +23,7 @@ struct PolicyView: View {
             .listStyle(.plain)
             .scrollContentBackground(.hidden)
         }
-        .navigationTitle("Policy")
+        .navigationTitle(lens.title)
         .navigationBarTitleDisplayMode(.inline)
     }
 }

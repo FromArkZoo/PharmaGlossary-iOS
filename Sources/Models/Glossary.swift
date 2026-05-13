@@ -67,18 +67,19 @@ final class GlossaryStore: ObservableObject {
         letters.filter { $0.range(of: "^[A-Z]$", options: .regularExpression) != nil }
     }
 
-    var policyTerms: [Term] {
-        let cfg = Brand.current.policyConfig
-        return allTerms
-            .filter { cfg.categories.contains($0.category) && !cfg.excludedTerms.contains($0.term) }
-            .sorted { $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending }
-    }
-
-    var basicsTerms: [Term] {
-        let allow = Brand.current.basicsAllowlist
-        return allTerms
-            .filter { allow.contains($0.term) }
-            .sorted { $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending }
+    func terms(forLens lens: LensConfig) -> [Term] {
+        let matched: [Term]
+        switch lens.kind {
+        case .allowlist(let allow):
+            matched = allTerms.filter { allow.contains($0.term) }
+        case .categoryFilter(let categories, let excludedTerms):
+            matched = allTerms.filter {
+                categories.contains($0.category) && !excludedTerms.contains($0.term)
+            }
+        }
+        return matched.sorted {
+            $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending
+        }
     }
 
     init() {

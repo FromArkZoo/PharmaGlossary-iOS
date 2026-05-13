@@ -5,11 +5,26 @@ struct BrandSource {
     let items: [String]
 }
 
-struct PolicyConfig {
-    let displayName: String
-    let subtitle: String
-    let categories: Set<String>
-    let excludedTerms: Set<String>
+/// One lens card on the filter sheet. Each industry defines its own array
+/// of lenses (1+) — Pharma has Basics + Policy, AI has Basics + Frontier +
+/// Hardware, future industries can have any number.
+struct LensConfig: Hashable {
+    let id: String              // route identifier, e.g. "basics", "frontier"
+    let glyph: String           // single char rendered on the lens card
+    let title: String           // displayed on the card + as the destination nav title
+    let subtitle: String        // descriptive line on the card
+    let kind: LensKind
+}
+
+enum LensKind: Hashable {
+    /// Pull a curated set of terms by exact-name match. Use for "Basics"-style
+    /// lenses where the slice doesn't align with the `category` enum.
+    case allowlist(Set<String>)
+
+    /// Pull terms whose `category` is in the categories set, minus any term
+    /// names in `excludedTerms`. Use for category-aligned slices (Policy,
+    /// Hardware, Frontier research, etc.).
+    case categoryFilter(categories: Set<String>, excludedTerms: Set<String>)
 }
 
 struct Brand {
@@ -30,9 +45,9 @@ struct Brand {
     let aboutParagraphs: [String]
     let aboutDisclaimer: String
     let aboutSources: [BrandSource]
-    let basicsAllowlist: Set<String>
-    let basicsSubtitle: String
-    let policyConfig: PolicyConfig
+
+    /// Ordered list of lenses shown on the filter sheet. Order = display order.
+    let lenses: [LensConfig]
 
     /// Optional editorial tint for chip-count text on selected chips. When nil,
     /// PGColors.accentTint derives from primaryColor.lightened(by: 0.40).

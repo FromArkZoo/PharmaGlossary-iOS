@@ -3,8 +3,7 @@ import SwiftUI
 struct FilterSheet: View {
     @EnvironmentObject var store: GlossaryStore
     @Binding var filter: FilterState
-    var onSelectPolicy: () -> Void
-    var onSelectBasics: () -> Void
+    var onSelectLens: (LensConfig) -> Void
     var onSelectAbout: () -> Void
     @Environment(\.dismiss) private var dismiss
 
@@ -87,21 +86,16 @@ struct FilterSheet: View {
     }
 
     private var lensesSection: some View {
-        let policy = Brand.current.policyConfig
-        return VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .leading, spacing: 8) {
             sectionLabel("Lenses")
-            lensCard(
-                glyph: String(policy.displayName.prefix(1)).uppercased(),
-                title: policy.displayName,
-                subtitle: "\(policy.subtitle) · \(store.policyTerms.count) terms",
-                action: onSelectPolicy
-            )
-            lensCard(
-                glyph: "B",
-                title: "Basics",
-                subtitle: "\(Brand.current.basicsSubtitle) · \(store.basicsTerms.count) terms",
-                action: onSelectBasics
-            )
+            ForEach(Brand.current.lenses, id: \.id) { lens in
+                lensCard(
+                    glyph: lens.glyph,
+                    title: lens.title,
+                    subtitle: "\(lens.subtitle) · \(store.terms(forLens: lens).count) terms",
+                    action: { onSelectLens(lens) }
+                )
+            }
         }
         .padding(.bottom, 4)
     }

@@ -42,35 +42,46 @@ let pharmaBrand = Brand(
                     "ISPOR — Professional Society for Health Economics and Outcomes Research"]
         )
     ],
-    basicsAllowlist: [
-        // Already present
-        "RNA", "Mutation", "siRNA", "Ligand", "Receptor", "Agonist", "Antagonist",
-        "MAb", "Apoptosis", "Insulin",
-        // Mol bio
-        "DNA", "Gene", "Genome", "Chromosome", "Allele", "Codon", "Nucleotide",
-        "Base Pair", "Transcription", "Translation",
-        "mRNA", "tRNA", "rRNA", "miRNA",
-        // Protein/enzyme
-        "Protein", "Peptide", "Amino Acid", "Alanine", "Glycine", "Lysine",
-        "Enzyme", "Antibody", "Antigen", "Epitope", "Immunoglobulin",
-        // Cell
-        "Cell", "Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum",
-        "Golgi Apparatus", "Cytoplasm", "Cell Membrane", "Mitosis", "Meiosis",
-        // Chemistry
-        "Atom", "Molecule", "Ion", "Isotope", "Isomer", "Polymer", "Monomer",
-        "Hydrogen Bond", "Covalent Bond", "Acid", "Base", "pH", "Buffer",
-        // Physiology
-        "Hormone", "Neurotransmitter", "Cytokine", "Chemokine", "Lipid",
-        "Fatty Acid", "Cholesterol", "Triglyceride", "Carbohydrate", "Glucose",
-        "Glycogen", "Metabolism", "ATP", "Glycolysis", "Krebs Cycle"
+    lenses: [
+        LensConfig(
+            id: "basics",
+            glyph: "B",
+            title: "Basics",
+            subtitle: "Foundational biology & chemistry",
+            kind: .allowlist([
+                // Already present
+                "RNA", "Mutation", "siRNA", "Ligand", "Receptor", "Agonist", "Antagonist",
+                "MAb", "Apoptosis", "Insulin",
+                // Mol bio
+                "DNA", "Gene", "Genome", "Chromosome", "Allele", "Codon", "Nucleotide",
+                "Base Pair", "Transcription", "Translation",
+                "mRNA", "tRNA", "rRNA", "miRNA",
+                // Protein/enzyme
+                "Protein", "Peptide", "Amino Acid", "Alanine", "Glycine", "Lysine",
+                "Enzyme", "Antibody", "Antigen", "Epitope", "Immunoglobulin",
+                // Cell
+                "Cell", "Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum",
+                "Golgi Apparatus", "Cytoplasm", "Cell Membrane", "Mitosis", "Meiosis",
+                // Chemistry
+                "Atom", "Molecule", "Ion", "Isotope", "Isomer", "Polymer", "Monomer",
+                "Hydrogen Bond", "Covalent Bond", "Acid", "Base", "pH", "Buffer",
+                // Physiology
+                "Hormone", "Neurotransmitter", "Cytokine", "Chemokine", "Lipid",
+                "Fatty Acid", "Cholesterol", "Triglyceride", "Carbohydrate", "Glucose",
+                "Glycogen", "Metabolism", "ATP", "Glycolysis", "Krebs Cycle"
+            ])
+        ),
+        LensConfig(
+            id: "policy",
+            glyph: "P",
+            title: "Policy",
+            subtitle: "Regulation, pricing, access",
+            kind: .categoryFilter(
+                categories: ["Regulatory", "Commercial / Market Access"],
+                excludedTerms: ["MSL", "Loss of Exclusivity", "Patent Cliff", "NCI", "HEOR", "Gross-to-Net", "Phase 4"]
+            )
+        )
     ],
-    basicsSubtitle: "Foundational biology & chemistry",
-    policyConfig: PolicyConfig(
-        displayName: "Policy",
-        subtitle: "Regulation, pricing, access",
-        categories: ["Regulatory", "Commercial / Market Access"],
-        excludedTerms: ["MSL", "Loss of Exclusivity", "Patent Cliff", "NCI", "HEOR", "Gross-to-Net", "Phase 4"]
-    ),
     accentTint: Color(red: 0.784, green: 0.714, blue: 0.541),          // #C8B68A editorial complement
     sourceURLs: [
         "NCI Dictionary of Cancer Terms": URL(string: "https://www.cancer.gov/publications/dictionaries/cancer-terms")!,

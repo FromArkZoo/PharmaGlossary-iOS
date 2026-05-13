@@ -3,8 +3,7 @@ import SwiftUI
 enum Route: Hashable {
     case letter(String)
     case term(Term)
-    case policy
-    case basics
+    case lens(LensConfig)
     case favorites
     case about
 }
@@ -59,13 +58,9 @@ struct RootView: View {
             .sheet(isPresented: $showingFilter) {
                 FilterSheet(
                     filter: $filter,
-                    onSelectPolicy: {
+                    onSelectLens: { lens in
                         showingFilter = false
-                        path.append(.policy)
-                    },
-                    onSelectBasics: {
-                        showingFilter = false
-                        path.append(.basics)
+                        path.append(.lens(lens))
                     },
                     onSelectAbout: {
                         showingFilter = false
@@ -80,10 +75,8 @@ struct RootView: View {
                     LetterView(letter: letter)
                 case .term(let term):
                     TermDetailView(term: term)
-                case .policy:
-                    PolicyView()
-                case .basics:
-                    BasicsView()
+                case .lens(let lens):
+                    LensView(lens: lens)
                 case .favorites:
                     FavoritesView()
                 case .about:

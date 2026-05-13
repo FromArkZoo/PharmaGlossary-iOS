@@ -54,9 +54,7 @@ struct EditorialHeader: View {
             aboutParagraphs: [],
             aboutDisclaimer: "",
             aboutSources: [],
-            basicsAllowlist: [],
-            basicsSubtitle: "",
-            policyConfig: PolicyConfig(displayName: "Compliance", subtitle: "", categories: [], excludedTerms: []),
+            lenses: [],
             accentTint: nil,
             sourceURLs: [:]
         ),
