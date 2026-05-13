@@ -58,6 +58,20 @@
   },
   {
     "letter": "A",
+    "term": "AI factory",
+    "full": "",
+    "snappy": "NVIDIA's term for data centers built specifically as AI inference and training facilities — coined by Jensen Huang.",
+    "detail": "Marketing language but also conceptual: a data centre built around accelerators rather than general-purpose servers, designed to produce \"AI tokens\" as its primary output. NVIDIA pushes the framing to position GPU build-outs as productive industrial capacity rather than IT spending.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Apple M-series",
     "full": "",
     "snappy": "Apple's family of CPUs/SoCs powering modern Macs (and iPad Pro) — with the Neural Engine doing the on-device AI.",
@@ -117,6 +131,20 @@
   },
   {
     "letter": "A",
+    "term": "AWS",
+    "full": "Amazon Web Services",
+    "snappy": "Amazon's cloud arm — the largest cloud provider, with custom AI silicon (Trainium, Inferentia) and a $4-8B investment in Anthropic.",
+    "detail": "Founded 2006. Generates the bulk of Amazon's operating profit. Offers NVIDIA GPUs (P5 instances with H100s, P5en with H200s, P6 with B200s) alongside Trainium/Inferentia. Anthropic uses AWS as its primary training and serving partner. AWS Bedrock hosts Claude, Llama, Cohere, Mistral, and AI21 models behind a unified API.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Axion",
     "full": "Google Axion",
     "snappy": "Google Cloud's custom ARM-based CPU — Google joining AWS Graviton and Microsoft Cobalt in the cloud-CPU race.",
@@ -127,6 +155,20 @@
     "category": "Hardware",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Azure",
+    "full": "Microsoft Azure",
+    "snappy": "Microsoft's cloud platform — the primary infrastructure behind OpenAI and home to the largest known AI supercomputer.",
+    "detail": "Microsoft committed $13B+ to OpenAI through deals that mostly pay out as Azure credits. Azure runs the supercomputers that trained GPT-3, GPT-4, and successors. Azure AI Foundry exposes OpenAI, Llama, Mistral, and other models through one API. The Stargate joint venture with OpenAI is targeted at 5 GW of compute build-out.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "Microsoft Research"
     ]
   },
   {
@@ -168,6 +210,20 @@
       "Compute"
     ],
     "category": "Memory",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Bare metal",
+    "full": "",
+    "snappy": "Renting an entire physical server with no virtualization layer between you and the hardware.",
+    "detail": "Public clouds usually run workloads in virtual machines or containers. Bare metal skips that layer for performance and predictability — critical for AI training where every microsecond of network latency matters. AWS, Azure, Oracle, CoreWeave all offer bare-metal GPU servers; pricing is typically a slight premium.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
     "sources": [
       "NVIDIA"
     ]
@@ -262,6 +318,34 @@
   },
   {
     "letter": "C",
+    "term": "Capex",
+    "full": "Capital expenditure",
+    "snappy": "Spending on long-term assets — for hyperscalers, mostly data centers and GPUs.",
+    "detail": "Microsoft, Google, Amazon, and Meta combined are spending $300-400B+ per year on AI capex by 2025, much of it on NVIDIA GPUs. The shift from variable cloud opex to enormous fixed AI capex is reshaping the cost structure of big-tech companies. Capex announcements move stock prices in both directions: investment is needed, but returns are unproven.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Industry",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Checkpoint",
+    "full": "",
+    "snappy": "Snapshot of training progress saved to disk so a run can resume after a crash or pause.",
+    "detail": "A frontier model is checkpointed every few minutes during training because hardware failures are inevitable at the scale of thousands of GPUs running for weeks. Each checkpoint is hundreds of gigabytes (model weights, optimiser state, RNG seeds, scheduler state). Checkpoint I/O is a non-trivial part of training infrastructure design.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "CLIP",
     "full": "Contrastive Language-Image Pretraining",
     "snappy": "Model that links images and text in a shared space — lets you search images by description, or steer image generators with words.",
@@ -273,6 +357,34 @@
     "category": "Architecture",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Colocation",
+    "full": "Colo",
+    "snappy": "Renting space, power, and cooling in a third-party data center to host your own servers.",
+    "detail": "AI labs that own their hardware but don't want to build buildings rent colo space from operators like Equinix, Digital Realty, CoreSite. Hybrid arrangements (some self-hosted in colo, some rented from clouds) are common. The colo industry is reshaping itself for AI: higher densities, more liquid cooling, more grid integration.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Compute cluster",
+    "full": "",
+    "snappy": "Many connected servers working as a single logical computer — the basic unit of AI training infrastructure.",
+    "detail": "A modern AI training cluster might have hundreds to tens of thousands of GPUs spread across many servers, all connected by high-bandwidth networking. The cluster runs distributed training jobs that coordinate across all nodes. Building and operating clusters at scale is a major engineering challenge — hardware failures are constant, jobs need to checkpoint and recover.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -349,6 +461,20 @@
   },
   {
     "letter": "C",
+    "term": "CoreWeave",
+    "full": "",
+    "snappy": "GPU-specialised cloud — rents H100s and B200s to AI labs and enterprises that the hyperscalers can't serve fast enough.",
+    "detail": "Started as a crypto miner, pivoted to AI in 2022. Now public (IPO 2024). Built around aggressive GPU acquisition and a software stack focused on AI workloads. Major customers include Microsoft (offloading some OpenAI training), and many AI startups that need NVIDIA capacity now rather than waiting in a hyperscaler queue.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "CPU",
     "full": "Central Processing Unit",
     "snappy": "The general-purpose processor at the heart of every computer — good at everything, great at nothing in particular.",
@@ -360,6 +486,20 @@
     "sources": [
       "Intel",
       "AMD"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Crusoe",
+    "full": "",
+    "snappy": "AI infrastructure company building data centers next to stranded energy sources (oil flares, renewables).",
+    "detail": "Originally built modular data centres at oil-and-gas sites to use flare gas that would otherwise burn off. Now pivoting to large-scale AI infrastructure with sites in Iceland, Texas, and elsewhere. Partner on the Stargate project. The thesis: cheap power is the binding constraint on AI infrastructure, and Crusoe finds it where others don't look.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -416,6 +556,20 @@
     "category": "Interconnect",
     "sources": [
       "Intel"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Data center",
+    "full": "",
+    "snappy": "A building purpose-built for housing servers, storage, and networking equipment at scale.",
+    "detail": "Modern AI training data centers are enormous: tens or hundreds of megawatts of power, thousands of GPUs, kilometres of fibre. The biggest single-site builds (xAI's Memphis facility, Microsoft/OpenAI's Stargate, Meta's Mesa) approach 1 GW. Site selection driven by cheap electricity, cooling water, and fast fibre access — Texas, Iowa, Northern Virginia, and the Nordics are AI hotspots.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -788,6 +942,20 @@
   },
   {
     "letter": "G",
+    "term": "GCP",
+    "full": "Google Cloud Platform",
+    "snappy": "Google's cloud arm, distinctive in offering TPUs alongside NVIDIA GPUs.",
+    "detail": "Google Cloud is third in market share behind AWS and Azure but has the unique TPU offering plus easy access to Google's Gemini API. Vertex AI is its end-to-end ML platform. The TPU pods host Gemini's training; many AI startups (Character.AI, Anthropic for some workloads, Midjourney) use GCP for capacity.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "GDDR",
     "full": "Graphics Double Data Rate",
     "snappy": "DRAM variant designed for consumer GPUs — cheaper than HBM, slower, but still fast.",
@@ -832,6 +1000,20 @@
   },
   {
     "letter": "G",
+    "term": "Gigawatt cluster",
+    "full": "",
+    "snappy": "AI training facility drawing a gigawatt of electrical power — the new unit of frontier-scale compute.",
+    "detail": "1 GW is enough power for around 800,000 US homes. xAI's Memphis cluster is approaching 1 GW; Stargate's first site targets 1.2 GW; Meta's Mesa facility approaches similar levels. At this scale, AI training siting is constrained by power grid capacity and substation availability, not GPU supply.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "xAI"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "GPU",
     "full": "Graphics Processing Unit",
     "snappy": "Parallel hardware for training and inference",
@@ -843,6 +1025,20 @@
     "sources": [
       "NVIDIA",
       "TSMC"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GPU hour",
+    "full": "",
+    "snappy": "The standard unit of cloud GPU pricing — one GPU rented for one hour.",
+    "detail": "An H100 on a major cloud runs roughly $2-4/hour in 2024-2025. Spot/preemptible pricing can be half that. Training GPT-4 reportedly consumed millions of GPU-hours. Frontier training runs spend tens to hundreds of millions of dollars in GPU-hours; inference economics are measured in GPU-hours per million tokens served.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -958,6 +1154,34 @@
     "category": "Memory",
     "sources": [
       "SK Hynix"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "Hyperscaler",
+    "full": "",
+    "snappy": "Cloud provider operating data centers at extreme scale — AWS, Azure, Google Cloud, Oracle.",
+    "detail": "Together they run most of the world's cloud computing and now most of the world's AI compute. Each spends $50-80 billion+ annually on capex, dominated by AI infrastructure. The hyperscalers and their captive AI labs (Microsoft+OpenAI, Google+DeepMind, Amazon+Anthropic) are the central players in the modern AI capex race.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Immersion cooling",
+    "full": "",
+    "snappy": "Submerging entire servers in dielectric (non-conductive) fluid that absorbs heat directly.",
+    "detail": "Two flavours: single-phase (oil-like fluid stays liquid) and two-phase (fluorocarbon boils on hot components). Higher density than liquid cooling, used in some crypto-mining facilities and a few cutting-edge AI deployments. Still niche but interest is growing as rack power densities climb.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -1110,6 +1334,20 @@
   },
   {
     "letter": "L",
+    "term": "Lambda Labs",
+    "full": "",
+    "snappy": "GPU cloud popular with smaller AI startups and academic research — competes with CoreWeave at a smaller scale.",
+    "detail": "Originally a hardware reseller (sells GPU workstations). Pivoted to cloud GPU rental. Strong reputation for developer-friendly pricing and quick spin-up of H100/H200 instances. Common starting point for AI startups that need NVIDIA capacity below hyperscaler minimums.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "LangChain",
     "full": "",
     "snappy": "Python framework for chaining LLM calls with other tools — early entrant in the LLM-app-framework category.",
@@ -1176,6 +1414,20 @@
       "Training"
     ],
     "category": "Training",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Liquid cooling",
+    "full": "",
+    "snappy": "Pumping coolant through pipes to remove heat from chips directly, replacing or supplementing air cooling.",
+    "detail": "Modern AI racks dissipate 100+ kW each — far too much for air cooling alone. Direct-to-chip liquid cooling (cold plates on top of GPUs) is standard for H100/B200 deployments. NVIDIA's GB200 NVL72 ships liquid-cooled by default. Major thermal infrastructure shift for data centres designed before the AI build-out.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
     "sources": [
       "NVIDIA"
     ]
@@ -1545,6 +1797,20 @@
   },
   {
     "letter": "O",
+    "term": "OCI",
+    "full": "Oracle Cloud Infrastructure",
+    "snappy": "Oracle's cloud business — a smaller hyperscaler with a strategic GPU build-out and partnerships with OpenAI.",
+    "detail": "Oracle has invested heavily in GPU capacity, partnering with OpenAI on the Stargate project alongside Microsoft. Less developer mindshare than AWS/Azure/GCP, but competitive pricing on raw GPU rentals. xAI also rents Oracle capacity at times.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "O",
     "term": "ONNX",
     "full": "Open Neural Network Exchange",
     "snappy": "Standard format for exchanging trained models between frameworks — train in one framework, run in another.",
@@ -1660,6 +1926,20 @@
   },
   {
     "letter": "P",
+    "term": "Pod",
+    "full": "TPU pod / GPU pod",
+    "snappy": "Google's term for a tightly-coupled cluster of TPUs treated as one logical accelerator.",
+    "detail": "A TPU v5p pod can have up to 8,960 chips, all connected via Google's custom optical interconnect, addressable as a single training resource. NVIDIA uses similar concepts (DGX SuperPOD, NVL72). The trend is making the pod boundary larger and the in-pod fabric faster — letting one training job feel like it runs on a single huge GPU.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Positional encoding",
     "full": "",
     "snappy": "Extra information added to each token so the model knows where it sits in the sequence — Transformers have no built-in sense of word order.",
@@ -1733,6 +2013,20 @@
   },
   {
     "letter": "P",
+    "term": "PUE",
+    "full": "Power Usage Effectiveness",
+    "snappy": "Data center efficiency metric — total facility power divided by power used by IT equipment.",
+    "detail": "Perfect PUE is 1.0 (every watt goes to servers). Old data centers run 1.5-2.0. Modern hyperscale builds hit 1.1-1.2. Heavy AI workloads stress cooling more than traditional ones, so PUE tends to creep up unless cooling is upgraded. Liquid cooling helps keep PUE down for high-density GPU racks.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "PyTorch",
     "full": "",
     "snappy": "Meta's open-source deep learning framework — the dominant framework in research and increasingly in production.",
@@ -1773,6 +2067,20 @@
     "sources": [
       "NVIDIA",
       "Hugging Face"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Rack",
+    "full": "",
+    "snappy": "The standard equipment cabinet in a data center — a 6-foot-tall metal frame holding stacked servers.",
+    "detail": "Measured in \"U\" (1U ≈ 1.75 inches). A typical AI rack today might hold 8 GPU servers (4U each) plus networking, drawing 50-100 kW. NVIDIA's GB200 NVL72 is a single \"rack\" containing 72 GPUs and consuming 120 kW liquid-cooled — the dense rack of the future.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -2043,6 +2351,20 @@
   },
   {
     "letter": "S",
+    "term": "Server",
+    "full": "",
+    "snappy": "A computer in a data center — usually a 1U-4U box with multiple CPUs, memory, networking, and (for AI) GPUs.",
+    "detail": "An AI training server typically holds 8 GPUs (NVIDIA HGX configuration), 2 server CPUs, 2 TB of host RAM, and InfiniBand or 400G Ethernet networking. The server is the unit of failure; cluster software handles node failures by redistributing work to surviving servers.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SIMD",
     "full": "Single Instruction Multiple Data",
     "snappy": "Hardware design where one instruction operates on a whole vector of numbers at once — the basic trick behind GPU parallelism.",
@@ -2114,6 +2436,20 @@
   },
   {
     "letter": "S",
+    "term": "Spot instance",
+    "full": "",
+    "snappy": "Cloud capacity sold at a discount on the condition that the provider can reclaim it on short notice.",
+    "detail": "Useful for batch workloads that can checkpoint and resume — like training runs. Hyperscalers run spot markets for excess GPU capacity. Spot prices for H100s can be 30-70% off on-demand. Many AI startups stretch their compute budgets by running training on spot capacity with aggressive checkpointing.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SRAM",
     "full": "Static Random Access Memory",
     "snappy": "Fastest form of memory — kept on the same chip as the processor, used for caches.",
@@ -2124,6 +2460,20 @@
     "category": "Memory",
     "sources": [
       "Cerebras"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Stargate",
+    "full": "",
+    "snappy": "OpenAI / Microsoft / Oracle / SoftBank consortium building a multi-hundred-billion-dollar AI compute build-out.",
+    "detail": "Announced January 2025. Initial $100B commitment, with potential to reach $500B over four years. First major site is in Abilene, Texas, operated by Oracle and Crusoe. Aims to provide OpenAI with multi-gigawatt training capacity. The scale signals where frontier AI infrastructure is heading: utility-scale energy plants paired with compute.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
