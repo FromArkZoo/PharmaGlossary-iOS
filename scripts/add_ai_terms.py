@@ -39,6 +39,7 @@ VALID_CATEGORIES = {
 VALID_INDICATIONS = {
     "General", "NLP", "Vision", "Audio", "Multimodal", "RL", "Robotics",
     "Research", "Compute", "Training", "Inference", "Safety", "Frontier",
+    "Manufacturing", "Memory",
 }
 
 
