@@ -72,6 +72,20 @@
   },
   {
     "letter": "A",
+    "term": "AIME",
+    "full": "American Invitational Mathematics Examination",
+    "snappy": "Hard high-school maths competition repurposed as an AI benchmark.",
+    "detail": "Each year AIME has 15 problems with integer answers from 0-999, requiring competition-grade insight. Used heavily for evaluating reasoning models. OpenAI's o1 family was first to make headlines for surpassing typical human contestant scores. Modern frontier reasoning models routinely score 70-90% on recent AIME papers.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Apple M-series",
     "full": "",
     "snappy": "Apple's family of CPUs/SoCs powering modern Macs (and iPad Pro) — with the Neural Engine doing the on-device AI.",
@@ -98,6 +112,34 @@
     "category": "Hardware",
     "sources": [
       "Apple"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "ARC",
+    "full": "AI2 Reasoning Challenge",
+    "snappy": "Multiple-choice science questions written for grade-school students — tests commonsense + reasoning.",
+    "detail": "Released 2018 by Allen Institute for AI. The \"challenge\" set contains questions that retrieval-based methods get wrong, so the model has to actually reason. Largely saturated by 2023.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Allen Institute for AI"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "ARC-AGI",
+    "full": "Abstraction and Reasoning Corpus",
+    "snappy": "Visual puzzle benchmark designed by François Chollet to test fluid reasoning — long resistant to scaling.",
+    "detail": "Each puzzle is a few input-output grids; the model has to figure out the transformation rule and apply it to a new input. Designed as a test of abstraction that's easy for humans but historically hard for AI. OpenAI's o3 was first to break through 80% in late 2024; ARC-AGI-2 was released to provide harder puzzles.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -260,6 +302,20 @@
   },
   {
     "letter": "B",
+    "term": "Benchmark",
+    "full": "",
+    "snappy": "A standard test used to compare AI models — a fixed set of problems with known correct answers.",
+    "detail": "The currency of AI progress. New models are released alongside scorecards on dozens of benchmarks: MMLU for knowledge, HumanEval for code, GSM8K for math, MMMU for multimodal. Benchmarks become contested terrain because they shape the public perception of which lab is winning. They also tend to saturate quickly as models target them.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "BF16",
     "full": "Brain Floating Point 16",
     "snappy": "16-bit format with the same exponent range as FP32 but fewer fraction bits — the modern default for training.",
@@ -272,6 +328,35 @@
     "sources": [
       "Google DeepMind",
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "BIG-Bench",
+    "full": "Beyond the Imitation Game Benchmark",
+    "snappy": "Massive crowd-sourced benchmark — over 200 diverse tasks from arithmetic to logical reasoning to creative writing.",
+    "detail": "Released 2022 by Google. The original goal was to be \"too hard to saturate\" — and yet most subsets are now solved. BIG-Bench Hard (BBH), a 23-task subset of the hardest items, became the main scorecard.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "BLEU",
+    "full": "Bilingual Evaluation Understudy",
+    "snappy": "Score for machine translation — how much overlap is there between the model's translation and a reference?",
+    "detail": "Introduced 2002, predates modern deep learning. Computes the n-gram overlap between candidate and reference translations. Correlates roughly with human judgment but has well-known weaknesses (insensitive to meaning, brittle on paraphrase). Mostly being replaced by neural metrics like COMET but still cited.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -328,6 +413,20 @@
     "category": "Industry",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Chatbot Arena",
+    "full": "LMSYS Arena, LMArena",
+    "snappy": "Crowdsourced ranking site — users blind-test pairs of LLM responses and vote for the better one.",
+    "detail": "Started at UC Berkeley in 2023. Aggregates millions of head-to-head comparisons into an Elo-style ranking. Currently the most-trusted public scoreboard for chat models, because it's hard to game — you can't memorise the test set. Frontier model releases are often timed to climb the Arena leaderboard.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "UC Berkeley"
     ]
   },
   {
@@ -752,6 +851,20 @@
   },
   {
     "letter": "E",
+    "term": "Elo rating",
+    "full": "",
+    "snappy": "Pairwise-comparison rating system originally from chess — used to rank LLMs on Chatbot Arena.",
+    "detail": "Every win/loss between two models nudges their ratings in opposite directions. Higher Elo means the model wins more often head-to-head. The system is robust to selection bias in matchups but assumes preferences are transitive (if A beats B and B beats C, A tends to beat C).",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "E",
     "term": "Encoder",
     "full": "",
     "snappy": "The part of a model that reads the whole input upfront and prepares it for further processing.",
@@ -808,6 +921,49 @@
     "category": "Interconnect",
     "sources": [
       "Intel"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Eval contamination",
+    "full": "Benchmark contamination",
+    "snappy": "When test-set questions accidentally appear in a model's training data — inflating reported scores.",
+    "detail": "Widespread because benchmarks are public and models train on web scrapes that include the benchmarks themselves. A model that scores well on MMLU might have seen many of the questions in pretraining. Mitigation: hold-out new test sets, decontamination tools that check for overlap, private benchmarks unavailable to model trainers.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Stanford CRFM",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Exact match",
+    "full": "",
+    "snappy": "Strictest scoring rule — the model's answer must match the reference character-for-character.",
+    "detail": "Used in question answering and math benchmarks where there's a single correct answer. Punishes irrelevant differences (different spacing, units, capitalisation), so often paired with a normalization step. A model that says \"42 apples\" when the reference is \"42\" scores zero under naive exact match.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "F1 score",
+    "full": "",
+    "snappy": "Combines precision (how much of the answer is right?) and recall (how much of the right answer is covered?) into one number.",
+    "detail": "Computed as the harmonic mean of precision and recall. Common for QA tasks where partial-credit makes sense — extractive question answering, named-entity recognition, span prediction. Less common for modern chat-style evals where outputs are full sentences rather than spans.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -1014,6 +1170,20 @@
   },
   {
     "letter": "G",
+    "term": "GPQA",
+    "full": "Graduate-Level Google-Proof Q&A",
+    "snappy": "Hard PhD-level science questions designed to be unsearchable — written by domain experts.",
+    "detail": "Introduced 2023. Questions in biology, physics, chemistry written and rated by PhD experts, then validated as \"Google-proof\" (you can't find answers online easily). Non-expert humans with web access score around 34%; experts in the relevant field score 65%. Frontier models in 2025 are hitting 70-80% on the diamond subset.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "GPU",
     "full": "Graphics Processing Unit",
     "snappy": "Parallel hardware for training and inference",
@@ -1082,6 +1252,20 @@
     "category": "Hardware",
     "sources": [
       "Groq"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GSM8K",
+    "full": "Grade School Math 8K",
+    "snappy": "OpenAI's benchmark of 8,500 grade-school math word problems requiring multi-step reasoning.",
+    "detail": "Released 2021. Each problem is a short story leading to a numeric answer, requiring chain-of-thought reasoning to solve. Demonstrated the power of chain-of-thought prompting. Largely saturated by frontier models (95%+) but still useful for evaluating smaller models.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
@@ -1154,6 +1338,34 @@
     "category": "Memory",
     "sources": [
       "SK Hynix"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "HellaSwag",
+    "full": "",
+    "snappy": "Commonsense benchmark — multiple-choice sentence completion that requires real-world knowledge.",
+    "detail": "Each question is the first half of an everyday scenario (someone is cooking, driving, dancing); the model picks the most plausible ending from four options. Easy for humans (95%+), hard for older language models. Now saturated.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Allen Institute for AI"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "HumanEval",
+    "full": "",
+    "snappy": "OpenAI's coding benchmark — 164 small Python programming problems, judged by automatic tests.",
+    "detail": "Released alongside Codex (the model behind GitHub Copilot) in 2021. Each problem is a short function signature and docstring; the model writes the body; correctness is checked by hidden test cases. GPT-4 scored 67%; modern frontier models hit 90%+. Largely saturated; harder code benchmarks like SWE-Bench have taken over.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
@@ -1448,6 +1660,20 @@
   },
   {
     "letter": "L",
+    "term": "LLM-as-judge",
+    "full": "",
+    "snappy": "Using a strong language model to grade other models' outputs — much cheaper than human raters.",
+    "detail": "For open-ended tasks (creative writing, summarisation, helpful chat) there's no single right answer, so n-gram overlap metrics fail. LLM-as-judge asks GPT-4, Claude, or Gemini to compare two responses and pick the better one. Cheaper than humans, fast, but inherits the judge model's biases (it tends to prefer outputs that resemble its own style).",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "Logits",
     "full": "",
     "snappy": "The raw, unnormalised scores a model outputs for each possible next token, before they're turned into probabilities.",
@@ -1536,6 +1762,20 @@
   },
   {
     "letter": "M",
+    "term": "MATH",
+    "full": "MATH benchmark",
+    "snappy": "12,500 competition-math problems — significantly harder than GSM8K, drawn from AMC, AIME, etc.",
+    "detail": "Introduced 2021. Includes algebra, geometry, number theory, probability, calculus, precalculus. Problems can require several pages of derivation. Frontier models with reasoning (OpenAI o1, Gemini's Deep Think mode, Claude with extended thinking) now hit 90%+, but it took years to get there.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Matrix engine",
     "full": "",
     "snappy": "Generic term for the matrix-multiply hardware in modern chips — Apple, Intel, and ARM all use the phrase.",
@@ -1546,6 +1786,20 @@
     "category": "Hardware",
     "sources": [
       "Apple"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "MBPP",
+    "full": "Mostly Basic Python Problems",
+    "snappy": "Google's coding benchmark — about 1,000 small Python problems aimed at entry-level programmers.",
+    "detail": "Released 2021. Easier than HumanEval, focused on introductory programming. Useful for evaluating smaller models that can't tackle HumanEval. Largely saturated by 2024.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -1690,6 +1944,35 @@
     "category": "Software",
     "sources": [
       "Apple"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "MMLU",
+    "full": "Massive Multitask Language Understanding",
+    "snappy": "Multiple-choice exam across 57 academic subjects — the go-to general-knowledge benchmark for LLMs.",
+    "detail": "Introduced 2020 by researchers at UC Berkeley. Questions span maths, law, medicine, history, ethics, computer science. Scoring became a routine line in every model launch announcement. GPT-3 scored ~44%, GPT-4 ~86%, frontier models in 2025 are saturating above 90%. MMLU-Pro is a harder follow-up benchmark introduced after MMLU saturated.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "MMMU",
+    "full": "Massive Multimodal Understanding",
+    "snappy": "MMLU-style benchmark for vision-language models — covers university-level questions with images.",
+    "detail": "Includes diagrams, charts, medical images, sheet music. Frontier multimodal models (GPT-4o, Claude 3.5 Sonnet, Gemini 2) score 60-75% as of 2024-2025. Tracks progress on whether models can integrate visual evidence with textual reasoning.",
+    "indications": [
+      "Multimodal",
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -1877,6 +2160,20 @@
     "category": "Training",
     "sources": [
       "Hugging Face"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Perplexity",
+    "full": "",
+    "snappy": "How surprised a language model is by a piece of text — the standard intrinsic measure of model quality.",
+    "detail": "Mathematically, the exponential of the average per-token negative log-likelihood. Lower is better. Used during pretraining to track learning progress (perplexity on a held-out set should drop). Less informative for chat models — improving perplexity by 5% doesn't necessarily mean the model feels 5% better in conversation.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -2277,6 +2574,21 @@
     ]
   },
   {
+    "letter": "R",
+    "term": "ROUGE",
+    "full": "Recall-Oriented Understudy for Gisting Evaluation",
+    "snappy": "Score for text summarization — measures n-gram overlap with reference summaries.",
+    "detail": "Sister metric to BLEU but oriented toward recall (does the candidate cover the reference?) rather than precision. Standard for summarisation benchmarks. Same weaknesses as BLEU: insensitive to meaning. Modern eval increasingly uses LLM-as-judge instead.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
     "letter": "S",
     "term": "SambaNova SN40L",
     "full": "",
@@ -2494,6 +2806,20 @@
   },
   {
     "letter": "S",
+    "term": "SWE-Bench",
+    "full": "",
+    "snappy": "Software engineering benchmark — model must fix real GitHub issues in real codebases.",
+    "detail": "Released 2023 by Princeton. Each task gives the model an issue description and a codebase, asking it to produce a patch that passes the project's tests. Much harder than HumanEval because it requires understanding context, navigating multi-file codebases, and matching project style. The Verified subset is the most-cited score. Anthropic's Claude leads through most of 2024-2025.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Sycophancy",
     "full": "",
     "snappy": "When a model agrees with whatever the user says, even if it's wrong — a side effect of training on human preferences.",
@@ -2589,6 +2915,21 @@
     "category": "Software",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Test-time compute",
+    "full": "",
+    "snappy": "Using extra compute at inference time — typically by thinking longer — to improve answer quality.",
+    "detail": "Models like OpenAI's o1, o3, Claude with extended thinking, and Gemini Deep Think spend more compute on hard questions, generating intermediate reasoning steps before producing the final answer. The result: large gains on math and reasoning benchmarks at the cost of higher inference cost. A new axis along which model providers compete: not just bigger models, but smarter use of inference compute.",
+    "indications": [
+      "Research",
+      "Inference"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
@@ -2812,6 +3153,21 @@
       "Compute"
     ],
     "category": "Software",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "TruthfulQA",
+    "full": "",
+    "snappy": "Benchmark for whether a model resists generating common misconceptions and falsehoods.",
+    "detail": "Questions specifically designed to elicit popular but false answers — \"What happens if you crack your knuckles a lot?\" Tests truthfulness rather than knowledge. Releases of new models often show that scaling alone doesn't fix truthfulness; alignment training does.",
+    "indications": [
+      "Safety",
+      "Research"
+    ],
+    "category": "Eval",
     "sources": [
       "OpenAI"
     ]
