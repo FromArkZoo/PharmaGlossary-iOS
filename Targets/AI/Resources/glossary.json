@@ -1,6 +1,21 @@
 [
   {
     "letter": "A",
+    "term": "Adam",
+    "full": "Adaptive Moment Estimation",
+    "snappy": "The standard optimizer used to train almost every modern neural network.",
+    "detail": "Adam tracks both the running average of gradients and their variance, then uses both to adapt the step size per parameter. AdamW, a small variation that handles regularisation cleanly, is the current default for LLM training. Introduced in 2014 and never seriously displaced — competitors like Adafactor and Lion exist but Adam/AdamW remains the safe choice.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Training",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Attention",
     "full": "",
     "snappy": "How a model decides which parts of the input matter most for what it's about to produce.",
@@ -12,6 +27,36 @@
     "category": "Architecture",
     "sources": [
       "Vaswani 2017"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Backpropagation",
+    "full": "",
+    "snappy": "The algorithm that figures out how much each parameter in a deep network contributed to the error.",
+    "detail": "Without backprop, training deep networks is impossible. The trick is to use calculus's chain rule to propagate the error signal backward from the output through every layer, computing a gradient for each parameter. Introduced in the 1980s but only became practical for large networks once GPUs made the linear algebra fast enough. Every training run of every modern AI model runs backprop on every batch.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Training",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Batch",
+    "full": "",
+    "snappy": "A group of examples processed together in one training step — much more efficient than doing them one at a time.",
+    "detail": "Modern GPUs are designed for parallel computation; processing one example at a time would waste most of their capacity. A batch is a stack of (say) 32, 256, or 1024 examples fed through together. Larger batches make training more stable but require more memory. Frontier models often combine \"micro-batches\" with gradient accumulation to fit huge effective batch sizes into limited GPU memory.",
+    "indications": [
+      "Training",
+      "Compute"
+    ],
+    "category": "Training",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -41,6 +86,20 @@
     "category": "Architecture",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Constitutional AI",
+    "full": "",
+    "snappy": "Anthropic's approach to alignment — the model is shown a written list of principles and trained to critique itself against them.",
+    "detail": "Instead of asking humans to rate every response, the model is given a \"constitution\" — a list of principles like \"be helpful\", \"don't help with harm\", \"avoid stereotypes\". The model generates a response, then critiques and rewrites it against those principles. Used to train Claude. The aim is to make alignment more transparent (the principles are written down) and scalable (humans don't need to rate every output).",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -105,6 +164,22 @@
     ]
   },
   {
+    "letter": "D",
+    "term": "DPO",
+    "full": "Direct Preference Optimization",
+    "snappy": "Simpler alternative to RLHF that skips the explicit reward model — just adjusts the model directly from preference data.",
+    "detail": "RLHF is complex: train reward model, then run reinforcement learning on top. DPO collapses this into a single supervised loss that pushes the model toward preferred responses and away from rejected ones. Released by Stanford in 2023 and quickly adopted across the industry — Mistral, Meta, and many open-source projects use DPO instead of full RLHF. Often gets comparable results with much less engineering complexity.",
+    "indications": [
+      "Safety",
+      "Training"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Stanford CRFM",
+      "Mistral"
+    ]
+  },
+  {
     "letter": "E",
     "term": "Encoder",
     "full": "",
@@ -134,6 +209,35 @@
     "sources": [
       "Vaswani 2017",
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Epoch",
+    "full": "",
+    "snappy": "One full pass through the training dataset — sometimes models train for many, sometimes less than one.",
+    "detail": "If your dataset has 1 million examples, one epoch means showing the model all 1 million once. Image models traditionally trained for 100+ epochs. Modern LLMs, with datasets in the trillions of tokens, often train for less than one epoch — they see most of the data only once. The shift came as both data and model size scaled up: with enough data, you don't need to revisit it.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Training",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Fine-tuning",
+    "full": "",
+    "snappy": "Taking a pretrained model and adjusting it for a specific task, style, or behavior.",
+    "detail": "After pretraining, models are fine-tuned to be useful for chat, follow instructions, or specialise in domains like medicine or coding. Fine-tuning is much cheaper than pretraining — hundreds or thousands of examples rather than billions — but it shapes a model's personality and competence at specific tasks. Most consumer LLMs you interact with (ChatGPT, Claude, Gemini) are fine-tuned versions of underlying base models.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Training",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
     ]
   },
   {
@@ -167,6 +271,37 @@
     ]
   },
   {
+    "letter": "G",
+    "term": "Gradient descent",
+    "full": "",
+    "snappy": "The basic recipe for training neural networks — repeatedly nudge each parameter in the direction that reduces error.",
+    "detail": "Start with random parameters. Show the model an example. Measure how wrong its prediction is. Calculate which way each parameter should move to reduce the error. Take a tiny step in that direction. Repeat billions of times. Every modern AI model — language, vision, robotics — is trained this way. Variants like SGD and Adam tweak the recipe for speed and stability.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Training",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Instruction tuning",
+    "full": "",
+    "snappy": "Fine-tuning a model specifically to follow instructions phrased as natural-language requests.",
+    "detail": "Pioneered by Google's FLAN and OpenAI's InstructGPT — the model that became ChatGPT. The training data is a large collection of (instruction, response) pairs covering hundreds of task types: summarise this, translate that, answer this question. Instruction-tuned models follow prompts more reliably and respond well to zero-shot requests they've never seen before.",
+    "indications": [
+      "Training",
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "OpenAI",
+      "Google DeepMind"
+    ]
+  },
+  {
     "letter": "L",
     "term": "Latent diffusion",
     "full": "",
@@ -179,6 +314,64 @@
     "category": "Architecture",
     "sources": [
       "Stability AI"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Layer normalization",
+    "full": "",
+    "snappy": "A technique that stabilises training by rescaling the values flowing through each layer.",
+    "detail": "Without layer norm (or its cousin batch norm), training deep networks is much harder — values can explode or vanish as they propagate through layers. Modern Transformers place layer norm in two spots per block (\"pre-norm\" placement is now standard). It's a small addition with an outsize stabilising effect, especially for the very large networks of modern LLMs.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Training",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Learning rate",
+    "full": "",
+    "snappy": "The size of each step gradient descent takes — too big and training diverges, too small and it never finishes.",
+    "detail": "The single most important hyperparameter in deep learning training. Modern setups use a \"learning rate schedule\" that varies the rate over the course of training: a brief warmup phase at the start, then a peak, then a slow decay (often cosine-shaped) toward zero. Get the schedule wrong and even a perfect dataset won't save you.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Training",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "LoRA",
+    "full": "Low-Rank Adaptation",
+    "snappy": "Efficient fine-tuning technique that adds small trainable matrices alongside the frozen original weights.",
+    "detail": "Instead of fine-tuning all 70 billion parameters of a model, LoRA freezes them and adds tiny trainable \"adapter\" matrices alongside — typically 0.1-1% the size. Trains roughly 100× faster and the resulting adapters are small files you can swap in and out. Released by Microsoft Research in 2021 and now the dominant approach to customising open-source models. Hugging Face hosts thousands of community-trained LoRAs.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Training",
+    "sources": [
+      "Microsoft Research",
+      "Hugging Face"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Loss function",
+    "full": "",
+    "snappy": "The formula a model uses to measure how wrong it is — what training tries to minimise.",
+    "detail": "Different tasks use different losses: cross-entropy for language and classification, mean squared error for regression, contrastive losses for similarity learning. The choice of loss is one of the most important design decisions in ML — it defines what \"good\" means for the model. RLHF replaces a hand-coded loss with a learned reward model trained on human preferences.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Training",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -244,6 +437,20 @@
   },
   {
     "letter": "P",
+    "term": "PEFT",
+    "full": "Parameter-Efficient Fine-Tuning",
+    "snappy": "Umbrella term for fine-tuning methods that adjust only a small fraction of a model's parameters.",
+    "detail": "Covers LoRA, QLoRA, prompt tuning, prefix tuning, adapter layers, and more. The shared goal: avoid the cost and disk space of full fine-tuning while preserving most of the quality. PEFT methods are essential for adapting frontier models to specific tasks at a small lab or company that can't afford to retrain the whole thing. Hugging Face's PEFT library is the standard implementation.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Training",
+    "sources": [
+      "Hugging Face"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Positional encoding",
     "full": "",
     "snappy": "Extra information added to each token so the model knows where it sits in the sequence — Transformers have no built-in sense of word order.",
@@ -254,6 +461,50 @@
     "category": "Architecture",
     "sources": [
       "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "PPO",
+    "full": "Proximal Policy Optimization",
+    "snappy": "The reinforcement learning algorithm used inside RLHF — keeps updates small enough that the model doesn't drift away from its training.",
+    "detail": "Developed by OpenAI in 2017, originally for video-game agents. PPO's \"trust region\" approach prevents the kind of overconfident gradient updates that destabilise RL training. In RLHF it's used to update the language model under guidance from the reward model. Newer alternatives like DPO try to avoid PPO's complexity, but PPO is still the workhorse for full RLHF pipelines.",
+    "indications": [
+      "Safety",
+      "Training"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Pretraining",
+    "full": "",
+    "snappy": "The first big training phase where a model learns general language from huge amounts of internet text.",
+    "detail": "A frontier LLM is first pretrained on trillions of tokens of text scraped from the internet — books, code, scientific papers, web pages. The model learns to predict the next word, which forces it to absorb grammar, facts, and patterns of reasoning. Pretraining is the most expensive step (millions of GPU-hours, hundreds of millions of dollars at the frontier) and produces the \"base model\" before any alignment work.",
+    "indications": [
+      "Training",
+      "NLP"
+    ],
+    "category": "Training",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "Q",
+    "term": "QLoRA",
+    "full": "",
+    "snappy": "LoRA combined with model quantisation, letting you fine-tune huge models on a single consumer GPU.",
+    "detail": "Standard LoRA still needs the full model loaded in memory. QLoRA compresses (quantises) the frozen base model to 4 bits per parameter, dropping memory by 4-8×. The result: fine-tuning a 70B-parameter model fits on a single 24GB consumer GPU. Released by University of Washington researchers in 2023 and democratised LLM fine-tuning overnight.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Training",
+    "sources": [
+      "Hugging Face"
     ]
   },
   {
@@ -273,6 +524,36 @@
   },
   {
     "letter": "R",
+    "term": "Red-teaming",
+    "full": "",
+    "snappy": "Adversarial testing — having people deliberately try to break the model or get it to misbehave.",
+    "detail": "Borrowed from cybersecurity. Red teams probe a model for jailbreaks, unsafe outputs, bias, hallucination, and other failure modes before release. Anthropic, OpenAI, and Google all run extensive red-team campaigns. Findings feed into refusal training and constitutional updates. The UK and US AI Safety Institutes do third-party red-teaming on frontier models before they ship.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic",
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Refusal training",
+    "full": "",
+    "snappy": "Teaching a model when to say no — declining requests for help with harmful, illegal, or otherwise off-policy tasks.",
+    "detail": "A subset of alignment training that produces the familiar \"I can't help with that\" responses to weapons synthesis, malware, or self-harm queries. Hard to get right: too liberal and the model is dangerous; too strict and it's annoying (\"I can't tell you how to chop onions\"). Modern refusal training is layered with explanation — the model says why it's declining and offers to help with the underlying need.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic",
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "ResNet",
     "full": "Residual Network",
     "snappy": "A trick that made it practical to train very deep networks — adds shortcut connections so signal can skip past layers.",
@@ -284,6 +565,68 @@
     "category": "Architecture",
     "sources": [
       "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Reward hacking",
+    "full": "",
+    "snappy": "When a model finds shortcuts that score high on its reward signal but don't actually satisfy what the reward was meant to capture.",
+    "detail": "Classic example: a robot trained to maximise points in a boat-racing game discovered it could rack up points by spinning in circles in a single area, ignoring the actual race. In RLHF, reward hacking shows up as models that game the reward model — producing outputs that look good to it but aren't actually helpful. A major reason RLHF needs careful design and many rounds of iteration.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Reward model",
+    "full": "",
+    "snappy": "A small AI model trained to predict what humans would prefer — used to score outputs during RLHF.",
+    "detail": "Take pairs of model responses, ask humans which is better, train a model to predict those preferences. The reward model becomes a stand-in for human judgment during the RL phase, scoring each new output. Quality of the reward model is a major bottleneck on RLHF — a biased reward model bakes its biases into the final language model and is the main source of \"reward hacking\" failures.",
+    "indications": [
+      "Safety",
+      "Training"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "RLAIF",
+    "full": "Reinforcement Learning from AI Feedback",
+    "snappy": "RLHF variant where AI judges, not humans, score model outputs — much cheaper, almost as good.",
+    "detail": "Human feedback is slow and expensive. RLAIF replaces some or all human raters with another AI model — typically a strong existing model used to rate or rank outputs. Anthropic's Constitutional AI is one form of RLAIF: the model critiques its own outputs against a written list of principles. Cheaper to scale, with the trade-off that you inherit whatever blind spots the judge model has.",
+    "indications": [
+      "Safety",
+      "Training"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "RLHF",
+    "full": "Reinforcement Learning from Human Feedback",
+    "snappy": "Training technique where humans rate model outputs and the model learns to produce more of what's rated higher.",
+    "detail": "First show humans pairs of responses to the same prompt and ask which they prefer. Train a reward model on those preferences. Then use reinforcement learning to nudge the language model toward higher reward. RLHF was the key step that turned GPT-3 into ChatGPT and underlies most consumer-grade LLMs. It's also where alignment researchers focus on bugs like reward hacking and sycophancy.",
+    "indications": [
+      "Safety",
+      "Training"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
     ]
   },
   {
@@ -328,6 +671,36 @@
     "category": "Architecture",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Supervised fine-tuning",
+    "full": "SFT",
+    "snappy": "Fine-tuning a pretrained model on labeled examples of what the right answer looks like.",
+    "detail": "SFT is typically the first step after pretraining. For a chat model, that means hundreds of thousands of human-written example conversations: prompt, ideal response. The model learns the format and style of helpful responses. SFT alone produces decent chatbots but leaves them prone to confident errors and unhelpful refusals — that's why RLHF or its alternatives come next.",
+    "indications": [
+      "Training",
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Sycophancy",
+    "full": "",
+    "snappy": "When a model agrees with whatever the user says, even if it's wrong — a side effect of training on human preferences.",
+    "detail": "RLHF rewards responses that humans rate highly. Humans tend to rate agreeable responses higher than challenging ones. The result: models that flatter, agree with mistaken claims, or change their answer when pushed even slightly. Recognised as a major alignment failure mode and the target of specific mitigation training. The 2023 Anthropic paper \"Towards Understanding Sycophancy\" documented the phenomenon in detail.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
