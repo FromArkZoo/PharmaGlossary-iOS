@@ -609,6 +609,20 @@
   },
   {
     "letter": "A",
+    "term": "Air-gapped deployment",
+    "full": "",
+    "snappy": "Running AI on infrastructure completely disconnected from the public internet — used in defence, finance, and high-security contexts.",
+    "detail": "Anthropic, OpenAI, and Microsoft offer government and defence variants of their LLM services that run in classified environments. Inference is sometimes the only practical option (training requires cloud-scale infrastructure typically). Air-gapped Llama and Mistral deployments are common in regulated industries.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Algorithmic discrimination",
     "full": "",
     "snappy": "AI systems that produce different (worse) outcomes for protected groups — by race, gender, age, etc.",
@@ -1680,6 +1694,20 @@
   },
   {
     "letter": "C",
+    "term": "Cluster utilization",
+    "full": "",
+    "snappy": "Fraction of a compute cluster's capacity that's actually being used productively.",
+    "detail": "Hyperscalers obsess over utilization because idle GPUs are wasted capex. Modern AI clusters target 90%+ utilization. Achieved through workload mixing (training during idle hours, inference during peaks), job preemption, and tight scheduling. Major improvement metric for cloud-AI ROI calculations.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "CMOS",
     "full": "Complementary Metal-Oxide-Semiconductor",
     "snappy": "Standard transistor technology for nearly all modern logic chips since the 1980s.",
@@ -1732,6 +1760,20 @@
     "category": "Agents",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Cold plate",
+    "full": "",
+    "snappy": "Metal plate with internal coolant channels, mounted directly on top of a chip to remove heat.",
+    "detail": "Modern AI accelerators dissipate 700-1,500W per chip — too much for air cooling. Cold plates with liquid running through them are mounted directly on GPUs, CPUs, HBM stacks, and (in some designs) NVSwitches. Cold-plate quality and mounting precision affect performance: poor contact can cost a percent or two of throughput.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -1863,6 +1905,20 @@
   },
   {
     "letter": "C",
+    "term": "Container",
+    "full": "",
+    "snappy": "Lightweight virtualization — packages an app with all its dependencies into an isolated, portable unit.",
+    "detail": "Docker popularised the format. Modern AI services run as containers because they bring a fixed environment (CUDA version, framework version, Python version) to whatever host machine they land on. Kubernetes orchestrates containers; CRI-O and containerd are common container runtimes underneath.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Software",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Context window",
     "full": "",
     "snappy": "The maximum amount of text a model can hold in mind at once, measured in tokens.",
@@ -1929,6 +1985,20 @@
       "Research"
     ],
     "category": "Architecture",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Coolant distribution unit",
+    "full": "CDU",
+    "snappy": "Heat exchanger that interfaces between the facility's chilled water and the cold plates inside servers.",
+    "detail": "Each rack typically has its own CDU. The facility water loop runs at moderate temperatures; the chip-loop is isolated and runs cooler and cleaner. CDU capacity scales with rack power density — modern AI racks need CDUs sized for 100+ kW of heat removal.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
     "sources": [
       "NVIDIA"
     ]
@@ -2173,6 +2243,34 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Data residency",
+    "full": "",
+    "snappy": "Specifying where a user's data is physically stored — finer-grained than sovereignty.",
+    "detail": "Enterprise customers often require contractual guarantees that their data stays in specific regions (e.g., \"EU-only processing for GDPR compliance\"). Hyperscalers offer region-locked services for this; AI labs increasingly add geographic data-handling commitments. Important compliance and procurement category.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Data sovereignty",
+    "full": "",
+    "snappy": "Legal requirement that data stays within a specific country's borders.",
+    "detail": "Many jurisdictions (EU under GDPR, China, Russia, India for certain data classes) require data to be stored and processed locally. Drives demand for in-country cloud regions and local AI infrastructure. Sovereign-AI initiatives (France's Mistral, UAE's G42, India's various LLM projects) are partly responses to data-sovereignty concerns.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "Mistral"
     ]
   },
   {
@@ -2605,6 +2703,20 @@
     "sources": [
       "Synopsys",
       "Cadence"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Edge computing",
+    "full": "",
+    "snappy": "Running compute close to users or devices instead of in centralised data centers — for low latency or local data sovereignty.",
+    "detail": "AI inference on phones, cars, drones, factory floors, retail. Trades off model capability (smaller models fit on smaller hardware) against latency and privacy. Apple Intelligence's on-device 3B model is a frontier example. Edge AI cuts cloud cost and dependency, supports offline use, and improves response latency.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "Apple"
     ]
   },
   {
@@ -3486,6 +3598,20 @@
   },
   {
     "letter": "G",
+    "term": "Gigawatt",
+    "full": "GW",
+    "snappy": "1,000 megawatts — the scale at which frontier AI compute build-outs are now described.",
+    "detail": "1 GW is enough power for around 800,000 US homes. xAI's Memphis cluster approaches 1 GW; OpenAI/Microsoft/Oracle's Stargate first site targets 1.2 GW; Meta's Mesa facility approaches similar levels. AI is poised to add tens of GW to US peak electricity demand over 2025-2030 — a major utility-grid planning challenge.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "xAI"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "Gigawatt cluster",
     "full": "",
     "snappy": "AI training facility drawing a gigawatt of electrical power — the new unit of frontier-scale compute.",
@@ -3699,6 +3825,20 @@
   },
   {
     "letter": "G",
+    "term": "GPU virtualization",
+    "full": "vGPU",
+    "snappy": "Software splitting one physical GPU into multiple virtual GPUs that can be allocated to different jobs or tenants.",
+    "detail": "NVIDIA AI Enterprise (vGPU) and MIG (Multi-Instance GPU, hardware-level partitioning on A100/H100) are the common approaches. Used heavily in cloud-AI infrastructure to share expensive GPUs across many small workloads. Important for cost efficiency in multi-tenant inference deployments.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Software",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "Gradient",
     "full": "",
     "snappy": "Vector of partial derivatives — points in the direction of steepest increase of a function.",
@@ -3753,6 +3893,20 @@
     "category": "Inference",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Grid interconnection",
+    "full": "",
+    "snappy": "The process of connecting a new large electricity consumer (or generator) to the regional power grid.",
+    "detail": "Interconnection queue times have ballooned across US ISOs (PJM, MISO, ERCOT, CAISO) — sometimes 5-7 years. The combination of AI datacenter demand and renewable build-outs is overloading utilities' planning processes. Resolving the interconnection queue is one of the biggest non-technical constraints on US AI infrastructure growth.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -4445,6 +4599,20 @@
   },
   {
     "letter": "J",
+    "term": "Job scheduler",
+    "full": "",
+    "snappy": "Software that decides which jobs run on which compute nodes, and when.",
+    "detail": "Critical infrastructure for AI training clusters. Slurm is the HPC standard; Kubernetes Job + Volcano are common for cloud-native deployments; bespoke schedulers like OpenAI's used internally for the largest training runs. Good scheduling can mean 10%+ utilization improvement on multi-million-dollar clusters.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Software",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "J",
     "term": "JSON mode",
     "full": "",
     "snappy": "API setting that forces the model to produce output in valid JSON form.",
@@ -4497,6 +4665,20 @@
     "category": "Concepts",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "K",
+    "term": "Kubernetes",
+    "full": "K8s",
+    "snappy": "Container orchestration system — the standard for deploying and managing distributed applications, including AI workloads.",
+    "detail": "Originated at Google. Manages pods (groups of containers), schedules them across a cluster, handles networking, restarts, scaling. Modern AI inference deployments almost universally run on Kubernetes via tools like Kubeflow, KServe, Ray on K8s. Less common for big training runs (which use specialised schedulers) but ubiquitous for serving.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Software",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -5171,6 +5353,20 @@
   },
   {
     "letter": "M",
+    "term": "Megawatt",
+    "full": "MW",
+    "snappy": "Standard unit of data-center capacity — a typical hyperscale facility is 50-200 MW.",
+    "detail": "1 MW powers roughly 800 US homes or one fully-loaded AI training rack with around a dozen GB200-class servers. AI data centers are typically described by their MW capacity rather than rack count or floor area, because power is what binds. AI's compute hunger is reshaping siting decisions toward locations with abundant cheap power.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Memory bandwidth",
     "full": "",
     "snappy": "How fast a chip can move data in and out of its memory — often the real bottleneck on AI workloads.",
@@ -5322,6 +5518,20 @@
     "category": "Models",
     "sources": [
       "Stability AI"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "MIG",
+    "full": "Multi-Instance GPU",
+    "snappy": "NVIDIA hardware feature that partitions a single GPU into several smaller, independent GPUs.",
+    "detail": "Available on A100 (up to 7 instances), H100 (up to 7 instances), and Blackwell. Each MIG instance has dedicated memory, cache, and compute units — true isolation, not just software sharing. Used to serve small inference jobs efficiently on data-center-class GPUs.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -5525,6 +5735,20 @@
     "category": "Architecture",
     "sources": [
       "Vaswani 2017"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Multi-tenancy",
+    "full": "",
+    "snappy": "Hosting workloads from multiple unrelated customers on the same physical hardware.",
+    "detail": "Standard in public clouds. Adds requirements for isolation, security, and fairness. AI workloads have unique multi-tenancy challenges: huge memory footprints, long-running training jobs, GPU compute that's harder to partition than CPU. Most hyperscalers use dedicated nodes for the largest AI tenants.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -5782,6 +6006,21 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "O",
+    "term": "On-device AI",
+    "full": "",
+    "snappy": "Subcase of edge computing — AI running directly on the user's device.",
+    "detail": "Phones (Apple Intelligence, Pixel AI, Galaxy AI), laptops (Copilot+ PCs), AR headsets. Driven partly by privacy concerns, partly by the cost of always-cloud inference. NPUs designed for this use case ship in nearly every modern consumer device. The on-device model in 2025 is typically 2-8B parameters, quantised.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "Apple",
+      "Qualcomm"
     ]
   },
   {
@@ -6254,6 +6493,34 @@
   },
   {
     "letter": "P",
+    "term": "Power Distribution Unit",
+    "full": "PDU",
+    "snappy": "Rack-level component that distributes power from the facility's main feeds to individual servers.",
+    "detail": "Smart PDUs include monitoring, remote-control, and metering features useful for operating AI clusters. Higher-density AI racks need PDUs rated for higher amperage and higher voltage (often 415V or 600V three-phase) than traditional servers required.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Power Purchase Agreement",
+    "full": "PPA",
+    "snappy": "Long-term contract to buy electricity at a fixed price from a specific generator — often a renewable project.",
+    "detail": "Hyperscalers (Google, Microsoft, Amazon, Meta) sign massive PPAs to lock in low-cost, low-emissions power for their data centers. Microsoft's 20-year PPA with Constellation to restart Three Mile Island Unit 1 for AI compute is a notable recent example. PPAs are how AI capex feeds back into utility-scale energy investment.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Power-seeking",
     "full": "",
     "snappy": "Tendency of capable agents to acquire resources, capabilities, and influence as instrumental goals.",
@@ -6556,6 +6823,20 @@
   },
   {
     "letter": "R",
+    "term": "Rack power density",
+    "full": "",
+    "snappy": "How much electrical power is drawn by one rack — measured in kilowatts.",
+    "detail": "Pre-AI racks: 5-15 kW. Modern AI racks: 30-50 kW air-cooled, 80-130 kW liquid-cooled. NVIDIA's NVL72 rack draws ~120 kW. Higher density means more compute per square foot but pushes harder against cooling, power-delivery, and floor-loading constraints. Reshapes data-center design beyond just \"more GPUs\".",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "RAG",
     "full": "Retrieval-Augmented Generation",
     "snappy": "Pattern where a model is given relevant documents retrieved from a database before generating its response.",
@@ -6768,6 +7049,20 @@
     "category": "Concepts",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Renewable energy",
+    "full": "",
+    "snappy": "Wind, solar, hydro, geothermal — the dominant near-term path to low-carbon AI compute.",
+    "detail": "Hyperscalers report \"100% renewable\" via PPAs even when their grid mix includes fossil fuels (the renewable energy is bought and traded). 24/7 hourly-matched renewable energy is the harder, more honest goal that Google and Microsoft are now pursuing. Carbon-free baseload (nuclear, geothermal) is increasingly favored as renewables alone can't match AI's constant load.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -7406,6 +7701,34 @@
   },
   {
     "letter": "S",
+    "term": "Slurm",
+    "full": "",
+    "snappy": "Workload manager that schedules jobs across large compute clusters — the standard for AI training.",
+    "detail": "Originally for HPC supercomputers. Most academic and many industry AI clusters run on Slurm. Users submit jobs (e.g., \"train this model on 256 nodes for 10 days\") and Slurm queues, schedules, and isolates them. Foundation of cluster operations for large-scale ML.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Software",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Small modular reactor",
+    "full": "SMR",
+    "snappy": "Compact nuclear reactor — designed to be factory-built and deployed in modular units.",
+    "detail": "Promised but not yet at commercial scale. Microsoft, Google, Amazon, and Meta have all signed agreements for future SMR-based power. Long-term bet: nuclear provides the baseload of carbon-free electricity that hyperscale AI needs. Construction timelines remain the binding constraint; first US-deployed SMRs expected 2030-ish.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Snapdragon X",
     "full": "",
     "snappy": "Qualcomm's laptop-class chip with a strong NPU — the engine behind Microsoft Copilot+ PCs.",
@@ -7699,6 +8022,20 @@
     "category": "Concepts",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Substation",
+    "full": "",
+    "snappy": "Electrical facility that steps grid-scale voltage down to what a data center can use.",
+    "detail": "AI data centers need their own dedicated substations — sometimes multiple per site for redundancy. Substation construction is a major bottleneck for new AI infrastructure: utilities and transmission system operators have queues of years in some regions. Site selection increasingly driven by existing substation availability.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -8541,6 +8878,20 @@
     "category": "Concepts",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "U",
+    "term": "UPS",
+    "full": "Uninterruptible Power Supply",
+    "snappy": "Battery system that keeps servers running during grid outages until generators can take over.",
+    "detail": "Datacenter UPS systems are room-sized arrays of batteries — increasingly lithium-ion replacing older lead-acid. Sized to cover 5-15 minutes of full-facility load. Generators take over for longer outages. AI training jobs are particularly painful to lose to power events: checkpoints help recover, but you lose the partial work.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
