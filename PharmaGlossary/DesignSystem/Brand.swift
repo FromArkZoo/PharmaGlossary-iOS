@@ -34,6 +34,10 @@ struct Brand {
     let basicsSubtitle: String
     let policyConfig: PolicyConfig
 
+    /// Optional editorial tint for chip-count text on selected chips. When nil,
+    /// PGColors.accentTint derives from primaryColor.lightened(by: 0.40).
+    let accentTint: Color?
+
     static let current = pharmaBrand
 }
 
@@ -47,8 +51,8 @@ let pharmaBrand = Brand(
     tagline: nil,
     entryNoun: "entries",
     dataResource: "glossary",
-    primaryColor: PGColors.accent,
-    primaryDarkColor: PGColors.accentDark,
+    primaryColor: Color(red: 0.545, green: 0.180, blue: 0.122),       // #8B2E1F oxblood
+    primaryDarkColor: Color(red: 0.467, green: 0.137, blue: 0.094),   // deeper oxblood
     bgColor: PGColors.bg,
     urlScheme: "pharma",
     aboutParagraphs: [
@@ -107,5 +111,6 @@ let pharmaBrand = Brand(
         subtitle: "Regulation, pricing, access",
         categories: ["Regulatory", "Commercial / Market Access"],
         excludedTerms: ["MSL", "Loss of Exclusivity", "Patent Cliff", "NCI", "HEOR", "Gross-to-Net", "Phase 4"]
-    )
+    ),
+    accentTint: Color(red: 0.784, green: 0.714, blue: 0.541)           // #C8B68A editorial complement
 )
