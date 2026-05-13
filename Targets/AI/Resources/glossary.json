@@ -1337,6 +1337,20 @@
   },
   {
     "letter": "B",
+    "term": "BitNet",
+    "full": "1-bit LLM",
+    "snappy": "Microsoft research on training LLMs with 1-bit (ternary) weights — extreme quantization integrated into training.",
+    "detail": "BitNet b1.58 (2024) trains LLMs where each weight is -1, 0, or 1. Inference is much cheaper and faster than full-precision; quality reportedly matches FP16 at the same parameter count. Active research direction; not yet deployed at frontier scale but conceptually significant.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "Bits per byte",
     "full": "BPB",
     "snappy": "Information-density measure for language models — how many bits the model needs to encode each byte of text.",
@@ -1530,6 +1544,20 @@
       "Safety"
     ],
     "category": "Concepts",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Capability evaluation",
+    "full": "",
+    "snappy": "Specific testing protocols designed to detect dangerous capabilities — biosecurity, cyber, autonomous replication, etc.",
+    "detail": "Run by responsible-scaling-policy regimes before model releases. Examples: tests for whether a model can synthesise novel pathogens, write convincing phishing campaigns at scale, or take self-preserving actions in a sandboxed environment. UK AISI and US AISI conduct independent evaluations; labs do internal evaluations.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
     "sources": [
       "Anthropic"
     ]
@@ -2043,6 +2071,20 @@
     "sources": [
       "Anthropic",
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Continual learning",
+    "full": "Continual pretraining",
+    "snappy": "Training an already-trained model on new data — extending its knowledge, language coverage, or skills.",
+    "detail": "Used to update a base model with newer web data, add a new language, or extend domain coverage. Risks catastrophic forgetting of original capabilities; mitigated by mixing in some original training data. Practical importance: full retraining of frontier models is prohibitive, so labs continually post-train instead.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Training",
+    "sources": [
+      "Meta AI / FAIR"
     ]
   },
   {
@@ -2700,6 +2742,20 @@
   },
   {
     "letter": "D",
+    "term": "Differential privacy",
+    "full": "DP",
+    "snappy": "Mathematical guarantee that a model's outputs don't reveal too much about any single training example.",
+    "detail": "Achieved by adding calibrated noise during training. Apple uses it heavily for on-device telemetry. Important for AI training on sensitive data (medical, financial). Trade-off: stronger privacy guarantees mean worse model performance. Implemented in PyTorch via Opacus.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Apple"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "Diffusion model",
     "full": "",
     "snappy": "Generative model that learns to turn random static into a real-looking image by removing noise step by step.",
@@ -3352,6 +3408,22 @@
   },
   {
     "letter": "F",
+    "term": "Federated learning",
+    "full": "",
+    "snappy": "Training scheme where models train on data that stays on user devices — only weight updates are sent to the server.",
+    "detail": "Google's Gboard keyboard learns from typing across many phones without uploading the text. Apple Intelligence uses similar techniques for on-device personalisation. Privacy-preserving alternative to centralised training. Limited by network bandwidth and device-side compute; useful for narrow scenarios more than frontier-scale training.",
+    "indications": [
+      "Safety",
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind",
+      "Apple"
+    ]
+  },
+  {
+    "letter": "F",
     "term": "Few-shot prompting",
     "full": "",
     "snappy": "Giving a model a handful of examples in the prompt so it can pattern-match to the desired behaviour.",
@@ -3434,6 +3506,20 @@
     "category": "Software",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "FlashAttention 3",
+    "full": "",
+    "snappy": "Latest version of FlashAttention — uses Hopper-architecture-specific features for further speedup.",
+    "detail": "Released 2024 alongside H100/H200 optimisations. Uses async hardware features and FP8 precision. Roughly 2× faster than FlashAttention 2 on H100. Mainline support in PyTorch and most major inference frameworks. The standard kernel for production LLM serving on Hopper-class hardware.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Software",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -4093,6 +4179,21 @@
   },
   {
     "letter": "G",
+    "term": "GQA",
+    "full": "Grouped-Query Attention",
+    "snappy": "Attention variant — multiple query heads share the same key and value heads. Cheaper than full multi-head, better than multi-query.",
+    "detail": "Used in Llama 2/3, Mistral, and most modern LLMs. The trade-off: 4-8 query heads per key/value group instead of all separate. Reduces KV cache memory by 4-8× without much quality loss. Has become the default attention design in production LLMs.",
+    "indications": [
+      "Inference",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "Gradient",
     "full": "",
     "snappy": "Vector of partial derivatives — points in the direction of steepest increase of a function.",
@@ -4104,6 +4205,20 @@
     "category": "Concepts",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Gradient accumulation",
+    "full": "",
+    "snappy": "Effective-batch trick — accumulate gradients over several micro-batches before applying an optimiser update.",
+    "detail": "Lets you train with effective batch sizes larger than fit in GPU memory. Essential for huge models on limited hardware. Pairs naturally with mixed-precision and FSDP/ZeRO. The downside: takes longer wall-clock time per effective step compared to actually running a big batch.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Training",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -4403,6 +4518,20 @@
     "category": "Manufacturing",
     "sources": [
       "ASML"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "Hugging Face Hub",
+    "full": "",
+    "snappy": "Repository hosting service for models, datasets, and demo apps — the GitHub of open-source AI.",
+    "detail": "Over 1 million models hosted as of 2025. Defaults for downloading model weights, sharing fine-tunes, hosting Spaces (Gradio demos). Major hub for the open-source AI community. Hugging Face Inc. monetises via enterprise hosting, training services, and commercial licensing of certain artefacts.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Software",
+    "sources": [
+      "Hugging Face"
     ]
   },
   {
@@ -5208,6 +5337,20 @@
   },
   {
     "letter": "L",
+    "term": "Linear attention",
+    "full": "",
+    "snappy": "Attention reformulated to scale linearly with sequence length rather than quadratically.",
+    "detail": "Mathematical reformulations of standard attention (Performer, Linear Transformer) lose some expressiveness but enable very long contexts. State-space models (Mamba) are sometimes considered linear-attention variants. Has not displaced standard attention in mainstream LLMs but is the foundation of long-context alternatives.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "Linear regression",
     "full": "",
     "snappy": "The simplest supervised learning model — fit a line (or hyperplane) through data points.",
@@ -5663,6 +5806,21 @@
   },
   {
     "letter": "M",
+    "term": "Mechanistic feature steering",
+    "full": "Feature steering",
+    "snappy": "Editing a model's behaviour by adjusting the activation of specific interpretable features identified via sparse autoencoders.",
+    "detail": "Demonstrated by Anthropic with \"Golden Gate Claude\" (2024): clamp the Golden Gate Bridge feature high and the model becomes obsessed with the bridge. Bridges mechanistic interpretability and model control. Early but potentially transformative — alignment via direct intervention rather than retraining.",
+    "indications": [
+      "Safety",
+      "Research"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Mechanistic interpretability",
     "full": "Mech interp",
     "snappy": "Reverse-engineering what's happening inside a neural network — understanding which circuits do which jobs.",
@@ -5932,6 +6090,20 @@
   },
   {
     "letter": "M",
+    "term": "Mixture of depths",
+    "full": "MoD",
+    "snappy": "Architecture where some tokens skip layers based on a learned router — variable compute per token.",
+    "detail": "Released by DeepMind 2024. Each layer has a router that decides which tokens get processed and which pass through unchanged. Saves compute on tokens that don't need full depth. Conceptually related to MoE but at the layer level rather than the parameter level. Research direction more than production-ready technique today.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Mixture of Experts",
     "full": "MoE",
     "snappy": "Architecture that splits a model into many sub-networks and only activates a few of them for each input.",
@@ -6007,6 +6179,20 @@
   },
   {
     "letter": "M",
+    "term": "Model merging",
+    "full": "",
+    "snappy": "Combining the weights of multiple fine-tuned models into one — a cheap way to get capabilities from multiple specialised models.",
+    "detail": "Methods: simple averaging, TIES (Task Interference Elimination), DARE (Drop And REscale), SLERP (spherical linear interpolation). Common in the open-source ecosystem where many specialised fine-tunes exist. Surprisingly effective for combining \"a math model and a chat model\" without retraining.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Hugging Face"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Moonshot AI",
     "full": "",
     "snappy": "Chinese AI startup behind the Kimi chat product — known for early long-context support.",
@@ -6031,6 +6217,20 @@
     "category": "Concepts",
     "sources": [
       "Intel"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "MQA",
+    "full": "Multi-Query Attention",
+    "snappy": "Extreme variant of GQA — all query heads share a single key and value head.",
+    "detail": "Smaller KV cache than GQA (single key/value head instead of several), but with more quality loss. Used in some inference-optimised models. Sister technique to GQA: same idea, different point on the speed/quality trade-off curve.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -6533,6 +6733,20 @@
   },
   {
     "letter": "O",
+    "term": "Optimizer state sharding",
+    "full": "",
+    "snappy": "Distributing optimiser state (momentum, variance estimates) across GPUs to save memory.",
+    "detail": "AdamW state takes 2× the memory of the model weights themselves. Sharding optimiser state across many GPUs (ZeRO-1, FSDP) is one of the easiest ways to fit huge models in memory. Subsequent stages (ZeRO-2, ZeRO-3) shard gradients and parameters too.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Training",
+    "sources": [
+      "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "O",
     "term": "Optimus",
     "full": "Tesla Optimus",
     "snappy": "Tesla's humanoid robot project — Elon Musk's bet that a general-purpose robot will eventually outsell cars.",
@@ -6642,6 +6856,20 @@
     "category": "Concepts",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Pause AI",
+    "full": "Pause development debate",
+    "snappy": "Public proposals — most notably the Future of Life Institute open letter (March 2023) — for a moratorium on training frontier AI beyond GPT-4 level.",
+    "detail": "Signed by Yoshua Bengio, Elon Musk, Steve Wozniak, and 30,000+ others. Triggered intense public debate about AI risk. No moratorium occurred; frontier training continued. Helped catalyse the AI Safety Institute movement and regulatory attention. \"Pause vs. accelerate\" remains a defining axis of AI public discourse.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -7247,6 +7475,21 @@
   },
   {
     "letter": "Q",
+    "term": "Quantization-aware training",
+    "full": "QAT",
+    "snappy": "Training a model with simulated quantization in the forward pass — produces better-quality quantised models than post-training quantization.",
+    "detail": "Standard post-training quantization can lose 1-3% quality on hard tasks. QAT closes much of that gap by exposing the model to quantization noise during training. Used heavily in production deployments where every percentage of capability matters. More compute-expensive but worth it for high-stakes inference.",
+    "indications": [
+      "Training",
+      "Inference"
+    ],
+    "category": "Training",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "Q",
     "term": "Qwen",
     "full": "",
     "snappy": "Alibaba's model family — the main open-weight contender from China alongside DeepSeek.",
@@ -7692,6 +7935,20 @@
   },
   {
     "letter": "R",
+    "term": "Ring attention",
+    "full": "",
+    "snappy": "Distributed attention algorithm that handles very long contexts by splitting them across many GPUs in a ring.",
+    "detail": "Each GPU holds a chunk of the sequence; chunks rotate around the ring so every chunk attends to every other. Enables million-plus token contexts on standard hardware. Used by Gemini 1.5 Pro for its 1-2M context length.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "RLAIF",
     "full": "Reinforcement Learning from AI Feedback",
     "snappy": "RLHF variant where AI judges, not humans, score model outputs — much cheaper, almost as good.",
@@ -7762,6 +8019,20 @@
     "category": "Hardware",
     "sources": [
       "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "RoPE scaling",
+    "full": "",
+    "snappy": "Techniques for extending a model's effective context length past what it was originally trained on.",
+    "detail": "Modifications to rotary positional encoding that let a model trained on 4K context handle 32K+ at inference. Methods include linear scaling, NTK-aware scaling, YaRN, dynamic scaling. Standard pattern for many open-source long-context fine-tunes (Llama-32K, Mistral-32K). Has cost: longer contexts than training degrade quality somewhat.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Meta AI / FAIR"
     ]
   },
   {
@@ -8239,6 +8510,20 @@
   },
   {
     "letter": "S",
+    "term": "Sliding window attention",
+    "full": "",
+    "snappy": "Attention restricted to a fixed-size window of recent tokens — bounds memory cost at long context lengths.",
+    "detail": "Mistral 7B was an early high-profile user (4,096-token window). Each token attends only to the previous N tokens, not the entire context. Trade-off: predictable memory and compute regardless of context length, but limited ability to use distant context. Often combined with full attention in alternating layers.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Mistral"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Slurm",
     "full": "",
     "snappy": "Workload manager that schedules jobs across large compute clusters — the standard for AI training.",
@@ -8419,6 +8704,20 @@
     "category": "Inference",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Speculative streaming",
+    "full": "",
+    "snappy": "Generating multiple draft sequences in parallel and committing the verified prefix — variant of speculative decoding.",
+    "detail": "More aggressive than basic speculative decoding: instead of just one draft sequence, multiple are generated simultaneously and the verifier picks the longest matching prefix. Used in some production systems to push latency reductions further. Active area of inference-engine research.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Inference",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -8936,6 +9235,20 @@
   },
   {
     "letter": "T",
+    "term": "Test-time training",
+    "full": "TTT",
+    "snappy": "Updating a model's parameters at inference time based on the current input — a research direction that blurs training/inference.",
+    "detail": "Released as a generalisation of state-space models. Each token effectively does a small gradient step on its predecessors. Promising for very long contexts and on-the-fly adaptation. Not yet mainstream in frontier deployment but gaining attention in 2024-2025 research.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Text-to-image",
     "full": "T2I",
     "snappy": "Generative AI that produces images from a text prompt — the killer demo of the 2022-2024 generative wave.",
@@ -9031,6 +9344,20 @@
     "category": "Inference",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "TIES merging",
+    "full": "",
+    "snappy": "Specific model-merging technique — trims small parameter changes and elects signs by majority vote before merging.",
+    "detail": "Released 2023. Handles the interference problem where multiple fine-tunes pull weights in conflicting directions. More robust than naive averaging. Common building block in modern merging pipelines, often combined with DARE.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Hugging Face"
     ]
   },
   {
@@ -9831,6 +10158,21 @@
   },
   {
     "letter": "W",
+    "term": "Weights & Biases",
+    "full": "W&B",
+    "snappy": "Experiment-tracking platform widely used by ML researchers — log metrics, compare runs, share results.",
+    "detail": "Standard tool for keeping track of training runs. Logs everything: loss curves, hyperparameters, gradients, GPU utilization, sample outputs. Used by most major AI labs. Acquired by CoreWeave in 2025 for its complementary role in the AI infrastructure stack.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Software",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "W",
     "term": "Wet lab",
     "full": "",
     "snappy": "Traditional experimental science — physical experiments, as opposed to computational (\"dry lab\") work.",
@@ -9954,6 +10296,20 @@
     "category": "Company",
     "sources": [
       "xAI"
+    ]
+  },
+  {
+    "letter": "Y",
+    "term": "YaRN",
+    "full": "Yet another RoPE extensioN",
+    "snappy": "Specific RoPE-extension technique that performs well at very long contexts with minimal additional training.",
+    "detail": "Released 2023 by Nous Research. Combines NTK-aware scaling with a few other tricks. Popular in the open-source long-context community. Used to extend models like Mistral and Llama to 32-128K contexts without full retraining.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "EleutherAI"
     ]
   },
   {
