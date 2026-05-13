@@ -874,6 +874,20 @@
   },
   {
     "letter": "C",
+    "term": "CMOS",
+    "full": "Complementary Metal-Oxide-Semiconductor",
+    "snappy": "Standard transistor technology for nearly all modern logic chips since the 1980s.",
+    "detail": "Combines n-type and p-type transistors so that only one is conducting at a time, keeping idle power low. CMOS is what made battery-powered computing practical. Every modern CPU, GPU, and AI accelerator is built from billions of CMOS transistors.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Code interpreter",
     "full": "",
     "snappy": "Tool that lets an LLM execute Python (or other code) in a sandbox to compute things, plot graphs, manipulate files.",
@@ -1303,6 +1317,20 @@
   },
   {
     "letter": "D",
+    "term": "Dennard scaling",
+    "full": "",
+    "snappy": "Earlier rule of thumb that said as transistors got smaller, they also got proportionally faster and more power-efficient.",
+    "detail": "Held from the 1970s until about 2005. Then voltage stopped scaling down with size, so each shrink no longer gave the same power benefit. End of Dennard scaling is why CPU clock speeds plateaued around 4 GHz and why the industry shifted to multi-core and specialised accelerators.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Intel"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "DGX",
     "full": "NVIDIA DGX",
     "snappy": "NVIDIA's pre-built AI server systems — racks of GPUs with networking and storage included.",
@@ -1313,6 +1341,20 @@
     "category": "Hardware",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Die",
+    "full": "",
+    "snappy": "An individual chip — the rectangular piece you get when a finished wafer is cut into pieces.",
+    "detail": "An H100 die is about 814 mm² (huge — limited by the reticle size of the lithography equipment). A consumer mobile SoC die is around 100 mm². Larger dies cost more (fewer per wafer, lower yield) but enable bigger, more powerful chips. Advanced packaging (CoWoS, chiplets) lets multiple dies act as one.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
     ]
   },
   {
@@ -1377,6 +1419,20 @@
   },
   {
     "letter": "D",
+    "term": "Doping",
+    "full": "",
+    "snappy": "Implanting specific atoms (boron, phosphorus, arsenic) into silicon to change its electrical properties.",
+    "detail": "Pure silicon doesn't conduct well. Doping converts regions into n-type (extra electrons) or p-type (electron holes), creating the contrast needed for a working transistor. Ion implantation machines accelerate dopant ions and embed them in patterned regions of the wafer. One of the central process steps every chip goes through.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "Double descent",
     "full": "",
     "snappy": "Counterintuitive phenomenon: a model's test error decreases, then increases, then decreases again as you scale up.",
@@ -1435,6 +1491,20 @@
     ]
   },
   {
+    "letter": "D",
+    "term": "DUV",
+    "full": "Deep Ultraviolet lithography",
+    "snappy": "Earlier-generation lithography using 193nm wavelength light — used for older process nodes and most non-leading-edge production.",
+    "detail": "DUV machines from ASML, Nikon, and Canon are still the workhorses of most chip manufacturing. Chinese fabs (notably SMIC) have demonstrated production of 7nm-class chips using DUV with multi-pass patterning, although less efficiently than with EUV. China's ability to push DUV further is one of the more contested questions in chip-supply geopolitics.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "ASML"
+    ]
+  },
+  {
     "letter": "E",
     "term": "ECC",
     "full": "Error-Correcting Code memory",
@@ -1446,6 +1516,21 @@
     "category": "Memory",
     "sources": [
       "Samsung"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "EDA",
+    "full": "Electronic Design Automation",
+    "snappy": "Software used to design, simulate, and verify chips — Synopsys, Cadence, and Siemens EDA dominate.",
+    "detail": "Modern chip design is impossible without EDA. RTL synthesis turns code (Verilog, VHDL) into gates; place-and-route arranges gates physically; timing analysis verifies the chip will work at target speeds. The EDA industry is a small handful of huge companies; their tools are export-controlled and licence-restricted.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Software",
+    "sources": [
+      "Synopsys",
+      "Cadence"
     ]
   },
   {
@@ -1597,6 +1682,20 @@
   },
   {
     "letter": "E",
+    "term": "Etching",
+    "full": "",
+    "snappy": "Process step that removes silicon, metal, or oxide from a wafer after lithography exposes which regions to remove.",
+    "detail": "Two main forms: wet etching (chemical bath) for less precise removal, dry etching (plasma) for precise patterning. Modern leading-edge chips use plasma etching for nearly every layer. Lam Research and Applied Materials make most of the world's etching equipment.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "E",
     "term": "Ethernet",
     "full": "",
     "snappy": "The universal networking standard — now scaling fast enough to compete with InfiniBand for AI.",
@@ -1607,6 +1706,20 @@
     "category": "Interconnect",
     "sources": [
       "Intel"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "EUV",
+    "full": "Extreme Ultraviolet lithography",
+    "snappy": "Light source at 13.5 nanometre wavelength — required for printing modern chip features below ~7nm.",
+    "detail": "EUV is exclusively made by ASML. Each machine costs $200-400M+, weighs 180 tonnes, and uses tin droplets blasted with high-power lasers to generate the EUV light. Without EUV, modern chips don't exist. Subject to export controls preventing sale to China since 2019. ASML's EUV monopoly makes it one of the most geopolitically important companies in the world.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "ASML"
     ]
   },
   {
@@ -1683,6 +1796,20 @@
   },
   {
     "letter": "F",
+    "term": "Fab",
+    "full": "Fabrication facility",
+    "snappy": "Factory that manufactures semiconductors — multi-billion-dollar buildings full of vacuum chambers, lithography machines, and ultra-clean rooms.",
+    "detail": "A leading-edge fab costs $20-30B to build and another $10B+ to equip. TSMC operates the most advanced. Other major leading-edge fabs are Samsung (Korea), Intel (US), SMIC (China). Fab capacity is the binding physical constraint on the AI compute supply chain — TSMC is currently fully booked for the most advanced nodes through 2026-2027.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "F",
     "term": "Feature",
     "full": "Interpretability feature",
     "snappy": "A learned direction in a model's internal representation that corresponds to a recognisable concept.",
@@ -1713,6 +1840,20 @@
   },
   {
     "letter": "F",
+    "term": "FinFET",
+    "full": "Fin Field-Effect Transistor",
+    "snappy": "Transistor design used in chips from roughly 22nm through 5nm — vertical 'fin' shape gives the gate more control.",
+    "detail": "Introduced by Intel in 2011 as part of their 22nm node. Adopted across the industry. The vertical fin lets the gate wrap around three sides of the channel, reducing current leakage as transistors shrink. Replaced flat \"planar\" transistors as scaling continued.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "Intel"
+    ]
+  },
+  {
+    "letter": "F",
     "term": "FlashAttention",
     "full": "",
     "snappy": "Algorithm and kernel that makes attention computation memory-efficient on GPUs.",
@@ -1738,6 +1879,20 @@
     "category": "Models",
     "sources": [
       "Stability AI"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Foundry",
+    "full": "",
+    "snappy": "Chip-manufacturing service business — companies that don't design their own chips but make them for others.",
+    "detail": "TSMC, Samsung Foundry, GlobalFoundries, and SMIC are the major foundries. The foundry model (manufacturing-as-a-service) enabled the modern fabless industry: NVIDIA, AMD, Apple, Qualcomm all design chips but don't operate fabs. Intel historically was integrated (designs + manufactures) but is opening up to foundry customers.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
     ]
   },
   {
@@ -1853,6 +2008,20 @@
     "category": "Agents",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GAA",
+    "full": "Gate-All-Around transistor",
+    "snappy": "Successor to FinFET — the gate fully surrounds the transistor channel, giving better control as features shrink.",
+    "detail": "Samsung was first to ship GAA in production (3nm, 2022). TSMC's 2nm is GAA-based. Intel's 18A uses RibbonFET, their term for GAA. The transition from FinFET to GAA is the major architectural shift powering chip scaling through the late 2020s.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "Samsung"
     ]
   },
   {
@@ -2386,6 +2555,20 @@
   },
   {
     "letter": "H",
+    "term": "High-NA EUV",
+    "full": "",
+    "snappy": "Next-generation EUV lithography with a larger numerical aperture — required for the most aggressive future nodes.",
+    "detail": "ASML's High-NA EUV machines cost roughly $380M each, weigh more, and need a special clean-room footprint. Intel was the first customer; TSMC ordered subsequent units. Required for 2nm and beyond. The technology shift creates a few-year window where High-NA-equipped fabs gain a process-leadership edge.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "ASML"
+    ]
+  },
+  {
+    "letter": "H",
     "term": "HumanEval",
     "full": "",
     "snappy": "OpenAI's coding benchmark — 164 small Python programming problems, judged by automatic tests.",
@@ -2731,6 +2914,20 @@
   },
   {
     "letter": "K",
+    "term": "Koomey's law",
+    "full": "",
+    "snappy": "Observation that computing's energy efficiency roughly doubled every 1.5-2 years for decades.",
+    "detail": "Named after Stanford's Jonathan Koomey. Distinct from Moore's law: even if you couldn't fit more transistors, you could get more compute per watt. Has continued holding longer than Moore's transistor-density doubling and is a key reason AI workloads are practical at the scale they are.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "K",
     "term": "KV cache",
     "full": "Key-Value cache",
     "snappy": "Memory of past computation that lets a language model generate each new token without redoing work for old ones.",
@@ -2875,6 +3072,20 @@
   },
   {
     "letter": "L",
+    "term": "Lithography",
+    "full": "",
+    "snappy": "Process of printing circuit patterns onto a wafer using light — the central technology of chip manufacturing.",
+    "detail": "A photomask carries the pattern; light shines through it onto a photoresist-coated wafer; exposed photoresist is chemically removed, exposing the silicon below for etching or doping. Repeat 50-80 times per chip with different masks for different layers. Each generation of lithography shrinks the feature size further. ASML makes the machines that do this at the leading edge.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "ASML"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "Llama",
     "full": "Llama",
     "snappy": "Meta's open-weight model family — the foundation of most open-source AI work in 2023-2025.",
@@ -2941,6 +3152,20 @@
     "category": "Eval",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Logic gate",
+    "full": "",
+    "snappy": "Combination of transistors that implements a basic boolean function — AND, OR, NOT, NAND, etc.",
+    "detail": "All digital computation is built from logic gates. Modern chips use millions to billions of them, arranged into ever-larger circuits: full adders, registers, ALUs, cores. \"Standard cell\" libraries provided by EDA tools give designers pre-laid-out versions of common gates, dramatically simplifying chip design.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Cadence"
     ]
   },
   {
@@ -3477,6 +3702,20 @@
   },
   {
     "letter": "M",
+    "term": "Moore's law",
+    "full": "",
+    "snappy": "Observation by Intel co-founder Gordon Moore (1965) that transistor counts on a chip double roughly every two years.",
+    "detail": "Held remarkably for 50+ years through aggressive process scaling. Slowing now — transistor density still increases but the cost per transistor isn't dropping as fast, and progression to each new node is harder and more expensive. AI workloads are now scaling through chip architecture and packaging tricks (chiplets, advanced packaging) as much as through transistor density.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Intel"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Multi-agent system",
     "full": "",
     "snappy": "Multiple AI agents working together — each with a specialised role or model — instead of one monolithic agent.",
@@ -3933,6 +4172,34 @@
   },
   {
     "letter": "P",
+    "term": "Photomask",
+    "full": "",
+    "snappy": "Glass-and-chrome stencil that defines the pattern projected onto a wafer during lithography.",
+    "detail": "A modern photomask set for an advanced chip contains dozens of masks and costs $10-30M+ to produce. The pattern on each mask is itself printed using e-beam lithography. The marginal cost of running another wafer through the same mask is low; the up-front mask cost is one reason small-volume chip designs are economically painful.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Photoresist",
+    "full": "",
+    "snappy": "Light-sensitive chemical coated on a wafer before lithography — the medium that captures the pattern.",
+    "detail": "Exposed parts of the resist change solubility and are then chemically dissolved (or kept, depending on positive vs negative resist). Modern EUV photoresists are exotic specialty chemicals; the small number of suppliers (JSR, Tokyo Ohka, Shin-Etsu) is itself a supply-chain bottleneck. Subject to Japan's chemicals expertise.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Pipeline parallelism",
     "full": "",
     "snappy": "Splitting a model's layers across multiple GPUs — different GPUs hold different layers, examples flow through like an assembly line.",
@@ -4047,6 +4314,20 @@
     "category": "Training",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Process node",
+    "full": "",
+    "snappy": "Marketing name for a chip-manufacturing generation — 7nm, 5nm, 3nm, 2nm, etc.",
+    "detail": "The numbers no longer correspond directly to physical feature sizes; they're more like generational labels. \"3nm\" actually involves features tens of nanometres across. Different foundries' nodes with the same name aren't directly comparable (TSMC 3nm ≠ Samsung 3nm ≠ Intel 3). Useful as relative shorthand for \"this generation vs. last generation\".",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
     ]
   },
   {
@@ -4918,6 +5199,20 @@
   },
   {
     "letter": "S",
+    "term": "Standard cell",
+    "full": "",
+    "snappy": "Pre-designed building block of a chip — a small layout that implements one logical function (a gate, a flip-flop, etc.).",
+    "detail": "Modern chips are assembled from libraries of thousands of standard cells, each carefully laid out and characterised for a specific process node. EDA tools (Synopsys, Cadence) use these libraries to translate a chip designer's high-level RTL code into a physical layout. Reusing standard cells massively shortens design time.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Synopsys"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Stargate",
     "full": "",
     "snappy": "OpenAI / Microsoft / Oracle / SoftBank consortium building a multi-hundred-billion-dollar AI compute build-out.",
@@ -5000,6 +5295,20 @@
     "category": "Alignment",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Tape-out",
+    "full": "",
+    "snappy": "The moment a chip design is finalised and sent to the fab for manufacturing.",
+    "detail": "Historically came on magnetic tape, hence the name. Modern tape-outs are digital data sent electronically to TSMC or Samsung. After tape-out, no design changes are possible — the photomasks are made from the tape-out data and any change requires new masks ($10M+) and a new fab run (weeks to months). Tape-out is the major milestone in every chip program.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
     ]
   },
   {
@@ -5389,6 +5698,20 @@
   },
   {
     "letter": "T",
+    "term": "Transistor",
+    "full": "",
+    "snappy": "The basic electronic switch — billions of them are wired together to make every modern computer chip.",
+    "detail": "Invented at Bell Labs in 1947. Modern silicon transistors are smaller than 50 nanometres and switch on and off billions of times per second. An H100 GPU has 80 billion transistors. As they shrink, they become harder to control (quantum effects, leakage currents), which is why so much R&D goes into new transistor structures like FinFET and GAA.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Tree of Thoughts",
     "full": "ToT",
     "snappy": "Reasoning approach where the model explores multiple branches of thought and prunes dead ends.",
@@ -5661,6 +5984,20 @@
   },
   {
     "letter": "W",
+    "term": "Wafer",
+    "full": "",
+    "snappy": "Thin disc of polished silicon, typically 300mm in diameter — the raw substrate every chip is made on.",
+    "detail": "A 300mm wafer can hold hundreds of small chips or a few large ones. Multiple layers of circuit features are printed onto the wafer through dozens of steps. When the process completes, the wafer is diced into individual chips. Wafer cost ranges from a few hundred dollars for trailing-edge nodes to $20,000+ for leading-edge 2nm.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "W",
     "term": "Wafer-scale engine",
     "full": "",
     "snappy": "An accelerator that's a single chip the size of an entire silicon wafer — Cerebras's distinctive design.",
@@ -5742,6 +6079,20 @@
     "category": "Company",
     "sources": [
       "xAI"
+    ]
+  },
+  {
+    "letter": "Y",
+    "term": "Yield",
+    "full": "",
+    "snappy": "Percentage of chips on a wafer that are good after manufacturing — affected by defects, manufacturing precision, and design choices.",
+    "detail": "Yield matters enormously for economics. A modern process at maturity might yield 70-90% on small dies but much less on huge dies (the H100 die is so large that yield is a major contributor to its cost). New process nodes typically launch with sub-50% yield, climbing as the process matures. TSMC's yield management is a major competitive advantage.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Manufacturing",
+    "sources": [
+      "TSMC"
     ]
   },
   {
