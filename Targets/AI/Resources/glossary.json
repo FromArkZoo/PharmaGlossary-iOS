@@ -938,6 +938,21 @@
   },
   {
     "letter": "B",
+    "term": "Behaviour cloning",
+    "full": "BC",
+    "snappy": "Simplest form of imitation learning — supervised learning to predict expert actions from expert observations.",
+    "detail": "Train on (state, expert-action) pairs as if it were a classification problem. Brittle because errors compound: once the agent drifts off the expert trajectory, it's in states no expert ever saw. Often combined with other methods (DAgger, RL fine-tuning) to handle the distribution-shift problem.",
+    "indications": [
+      "Robotics",
+      "RL"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "Benchmark",
     "full": "",
     "snappy": "A standard test used to compare AI models — a fixed set of problems with known correct answers.",
@@ -1035,6 +1050,20 @@
     "category": "Agents",
     "sources": [
       "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Boston Dynamics",
+    "full": "",
+    "snappy": "Robotics company famous for dynamic, agile robot demos — Atlas, Spot, Stretch.",
+    "detail": "Founded 1992 as an MIT spin-off, later owned by Google, then SoftBank, now Hyundai. Spot (the quadruped \"dog robot\") is widely deployed for industrial inspection. Atlas (humanoid) is mostly a research and demo platform but moved to electric actuators in 2024. Helped shape public expectations of robot capability through viral videos.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -1396,6 +1425,20 @@
   },
   {
     "letter": "C",
+    "term": "Cobot",
+    "full": "Collaborative robot",
+    "snappy": "Industrial robot designed to work safely alongside humans — softer mechanisms, built-in force sensing.",
+    "detail": "Pre-dates the AI-robotics wave. Universal Robots, FANUC, KUKA, ABB sell cobots for assembly, packaging, and light manufacturing. Distinguished from traditional industrial robots (faster, stronger, must be caged off) by their human-safe design. Often paired with AI-based vision and manipulation models in modern deployments.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Code interpreter",
     "full": "",
     "snappy": "Tool that lets an LLM execute Python (or other code) in a sandbox to compute things, plot graphs, manipulate files.",
@@ -1604,6 +1647,20 @@
       "Compute"
     ],
     "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Cosmos",
+    "full": "NVIDIA Cosmos",
+    "snappy": "NVIDIA's platform for training physical-AI foundation models — provides simulation, data, and pretrained world models.",
+    "detail": "Announced January 2025. Includes pretrained world-models (predicts how scenes evolve given actions), simulation tooling, and data pipelines tuned for robotics. Positioning: the equivalent of CUDA + PyTorch but for physical AI. Used by Figure, 1X, Agility, and many other robotics developers.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Software",
     "sources": [
       "NVIDIA"
     ]
@@ -2243,6 +2300,22 @@
   },
   {
     "letter": "E",
+    "term": "Embodied AI",
+    "full": "",
+    "snappy": "Research direction: AI that learns through interaction with the physical world rather than just reading text.",
+    "detail": "Combines reinforcement learning, robotics, simulation, and increasingly vision-language models. The hope: physical-world experience grounds AI in ways pure text training can't. Tied closely to the humanoid-robot wave and the broader question of what \"intelligence\" means when separated from a body.",
+    "indications": [
+      "Robotics",
+      "Frontier"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "NVIDIA",
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "E",
     "term": "Emergent abilities",
     "full": "Emergence",
     "snappy": "Capabilities that appear suddenly above a certain model size — performance is near-zero, then jumps to useful.",
@@ -2286,6 +2359,20 @@
     "sources": [
       "Vaswani 2017",
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "End-to-end driving",
+    "full": "",
+    "snappy": "Approach where a single neural network maps from raw camera input directly to driving commands (steering, throttle, brake).",
+    "detail": "Pioneered by NVIDIA's PilotNet (2016) and pushed by Tesla. Contrasts with the traditional perception → planning → control pipeline where each stage is a separate component. The bet: a single network can learn the right intermediate representations from data, given enough miles. Now the dominant paradigm for vision-only AV development.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -2528,6 +2615,20 @@
     "category": "Alignment",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Figure AI",
+    "full": "",
+    "snappy": "Humanoid robot startup founded 2022 by Brett Adcock — among the highest-profile entrants in the humanoid race.",
+    "detail": "Figure 01 (2023), Figure 02 (2024), Figure 03 (announced 2025). Initially partnered with OpenAI for vision-language reasoning; later moved to in-house models (Helix). Pilot deployments at BMW factories. Raised billions in funding through 2024-2025. Positioning: a general-purpose humanoid for industrial and eventually consumer settings.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "OpenAI"
     ]
   },
   {
@@ -3405,6 +3506,20 @@
   },
   {
     "letter": "H",
+    "term": "Humanoid robot",
+    "full": "",
+    "snappy": "Robot with a roughly human body plan — legs, arms, hands, head — designed to operate in spaces built for humans.",
+    "detail": "Active product category from Tesla (Optimus), Figure AI, 1X, Boston Dynamics (Atlas), Agility (Digit), Apptronik, Unitree, and many Chinese manufacturers. The bet: a humanoid form factor lets one robot do many jobs in human-shaped environments (warehouses, kitchens, homes) without reorganising the world. Limited deployments in 2024-2025; broader rollout depends on manipulation reliability and cost.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "H",
     "term": "Hybrid bonding",
     "full": "",
     "snappy": "Connecting two dies face-to-face directly via copper-to-copper contact, with no bumps in between.",
@@ -3486,6 +3601,21 @@
     "category": "Models",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Imitation learning",
+    "full": "",
+    "snappy": "Training a model to copy actions from demonstrations — \"do what the human did in this situation\".",
+    "detail": "The robotics analogue of supervised learning. Demonstrations come from humans teleoperating the robot or from video of humans doing the task. ALOHA (Stanford, 2023) and the broader trend of teleoperated data collection underpin many of the recent VLA papers. Often combined with RL for tasks where good demonstrations don't exist.",
+    "indications": [
+      "Robotics",
+      "RL"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -3980,6 +4110,20 @@
   },
   {
     "letter": "L",
+    "term": "Lidar",
+    "full": "Light Detection and Ranging",
+    "snappy": "Sensor that uses pulsed lasers to build a 3D map of the surroundings — used by most autonomous vehicles except Tesla.",
+    "detail": "Provides distance and shape data directly, in any lighting condition. Costs have fallen from $75,000+ to a few thousand dollars in a decade. Waymo, Cruise, Zoox, Pony.ai, Chinese AV companies all use Lidar; Tesla famously skipped it. Also used in robotic delivery, agricultural automation, and surveying.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "Linear regression",
     "full": "",
     "snappy": "The simplest supervised learning model — fit a line (or hyperplane) through data points.",
@@ -4088,6 +4232,20 @@
     "category": "Eval",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Locomotion",
+    "full": "",
+    "snappy": "How a robot moves through space — walking, running, climbing.",
+    "detail": "Quadruped locomotion (Boston Dynamics Spot, Anymal, Unitree) is largely solved. Bipedal locomotion is harder but rapidly advancing (Boston Dynamics Atlas, Figure, Unitree H1). Recent breakthroughs (parkour, agile recovery from disturbances) come from large-scale RL training in simulation transferred to real hardware.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "UC Berkeley"
     ]
   },
   {
@@ -4246,6 +4404,20 @@
     "category": "Concepts",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Manipulation",
+    "full": "Robot manipulation",
+    "snappy": "The robotic art of using arms and hands to interact with objects — picking, placing, assembling, grasping.",
+    "detail": "Notoriously hard. Decades of research went into pick-and-place for known objects in controlled settings. Modern foundation-model approaches (VLAs, ALOHA, Pi-0) are moving toward general manipulation: \"pick up that tool you've never seen before\". One of the biggest gaps between current robot capability and human-level dexterity.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "UC Berkeley"
     ]
   },
   {
@@ -5066,6 +5238,20 @@
   },
   {
     "letter": "O",
+    "term": "Optimus",
+    "full": "Tesla Optimus",
+    "snappy": "Tesla's humanoid robot project — Elon Musk's bet that a general-purpose robot will eventually outsell cars.",
+    "detail": "Announced 2021. Public demos and progress posts have continued through 2024-2025. Tesla aims to use the same vision-and-AI stack developed for FSD on the robot. Initial deployment is internal — operating in Tesla factories — before consumer/commercial sale (Musk's claim: starting with limited external customers).",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "O",
     "term": "Outer alignment",
     "full": "",
     "snappy": "Getting the reward signal or objective function right — does it actually capture what you want?",
@@ -5274,6 +5460,20 @@
     "category": "Manufacturing",
     "sources": [
       "TSMC"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Physical Intelligence",
+    "full": "Pi",
+    "snappy": "AI lab founded 2024 — building foundation models specifically for robots.",
+    "detail": "Founded by Karol Hausman, Sergey Levine, and others from Google Brain. Released Pi-0 (2024), a vision-language-action model trained on robot data from many embodiments. The strategy: foundation models for robotics, the way LLMs are foundation models for language. Major investors include Jeff Bezos, Lux Capital, OpenAI Startup Fund.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "UC Berkeley"
     ]
   },
   {
@@ -5870,6 +6070,21 @@
   },
   {
     "letter": "R",
+    "term": "Reward shaping",
+    "full": "",
+    "snappy": "RL technique — adding intermediate rewards to guide an agent toward distant goals it couldn't reach with sparse rewards alone.",
+    "detail": "Without shaping, an agent trying to reach a far-off goal gets no reward signal until it succeeds (essentially never, in long-horizon tasks). Shaping provides smaller rewards along the way. Done badly, it leads to reward hacking. Modern RLHF reward modelling is essentially learned reward shaping — humans rate intermediate behaviour rather than only success/failure.",
+    "indications": [
+      "RL",
+      "Robotics"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "RLAIF",
     "full": "Reinforcement Learning from AI Feedback",
     "snappy": "RLHF variant where AI judges, not humans, score model outputs — much cheaper, almost as good.",
@@ -5897,6 +6112,20 @@
     "sources": [
       "OpenAI",
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Robotics",
+    "full": "",
+    "snappy": "Field of engineering and AI focused on machines that move and act in the physical world.",
+    "detail": "Pre-AI robotics relied on hand-coded controllers and structured environments — factory arms, surgical robots, simple vacuum cleaners. The modern \"AI for robotics\" wave (Tesla Optimus, Figure, 1X, Physical Intelligence) aims to combine LLMs with motor control to produce general-purpose robots that work in messy real-world settings.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -5941,6 +6170,20 @@
     "category": "Eval",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "RT-2",
+    "full": "Robotic Transformer 2",
+    "snappy": "DeepMind's 2023 vision-language-action model — first widely-publicised demonstration that LLM-style training extends to robot control.",
+    "detail": "Built on top of a vision-language model, with robot actions encoded as text tokens. The model could follow natural-language instructions to a robot arm (\"pick up the bag of chips\") on objects it had never seen during training. Sparked the current wave of foundation-model robotics work.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -6132,6 +6375,20 @@
   },
   {
     "letter": "S",
+    "term": "Self-driving car",
+    "full": "Autonomous vehicle, AV",
+    "snappy": "Vehicle that drives itself — uses sensors, maps, and AI to navigate without human input.",
+    "detail": "SAE levels 0 (no automation) through 5 (full autonomy). Waymo and Pony.ai are operating Level 4 robotaxi services in specific cities. Tesla pushes Level 2+ FSD with promises of higher. Cruise paused operations after a 2023 incident. Chinese companies (Baidu Apollo, WeRide, AutoX) operate similar services in China.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Semantic search",
     "full": "",
     "snappy": "Searching for meaning rather than keywords — \"car insurance claim\" matches \"auto policy filing\".",
@@ -6143,6 +6400,20 @@
     "category": "Agents",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Sensor fusion",
+    "full": "",
+    "snappy": "Combining data from multiple sensor types — cameras, Lidar, radar, ultrasonic — into a single coherent picture.",
+    "detail": "Critical for autonomous driving and robotics. Lidar gives depth; camera gives texture and colour; radar works in fog and rain. Fusing them requires reconciling different rates, geometries, and noise characteristics. Modern AVs (and increasingly humanoid robots) rely on sensor fusion as part of their core perception stack.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -6190,6 +6461,20 @@
   },
   {
     "letter": "S",
+    "term": "Sim-to-real",
+    "full": "Sim2Real",
+    "snappy": "Training robots in simulation, then transferring the learned behaviour to real-world hardware.",
+    "detail": "Simulation is cheap (millions of trials per hour); real robots are expensive (one trial per minute, with breakage). Sim-to-real techniques (domain randomisation, system identification, fine-tuning) bridge the inevitable gap between simulator physics and reality. NVIDIA's Isaac Sim and Cosmos platform are the main industry tools.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SIMD",
     "full": "Single Instruction Multiple Data",
     "snappy": "Hardware design where one instruction operates on a whole vector of numbers at once — the basic trick behind GPU parallelism.",
@@ -6215,6 +6500,20 @@
     "category": "Company",
     "sources": [
       "SK Hynix"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "SLAM",
+    "full": "Simultaneous Localisation And Mapping",
+    "snappy": "Robotics technique — build a map of an unknown environment while keeping track of where you are in it.",
+    "detail": "Used in self-driving cars, drones, AR/VR headsets, robot vacuums. Combines sensor input (camera, Lidar, IMU) with constraint-solving algorithms (extended Kalman filter, particle filter, factor graphs). Modern \"neural SLAM\" methods are starting to outperform traditional geometric pipelines in some settings.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -6575,6 +6874,20 @@
   },
   {
     "letter": "T",
+    "term": "Teleoperation",
+    "full": "",
+    "snappy": "Operating a robot remotely with a human in the loop — provides data for imitation learning and a fallback for autonomy.",
+    "detail": "Common modern setup: humans wear VR headsets and motion-tracked gloves to puppeteer humanoid robots. Each session generates training data for the robot's foundation model. Production AV operations (Waymo, Cruise) keep remote human operators ready to assist when the car gets stuck. Bridge between current and future autonomy levels.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Temperature",
     "full": "",
     "snappy": "Knob that controls how random a model's output is — low values are predictable, high values are creative.",
@@ -6683,6 +6996,20 @@
       "Compute"
     ],
     "category": "Company",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Tesla FSD",
+    "full": "Full Self-Driving",
+    "snappy": "Tesla's driver-assistance software — pursues a cameras-only \"end-to-end\" approach to autonomy.",
+    "detail": "Sold to Tesla customers as a paid software upgrade. Distinguished from competitors by rejecting Lidar entirely in favour of vision-only neural networks. Continues to operate as Level 2 (driver supervised) rather than full self-driving, despite the name. Robotaxi service (Cybercab) and unsupervised FSD remain Musk's stated next steps.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
     "sources": [
       "NVIDIA"
     ]
@@ -7287,6 +7614,21 @@
   },
   {
     "letter": "V",
+    "term": "VLA",
+    "full": "Vision-Language-Action model",
+    "snappy": "Foundation model that takes images and natural-language instructions as input and produces robot actions as output.",
+    "detail": "Bridges the LLM/VLM paradigm with robotics. Examples: DeepMind RT-2 and RT-X (2023), Physical Intelligence Pi-0 (2024), NVIDIA GR00T, Figure Helix. The hope: one VLA can drive any robot, given training data from that robot embodiment. Sample efficiency from cross-robot transfer is an active research question.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "Google DeepMind",
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "V",
     "term": "vLLM",
     "full": "",
     "snappy": "Open-source LLM inference engine known for high throughput and continuous batching.",
@@ -7381,6 +7723,20 @@
       "Safety"
     ],
     "category": "Regulation",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "Waymo",
+    "full": "",
+    "snappy": "Alphabet's self-driving subsidiary — the leader in deployed autonomous-vehicle services.",
+    "detail": "Operates commercial robotaxi services in Phoenix, San Francisco, Los Angeles, and expanding. Uses Lidar plus cameras plus high-definition maps. The most thoroughly safety-validated AV operation by miles driven without serious incidents. Roughly 200,000+ paid rides per week as of 2025.",
+    "indications": [
+      "Robotics"
+    ],
+    "category": "Frontier",
     "sources": [
       "Google DeepMind"
     ]
