@@ -85,6 +85,20 @@
   },
   {
     "letter": "A",
+    "term": "Activation function",
+    "full": "",
+    "snappy": "The non-linear element of a neural network layer — what makes neural networks more than just matrix multiplication.",
+    "detail": "Without activation functions, stacking layers would just give you another linear function. ReLU, GELU, SwiGLU, Sigmoid, Tanh, and others provide the non-linearity that lets deep networks express complex functions. Modern Transformer feed-forward layers typically use SwiGLU (Llama, Mistral) or GeGLU.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Actor-critic",
     "full": "",
     "snappy": "RL architecture combining two networks: an actor that picks actions, a critic that estimates how good those actions are.",
@@ -1298,6 +1312,20 @@
   },
   {
     "letter": "C",
+    "term": "Convex / non-convex",
+    "full": "",
+    "snappy": "Whether the loss surface has a single global minimum (convex) or many local minima and saddle points (non-convex).",
+    "detail": "Linear and logistic regression have convex losses — gradient descent finds the global optimum. Deep neural networks are wildly non-convex. Empirically, this matters less than classical theory predicted: deep networks find good (often near-global) solutions by gradient descent, despite the loss landscape being complicated.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Convolutional neural network",
     "full": "CNN",
     "snappy": "Type of network built for images — it slides small pattern detectors across the input to pick up local features.",
@@ -1757,6 +1785,21 @@
   },
   {
     "letter": "D",
+    "term": "Dot product",
+    "full": "",
+    "snappy": "The basic multiplication operation between two vectors — multiply pairs of elements and sum.",
+    "detail": "(1, 2, 3) · (4, 5, 6) = 1×4 + 2×5 + 3×6 = 32. Dot products measure similarity: vectors pointing the same direction have large positive dot products, opposite directions are negative. Every attention operation and embedding similarity computation in modern AI is built from dot products. The operation modern GPU tensor cores are built to maximise.",
+    "indications": [
+      "Research",
+      "Compute"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "Double descent",
     "full": "",
     "snappy": "Counterintuitive phenomenon: a model's test error decreases, then increases, then decreases again as you scale up.",
@@ -1870,6 +1913,20 @@
     "sources": [
       "NVIDIA",
       "xAI"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Eigenvalue",
+    "full": "",
+    "snappy": "Special scalar associated with a square matrix — the amount by which the matrix stretches certain directions.",
+    "detail": "If multiplying a matrix by a particular vector just rescales it (no rotation), that vector is an eigenvector and the scaling factor is its eigenvalue. Used throughout ML: PCA finds eigenvectors of covariance matrices; spectral methods analyse network behavior; stable training requires controlling eigenvalues of certain Jacobians.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -2493,6 +2550,20 @@
   },
   {
     "letter": "G",
+    "term": "GELU",
+    "full": "Gaussian Error Linear Unit",
+    "snappy": "Smooth activation function widely used in modern Transformers — feels like ReLU but with a softer transition.",
+    "detail": "Used in BERT, GPT-2, GPT-3, and most early-generation Transformer-based LLMs. Mathematically multiplies the input by the standard Gaussian CDF, so small negative inputs aren't completely zeroed. Often replaced by SwiGLU in newer architectures (Llama, Mistral) for slightly better empirical performance.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "Gemini",
     "full": "",
     "snappy": "Google's frontier model family — successor to Bard and the PaLM line.",
@@ -2764,6 +2835,21 @@
   },
   {
     "letter": "G",
+    "term": "Gradient",
+    "full": "",
+    "snappy": "Vector of partial derivatives — points in the direction of steepest increase of a function.",
+    "detail": "Computing gradients of the loss with respect to every parameter is what makes gradient descent work. Modern frameworks (PyTorch, JAX) do this automatically via reverse-mode autodiff (backpropagation). The gradient's direction tells you which way to nudge each parameter; the magnitude tells you how much each one matters.",
+    "indications": [
+      "Research",
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "Gradient descent",
     "full": "",
     "snappy": "The basic recipe for training neural networks — repeatedly nudge each parameter in the direction that reduces error.",
@@ -2965,6 +3051,20 @@
   },
   {
     "letter": "H",
+    "term": "Hessian",
+    "full": "",
+    "snappy": "Matrix of second-order partial derivatives — captures how the gradient itself is changing.",
+    "detail": "Tells you about curvature of the loss landscape: are you in a steep valley, a saddle, a flat plateau? Pure second-order methods (Newton's method) need the full Hessian, which is too expensive for modern networks (parameters squared). Most training uses cheaper approximations — Adam tracks the diagonal of a Hessian-like quantity.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "H",
     "term": "Heterogeneous integration",
     "full": "",
     "snappy": "Combining chips made with different process technologies into one package — each piece using its best-suited node.",
@@ -3031,6 +3131,21 @@
     "category": "Agents",
     "sources": [
       "Hugging Face"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "Hyperparameter",
+    "full": "",
+    "snappy": "A setting of the training process that you choose by hand — learning rate, batch size, number of layers, etc.",
+    "detail": "Distinguished from \"parameters\" (which the model learns from data). Tuning hyperparameters is a meaningful part of ML practice; Bayesian optimisation and tools like Optuna, Ray Tune, or Weights & Biases sweeps help. At frontier scale, hyperparameter choices are usually transferred from smaller-scale experiments because re-running them is too expensive.",
+    "indications": [
+      "Research",
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "UC Berkeley"
     ]
   },
   {
@@ -3310,6 +3425,20 @@
   },
   {
     "letter": "J",
+    "term": "Jacobian",
+    "full": "",
+    "snappy": "Matrix of partial derivatives for a vector-valued function — generalises the gradient.",
+    "detail": "If a function takes m inputs and produces n outputs, the Jacobian is an n × m matrix. Used throughout deep learning: backprop computes Jacobian-vector products as it propagates errors backward. Computing full Jacobians is expensive; modern frameworks compute Jacobian-vector or vector-Jacobian products instead.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "J",
     "term": "Jailbreak",
     "full": "",
     "snappy": "Prompt or technique that bypasses a model's safety training and gets it to produce normally-refused content.",
@@ -3510,6 +3639,20 @@
   },
   {
     "letter": "L",
+    "term": "Layer",
+    "full": "",
+    "snappy": "One processing stage of a neural network — typically a matrix multiplication, a non-linearity, and a normalisation step.",
+    "detail": "Modern LLMs stack 30-100+ Transformer layers. \"Layer count\" is a basic architectural parameter — more layers means more depth (more complex transformations possible) but slower training and inference. Each layer's output feeds into the next, with residual connections letting information skip past layers.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "Layer normalization",
     "full": "",
     "snappy": "A technique that stabilises training by rescaling the values flowing through each layer.",
@@ -3535,6 +3678,20 @@
     "category": "Training",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Linear regression",
+    "full": "",
+    "snappy": "The simplest supervised learning model — fit a line (or hyperplane) through data points.",
+    "detail": "Predicts a continuous output from one or more inputs by finding the best linear combination. 200 years old. Still the right tool for many simple-prediction problems and a baseline every more sophisticated method should beat. Underlies LASSO, ridge regression, and many specialised regression variants.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -3647,6 +3804,20 @@
     "category": "Hardware",
     "sources": [
       "Cadence"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Logistic regression",
+    "full": "",
+    "snappy": "Linear model for classification — applies a sigmoid to a linear combination of inputs and learns the parameters.",
+    "detail": "Despite the name, used for classification, not regression. Trained with cross-entropy loss. Despite being simple, it remains a strong baseline for tabular classification problems. Conceptually it's a one-layer neural network. Modern deep learning is often built up by replacing pieces of logistic regression with more complex components.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -3767,6 +3938,20 @@
   },
   {
     "letter": "M",
+    "term": "Manifold",
+    "full": "",
+    "snappy": "A surface or shape in high-dimensional space — the structure machine learning tries to find inside data.",
+    "detail": "Real data tends to lie near low-dimensional manifolds within huge ambient spaces. Images of human faces live on a tiny manifold inside the space of all possible images. Modern generative models (diffusion, VAEs) implicitly learn data manifolds. Useful concept for thinking about embeddings, dimensionality reduction, and generalisation.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "MATH",
     "full": "MATH benchmark",
     "snappy": "12,500 competition-math problems — significantly harder than GSM8K, drawn from AMC, AIME, etc.",
@@ -3781,6 +3966,20 @@
   },
   {
     "letter": "M",
+    "term": "Matrix",
+    "full": "",
+    "snappy": "A rectangular grid of numbers — what neural network weights are mostly made of.",
+    "detail": "If a vector is a 1D list, a matrix is a 2D grid. A layer that transforms a 1,024-dim input into a 4,096-dim output uses a 4,096 × 1,024 matrix of weights. Modern LLMs have billions of parameters mostly organised into matrices — and the bulk of training and inference compute is matrix multiplication.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Matrix engine",
     "full": "",
     "snappy": "Generic term for the matrix-multiply hardware in modern chips — Apple, Intel, and ARM all use the phrase.",
@@ -3791,6 +3990,21 @@
     "category": "Hardware",
     "sources": [
       "Apple"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Matrix multiplication",
+    "full": "MatMul, GEMM",
+    "snappy": "Combining two matrices into a third by computing dot products of rows and columns — the fundamental operation of deep learning.",
+    "detail": "If A is m × k and B is k × n, then A × B is m × n. The dominant operation in neural network training and inference — probably 90%+ of FLOPs spent in a typical run. Hardware (tensor cores, systolic arrays) and software (cuBLAS, cuDNN, FlashAttention) are obsessed with making MatMul faster.",
+    "indications": [
+      "Research",
+      "Compute"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -4341,6 +4555,20 @@
   },
   {
     "letter": "N",
+    "term": "Norm",
+    "full": "Vector norm",
+    "snappy": "Measure of a vector's \"length\" — common ones are L2 (Euclidean) and L1 (sum of absolute values).",
+    "detail": "Used as a regularisation penalty (L2 weight decay), as a measure of gradient size (gradient clipping), and to define distance in embedding spaces. \"Unit norm\" means the vector has length 1. Choice of norm affects which solutions an optimiser prefers — L1 encourages sparsity, L2 encourages small values across the board.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "N",
     "term": "NPU",
     "full": "Neural Processing Unit",
     "snappy": "Small AI accelerator built into phones, laptops, and edge devices — runs inference locally without going to the cloud.",
@@ -4607,6 +4835,20 @@
     "category": "Concepts",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "PCA",
+    "full": "Principal Component Analysis",
+    "snappy": "Classic technique for compressing high-dimensional data into a few \"main directions\" that explain most of the variation.",
+    "detail": "Used since 1901. Computes the eigenvectors of the data's covariance matrix and projects onto the top few. Still useful for data exploration, dimensionality reduction in tabular ML, and as a baseline against modern neural methods. Conceptually similar to (but simpler than) what autoencoders learn.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -5186,6 +5428,20 @@
   },
   {
     "letter": "R",
+    "term": "ReLU",
+    "full": "Rectified Linear Unit",
+    "snappy": "Activation function that's the identity for positive inputs and zero for negative ones — the dominant activation since around 2012.",
+    "detail": "Mathematically: max(0, x). Why it works so well: gradient is always 1 for positive inputs, so it doesn't saturate the way sigmoid does. Adopted widely after AlexNet (2012). Many variants since (Leaky ReLU, PReLU, ELU). The default modern Transformer uses GELU or SwiGLU rather than plain ReLU.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "Repetition penalty",
     "full": "",
     "snappy": "Downweighting tokens that have already appeared to stop the model getting stuck on the same words.",
@@ -5406,6 +5662,20 @@
   },
   {
     "letter": "S",
+    "term": "Saddle point",
+    "full": "",
+    "snappy": "Point in a loss landscape where the gradient is zero but it's not a minimum — a kind of fork where you can go down in one direction but up in another.",
+    "detail": "Saddle points dominate the loss landscapes of large neural networks. Lucky for training: gradient descent generally rolls past saddle points fairly quickly. Adam and similar adaptive optimisers are specifically good at escaping saddles. Earlier worries that deep networks would get stuck in saddles haven't materialised.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SambaNova SN40L",
     "full": "",
     "snappy": "Reconfigurable dataflow accelerator from SambaNova — bet on a different architectural philosophy from GPUs.",
@@ -5608,6 +5878,20 @@
   },
   {
     "letter": "S",
+    "term": "Sigmoid",
+    "full": "",
+    "snappy": "S-shaped function that squashes any real number to a value between 0 and 1.",
+    "detail": "Originally the standard activation function in neural networks. Mostly displaced by ReLU and friends for hidden layers because sigmoid saturates (its gradient is tiny for large inputs, slowing training). Still used at output layers for binary classification, and in gating mechanisms like LSTMs and SwiGLU.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SIMD",
     "full": "Single Instruction Multiple Data",
     "snappy": "Hardware design where one instruction operates on a whole vector of numbers at once — the basic trick behind GPU parallelism.",
@@ -5662,6 +5946,20 @@
     "category": "Hardware",
     "sources": [
       "Apple"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Softmax",
+    "full": "",
+    "snappy": "Function that turns a list of arbitrary numbers into a probability distribution — used everywhere in classification.",
+    "detail": "Exponentiates each input and normalises so the outputs sum to 1. The final layer of every classification model uses softmax; so does the attention computation when picking which keys to attend to. \"Softmax temperature\" rescales the inputs to make the distribution sharper (low temperature) or flatter (high temperature).",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -5835,6 +6133,21 @@
   },
   {
     "letter": "S",
+    "term": "Stochastic gradient descent",
+    "full": "SGD",
+    "snappy": "Variant of gradient descent that updates parameters using one batch at a time rather than the full dataset.",
+    "detail": "The \"stochastic\" part refers to using a random subset of data per step rather than the whole training set. Far cheaper per step than full-batch gradient descent, and the noise turns out to help generalisation — networks trained with SGD often outperform networks trained with deterministic optimisers. The grandfather of every modern training algorithm including Adam.",
+    "indications": [
+      "Research",
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Structured output",
     "full": "",
     "snappy": "Forcing a model's output to match a schema — JSON, XML, function-call arguments, etc.",
@@ -5893,6 +6206,20 @@
   },
   {
     "letter": "S",
+    "term": "SVD",
+    "full": "Singular Value Decomposition",
+    "snappy": "Factorising any matrix into three simpler matrices that capture its structure — a foundational tool.",
+    "detail": "Decomposes a matrix A as U·S·V (rotation × scaling × rotation). The singular values in S tell you which directions matter most. Used in dimensionality reduction (PCA), low-rank matrix approximation, recommender systems, and (relevant to AI) in LoRA where weight updates are factored as a low-rank product.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SWE-Bench",
     "full": "",
     "snappy": "Software engineering benchmark — model must fix real GitHub issues in real codebases.",
@@ -5945,6 +6272,21 @@
     "category": "Inference",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Tensor",
+    "full": "",
+    "snappy": "A multi-dimensional array of numbers — generalisation of vectors and matrices to any number of dimensions.",
+    "detail": "A batch of 32 images, each 224×224×3 (RGB), is a 4D tensor of shape (32, 224, 224, 3). The KV cache during LLM generation has tensors with batch, layer, head, and position dimensions. Modern ML frameworks (PyTorch, JAX, TensorFlow) are built around tensors. \"Tensor cores\" on GPUs are hardware units that multiply small tensors very fast.",
+    "indications": [
+      "Research",
+      "Compute"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -6569,6 +6911,20 @@
       "Research"
     ],
     "category": "Architecture",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "V",
+    "term": "Vector",
+    "full": "",
+    "snappy": "An ordered list of numbers — the most basic data structure in machine learning.",
+    "detail": "A 3-dimensional vector is just three numbers: (x, y, z). A 1,536-dimensional embedding vector is a list of 1,536 numbers representing meaning. Every neural network manipulates vectors at huge scale: each token in an LLM, each pixel patch in a vision model, each user in a recommendation system is a vector.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
     "sources": [
       "Stanford CRFM"
     ]
