@@ -1,6 +1,20 @@
 [
   {
     "letter": "A",
+    "term": "Accelerator",
+    "full": "",
+    "snappy": "Umbrella term for any chip designed to speed up a specific workload — GPUs, TPUs, NPUs, ASICs all qualify.",
+    "detail": "In AI context, \"accelerator\" usually means \"the chip that does the matrix multiplies\". The accelerator ecosystem is increasingly diverse: NVIDIA GPUs dominate training; AMD MI300 series is the credible alternative; Google TPU runs Gemini; Amazon Trainium/Inferentia targets AWS workloads; startups (Groq, Cerebras, Sambanova) chase specific bottlenecks like inference latency.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Adam",
     "full": "Adaptive Moment Estimation",
     "snappy": "The standard optimizer used to train almost every modern neural network.",
@@ -10,6 +24,20 @@
       "Research"
     ],
     "category": "Training",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "ASIC",
+    "full": "Application-Specific Integrated Circuit",
+    "snappy": "A chip designed to do exactly one job extremely well — versus a CPU or GPU which is built to do anything.",
+    "detail": "AI ASICs like Google TPUs, Amazon Trainium/Inferentia, and Groq's LPU sacrifice generality for efficiency on the specific patterns of neural network compute. They're typically 5-10× faster on their target workload than a general GPU at the same power. The downside: long design cycles (2-3 years) and inflexibility if the AI architecture shifts.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
     "sources": [
       "Google DeepMind"
     ]
@@ -76,6 +104,22 @@
   },
   {
     "letter": "B",
+    "term": "BF16",
+    "full": "Brain Floating Point 16",
+    "snappy": "16-bit format with the same exponent range as FP32 but fewer fraction bits — the modern default for training.",
+    "detail": "Designed by Google for TPUs. 8-bit exponent (same range as FP32), 7-bit fraction (less precise than FP16). The wider exponent range means BF16 rarely underflows — no loss scaling needed. Now the standard format for training large language models on both GPUs and TPUs.",
+    "indications": [
+      "Compute",
+      "Training"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Google DeepMind",
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "Byte-Pair Encoding",
     "full": "BPE",
     "snappy": "Common tokeniser training method — starts with single characters and repeatedly merges the most frequent pair into a new token.",
@@ -101,6 +145,20 @@
     "category": "Architecture",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Compute-bound",
+    "full": "",
+    "snappy": "A workload limited by the speed of math operations, not memory access.",
+    "detail": "Large-batch training is often compute-bound: GPUs can keep their math units fed because they reuse weights across many examples. Most LLM inference is the opposite — memory-bound, because each new token requires reading the whole model. Knowing which regime you're in determines which optimisations help (more compute? more bandwidth? better caching?).",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -157,6 +215,35 @@
       "Research"
     ],
     "category": "Architecture",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "CPU",
+    "full": "Central Processing Unit",
+    "snappy": "The general-purpose processor at the heart of every computer — good at everything, great at nothing in particular.",
+    "detail": "CPUs run the operating system, schedule tasks, and handle the kinds of branchy logic GPUs are bad at. Modern server CPUs (Intel Xeon, AMD EPYC, AWS Graviton) have 32-128 cores. AI workloads mostly run on GPUs but the CPU still hosts the show: loading data, coordinating between accelerators, running pre/post-processing. Inference of small models can run perfectly well on CPU.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Intel",
+      "AMD"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "CUDA core",
+    "full": "",
+    "snappy": "The general-purpose compute units in NVIDIA GPUs — handle everything that isn't a tensor-core matrix multiply.",
+    "detail": "Each modern NVIDIA GPU has thousands of CUDA cores running in parallel (an H100 has over 16,000). They run regular floating-point arithmetic and are what gets used for the parts of a workload that aren't matrix multiplies — activations, normalisations, indexing, custom kernels. Tensor cores do the heavy lifting; CUDA cores do everything else.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
     "sources": [
       "NVIDIA"
     ]
@@ -255,6 +342,21 @@
   },
   {
     "letter": "E",
+    "term": "EFLOPS",
+    "full": "Exa Floating-Point Operations Per Second",
+    "snappy": "Quintillion (10¹⁸) math operations per second — the scale of modern frontier training infrastructure.",
+    "detail": "1 EFLOPS = 1,000 PFLOPS. Frontier model training runs at multi-EFLOPS aggregate compute. NVIDIA's GB200 NVL72 rack is rated at roughly 1.4 EFLOPS at FP8. The largest training clusters announced (xAI's Colossus, Meta's training infrastructure, Microsoft/OpenAI's Stargate) reach 10+ EFLOPS.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA",
+      "xAI"
+    ]
+  },
+  {
+    "letter": "E",
     "term": "Encoder",
     "full": "",
     "snappy": "The part of a model that reads the whole input upfront and prepares it for further processing.",
@@ -312,6 +414,63 @@
     "sources": [
       "OpenAI",
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "FP16",
+    "full": "16-bit Floating Point",
+    "snappy": "Half-precision floating point — halves memory and roughly doubles throughput vs FP32.",
+    "detail": "5-bit exponent, 10-bit fraction. The exponent range is smaller than FP32, which can cause underflow during gradient computation — a problem solved by loss scaling. Used heavily in inference and in mixed-precision training. Widely supported by all modern GPUs.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "FP32",
+    "full": "32-bit Floating Point",
+    "snappy": "The traditional precision for scientific computing — 8 bits of exponent, 23 bits of fraction, 1 sign bit.",
+    "detail": "Roughly 7 decimal digits of precision. Used as the \"reference\" precision in machine learning, but expensive: every value takes 4 bytes. Modern training mostly uses FP16 or BF16 with FP32 only for accumulating gradients. Inference often pushes further down to FP8 or INT8 for speed.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "FP8",
+    "full": "8-bit Floating Point",
+    "snappy": "Newest reduced-precision format — pushes training and inference speed further by halving precision again.",
+    "detail": "Introduced by NVIDIA with the H100 (2022). Two variants: E4M3 (more precision) and E5M2 (more range). Used for inference today and increasingly for training too. The B200 and beyond support FP8 throughout. A 70B-parameter model in FP8 fits in 70GB of memory — half the FP16 size.",
+    "indications": [
+      "Compute",
+      "Inference"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "FPGA",
+    "full": "Field-Programmable Gate Array",
+    "snappy": "Reconfigurable chip that can be wired up in software to act like custom hardware — between a CPU and an ASIC.",
+    "detail": "FPGAs sit between flexible CPUs and rigid ASICs: you can rewire them after manufacturing, but they're slower and more power-hungry than a dedicated ASIC doing the same job. Microsoft Azure famously deployed FPGAs at scale for Bing's search ranking. In AI, FPGAs are mostly used for prototyping new accelerator architectures before committing to silicon.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Microsoft Research"
     ]
   },
   {
@@ -418,6 +577,21 @@
     "sources": [
       "OpenAI",
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "INT8",
+    "full": "8-bit Integer",
+    "snappy": "Integer format used for quantised inference — fast, memory-efficient, with manageable accuracy loss.",
+    "detail": "Each value takes 1 byte and represents a number from -128 to 127. To represent neural network weights, an INT8 model also stores per-channel scale factors. INT8 inference is the workhorse of edge AI (phones, NPUs) and increasingly common in cloud inference too. INT4 pushes the trade-off further.",
+    "indications": [
+      "Compute",
+      "Inference"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -567,6 +741,48 @@
   },
   {
     "letter": "M",
+    "term": "Matrix engine",
+    "full": "",
+    "snappy": "Generic term for the matrix-multiply hardware in modern chips — Apple, Intel, and ARM all use the phrase.",
+    "detail": "Conceptually similar to NVIDIA's tensor cores: a block of silicon dedicated to multiplying small matrices together very quickly. Apple's Neural Engine, Intel's AMX (Advanced Matrix Extensions) on Sapphire Rapids and beyond, and ARM's SME (Scalable Matrix Extension) are examples. Every modern compute platform now ships some form of matrix engine.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Apple"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Memory bandwidth",
+    "full": "",
+    "snappy": "How fast a chip can move data in and out of its memory — often the real bottleneck on AI workloads.",
+    "detail": "Bigger than compute speed for many workloads. An H100 has 3.35 TB/s of HBM3 bandwidth; a B200 hits 8 TB/s with HBM3e. If your model's weights are 70GB and you need to read them once per token to generate output, memory bandwidth caps your token rate. This is why \"memory-bound\" is the most common bottleneck in LLM inference.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Memory",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Memory-bound",
+    "full": "",
+    "snappy": "A workload limited by how fast you can pull data from memory, not by how fast the math units can compute.",
+    "detail": "Single-user LLM inference is memory-bound: each new token requires loading the entire model from memory, but only does a small amount of math with it. Solutions: bigger batches (amortise the memory cost across many users), quantisation (less to load), HBM (faster memory), KV caching (less re-loading).",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Mixed precision",
     "full": "",
     "snappy": "Training or inference that uses 16-bit numbers for most operations and 32-bit only where needed.",
@@ -612,6 +828,22 @@
     ]
   },
   {
+    "letter": "N",
+    "term": "NPU",
+    "full": "Neural Processing Unit",
+    "snappy": "Small AI accelerator built into phones, laptops, and edge devices — runs inference locally without going to the cloud.",
+    "detail": "Apple's Neural Engine, Qualcomm's Hexagon NPU, Intel's NPU on Core Ultra chips, and the various Android NPUs all sit alongside the main CPU/GPU. They're tuned for inference (not training) and for low power. Used for on-device speech recognition, image processing, autocomplete, and small language models like Apple Intelligence's on-device LLM.",
+    "indications": [
+      "Compute",
+      "Inference"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Apple",
+      "Intel"
+    ]
+  },
+  {
     "letter": "P",
     "term": "PEFT",
     "full": "Parameter-Efficient Fine-Tuning",
@@ -623,6 +855,35 @@
     "category": "Training",
     "sources": [
       "Hugging Face"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "PFLOP-day",
+    "full": "",
+    "snappy": "Unit for measuring how much compute went into a training run — one petaflop sustained for one day.",
+    "detail": "GPT-3's training was around 3,000 PFLOP-days. GPT-4 was rumoured at 200,000+. Modern frontier models are reported in millions of PFLOP-days. The metric is useful because it captures the total work done, regardless of how many chips ran for how long. Roughly 1 PFLOP-day = $0.05-0.50 at modern cloud prices depending on precision.",
+    "indications": [
+      "Compute",
+      "Training"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "PFLOPS",
+    "full": "Peta Floating-Point Operations Per Second",
+    "snappy": "Quadrillion (10¹⁵) math operations per second — the unit you use when talking about whole AI clusters.",
+    "detail": "1 PFLOPS = 1,000 TFLOPS. A single H100 GPU peaks around 1-2 PFLOPS at FP8. A frontier training cluster with thousands of GPUs reaches into the exaflop range (1,000+ PFLOPS). Used heavily in announcements about new AI supercomputers.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -881,6 +1142,21 @@
     ]
   },
   {
+    "letter": "R",
+    "term": "Roofline model",
+    "full": "",
+    "snappy": "A diagram that shows whether a workload is bottlenecked by compute or by memory bandwidth, at a glance.",
+    "detail": "Plot operations-per-byte (arithmetic intensity) on the x-axis, achieved throughput on the y-axis. The \"roof\" is a piecewise line: bandwidth-limited at low intensity, compute-limited at high intensity. The model — introduced by UC Berkeley — is the standard way of explaining why a particular kernel is slow and which way to fix it.",
+    "indications": [
+      "Compute",
+      "Research"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "UC Berkeley"
+    ]
+  },
+  {
     "letter": "S",
     "term": "Sampling",
     "full": "",
@@ -922,6 +1198,34 @@
     "category": "Architecture",
     "sources": [
       "Vaswani 2017"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "SIMD",
+    "full": "Single Instruction Multiple Data",
+    "snappy": "Hardware design where one instruction operates on a whole vector of numbers at once — the basic trick behind GPU parallelism.",
+    "detail": "Instead of \"add A to B\", a SIMD machine does \"add this list of 32 A's to this list of 32 B's, all at once\". GPUs are massively SIMD: a single \"warp\" of 32 threads runs the same instruction across different data. CPUs have SIMD too (Intel's AVX, ARM's NEON) but on a much smaller scale. The single most important hardware concept for understanding why GPUs are fast.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "SoC",
+    "full": "System on a Chip",
+    "snappy": "A complete computer (CPU + GPU + memory controllers + accelerators) packed onto a single chip.",
+    "detail": "Phones and laptops are SoC-driven: Apple's M-series, Qualcomm's Snapdragon, Google's Tensor are all SoCs that combine CPU cores, GPU cores, an NPU, a media engine, and shared memory. SoCs win on power efficiency and physical size at the cost of upgradability — you can't swap the GPU on an iPhone.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Apple"
     ]
   },
   {
@@ -998,6 +1302,20 @@
   },
   {
     "letter": "T",
+    "term": "Tensor core",
+    "full": "",
+    "snappy": "NVIDIA's name for the matrix-multiplying units inside its GPUs — the part that does the AI heavy lifting.",
+    "detail": "Introduced with the Volta architecture in 2017. A tensor core does a small matrix multiply (e.g., 4×4 × 4×4) in a single clock cycle, dramatically faster than doing it with regular CUDA cores. Modern H100s have hundreds of tensor cores per GPU and can do over 1,000 trillion operations per second when matrix-multiplying at FP8 precision.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Tensor parallelism",
     "full": "",
     "snappy": "Splitting a single layer's computation across multiple GPUs — needed when one layer doesn't fit on one chip.",
@@ -1007,6 +1325,20 @@
       "Training"
     ],
     "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "TFLOPS",
+    "full": "Tera Floating-Point Operations Per Second",
+    "snappy": "Trillion (10¹²) math operations per second — the standard unit for measuring chip compute throughput.",
+    "detail": "An H100 hits about 1,000 TFLOPS at FP16, ~2,000 at FP8. A modern phone NPU does 30-50 TFLOPS. The metric is precision-dependent — a chip rated \"1000 TFLOPS at FP8\" might only do 500 at FP16 and 250 at FP32. Always check which precision is being quoted.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
     "sources": [
       "NVIDIA"
     ]
@@ -1083,6 +1415,20 @@
   },
   {
     "letter": "T",
+    "term": "TPU",
+    "full": "Tensor Processing Unit",
+    "snappy": "Google's custom AI accelerator — designed from scratch for the matrix multiplies that dominate neural networks.",
+    "detail": "Google has shipped six generations of TPUs since 2016. The hallmark is a systolic array: a grid of multipliers that pumps data through in a single rhythmic flow, very efficient for matrix multiplication. TPUs power Google search, Gemini training, and the Google Cloud AI offering. They're available only through Google Cloud, not for direct purchase.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Transformer",
     "full": "",
     "snappy": "Sequence model based on self-attention",
@@ -1137,6 +1483,20 @@
     "category": "Architecture",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "Wafer-scale engine",
+    "full": "",
+    "snappy": "An accelerator that's a single chip the size of an entire silicon wafer — Cerebras's distinctive design.",
+    "detail": "Most chips are diced from a wafer into hundreds of small pieces. Cerebras keeps the whole wafer intact, yielding a single chip with ~900,000 cores and 44GB of on-chip memory. No off-chip memory bandwidth limits, no chip-to-chip communication overhead. Trade-off: yield is harder (one defect can kill the whole wafer) and they need custom packaging and cooling.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Hardware",
+    "sources": [
+      "Cerebras"
     ]
   },
   {
