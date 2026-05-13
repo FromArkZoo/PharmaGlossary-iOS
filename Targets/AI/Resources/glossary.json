@@ -1036,6 +1036,35 @@
   },
   {
     "letter": "A",
+    "term": "Audio codec",
+    "full": "Neural audio codec",
+    "snappy": "Compression model that turns raw audio into a small set of discrete tokens — used as the basis for audio LLMs.",
+    "detail": "EnCodec (Meta), SoundStream (Google), DAC (Descript). They compress 44kHz stereo audio to a few hundred tokens per second of audio while preserving quality. Once audio is a token stream, you can run an LLM-style Transformer on it. Foundation of modern music and speech generation models.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AudioCraft",
+    "full": "Stable Audio, AudioCraft",
+    "snappy": "Open-weight audio generation tools — MusicGen, AudioGen from Meta; Stable Audio from Stability AI.",
+    "detail": "Open-source counterparts to closed music-generation systems. MusicGen produces music from text or melody prompts; AudioGen produces sound effects. Stable Audio targets short-form music and sound design. The open-weight versions are widely used by hobbyists and small audio creators where commercial APIs would be cost-prohibitive.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Models",
+    "sources": [
+      "Meta AI / FAIR",
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "AWS",
     "full": "Amazon Web Services",
     "snappy": "Amazon's cloud arm — the largest cloud provider, with custom AI silicon (Trainium, Inferentia) and a $4-8B investment in Anthropic.",
@@ -2077,6 +2106,20 @@
   },
   {
     "letter": "C",
+    "term": "Cross-attention",
+    "full": "",
+    "snappy": "Attention pattern that mixes information from two different sequences — encoder output and decoder hidden state, image patches and text tokens.",
+    "detail": "How conditioning works in many architectures: the encoder produces a representation, the decoder cross-attends to it while generating. Used in encoder-decoder Transformers (T5), image generators (Stable Diffusion cross-attends to text), and any multimodal system that fuses inputs.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Cross-entropy",
     "full": "",
     "snappy": "Loss function used in classification and language modelling — penalises probability mass placed on the wrong answer.",
@@ -2432,6 +2475,20 @@
   },
   {
     "letter": "D",
+    "term": "Depth estimation",
+    "full": "Monocular depth",
+    "snappy": "Inferring 3D distance to each pixel from a single 2D image — a notoriously hard problem.",
+    "detail": "Pre-deep-learning approaches barely worked. Modern depth models (DepthAnything, MiDaS, Marigold) give surprisingly good results from a single photo. Used in AR effects (portrait mode), robotics (perception without Lidar), 3D scene reconstruction, AI image editing.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "Devin",
     "full": "",
     "snappy": "Autonomous coding agent from Cognition Labs — frames AI as a \"software engineer\" rather than an assistant.",
@@ -2500,6 +2557,20 @@
     "sources": [
       "OpenAI",
       "Stability AI"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Diffusion transformer",
+    "full": "DiT",
+    "snappy": "Architecture combining transformer backbones with diffusion training — used in modern image and video generators.",
+    "detail": "Released 2022 by Berkeley/Meta. Replaces the U-Net commonly used in diffusion with a transformer. Scales better and produces higher-quality samples. Used in Sora, Stable Diffusion 3, Flux, and most modern image/video generators. Indicates the gradual convergence of vision and language architectures.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Meta AI / FAIR"
     ]
   },
   {
@@ -3422,6 +3493,20 @@
     "category": "Hardware",
     "sources": [
       "Intel"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Gaussian Splatting",
+    "full": "3D Gaussian Splatting",
+    "snappy": "Method for representing and rendering 3D scenes as a set of small fuzzy ellipsoids — faster than NeRF.",
+    "detail": "Released 2023. Represents a scene as millions of small 3D Gaussians. Renders extremely fast (real-time on consumer GPUs) and edits well. Has displaced NeRF for most product applications in VR, AR, and 3D capture. Polycam, Luma AI, and Apple Vision Pro use Gaussian Splatting under the hood.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -4438,6 +4523,20 @@
   },
   {
     "letter": "I",
+    "term": "Instance segmentation",
+    "full": "",
+    "snappy": "Computer-vision task — segment each instance of an object separately, even when there are multiple of the same category.",
+    "detail": "Two side-by-side cats get different masks, not one combined cat mask. Mask R-CNN was the classic approach; modern systems include Mask2Former, Segment Anything (SAM). Critical for tasks like counting, tracking, and any application where instances matter, not just categories.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "I",
     "term": "Instruction tuning",
     "full": "",
     "snappy": "Fine-tuning a model specifically to follow instructions phrased as natural-language requests.",
@@ -4791,6 +4890,20 @@
       "Research"
     ],
     "category": "Architecture",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "L",
+    "term": "Latent space",
+    "full": "",
+    "snappy": "A learned compressed representation of data — where every data point is a vector in a high-dimensional space.",
+    "detail": "Autoencoders, VAEs, and diffusion models all operate in latent space rather than on raw pixels or text. Operations in latent space (interpolation, arithmetic, similarity) often correspond to semantically meaningful manipulations of the underlying data. The space CLIP shares between images and text is a famous example.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
     "sources": [
       "Stability AI"
     ]
@@ -5782,6 +5895,34 @@
   },
   {
     "letter": "M",
+    "term": "Music generation",
+    "full": "",
+    "snappy": "AI that creates novel music from text prompts or other conditioning.",
+    "detail": "Suno and Udio are the consumer leaders. Underlying tech: neural audio codecs plus transformer models trained on huge music corpora. Quality has reached a point where AI-generated tracks pass casual listening tests. Heavy ongoing litigation over training data: RIAA and major labels have sued multiple music-AI companies.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "MusicLM / Lyria",
+    "full": "",
+    "snappy": "Google's text-to-music model line — research project (MusicLM) and product (Lyria).",
+    "detail": "Google trained MusicLM on hundreds of thousands of hours of music. Lyria is the production version powering AI features in YouTube and Google's music tools (Dream Track). Compete with Suno and Udio in the consumer market. Distinguished by tight integration with Google's video and creator products.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Mutual information",
     "full": "",
     "snappy": "Information-theoretic measure of how much knowing one variable tells you about another.",
@@ -5850,6 +5991,20 @@
     "category": "Concepts",
     "sources": [
       "Stability AI"
+    ]
+  },
+  {
+    "letter": "N",
+    "term": "NeRF",
+    "full": "Neural Radiance Field",
+    "snappy": "Method for reconstructing 3D scenes from a set of 2D photos — represents the scene as a neural network.",
+    "detail": "Released 2020. Train a small neural network to map (3D position, viewing direction) → (color, density). Then render new views by integrating along rays. Stunning quality on photo-realistic 3D reconstruction. Has been replaced for most production use by Gaussian Splatting, which is faster.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "UC Berkeley"
     ]
   },
   {
@@ -5996,6 +6151,20 @@
   },
   {
     "letter": "O",
+    "term": "Object detection",
+    "full": "",
+    "snappy": "Computer-vision task — find and locate objects in an image, with bounding boxes and labels.",
+    "detail": "Foundational task with applications in autonomous driving, surveillance, retail, robotics. Classic models: YOLO family (You Only Look Once), Faster R-CNN, DETR. Modern open-vocabulary detectors (GroundingDINO, OWL-ViT) can detect any object you can describe in text.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "O",
     "term": "OCI",
     "full": "Oracle Cloud Infrastructure",
     "snappy": "Oracle's cloud business — a smaller hyperscaler with a strategic GPU build-out and partnerships with OpenAI.",
@@ -6006,6 +6175,20 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "O",
+    "term": "OCR",
+    "full": "Optical Character Recognition",
+    "snappy": "Converting images of text into machine-readable text — used to digitise documents, screenshots, handwritten notes.",
+    "detail": "Pre-deep-learning OCR existed (Tesseract, Adobe Acrobat) but worked poorly on varied layouts. Modern OCR uses transformer architectures (TrOCR, Mistral OCR, Google Document AI) and frontier VLMs (GPT-4o, Claude) read text in images directly as part of normal usage. Doc-AI pipelines built on these underpin most enterprise document workflows.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -6092,6 +6275,20 @@
     "category": "Concepts",
     "sources": [
       "Hugging Face"
+    ]
+  },
+  {
+    "letter": "O",
+    "term": "Optical flow",
+    "full": "",
+    "snappy": "Computer-vision task — track the apparent motion of each pixel between consecutive video frames.",
+    "detail": "Used in video stabilisation, frame interpolation, video understanding, action recognition. Modern methods (RAFT, FlowFormer) use deep networks. Foundational for many video processing tasks but increasingly absorbed into more general video-understanding models.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Meta AI / FAIR"
     ]
   },
   {
@@ -6893,6 +7090,20 @@
   },
   {
     "letter": "R",
+    "term": "Real-time voice",
+    "full": "Voice mode",
+    "snappy": "Conversational AI where audio flows continuously in both directions with low latency.",
+    "detail": "ChatGPT Advanced Voice Mode (2024), Gemini Live, ElevenLabs Conversational AI, Sesame voice models. Sub-300ms latency target for a natural-feeling exchange. Powered by tight integration of ASR, LLM, TTS — increasingly by single end-to-end speech models that skip the text step entirely.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "Reasoning effort",
     "full": "",
     "snappy": "Knob on modern reasoning models that controls how much thinking the model does before answering.",
@@ -7344,6 +7555,20 @@
   },
   {
     "letter": "S",
+    "term": "SAM",
+    "full": "Segment Anything Model",
+    "snappy": "Meta's universal segmentation model — produces a mask for any object pointed at in any image.",
+    "detail": "Released 2023 with the SA-1B dataset of 1 billion masks. SAM 2 (2024) extends to video. The model is \"promptable\": click on something, get a mask of that thing. Foundational for downstream applications (image editing, robotics, video editing, medical imaging) that need fast, flexible segmentation.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Models",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SambaNova SN40L",
     "full": "",
     "snappy": "Reconfigurable dataflow accelerator from SambaNova — bet on a different architectural philosophy from GPUs.",
@@ -7541,6 +7766,20 @@
     "category": "Agents",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Semantic segmentation",
+    "full": "",
+    "snappy": "Computer-vision task — label every pixel with what category it belongs to (road, sky, person, etc.).",
+    "detail": "Used in autonomous driving, medical imaging, satellite analysis. Distinct from instance segmentation (which also distinguishes individual instances of the same class). Modern semantic segmentation is dominated by transformer architectures (Mask2Former, OneFormer) and open-vocabulary methods (CLIP-derived).",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Meta AI / FAIR"
     ]
   },
   {
@@ -7829,6 +8068,20 @@
   },
   {
     "letter": "S",
+    "term": "Speaker diarisation",
+    "full": "",
+    "snappy": "\"Who spoke when\" — segmenting an audio file into turns by different speakers.",
+    "detail": "Used in meeting transcription, podcast indexing, customer-service call analysis. Combines voice-activity detection with speaker-embedding models. Frontier ASR systems (Whisper-large-v3 plus diarisation, AssemblyAI, Deepgram) increasingly do diarisation as a built-in step.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Specification gaming",
     "full": "",
     "snappy": "When a model finds an unintended way to satisfy its specification — letter rather than spirit of the law.",
@@ -7839,6 +8092,20 @@
     "category": "Alignment",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Spectrogram",
+    "full": "Mel spectrogram",
+    "snappy": "Visual representation of audio — frequency content over time, with mel scaling matched to human hearing.",
+    "detail": "Most modern speech models internally convert audio waveforms to mel spectrograms before further processing — the spectrogram is the model's actual input. Looks like a heat map: time on one axis, frequency on the other, brightness = energy. The mel scale compresses high frequencies the way human ears do.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
@@ -8497,6 +8764,20 @@
   },
   {
     "letter": "T",
+    "term": "Tokenizer (audio)",
+    "full": "Audio tokenizer",
+    "snappy": "The audio analogue of a text tokenizer — turns continuous waveforms into a discrete sequence the model can process.",
+    "detail": "Built from neural audio codecs like EnCodec or SoundStream. The output sequence might be 50-100 tokens per second of audio. Audio LLMs (AudioLM, MusicLM, SpiritLM) operate on these tokens just like text LLMs operate on word tokens. The tokenisation choice strongly affects audio generation quality.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Tokenizers",
     "full": "Hugging Face Tokenizers library",
     "snappy": "Hugging Face's fast Rust-based tokenization library — used by the Transformers library under the hood.",
@@ -8996,6 +9277,34 @@
   },
   {
     "letter": "V",
+    "term": "Visual prompting",
+    "full": "",
+    "snappy": "Conditioning a vision model on an example image rather than a text prompt.",
+    "detail": "Show a SAM-style model a click or a box rather than describing what to segment. Show a few-shot vision model a couple of example images of what you want. Foundational interaction pattern for image-based AI tools and a key research direction for image-classification efficiency.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "V",
+    "term": "Visual question answering",
+    "full": "VQA",
+    "snappy": "Task where a model answers questions about an image — \"how many people are in this photo?\".",
+    "detail": "Pre-LLM VQA was a specific benchmark category. Modern vision-language models (GPT-4o, Claude, Gemini, Llama Vision) effectively do VQA as a side effect of their general capability. The original VQA benchmarks are now largely saturated; specialised harder ones (MMBench, MMMU) test current frontier models.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "V",
     "term": "VLA",
     "full": "Vision-Language-Action model",
     "snappy": "Foundation model that takes images and natural-language instructions as input and produces robot actions as output.",
@@ -9036,6 +9345,34 @@
     "category": "Architecture",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "V",
+    "term": "Vocoder",
+    "full": "",
+    "snappy": "Audio synthesis model — converts intermediate representations (mel spectrograms, neural features) back into waveform audio.",
+    "detail": "Used at the final step of text-to-speech and music generation. WaveNet (DeepMind, 2016) was the breakthrough neural vocoder. Modern vocoders (HiFi-GAN, BigVGAN) produce indistinguishable-from-real audio at modest compute cost. Frontier music and TTS systems use neural vocoders almost exclusively.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "V",
+    "term": "Voice activity detection",
+    "full": "VAD",
+    "snappy": "Algorithm that detects when speech is occurring in an audio stream versus silence or noise.",
+    "detail": "Critical for voice-mode interfaces: when has the user stopped talking? Modern VAD is neural-network-based (Silero VAD, WebRTC VAD). Plays a major role in latency budgets for voice assistants — you can't start responding until VAD detects end-of-speech. Pre-LLM problem that LLM apps inherited.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -9107,6 +9444,20 @@
     "category": "Regulation",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "wav2vec",
+    "full": "",
+    "snappy": "Meta's self-supervised speech encoder — pretrained on raw audio to learn speech representations.",
+    "detail": "Released in 2019, with wav2vec 2.0 (2020) the breakthrough version. Trained without labels by predicting masked audio segments, similar to how BERT works on text. Used as the encoder for downstream speech tasks (ASR, speaker identification, emotion detection). Influential as one of the first big speech foundation models.",
+    "indications": [
+      "Audio"
+    ],
+    "category": "Models",
+    "sources": [
+      "Meta AI / FAIR"
     ]
   },
   {
