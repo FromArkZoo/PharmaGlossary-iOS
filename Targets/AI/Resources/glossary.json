@@ -158,6 +158,62 @@
   },
   {
     "letter": "A",
+    "term": "AI Bill of Rights",
+    "full": "",
+    "snappy": "White House blueprint (2022) listing five principles for protecting Americans from AI harms.",
+    "detail": "Principles: safe and effective systems; algorithmic discrimination protections; data privacy; notice and explanation; human alternatives. Non-binding. Some provisions echoed in the 2023 executive order. A reference point for civil-society advocacy and a benchmark proposals are evaluated against.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI bubble",
+    "full": "",
+    "snappy": "Concern that current AI infrastructure investment exceeds what end-user demand can justify — that the market is overheated.",
+    "detail": "Cited reasons for concern: capex outpacing AI revenue, circular financing between AI companies, comparison to dot-com era. Cited reasons against: continued user growth, demonstrable capability gains, productivity research showing measurable economic impact. Settling the question will likely take years.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Industry",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI capex",
+    "full": "",
+    "snappy": "Hyperscalers' capital expenditures on AI infrastructure — data centers, GPUs, networking.",
+    "detail": "Microsoft, Google, Amazon, and Meta combined are spending $300-400B+ per year on AI capex by 2025. Investors increasingly ask whether the spending will produce sufficient returns to justify the scale. Capex announcements move stock prices in both directions: investors want investment, but they also want returns.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Industry",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI executive order",
+    "full": "",
+    "snappy": "President Biden's October 2023 executive order on safe, secure, and trustworthy AI.",
+    "detail": "Set reporting requirements for the largest training runs (10²⁶ FLOPs threshold), required AI companies to share safety test results with the federal government, and directed many agencies to develop AI guidance for their domains. Rescinded by the Trump administration in 2025. Many of its operational programs (NIST guidelines, AISI work) persist under different authorities.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "AI factory",
     "full": "",
     "snappy": "NVIDIA's term for data centers built specifically as AI inference and training facilities — coined by Jensen Huang.",
@@ -168,6 +224,20 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI liability",
+    "full": "",
+    "snappy": "Legal question: when an AI system causes harm, who is responsible — the model developer, the deployer, the user?",
+    "detail": "Active area of policy debate. Some proposals impose strict liability on model developers (SB 1047 attempted this); others place responsibility primarily on deployers. The EU AI Act takes a layered approach. Resolution will materially affect the economics of AI deployment.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -186,6 +256,34 @@
   },
   {
     "letter": "A",
+    "term": "AI Safety Institute",
+    "full": "AISI",
+    "snappy": "Government bodies (UK, US, others) that evaluate frontier AI models for dangerous capabilities before public release.",
+    "detail": "UK AISI established 2023; US AISI 2024. They run pre-deployment red-team evaluations on models from Anthropic, OpenAI, Google, Meta, and others under voluntary agreements. Findings sometimes lead to model release delays or modifications. Centralised model for government oversight of frontier AI.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI sovereignty",
+    "full": "Sovereign AI",
+    "snappy": "Goal of nations developing AI capability domestically — own models, own infrastructure, own data.",
+    "detail": "France pushes Mistral; the UAE has Falcon and partnerships with G42; Japan is investing in domestic LLM development; India is pursuing Indic LLMs; the Middle East and Singapore are building sovereign cloud-AI capacity. The push is partly about economic capture, partly about not depending on US or Chinese AI vendors for critical functions.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Mistral"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "AIME",
     "full": "American Invitational Mathematics Examination",
     "snappy": "Hard high-school maths competition repurposed as an AI benchmark.",
@@ -196,6 +294,20 @@
     "category": "Eval",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Algorithmic discrimination",
+    "full": "",
+    "snappy": "AI systems that produce different (worse) outcomes for protected groups — by race, gender, age, etc.",
+    "detail": "Documented in many domains: hiring tools, credit scoring, healthcare resource allocation, predictive policing. Often traces back to biased training data or biased problem formulations. Most existing AI regulation focuses heavily on this issue because of its concrete civil-rights implications.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "UC Berkeley"
     ]
   },
   {
@@ -616,6 +728,20 @@
   },
   {
     "letter": "B",
+    "term": "Bias auditing",
+    "full": "",
+    "snappy": "Third-party review of an AI system's outputs to check for discriminatory or unwanted patterns.",
+    "detail": "Required by some jurisdictions (NYC's hiring AI law) and proposed in many others. Standards under development by NIST, ISO, and trade groups. Performed by both internal teams and independent auditors. Pre-deployment evaluation has become a hiring category at major AI labs and consultancies.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "BIG-Bench",
     "full": "Beyond the Imitation Game Benchmark",
     "snappy": "Massive crowd-sourced benchmark — over 200 diverse tasks from arithmetic to logical reasoning to creative writing.",
@@ -712,6 +838,20 @@
     "category": "Concepts",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "C2PA",
+    "full": "Coalition for Content Provenance and Authenticity",
+    "snappy": "Industry standard for cryptographically signing media to record its origin and edit history.",
+    "detail": "Backed by Adobe, Microsoft, Intel, Sony, Nikon, the BBC, Truepic, and others. C2PA-signed content carries metadata about who created it, with what tools, and how it's been modified. Major AI labs and camera manufacturers are integrating C2PA so that users can verify whether content was AI-generated or camera-captured.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Microsoft Research"
     ]
   },
   {
@@ -886,6 +1026,21 @@
   },
   {
     "letter": "C",
+    "term": "CHIPS Act",
+    "full": "CHIPS and Science Act",
+    "snappy": "US legislation (2022) providing $52B+ to boost domestic semiconductor manufacturing and research.",
+    "detail": "Provides subsidies for new US fab construction (Intel, TSMC's Arizona fab, Samsung's Texas plant, Micron's New York memory facility) and funds R&D programmes. Aim: reduce US dependence on Taiwan and South Korea for advanced chips. Implementation has been slower than hoped; results judged over a decade-plus timeline.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Intel",
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Circuit",
     "full": "",
     "snappy": "A specific computational pathway inside a neural network — a group of features and weights that together implement a function.",
@@ -958,6 +1113,21 @@
   },
   {
     "letter": "C",
+    "term": "Closed source AI",
+    "full": "",
+    "snappy": "AI systems whose weights and internal details are kept proprietary — accessed only through APIs or product surfaces.",
+    "detail": "Frontier labs (OpenAI, Anthropic, Google DeepMind, xAI) keep their flagship models closed. Arguments for: prevents misuse, protects investment, allows control over safety. Arguments against: concentrates power, limits independent scrutiny, prevents independent research. Most frontier capability today is closed; most volume of model deployment is increasingly open.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "CMOS",
     "full": "Complementary Metal-Oxide-Semiconductor",
     "snappy": "Standard transistor technology for nearly all modern logic chips since the 1980s.",
@@ -1010,6 +1180,20 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Compute governance",
+    "full": "",
+    "snappy": "Policy approach: regulate AI by regulating access to large amounts of training compute.",
+    "detail": "Argument: compute is concentrated, hard to hide, and roughly correlates with capability — so it's a leverage point. The US October 2023 executive order's reporting requirements above 10²⁶ FLOPs (and the EU AI Act's 10²⁵ threshold) put compute at the centre of frontier-AI governance. Critics worry the threshold is arbitrary and that algorithmic improvements will route around it.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -1285,6 +1469,20 @@
   },
   {
     "letter": "D",
+    "term": "Data licensing",
+    "full": "Training data licensing",
+    "snappy": "Legal agreements covering the use of copyrighted content in AI training data.",
+    "detail": "OpenAI's deals with the AP, FT, News Corp, Vox Media; Google's deal with Reddit; Anthropic and others have similar deals. Lawsuits from the New York Times, music labels, and others continue. The 2023-2025 era is establishing whether training on copyrighted content is fair use, and at what licensing cost it can or must be acquired.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "Data parallelism",
     "full": "",
     "snappy": "Each GPU holds a full copy of the model and works on a different slice of the batch — the simplest parallel setup.",
@@ -1355,6 +1553,20 @@
     "category": "Inference",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Deepfake",
+    "full": "",
+    "snappy": "AI-generated image, audio, or video that convincingly impersonates a real person.",
+    "detail": "Initially face-swap videos in 2017; now any synthetic media that misrepresents real people. Used for non-consensual imagery, election misinformation, financial fraud (voice cloning), and impersonation scams. Laws criminalising specific uses (intimate-image deepfakes, election deepfakes) are proliferating in 2024-2025 across many jurisdictions.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -1738,6 +1950,20 @@
   },
   {
     "letter": "E",
+    "term": "Entity List",
+    "full": "",
+    "snappy": "US Bureau of Industry and Security tool — companies on the list need a special license to receive US-origin technology.",
+    "detail": "Used to restrict Huawei, SMIC, YMTC, and many other Chinese technology firms. Has been the main legal instrument for individual-company export controls. Listed companies can't easily buy US chips, software, or fab equipment, creating a major operational headache for affected firms.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "E",
     "term": "Entropy",
     "full": "",
     "snappy": "Information-theoretic measure of uncertainty — how surprising the outcome of a random process is.",
@@ -1822,6 +2048,20 @@
   },
   {
     "letter": "E",
+    "term": "EU AI Act",
+    "full": "",
+    "snappy": "European Union regulation of AI systems, in force from 2024 with rolling provisions through 2027.",
+    "detail": "Risk-based framework: bans some uses (social scoring, predictive policing), tightly regulates \"high-risk\" applications (hiring, credit, education), and imposes transparency rules on general-purpose AI. Frontier models (over 10²⁵ FLOPs of training compute) face additional safety, copyright, and reporting obligations. First major comprehensive AI law from a major jurisdiction.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "E",
     "term": "EUV",
     "full": "Extreme Ultraviolet lithography",
     "snappy": "Light source at 13.5 nanometre wavelength — required for printing modern chip features below ~7nm.",
@@ -1890,6 +2130,21 @@
     "category": "Concepts",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Export controls",
+    "full": "AI export controls",
+    "snappy": "US restrictions on which AI-related products (chips, software, lithography equipment) can be sold to which countries.",
+    "detail": "Major rounds in October 2022, October 2023, and updates through 2024-2025. Restricts NVIDIA's most advanced GPUs to China (forcing NVIDIA to make special restricted variants like the H800, then H20). Also restricts ASML EUV machines, certain chip design software. A central geopolitical lever in the US-China technology rivalry.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "NVIDIA",
+      "ASML"
     ]
   },
   {
@@ -2119,6 +2374,21 @@
     "category": "Regulation",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Frontier Model Forum",
+    "full": "",
+    "snappy": "Industry body founded by Anthropic, Google, Microsoft, and OpenAI in 2023 to coordinate frontier-AI safety research.",
+    "detail": "Focused on AI safety research, capability evaluations, and information-sharing on emerging risks. Distinct from policy advocacy groups; this is the labs themselves coordinating on technical safety. Has expanded membership and operations through 2024-2025.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic",
+      "OpenAI"
     ]
   },
   {
@@ -2861,6 +3131,21 @@
     "sources": [
       "NVIDIA",
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Inference economics",
+    "full": "",
+    "snappy": "The cost-and-revenue model for running LLM serving — how much it costs per token, how much it sells for, where margins are.",
+    "detail": "Frontier APIs price tokens at fractions of a cent each. Major variables: model size, quantisation, batch size, hardware. Marginal cost to serve has fallen ~10× per year, but capacity has grown faster. Most major lab compute spend is on training, not inference — though inference flips ahead as more users adopt.",
+    "indications": [
+      "Inference"
+    ],
+    "category": "Industry",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
     ]
   },
   {
@@ -4042,6 +4327,20 @@
   },
   {
     "letter": "N",
+    "term": "NIST AI RMF",
+    "full": "AI Risk Management Framework",
+    "snappy": "Voluntary framework from the US National Institute of Standards and Technology for managing AI risk.",
+    "detail": "Published 2023. Provides categories and processes for organisations to think through AI risk in their context. Referenced (rather than mandated) by US regulators. Often cited in enterprise AI procurement and compliance documentation as a baseline. Not specific to frontier risks; applies broadly.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "N",
     "term": "NPU",
     "full": "Neural Processing Unit",
     "snappy": "Small AI accelerator built into phones, laptops, and edge devices — runs inference locally without going to the cloud.",
@@ -4194,6 +4493,21 @@
     "category": "Software",
     "sources": [
       "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "O",
+    "term": "Open source AI",
+    "full": "",
+    "snappy": "AI systems whose weights, code, and training data are released for free use, study, and modification.",
+    "detail": "Spectrum: \"open weights\" (Llama, Mistral, DeepSeek) means anyone can run the model but the training data isn't disclosed. Fully open includes training code and data (OLMo, Pythia). Closed (GPT-4, Claude, Gemini) keeps everything proprietary. Strategic debate: does open AI accelerate progress and reduce concentration, or does it leak dangerous capabilities to bad actors? Both arguments have force.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Meta AI / FAIR",
+      "Mistral"
     ]
   },
   {
@@ -4929,6 +5243,20 @@
   },
   {
     "letter": "R",
+    "term": "Responsible scaling policy",
+    "full": "RSP",
+    "snappy": "Lab-specific policy committing to pause or modify development if specific dangerous capabilities emerge.",
+    "detail": "Anthropic introduced the term in 2023; OpenAI's Preparedness Framework and Google DeepMind's Frontier Safety Framework are analogous. The basic structure: define capability levels (CSAI Levels), set evaluations to detect when a model crosses a threshold, commit to specific safety measures at each level. Voluntary but increasingly referenced by regulators.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "Reticle limit",
     "full": "",
     "snappy": "Maximum die size that a lithography machine can print in one shot — roughly 858 mm² for current EUV.",
@@ -5131,6 +5459,20 @@
     "category": "Company",
     "sources": [
       "Samsung"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "SB 1047",
+    "full": "California SB 1047",
+    "snappy": "California bill (2024) that would have required pre-deployment safety testing for frontier AI models. Vetoed by Governor Newsom.",
+    "detail": "Headlined as the first US state to attempt frontier-AI regulation. Provisions included safety testing, kill switches, and developer liability for catastrophic harms. Heavily debated within the AI community; vetoed September 2024. Has shaped subsequent state and federal proposals (including SB 53 which followed) and the public debate.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -6344,6 +6686,20 @@
     "category": "Hardware",
     "sources": [
       "Cerebras"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "Watermarking",
+    "full": "",
+    "snappy": "Embedding invisible signals in AI-generated content (text, images, video) to identify it later.",
+    "detail": "Google's SynthID, OpenAI's text watermarks, Stability AI watermark schemes. Helps detect deepfakes, AI plagiarism, and synthetic-media misuse. Active research: how to make watermarks robust to compression, paraphrasing, and adversarial removal. Required for some AI-generated outputs under the EU AI Act.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
