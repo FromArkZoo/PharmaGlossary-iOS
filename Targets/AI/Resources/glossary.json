@@ -516,6 +516,20 @@
   },
   {
     "letter": "B",
+    "term": "Bits per byte",
+    "full": "BPB",
+    "snappy": "Information-density measure for language models — how many bits the model needs to encode each byte of text.",
+    "detail": "Lower is better. A perfect model of text would achieve roughly 1 BPB (the Shannon limit for English). State-of-the-art LLMs are around 0.7-0.8 BPB on web text. Useful as an intrinsic evaluation metric that's not tied to a specific tokenizer's vocabulary.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "BLEU",
     "full": "Bilingual Evaluation Understudy",
     "snappy": "Score for machine translation — how much overlap is there between the model's translation and a reference?",
@@ -602,6 +616,21 @@
   },
   {
     "letter": "C",
+    "term": "Calibration",
+    "full": "",
+    "snappy": "Whether a model's stated confidence matches its actual accuracy — a model that says \"80% sure\" should be right 80% of the time.",
+    "detail": "Well-calibrated models are essential for trustworthy AI. RLHF tends to harm calibration: rewarded for confident-sounding answers, models become overconfident. Calibration metrics include expected calibration error (ECE) and Brier score. A long-running issue in modern frontier LLMs.",
+    "indications": [
+      "Research",
+      "Safety"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Capex",
     "full": "Capital expenditure",
     "snappy": "Spending on long-term assets — for hyperscalers, mostly data centers and GPUs.",
@@ -682,6 +711,20 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Chinchilla scaling",
+    "full": "",
+    "snappy": "DeepMind's 2022 result that earlier scaling rules under-trained models — for a given compute budget, you should use a smaller model and more data.",
+    "detail": "Kaplan scaling (2020) had recommended growing models faster than data. DeepMind's Chinchilla showed that, given a fixed compute budget, performance improves more if you train a smaller model on more data — specifically ~20 tokens per parameter. The result reshaped training strategy for every major lab.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -799,6 +842,20 @@
   },
   {
     "letter": "C",
+    "term": "Compute-optimal",
+    "full": "",
+    "snappy": "The sweet spot in the trade-off between model size and training-token count for a fixed compute budget.",
+    "detail": "Chinchilla suggested roughly 20 tokens per parameter is compute-optimal — i.e., for a 7B model, train on ~140B tokens. Later work (Llama 3, several papers) revised the figure upward to 50-100+ tokens/param when inference cost matters: it's worth over-training a model so you don't have to serve a huge one. Modern frontier models are heavily over-trained relative to Chinchilla.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Computer use",
     "full": "",
     "snappy": "Tool that gives an agent control of a virtual computer — moving the mouse, typing, clicking, reading the screen.",
@@ -911,6 +968,21 @@
     "sources": [
       "Intel",
       "AMD"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Cross-entropy",
+    "full": "",
+    "snappy": "Loss function used in classification and language modelling — penalises probability mass placed on the wrong answer.",
+    "detail": "If the right answer has probability p under the model, cross-entropy loss is -log(p). The lower the probability the model assigned to the correct token, the larger the loss. Equivalent to maximising the log-likelihood of the training data. Standard objective for next-token prediction during pretraining.",
+    "indications": [
+      "Research",
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -1188,6 +1260,20 @@
   },
   {
     "letter": "D",
+    "term": "Double descent",
+    "full": "",
+    "snappy": "Counterintuitive phenomenon: a model's test error decreases, then increases, then decreases again as you scale up.",
+    "detail": "Classical statistics predicts a single bias-variance trade-off curve, but very large modern models do something different — they keep improving long past the classical \"overfitting\" point. The second descent is a key reason gigantic models can be trained on relatively small data without disaster. Documented systematically by Belkin and others around 2018-2019.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "DPO",
     "full": "Direct Preference Optimization",
     "snappy": "Simpler alternative to RLHF that skips the explicit reward model — just adjusts the model directly from preference data.",
@@ -1291,6 +1377,21 @@
   },
   {
     "letter": "E",
+    "term": "Emergent abilities",
+    "full": "Emergence",
+    "snappy": "Capabilities that appear suddenly above a certain model size — performance is near-zero, then jumps to useful.",
+    "detail": "Heavily discussed since 2022. Examples: GPT-3 unlocked few-shot learning; GPT-4 unlocked many professional-exam capabilities. Whether emergence is \"real\" or an artefact of how metrics are measured remains debated — some apparent jumps disappear under continuous evaluation. Regardless, the unpredictability of when capabilities arrive is a major source of safety concern.",
+    "indications": [
+      "Research",
+      "Safety"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "E",
     "term": "Encoder",
     "full": "",
     "snappy": "The part of a model that reads the whole input upfront and prepares it for further processing.",
@@ -1319,6 +1420,20 @@
     "sources": [
       "Vaswani 2017",
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "E",
+    "term": "Entropy",
+    "full": "",
+    "snappy": "Information-theoretic measure of uncertainty — how surprising the outcome of a random process is.",
+    "detail": "Defined as the average negative log probability. Used everywhere in ML: cross-entropy loss in classification, KL divergence in RLHF, maximum-entropy RL, decoding strategies. Higher entropy means more uncertainty; lower entropy means the outcome is more predictable. Foundational concept from Claude Shannon's 1948 paper.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "MIT"
     ]
   },
   {
@@ -1680,6 +1795,20 @@
   },
   {
     "letter": "G",
+    "term": "Generalisation",
+    "full": "",
+    "snappy": "Ability to perform well on data the model didn't see during training.",
+    "detail": "The point of supervised learning. A model that memorises the training set but fails on new examples has poor generalisation. Modern LLMs generalise remarkably well — including to tasks they were never specifically trained on (\"zero-shot\" capabilities). Theoretical understanding of why deep networks generalise lags behind their empirical success.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "Generative adversarial network",
     "full": "GAN",
     "snappy": "Two networks playing a game: one makes fake samples, the other tries to spot them. Both get better.",
@@ -1908,6 +2037,20 @@
   },
   {
     "letter": "G",
+    "term": "Grokking",
+    "full": "",
+    "snappy": "Phenomenon where a model first memorises the training data, then much later (sometimes 1,000× more steps) generalises to new examples.",
+    "detail": "Discovered by OpenAI researchers in 2022. Suggests that the geometry of learning is more complex than simple gradient descent — networks can find better explanations long after they've found ones that fit the training set. An active area of mechanistic interpretability research because the transition is interpretable.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "Groq",
     "full": "",
     "snappy": "AI hardware startup focused on inference — designs custom \"language processing units\" for ultra-low-latency LLM serving.",
@@ -1976,6 +2119,21 @@
     "category": "Hardware",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "Hallucination",
+    "full": "",
+    "snappy": "When a model confidently produces false information — citing non-existent sources, inventing facts, fabricating quotes.",
+    "detail": "Major problem for LLMs in 2022-2025. Caused by training to produce fluent, plausible text without grounding. Mitigations: RAG (ground in retrieved sources), tool use (let the model look things up), reasoning models (more careful inference), better training data. Hallucination has fallen sharply on benchmarks but hasn't been eliminated.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic",
+      "OpenAI"
     ]
   },
   {
@@ -2117,6 +2275,34 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Inductive bias",
+    "full": "",
+    "snappy": "Built-in assumptions a model makes about the structure of the data — what it expects the world to look like.",
+    "detail": "Different architectures have different inductive biases: CNNs assume images have local, translation-invariant features. Transformers assume tokens interact through attention rather than fixed structure. Strong inductive biases help with small data; weaker ones (Transformers) let scale do the work when data is plentiful.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Inductive vs deductive reasoning",
+    "full": "",
+    "snappy": "Inductive reasoning generalises from specific examples; deductive reasoning applies general rules to specific cases.",
+    "detail": "LLMs are surprisingly good at inductive reasoning — pattern-completion is essentially what next-token prediction does. They're patchier at deductive reasoning, which requires symbolic manipulation. Reasoning models (o1, Deep Think, Claude extended thinking) close some of the gap by making deductive steps explicit in chain-of-thought.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -2582,6 +2768,20 @@
   },
   {
     "letter": "L",
+    "term": "Lottery ticket hypothesis",
+    "full": "",
+    "snappy": "Conjecture that within a randomly-initialised network, there's a small sparse subnetwork that — if trained alone — would do almost as well.",
+    "detail": "Proposed in 2018 by Frankle and Carbin at MIT. The implication: most of a large network's parameters are dead weight, and pruning could in principle preserve most capability. Influenced thinking about pruning, sparse training, and Mixture of Experts. The strong form of the hypothesis is contested but the empirical phenomenon is real.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "MIT"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "LPDDR",
     "full": "Low-Power DDR",
     "snappy": "Low-power DRAM used in phones, laptops, and some data-centre AI chips.",
@@ -3043,6 +3243,20 @@
   },
   {
     "letter": "M",
+    "term": "Mutual information",
+    "full": "",
+    "snappy": "Information-theoretic measure of how much knowing one variable tells you about another.",
+    "detail": "Zero when the variables are independent, larger when they're correlated. Used in representation learning (InfoNCE, contrastive losses), interpretability, and theoretical analyses of how networks store information. Closely related to entropy: I(X;Y) = H(X) - H(X|Y).",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "MIT"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "MuZero",
     "full": "",
     "snappy": "DeepMind's 2019 algorithm that learns the rules of a game while learning to play it — a step toward more general intelligence.",
@@ -3284,6 +3498,21 @@
     ]
   },
   {
+    "letter": "O",
+    "term": "Overfitting",
+    "full": "",
+    "snappy": "When a model fits the training data too closely and fails to generalise — it has memorised noise as well as signal.",
+    "detail": "Classic ML failure mode. Symptoms: training accuracy keeps improving while validation accuracy plateaus or worsens. Modern very large models seem to resist overfitting in surprising ways (see double descent), but it's still a concern when training data is limited. Regularisation (dropout, weight decay, augmentation) is the standard cure.",
+    "indications": [
+      "Research",
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
     "letter": "P",
     "term": "PagedAttention",
     "full": "",
@@ -3295,6 +3524,20 @@
     "category": "Software",
     "sources": [
       "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Parameter count",
+    "full": "",
+    "snappy": "The number of learnable weights in a model — the most-cited (and often misleading) measure of model \"size\".",
+    "detail": "A 70-billion-parameter Llama 3 and a 671-billion-parameter DeepSeek-V3 differ enormously in parameter count, but DeepSeek-V3 only activates 37B per token (MoE). The number that matters varies by question: total parameters for memory cost, active parameters for inference compute, training tokens for capability. Plain parameter count is increasingly a poor proxy.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -3366,6 +3609,20 @@
     "category": "Hardware",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Phase transition",
+    "full": "",
+    "snappy": "Physics-borrowed term for a sudden qualitative shift in a model's behavior at a certain scale or training level.",
+    "detail": "Examples: a model that couldn't do arithmetic at 1B parameters can suddenly multiply two-digit numbers at 10B. Grokking — generalising on a task long after memorising the training data — is another kind of phase transition. Researchers borrow the language from condensed-matter physics and statistical mechanics.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -3481,6 +3738,20 @@
       "NLP"
     ],
     "category": "Training",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Prompt",
+    "full": "",
+    "snappy": "The input text given to an LLM — the question, instruction, or context that prompts the response.",
+    "detail": "Includes the user's message, the system prompt (instructions for the model's behaviour), any retrieved RAG documents, the prior conversation history, and tool descriptions. The skill of writing prompts that produce reliable outputs (\"prompt engineering\") was the early labour of LLM application development.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
     "sources": [
       "OpenAI"
     ]
@@ -4679,6 +4950,36 @@
   },
   {
     "letter": "T",
+    "term": "Training FLOPs",
+    "full": "",
+    "snappy": "The total number of math operations performed during training — the most rigorous \"size\" metric for a model.",
+    "detail": "Calculated as roughly 6 × parameters × training tokens. GPT-3: about 3 × 10²³ FLOPs. GPT-4: rumored 2 × 10²⁵. Frontier models in 2025 push past 10²⁶. US export controls reference training-FLOPs thresholds when deciding which models trigger reporting; the EU AI Act uses 10²⁵ FLOPs as a frontier-model threshold.",
+    "indications": [
+      "Research",
+      "Compute"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "Training tokens",
+    "full": "",
+    "snappy": "The number of tokens of text (or other data) the model has seen during training.",
+    "detail": "Modern frontier models train on 5-20 trillion tokens of text plus growing volumes of code, math, multimodal data. Data quality matters as much as quantity — filtered, deduplicated, balanced corpora beat raw web scrapes. Approaching the limit of available high-quality public text is one driver of the shift to synthetic and AI-generated training data.",
+    "indications": [
+      "Research",
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Meta AI / FAIR"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Trainium",
     "full": "",
     "snappy": "Amazon's custom training accelerator — AWS's bet on owning the AI stack vertically.",
@@ -4847,6 +5148,34 @@
     "category": "Interconnect",
     "sources": [
       "AMD"
+    ]
+  },
+  {
+    "letter": "U",
+    "term": "Underfitting",
+    "full": "",
+    "snappy": "When a model is too simple or too lightly-trained to capture the patterns in the data.",
+    "detail": "Opposite failure mode to overfitting. Symptoms: high error on both training and validation data. Cure: bigger model, more training, better optimisation, less regularisation. Less of a concern in the frontier era — modern models have plenty of capacity — but still relevant for resource-constrained settings.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "U",
+    "term": "Universal approximation",
+    "full": "",
+    "snappy": "Theorem: a neural network with one hidden layer and enough neurons can approximate any continuous function arbitrarily well.",
+    "detail": "Proven in the 1980s. Important historically — established that neural networks were in principle capable of modelling anything. Practically less useful: \"enough neurons\" might mean astronomically many, and the theorem says nothing about how to find good weights. Deep networks succeed for reasons that go beyond universal approximation.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -5062,6 +5391,20 @@
     "category": "Infrastructure",
     "sources": [
       "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "Z",
+    "term": "Zero-shot vs few-shot",
+    "full": "",
+    "snappy": "Whether a model handles a new task with no examples (zero-shot) or a handful of examples (few-shot) in the prompt.",
+    "detail": "GPT-3 famously demonstrated few-shot learning in 2020 — given 3-5 examples, it could do tasks it had never been trained for. As models improve, the gap between zero-shot and few-shot has narrowed: frontier models in 2025 often need no examples at all. The terms are still used to characterise prompting strategies.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
     ]
   }
 ]
