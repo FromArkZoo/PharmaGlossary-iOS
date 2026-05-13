@@ -157,6 +157,21 @@
   },
   {
     "letter": "A",
+    "term": "Agentic AI",
+    "full": "",
+    "snappy": "Buzzword for the next phase of AI — systems that take multi-step actions rather than producing single outputs.",
+    "detail": "Used heavily in 2024-2025 industry conversations. Agentic AI = chatbots that drive software, automate workflows, complete long tasks. Builds on tool use, function calling, computer use, and chained LLM calls. The point of departure: outputs no longer need user review in the middle of a task.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Anthropic",
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "AGI",
     "full": "Artificial General Intelligence",
     "snappy": "Hypothetical AI system that can match or exceed humans on essentially any cognitive task.",
@@ -165,6 +180,35 @@
       "Frontier"
     ],
     "category": "Frontier",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI agent SWE",
+    "full": "AI software engineer",
+    "snappy": "Emerging product category — autonomous coding agents that can execute multi-hour tasks.",
+    "detail": "Devin, Replit Agents, Cognition, OpenAI's Codex agent, GitHub Copilot Workspace. The frame is not \"AI helps a developer\" but \"AI is a developer for some scoped task\". Maturity varies widely; performance on SWE-Bench measures progress. Major investment area for AI labs and startups.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI assistant",
+    "full": "",
+    "snappy": "General consumer-facing AI product — chat with a model that helps with tasks, scheduling, search, drafting.",
+    "detail": "ChatGPT, Claude, Gemini, Grok, Meta AI, Perplexity. Successor category to the older voice assistants (Siri, Alexa). The shift in interaction modality — typed chat with a frontier LLM rather than voice commands to a rules-based system — fundamentally changed consumer expectations of AI.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
     "sources": [
       "OpenAI",
       "Anthropic"
@@ -214,6 +258,20 @@
   },
   {
     "letter": "A",
+    "term": "AI customer service",
+    "full": "",
+    "snappy": "Use of AI in customer support — chatbots, automated triage, agent assist.",
+    "detail": "One of the most-deployed AI applications. Vendors include Salesforce Agentforce, ServiceNow, Intercom Fin, Decagon. Quality has shifted dramatically since pre-LLM chatbots — modern AI customer service can resolve a meaningful fraction of tickets without escalation, freeing humans for complex cases.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "AI executive order",
     "full": "",
     "snappy": "President Biden's October 2023 executive order on safe, secure, and trustworthy AI.",
@@ -242,6 +300,76 @@
   },
   {
     "letter": "A",
+    "term": "AI gateway",
+    "full": "",
+    "snappy": "Middleware that brokers LLM API calls — provides routing, observability, caching, rate limiting, fallback.",
+    "detail": "OpenRouter, Portkey, Vercel AI SDK, Cloudflare AI Gateway. Lets app developers swap between OpenAI, Anthropic, Google, and dozens of model providers without rewriting code. Important enterprise infrastructure for multi-model deployments. Becoming a standard architecture pattern for any serious LLM-powered product.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Software",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI image editing",
+    "full": "",
+    "snappy": "AI features inside image-editing tools — generative fill, smart selection, prompt-based edits.",
+    "detail": "Adobe Photoshop Generative Fill (powered by Adobe Firefly) is the most-used in production by professionals. Apple's Image Playground, Google Photos Magic Editor, Samsung Galaxy AI offer similar features at consumer level. Has changed standard photo-editing workflows for casual and professional users alike.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Stability AI"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI in finance",
+    "full": "",
+    "snappy": "Use of AI in financial services — trading, fraud detection, customer service, document processing.",
+    "detail": "Investment banks (JPMorgan, Morgan Stanley, Goldman) deploy LLMs for research and customer service. Hedge funds (RenTech, Two Sigma, Citadel) use ML for trading. Fintechs (Stripe, Brex) deploy AI for fraud detection. The combination of structured data and high willingness to pay makes finance one of AI's biggest sectors.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI in law",
+    "full": "Legal AI",
+    "snappy": "Use of AI for legal work — drafting, research, contract review, discovery.",
+    "detail": "Harvey AI (focused on law firms, valued $5B+) is the highest-profile player; competitors include Cocounsel (from Thomson Reuters), Spellbook, LegalMation. Plus the general-purpose LLMs that lawyers use daily. The legal profession's combination of high billing rates and structured documents makes it a natural early-AI vertical.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI in medicine",
+    "full": "",
+    "snappy": "Use of AI in healthcare — clinical notes, radiology, drug discovery, triage.",
+    "detail": "Spans many subfields. Ambient clinical-notes generation (Abridge, Nuance DAX) is one of the most-deployed AI applications by revenue. Image-based diagnostics (radiology, dermatology) has FDA-cleared products. Hippocratic AI's clinician-facing assistants and many drug-discovery tools complete the picture. Regulatory oversight is ongoing.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Microsoft Research"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "AI liability",
     "full": "",
     "snappy": "Legal question: when an AI system causes harm, who is responsible — the model developer, the deployer, the user?",
@@ -252,6 +380,20 @@
     "category": "Regulation",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI productivity",
+    "full": "",
+    "snappy": "Use of AI to do general office and knowledge work faster — spreadsheets, emails, meeting notes, documents.",
+    "detail": "Most-used consumer-AI category by hours. Microsoft 365 Copilot, Google Workspace AI, Notion AI, ChatGPT, Claude. Empirical research (BCG/Anthropic, Microsoft) shows meaningful productivity gains on tasks well-suited to AI assistance — 20-50% time savings on writing-heavy tasks, smaller on coding and analysis.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Microsoft Research"
     ]
   },
   {
@@ -284,6 +426,34 @@
   },
   {
     "letter": "A",
+    "term": "AI sales",
+    "full": "AI SDR",
+    "snappy": "Use of AI for sales prospecting, outreach, and customer development.",
+    "detail": "Startups: Clay, 11x.ai, Artisan, Regie.ai. The pattern: AI agents that research prospects, draft personalised outreach, follow up, and qualify leads. Controversial because of email-spam concerns; effective because of the volume and personalisation AI can deliver. Active product category in 2024-2025 enterprise SaaS.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI search",
+    "full": "Generative search",
+    "snappy": "Search experience where AI generates a direct answer instead of (or alongside) a list of links.",
+    "detail": "Google AI Overviews, Perplexity, You.com, Phind, Bing Copilot. Tension with traditional web publishers: AI answers often summarise their content without sending traffic. Major regulatory and business-model debate through 2024-2025. The shift from links to answers is one of the most consequential in modern AI deployment.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "AI sovereignty",
     "full": "Sovereign AI",
     "snappy": "Goal of nations developing AI capability domestically — own models, own infrastructure, own data.",
@@ -294,6 +464,62 @@
     "category": "Regulation",
     "sources": [
       "Mistral"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI tutor",
+    "full": "",
+    "snappy": "AI system designed to teach — adapts explanations to a learner, generates practice questions, gives feedback.",
+    "detail": "Khan Academy's Khanmigo (powered by GPT-4) is the highest-profile example. Cited by Bill Gates as one of the first proven AI use cases. Personalised tutoring has long been an aspirational application; modern LLMs can begin to deliver. Many startups (Synthesis, Magic School AI, Quizlet AI) target the space.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI video editing",
+    "full": "",
+    "snappy": "AI-powered video editing — automatic cuts, scene generation, dubbing, captioning, b-roll synthesis.",
+    "detail": "Adobe Premiere AI, Runway, Descript, Captions, Hour One. Especially powerful in marketing video production where AI can generate or modify short-form video at scale. Synthetic avatars (HeyGen, Synthesia) overlap with this category for corporate video.",
+    "indications": [
+      "Vision"
+    ],
+    "category": "Industry",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI Wrapper",
+    "full": "",
+    "snappy": "Slightly dismissive term for products built mostly on top of a third-party LLM API.",
+    "detail": "Used pejoratively to imply lack of defensibility. Defenders argue that customer success comes from product, distribution, and integration — the model is the easy part. Hot debate during the 2023-2025 AI-startup investment boom: \"thin wrappers\" vs. \"product moats\". Resolution depends on the vertical.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI writing",
+    "full": "",
+    "snappy": "AI-assisted text composition — drafting, editing, style transfer, translation.",
+    "detail": "Spans general LLMs (used as drafting tools), purpose-built editors (Notion AI, Lex.page, Sudowrite), and writing aides (Grammarly Go, Wordtune). Major impact on email, marketing copy, reports, and academic writing. The point at which AI is \"writing\" versus \"editing\" is increasingly fuzzy.",
+    "indications": [
+      "NLP"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -1112,6 +1338,20 @@
   },
   {
     "letter": "C",
+    "term": "Claude Code",
+    "full": "",
+    "snappy": "Anthropic's CLI-based coding agent — runs in the terminal, can read, write, and execute code in your repo.",
+    "detail": "Released early 2025 as Anthropic's flagship agentic developer tool. Combines Claude's reasoning with file-system, shell, and Git access. Designed for terminal-native developers; competes with Cursor and GitHub Copilot Agent in different surface formats.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "CLIP",
     "full": "Contrastive Language-Image Pretraining",
     "snappy": "Model that links images and text in a shared space — lets you search images by description, or steer image generators with words.",
@@ -1341,6 +1581,21 @@
   },
   {
     "letter": "C",
+    "term": "Copilot",
+    "full": "",
+    "snappy": "Generic term for an AI assistant that works alongside you, suggesting completions or actions.",
+    "detail": "Branded by GitHub Copilot (2021), the first widely-used AI coding assistant powered by OpenAI Codex. Microsoft adopted the term across products: M365 Copilot, Windows Copilot, GitHub Copilot Agent. Now used loosely for any chat-based AI workflow assistant.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Microsoft Research",
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "CoreWeave",
     "full": "",
     "snappy": "GPU-specialised cloud — rents H100s and B200s to AI labs and enterprises that the hyperscalers can't serve fast enough.",
@@ -1451,6 +1706,20 @@
     "category": "Software",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Cursor",
+    "full": "Cursor IDE",
+    "snappy": "AI-first code editor — fork of VS Code with deep integration of large language models.",
+    "detail": "Built by Anysphere, founded 2022. Made Claude and GPT integrations central to the coding workflow: tab-complete, chat with codebase, agentic refactors. Reached major adoption in 2024-2025 as one of the standout AI productivity tools. Often used with Claude as the underlying model.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -1665,6 +1934,20 @@
     "category": "Concepts",
     "sources": [
       "Intel"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Devin",
+    "full": "",
+    "snappy": "Autonomous coding agent from Cognition Labs — frames AI as a \"software engineer\" rather than an assistant.",
+    "detail": "Launched March 2024 with demos of multi-hour, multi-step coding tasks. Spawned debate about how autonomous coding agents would work in practice. Pricing aimed at enterprise. The product remains active; a category of \"agent SWE\" startups has grown around the concept.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -2632,6 +2915,21 @@
     "category": "Architecture",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Generative AI",
+    "full": "GenAI",
+    "snappy": "Umbrella term for AI that produces new content — text, images, audio, video, code.",
+    "detail": "Distinguishes the LLM/diffusion era from earlier discriminative ML (classification, prediction). Often abbreviated GenAI. Used heavily in business and consulting contexts to describe the post-2022 wave of AI adoption. Sometimes contrasted with \"agentic AI\" as the next paradigm.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
     ]
   },
   {
@@ -6247,6 +6545,21 @@
     ]
   },
   {
+    "letter": "S",
+    "term": "Synthetic data",
+    "full": "",
+    "snappy": "Training data generated by another AI model rather than collected from the real world.",
+    "detail": "Crucial for training reasoning models (chains of thought generated and filtered), for domains with limited real data (medical imaging), and for privacy-sensitive applications. Risks: model collapse if overused, propagation of source-model biases. A significant fraction of frontier-model training data is now synthetic.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Microsoft Research",
+      "OpenAI"
+    ]
+  },
+  {
     "letter": "T",
     "term": "Tape-out",
     "full": "",
@@ -7003,6 +7316,20 @@
   },
   {
     "letter": "V",
+    "term": "Voice assistant",
+    "full": "",
+    "snappy": "Older AI category — Siri, Alexa, Google Assistant — built on rules + narrow ML before the LLM era.",
+    "detail": "Once the consumer face of AI; mostly disappointing in terms of intelligence. Modern \"voice modes\" of LLMs (ChatGPT, Gemini Live) are replacing the category by combining low-latency speech recognition, LLM reasoning, and natural TTS into a more capable assistant.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
+    "sources": [
+      "Apple"
+    ]
+  },
+  {
+    "letter": "V",
     "term": "Voice cloning",
     "full": "",
     "snappy": "Generating speech in a specific person's voice from a short sample of their audio.",
@@ -7068,6 +7395,20 @@
       "Audio"
     ],
     "category": "Models",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "Windsurf",
+    "full": "",
+    "snappy": "AI-first code editor from Codeium — fork of VS Code with strong agent integration.",
+    "detail": "Codeium was originally a free Copilot-style autocomplete; Windsurf is their flagship AI IDE. Competes with Cursor in the AI-IDE category. Acquired by OpenAI in mid-2025.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Industry",
     "sources": [
       "OpenAI"
     ]
