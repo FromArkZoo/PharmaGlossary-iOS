@@ -50,7 +50,13 @@ struct EditorialHeader: View {
             primaryColor: Color(red: 0.13, green: 0.30, blue: 0.42),
             primaryDarkColor: Color(red: 0.10, green: 0.22, blue: 0.32),
             bgColor: PGColors.bg,
-            aboutBlurb: ""
+            urlScheme: "finance",
+            aboutParagraphs: [],
+            aboutDisclaimer: "",
+            aboutSources: [],
+            basicsAllowlist: [],
+            basicsSubtitle: "",
+            policyConfig: PolicyConfig(displayName: "Compliance", subtitle: "", categories: [], excludedTerms: [])
         ),
         entryCount: 312
     )
