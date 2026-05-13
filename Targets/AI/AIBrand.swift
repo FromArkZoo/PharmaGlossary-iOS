@@ -41,7 +41,31 @@ let aiBrand = Brand(
         categories: ["Concepts", "Research"],
         excludedTerms: []
     ),
-    accentTint: nil
+    accentTint: nil,
+    sourceURLs: [
+        // Research / labs
+        "OpenAI":               URL(string: "https://openai.com")!,
+        "Anthropic":            URL(string: "https://www.anthropic.com")!,
+        "Google DeepMind":      URL(string: "https://deepmind.google")!,
+        "DeepMind":             URL(string: "https://deepmind.google")!,
+        "Meta AI / FAIR":       URL(string: "https://ai.meta.com")!,
+        "Stanford CRFM":        URL(string: "https://crfm.stanford.edu")!,
+        "Allen Institute for AI": URL(string: "https://allenai.org")!,
+        // Hardware vendors
+        "NVIDIA":               URL(string: "https://www.nvidia.com")!,
+        "AMD":                  URL(string: "https://www.amd.com")!,
+        "Intel":                URL(string: "https://www.intel.com")!,
+        "TSMC":                 URL(string: "https://www.tsmc.com")!,
+        "ASML":                 URL(string: "https://www.asml.com")!,
+        "Apple Silicon":        URL(string: "https://www.apple.com/mac/m-series/")!,
+        // Standards & community
+        "IEEE":                 URL(string: "https://www.ieee.org")!,
+        "ACM":                  URL(string: "https://www.acm.org")!,
+        "MLCommons":            URL(string: "https://mlcommons.org")!,
+        "Open Compute Project": URL(string: "https://www.opencompute.org")!,
+        // Foundational papers
+        "Vaswani 2017":         URL(string: "https://arxiv.org/abs/1706.03762")!,
+    ]
 )
 
 extension Brand {

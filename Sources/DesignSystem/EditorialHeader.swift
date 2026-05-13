@@ -57,7 +57,8 @@ struct EditorialHeader: View {
             basicsAllowlist: [],
             basicsSubtitle: "",
             policyConfig: PolicyConfig(displayName: "Compliance", subtitle: "", categories: [], excludedTerms: []),
-            accentTint: nil
+            accentTint: nil,
+            sourceURLs: [:]
         ),
         entryCount: 312
     )

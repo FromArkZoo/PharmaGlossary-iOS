@@ -29,8 +29,9 @@ struct Term: Codable, Identifiable, Hashable {
     /// Each source name becomes a markdown link if `Brand.sourceURLs` has
     /// a matching key; otherwise it renders as plain text.
     var sourcesMarkdown: String {
+        let urls = Brand.current.sourceURLs
         let parts = sources.map { name -> String in
-            if let url = Brand.sourceURLs[name] {
+            if let url = urls[name] {
                 return "[\(name)](\(url.absoluteString))"
             }
             return name

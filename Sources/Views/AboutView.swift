@@ -71,14 +71,22 @@ struct AboutView: View {
         }
     }
 
-    /// "FDA — Food and Drug Administration"
-    ///   → "[FDA](https://www.fda.gov) — Food and Drug Administration"
+    /// Linkify an About-screen source item. Two formats supported:
+    ///   "FDA — Food and Drug Administration" → "[FDA](url) — Food and Drug Administration"
+    ///   "OpenAI"                              → "[OpenAI](url)"
+    /// If no key matches, returns the item unchanged.
     private func linkifiedSource(_ item: String) -> String {
-        guard let dashRange = item.range(of: " — ") else { return item }
-        let abbrev = String(item[..<dashRange.lowerBound])
-        let rest = String(item[dashRange.lowerBound...])
-        if let url = Brand.sourceURLs[abbrev] {
-            return "[\(abbrev)](\(url.absoluteString))\(rest)"
+        let urls = Brand.current.sourceURLs
+        if let dashRange = item.range(of: " — ") {
+            let abbrev = String(item[..<dashRange.lowerBound])
+            let rest = String(item[dashRange.lowerBound...])
+            if let url = urls[abbrev] {
+                return "[\(abbrev)](\(url.absoluteString))\(rest)"
+            }
+            return item
+        }
+        if let url = urls[item] {
+            return "[\(item)](\(url.absoluteString))"
         }
         return item
     }
