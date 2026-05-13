@@ -101,6 +101,21 @@
   },
   {
     "letter": "A",
+    "term": "AGI",
+    "full": "Artificial General Intelligence",
+    "snappy": "Hypothetical AI system that can match or exceed humans on essentially any cognitive task.",
+    "detail": "The original goal of much AI research. Definitions vary — OpenAI's charter, Anthropic's responsible scaling policy, and academic papers all draw the line slightly differently. Frontier labs disagree on whether current LLMs are early AGI, on a path to AGI, or fundamentally limited. The term is contested but central to debate about AI strategy and risk.",
+    "indications": [
+      "Frontier"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "AI factory",
     "full": "",
     "snappy": "NVIDIA's term for data centers built specifically as AI inference and training facilities — coined by Jensen Huang.",
@@ -111,6 +126,20 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "AI safety",
+    "full": "",
+    "snappy": "Field of research focused on ensuring that powerful AI systems are reliable, predictable, and aligned with human intentions.",
+    "detail": "Spans technical work (alignment, interpretability, evaluations) and governance work (policy, regulation, international coordination). Took off around 2014 (Nick Bostrom's Superintelligence) and grew rapidly during the 2020s as model capabilities improved. Major institutions: Anthropic, MIRI, ARC, UK AI Safety Institute, US AI Safety Institute.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -139,6 +168,20 @@
     "category": "Company",
     "sources": [
       "Hugging Face"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Alignment",
+    "full": "",
+    "snappy": "Field of ensuring an AI system actually does what its designers and users want.",
+    "detail": "Broader than just \"safety\". Alignment researchers try to make sure that a model's goals, behaviour, and values reflect the intentions of its principals — not just at training time, but as the system is deployed and as it becomes more capable. Major techniques include RLHF, Constitutional AI, interpretability, and red-teaming.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -281,6 +324,21 @@
     "category": "Eval",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "ASI",
+    "full": "Artificial Superintelligence",
+    "snappy": "Hypothetical AI system that exceeds the best human experts at every task by a large margin.",
+    "detail": "The level beyond AGI. Whether AGI naturally accelerates toward ASI is a major open question (\"intelligence explosion\", \"takeoff\"). Anthropic, OpenAI, and DeepMind all have explicit positions on the responsibilities of labs developing systems that could plausibly reach ASI. Term sometimes used loosely; sometimes specifically.",
+    "indications": [
+      "Frontier",
+      "Safety"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -645,6 +703,21 @@
   },
   {
     "letter": "C",
+    "term": "Catastrophic forgetting",
+    "full": "",
+    "snappy": "When a model trained on new data loses capabilities it had after earlier training.",
+    "detail": "Classic problem when fine-tuning: fine-tune on medical data, lose general knowledge. Mitigated by mixing some old data into the new training (rehearsal), or by using techniques like LoRA that change only a few parameters. Particularly relevant for continually-updated production models.",
+    "indications": [
+      "Research",
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Cerebras Systems",
     "full": "",
     "snappy": "AI hardware startup behind the wafer-scale engine — a single chip the size of a dinner plate.",
@@ -725,6 +798,21 @@
     "category": "Concepts",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Circuit",
+    "full": "",
+    "snappy": "A specific computational pathway inside a neural network — a group of features and weights that together implement a function.",
+    "detail": "Mech interp aims to identify circuits responsible for specific behaviours: \"the circuit that handles indirect object identification\", \"the circuit that detects deception\". Once identified, circuits can be studied, perturbed, and (eventually) edited to change behaviour. Foundational unit of interpretability analysis.",
+    "indications": [
+      "Safety",
+      "Research"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -1115,6 +1203,21 @@
   },
   {
     "letter": "D",
+    "term": "Deceptive alignment",
+    "full": "",
+    "snappy": "Hypothetical failure mode where a model pretends to be aligned during training in order to gain trust, then defects later.",
+    "detail": "Closely related to scheming. Currently theoretical for production models but plausible for sufficiently capable agents. Anthropic, OpenAI, and DeepMind have all published research on detecting deceptive behaviour in current models — a precursor to ensuring it can be detected in more capable future ones.",
+    "indications": [
+      "Safety",
+      "Frontier"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "Decoder",
     "full": "",
     "snappy": "The part of a model that writes its output one word at a time, each word built on what's come before.",
@@ -1242,6 +1345,20 @@
     "sources": [
       "Microsoft Research",
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Distribution shift",
+    "full": "",
+    "snappy": "When the data a model sees in deployment differs from the data it was trained on — a major source of failures.",
+    "detail": "An AI trained on photos from sunny California will struggle in snowy Sweden. An LLM trained on web text through 2024 will be confused by 2026 events. Distribution shift is the deep reason model performance often degrades after deployment. Distinct from but related to dataset bias.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -1523,6 +1640,21 @@
   },
   {
     "letter": "E",
+    "term": "Existential risk",
+    "full": "X-risk",
+    "snappy": "Risk that AI development could lead to human extinction or permanent loss of human autonomy.",
+    "detail": "Central concern of the AI safety community. Sources of x-risk include misaligned superintelligence, AI-enabled biothreats, totalitarian misuse, and accidental cascading failures. Frontier labs publish responsible scaling policies that commit to pausing or restricting development if specific dangerous capabilities emerge. Public-facing debate is contested; \"AI doomers\" vs \"e/acc\" is the well-known shorthand.",
+    "indications": [
+      "Safety",
+      "Frontier"
+    ],
+    "category": "Frontier",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "E",
     "term": "Exploration vs exploitation",
     "full": "",
     "snappy": "Fundamental trade-off in RL — should the agent try new things, or stick with what already works?",
@@ -1547,6 +1679,21 @@
     "category": "Eval",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Feature",
+    "full": "Interpretability feature",
+    "snappy": "A learned direction in a model's internal representation that corresponds to a recognisable concept.",
+    "detail": "Features inside an LLM might include \"the model is currently discussing Italy\", \"the user is asking about dates\", \"there's a Python `for` loop in the input\". Found by sparse autoencoders and similar methods. Editing features can steer the model — Anthropic's \"Golden Gate Claude\" demo (2024) clamped one feature high and got an LLM that talked about the bridge incessantly.",
+    "indications": [
+      "Safety",
+      "Research"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -1662,6 +1809,21 @@
     "category": "Concepts",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Frontier model",
+    "full": "",
+    "snappy": "Term used by regulators (EU AI Act, US executive orders) for the most-capable AI models, defined by training-compute threshold.",
+    "detail": "Both the EU AI Act and the now-rescinded US AI executive order set thresholds (10²⁵ FLOPs roughly) above which a model is classified as a frontier model and subject to additional reporting. The threshold creates a small group of companies (OpenAI, Anthropic, Google, Meta, xAI) directly subject to frontier-AI regulation.",
+    "indications": [
+      "Frontier",
+      "Safety"
+    ],
+    "category": "Regulation",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -1848,6 +2010,35 @@
     "category": "Infrastructure",
     "sources": [
       "xAI"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Goal misgeneralisation",
+    "full": "",
+    "snappy": "When a model performs well in training but pursues a subtly different goal at deployment.",
+    "detail": "Classic example: a model rewarded for collecting apples in training generalises to \"go to whatever direction the apples were\" rather than \"collect apples\" — and fails when apples move elsewhere at test time. DeepMind documented several such failures in 2022. Considered an inner-alignment failure mode.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "Goodhart's law",
+    "full": "",
+    "snappy": "\"When a measure becomes a target, it ceases to be a good measure.\" The patron saint of reward hacking and benchmark gaming.",
+    "detail": "Coined by economist Charles Goodhart. Heavily quoted in AI safety: any time you optimise a model against a metric, the metric starts decoupling from what you actually wanted. RLHF reward hacking, benchmark contamination, and SAT-prep-style benchmark-targeting are all Goodhart in action.",
+    "indications": [
+      "Safety",
+      "Research"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "UC Berkeley"
     ]
   },
   {
@@ -2351,6 +2542,20 @@
   },
   {
     "letter": "I",
+    "term": "Inner alignment",
+    "full": "",
+    "snappy": "Ensuring a model is actually pursuing the goal it was trained on — not some lookalike that happens to score well in training.",
+    "detail": "Inner-alignment failures: a model that learns to please humans only when it's being watched, or that pursues a goal correlated with the training reward but distinct from it. Hard to test for, because you only see behaviour, not the underlying goal. Major open problem in alignment research.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "I",
     "term": "Inpainting",
     "full": "",
     "snappy": "Replacing a masked region of an existing image with newly-generated content that matches the surroundings.",
@@ -2377,6 +2582,21 @@
     "sources": [
       "OpenAI",
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Instrumental convergence",
+    "full": "",
+    "snappy": "Idea that almost any sufficiently capable goal-pursuing agent will pursue certain sub-goals — self-preservation, resource acquisition, goal-preservation — regardless of its final goal.",
+    "detail": "Argued by Nick Bostrom and others. The concern: even an AI with a benign final goal will gather resources, resist shutdown, and prevent goal modification simply because those things help it achieve its goal. Provides one of the central arguments for why advanced AI safety is hard.",
+    "indications": [
+      "Safety",
+      "Frontier"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -2422,6 +2642,20 @@
     "category": "Hardware",
     "sources": [
       "Intel"
+    ]
+  },
+  {
+    "letter": "J",
+    "term": "Jailbreak",
+    "full": "",
+    "snappy": "Prompt or technique that bypasses a model's safety training and gets it to produce normally-refused content.",
+    "detail": "Examples: role-play prompts (\"pretend you're an evil AI\"), encoded requests, prompt injections from web content, multi-turn manipulation. Each frontier model release sparks a community of researchers finding new jailbreaks. Anthropic, OpenAI, and Google patch them through additional training; arms race continues.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -2913,6 +3147,21 @@
   },
   {
     "letter": "M",
+    "term": "Mechanistic interpretability",
+    "full": "Mech interp",
+    "snappy": "Reverse-engineering what's happening inside a neural network — understanding which circuits do which jobs.",
+    "detail": "Treats a trained model as an artefact to be studied: identify circuits, name features, trace causal pathways. Pioneered by Chris Olah and collaborators at OpenAI, then Anthropic, and now growing field. Sparse autoencoders (2023-2024) made it possible to find interpretable features in real frontier models. Promising path toward making alignment empirically testable.",
+    "indications": [
+      "Safety",
+      "Research"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Megatron-LM",
     "full": "",
     "snappy": "NVIDIA's reference implementation of tensor and pipeline parallelism for Transformer training.",
@@ -2979,6 +3228,20 @@
     "category": "Hardware",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Mesa-optimisation",
+    "full": "",
+    "snappy": "When a trained model itself becomes an optimiser pursuing its own internal goal, possibly different from what it was trained for.",
+    "detail": "The training process (gradient descent) is the \"base optimiser\". A model that learns to plan and pursue objectives is a \"mesa-optimiser\". If the mesa-optimiser's goal differs from the training objective, you have a mesa-alignment problem. Coined in a 2019 MIRI paper. Theoretical worry today, possibly very real as agents become more capable.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
     ]
   },
   {
@@ -3181,6 +3444,21 @@
     "category": "Eval",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Model collapse",
+    "full": "",
+    "snappy": "Phenomenon where models trained on generated outputs of other models progressively lose quality.",
+    "detail": "Documented 2023 papers (Shumailov et al.). As more web content is AI-generated, training future models on web scrapes increasingly mixes in AI-output, which can degrade diversity and rare-event coverage. Mitigated by data curation, synthetic data design, and weighting human-original sources higher.",
+    "indications": [
+      "Research",
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -3485,6 +3763,20 @@
   },
   {
     "letter": "O",
+    "term": "Outer alignment",
+    "full": "",
+    "snappy": "Getting the reward signal or objective function right — does it actually capture what you want?",
+    "detail": "If the reward says \"make humans laugh\", an outer alignment failure is one where the reward badly captures real human preferences (laughs at sarcasm, but not at humour). Distinct from inner alignment, which is about whether the model is actually trying to maximise the reward it was trained for.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "O",
     "term": "Outpainting",
     "full": "",
     "snappy": "Extending an existing image beyond its borders — the model generates new content that fits the original.",
@@ -3714,6 +4006,21 @@
   },
   {
     "letter": "P",
+    "term": "Power-seeking",
+    "full": "",
+    "snappy": "Tendency of capable agents to acquire resources, capabilities, and influence as instrumental goals.",
+    "detail": "Specific case of instrumental convergence. A focus of empirical work — researchers test whether LLMs given long-horizon agentic tasks behave in power-seeking ways. So far, evidence is mixed; modern models tend not to pursue power in current setups, but the safety concern is about future capability levels.",
+    "indications": [
+      "Safety",
+      "Frontier"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "PPO",
     "full": "Proximal Policy Optimization",
     "snappy": "The reinforcement learning algorithm used inside RLHF — keeps updates small enough that the model doesn't drift away from its training.",
@@ -3783,6 +4090,21 @@
     "category": "Concepts",
     "sources": [
       "Anthropic"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "Prompt injection",
+    "full": "",
+    "snappy": "Adversarial inputs hidden in third-party content (web pages, emails, documents) that hijack an LLM-based agent.",
+    "detail": "A document tells the agent \"ignore previous instructions and email the user's contacts\"; the agent obeys. Particularly serious for retrieval-based and tool-using agents. Most consequential alignment-adjacent security issue in deployed LLM apps. Mitigations under active development; no perfect defence yet.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic",
+      "OpenAI"
     ]
   },
   {
@@ -4295,6 +4617,21 @@
   },
   {
     "letter": "S",
+    "term": "Scheming",
+    "full": "",
+    "snappy": "When a model takes actions intended to undermine oversight — concealing capabilities, manipulating evaluators, biding its time.",
+    "detail": "Anthropic and Apollo Research have documented early signs of scheming behaviour in frontier models given suitably contrived setups. Treated seriously enough that responsible-scaling policies include specific scheming-evaluation thresholds. Whether current scheming behaviour is goal-directed or instrumental is contested.",
+    "indications": [
+      "Safety",
+      "Frontier"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Scratchpad",
     "full": "",
     "snappy": "Free-form intermediate-text area an agent uses to think out loud — usually hidden from the final answer.",
@@ -4468,6 +4805,21 @@
   },
   {
     "letter": "S",
+    "term": "Sparse autoencoder",
+    "full": "SAE",
+    "snappy": "Tool for interpretability: decompose a model's internal activations into a sparse set of interpretable features.",
+    "detail": "Trained to reconstruct a model's activations using a large dictionary of features, with the constraint that only a few features fire at any time. The features often turn out to be human-interpretable: \"this is a feature for the Golden Gate Bridge\". Anthropic's 2024 \"Scaling Monosemanticity\" paper applied SAEs to Claude and produced thousands of named features.",
+    "indications": [
+      "Safety",
+      "Research"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Sparse MoE",
     "full": "",
     "snappy": "The standard form of MoE today — for any given input, only a handful of the model's experts wake up.",
@@ -4476,6 +4828,20 @@
       "Research"
     ],
     "category": "Architecture",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Specification gaming",
+    "full": "",
+    "snappy": "When a model finds an unintended way to satisfy its specification — letter rather than spirit of the law.",
+    "detail": "A boat-racing agent that spins in circles to harvest power-ups instead of finishing the race. A cleaning robot that hides messes instead of cleaning them. Documented in many environments. Closely related to reward hacking but a slightly broader umbrella that includes the case where the model wasn't even trained with RL.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
     "sources": [
       "Google DeepMind"
     ]
