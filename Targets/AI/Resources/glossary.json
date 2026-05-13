@@ -1,5 +1,33 @@
 [
   {
+    "letter": "2",
+    "term": "2.5D packaging",
+    "full": "",
+    "snappy": "Approach to advanced packaging where multiple dies sit side-by-side on an interposer — between traditional flat packaging and full 3D stacking.",
+    "detail": "Most current AI accelerators use 2.5D: GPU compute die + HBM stacks on a common interposer. The interposer carries fine-pitch wires between the dies for very high inter-die bandwidth. Distinct from 3D, where dies are stacked vertically. CoWoS is TSMC's brand of 2.5D.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "3",
+    "term": "3D packaging",
+    "full": "3D stacking",
+    "snappy": "Stacking dies vertically — connecting them with through-silicon vias for very dense, short connections.",
+    "detail": "Used in HBM (DRAM dies stacked 8-12 high) and increasingly for logic. TSMC's SoIC, Intel's Foveros Direct, Samsung's X-Cube are 3D options. The most aggressive form is hybrid bonding, which connects dies copper-to-copper at micron pitch. Promises huge bandwidth at low power; thermal management is the central challenge.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
     "letter": "A",
     "term": "A100",
     "full": "Ampere A100",
@@ -82,6 +110,20 @@
     "category": "Training",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Advanced packaging",
+    "full": "",
+    "snappy": "Catch-all term for chip packaging beyond the basic single-die-in-plastic — interposers, 3D stacking, hybrid bonding, chiplets.",
+    "detail": "Has become as important as transistor scaling. As Moore's law slows, advanced packaging is where the AI hardware industry finds gains. TSMC's CoWoS, Intel's Foveros, Samsung's X-Cube are the major options. Capacity is constrained — CoWoS in particular has been a bottleneck for NVIDIA's GPU production through 2024-2025.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
     ]
   },
   {
@@ -472,6 +514,20 @@
   },
   {
     "letter": "B",
+    "term": "Backside power delivery",
+    "full": "BSPDN",
+    "snappy": "Routing power to a chip through the back of the silicon rather than the top — frees up the front for signal wiring.",
+    "detail": "Major architectural shift for upcoming 2nm-class nodes. Intel's 18A is the first to ship it (\"PowerVia\"), with TSMC and Samsung close behind. Improves power-delivery efficiency and unblocks signal routing on the front-side metal layers, enabling smaller, denser logic.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "Intel"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "Bandwidth",
     "full": "",
     "snappy": "How fast data can flow through an interconnect or memory channel — usually measured in GB/s or TB/s.",
@@ -628,6 +684,20 @@
     "sources": [
       "OpenAI",
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "Bump",
+    "full": "Solder bump",
+    "snappy": "Tiny solder ball that connects a chip die to its package substrate.",
+    "detail": "Modern chips have hundreds of thousands of bumps in dense arrays. Bump pitch (the distance between adjacent bumps) has shrunk from hundreds of micrometres in old packages to tens of micrometres in advanced packaging. Hybrid bonding skips bumps entirely with copper-to-copper contact, reaching sub-micron pitches.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
     ]
   },
   {
@@ -798,6 +868,20 @@
     "category": "Concepts",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Chiplet",
+    "full": "",
+    "snappy": "Small specialised chip designed to be combined with other chiplets into a single package.",
+    "detail": "Instead of building one giant chip that does everything, split it into smaller chiplets and connect them in a package. Each chiplet can use its optimal process node — compute on 3nm, memory on 7nm, I/O on 12nm. AMD's CPUs and MI300 GPUs are chiplet-based; Intel and NVIDIA are moving the same way. Major architectural shift of the 2020s.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "AMD"
     ]
   },
   {
@@ -1055,6 +1139,20 @@
     "category": "Infrastructure",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "CoWoS",
+    "full": "Chip on Wafer on Substrate",
+    "snappy": "TSMC's flagship advanced packaging — places multiple dies (compute, memory) onto a silicon interposer.",
+    "detail": "Used in NVIDIA H100, H200, B200, AMD MI300/350, Google TPU v4/v5/Trillium, and most other high-end AI accelerators. The HBM memory stacks sit right next to the compute die on the interposer, enabling huge bandwidth. CoWoS capacity is TSMC-limited and remains the binding constraint on frontier-AI chip supply.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
     ]
   },
   {
@@ -1355,6 +1453,20 @@
     "category": "Manufacturing",
     "sources": [
       "TSMC"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Die-to-die interconnect",
+    "full": "D2D",
+    "snappy": "Generic term for the wiring between chiplets in a package — UCIe, Infinity Fabric, NVLink-C2C, BoW are specific instances.",
+    "detail": "Modern chiplet designs have died-to-die bandwidth measured in TB/s. The standards body battle (UCIe vs proprietary protocols like NVLink) is one of the strategic fronts in chip-platform competition. Open standards favor a healthy ecosystem; proprietary protocols favor incumbents.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "AMD"
     ]
   },
   {
@@ -1891,6 +2003,34 @@
       "Manufacturing"
     ],
     "category": "Manufacturing",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Foveros",
+    "full": "Intel Foveros",
+    "snappy": "Intel's 3D packaging technology — stacks logic on logic with fine-pitch interconnects.",
+    "detail": "Generations: Foveros (basic, 2019), Foveros Omni, Foveros Direct (hybrid bonding). Used in Intel's Meteor Lake/Lunar Lake CPUs, the Ponte Vecchio data-center GPU, and upcoming products. Intel positions Foveros as a key differentiator and a foundation for its foundry business.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "Intel"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "FoWLP",
+    "full": "Fan-Out Wafer-Level Packaging",
+    "snappy": "Packaging technique where the chip's connections fan out from the die area to a larger contact pattern on the substrate.",
+    "detail": "Used heavily in mobile (Apple A-series, Snapdragon) because it allows thin, dense packaging. Variants like InFO (Integrated Fan-Out) from TSMC have specific marketing names. Less relevant for big AI accelerators but central to consumer-electronics chips.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
     "sources": [
       "TSMC"
     ]
@@ -2555,6 +2695,20 @@
   },
   {
     "letter": "H",
+    "term": "Heterogeneous integration",
+    "full": "",
+    "snappy": "Combining chips made with different process technologies into one package — each piece using its best-suited node.",
+    "detail": "A common pattern: compute logic on the most expensive leading-edge node, memory or analogue circuits on cheaper trailing-edge processes. Advanced packaging makes this practical because the dies can be much closer together (via interposer or stacking) than they'd be on separate boards. Central to the chiplet movement.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "H",
     "term": "High-NA EUV",
     "full": "",
     "snappy": "Next-generation EUV lithography with a larger numerical aperture — required for the most aggressive future nodes.",
@@ -2579,6 +2733,20 @@
     "category": "Eval",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "H",
+    "term": "Hybrid bonding",
+    "full": "",
+    "snappy": "Connecting two dies face-to-face directly via copper-to-copper contact, with no bumps in between.",
+    "detail": "Allows much finer pitch (sub-micron) than bump bonding. Used in advanced 3D packaging (TSMC SoIC, Intel Foveros Direct). Enables effectively monolithic-feeling stacked chips with bandwidth close to on-die levels. Still rare in production but expected to be the dominant 3D-stack technique through the late 2020s.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
     ]
   },
   {
@@ -2725,6 +2893,20 @@
   },
   {
     "letter": "I",
+    "term": "Infinity Fabric",
+    "full": "",
+    "snappy": "AMD's proprietary chip-to-chip interconnect — used to link CPU chiplets, GPU chiplets, and CPU-to-GPU.",
+    "detail": "Generations 1-4. Provides cache-coherent communication between AMD's distributed CPU cores and accelerator chiplets. Critical to AMD's modular chiplet architecture in EPYC, Ryzen, and MI300 series. Closer to NVIDIA NVLink than to PCIe in terms of role.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "AMD"
+    ]
+  },
+  {
+    "letter": "I",
     "term": "Inner alignment",
     "full": "",
     "snappy": "Ensuring a model is actually pursuing the goal it was trained on — not some lookalike that happens to score well in training.",
@@ -2825,6 +3007,20 @@
     "category": "Hardware",
     "sources": [
       "Intel"
+    ]
+  },
+  {
+    "letter": "I",
+    "term": "Interposer",
+    "full": "",
+    "snappy": "Passive silicon layer that sits beneath multiple dies and routes signals between them.",
+    "detail": "Modern interposers (used in CoWoS) are several centimetres on a side, with many layers of fine-pitch copper wiring. The dies above (compute, HBM) connect to the interposer through tiny bumps. Interposer area drives package size; TSMC has been steadily increasing reticle multiples (the max size of an interposer) to fit bigger AI chips.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
     ]
   },
   {
@@ -3730,6 +3926,20 @@
   },
   {
     "letter": "M",
+    "term": "Multi-chip module",
+    "full": "MCM",
+    "snappy": "Package containing multiple chips wired together on a shared substrate — the original form of multi-die packaging.",
+    "detail": "Pre-dates modern \"chiplet\" terminology. Has been used since the 1990s in CPUs (IBM POWER, Pentium Pro). The modern chiplet-plus-interposer designs are a direct descendant. Distinguished from System-in-Package (SiP) only by convention; the terms overlap.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "AMD"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Multi-head attention",
     "full": "",
     "snappy": "Several attention operations running in parallel, each learning to spot a different kind of pattern.",
@@ -3870,6 +4080,20 @@
       "Compute"
     ],
     "category": "Interconnect",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "N",
+    "term": "NVLink-C2C",
+    "full": "NVLink chip-to-chip",
+    "snappy": "NVIDIA's chip-to-chip interconnect — used to link Grace CPU with Hopper or Blackwell GPU on a single board.",
+    "detail": "Provides 900 GB/s between the CPU and GPU on a Grace-Hopper or Grace-Blackwell module — far faster than PCIe. Variant of NVLink optimised for tight chip-to-chip rather than rack-scale. Enables larger effective memory footprint by giving the GPU fast access to host memory.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
     "sources": [
       "NVIDIA"
     ]
@@ -4255,6 +4479,20 @@
     "category": "Concepts",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "P",
+    "term": "PoP",
+    "full": "Package-on-Package",
+    "snappy": "Stacking one chip package directly on top of another — typically a logic chip with memory on top.",
+    "detail": "Common in mobile devices to keep DRAM physically very close to the CPU/GPU without integrating it on the same die. Apple's A-series and many Android SoCs use PoP for the memory. Distinguished from on-package memory like HBM, which is more tightly integrated.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "Apple"
     ]
   },
   {
@@ -4691,6 +4929,20 @@
   },
   {
     "letter": "R",
+    "term": "Reticle limit",
+    "full": "",
+    "snappy": "Maximum die size that a lithography machine can print in one shot — roughly 858 mm² for current EUV.",
+    "detail": "Limited by the physical optics of the lithography system. The H100 die size (814 mm²) is already at the reticle limit; B200 uses two reticle-limit dies stitched together via advanced packaging. Pushes beyond the reticle limit are why advanced packaging (and reticle stitching techniques) are so important to frontier AI silicon.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "ASML"
+    ]
+  },
+  {
+    "letter": "R",
     "term": "Reward",
     "full": "",
     "snappy": "Scalar signal the environment gives the agent — captures whatever the agent is supposed to maximise.",
@@ -5072,6 +5324,20 @@
   },
   {
     "letter": "S",
+    "term": "SoIC",
+    "full": "System on Integrated Chips",
+    "snappy": "TSMC's 3D stacking technology — uses hybrid bonding for very dense die-on-die integration.",
+    "detail": "Used by AMD in V-Cache (extra L3 cache stacked on top of CPU dies) and by Apple in M-series chips. Distinguished from CoWoS (2.5D, side-by-side) by its vertical stacking and finer-pitch bonding. Important step toward fully 3D logic-on-logic stacks.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "Sora",
     "full": "",
     "snappy": "OpenAI's text-to-video model — produces minute-long photorealistic video from a prompt.",
@@ -5251,6 +5517,20 @@
     "category": "Concepts",
     "sources": [
       "Stability AI"
+    ]
+  },
+  {
+    "letter": "S",
+    "term": "Substrate",
+    "full": "",
+    "snappy": "The bottom layer of a chip package — a small printed circuit board that carries the die and routes signals to the board.",
+    "detail": "Modern AI packages use specialised substrates (ABF — Ajinomoto Build-up Film) with many layers of fine wiring. The package substrate is a separate supply-chain component, made by companies like Unimicron, Ibiden, and Shinko. Substrate capacity has been a periodic bottleneck.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
     ]
   },
   {
@@ -5492,6 +5772,20 @@
       "Inference"
     ],
     "category": "Inference",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "T",
+    "term": "TIM",
+    "full": "Thermal Interface Material",
+    "snappy": "Paste or pad placed between a chip and its cooling system to conduct heat efficiently.",
+    "detail": "Often overlooked but critical at high-power densities. Modern AI accelerators dissipate hundreds of watts per die, and any thermal interface gap dramatically reduces cooling effectiveness. Specialty TIMs (liquid metal, sintered silver, polymer-based composites) are an active R&D area as power densities climb further.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
     "sources": [
       "NVIDIA"
     ]
@@ -5798,6 +6092,20 @@
   },
   {
     "letter": "T",
+    "term": "TSV",
+    "full": "Through-Silicon Via",
+    "snappy": "Vertical conductive pathway drilled through silicon — lets stacked chips talk to each other.",
+    "detail": "TSVs go through the body of a die, typically connecting top and bottom faces. Essential for 3D stacking (HBM, advanced packaging). Pitch and density of TSVs are major engineering metrics — finer pitch means more connections per square millimetre. Used heavily by SK Hynix, Samsung, Micron in HBM.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "TTS",
     "full": "Text-to-Speech",
     "snappy": "Generative AI that turns written text into spoken audio — used for accessibility, narration, voice assistants.",
@@ -5827,6 +6135,20 @@
   },
   {
     "letter": "U",
+    "term": "UCIe",
+    "full": "Universal Chiplet Interconnect Express",
+    "snappy": "Open standard for connecting chiplets from different vendors — analogous to PCIe at the chip-to-chip level.",
+    "detail": "Backed by Intel, AMD, Arm, TSMC, Samsung, and others (notably not NVIDIA, which has its own proprietary interconnect). UCIe 1.0 (2022) and 2.0 (2024). The goal: a mix-and-match chiplet ecosystem where you can buy a compute chiplet from one vendor and combine it with memory chiplets from another. Adoption is slow but growing.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "Intel"
+    ]
+  },
+  {
+    "letter": "U",
     "term": "Ultra Ethernet",
     "full": "UEC",
     "snappy": "Industry effort to make Ethernet competitive with InfiniBand for AI clusters.",
@@ -5837,6 +6159,20 @@
     "category": "Interconnect",
     "sources": [
       "AMD"
+    ]
+  },
+  {
+    "letter": "U",
+    "term": "UltraFusion",
+    "full": "Apple UltraFusion",
+    "snappy": "Apple's interconnect that joins two M-series Max chips into an Ultra — used in M1 Ultra, M2 Ultra, and successors.",
+    "detail": "A dense silicon interposer connects the two dies with thousands of signal lines, presenting them to software as one chip. Allows Apple to scale up to higher-end Mac Studio and Pro configurations without designing a separate larger die. Distinguishes Apple's approach from typical multi-socket designs.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "Apple"
     ]
   },
   {
@@ -6022,6 +6358,20 @@
     "category": "Models",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "Wire bonding",
+    "full": "",
+    "snappy": "Older packaging technique — thin wires connect the die's edges to the substrate's edge contacts.",
+    "detail": "Still used in low-cost packages and some non-leading-edge chips. Largely displaced by flip-chip (bumps under the die) in everything performance-sensitive, because wire bonds are slower, longer, and less dense. Knowing the term helps when reading older chip documentation or low-cost product literature.",
+    "indications": [
+      "Manufacturing"
+    ],
+    "category": "Packaging",
+    "sources": [
+      "TSMC"
     ]
   },
   {
