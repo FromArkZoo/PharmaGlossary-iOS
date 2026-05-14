@@ -39,7 +39,42 @@ let aiBrand = Brand(
             glyph: "B",
             title: "Basics",
             subtitle: "Foundational ML & hardware",
-            kind: .allowlist(["Transformer", "GPU"])
+            kind: .allowlist([
+                // Core math & numerics
+                "Activation function", "Cross-entropy", "Dot product", "Embedding",
+                "Entropy", "Gradient", "Matrix", "Matrix multiplication", "Norm",
+                "ReLU", "Sigmoid", "Softmax", "Tensor", "Vector",
+                // Neural network architecture
+                "Attention", "Convolutional neural network", "Decoder",
+                "Diffusion model", "Encoder", "Layer", "Mixture of Experts",
+                "Multi-head attention", "Positional encoding",
+                "Recurrent neural network", "Self-attention", "Transformer",
+                // Training
+                "Adam", "Backpropagation", "Batch", "Epoch", "Fine-tuning",
+                "Generalisation", "Gradient descent", "Hyperparameter",
+                "Learning rate", "LoRA", "Loss function", "Overfitting",
+                "Pretraining",
+                // Inference & generation
+                "Context window", "Inference", "KV cache", "Logits", "Prompt",
+                "Quantization", "Sampling", "System prompt", "Temperature",
+                "Token", "Tokenization", "Top-k sampling", "Top-p sampling",
+                // Learning paradigms & techniques
+                "Chain-of-thought", "Emergent abilities", "Few-shot prompting",
+                "Generative AI", "Hallucination", "Prompt engineering",
+                "Reasoning model", "Reinforcement learning", "Scaling laws",
+                "Self-supervised learning", "Zero-shot vs few-shot",
+                // Evaluation
+                "Benchmark", "BLEU", "F1 score", "LLM-as-judge", "MMLU",
+                "Perplexity",
+                // Alignment & safety
+                "AI safety", "Alignment", "Constitutional AI", "Jailbreak",
+                "RLHF", "Red-teaming", "Reward model",
+                // Agents & retrieval
+                "Agent", "Function calling", "RAG", "Tool use", "Vector database",
+                // Hardware
+                "ASIC", "Accelerator", "BF16", "CPU", "CUDA", "FP16", "GPU",
+                "HBM", "INT8", "Memory bandwidth", "Tensor core", "Transistor"
+            ])
         ),
         LensConfig(
             id: "frontier",
