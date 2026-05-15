@@ -83,7 +83,8 @@ let aiBrand = Brand(
                 "Advanced packaging", "Chiplet", "Die", "Fab", "Foundry",
                 "Lithography", "Process node", "Wafer",
                 // Infrastructure
-                "Compute cluster", "Data center", "Gigawatt", "Hyperscaler"
+                "Cloud", "Compute cluster", "Data center", "Gigawatt",
+                "Hyperscaler", "Neocloud"
             ])
         ),
         LensConfig(

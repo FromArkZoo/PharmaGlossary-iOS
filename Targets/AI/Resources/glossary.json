@@ -1878,6 +1878,20 @@
   },
   {
     "letter": "C",
+    "term": "Cloud",
+    "full": "",
+    "snappy": "Renting compute, storage, and software over the internet instead of running it on hardware you own.",
+    "detail": "The umbrella for AWS, Azure, Google Cloud, Oracle, and the smaller specialists. Modern AI runs almost entirely on cloud infrastructure — training a frontier model requires thousands of GPUs running for months, impractical to buy outright. The market divides into hyperscalers (AWS/Azure/GCP/OCI), neoclouds (CoreWeave, Crusoe, Lambda Labs), and on-prem alternatives. Pay-by-the-hour pricing made the current AI boom economically possible.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Cluster utilization",
     "full": "",
     "snappy": "Fraction of a compute cluster's capacity that's actually being used productively.",
@@ -6588,6 +6602,20 @@
     "category": "Concepts",
     "sources": [
       "Stability AI"
+    ]
+  },
+  {
+    "letter": "N",
+    "term": "Neocloud",
+    "full": "",
+    "snappy": "GPU-specialist cloud provider — newer entrants like CoreWeave, Crusoe, and Lambda Labs that focus on AI workloads instead of general compute.",
+    "detail": "Distinct from hyperscalers in being narrower and more specialised. Neoclouds rent NVIDIA GPUs at scale to AI labs and enterprises that need capacity now rather than waiting in a hyperscaler queue. Software stack is optimised for training and inference rather than general-purpose compute. Often founded with novel angles — CoreWeave pivoted from crypto mining; Crusoe runs on stranded gas; Lambda Labs sells GPU workstations alongside cloud. Microsoft has offloaded some OpenAI training to CoreWeave when Azure capacity was tight.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Infrastructure",
+    "sources": [
+      "NVIDIA"
     ]
   },
   {
