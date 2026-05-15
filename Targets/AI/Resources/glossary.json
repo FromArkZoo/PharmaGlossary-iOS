@@ -85,6 +85,20 @@
   },
   {
     "letter": "A",
+    "term": "Accuracy",
+    "full": "",
+    "snappy": "The simplest evaluation metric — the percentage of examples a model gets correct.",
+    "detail": "Useful for balanced classification problems but misleading when classes are imbalanced (a 99% accurate cancer detector that always says \"no cancer\" misses every actual case). For LLMs, \"accuracy on MMLU\" or \"accuracy on HumanEval\" remains a headline number even as researchers increasingly prefer richer metrics like F1, calibration, and pass@k. For regression tasks, \"accuracy\" gets replaced by mean squared error or similar.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Eval",
+    "sources": [
+      "MLCommons"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Activation function",
     "full": "",
     "snappy": "The non-linear element of a neural network layer — what makes neural networks more than just matrix multiplication.",
@@ -666,6 +680,20 @@
   },
   {
     "letter": "A",
+    "term": "Algorithm",
+    "full": "",
+    "snappy": "A precise step-by-step procedure for solving a problem or performing a computation.",
+    "detail": "The most basic concept in computer science. In ML/AI, an algorithm might describe how to train a model (stochastic gradient descent), how to sample from one at inference (beam search, top-k), how to search a tree (MCTS in AlphaGo), or how to retrieve relevant data (BM25, vector search). LLMs are trained by algorithms but are not themselves algorithms in the traditional sense — they're learned function approximators.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Algorithmic discrimination",
     "full": "",
     "snappy": "AI systems that produce different (worse) outcomes for protected groups — by race, gender, age, etc.",
@@ -905,6 +933,21 @@
   },
   {
     "letter": "A",
+    "term": "API",
+    "full": "Application Programming Interface",
+    "snappy": "A standardised way for one piece of software to call another — how applications use AI models hosted by labs.",
+    "detail": "How most companies integrate LLMs today: send a request to OpenAI, Anthropic, or Google with text in, get text back, pay per token. Bypasses the need to host the model yourself. Each lab exposes its frontier model behind an API endpoint, often versioned (e.g. claude-4-opus, gpt-5). API revenue is the central business model for frontier labs that don't sell devices or run search ads. Latency, rate limits, and pricing tiers vary by provider.",
+    "indications": [
+      "Models"
+    ],
+    "category": "Software",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Apple",
     "full": "",
     "snappy": "Designer of the M-series chips and Apple Intelligence on-device AI — vertically integrated.",
@@ -973,6 +1016,21 @@
     "category": "Eval",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "A",
+    "term": "Artificial intelligence",
+    "full": "AI",
+    "snappy": "The broad field of building computer systems that perform tasks usually requiring human intelligence — perception, reasoning, language, decision-making.",
+    "detail": "Coined by John McCarthy at the 1956 Dartmouth workshop. Cycled through symbolic AI (1950s-1980s), expert systems, classical machine learning, and the current deep learning era. Modern AI is dominated by neural networks trained at scale on web-scale data. The field's frontier is now defined by frontier labs (OpenAI, Anthropic, Google DeepMind, xAI, Meta AI) racing toward AGI. Distinct from AGI (general human-level) and ASI (superhuman).",
+    "indications": [
+      "Research",
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -1352,6 +1410,20 @@
   },
   {
     "letter": "B",
+    "term": "Bias",
+    "full": "",
+    "snappy": "In ML, two distinct things: a model's learned tendency to over-favour certain outputs, or its tendency to disadvantage particular demographic groups.",
+    "detail": "The technical sense (bias-variance trade-off, inductive bias) describes how a model balances flexibility and assumption. The fairness sense describes harmful skew — image generators producing only white faces, resume screeners downgrading women, sentiment classifiers labelling AAVE as negative. Both are inherited from training data: garbage in, garbage out. Mitigations include data curation, debiasing techniques, and post-training evaluation across subgroups.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "B",
     "term": "Bias auditing",
     "full": "",
     "snappy": "Third-party review of an AI system's outputs to check for discriminatory or unwanted patterns.",
@@ -1674,6 +1746,21 @@
     "category": "Concepts",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Chatbot",
+    "full": "",
+    "snappy": "A conversational AI interface — text or voice — that holds a back-and-forth dialogue with a user.",
+    "detail": "The dominant consumer face of modern AI. Pre-2022 chatbots were rule-based or used narrow ML (Apple Siri, Amazon Alexa, customer-service flows). The post-ChatGPT generation is LLM-powered, capable of multi-turn conversation about almost any topic. Major examples: ChatGPT, Claude, Gemini, Grok, Pi, Character.AI. Often the gateway product for an AI lab — the most direct way for users and developers to encounter their latest model.",
+    "indications": [
+      "NLP"
+    ],
+    "category": "Industry",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
     ]
   },
   {
@@ -2004,6 +2091,20 @@
   },
   {
     "letter": "C",
+    "term": "Compute",
+    "full": "",
+    "snappy": "Raw computational power — the cycles, FLOPs, and GPU-hours that AI models consume during training and inference.",
+    "detail": "The single most important variable in modern AI. Measured in FLOPs (floating-point operations) for training, FLOPS/second for inference. Frontier training runs now consume 10^25 FLOPs — equivalent to running every desktop CPU on Earth for years. Compute scaling has driven every major capability leap since 2018. Access to compute (via hyperscalers, neoclouds, or owned clusters) is now a primary moat in the AI industry; export controls, GPU shortages, and gigawatt-scale data centres are downstream consequences.",
+    "indications": [
+      "Compute"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "C",
     "term": "Compute allocation",
     "full": "",
     "snappy": "Process — formal or informal — by which a lab's compute budget is divided among teams, projects, and experiments.",
@@ -2085,6 +2186,21 @@
     "sources": [
       "Anthropic",
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "C",
+    "term": "Computer vision",
+    "full": "CV",
+    "snappy": "The branch of AI that processes images and video — recognition, detection, segmentation, generation, and understanding of visual content.",
+    "detail": "Dominated by convolutional neural networks from 2012 (AlexNet on ImageNet) through the late 2010s, then by Vision Transformers and multimodal models from ~2020 onward. Applications span face recognition, self-driving cars, medical imaging, content moderation, and generative tasks (Stable Diffusion, Sora). Often combined with NLP into vision-language models (VLMs) like CLIP, GPT-4o, and Claude that can reason about both modalities.",
+    "indications": [
+      "Vision",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google Research"
     ]
   },
   {
@@ -2586,6 +2702,20 @@
   },
   {
     "letter": "D",
+    "term": "Dataset",
+    "full": "",
+    "snappy": "A collection of data used to train, evaluate, or test a model — the raw material from which AI systems learn.",
+    "detail": "Quality and scale both matter. Frontier LLMs train on trillions of tokens scraped from the web (Common Crawl, FineWeb), books (Books3), code (The Stack), and curated mixtures. Computer vision models use ImageNet, COCO, LAION. Benchmark datasets (MMLU, HumanEval, GPQA) measure capability rather than provide training data. Data licensing, copyright, and contamination (test data leaking into training) are central debates.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Hugging Face"
+    ]
+  },
+  {
+    "letter": "D",
     "term": "DDPG",
     "full": "Deep Deterministic Policy Gradient",
     "snappy": "Early actor-critic algorithm for continuous-action environments — RL for steering, throttle, joint torques.",
@@ -2669,6 +2799,36 @@
     "category": "Concepts",
     "sources": [
       "Hugging Face"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Deep learning",
+    "full": "",
+    "snappy": "Machine learning using neural networks with many layers — the approach behind essentially all modern AI breakthroughs.",
+    "detail": "The \"deep\" refers to network depth (many stacked layers), which lets models learn hierarchical representations — early layers detect edges, deeper ones detect faces. Took off in 2012 when GPUs made training large networks practical (AlexNet on ImageNet). Encompasses convolutional, recurrent, and transformer architectures. Distinguishes itself from classical ML (random forests, SVMs) by learning features directly from raw data rather than relying on hand-engineered ones.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "D",
+    "term": "Deep reinforcement learning",
+    "full": "Deep RL",
+    "snappy": "Reinforcement learning that uses deep neural networks as the function approximator — the combination that powered AlphaGo, AlphaZero, and modern RLHF.",
+    "detail": "Pre-2013, RL worked with hand-engineered features and small state spaces. The breakthrough came when DeepMind's DQN learned to play Atari from raw pixels (2013). Powered every major RL milestone since: AlphaGo (2016) beating Lee Sedol, AlphaZero mastering chess and shogi from self-play, AlphaStar in StarCraft II, robotic locomotion and dexterity, and the alignment phase of frontier LLMs via RLHF and DPO. The \"deep\" supplies pattern recognition; the \"RL\" supplies the learn-by-reward loop.",
+    "indications": [
+      "RL",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -3407,6 +3567,20 @@
   },
   {
     "letter": "E",
+    "term": "Explainability",
+    "full": "",
+    "snappy": "The ability to provide human-understandable reasons for why an AI made a particular decision — distinct from interpretability research.",
+    "detail": "Explainability targets end users and regulators: \"Why was my loan denied?\" Methods include SHAP values, LIME, attention visualisations, and natural-language rationales generated by the model itself. Interpretability is the deeper research field (mechanistic interpretability, sparse autoencoders) that aims to understand what's actually happening inside the network. The EU AI Act mandates \"explainability\" for high-risk systems, though what that means in practice for LLMs is unresolved.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "E",
     "term": "Exploration vs exploitation",
     "full": "",
     "snappy": "Fundamental trade-off in RL — should the agent try new things, or stick with what already works?",
@@ -3460,6 +3634,20 @@
     "category": "Manufacturing",
     "sources": [
       "TSMC"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Fairness",
+    "full": "",
+    "snappy": "Whether an AI system treats different groups of people equitably — a key concern in deployment, especially in hiring, lending, and law enforcement.",
+    "detail": "Multiple competing definitions: demographic parity (equal outcomes across groups), equalised odds (equal error rates), individual fairness (similar people get similar outcomes). These often conflict mathematically — you can't satisfy all simultaneously. Notorious failures include Amazon's resume screener that downgraded women's CVs, and facial recognition systems with higher error rates for darker-skinned faces. Regulated by the EU AI Act and the proposed US AI Bill of Rights.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -3619,6 +3807,21 @@
     "category": "Models",
     "sources": [
       "Stability AI"
+    ]
+  },
+  {
+    "letter": "F",
+    "term": "Foundation model",
+    "full": "",
+    "snappy": "A large pretrained model designed to be adapted to many downstream tasks rather than built for one purpose.",
+    "detail": "Coined by Stanford CRFM in 2021. Captures a shift in AI: instead of training a fresh model per task, you start from a massive pretrained base (GPT, Claude, Llama, Gemini) and fine-tune or prompt it for specific use cases. Examples extend beyond language — AlphaFold for proteins, Sora for video, Whisper for speech. Economic premise: pretrain once at huge cost, adapt cheaply forever.",
+    "indications": [
+      "Models",
+      "Frontier"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Stanford CRFM"
     ]
   },
   {
@@ -5620,6 +5823,22 @@
   },
   {
     "letter": "L",
+    "term": "LLM",
+    "full": "Large Language Model",
+    "snappy": "A neural network trained on enormous amounts of text to predict the next token — the technology behind ChatGPT, Claude, and Gemini.",
+    "detail": "Transformer-based, autoregressive, typically billions to trillions of parameters. Trained in two phases: pretraining on web-scale text, then post-training for instruction-following (RLHF, DPO, Constitutional AI). The current generation handles code, math, multi-step reasoning, and tool use, with context windows into the millions of tokens. Frontier LLMs (GPT-5, Claude 4, Gemini 2.5) are the centre of gravity in modern AI.",
+    "indications": [
+      "NLP",
+      "Models"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "L",
     "term": "LLM-as-judge",
     "full": "",
     "snappy": "Using a strong language model to grade other models' outputs — much cheaper than human raters.",
@@ -5785,6 +6004,21 @@
       "Research"
     ],
     "category": "Architecture",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "M",
+    "term": "Machine learning",
+    "full": "ML",
+    "snappy": "Algorithms that improve at a task by learning patterns from data rather than being explicitly programmed.",
+    "detail": "The umbrella field that includes deep learning as one sub-area. Encompasses classical methods (linear regression, decision trees, SVMs, random forests) and modern neural approaches. Three main paradigms: supervised (labelled examples), unsupervised (find structure in unlabelled data), reinforcement (learn from reward signals). Powers everything from spam filters to fraud detection to LLMs. The term predates AI's resurgence by decades — coined by Arthur Samuel at IBM in 1959.",
+    "indications": [
+      "Training",
+      "Research"
+    ],
+    "category": "Concepts",
     "sources": [
       "Stanford CRFM"
     ]
@@ -6349,6 +6583,21 @@
   },
   {
     "letter": "M",
+    "term": "Model",
+    "full": "",
+    "snappy": "The trained artifact — a set of learned parameters that turns inputs into outputs for some task.",
+    "detail": "In ML, \"the model\" usually means the weights of a neural network after training, plus the architecture describing how they're connected. GPT-5, Claude 4, Llama 4 — those are models. Distinct from the training algorithm that produced them. Sizes range from a few million parameters (mobile-friendly) to hundreds of billions to trillions (frontier). Released as weights (open) or behind APIs (closed). Frontier behaviour at inference depends on weights + tokenizer + serving stack.",
+    "indications": [
+      "Models"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "letter": "M",
     "term": "Model collapse",
     "full": "",
     "snappy": "Phenomenon where models trained on generated outputs of other models progressively lose quality.",
@@ -6577,6 +6826,22 @@
   },
   {
     "letter": "N",
+    "term": "Natural language processing",
+    "full": "NLP",
+    "snappy": "The branch of AI focused on understanding and generating human language — translation, summarisation, question-answering, chat.",
+    "detail": "Pre-2018, dominated by rule-based and statistical methods (n-grams, hidden Markov models, recurrent networks). The transformer architecture (Vaswani et al. 2017) and BERT/GPT pretraining made the modern era possible. Today's frontier LLMs are general NLP systems that handle every task above plus code, math, and multi-step reasoning. The field's identity as separate from \"AI\" generally is fading as LLMs subsume everything.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI",
+      "Google Research"
+    ]
+  },
+  {
+    "letter": "N",
     "term": "NCCL",
     "full": "NVIDIA Collective Communications Library",
     "snappy": "Library that handles GPU-to-GPU communication across NVLink, InfiniBand, and Ethernet.",
@@ -6630,6 +6895,21 @@
     "category": "Concepts",
     "sources": [
       "UC Berkeley"
+    ]
+  },
+  {
+    "letter": "N",
+    "term": "Neural network",
+    "full": "",
+    "snappy": "A computational system loosely inspired by the brain — layers of nodes that learn by adjusting connection weights from examples.",
+    "detail": "The foundation of modern AI. Built from layers of artificial neurons connected by weighted edges; training adjusts those weights via gradient descent. Variants serve specific needs: convolutional for images, recurrent for sequences, transformer for language. Depth — many stacked layers — is what unlocked the current era, hence \"deep learning\". Practically every modern AI system you've heard of is some form of neural network.",
+    "indications": [
+      "Models",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -6928,6 +7208,20 @@
     "category": "Interconnect",
     "sources": [
       "NVIDIA"
+    ]
+  },
+  {
+    "letter": "O",
+    "term": "Optimisation",
+    "full": "",
+    "snappy": "The mathematical process of finding the best parameters for a model — typically by iteratively reducing a loss function via gradient descent.",
+    "detail": "The engine of all training. The optimiser (SGD, Adam, AdamW, AdaGrad, RMSprop) decides how to use gradient information to update weights. Modern training combines optimisers with learning-rate schedules, momentum, weight decay, and gradient clipping. Hyperparameters here (learning rate, batch size, warmup steps) materially affect final model quality. For frontier LLMs, optimiser state — the second-order moments Adam tracks — is itself a major memory cost, motivating techniques like Optimizer state sharding (ZeRO).",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Google DeepMind"
     ]
   },
   {
@@ -7473,6 +7767,20 @@
   },
   {
     "letter": "P",
+    "term": "Privacy",
+    "full": "",
+    "snappy": "Protecting user data from unauthorised access — both during model training and when users interact with deployed systems.",
+    "detail": "Training-data privacy means models shouldn't memorise and regurgitate personal information from their training corpus. Inference-time privacy means user prompts shouldn't leak to third parties or be used to train without consent. Mitigations include differential privacy (mathematical bound on what any single example contributes), federated learning (train on user devices without centralising data), and clear data-use disclosures. EU GDPR, US state laws, and Apple's privacy positioning all bear on this.",
+    "indications": [
+      "Safety"
+    ],
+    "category": "Alignment",
+    "sources": [
+      "Apple"
+    ]
+  },
+  {
+    "letter": "P",
     "term": "Process node",
     "full": "",
     "snappy": "Marketing name for a chip-manufacturing generation — 7nm, 5nm, 3nm, 2nm, etc.",
@@ -7839,6 +8147,21 @@
     "category": "Frontier",
     "sources": [
       "OpenAI"
+    ]
+  },
+  {
+    "letter": "R",
+    "term": "Reasoning",
+    "full": "",
+    "snappy": "An AI system's ability to break complex problems into intermediate steps and reach a conclusion through deliberate thought.",
+    "detail": "Distinct from pattern-matching. Modern reasoning models (o1, o3, Claude 3.5 Sonnet, Gemini 2.5 Pro, DeepSeek-R1) generate internal chains of thought before producing a final answer — sometimes spending minutes on hard problems. Trained with reinforcement learning on verifiable reasoning tasks (math, code, logic). The current frontier is whether reasoning generalises beyond verifiable domains; AIME, MATH, and GPQA benchmarks are the standard evals.",
+    "indications": [
+      "Research"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI",
+      "Anthropic"
     ]
   },
   {
@@ -9233,6 +9556,20 @@
   },
   {
     "letter": "S",
+    "term": "Supervised learning",
+    "full": "",
+    "snappy": "Learning from labelled examples — you show the model both the input and the correct answer, and it learns the mapping.",
+    "detail": "The most common ML setup. Classification (predict a category — spam/not-spam) and regression (predict a number — house price) are both supervised. Requires labelled data, which is often expensive to produce. Supervised fine-tuning is how an LLM learns to follow instructions: pairs of (prompt, desired response) curated by humans. Contrast with unsupervised (no labels) and reinforcement (rewards instead of labels).",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SVD",
     "full": "Singular Value Decomposition",
     "snappy": "Factorising any matrix into three simpler matrices that capture its structure — a foundational tool.",
@@ -9887,6 +10224,20 @@
   },
   {
     "letter": "T",
+    "term": "Training",
+    "full": "",
+    "snappy": "The process of teaching a model — running it on examples and adjusting its parameters until it performs the task well.",
+    "detail": "For neural networks, training means feeding batches of input-output pairs, computing how wrong the predictions are (loss), and nudging the weights via backpropagation to reduce that loss. Frontier LLMs train in two phases: pretraining (raw next-token prediction on web text) and post-training (RLHF, instruction-tuning). Training cost is the headline number in AI economics — GPT-4 reportedly cost ~$100M; Llama 3 used 24,000 H100s for months.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "OpenAI"
+    ]
+  },
+  {
+    "letter": "T",
     "term": "Training FLOPs",
     "full": "",
     "snappy": "The total number of math operations performed during training — the most rigorous \"size\" metric for a model.",
@@ -10183,6 +10534,20 @@
     "category": "Concepts",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "U",
+    "term": "Unsupervised learning",
+    "full": "",
+    "snappy": "Learning structure from data without explicit labels — clustering, dimensionality reduction, or self-supervised pretraining.",
+    "detail": "Pretraining an LLM on web text is technically self-supervised (a form of unsupervised) — the model uses the data itself to define its target, predicting the next token without human-labelled targets. Other examples: k-means clustering groups similar items; PCA finds dimensions that explain most variance; autoencoders compress data into latent representations. Useful when labels are unavailable or impractical. Modern foundation models pretrain unsupervised, then layer supervised fine-tuning on top.",
+    "indications": [
+      "Training"
+    ],
+    "category": "Concepts",
+    "sources": [
+      "Meta AI / FAIR"
     ]
   },
   {
@@ -10510,6 +10875,20 @@
     "category": "Frontier",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "Weight",
+    "full": "",
+    "snappy": "A learned number inside a neural network — the connection strength between two nodes that gets adjusted during training.",
+    "detail": "The model's knowledge is literally encoded in its weights. A 7-billion-parameter model has 7 billion numbers; a frontier model has trillions. Released open-weight (Llama, Mistral, Qwen) means anyone can download those numbers and run the model locally; closed-weight (GPT, Claude, Gemini) means only the provider can access them. Weights are typically stored as 16-bit or 8-bit floats, increasingly quantised down to 4-bit for inference efficiency.",
+    "indications": [
+      "Models"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Hugging Face"
     ]
   },
   {

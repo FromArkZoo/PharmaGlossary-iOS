@@ -47,33 +47,36 @@ let aiBrand = Brand(
                 // Neural network architecture
                 "Attention", "Convolutional neural network", "Decoder",
                 "Diffusion model", "Encoder", "Layer", "Mixture of Experts",
-                "Multi-head attention", "Positional encoding",
+                "Multi-head attention", "Neural network", "Positional encoding",
                 "Recurrent neural network", "Self-attention", "Transformer",
+                "Weight",
                 // Training
                 "Adam", "Backpropagation", "Batch", "Epoch", "Fine-tuning",
                 "Generalisation", "Gradient descent", "Hyperparameter",
-                "Learning rate", "LoRA", "Loss function", "Overfitting",
-                "Pretraining",
+                "Learning rate", "LoRA", "Loss function", "Optimisation",
+                "Overfitting", "Pretraining", "Training",
                 // Inference & generation
                 "Context window", "Inference", "KV cache", "Logits", "Prompt",
                 "Quantization", "Sampling", "System prompt", "Temperature",
                 "Token", "Tokenization", "Top-k sampling", "Top-p sampling",
                 // Learning paradigms & frontier
-                "AGI", "ASI", "Chain-of-thought", "Emergent abilities",
+                "AGI", "ASI", "Chain-of-thought", "Deep learning",
+                "Deep reinforcement learning", "Emergent abilities",
                 "Few-shot prompting", "Generative AI", "Hallucination",
                 "Prompt engineering", "Reasoning model", "Reinforcement learning",
-                "Scaling laws", "Self-supervised learning",
-                "Zero-shot vs few-shot",
+                "Scaling laws", "Self-supervised learning", "Supervised learning",
+                "Unsupervised learning", "Zero-shot vs few-shot",
                 // Evaluation
-                "Benchmark", "BLEU", "Elo rating", "F1 score", "LLM-as-judge",
-                "MMLU", "Perplexity",
+                "Accuracy", "Benchmark", "BLEU", "Elo rating", "F1 score",
+                "LLM-as-judge", "MMLU", "Perplexity",
                 // Alignment & safety
-                "AI safety", "Alignment", "Constitutional AI", "Jailbreak",
-                "RLHF", "Red-teaming", "Reward model",
+                "AI safety", "Alignment", "Bias", "Constitutional AI",
+                "Explainability", "Fairness", "Jailbreak", "Privacy", "RLHF",
+                "Red-teaming", "Reward model",
                 // Agents & retrieval
                 "Agent", "Function calling", "RAG", "Tool use", "Vector database",
                 // ML software ecosystem
-                "Hugging Face Hub", "JAX", "PyTorch",
+                "API", "Hugging Face Hub", "JAX", "PyTorch",
                 // Hardware
                 "ASIC", "Accelerator", "BF16", "CPU", "CUDA", "FP16", "GPU",
                 "HBM", "INT8", "Memory bandwidth", "Tensor core", "Transistor",
@@ -83,8 +86,13 @@ let aiBrand = Brand(
                 "Advanced packaging", "Chiplet", "Die", "Fab", "Foundry",
                 "Lithography", "Process node", "Wafer",
                 // Infrastructure
-                "Cloud", "Compute cluster", "Data center", "Gigawatt",
-                "Hyperscaler", "Neocloud"
+                "Cloud", "Compute", "Compute cluster", "Data center", "Gigawatt",
+                "Hyperscaler", "Neocloud",
+                // Core fields & umbrella concepts
+                "Algorithm", "Artificial intelligence", "Chatbot",
+                "Computer vision", "Dataset", "Foundation model", "LLM",
+                "Machine learning", "Model", "Natural language processing",
+                "Reasoning"
             ])
         ),
         LensConfig(
