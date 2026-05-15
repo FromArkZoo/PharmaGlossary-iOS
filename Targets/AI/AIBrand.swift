@@ -58,22 +58,32 @@ let aiBrand = Brand(
                 "Context window", "Inference", "KV cache", "Logits", "Prompt",
                 "Quantization", "Sampling", "System prompt", "Temperature",
                 "Token", "Tokenization", "Top-k sampling", "Top-p sampling",
-                // Learning paradigms & techniques
-                "Chain-of-thought", "Emergent abilities", "Few-shot prompting",
-                "Generative AI", "Hallucination", "Prompt engineering",
-                "Reasoning model", "Reinforcement learning", "Scaling laws",
-                "Self-supervised learning", "Zero-shot vs few-shot",
+                // Learning paradigms & frontier
+                "AGI", "ASI", "Chain-of-thought", "Emergent abilities",
+                "Few-shot prompting", "Generative AI", "Hallucination",
+                "Prompt engineering", "Reasoning model", "Reinforcement learning",
+                "Scaling laws", "Self-supervised learning",
+                "Zero-shot vs few-shot",
                 // Evaluation
-                "Benchmark", "BLEU", "F1 score", "LLM-as-judge", "MMLU",
-                "Perplexity",
+                "Benchmark", "BLEU", "Elo rating", "F1 score", "LLM-as-judge",
+                "MMLU", "Perplexity",
                 // Alignment & safety
                 "AI safety", "Alignment", "Constitutional AI", "Jailbreak",
                 "RLHF", "Red-teaming", "Reward model",
                 // Agents & retrieval
                 "Agent", "Function calling", "RAG", "Tool use", "Vector database",
+                // ML software ecosystem
+                "Hugging Face Hub", "JAX", "PyTorch",
                 // Hardware
                 "ASIC", "Accelerator", "BF16", "CPU", "CUDA", "FP16", "GPU",
-                "HBM", "INT8", "Memory bandwidth", "Tensor core", "Transistor"
+                "HBM", "INT8", "Memory bandwidth", "Tensor core", "Transistor",
+                // Memory & interconnect
+                "Cache", "DRAM", "NVLink", "PCIe",
+                // Manufacturing & packaging
+                "Advanced packaging", "Chiplet", "Die", "Fab", "Foundry",
+                "Lithography", "Process node", "Wafer",
+                // Infrastructure
+                "Compute cluster", "Data center", "Gigawatt", "Hyperscaler"
             ])
         ),
         LensConfig(
