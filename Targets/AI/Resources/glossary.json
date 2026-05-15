@@ -680,6 +680,21 @@
   },
   {
     "letter": "A",
+    "term": "AlexNet",
+    "full": "",
+    "snappy": "The 2012 ImageNet-winning convolutional network that kicked off the deep learning era — proved GPUs and large CNNs could beat hand-engineered computer vision by a huge margin.",
+    "detail": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton at the University of Toronto entered ImageNet 2012 with an 8-layer CNN trained on two GTX 580 GPUs, and won by a 10-percentage-point margin over the runner-up — an unheard-of jump. The result triggered the modern AI boom: every major lab pivoted to deep learning within months. The paper is one of the most-cited in computer science. Sutskever went on to co-found OpenAI; Hinton later won the 2024 Nobel in Physics for deep learning.",
+    "indications": [
+      "Vision",
+      "Research"
+    ],
+    "category": "Models",
+    "sources": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "letter": "A",
     "term": "Algorithm",
     "full": "",
     "snappy": "A precise step-by-step procedure for solving a problem or performing a computation.",
@@ -1376,6 +1391,21 @@
     "category": "Eval",
     "sources": [
       "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "B",
+    "term": "BERT",
+    "full": "Bidirectional Encoder Representations from Transformers",
+    "snappy": "Google's 2018 transformer model that defined modern NLP for the years between word embeddings and GPT-style LLMs.",
+    "detail": "Trained on masked-language-modeling (randomly hide tokens, predict them) and next-sentence prediction. The breakthrough was bidirectionality — earlier RNNs read left-to-right; BERT reads both directions at once, giving stronger context understanding. Dominated NLP leaderboards 2018-2020 across question-answering, sentiment analysis, and named-entity recognition. Eclipsed in influence by GPT-style decoder-only models, but the encoder-only paradigm still underpins many production NLP systems and search ranking pipelines.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google Research"
     ]
   },
   {
@@ -4268,6 +4298,21 @@
   },
   {
     "letter": "G",
+    "term": "GloVe",
+    "full": "Global Vectors for Word Representation",
+    "snappy": "Stanford's 2014 alternative to Word2vec — produces word embeddings by factoring a global word-co-occurrence matrix instead of local prediction.",
+    "detail": "Jeffrey Pennington, Richard Socher, and Christopher Manning at Stanford's NLP group. GloVe combined the global counting statistics of older methods (like LSA) with the predictive efficiency of neural models. The \"king − man + woman = queen\" analogy showcase moved here from Word2vec; many practitioners preferred GloVe's pretrained vectors (released for general use) over training Word2vec themselves. Largely superseded by contextual embeddings from ELMo, BERT, and modern LLMs.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Models",
+    "sources": [
+      "Stanford CRFM"
+    ]
+  },
+  {
+    "letter": "G",
     "term": "GNoME",
     "full": "Graph Networks for Materials Exploration",
     "snappy": "DeepMind's materials-discovery model — predicted hundreds of thousands of stable new crystal structures.",
@@ -4335,6 +4380,21 @@
     "category": "Company",
     "sources": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "letter": "G",
+    "term": "GoogLeNet",
+    "full": "Inception v1",
+    "snappy": "Google's 2014 ImageNet-winning CNN — introduced the Inception module that processes features at multiple scales in parallel.",
+    "detail": "Won ImageNet 2014 alongside VGGNet — both proved that depth wins, but GoogLeNet (22 layers) used far fewer parameters than VGG-19 (7M vs 138M) through clever architecture. The Inception module ran 1×1, 3×3, and 5×5 convolutions in parallel and concatenated the results. Later versions (Inception v2, v3, v4) refined the design. Largely eclipsed by ResNet after 2015, but the name \"Inception\" stuck as shorthand for any multi-scale architecture.",
+    "indications": [
+      "Vision",
+      "Research"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google Research"
     ]
   },
   {
@@ -8947,6 +9007,21 @@
   },
   {
     "letter": "S",
+    "term": "Seq2seq",
+    "full": "Sequence-to-sequence",
+    "snappy": "The 2014 encoder-decoder paradigm that turned variable-length input sequences into variable-length output sequences — the conceptual backbone of translation, summarisation, and eventually Transformers.",
+    "detail": "Sutskever, Vinyals, and Le at Google. An encoder RNN reads the input sentence into a fixed-size vector; a decoder RNN unrolls that vector into the output sentence. Powered Google Translate from 2016. The original architecture struggled with long sequences because the fixed-size bottleneck lost information — attention was invented to fix this (Bahdanau 2014), which in turn led to the Transformer in 2017. Seq2seq is the architectural lineage from which every modern LLM descends.",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Architecture",
+    "sources": [
+      "Google Research"
+    ]
+  },
+  {
+    "letter": "S",
     "term": "SerDes",
     "full": "Serializer / Deserializer",
     "snappy": "The hardware that converts wide internal data buses into the fast serial signals that travel between chips.",
@@ -10651,6 +10726,21 @@
   },
   {
     "letter": "V",
+    "term": "VGGNet",
+    "full": "VGG",
+    "snappy": "Oxford's 2014 ImageNet-winning CNN that showed deeper networks could keep getting better — 16 and 19 layers of small 3×3 convolutions.",
+    "detail": "Visual Geometry Group at Oxford built it on a single insight: stack many small (3×3) convolutional filters instead of fewer large ones, and depth alone keeps improving accuracy. VGG-16 and VGG-19 became standard backbones for transfer learning across vision tasks through the late 2010s. Computationally heavy (138M parameters), so ResNet's residual connections eventually overtook it. Still common as a feature extractor in many production vision pipelines.",
+    "indications": [
+      "Vision",
+      "Research"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google Research"
+    ]
+  },
+  {
+    "letter": "V",
     "term": "Vision Transformer",
     "full": "ViT",
     "snappy": "Transformer applied to images by chopping them into small patches and treating each patch like a word.",
@@ -10988,6 +11078,21 @@
     "category": "Packaging",
     "sources": [
       "TSMC"
+    ]
+  },
+  {
+    "letter": "W",
+    "term": "Word2vec",
+    "full": "",
+    "snappy": "Google's 2013 word-embedding model that learned meaningful vector representations of words from raw text — the bridge between symbolic NLP and the neural era.",
+    "detail": "Tomas Mikolov's team showed that a shallow network trained to predict surrounding words from a target word (skip-gram) or vice versa (CBOW) produces dense vectors where semantic similarity becomes geometric distance. The famous \"king − man + woman ≈ queen\" property emerged for free. Word2vec made it possible to use neural representations for text without supervision, and was the conceptual ancestor of every modern NLP embedding (GloVe, ELMo, BERT, sentence transformers).",
+    "indications": [
+      "NLP",
+      "Research"
+    ],
+    "category": "Models",
+    "sources": [
+      "Google Research"
     ]
   },
   {
