@@ -30,16 +30,18 @@ Alternatives:
 ## Promotional Text (170 char limit, updateable without re-submission)
 
 ```
-800+ US legal terms across 14 areas — each explained in plain English with a snappy one-line definition plus the where-you'd-hear-it context that makes it stick.
+You're about to sign 'indemnify', 'force majeure', 'liquidated damages' — and you don't know what they mean. JB Law decodes 800+ US legal terms.
 ```
-(161 chars — fits with 9 to spare.)
+(144 chars — mirrors the JB AI scene-hook voice.)
 
 ---
 
 ## Description (4000 char limit)
 
 ```
-JB Law is a generalist's reference for the language of US law — the words you encounter in contracts, leases, employment agreements, news headlines, court filings, and any time you talk to a lawyer.
+You're reading the contract you're about to sign and it says 'indemnify', then 'severability', then 'force majeure', then 'liquidated damages' — and you realise you've signed dozens of these without actually knowing what they mean. The vocabulary of US law is everywhere — leases, employment agreements, news headlines, court rulings — and most people are bluffing through half of it.
+
+JB Law is a generalist's reference for that vocabulary — the words you encounter in contracts, news, courtrooms, and any time you talk to a lawyer.
 
 Every entry has two layers:
 • An italic snappy line — plain English, no jargon, the "what is this thing in one breath."
