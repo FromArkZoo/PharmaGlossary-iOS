@@ -1,17 +1,18 @@
 """Composite iPhone 17 Pro Max screenshots onto Apple's required canvas sizes.
 
-Mirrors the JB Pharma flow: scale-to-fit + cream pillaring rather than
+Mirrors the JB AI/Pharma flow: scale-to-fit + cream pillaring rather than
 re-shooting on each simulator.
 
-Inputs:  docs/screenshots/iphone-17-pro-max/NN_*.png   (1320×2868 native)
-Outputs: docs/screenshots/iphone-6.5/NN_*.png         (1284×2778, Apple 6.5" req)
-         docs/screenshots/ipad-13/NN_*.png            (2064×2752, Apple 13" iPad req)
+Inputs:  screenshots/jb-law/iphone-17-pro-max/N_name.png   (1320×2868 native)
+Outputs: screenshots/jb-law/iphone-6.5/N_name.png          (1284×2778, Apple 6.5")
+         screenshots/jb-law/ipad-13/N_name.png             (2064×2752, Apple iPad 13")
 """
 from PIL import Image
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
-SRC = ROOT / "docs" / "screenshots" / "iphone-17-pro-max"
+APP = "jb-law"
+SRC = ROOT / "screenshots" / APP / "iphone-17-pro-max"
 
 CREAM = (245, 239, 230)  # #F5EFE6
 
@@ -56,7 +57,7 @@ def main():
     print(f"Source: {len(src_files)} file(s) from {SRC.name}")
 
     for label, (tw, th) in TARGETS.items():
-        out_dir = ROOT / "docs" / "screenshots" / label
+        out_dir = ROOT / "screenshots" / APP / label
         out_dir.mkdir(parents=True, exist_ok=True)
         # iPad needs more pillaring because aspect ratio is wider; iPhone
         # 6.5" is essentially the same aspect so no padding needed.
