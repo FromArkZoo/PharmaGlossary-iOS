@@ -2242,7 +2242,7 @@
     "term": "Consent decree",
     "full": "",
     "snappy": "A court-approved settlement requiring specific conduct, enforceable by contempt.",
-    "detail": "Combines features of contract (negotiated) and judicial order (court enforces). Common in DOJ antitrust enforcement (the Microsoft consent decree, 2001), FTC consumer-protection actions, civil-rights cases (police-department reforms after DOJ pattern-or-practice investigations), and environmental cleanup. Lasts for years or decades; modifying requires court approval. Plays a major role in keeping regulated entities in line after one-off violations.",
+    "detail": "Combines features of contract (negotiated) and judicial order (court enforces). Common in DOJ antitrust enforcement (the Microsoft settlement announced 2001, Final Judgment entered 2002), FTC consumer-protection actions, civil-rights cases (police-department reforms after DOJ pattern-or-practice investigations), and environmental cleanup. Lasts for years or decades; modifying requires court approval. Plays a major role in keeping regulated entities in line after one-off violations.",
     "indications": [
       "Business",
       "Federal"
@@ -6831,7 +6831,7 @@
     "term": "Long-term capital gains",
     "full": "LTCG",
     "snappy": "Profits from selling appreciated assets held for over a year — taxed at favourable rates.",
-    "detail": "2024 brackets: 0% (single income up to $47,025), 15% (up to $518,900), 20% (above). Plus 3.8% Net Investment Income Tax for high earners. Holding period starts the day after acquisition. Wash-sale rule (30-day repurchase) doesn't apply to LTCGs but affects loss harvesting. Step-up in basis at death typically eliminates LTCG for inherited assets — a major estate-planning consideration.",
+    "detail": "2024 brackets: 0% (single income up to $47,025), 15% (up to $518,900), 20% (above). Plus 3.8% Net Investment Income Tax for high earners. Holding period starts the day after acquisition. Wash-sale rule (61-day window: 30 days before + 30 days after a loss sale) doesn't apply to LTCGs but affects loss harvesting. Step-up in basis at death typically eliminates LTCG for inherited assets — a major estate-planning consideration.",
     "indications": [
       "Personal",
       "Federal"
@@ -6847,7 +6847,7 @@
     "term": "Loper Bright",
     "full": "Loper Bright Enterprises v. Raimondo",
     "snappy": "2024 Supreme Court decision overruling Chevron deference — courts now interpret statutes without binding deference to agencies.",
-    "detail": "6-3 decision. Held the APA's command that courts 'decide all relevant questions of law' is inconsistent with Chevron's binding deference. Courts may still respect agency expertise (Skidmore) but not be bound by reasonable agency interpretations. Companion to Relentless v. Department of Commerce. Practical effect: shift of regulatory power from agencies to federal courts. Reshapes administrative law dramatically — pending and future challenges to thousands of regulations face new judicial environment.",
+    "detail": "6-2 decision (Justice Jackson recused; companion Relentless was 6-3). Held the APA's command that courts 'decide all relevant questions of law' is inconsistent with Chevron's binding deference. Courts may still respect agency expertise (Skidmore) but not be bound by reasonable agency interpretations. Practical effect: shift of regulatory power from agencies to federal courts. Reshapes administrative law dramatically — pending and future challenges to thousands of regulations face new judicial environment.",
     "indications": [
       "Federal",
       "Business"
