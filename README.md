@@ -2,11 +2,11 @@
 
 Three native SwiftUI reference apps that turn dense professional jargon into clean, searchable, italic-typed cards. Built as a single XcodeGen workspace with one shared engine and three industry-specific corpora.
 
-| | Pharma | AI | Law |
-|---|---|---|---|
-| <img src="Targets/Pharma/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png" width="80"> | <img src="Targets/AI/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png" width="80"> | <img src="Targets/Law/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png" width="80"> |
-| **Terms** | 324 | growing | 836 |
-| **Focus** | Oncology + drug mechanisms | AI / ML concepts | US law (14 categories, 4 lenses) |
+| Pharma | AI | Law |
+|:---:|:---:|:---:|
+| <img src="Targets/Pharma/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png" width="100"> | <img src="Targets/AI/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png" width="100"> | <img src="Targets/Law/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png" width="100"> |
+| 324 terms | growing | 836 terms |
+| Oncology + drug mechanisms | AI / ML concepts | US law (14 categories, 4 lenses) |
 
 ---
 
