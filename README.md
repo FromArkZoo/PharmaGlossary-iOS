@@ -28,10 +28,10 @@ A pocket reference for the language that shows up in oncology decks, label discu
 The same engine, retuned for the AI/ML vocabulary — agents, model architectures, training regimes, the stuff that fills frontier-lab posts.
 
 <p align="center">
-  <img src="screenshots/jb-ai/ipad-13/1_home.png" width="22%">
-  <img src="screenshots/jb-ai/ipad-13/2_filter.png" width="22%">
-  <img src="screenshots/jb-ai/ipad-13/3_basics.png" width="22%">
-  <img src="screenshots/jb-ai/ipad-13/4_term_AGI.png" width="22%">
+  <img src="screenshots/jb-ai/iphone-17-pro-max/1_home.png" width="22%">
+  <img src="screenshots/jb-ai/iphone-17-pro-max/2_filter.png" width="22%">
+  <img src="screenshots/jb-ai/iphone-17-pro-max/3_basics.png" width="22%">
+  <img src="screenshots/jb-ai/iphone-17-pro-max/4_term_Attention.png" width="22%">
 </p>
 
 - [Support](https://fromarkzoo.github.io/JBGlossary-iOS/ai_support.html) · [Privacy](https://fromarkzoo.github.io/JBGlossary-iOS/ai_privacy.html)
