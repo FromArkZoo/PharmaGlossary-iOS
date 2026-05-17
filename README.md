@@ -5,7 +5,7 @@ Three native SwiftUI reference apps that turn dense professional jargon into cle
 | Pharma | AI | Law |
 |:---:|:---:|:---:|
 | <img src="Targets/Pharma/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png" width="100"> | <img src="Targets/AI/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png" width="100"> | <img src="Targets/Law/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png" width="100"> |
-| 324 terms | growing | 836 terms |
+| 499 terms | growing | 836 terms |
 | Oncology + drug mechanisms | AI / ML concepts | US law (14 categories, 4 lenses) |
 
 ---
@@ -15,7 +15,10 @@ Three native SwiftUI reference apps that turn dense professional jargon into cle
 A pocket reference for the language that shows up in oncology decks, label discussions, and pharma news — mutations, mechanisms of action, modalities, indications. Two-axis filter (indication × category), oncology-first.
 
 <p align="center">
-  <img src="docs/demo.gif" alt="JB Pharma demo" width="280">
+  <img src="screenshots/jb-pharma/iphone-17-pro-max/1_home.png" width="22%">
+  <img src="screenshots/jb-pharma/iphone-17-pro-max/2_filter.png" width="22%">
+  <img src="screenshots/jb-pharma/iphone-17-pro-max/3_basics.png" width="22%">
+  <img src="screenshots/jb-pharma/iphone-17-pro-max/4_term_Antibody.png" width="22%">
 </p>
 
 - [Support](https://fromarkzoo.github.io/JBGlossary-iOS/support.html) · [Privacy](https://fromarkzoo.github.io/JBGlossary-iOS/privacy.html)
