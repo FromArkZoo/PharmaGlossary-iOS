@@ -123,7 +123,10 @@ let financeBrand = Brand(
         "ICMA":                       URL(string: "https://www.icmagroup.org")!,
         "SIFMA":                      URL(string: "https://www.sifma.org")!,
         "CFA Institute":              URL(string: "https://www.cfainstitute.org")!,
-        "Investopedia":               URL(string: "https://www.investopedia.com")!
+        "Investopedia":               URL(string: "https://www.investopedia.com")!,
+        // Additional venues / bodies referenced in the corpus
+        "CBOE":                       URL(string: "https://www.cboe.com")!,
+        "OECD":                       URL(string: "https://www.oecd.org")!
     ]
 )
 
