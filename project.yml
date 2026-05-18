@@ -1,3 +1,8 @@
+# Single-target unified app. Pharma's bundle ID is preserved so the live
+# App Store listing (com.jamesbrowne.PharmaGlossary) receives this as an
+# update — Pharma's reviews and existing users carry forward as JB Glossary.
+# Old Targets/{AI,Law,Finance}/{Industry}Brand.swift files are no longer
+# compiled (Sources/ is the only sources path).
 name: JBGlossary
 options:
   bundleIdPrefix: com.jamesbrowne
@@ -10,27 +15,26 @@ settings:
   base:
     SWIFT_VERSION: "5.9"
     IPHONEOS_DEPLOYMENT_TARGET: "17.0"
-    MARKETING_VERSION: "1.0.0"
-    CURRENT_PROJECT_VERSION: "2"
+    MARKETING_VERSION: "2.0.0"
+    CURRENT_PROJECT_VERSION: "3"
     ENABLE_USER_SCRIPT_SANDBOXING: NO
 targets:
-  Pharma:
+  JBGlossary:
     type: application
     platform: iOS
     deploymentTarget: "17.0"
     sources:
       - path: Sources
-      - path: Targets/Pharma
-        excludes:
-          - "Resources/Info.plist"
-    resources:
-      - Targets/Pharma/Resources/Assets.xcassets
-      - Targets/Pharma/Resources/glossary.json
-      - Targets/Pharma/Resources/PrivacyInfo.xcprivacy
+      - path: Targets/Pharma/Resources/Assets.xcassets
+      - path: Targets/Pharma/Resources/PrivacyInfo.xcprivacy
+      - path: Targets/Pharma/Resources/glossary_pharma.json
+      - path: Targets/AI/Resources/glossary_ai.json
+      - path: Targets/Law/Resources/glossary_law.json
+      - path: Targets/Finance/Resources/glossary_finance.json
     info:
       path: Targets/Pharma/Resources/Info.plist
       properties:
-        CFBundleDisplayName: JB Pharma
+        CFBundleDisplayName: JB Glossary
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         UIUserInterfaceStyle: Light
@@ -46,123 +50,6 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.jamesbrowne.PharmaGlossary
-        TARGETED_DEVICE_FAMILY: "1,2"
-        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        DEVELOPMENT_TEAM: 278RL79DB5
-
-  AI:
-    type: application
-    platform: iOS
-    deploymentTarget: "17.0"
-    sources:
-      - path: Sources
-      - path: Targets/AI
-        excludes:
-          - "Resources/Info.plist"
-    resources:
-      - Targets/AI/Resources/Assets.xcassets
-      - Targets/AI/Resources/glossary.json
-      - Targets/AI/Resources/PrivacyInfo.xcprivacy
-    info:
-      path: Targets/AI/Resources/Info.plist
-      properties:
-        CFBundleDisplayName: JB AI
-        CFBundleShortVersionString: $(MARKETING_VERSION)
-        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
-        UIUserInterfaceStyle: Light
-        UILaunchScreen:
-          UIColorName: LaunchBackground
-        UISupportedInterfaceOrientations:
-          - UIInterfaceOrientationPortrait
-        UISupportedInterfaceOrientations~ipad:
-          - UIInterfaceOrientationPortrait
-          - UIInterfaceOrientationPortraitUpsideDown
-          - UIInterfaceOrientationLandscapeLeft
-          - UIInterfaceOrientationLandscapeRight
-    settings:
-      base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.jamesbrowne.AIGlossary
-        MARKETING_VERSION: "1.0"
-        CURRENT_PROJECT_VERSION: "1"
-        TARGETED_DEVICE_FAMILY: "1,2"
-        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        DEVELOPMENT_TEAM: 278RL79DB5
-
-  Law:
-    type: application
-    platform: iOS
-    deploymentTarget: "17.0"
-    sources:
-      - path: Sources
-      - path: Targets/Law
-        excludes:
-          - "Resources/Info.plist"
-    resources:
-      - Targets/Law/Resources/Assets.xcassets
-      - Targets/Law/Resources/glossary.json
-      - Targets/Law/Resources/PrivacyInfo.xcprivacy
-    info:
-      path: Targets/Law/Resources/Info.plist
-      properties:
-        CFBundleDisplayName: JB Law
-        CFBundleShortVersionString: $(MARKETING_VERSION)
-        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
-        UIUserInterfaceStyle: Light
-        UILaunchScreen:
-          UIColorName: LaunchBackground
-        UISupportedInterfaceOrientations:
-          - UIInterfaceOrientationPortrait
-        UISupportedInterfaceOrientations~ipad:
-          - UIInterfaceOrientationPortrait
-          - UIInterfaceOrientationPortraitUpsideDown
-          - UIInterfaceOrientationLandscapeLeft
-          - UIInterfaceOrientationLandscapeRight
-    settings:
-      base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.jamesbrowne.LawGlossary
-        MARKETING_VERSION: "1.0"
-        CURRENT_PROJECT_VERSION: "1"
-        TARGETED_DEVICE_FAMILY: "1,2"
-        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        DEVELOPMENT_TEAM: 278RL79DB5
-
-  Finance:
-    type: application
-    platform: iOS
-    deploymentTarget: "17.0"
-    sources:
-      - path: Sources
-      - path: Targets/Finance
-        excludes:
-          - "Resources/Info.plist"
-    resources:
-      - Targets/Finance/Resources/Assets.xcassets
-      - Targets/Finance/Resources/glossary.json
-      - Targets/Finance/Resources/PrivacyInfo.xcprivacy
-    info:
-      path: Targets/Finance/Resources/Info.plist
-      properties:
-        CFBundleDisplayName: JB Finance
-        CFBundleShortVersionString: $(MARKETING_VERSION)
-        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
-        UIUserInterfaceStyle: Light
-        UILaunchScreen:
-          UIColorName: LaunchBackground
-        UISupportedInterfaceOrientations:
-          - UIInterfaceOrientationPortrait
-        UISupportedInterfaceOrientations~ipad:
-          - UIInterfaceOrientationPortrait
-          - UIInterfaceOrientationPortraitUpsideDown
-          - UIInterfaceOrientationLandscapeLeft
-          - UIInterfaceOrientationLandscapeRight
-    settings:
-      base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.jamesbrowne.FinanceGlossary
-        MARKETING_VERSION: "1.0"
-        CURRENT_PROJECT_VERSION: "1"
         TARGETED_DEVICE_FAMILY: "1,2"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor

@@ -59,6 +59,14 @@ struct Brand {
     /// keys fall through to plain text — no crash, no broken UI.
     let sourceURLs: [String: URL]
 
-    // `static let current` is declared in each target's Targets/<Industry>/Brand.swift.
-    // Exactly one target-specific file is compiled per build, so there's no duplicate.
+}
+
+extension Brand {
+    /// The currently-active industry's brand. Mutated by `IndustryConfig.activate(_:)`
+    /// before mounting an industry's view tree. All existing `Brand.current.X`
+    /// consumers (`PGColors.accent`, `Term.sourcesMarkdown`, `AboutView`,
+    /// `FilterSheet`, `SplashView`, `Hyperlinks`, `GlossaryStore`) read this static
+    /// and so see the right industry without per-call wiring.
+    /// Default = Pharma — the free anchor industry.
+    static var current: Brand = pharmaBrand
 }

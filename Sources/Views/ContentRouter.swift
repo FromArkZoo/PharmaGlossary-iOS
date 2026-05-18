@@ -6,6 +6,7 @@ import SwiftUI
 /// loads in <100ms — without it the user just sees a flash.
 struct ContentRouter: View {
     @EnvironmentObject var store: GlossaryStore
+    let onSwitchIndustry: () -> Void
     @State private var minTimeReached = false
 
     private var isReady: Bool {
@@ -15,7 +16,7 @@ struct ContentRouter: View {
     var body: some View {
         ZStack {
             if isReady {
-                RootView()
+                RootView(onSwitchIndustry: onSwitchIndustry)
                     .transition(.opacity)
             } else {
                 SplashView()

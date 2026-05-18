@@ -10,6 +10,7 @@ enum Route: Hashable {
 
 struct RootView: View {
     @EnvironmentObject var store: GlossaryStore
+    let onSwitchIndustry: () -> Void
     @State private var query: String = ""
     @State private var filter = FilterState()
     @State private var showingFilter = false
@@ -42,6 +43,16 @@ struct RootView: View {
             .toolbarBackground(PGColors.bg, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        onSwitchIndustry()
+                    } label: {
+                        Image(systemName: "square.grid.2x2")
+                            .font(.system(size: 17, weight: .semibold))
+                            .foregroundStyle(PGColors.accent)
+                    }
+                    .accessibilityLabel("Switch industry")
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         showingFilter = true

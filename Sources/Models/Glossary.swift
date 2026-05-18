@@ -61,7 +61,11 @@ final class GlossaryStore: ObservableObject {
 
     var detailCache: [String: AttributedString] = [:]
 
-    private let favoritesKey = "pg.favorites.v1"
+    let industryID: IndustryID
+
+    private var favoritesKey: String {
+        "pg.favorites.\(industryID.rawValue).v1"
+    }
 
     var alphabetLetters: [String] {
         letters.filter { $0.range(of: "^[A-Z]$", options: .regularExpression) != nil }
@@ -82,7 +86,9 @@ final class GlossaryStore: ObservableObject {
         }
     }
 
-    init() {
+    init(industryID: IndustryID) {
+        self.industryID = industryID
+        IndustryConfig.activate(industryID)
         load()
         loadFavorites()
     }
@@ -90,6 +96,16 @@ final class GlossaryStore: ObservableObject {
     // MARK: - Favorites
 
     private func loadFavorites() {
+        // One-time migration: legacy Pharma installs stored favorites under
+        // "pg.favorites.v1". Move them to the per-industry key so they survive
+        // the JB Pharma → JB Glossary rebrand.
+        if industryID == .pharma {
+            let legacyKey = "pg.favorites.v1"
+            if UserDefaults.standard.stringArray(forKey: favoritesKey) == nil,
+               let legacy = UserDefaults.standard.stringArray(forKey: legacyKey) {
+                UserDefaults.standard.set(legacy, forKey: favoritesKey)
+            }
+        }
         let stored = UserDefaults.standard.stringArray(forKey: favoritesKey) ?? []
         favorites = Set(stored)
     }

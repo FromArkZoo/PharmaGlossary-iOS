@@ -3,7 +3,7 @@ import UIKit
 
 @main
 struct JBGlossaryApp: App {
-    @StateObject private var store = GlossaryStore()
+    @State private var currentIndustryID: IndustryID? = Self.persistedIndustry()
 
     init() {
         Self.configureNavigationBarAppearance()
@@ -11,10 +11,29 @@ struct JBGlossaryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentRouter()
-                .environmentObject(store)
-                .tint(PGColors.accent)
+            Group {
+                if let id = currentIndustryID {
+                    IndustryShell(industryID: id, onSwitchIndustry: {
+                        currentIndustryID = nil
+                    })
+                    .id(id) // remount the shell when the industry changes
+                } else {
+                    IndustryPickerView { id in
+                        UserDefaults.standard.set(id.rawValue, forKey: Self.lastIndustryKey)
+                        currentIndustryID = id
+                    }
+                }
+            }
+            .tint(PGColors.accent)
         }
+    }
+
+    private static let lastIndustryKey = "jbglossary.lastIndustry"
+
+    private static func persistedIndustry() -> IndustryID? {
+        guard let raw = UserDefaults.standard.string(forKey: lastIndustryKey),
+              let id = IndustryID(rawValue: raw) else { return nil }
+        return id
     }
 
     /// Inline navigation titles (back-page headers) get a serif font and ink color
@@ -42,5 +61,26 @@ struct JBGlossaryApp: App {
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         UINavigationBar.appearance().compactAppearance = appearance
+    }
+}
+
+/// Owns the per-industry `GlossaryStore` and hands the "go back to picker"
+/// callback down to `RootView`. Re-mounted (via `.id(industryID)`) every time
+/// the user switches industry, so every store starts fresh — no state leak
+/// between industries.
+struct IndustryShell: View {
+    let industryID: IndustryID
+    let onSwitchIndustry: () -> Void
+    @StateObject private var store: GlossaryStore
+
+    init(industryID: IndustryID, onSwitchIndustry: @escaping () -> Void) {
+        self.industryID = industryID
+        self.onSwitchIndustry = onSwitchIndustry
+        _store = StateObject(wrappedValue: GlossaryStore(industryID: industryID))
+    }
+
+    var body: some View {
+        ContentRouter(onSwitchIndustry: onSwitchIndustry)
+            .environmentObject(store)
     }
 }
