@@ -1,44 +1,61 @@
 # App Store Connect — In-App Purchase setup for JB Glossary v2
 
-Create these **4 non-consumable** in-app purchases against the
+Create these **5 non-consumable** in-app purchases against the
 `com.jamesbrowne.PharmaGlossary` app record in App Store Connect. The
 product identifiers below MUST match exactly — they are hardcoded in
-`Sources/Industries/IndustryConfig.swift` (3 industry IDs) and
+`Sources/Industries/IndustryConfig.swift` (4 industry IDs) and
 `masterUnlockProductID` (1 master).
+
+**Monetization model**: every industry ships with letters **A–D free** as a
+taster. Letters E–Z gated by the per-industry IAP at $2.99. The master
+"All Industries" IAP at $14.99 unlocks E–Z across every current and future
+industry.
 
 | Product ID | Reference Name | Display Name | Price (US) | Family Sharing |
 |---|---|---|---|---|
-| `com.jamesbrowne.JBGlossary.ai` | AI | Unlock AI | $2.99 (Tier 3) | On |
-| `com.jamesbrowne.JBGlossary.law` | Law | Unlock Law | $2.99 (Tier 3) | On |
-| `com.jamesbrowne.JBGlossary.finance` | Finance | Unlock Finance | $2.99 (Tier 3) | On |
+| `com.jamesbrowne.JBGlossary.pharma` | Pharma | Unlock the rest of Pharma | $2.99 (Tier 3) | On |
+| `com.jamesbrowne.JBGlossary.ai` | AI | Unlock the rest of AI | $2.99 (Tier 3) | On |
+| `com.jamesbrowne.JBGlossary.law` | Law | Unlock the rest of Law | $2.99 (Tier 3) | On |
+| `com.jamesbrowne.JBGlossary.finance` | Finance | Unlock the rest of Finance | $2.99 (Tier 3) | On |
 | `com.jamesbrowne.JBGlossary.all` | All Industries | Unlock All Industries | $14.99 (Tier 15) | On |
 
 ## Descriptions (used on the App Store IAP listing)
 
-**AI** — Unlock the JB Glossary AI industry: 785 terms covering models,
-training, hardware, and silicon. One-time purchase, no subscription.
+**Pharma** — Unlock the rest of the JB Glossary Pharma industry: letters
+E–Z, the full set of pharma and healthcare terms beyond the free A–D
+taster. One-time purchase, no subscription.
 
-**Law** — Unlock the JB Glossary Law industry: 836 US-law terms across
-contracts, criminal, constitutional, employment, IP, family, and more.
-One-time purchase, no subscription.
-
-**Finance** — Unlock the JB Glossary Finance industry: 626 markets terms
-across rates, FX, equities, credit, commodities, and derivatives. One-time
+**AI** — Unlock the rest of the JB Glossary AI industry: letters E–Z, the
+full set of AI, ML, and silicon terms beyond the free A–D taster. One-time
 purchase, no subscription.
 
-**All Industries** — Unlock every paid industry in JB Glossary (AI, Law,
-Finance, and all future industries we ship). One purchase covers your
-current and future devices via Apple ID. Best value once you'd buy more
-than 4 individual industries.
+**Law** — Unlock the rest of the JB Glossary Law industry: letters E–Z,
+the full set of US-law terms beyond the free A–D taster. One-time
+purchase, no subscription.
+
+**Finance** — Unlock the rest of the JB Glossary Finance industry: letters
+E–Z, the full set of markets terms beyond the free A–D taster. One-time
+purchase, no subscription.
+
+**All Industries** — Unlock the rest (E–Z) of every industry in JB
+Glossary, current and future. One purchase covers your current and future
+devices via Apple ID. Best value if you'd otherwise buy more than 4
+individual industries.
 
 ## Review notes (for App Review)
 
-> JB Glossary ships with Pharma as a free anchor industry. Three additional
-> industries (AI, Law, Finance) are gated behind one-time non-consumable
-> IAPs at $2.99 each. The "Unlock All Industries" $14.99 IAP grants
-> entitlement to every current and future paid industry. There are no
-> subscriptions; everything is one-time. "Restore Purchases" is available
-> from every paywall sheet, satisfying 3.1.1.
+> JB Glossary ships with letters A–D free across every industry as a
+> "taster" — roughly 25–29% of each industry's terms are available without
+> any purchase (~750 terms total across the 4 industries). Letters E–Z in
+> each industry are gated behind a one-time non-consumable IAP at $2.99
+> per industry. The "Unlock All Industries" $14.99 IAP grants the E–Z
+> entitlement across every current and future industry. There are no
+> subscriptions; every purchase is one-time. "Restore Purchases" is
+> available from every paywall sheet, satisfying 3.1.1.
+>
+> The free anchor pattern is symmetric: no single industry is given away
+> in full, so a user with no interest in (say) pharma isn't stuck with a
+> free pharma glossary — they get a taster of every field instead.
 
 ## Local sandbox testing (already wired)
 
@@ -60,9 +77,10 @@ App Store with that account before launching.
 version starts with `1.` (i.e., the user installed any pre-v2 Pharma
 build — whether they paid or downloaded free), the master "All
 Industries" entitlement is granted locally and persisted under
-`jbglossary.grandfathered.masterUnlock` in `UserDefaults`. This costs
-nothing if Pharma was launched free and creates a strong "thanks for
-being early" moment if any Pharma users were paid.
+`jbglossary.grandfathered.masterUnlock` in `UserDefaults`. Existing
+Pharma users get *more* than they had before — full Pharma plus AI, Law,
+Finance, and all future industries — as a "thanks for being early"
+upgrade.
 
 The check is idempotent and retried on every launch until it succeeds
 (simulator builds without a receipt can fail the AppTransaction call).

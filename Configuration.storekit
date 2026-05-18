@@ -15,11 +15,26 @@
     {
       "displayPrice" : "2.99",
       "familyShareable" : true,
+      "internalID" : "JBG_PHARMA",
+      "localizations" : [
+        {
+          "description" : "Unlock the rest of the JB Glossary Pharma industry — letters E–Z, the full set of pharma and healthcare terms beyond the free A–D taster.",
+          "displayName" : "Unlock the rest of Pharma",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.jamesbrowne.JBGlossary.pharma",
+      "referenceName" : "Pharma",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : true,
       "internalID" : "JBG_AI",
       "localizations" : [
         {
-          "description" : "Unlock the JB Glossary AI industry — 785 terms covering models, training, hardware, and silicon.",
-          "displayName" : "Unlock AI",
+          "description" : "Unlock the rest of the JB Glossary AI industry — letters E–Z, the full set of AI, ML, and silicon terms beyond the free A–D taster.",
+          "displayName" : "Unlock the rest of AI",
           "locale" : "en_US"
         }
       ],
@@ -33,8 +48,8 @@
       "internalID" : "JBG_LAW",
       "localizations" : [
         {
-          "description" : "Unlock the JB Glossary Law industry — 836 US-law terms across contracts, criminal, constitutional, and more.",
-          "displayName" : "Unlock Law",
+          "description" : "Unlock the rest of the JB Glossary Law industry — letters E–Z, the full set of US-law terms beyond the free A–D taster.",
+          "displayName" : "Unlock the rest of Law",
           "locale" : "en_US"
         }
       ],
@@ -48,8 +63,8 @@
       "internalID" : "JBG_FINANCE",
       "localizations" : [
         {
-          "description" : "Unlock the JB Glossary Finance industry — 626 markets terms across rates, FX, equities, credit, and derivatives.",
-          "displayName" : "Unlock Finance",
+          "description" : "Unlock the rest of the JB Glossary Finance industry — letters E–Z, the full set of markets terms beyond the free A–D taster.",
+          "displayName" : "Unlock the rest of Finance",
           "locale" : "en_US"
         }
       ],

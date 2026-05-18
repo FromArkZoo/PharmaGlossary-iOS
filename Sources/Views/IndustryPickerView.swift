@@ -1,15 +1,12 @@
 import SwiftUI
 import StoreKit
 
-/// Root view of JB Glossary. Lists every shipped industry as a tile;
-/// tapping an unlocked tile opens that industry's `RootView`, tapping a
-/// locked tile presents `PaywallSheet`. Pharma is always unlocked (free
-/// anchor industry); the rest are gated by `PurchaseManager`.
+/// Root view of JB Glossary. Lists every shipped industry as a tile; every
+/// tile opens its industry on tap. Letters A–D are always free; tapping a
+/// locked letter (E–Z) inside the industry presents the paywall.
 struct IndustryPickerView: View {
     @EnvironmentObject var purchases: PurchaseManager
     let onSelectIndustry: (IndustryID) -> Void
-
-    @State private var paywallIndustry: IndustryID?
 
     private let columns = [
         GridItem(.flexible(), spacing: 14),
@@ -29,12 +26,13 @@ struct IndustryPickerView: View {
                     LazyVGrid(columns: columns, spacing: 14) {
                         ForEach(IndustryConfig.all) { config in
                             Button {
-                                handleTap(config.id)
+                                onSelectIndustry(config.id)
                             } label: {
                                 IndustryTile(
                                     config: config,
                                     product: purchases.product(for: config.id),
-                                    isUnlocked: purchases.isUnlocked(config.id)
+                                    isUnlocked: purchases.isUnlocked(config.id),
+                                    hasMasterUnlock: purchases.hasMasterUnlock
                                 )
                             }
                             .buttonStyle(.plain)
@@ -45,19 +43,6 @@ struct IndustryPickerView: View {
                 }
             }
             .scrollIndicators(.hidden)
-        }
-        .sheet(item: $paywallIndustry) { id in
-            PaywallSheet(targetIndustry: id)
-                .environmentObject(purchases)
-                .presentationDetents([.large])
-        }
-    }
-
-    private func handleTap(_ id: IndustryID) {
-        if purchases.isUnlocked(id) {
-            onSelectIndustry(id)
-        } else {
-            paywallIndustry = id
         }
     }
 
@@ -72,9 +57,10 @@ struct IndustryPickerView: View {
                     .foregroundStyle(PGColors.ink)
             }
 
-            Text("Pick an industry")
+            Text("Free letters A–D in every industry. Unlock E–Z for $2.99.")
                 .font(PGFont.metaItalic)
                 .foregroundStyle(PGColors.inkLight)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
@@ -84,22 +70,15 @@ private struct IndustryTile: View {
     let config: IndustryConfig
     let product: Product?
     let isUnlocked: Bool
+    let hasMasterUnlock: Bool
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            HStack(alignment: .top) {
-                Text(config.brand.titleBody)
-                    .font(.system(size: 28, weight: .regular, design: .serif).italic())
-                    .foregroundStyle(config.brand.primaryColor)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-                Spacer(minLength: 4)
-                if !isUnlocked {
-                    Image(systemName: "lock.fill")
-                        .font(.system(size: 11, weight: .semibold))
-                        .foregroundStyle(PGColors.inkFaint)
-                }
-            }
+            Text(config.brand.titleBody)
+                .font(.system(size: 28, weight: .regular, design: .serif).italic())
+                .foregroundStyle(config.brand.primaryColor)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
 
             Text(priceLabel)
                 .font(PGFont.eyebrow)
@@ -126,15 +105,13 @@ private struct IndustryTile: View {
     }
 
     private var priceLabel: String {
-        if config.isAlwaysFree { return "FREE" }
+        if hasMasterUnlock { return "UNLOCKED · ALL" }
         if isUnlocked { return "UNLOCKED" }
-        return product?.displayPrice ?? "$2.99"
+        let priceText = product?.displayPrice ?? "$2.99"
+        return "A–D FREE · \(priceText) FOR E–Z"
     }
 
     private var priceColor: Color {
-        if config.isAlwaysFree || isUnlocked {
-            return config.brand.primaryColor
-        }
-        return PGColors.inkLight
+        (isUnlocked || hasMasterUnlock) ? config.brand.primaryColor : PGColors.inkLight
     }
 }

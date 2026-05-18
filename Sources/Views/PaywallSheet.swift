@@ -12,6 +12,7 @@ struct PaywallSheet: View {
 
     @State private var isPurchasing = false
     @State private var sampleTerms: [Term] = []
+    @State private var lockedCount: Int = 0
 
     private var config: IndustryConfig {
         IndustryConfig.config(for: targetIndustry)
@@ -53,6 +54,13 @@ struct PaywallSheet: View {
             Text(config.brand.subtitle)
                 .font(PGFont.metaItalic)
                 .foregroundStyle(PGColors.inkLight)
+            if lockedCount > 0 {
+                Text("You have letters A–D free. Unlock E–Z to read \(lockedCount) more terms.")
+                    .font(PGFont.metaItalic)
+                    .foregroundStyle(PGColors.inkLight)
+                    .padding(.top, 4)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
         }
     }
 
@@ -60,7 +68,7 @@ struct PaywallSheet: View {
 
     private var previewSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("A FEW ENTRIES")
+            Text("A FEW LOCKED ENTRIES")
                 .font(PGFont.eyebrow)
                 .tracking(0.8)
                 .foregroundStyle(PGColors.inkLight)
@@ -110,12 +118,12 @@ struct PaywallSheet: View {
         VStack(spacing: 10) {
             if let product = purchases.product(for: targetIndustry) {
                 primaryButton(
-                    label: "\(product.displayPrice) — Unlock \(config.brand.titleBody)",
+                    label: "\(product.displayPrice) — Unlock the rest of \(config.brand.titleBody)",
                     action: { await buy(product) }
                 )
             } else {
                 primaryButton(
-                    label: "Unlock \(config.brand.titleBody)",
+                    label: "Unlock the rest of \(config.brand.titleBody)",
                     action: { },
                     disabled: true
                 )
@@ -215,17 +223,20 @@ struct PaywallSheet: View {
     }
 
     private func loadSampleTerms() async {
-        // Load a few terms directly from the industry's bundled JSON to
-        // preview content without spinning up a full GlossaryStore.
+        // Load the industry's bundled JSON to: (1) count locked (E–Z) terms
+        // for the header subhead, and (2) sample 5 terms specifically from
+        // E–Z so the preview shows what's actually behind the paywall.
         let resource = config.brand.dataResource
         guard let url = Bundle.main.url(forResource: resource, withExtension: "json"),
               let data = try? Data(contentsOf: url),
               let terms = try? JSONDecoder().decode([Term].self, from: data) else { return }
-        // Take ~5 terms spread across the alphabet for variety.
-        let stride = max(1, terms.count / 5)
+        let lockedTerms = terms.filter { !IndustryConfig.freeLetters.contains($0.letter) }
+        lockedCount = lockedTerms.count
+        // Spread 5 samples across the locked terms for visual variety.
+        let stride = max(1, lockedTerms.count / 5)
         let sampled = (0..<5).compactMap { idx -> Term? in
             let i = idx * stride
-            return i < terms.count ? terms[i] : nil
+            return i < lockedTerms.count ? lockedTerms[i] : nil
         }
         sampleTerms = sampled
     }

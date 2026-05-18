@@ -10,10 +10,12 @@ enum Route: Hashable {
 
 struct RootView: View {
     @EnvironmentObject var store: GlossaryStore
+    @EnvironmentObject var purchases: PurchaseManager
     let onSwitchIndustry: () -> Void
     @State private var query: String = ""
     @State private var filter = FilterState()
     @State private var showingFilter = false
+    @State private var showingPaywall = false
     @State private var path: [Route] = []
 
     private let columns = Array(repeating: GridItem(.flexible(minimum: 50), spacing: 6), count: 4)
@@ -94,11 +96,20 @@ struct RootView: View {
                     AboutView()
                 }
             }
+            .sheet(isPresented: $showingPaywall) {
+                PaywallSheet(targetIndustry: store.industryID)
+                    .environmentObject(purchases)
+                    .presentationDetents([.large])
+            }
         }
         .tint(PGColors.accent)
         .environment(\.openURL, OpenURLAction { url in
             if let term = store.term(matchingURL: url) {
-                path.append(.term(term))
+                if purchases.isLocked(term, in: store.industryID) {
+                    showingPaywall = true
+                } else {
+                    path.append(.term(term))
+                }
                 return .handled
             }
             return .systemAction
@@ -132,11 +143,22 @@ struct RootView: View {
 
                 LazyVGrid(columns: columns, spacing: 6) {
                     ForEach(store.alphabetLetters, id: \.self) { letter in
-                        NavigationLink(value: Route.letter(letter)) {
-                            LetterTile(letter: letter,
-                                       count: store.byLetter[letter]?.count ?? 0)
+                        let count = store.byLetter[letter]?.count ?? 0
+                        let isLocked = purchases.isLocked(letter: letter, in: store.industryID)
+                        if isLocked {
+                            Button {
+                                showingPaywall = true
+                            } label: {
+                                LetterTile(letter: letter, count: count)
+                                    .lockedAffordance(true, iconAlignment: .topTrailing)
+                            }
+                            .buttonStyle(.plain)
+                        } else {
+                            NavigationLink(value: Route.letter(letter)) {
+                                LetterTile(letter: letter, count: count)
+                            }
+                            .buttonStyle(.plain)
                         }
-                        .buttonStyle(.plain)
                     }
                 }
                 .padding(.horizontal, 20)
@@ -153,14 +175,29 @@ struct RootView: View {
                 ContentUnavailableView.search(text: query)
             } else {
                 List(results) { term in
-                    NavigationLink(value: Route.term(term)) {
-                        TermRow(term: term)
-                    }
-                    .listRowBackground(PGColors.card)
-                    .listRowSeparatorTint(PGColors.inkRule)
+                    lockableTermRow(term: term)
+                        .listRowBackground(PGColors.card)
+                        .listRowSeparatorTint(PGColors.inkRule)
                 }
                 .listStyle(.plain)
                 .scrollContentBackground(.hidden)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func lockableTermRow(term: Term) -> some View {
+        let isLocked = purchases.isLocked(term, in: store.industryID)
+        if isLocked {
+            Button {
+                showingPaywall = true
+            } label: {
+                TermRow(term: term).lockedAffordance(true)
+            }
+            .buttonStyle(.plain)
+        } else {
+            NavigationLink(value: Route.term(term)) {
+                TermRow(term: term)
             }
         }
     }
@@ -192,11 +229,9 @@ struct RootView: View {
                 Spacer()
             } else {
                 List(results) { term in
-                    NavigationLink(value: Route.term(term)) {
-                        TermRow(term: term)
-                    }
-                    .listRowBackground(PGColors.card)
-                    .listRowSeparatorTint(PGColors.inkRule)
+                    lockableTermRow(term: term)
+                        .listRowBackground(PGColors.card)
+                        .listRowSeparatorTint(PGColors.inkRule)
                 }
                 .listStyle(.plain)
                 .scrollContentBackground(.hidden)

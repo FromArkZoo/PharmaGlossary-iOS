@@ -11,26 +11,28 @@ enum IndustryID: String, CaseIterable, Identifiable, Codable {
     case finance
 
     var id: String { rawValue }
-
-    /// The always-free anchor industry. Every install gets this unlocked.
-    static let freeAnchor: IndustryID = .pharma
 }
 
-/// Pairs an industry's brand identity with its StoreKit product (if any).
+/// Pairs an industry's brand identity with its StoreKit product. Every
+/// industry has an IAP — letters A–D (`IndustryConfig.freeLetters`) are free
+/// as a taster, E–Z is gated by this IAP.
 struct IndustryConfig: Identifiable {
     let id: IndustryID
     let brand: Brand
-    /// `nil` means the industry is always free (Pharma). Otherwise this is the
-    /// StoreKit product identifier the user purchases to unlock the industry.
-    let iapProductID: String?
-
-    var isAlwaysFree: Bool { iapProductID == nil }
+    /// StoreKit product identifier the user purchases to unlock letters E–Z
+    /// for this industry.
+    let iapProductID: String
 }
 
 extension IndustryConfig {
+    /// Letters that are free in every industry as a taster — substantial
+    /// enough (~25–29% of each industry's terms) to demonstrate value, small
+    /// enough to leave a real reason to buy.
+    static let freeLetters: Set<String> = ["A", "B", "C", "D"]
+
     /// Registry — order here is the canonical display order in the picker.
     static let all: [IndustryConfig] = [
-        .init(id: .pharma,  brand: pharmaBrand,  iapProductID: nil),
+        .init(id: .pharma,  brand: pharmaBrand,  iapProductID: "com.jamesbrowne.JBGlossary.pharma"),
         .init(id: .ai,      brand: aiBrand,      iapProductID: "com.jamesbrowne.JBGlossary.ai"),
         .init(id: .law,     brand: lawBrand,     iapProductID: "com.jamesbrowne.JBGlossary.law"),
         .init(id: .finance, brand: financeBrand, iapProductID: "com.jamesbrowne.JBGlossary.finance"),
@@ -52,5 +54,6 @@ extension IndustryConfig {
 }
 
 /// StoreKit product identifier for the master "All Industries" unlock.
-/// Owners get every current and future paid industry as a free entitlement.
+/// Owners get every current and future paid industry's E–Z content as a free
+/// entitlement.
 let masterUnlockProductID = "com.jamesbrowne.JBGlossary.all"

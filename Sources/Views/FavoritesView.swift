@@ -2,10 +2,12 @@ import SwiftUI
 
 struct FavoritesView: View {
     @EnvironmentObject var store: GlossaryStore
+    @EnvironmentObject var purchases: PurchaseManager
     @State private var selectMode: Bool = false
     @State private var selected: Set<String> = []
     @State private var lastRemoved: Term?
     @State private var undoTask: Task<Void, Never>?
+    @State private var showingPaywall = false
 
     var body: some View {
         ZStack {
@@ -38,6 +40,11 @@ struct FavoritesView: View {
         .onDisappear {
             undoTask?.cancel()
             lastRemoved = nil
+        }
+        .sheet(isPresented: $showingPaywall) {
+            PaywallSheet(targetIndustry: store.industryID)
+                .environmentObject(purchases)
+                .presentationDetents([.large])
         }
     }
 
@@ -85,8 +92,18 @@ struct FavoritesView: View {
             }
             .buttonStyle(.plain)
         } else {
-            NavigationLink(value: Route.term(term)) {
-                TermRow(term: term)
+            let isLocked = purchases.isLocked(term, in: store.industryID)
+            if isLocked {
+                Button {
+                    showingPaywall = true
+                } label: {
+                    TermRow(term: term).lockedAffordance(true)
+                }
+                .buttonStyle(.plain)
+            } else {
+                NavigationLink(value: Route.term(term)) {
+                    TermRow(term: term)
+                }
             }
         }
     }

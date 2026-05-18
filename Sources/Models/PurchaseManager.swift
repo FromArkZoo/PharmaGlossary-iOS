@@ -31,17 +31,29 @@ final class PurchaseManager: ObservableObject {
         updateListenerTask?.cancel()
     }
 
-    /// Returns true if the user has access to this industry's content.
-    /// Pharma (the free anchor) is always unlocked.
+    /// True if the user owns the full industry (every letter, A–Z) — either
+    /// via the industry's IAP or the master "All Industries" unlock. Letters
+    /// A–D are free regardless of this return value; use `isLocked(letter:in:)`
+    /// for letter-level checks.
     func isUnlocked(_ id: IndustryID) -> Bool {
-        if IndustryConfig.config(for: id).isAlwaysFree { return true }
-        return hasMasterUnlock || purchasedIndustries.contains(id)
+        hasMasterUnlock || purchasedIndustries.contains(id)
     }
 
-    /// StoreKit `Product` for an industry's IAP, if loaded. Returns nil for
-    /// the free anchor (no product) or before products have finished loading.
+    /// True if the given letter is gated behind the industry's paywall for
+    /// the current user (outside A–D and the user doesn't own the industry).
+    func isLocked(letter: String, in id: IndustryID) -> Bool {
+        if IndustryConfig.freeLetters.contains(letter) { return false }
+        return !isUnlocked(id)
+    }
+
+    /// True if a term is locked. Convenience over `isLocked(letter:in:)`.
+    func isLocked(_ term: Term, in id: IndustryID) -> Bool {
+        isLocked(letter: term.letter, in: id)
+    }
+
+    /// StoreKit `Product` for an industry's IAP, if loaded.
     func product(for id: IndustryID) -> Product? {
-        guard let productID = IndustryConfig.config(for: id).iapProductID else { return nil }
+        let productID = IndustryConfig.config(for: id).iapProductID
         return products.first { $0.id == productID }
     }
 
@@ -95,7 +107,7 @@ final class PurchaseManager: ObservableObject {
     }
 
     private func loadProducts() async {
-        let productIDs = IndustryConfig.all.compactMap(\.iapProductID) + [masterUnlockProductID]
+        let productIDs = IndustryConfig.all.map(\.iapProductID) + [masterUnlockProductID]
         do {
             products = try await Product.products(for: productIDs)
         } catch {

@@ -2,42 +2,56 @@ import SwiftUI
 
 struct TermDetailView: View {
     @EnvironmentObject var store: GlossaryStore
+    @EnvironmentObject var purchases: PurchaseManager
     let term: Term
+
+    private var isLocked: Bool {
+        purchases.isLocked(term, in: store.industryID)
+    }
 
     var body: some View {
         ZStack {
             PGBackground()
-            ScrollView {
-                VStack(alignment: .leading, spacing: 14) {
-                    header
-                    if term.hasSnappy {
-                        snappy
+            if isLocked {
+                // Defense in depth — every upstream navigation path already
+                // gates on lock state; this branch covers cross-link injection
+                // or future routes that might land a locked term here.
+                LockedTermView(term: term, industryID: store.industryID)
+            } else {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 14) {
+                        header
+                        if term.hasSnappy {
+                            snappy
+                        }
+                        definition
+                        tags
+                        if term.hasSources {
+                            sourcesFooter
+                        }
+                        Spacer(minLength: 24)
                     }
-                    definition
-                    tags
-                    if term.hasSources {
-                        sourcesFooter
-                    }
-                    Spacer(minLength: 24)
+                    .frame(maxWidth: 720, alignment: .leading)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
                 }
-                .frame(maxWidth: 720, alignment: .leading)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .padding(.horizontal, 16)
-                .padding(.top, 8)
             }
         }
         .navigationTitle(term.term)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button {
-                    store.toggleFavorite(term)
-                } label: {
-                    Image(systemName: store.isFavorited(term) ? "star.fill" : "star")
-                        .font(.system(size: 19, weight: .semibold))
-                        .foregroundStyle(PGColors.accent)
+                if !isLocked {
+                    Button {
+                        store.toggleFavorite(term)
+                    } label: {
+                        Image(systemName: store.isFavorited(term) ? "star.fill" : "star")
+                            .font(.system(size: 19, weight: .semibold))
+                            .foregroundStyle(PGColors.accent)
+                    }
+                    .accessibilityLabel(store.isFavorited(term) ? "Remove from favorites" : "Add to favorites")
                 }
-                .accessibilityLabel(store.isFavorited(term) ? "Remove from favorites" : "Add to favorites")
             }
         }
     }
@@ -141,4 +155,49 @@ struct TermDetailView: View {
             .accessibilityHint("Source citations. Activate a link to open in browser.")
     }
 
+}
+
+/// Fallback view shown if `TermDetailView` is rendered with a locked term —
+/// every upstream path is gated, but this is the safety net. Lets the user
+/// jump to the paywall from a clear state.
+private struct LockedTermView: View {
+    let term: Term
+    let industryID: IndustryID
+    @EnvironmentObject var purchases: PurchaseManager
+    @State private var showingPaywall = false
+
+    var body: some View {
+        VStack(spacing: 16) {
+            Image(systemName: "lock.fill")
+                .font(.system(size: 36, weight: .light))
+                .foregroundStyle(PGColors.inkFaint)
+            Text(term.term)
+                .font(PGFont.termTitle)
+                .foregroundStyle(PGColors.ink)
+                .multilineTextAlignment(.center)
+            Text("This term is in letters E–Z. Unlock the rest of \(IndustryConfig.config(for: industryID).brand.titleBody) to read it.")
+                .font(PGFont.metaItalic)
+                .foregroundStyle(PGColors.inkLight)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 28)
+            Button {
+                showingPaywall = true
+            } label: {
+                Text("See unlock options")
+                    .font(.system(size: 15, weight: .semibold))
+                    .padding(.horizontal, 18)
+                    .padding(.vertical, 11)
+                    .background(IndustryConfig.config(for: industryID).brand.primaryColor)
+                    .foregroundStyle(.white)
+                    .clipShape(Capsule())
+            }
+            .padding(.top, 4)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .sheet(isPresented: $showingPaywall) {
+            PaywallSheet(targetIndustry: industryID)
+                .environmentObject(purchases)
+                .presentationDetents([.large])
+        }
+    }
 }

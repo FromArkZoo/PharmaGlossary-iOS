@@ -13,10 +13,10 @@ struct JBGlossaryApp: App {
     var body: some Scene {
         WindowGroup {
             Group {
-                // Gate on isUnlocked so a user whose entitlement got revoked
-                // (refund, family-sharing change) falls back to the picker
-                // instead of opening locked content.
-                if let id = currentIndustryID, purchases.isUnlocked(id) {
+                // Anyone can enter any industry — the A–D taster is always
+                // available. Letter-level lock state is enforced inside the
+                // industry shell (alphabet grid, search, lens, etc.).
+                if let id = currentIndustryID {
                     IndustryShell(industryID: id, onSwitchIndustry: {
                         currentIndustryID = nil
                     })

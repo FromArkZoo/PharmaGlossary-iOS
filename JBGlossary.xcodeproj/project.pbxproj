@@ -36,6 +36,7 @@
 		D72D7F78AB6BA8FED284CDF1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4031A2549BC0200FD7AC4470 /* PrivacyInfo.xcprivacy */; };
 		D763ED4E4E58769D060B3CA7 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F8BD5F9CADAB36C6C7C5E6 /* LetterView.swift */; };
 		DE729F9CE69F92DEA24E3D29 /* LawBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0193436ED3CA2B9EC1B1F01A /* LawBrand.swift */; };
+		E246A056CEE75ECAC92C2432 /* Lockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390EDAD665B04AC01355E561 /* Lockable.swift */; };
 		EAD56A2B433E6881E555B005 /* LensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E73F7DA3FB5A5E95526327 /* LensView.swift */; };
 		F6DDABA4612A3EE7B8BE6F61 /* ContentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5693A67B3D73F2D64EA12D91 /* ContentRouter.swift */; };
 		F7C1372E3F93DEFCD036A388 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E3085A21D0C678FE9E4DD /* Colors.swift */; };
@@ -51,6 +52,7 @@
 		1FAB062FCE396DCF7AB21B76 /* EditorialHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorialHeader.swift; sourceTree = "<group>"; };
 		2F7744E4F7F2C1ED299CBD81 /* PharmaBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaBrand.swift; sourceTree = "<group>"; };
 		38DC63501638BCC01B7FF226 /* glossary_pharma.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = glossary_pharma.json; sourceTree = "<group>"; };
+		390EDAD665B04AC01355E561 /* Lockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lockable.swift; sourceTree = "<group>"; };
 		4031A2549BC0200FD7AC4470 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		427B99CE8C1F228786FA03CE /* IndustryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndustryPickerView.swift; sourceTree = "<group>"; };
 		43F8BD5F9CADAB36C6C7C5E6 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				6FA0E7F492FA908C47699562 /* Brand.swift */,
 				D40E3085A21D0C678FE9E4DD /* Colors.swift */,
 				1FAB062FCE396DCF7AB21B76 /* EditorialHeader.swift */,
+				390EDAD665B04AC01355E561 /* Lockable.swift */,
 				AA394CD8FC66E4498EBB3F7A /* PGBackground.swift */,
 				F72F36455A190B3E1F17E963 /* PGSearchBar.swift */,
 				7F1F760FED30EDA2A6BC9D59 /* Typography.swift */,
@@ -329,6 +332,7 @@
 				DE729F9CE69F92DEA24E3D29 /* LawBrand.swift in Sources */,
 				EAD56A2B433E6881E555B005 /* LensView.swift in Sources */,
 				D763ED4E4E58769D060B3CA7 /* LetterView.swift in Sources */,
+				E246A056CEE75ECAC92C2432 /* Lockable.swift in Sources */,
 				70008ABF2DB1ECECB1BFD68C /* PGBackground.swift in Sources */,
 				0E41E64A5A5D472AA9D45463 /* PGSearchBar.swift in Sources */,
 				21AA03312658619ED1CB507F /* PaywallSheet.swift in Sources */,
