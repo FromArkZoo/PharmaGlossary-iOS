@@ -40,3 +40,7 @@ fastlane/test_output
 .idea/
 *.swp
 *.swo
+
+# Python (content-authoring scripts)
+__pycache__/
+*.pyc
