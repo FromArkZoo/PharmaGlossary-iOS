@@ -1,0 +1,137 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "21B36A39-FD78-44F7-AE36-3C44A1947FB7",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : true,
+      "internalID" : "JBG_AI",
+      "localizations" : [
+        {
+          "description" : "Unlock the JB Glossary AI industry — 785 terms covering models, training, hardware, and silicon.",
+          "displayName" : "Unlock AI",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.jamesbrowne.JBGlossary.ai",
+      "referenceName" : "AI",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : true,
+      "internalID" : "JBG_LAW",
+      "localizations" : [
+        {
+          "description" : "Unlock the JB Glossary Law industry — 836 US-law terms across contracts, criminal, constitutional, and more.",
+          "displayName" : "Unlock Law",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.jamesbrowne.JBGlossary.law",
+      "referenceName" : "Law",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : true,
+      "internalID" : "JBG_FINANCE",
+      "localizations" : [
+        {
+          "description" : "Unlock the JB Glossary Finance industry — 626 markets terms across rates, FX, equities, credit, and derivatives.",
+          "displayName" : "Unlock Finance",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.jamesbrowne.JBGlossary.finance",
+      "referenceName" : "Finance",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "14.99",
+      "familyShareable" : true,
+      "internalID" : "JBG_ALL",
+      "localizations" : [
+        {
+          "description" : "Unlock every paid industry in JB Glossary — current and future. One purchase covers all your devices.",
+          "displayName" : "Unlock All Industries",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.jamesbrowne.JBGlossary.all",
+      "referenceName" : "All Industries",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "0",
+    "_compatibilityTimeRate" : 1,
+    "_developerTeamID" : "278RL79DB5",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 0,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

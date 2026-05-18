@@ -4,6 +4,7 @@ import UIKit
 @main
 struct JBGlossaryApp: App {
     @State private var currentIndustryID: IndustryID? = Self.persistedIndustry()
+    @StateObject private var purchases = PurchaseManager()
 
     init() {
         Self.configureNavigationBarAppearance()
@@ -12,7 +13,10 @@ struct JBGlossaryApp: App {
     var body: some Scene {
         WindowGroup {
             Group {
-                if let id = currentIndustryID {
+                // Gate on isUnlocked so a user whose entitlement got revoked
+                // (refund, family-sharing change) falls back to the picker
+                // instead of opening locked content.
+                if let id = currentIndustryID, purchases.isUnlocked(id) {
                     IndustryShell(industryID: id, onSwitchIndustry: {
                         currentIndustryID = nil
                     })
@@ -24,6 +28,7 @@ struct JBGlossaryApp: App {
                     }
                 }
             }
+            .environmentObject(purchases)
             .tint(PGColors.accent)
         }
     }

@@ -15,6 +15,7 @@
 		17A74E67A0E356AC98E366B5 /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A56A473B2C0C6F71E894CC /* FilterSheet.swift */; };
 		1889F9EC6CD59F700C491D5B /* TermDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C3AFAA99AF368137FA4D4 /* TermDetailView.swift */; };
 		18926DD04DD4EC74C6D66705 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F760FED30EDA2A6BC9D59 /* Typography.swift */; };
+		21AA03312658619ED1CB507F /* PaywallSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84C1F45A94B21299BA4EBA /* PaywallSheet.swift */; };
 		2D317F6BF7557FD09C16943C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76097C8C0CDE60B86FF51EEE /* RootView.swift */; };
 		39214871FF177FC2DA858080 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59725A0C95008707447FF37 /* AboutView.swift */; };
 		41E1B91063ADB15EC5C973CE /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4934B9F5D89A2046403EF6 /* FavoritesView.swift */; };
@@ -22,6 +23,7 @@
 		598AF1C4E684B0F65C2071CB /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8050281258D995600F8E2B8 /* SplashView.swift */; };
 		6D0ACE12912DCAFD31BA235E /* JBGlossaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C79B229AE3CD86C0893D86 /* JBGlossaryApp.swift */; };
 		70008ABF2DB1ECECB1BFD68C /* PGBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA394CD8FC66E4498EBB3F7A /* PGBackground.swift */; };
+		725477CA2726EE047D82B159 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35EC9BCD1A88408B9754D76 /* PurchaseManager.swift */; };
 		74434847A03007291C21BC98 /* EditorialHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB062FCE396DCF7AB21B76 /* EditorialHeader.swift */; };
 		7BE7536D4E5FD2955D0FEC40 /* IndustryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427B99CE8C1F228786FA03CE /* IndustryPickerView.swift */; };
 		7F4F2708CD01A3519904CB02 /* glossary_law.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AD88C289047DBCF0556D0A /* glossary_law.json */; };
@@ -62,10 +64,12 @@
 		7F1F760FED30EDA2A6BC9D59 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		95C79B229AE3CD86C0893D86 /* JBGlossaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBGlossaryApp.swift; sourceTree = "<group>"; };
 		AA394CD8FC66E4498EBB3F7A /* PGBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGBackground.swift; sourceTree = "<group>"; };
+		AB84C1F45A94B21299BA4EBA /* PaywallSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallSheet.swift; sourceTree = "<group>"; };
 		B5920872047779114629FD51 /* FinanceBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceBrand.swift; sourceTree = "<group>"; };
 		B59725A0C95008707447FF37 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		B8050281258D995600F8E2B8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		C64DB09B536A4C3A2CE4F19A /* IndustryConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndustryConfig.swift; sourceTree = "<group>"; };
+		D35EC9BCD1A88408B9754D76 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		D40E3085A21D0C678FE9E4DD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E5A56A473B2C0C6F71E894CC /* FilterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSheet.swift; sourceTree = "<group>"; };
 		F72F36455A190B3E1F17E963 /* PGSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSearchBar.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			children = (
 				1625E96D841DD218D5D0F5BD /* Glossary.swift */,
 				0AEA1B6DE6DFDEB53566F1B4 /* Hyperlinks.swift */,
+				D35EC9BCD1A88408B9754D76 /* PurchaseManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 				427B99CE8C1F228786FA03CE /* IndustryPickerView.swift */,
 				57E73F7DA3FB5A5E95526327 /* LensView.swift */,
 				43F8BD5F9CADAB36C6C7C5E6 /* LetterView.swift */,
+				AB84C1F45A94B21299BA4EBA /* PaywallSheet.swift */,
 				76097C8C0CDE60B86FF51EEE /* RootView.swift */,
 				B8050281258D995600F8E2B8 /* SplashView.swift */,
 				631C3AFAA99AF368137FA4D4 /* TermDetailView.swift */,
@@ -325,7 +331,9 @@
 				D763ED4E4E58769D060B3CA7 /* LetterView.swift in Sources */,
 				70008ABF2DB1ECECB1BFD68C /* PGBackground.swift in Sources */,
 				0E41E64A5A5D472AA9D45463 /* PGSearchBar.swift in Sources */,
+				21AA03312658619ED1CB507F /* PaywallSheet.swift in Sources */,
 				B506803939B0B9FE244FCFCA /* PharmaBrand.swift in Sources */,
+				725477CA2726EE047D82B159 /* PurchaseManager.swift in Sources */,
 				2D317F6BF7557FD09C16943C /* RootView.swift in Sources */,
 				598AF1C4E684B0F65C2071CB /* SplashView.swift in Sources */,
 				1889F9EC6CD59F700C491D5B /* TermDetailView.swift in Sources */,

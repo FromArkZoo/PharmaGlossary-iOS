@@ -54,3 +54,7 @@ targets:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         DEVELOPMENT_TEAM: 278RL79DB5
+    scheme:
+      # Local sandbox: every Run uses Configuration.storekit so the 4 IAPs
+      # load with mock prices in the simulator without ASC setup.
+      storeKitConfiguration: Configuration.storekit

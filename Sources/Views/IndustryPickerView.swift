@@ -1,13 +1,15 @@
 import SwiftUI
+import StoreKit
 
 /// Root view of JB Glossary. Lists every shipped industry as a tile;
-/// tapping one mounts that industry's `RootView` via `IndustryShell`.
-///
-/// Tile lock state + paywall behavior land in Phase 3 (StoreKit). For now
-/// every industry opens directly when tapped; the "$2.99" labels are
-/// placeholder until purchase gating is wired up.
+/// tapping an unlocked tile opens that industry's `RootView`, tapping a
+/// locked tile presents `PaywallSheet`. Pharma is always unlocked (free
+/// anchor industry); the rest are gated by `PurchaseManager`.
 struct IndustryPickerView: View {
+    @EnvironmentObject var purchases: PurchaseManager
     let onSelectIndustry: (IndustryID) -> Void
+
+    @State private var paywallIndustry: IndustryID?
 
     private let columns = [
         GridItem(.flexible(), spacing: 14),
@@ -27,9 +29,13 @@ struct IndustryPickerView: View {
                     LazyVGrid(columns: columns, spacing: 14) {
                         ForEach(IndustryConfig.all) { config in
                             Button {
-                                onSelectIndustry(config.id)
+                                handleTap(config.id)
                             } label: {
-                                IndustryTile(config: config)
+                                IndustryTile(
+                                    config: config,
+                                    product: purchases.product(for: config.id),
+                                    isUnlocked: purchases.isUnlocked(config.id)
+                                )
                             }
                             .buttonStyle(.plain)
                         }
@@ -39,6 +45,19 @@ struct IndustryPickerView: View {
                 }
             }
             .scrollIndicators(.hidden)
+        }
+        .sheet(item: $paywallIndustry) { id in
+            PaywallSheet(targetIndustry: id)
+                .environmentObject(purchases)
+                .presentationDetents([.large])
+        }
+    }
+
+    private func handleTap(_ id: IndustryID) {
+        if purchases.isUnlocked(id) {
+            onSelectIndustry(id)
+        } else {
+            paywallIndustry = id
         }
     }
 
@@ -63,19 +82,29 @@ struct IndustryPickerView: View {
 
 private struct IndustryTile: View {
     let config: IndustryConfig
+    let product: Product?
+    let isUnlocked: Bool
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(config.brand.titleBody)
-                .font(.system(size: 28, weight: .regular, design: .serif).italic())
-                .foregroundStyle(config.brand.primaryColor)
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
+            HStack(alignment: .top) {
+                Text(config.brand.titleBody)
+                    .font(.system(size: 28, weight: .regular, design: .serif).italic())
+                    .foregroundStyle(config.brand.primaryColor)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+                Spacer(minLength: 4)
+                if !isUnlocked {
+                    Image(systemName: "lock.fill")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundStyle(PGColors.inkFaint)
+                }
+            }
 
             Text(priceLabel)
                 .font(PGFont.eyebrow)
                 .tracking(0.8)
-                .foregroundStyle(config.isAlwaysFree ? config.brand.primaryColor : PGColors.inkLight)
+                .foregroundStyle(priceColor)
 
             Text(config.brand.subtitle)
                 .font(PGFont.metaItalic)
@@ -97,10 +126,15 @@ private struct IndustryTile: View {
     }
 
     private var priceLabel: String {
-        config.isAlwaysFree ? "FREE" : "$2.99"
+        if config.isAlwaysFree { return "FREE" }
+        if isUnlocked { return "UNLOCKED" }
+        return product?.displayPrice ?? "$2.99"
     }
-}
 
-#Preview {
-    IndustryPickerView { _ in }
+    private var priceColor: Color {
+        if config.isAlwaysFree || isUnlocked {
+            return config.brand.primaryColor
+        }
+        return PGColors.inkLight
+    }
 }
